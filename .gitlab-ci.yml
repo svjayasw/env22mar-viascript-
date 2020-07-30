@@ -1,13 +1,11 @@
-variables:
-   ROBOT: 'robot$'
-   DOCKER_HOST: tcp://localhost:2375/
-   DOCKER_TLS_CERTDIR: ""
+stages:
+  - build
+
 before_script:
   - echo "$CI_REGISTRY_USER"
   - echo "$CI_REGISTRY_PASSWORD"
   - echo "$CI_REGISTRY"
-stages:
-  - build
+
 docker-build:
   image: amr-registry.caas.intel.com/caas/docker:19.03.1-dind
   services:
@@ -19,6 +17,3 @@ docker-build:
     - docker tag ruby-test-ac:latest "$CI_REGISTRY"/actestrunners/ruby-test-ac:latest
     - docker push "$CI_REGISTRY"/actestrunners/ruby-test-ac:latest
     - sleep 10
-  only:
-    refs:
-    - docker-build
