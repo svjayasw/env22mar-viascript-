@@ -17,3 +17,4 @@ docker-build:
     - docker tag ruby-test-ac:latest "$CI_REGISTRY"/actestrunners/ruby-test-ac:latest
     - docker push "$CI_REGISTRY"/actestrunners/ruby-test-ac:latest
     - sleep 10
+
