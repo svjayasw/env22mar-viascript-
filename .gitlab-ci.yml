@@ -1,8 +1,6 @@
 stages:
     - build
 
-tags:
-    - my-tag
 
 build:
     stage: build
