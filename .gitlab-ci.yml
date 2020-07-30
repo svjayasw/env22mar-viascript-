@@ -5,6 +5,6 @@ tags:
     - my-tag
 
 build:
-    stage:build
+    stage: build
     script:
         - echo "building"
