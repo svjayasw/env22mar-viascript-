@@ -1,6 +1,10 @@
 stages:
   - build
 
+variables:
+  KUBERNETES_NAMESPACE_OVERWRITE: amr-pre-compute-cluster
+  KUBERNETES_BEARER_TOKEN: $KUBECONFIG
+
 before_script:
   - echo "$CI_REGISTRY_USER"
   - echo "$CI_REGISTRY_PASSWORD"
