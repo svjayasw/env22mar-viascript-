@@ -15,7 +15,7 @@ stages:
 ####  BUILD  ######
 build_proj:
   stage: build
-  #tags: [clf-gitlab-caas-runner]
+  tags: [my-runner]
   services:
     - name: amr-registry.caas.intel.com/caas/docker:19.03.1-dind
   script: 
