@@ -5,7 +5,7 @@ variables:
   DOCKER_HOST: tcp://localhost:2375
   http_proxy: http://proxy-chain.intel.com:911
   https_proxy: http://proxy-chain.intel.com:911
-  no_proxy: localhost,127.0.0.0/8,10.0.0.0/8,.intel.com,10.43.164.84
+  no_proxy: localhost,127.0.0.0/8,10.0.0.0/8,.intel.com,10.43.164.84,10.42.21.228
 
 
 #### STAGES ######
