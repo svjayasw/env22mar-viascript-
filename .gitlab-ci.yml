@@ -1,4 +1,5 @@
-image: amr-registry-pre.caas.intel.com/pse-pswe-software-ba/gitlab:base
+image: amr-registry.caas.intel.com/caas/docker:19.03.1-dind
+#image: amr-registry-pre.caas.intel.com/pse-pswe-software-ba/gitlab:base
 
 variables:
   DOCKER_TLS_CERTDIR: ""
