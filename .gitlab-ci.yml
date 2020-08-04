@@ -17,7 +17,7 @@ build_proj:
   stage: build
   tags: [my-runner]
   services:
-    - name: docker:dind
+    - name: amr-registry.caas.intel.com/caas/docker:19.03.1-dind
   script: 
   - docker build --build-arg HTTP_PROXY=http://proxy-chain.intel.com:911 --build-arg HTTPS_PROXY=http://proxy-chain.intel.com:911 -t pse-pswe-software-ba:dev .
   environment:
