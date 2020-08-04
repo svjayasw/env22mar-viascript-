@@ -1,24 +1,25 @@
+image: amr-registry-pre.caas.intel.com/pse-pswe-software-ba/gitlab:base
+
+variables:
+  DOCKER_TLS_CERTDIR: ""
+  DOCKER_HOST: tcp://localhost:2375
+  http_proxy: http://proxy-chain.intel.com:911
+  https_proxy: http://proxy-chain.intel.com:911
+  no_proxy: localhost,127.0.0.0/8,10.0.0.0/8,.intel.com,10.43.164.84
+
+
+#### STAGES ######
 stages:
   - build
 
-variables:
-  KUBERNETES_NAMESPACE_OVERWRITE: amr-pre-compute-cluster
-  KUBERNETES_BEARER_TOKEN: $KUBECONFIG
-
-before_script:
-  - echo "$CI_REGISTRY_USER"
-  - echo "$CI_REGISTRY_PASSWORD"
-  - echo "$CI_REGISTRY"
-
-docker-build:
-  image: amr-registry.caas.intel.com/caas/docker:19.03.1-dind
+####  BUILD  ######
+build_proj:
+  stage: build
+  #tags: [clf-gitlab-caas-runner]
   services:
     - name: amr-registry.caas.intel.com/caas/docker:19.03.1-dind
-  stage: build
-  script:
-    - docker login -u "$ROBOT""$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
-    - docker build -t ruby-test-ac:latest .
-    - docker tag ruby-test-ac:latest "$CI_REGISTRY"/actestrunners/ruby-test-ac:latest
-    - docker push "$CI_REGISTRY"/actestrunners/ruby-test-ac:latest
-    - sleep 10
-
+  script: 
+  - docker build --build-arg HTTP_PROXY=http://proxy-chain.intel.com:911 --build-arg HTTPS_PROXY=http://proxy-chain.intel.com:911 -t loggingservice:$VERSION .
+  environment:
+    name: DEV environment
+  when: manual
