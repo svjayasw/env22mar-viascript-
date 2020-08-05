@@ -1,30 +1,29 @@
 image: amr-registry-pre.caas.intel.com/pse-pswe-software-ba/gitlab:base
 
 variables:
-  ROBOT: 'robot$'
   DOCKER_TLS_CERTDIR: ""
   DOCKER_HOST: tcp://localhost:2375
   http_proxy: http://proxy-chain.intel.com:911
   https_proxy: http://proxy-chain.intel.com:911
   no_proxy: localhost,127.0.0.0/8,10.0.0.0/8,.intel.com,10.43.164.84,10.42.21.228
-
+  ROBOT: 'robot$'
+  
 before_script:
   - echo "$CI_REGISTRY_USER"
   - echo "$CI_REGISTRY_PASSWORD"
   - echo "$CI_REGISTRY"
 
+
 #### STAGES ######
 stages:
   - build
-  - test
 
 ####  BUILD  ######
-build_proj:
+docker-build:
   stage: build
   tags: [my-runner]
   services:
     - name: amr-registry.caas.intel.com/caas/docker:19.03.1-dind
-  stage: build
   script:
     - docker login -u "$ROBOT""$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
     - docker build -t ruby-test-ac:latest .
@@ -33,33 +32,8 @@ build_proj:
     - sleep 10
   only:
     refs:
-    - test-build
     - docker-build
-
   environment:
     name: DEV environment
   when: manual
 
-docker-test:
-  stage: test
-  script:
-    - export http_proxy=http://proxy-us.intel.com:911; export https_proxy=http://proxy-us.intel.com:912; export no_proxy=intel.com
-    - apt-get update
-    - apt-get install curl wget unzip -yq
-    - ./download_intel_cert.sh
-    - curl -L -o /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/latest.txt)/bin/linux/amd64/kubectl && chmod +x /usr/bin/kubectl && kubectl version --client
-    - echo "$KUBE_URL"
-    - echo "$KUBECONFIG"
-    - cat "$KUBECONFIG"
-    - kubectl apply -f k8s/ruby_dep.yaml
-  tags:
-    - my-runner
-
-  only:
-    refs:
-    - test-build
-    - kub-build
-    
-  environment:
-    name: DEV environment
-  when: manual
