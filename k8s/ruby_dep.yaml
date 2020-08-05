@@ -30,6 +30,6 @@ spec:
     spec:
       containers:
         - name: ruby-test
-          image: amr-registry-pre.caas.intel.com/actestrunners/ruby-test-ac:latest
+          image: amr-registry-pre.caas.intel.com/pse-pswe-software-ba/ruby-test-ac:latest
           ports:
           - containerPort: 80
