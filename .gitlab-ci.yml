@@ -17,6 +17,7 @@ before_script:
 #### STAGES ######
 stages:
   - build
+  - test
 
 ####  BUILD  ######
 docker-build:
@@ -28,10 +29,28 @@ docker-build:
     - docker images
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
     - docker build -t ruby-test-ac:latest .
-    - docker tag ruby-test-ac:latest "$CI_REGISTRY"/actestrunners/ruby-test-ac:latest
-    - docker push "$CI_REGISTRY"/actestrunners/ruby-test-ac:latest
+    - docker tag ruby-test-ac:latest "$CI_REGISTRY"/pse-pswe-software-ba/ruby-test-ac:latest
+    - docker push "$CI_REGISTRY"/pse-pswe-software-ba/ruby-test-ac:latest
     - sleep 10
   environment:
     name: DEV environment
   when: manual
+  
+docker-test:
+  stage: test
+  script:
+    - export http_proxy=http://proxy-us.intel.com:911; export https_proxy=http://proxy-us.intel.com:912; export no_proxy=intel.com
+    - apt-get update
+    - apt-get install curl wget unzip -yq
+    - ./download_intel_cert.sh
+    - curl -L -o /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/latest.txt)/bin/linux/amd64/kubectl && chmod +x /usr/bin/kubectl && kubectl version --client
+    - echo "$KUBE_URL"
+    - echo "$KUBECONFIG"
+    - cat "$KUBECONFIG"
+    - kubectl apply -f k8s/ruby_dep.yaml
+  tags:
+    - my-runner
+  environment:
+    name: testing
+
 
