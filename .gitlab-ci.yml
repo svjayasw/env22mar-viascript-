@@ -1,16 +1,27 @@
+image: amr-registry-pre.caas.intel.com/pse-pswe-software-ba/gitlab:base
+
 variables:
-   ROBOT: 'robot$'
-   DOCKER_HOST: tcp://localhost:2375/
-   DOCKER_TLS_CERTDIR: ""
+  ROBOT: 'robot$'
+  DOCKER_TLS_CERTDIR: ""
+  DOCKER_HOST: tcp://localhost:2375
+  http_proxy: http://proxy-chain.intel.com:911
+  https_proxy: http://proxy-chain.intel.com:911
+  no_proxy: localhost,127.0.0.0/8,10.0.0.0/8,.intel.com,10.43.164.84,10.42.21.228
+
 before_script:
   - echo "$CI_REGISTRY_USER"
   - echo "$CI_REGISTRY_PASSWORD"
   - echo "$CI_REGISTRY"
+
+#### STAGES ######
 stages:
   - build
   - test
-docker-build:
-  image: amr-registry.caas.intel.com/caas/docker:19.03.1-dind
+
+####  BUILD  ######
+build_proj:
+  stage: build
+  tags: [my-runner]
   services:
     - name: amr-registry.caas.intel.com/caas/docker:19.03.1-dind
   stage: build
@@ -24,6 +35,11 @@ docker-build:
     refs:
     - test-build
     - docker-build
+
+  environment:
+    name: DEV environment
+  when: manual
+
 docker-test:
   stage: test
   script:
@@ -37,10 +53,13 @@ docker-test:
     - cat "$KUBECONFIG"
     - kubectl apply -f k8s/ruby_dep.yaml
   tags:
-    - medium-caas
-  environment:
-    name: testing
+    - [my-runner]
+
   only:
     refs:
     - test-build
     - kub-build
+    
+  environment:
+    name: DEV environment
+  when: manual
