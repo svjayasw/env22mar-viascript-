@@ -53,7 +53,7 @@ docker-test:
     - cat "$KUBECONFIG"
     - kubectl apply -f k8s/ruby_dep.yaml
   tags:
-    - [my-runner]
+    - my-runner
 
   only:
     refs:
