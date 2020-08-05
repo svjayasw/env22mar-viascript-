@@ -39,11 +39,8 @@ docker-test:
   stage: test
   script:
     - export http_proxy=http://proxy-us.intel.com:911; export https_proxy=http://proxy-us.intel.com:912; export no_proxy=intel.com
-    - apt-get update
-    - apt-get install curl wget unzip -yq
     - chmod 777 ./download_intel_cert.sh
     - ./download_intel_cert.sh
-    - curl -L -o /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/latest.txt)/bin/linux/amd64/kubectl && chmod +x /usr/bin/kubectl && kubectl version --client
     - echo "$KUBE_URL"
     - echo "$KUBECONFIG"
     - cat "$KUBECONFIG"
