@@ -25,7 +25,8 @@ docker-build:
   services:
     - name: amr-registry.caas.intel.com/caas/docker:19.03.1-dind
   script:
-    - docker login -u "$ROBOT""$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+    - docker images
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
     - docker build -t ruby-test-ac:latest .
     - docker tag ruby-test-ac:latest "$CI_REGISTRY"/actestrunners/ruby-test-ac:latest
     - docker push "$CI_REGISTRY"/actestrunners/ruby-test-ac:latest
