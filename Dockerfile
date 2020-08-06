@@ -1,7 +1,5 @@
 FROM amr-registry-pre.caas.intel.com/pse-pswe-software-ba/embeded:base
 
-USER jenkins
-
 RUN cd /build \
     && git clone ssh://git@gitlab.devtools.intel.com:29418/psg-opensource/gsrd-build-bot.git \
 	&& mv gsrd-build-bot gsrd-build-automation
@@ -15,6 +13,8 @@ RUN mkdir -p /build/yocto-dunfell-socfpga \
 
 RUN cd /build/rebeccas/contrib \
     && git clone ssh://git@gitlab.devtools.intel.com:29418/psg-opensource/linux-socfpga.git
+
+USER jenkins
 
 CMD ["/bin/bash"]
 WORKDIR /build
