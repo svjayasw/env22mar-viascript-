@@ -1,0 +1,57 @@
+=====================
+Preparation Steps
+======================
+1.	cd ~/bin/linux-infra
+2.	gg
+3.	cd ~/repos/internal/linux-tags
+4.	gg
+
+=====================
+PR release on 11/14/19
+======================
+
+1.	portal-update.py --type Linux --rel 19.11.02_pr --prev 19.11.01_pr -u
+2.	cdp										# should end in 19.11.02 folder
+3. 	diff -urN 19.11.02_rc1.txt 19.11.02_pr.txt | less  				# make sure you only see rc tag renamed as pr tag
+4. 	git add .
+5.	git status
+6. 	git commit -m 19.11.02_pr
+7. 	portal-update.py --type Linux --rel 19.11.02_pr --prev 19.11.01_pr --push 	# push pr tag for real to at-git and git hub
+8. 	git diff 									# should see all git push happened w/o error(s)
+9.  	git add .
+10. 	git status
+11. 	git commit --amend
+12. 	post-update-check.sh 2>&1 | tee post-update-check-log.txt			# does 'wget' on every url in the log
+13. 	git add .
+14. 	git commit --amend
+15. 	portal-update.py --type Linux --rel 19.11.02_pr --prev 19.11.01_pr --email me
+16. 	portal-update.py --type Linux --rel 19.11.02_pr --prev 19.11.01_pr --email all
+17. 	git push origin master
+
+=============================================================
+Update branches here (update release-branch-config.sh file)
+>>  make sure only update release-branch-config.sh after PR <<
+=============================================================
+Need to remove altera-meta at some point but the GSRD release needs it right now.
+
+======================
+RC release on 11/14/19
+======================
+
+1. 	portal-update.py --type Linux --rel 19.11.03_rc1 --prev 19.11.02_pr -u
+2. 	cdp
+3. 	less 19.11.03_rc1.txt								# look over & check that it looks reasonable
+4. 	git add .
+5. 	git status
+6. 	git commit -m 19.11.03_rc1
+7. 	portal-update.py --type Linux --rel 19.11.03_rc1 --prev 19.11.02_pr --push
+8. 	git diff
+9. 	git add .
+10. 	git status
+11. 	git commit --amend
+12. 	portal-update.py --type Linux --rel 19.11.03_rc1 --prev 19.11.02_pr --email me
+13. 	portal-update.py --type Linux --rel 19.11.03_rc1 --prev 19.11.02_pr --email all
+14. 	git push origin master
+
+
+

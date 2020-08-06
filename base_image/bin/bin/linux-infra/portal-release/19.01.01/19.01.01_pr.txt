@@ -1,0 +1,558 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.18
+branch tag  : rel_socfpga-4.18_19.01.01_pr
+new commits : 0
+
+
+branch      : socfpga-4.19
+branch tag  : rel_socfpga-4.19_19.01.01_pr
+new commits : 3
+e3b47dd Dinh Nguyen ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option
+23d4f7b Dinh Nguyen clk: socfpga: stratix10: fix rate calculation for pll clocks
+79d37de Dinh Nguyen clk: socfpga: stratix10: fix naming convention for the fixed-clocks
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.19 *Tag name:* rel_socfpga-4.19_19.01.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option | [[ https://github.com/altera-opensource/linux-socfpga/commit/e3b47dd63c0f7f7404bb6a368c1d671e0d199745 ][ e3b47dd63c0f7f7404bb6a368c1d671e0d199745 ]] |
+| community | clk: socfpga: stratix10: fix rate calculation for pll clocks | [[ https://github.com/altera-opensource/linux-socfpga/commit/23d4f7b2c6000e095399a6266ef35c213f93649e ][ 23d4f7b2c6000e095399a6266ef35c213f93649e ]] |
+| community | clk: socfpga: stratix10: fix naming convention for the fixed-clocks | [[ https://github.com/altera-opensource/linux-socfpga/commit/79d37de2fbe0f380d52135e3c572b60856fd9615 ][ 79d37de2fbe0f380d52135e3c572b60856fd9615 ]] |
+--wiki:
+
+
+branch      : socfpga-4.14.73-ltsi
+branch tag  : rel_socfpga-4.14.73-ltsi_19.01.01_pr
+new commits : 3
+b67570c Dinh Nguyen ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option
+0b1a1bc Dinh Nguyen clk: socfpga: stratix10: fix rate calculation for pll clocks
+ce7e255 Dinh Nguyen clk: socfpga: stratix10: fix naming convention for the fixed-clocks
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.14.73-ltsi *Tag name:* rel_socfpga-4.14.73-ltsi_19.01.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option | [[ https://github.com/altera-opensource/linux-socfpga/commit/b67570c09362b6a66df264968e7996e27337456b ][ b67570c09362b6a66df264968e7996e27337456b ]] |
+| community | clk: socfpga: stratix10: fix rate calculation for pll clocks | [[ https://github.com/altera-opensource/linux-socfpga/commit/0b1a1bcb7a4565834e5df8a639f6a9d56f2eb2f2 ][ 0b1a1bcb7a4565834e5df8a639f6a9d56f2eb2f2 ]] |
+| community | clk: socfpga: stratix10: fix naming convention for the fixed-clocks | [[ https://github.com/altera-opensource/linux-socfpga/commit/ce7e255f3c7bd82d4ea6131f3fbc34548b21526a ][ ce7e255f3c7bd82d4ea6131f3fbc34548b21526a ]] |
+--wiki:
+
+
+branch      : socfpga-4.14.73-ltsi-rt
+branch tag  : rel_socfpga-4.14.73-ltsi-rt_19.01.01_pr
+new commits : 4
+709b7dd Dinh Nguyen ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option
+a6055cc Dinh Nguyen clk: socfpga: stratix10: fix rate calculation for pll clocks
+7e7f502 Dinh Nguyen clk: socfpga: stratix10: fix naming convention for the fixed-clocks
+34c785f Dinh Nguyen arm64: dts: stratix10: add ethernet aliases
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.14.73-ltsi-rt *Tag name:* rel_socfpga-4.14.73-ltsi-rt_19.01.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option | [[ https://github.com/altera-opensource/linux-socfpga/commit/709b7dd71859c405ddc6bdd1fa7ce1435294b960 ][ 709b7dd71859c405ddc6bdd1fa7ce1435294b960 ]] |
+| community | clk: socfpga: stratix10: fix rate calculation for pll clocks | [[ https://github.com/altera-opensource/linux-socfpga/commit/a6055cc917a89266e6454525e90aa3a2b8e6e6e7 ][ a6055cc917a89266e6454525e90aa3a2b8e6e6e7 ]] |
+| community | clk: socfpga: stratix10: fix naming convention for the fixed-clocks | [[ https://github.com/altera-opensource/linux-socfpga/commit/7e7f502d929360a2f5558fafa219efb226ecb42a ][ 7e7f502d929360a2f5558fafa219efb226ecb42a ]] |
+| community | arm64: dts: stratix10: add ethernet aliases | [[ https://github.com/altera-opensource/linux-socfpga/commit/34c785fc7056fe495758f55030673c5fe1850455 ][ 34c785fc7056fe495758f55030673c5fe1850455 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.18_19.01.01_pr
+commit: e8172d3 Dinh Nguyen arm64: dts: stratix10: add ethernet aliases
+
+tag:    rel_socfpga-4.19_19.01.01_pr
+commit: e3b47dd Dinh Nguyen ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option
+
+tag:    rel_socfpga-4.14.73-ltsi_19.01.01_pr
+commit: b67570c Dinh Nguyen ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option
+
+tag:    rel_socfpga-4.14.73-ltsi-rt_19.01.01_pr
+commit: 709b7dd Dinh Nguyen ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.01.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.01.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.01.01_pr
+new commits : 11
+6d1d950 Ooi, Joyce HSD #2205749969: Add fitImage to support S10 secure boot for both U-Boot and kernel
+78d70f5 Ooi, Joyce rsa: read out public_exponent value based on 32-bit alignment
+196dffc Marek Vasut spl: spi: Support full fitImage handling
+edfaa7e Marek Vasut spl: fat: Support full fitImage handling
+38a6c51 Marek Vasut spl: Add full fitImage support
+57ecf35 Marek Vasut fit: Verify all configuration signatures
+5a1dbc9 Pantelis Antoniou fit: Do not throw away extra configuration on fit_image_load()
+0e8bb1a Marek Vasut fit: Add standalone image type handling
+dbc269c Marek Vasut fit: Add empty fit_print_contents() and fit_image_print()
+c60c6a0 Marek Vasut fit: Fix CONFIG_FIT_SPL_PRINT
+b0fabde Chin Liang See FogBugz #560316-1: Adding Freeze Bridge for PR console support
+
+
+++wiki:
+*Repo name*: u-boot-socfpga *Branch name*: socfpga_v2017.09 *Tag name:* rel_socfpga_v2017.09_19.01.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| HSD #2205749969 | Add fitImage to support S10 secure boot for both U-Boot and kernel | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/6d1d950cc268f644eaefded09a0825e78aaa9a03 ][ 6d1d950cc268f644eaefded09a0825e78aaa9a03 ]] |
+| community | rsa: read out public_exponent value based on 32-bit alignment | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/78d70f512035e3d66e35bf4343c40577e1f6ea48 ][ 78d70f512035e3d66e35bf4343c40577e1f6ea48 ]] |
+| community | spl: spi: Support full fitImage handling | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/196dffc632edb075db2c2abafd251a424abad679 ][ 196dffc632edb075db2c2abafd251a424abad679 ]] |
+| community | spl: fat: Support full fitImage handling | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/edfaa7eefc3f56c2c6f45ef4bcbecb4ae5342c93 ][ edfaa7eefc3f56c2c6f45ef4bcbecb4ae5342c93 ]] |
+| community | spl: Add full fitImage support | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/38a6c51fe0d8cb401ceeb4b3f0c03b31c8f6cc3a ][ 38a6c51fe0d8cb401ceeb4b3f0c03b31c8f6cc3a ]] |
+| community | fit: Verify all configuration signatures | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/57ecf3581465c300f4b8db80915a90b20bb5107b ][ 57ecf3581465c300f4b8db80915a90b20bb5107b ]] |
+| community | fit: Do not throw away extra configuration on fit_image_load() | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/5a1dbc930de34ec3ccae8e13f8000c0467189ed3 ][ 5a1dbc930de34ec3ccae8e13f8000c0467189ed3 ]] |
+| community | fit: Add standalone image type handling | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/0e8bb1ab57746e70b772afaa7f44818fe53c866c ][ 0e8bb1ab57746e70b772afaa7f44818fe53c866c ]] |
+| community | fit: Add empty fit_print_contents() and fit_image_print() | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/dbc269c502f5daba58e08e8151a106e1b51a2268 ][ dbc269c502f5daba58e08e8151a106e1b51a2268 ]] |
+| community | fit: Fix CONFIG_FIT_SPL_PRINT | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/c60c6a09dd4d2a966057c8a0e468b30ee45c1f32 ][ c60c6a09dd4d2a966057c8a0e468b30ee45c1f32 ]] |
+| FogBugz #560316-1 | Adding Freeze Bridge for PR console support | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/b0fabdec7e2b955bf001a50b9d75a8a5d3d3075b ][ b0fabdec7e2b955bf001a50b9d75a8a5d3d3075b ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_19.01.01_pr
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.01.01_pr
+commit: af568f3 Tien Fong Chee FogBugz #604090-2: Enable FPGA manager HPS JTAG driver implementation
+
+tag:    rel_socfpga_v2017.09_19.01.01_pr
+commit: 6d1d950 Ooi, Joyce HSD #2205749969: Add fitImage to support S10 secure boot for both U-Boot and kernel
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.01.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_19.01.01_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.01.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.01.01_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.01.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_19.01.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.01.01_pr
+new commits : 1
+e1a34a2 Ong, Hean Loong Update 4.14.73-ltsi to commit ID 2bcc025
+
+
+++wiki:
+*Repo name*: meta-altera *Branch name*: angstrom-v2018.06-yocto2.5 *Tag name:* rel_angstrom-v2018.06-yocto2.5_19.01.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Update 4.14.73-ltsi to commit ID 2bcc025 | [[ https://github.com/altera-opensource/meta-altera/commit/e1a34a2bc7f347be89754a3ecf4257872f1683dd ][ e1a34a2bc7f347be89754a3ecf4257872f1683dd ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.01.01_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_19.01.01_pr
+commit: 3a47b14 Ong, Hean Loong update 4.9.78-ltsi to commit ID 5704788
+
+tag:    rel_angstrom-v2018.06-yocto2.5_19.01.01_pr
+commit: e1a34a2 Ong, Hean Loong Update 4.14.73-ltsi to commit ID 2bcc025
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.01.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_19.01.01_pr
+commit: 0a0715f David Koltak FogBugz #592404-4: Add raw slot data commands to example
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.19
+
+commit e3b47dd63c0f7f7404bb6a368c1d671e0d199745
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu Jan 10 09:56:22 2019 -0600
+
+    ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option
+    
+    Add CONFIG_BLK_DEV_LOOP and clean up socfpga_defconfig by make
+    savedefconfig.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 23d4f7b2c6000e095399a6266ef35c213f93649e
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Mon Dec 17 17:26:25 2018 -0600
+
+    clk: socfpga: stratix10: fix rate calculation for pll clocks
+    
+    The main PLL calculation has a mistake. We should be using the
+    multiplying the VCO frequency, not the parent clock frequency.
+    
+    Fixes: 07afb8db7340 ("clk: socfpga: stratix10: add clock driver for
+    Stratix10 platform")
+    Cc: linux-stable@vger.kernel.org
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 79d37de2fbe0f380d52135e3c572b60856fd9615
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Thu Dec 6 10:01:31 2018 -0600
+
+    clk: socfpga: stratix10: fix naming convention for the fixed-clocks
+    
+    The fixed clocks in the DTS file have a hyphen, but the clock driver has
+    the fixed clocks using underbar. Thus the clock driver cannot detect the
+    other fixed clocks correctly. Change the fixed clock names to a hyphen.
+    
+    Fixes: 07afb8db7340 ("clk: socfpga: stratix10: add clock driver for
+    Stratix10 platform")
+    Cc: linux-stable@vger.kernel.org
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi
+
+commit b67570c09362b6a66df264968e7996e27337456b
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu Jan 10 09:26:49 2019 -0600
+
+    ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option
+    
+    Add CONFIG_BLK_DEV_LOOP and clean up socfpga_defconfig by make
+    savedefconfig.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 0b1a1bcb7a4565834e5df8a639f6a9d56f2eb2f2
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Mon Dec 17 17:26:25 2018 -0600
+
+    clk: socfpga: stratix10: fix rate calculation for pll clocks
+    
+    The main PLL calculation has a mistake. We should be using the
+    multiplying the VCO frequency, not the parent clock frequency.
+    
+    Fixes: 07afb8db7340 ("clk: socfpga: stratix10: add clock driver for
+    Stratix10 platform")
+    Cc: linux-stable@vger.kernel.org
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit ce7e255f3c7bd82d4ea6131f3fbc34548b21526a
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Thu Dec 6 10:01:31 2018 -0600
+
+    clk: socfpga: stratix10: fix naming convention for the fixed-clocks
+    
+    The fixed clocks in the DTS file have a hyphen, but the clock driver has
+    the fixed clocks using underbar. Thus the clock driver cannot detect the
+    other fixed clocks correctly. Change the fixed clock names to a hyphen.
+    
+    Fixes: 07afb8db7340 ("clk: socfpga: stratix10: add clock driver for
+    Stratix10 platform")
+    Cc: linux-stable@vger.kernel.org
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi-rt
+
+commit 709b7dd71859c405ddc6bdd1fa7ce1435294b960
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu Jan 10 09:35:52 2019 -0600
+
+    ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option
+    
+    Add CONFIG_BLK_DEV_LOOP and clean up socfpga_defconfig by make
+    savedefconfig.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit a6055cc917a89266e6454525e90aa3a2b8e6e6e7
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Mon Dec 17 17:26:25 2018 -0600
+
+    clk: socfpga: stratix10: fix rate calculation for pll clocks
+    
+    The main PLL calculation has a mistake. We should be using the
+    multiplying the VCO frequency, not the parent clock frequency.
+    
+    Fixes: 07afb8db7340 ("clk: socfpga: stratix10: add clock driver for
+    Stratix10 platform")
+    Cc: linux-stable@vger.kernel.org
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 7e7f502d929360a2f5558fafa219efb226ecb42a
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Thu Dec 6 10:01:31 2018 -0600
+
+    clk: socfpga: stratix10: fix naming convention for the fixed-clocks
+    
+    The fixed clocks in the DTS file have a hyphen, but the clock driver has
+    the fixed clocks using underbar. Thus the clock driver cannot detect the
+    other fixed clocks correctly. Change the fixed clock names to a hyphen.
+    
+    Fixes: 07afb8db7340 ("clk: socfpga: stratix10: add clock driver for
+    Stratix10 platform")
+    Cc: linux-stable@vger.kernel.org
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 34c785fc7056fe495758f55030673c5fe1850455
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Fri Sep 28 14:31:49 2018 -0500
+
+    arm64: dts: stratix10: add ethernet aliases
+    
+    Add ethernet<n> alias for all gmacs on the devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    ---
+    v2: move ethernet aliases to board file
+    
+    (cherry picked from commit 74cad26d8d156406bca4ec0045f3147de4f6f918)
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 6d1d950cc268f644eaefded09a0825e78aaa9a03
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Mon Dec 24 14:10:09 2018 +0800
+
+    HSD #2205749969: Add fitImage to support S10 secure boot for both U-Boot and kernel
+    
+    FitImage files are added to load Linux kernel image and U-boot
+    image for Stratix10 Secure Boot.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 78d70f512035e3d66e35bf4343c40577e1f6ea48
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Sat Dec 8 15:05:33 2018 +0800
+
+    rsa: read out public_exponent value based on 32-bit alignment
+    
+    Public_exponent is a 64-bit data, which is stored in the device tree
+    blob in a 32-bit alignment address. This causes a problem for ARM64 when
+    public_exponent is read out one shot as a 64-bit data from an unaligned
+    address. Hence, to solve this problem, public_exponent is read out as two
+    32-bit datas, and then concatenating them.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 196dffc632edb075db2c2abafd251a424abad679
+Author: Marek Vasut <marex@denx.de>
+Date:   Thu May 31 17:59:29 2018 +0200
+
+    spl: spi: Support full fitImage handling
+    
+    Handle the case where the full fitImage support is enabled. In this
+    case, the whole fitImage must be loaded up front as some parts of the
+    fitImage code require memory-mapped access to the entire fitImage.
+    
+    Signed-off-by: Marek Vasut <marex@denx.de>
+    Cc: Pantelis Antoniou <pantelis.antoniou@konsulko.com>
+    Cc: Simon Glass <sjg@chromium.org>
+
+commit edfaa7eefc3f56c2c6f45ef4bcbecb4ae5342c93
+Author: Marek Vasut <marex@denx.de>
+Date:   Thu May 31 17:59:19 2018 +0200
+
+    spl: fat: Support full fitImage handling
+    
+    Handle the case where the full fitImage support is enabled. In this
+    case, the whole fitImage must be loaded up front as some parts of the
+    fitImage code require memory-mapped access to the entire fitImage.
+    
+    Signed-off-by: Marek Vasut <marex@denx.de>
+    Cc: Pantelis Antoniou <pantelis.antoniou@konsulko.com>
+    Cc: Simon Glass <sjg@chromium.org>
+
+commit 38a6c51fe0d8cb401ceeb4b3f0c03b31c8f6cc3a
+Author: Marek Vasut <marex@denx.de>
+Date:   Sun May 13 00:23:17 2018 +0200
+
+    spl: Add full fitImage support
+    
+    Add support for loading U-Boot and optionally FDT from a fitImage
+    in SPL by using the full fitImage support from U-Boot. While we do
+    have limited SPL loading support in SPL with a small footprint, it
+    is missing a lot of important features, like checking signatures.
+    This support has all the fitImage features, while the footprint is
+    obviously larger.
+    
+    Signed-off-by: Marek Vasut <marex@denx.de>
+    Cc: Pantelis Antoniou <pantelis.antoniou@konsulko.com>
+    Cc: Simon Glass <sjg@chromium.org>
+    Reviewed-by: Simon Glass <sjg@chromium.org>
+
+commit 57ecf3581465c300f4b8db80915a90b20bb5107b
+Author: Marek Vasut <marex@denx.de>
+Date:   Thu May 31 17:59:07 2018 +0200
+
+    fit: Verify all configuration signatures
+    
+    Rather than verifying configuration signature of the configuration node
+    containing the kernel image types, verify all configuration nodes, even
+    those that do not contain kernel images. This is useful when the nodes
+    contain ie. standalone OSes or U-Boot.
+    
+    Signed-off-by: Marek Vasut <marex@denx.de>
+    Cc: Tom Rini <trini@konsulko.com>
+    Cc: Pantelis Antoniou <pantelis.antoniou@konsulko.com>
+    Cc: Simon Glass <sjg@chromium.org>
+    Reviewed-by: Simon Glass <sjg@chromium.org>
+
+commit 5a1dbc930de34ec3ccae8e13f8000c0467189ed3
+Author: Pantelis Antoniou <pantelis.antoniou@konsulko.com>
+Date:   Mon Sep 4 23:12:15 2017 +0300
+
+    fit: Do not throw away extra configuration on fit_image_load()
+    
+    fit_image_load() threw away the extra configuration parts when
+    loading. We need them around for applying extra overlays for
+    building the boot fdt.
+    
+    Signed-off-by: Pantelis Antoniou <pantelis.antoniou@konsulko.com>
+    Acked-by: Simon Glass <sjg@chromium.org>
+
+commit 0e8bb1ab57746e70b772afaa7f44818fe53c866c
+Author: Marek Vasut <marex@denx.de>
+Date:   Sun May 13 00:22:54 2018 +0200
+
+    fit: Add standalone image type handling
+    
+    Just add IH_TYPE_STANDALONE to fit_get_image_type_property().
+    
+    Signed-off-by: Marek Vasut <marex@denx.de>
+    Cc: Pantelis Antoniou <pantelis.antoniou@konsulko.com>
+    Cc: Simon Glass <sjg@chromium.org>
+    Reviewed-by: Simon Glass <sjg@chromium.org>
+
+commit dbc269c502f5daba58e08e8151a106e1b51a2268
+Author: Marek Vasut <marex@denx.de>
+Date:   Sun May 13 00:22:53 2018 +0200
+
+    fit: Add empty fit_print_contents() and fit_image_print()
+    
+    These functions may be needed in SPL, so add empty variants of them
+    if CONFIG_SPL_FIT_PRINT is disabled.
+    
+    Signed-off-by: Marek Vasut <marex@denx.de>
+    Cc: Pantelis Antoniou <pantelis.antoniou@konsulko.com>
+    Cc: Simon Glass <sjg@chromium.org>
+    Reviewed-by: Simon Glass <sjg@chromium.org>
+
+commit c60c6a09dd4d2a966057c8a0e468b30ee45c1f32
+Author: Marek Vasut <marex@denx.de>
+Date:   Sun May 13 00:22:52 2018 +0200
+
+    fit: Fix CONFIG_FIT_SPL_PRINT
+    
+    Rename CONFIG_FIT_SPL_PRINT to CONFIG_SPL_FIT_PRINT and add Kconfig
+    entry for it.
+    
+    Signed-off-by: Marek Vasut <marex@denx.de>
+    Cc: Pantelis Antoniou <pantelis.antoniou@konsulko.com>
+    Cc: Simon Glass <sjg@chromium.org>
+    Reviewed-by: Simon Glass <sjg@chromium.org>
+
+commit b0fabdec7e2b955bf001a50b9d75a8a5d3d3075b
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed Dec 19 10:34:31 2018 +0800
+
+    FogBugz #560316-1: Adding Freeze Bridge for PR console support
+    
+    Adding Partial Reconfiguration (pr) command at U-Boot console. The pr
+    command will control the Freeze Controller which will freeze
+    and unfreeze the Partial Reconfiguration region. The pr command also
+    support multiple Partial Reconfiguration region by specifying the
+    region ID.
+    
+    Here are the example of expected steps for partial reconfiguration
+    $ bridge enable
+    $ fatload mmc 0:1 100 pr_bitstream.rbf
+    $ pr start 0
+    $ fpga load 0 100 $filesize
+    $ pr end 0
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+    ---
+    Changes for v4 & v5
+    - To enhance the commit message
+    Changes for v3
+    - Using Intel instead Altera as label
+    - Fixing static code analysis issue
+    - Using defines for timeout
+    Changes for v2
+    - Creating common function for getting freeze_br controller address
+    - Adding argument for pr to specify the freeze region number
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2018.06-yocto2.5
+
+commit e1a34a2bc7f347be89754a3ecf4257872f1683dd
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Wed Dec 19 16:11:00 2018 +0800
+
+    Update 4.14.73-ltsi to commit ID 2bcc025
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+

@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# This script assumes linux-infra cloned at a specific absolute path
+# This helps ensure that these scripts will not run any place other
+# than the main git server
+
+do_kickoff()
+{
+    local oldrev=$(git rev-parse $1)
+    local newrev=$(git rev-parse $2)
+    local refname=$3
+
+    local repo="$(pwd | sed 's,/usr/local/git/repositories/,,' | sed 's,.git,,')"
+    local newrev_type=$(git cat-file -t $newrev 2> /dev/null)
+
+    # Kick off an automated build if we *create* a *un-annotated tag*
+    KICKOFF=/usr/local/git/linux-infra/hooks/kickoff
+    if [ ! -e "$KICKOFF" ]; then
+	return
+    fi
+
+    if [ "$newrev" != '0000000000000000000000000000000000000000' ]; then
+	case "$refname","$newrev_type" in
+	    refs/tags/*,commit) $KICKOFF $repo $newrev $refname ;;
+	esac
+    fi
+}
+
+do_post_receive_email()
+{
+    PREMAIL=/usr/local/git/linux-infra/hooks/post-receive-email
+    if [ -e "$PREMAIL" ]; then
+	echo $1 $2 $3 | $PREMAIL
+    fi
+}
+
+#=====================================================================
+while read oldrev newrev refname
+do
+    do_kickoff $oldrev $newrev $refname
+    do_post_receive_email $oldrev $newrev $refname
+done

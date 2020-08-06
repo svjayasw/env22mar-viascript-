@@ -1,0 +1,240 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.2
+branch tag  : rel_socfpga-4.2_15.10.02_rc1
+Pushing new branch to external git
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.10.02_rc1
+new commits : 4
+6b67245 Paul Zimmerman usb: dwc2: fix thinko in dwc2_hc_set_even_odd_frame()
+ff3bf02 Matthijs Kooijman usb: dwc2: use dwc2_hcd_get_frame_number where possible
+09232c8 Chee Nouk Phoon FogBugz #323787-2: Nios2: defconfig: Max10: Add ADC and 16550 UART
+7ac4af7 Chee Nouk Phoon FogBugz #323787-1: Nios2: dts: Max10: Add Altera Modular ADC and 16550 UART
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.10.02_rc1
+new commits : 2
+60a76aa Paul Zimmerman usb: dwc2: fix thinko in dwc2_hc_set_even_odd_frame()
+0a3e6a6 Matthijs Kooijman usb: dwc2: use dwc2_hcd_get_frame_number where possible
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.2_15.10.02_rc1
+commit: 913bfbe Dinh Nguyen FogBugz #323286: fix up ecc for v4.2
+
+tag:    rel_socfpga-3.10-ltsi_15.10.02_rc1
+commit: 6b67245 Paul Zimmerman usb: dwc2: fix thinko in dwc2_hc_set_even_odd_frame()
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.10.02_rc1
+commit: 60a76aa Paul Zimmerman usb: dwc2: fix thinko in dwc2_hc_set_even_odd_frame()
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.10.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.10.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.10.02_rc1
+commit: 4003f38 Chin Liang See FogBugz #297183: Enabling ECC overwrite when SDRAM ECC is enabled
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.10.02_rc1
+commit: 32d4ff1 Chin Liang See FogBugz #318995: Enable L2 cache prefetch
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.10.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.10.02_rc1
+commit: 28881bd Tien Hock Loh FogBugz #323201: Update branch of meta-altera
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.10.02_rc1
+new commits : 2
+95a0cf6 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+2cccf8e Tien Hock Loh FogBugz #323810: Update u-boot recipe to use github
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.10.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.10.02_rc1
+commit: 95a0cf6 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.10.02_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.2
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 6b67245b33cc350ac8f1b27f4d44d27f8955b129
+Author: Paul Zimmerman <paulz@synopsys.com>
+Date:   Tue Sep 29 15:56:46 2015 -0500
+
+    usb: dwc2: fix thinko in dwc2_hc_set_even_odd_frame()
+    
+    I screwed up the sense of this if() statement while porting our
+    vendor driver to create the dwc2 driver. This caused frame overrun
+    errors on periodic transfers when there were other transfers
+    active in the same (micro)frame.
+    
+    With this fix, the dwc2 driver now works on the Raspberry Pi
+    platform even with the USB Ethernet controller enabled, where
+    before that would cause all USB devices to stop working.
+    
+    Thanks to Ray Jui and Jerry Lin at Broadcom for tracking this down.
+    
+    Reported-by: Ray Jui <rjui@broadcom.com>
+    Signed-off-by: Paul Zimmerman <paulz@synopsys.com>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit ff3bf02f932255234e9fdb7a9bdea8718d143981
+Author: Matthijs Kooijman <matthijs@stdin.nl>
+Date:   Tue Sep 29 18:50:08 2015 -0500
+
+    usb: dwc2: use dwc2_hcd_get_frame_number where possible
+    
+    Before, there were two places that manually read the FRNUM registers,
+    while there is a function to do this.
+    
+    Signed-off-by: Matthijs Kooijman <matthijs@stdin.nl>
+    Acked-by: Paul Zimmerman <paulz@synopsys.com>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 09232c8fab32b3f3321727daf3cc292ec45115ce
+Author: Chee Nouk Phoon <cnphoon@altera.com>
+Date:   Fri Sep 18 14:58:40 2015 +0800
+
+    FogBugz #323787-2: Nios2: defconfig: Max10: Add ADC and 16550 UART
+    
+    Update defconfig based on new Max10 reference design.
+    Updated reference designs includes addition of Altera Modular ADC and
+    replacing Altera UART with 16550 compatible UART
+    
+    Signed-off-by: Chee Nouk Phoon <cnphoon@altera.com>
+
+commit 7ac4af74fd50904e789cb5bb9b3406e3c1b28dde
+Author: Chee Nouk Phoon <cnphoon@altera.com>
+Date:   Fri Sep 18 17:05:17 2015 +0800
+
+    FogBugz #323787-1: Nios2: dts: Max10: Add Altera Modular ADC and 16550 UART
+    
+    Update device tree based on new Max10 reference design.
+    Updated reference designs includes addition of Altera Modular ADC and
+    replacing Altera UART with 16550 compatible UART
+    
+    Signed-off-by: Chee Nouk Phoon <cnphoon@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 60a76aa2263ad809131c39181cc2c97c2949ecad
+Author: Paul Zimmerman <paulz@synopsys.com>
+Date:   Tue Sep 29 15:56:46 2015 -0500
+
+    usb: dwc2: fix thinko in dwc2_hc_set_even_odd_frame()
+    
+    I screwed up the sense of this if() statement while porting our
+    vendor driver to create the dwc2 driver. This caused frame overrun
+    errors on periodic transfers when there were other transfers
+    active in the same (micro)frame.
+    
+    With this fix, the dwc2 driver now works on the Raspberry Pi
+    platform even with the USB Ethernet controller enabled, where
+    before that would cause all USB devices to stop working.
+    
+    Thanks to Ray Jui and Jerry Lin at Broadcom for tracking this down.
+    
+    Reported-by: Ray Jui <rjui@broadcom.com>
+    Signed-off-by: Paul Zimmerman <paulz@synopsys.com>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 0a3e6a63a747705328ab0d56a73f1eaedfc40573
+Author: Matthijs Kooijman <matthijs@stdin.nl>
+Date:   Tue Sep 29 18:50:08 2015 -0500
+
+    usb: dwc2: use dwc2_hcd_get_frame_number where possible
+    
+    Before, there were two places that manually read the FRNUM registers,
+    while there is a function to do this.
+    
+    Signed-off-by: Matthijs Kooijman <matthijs@stdin.nl>
+    Acked-by: Paul Zimmerman <paulz@synopsys.com>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7
+
+commit 95a0cf69a25b4a4e448150983896d564e6446b11
+Author: Tien Hock Loh <thloh@pg-ice-nx16.altera.com>
+Date:   Thu Aug 27 17:35:08 2015 +0800
+
+    FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+    
+    This is to add a new recipe for GSRD that allows QSPI boot. Since QSPI only
+    have the size of 100M for RFS, the size of the RFS will need to be small.
+    Existing RFS size is too big, thus we create a minimal RFS for QSPI boot.
+    
+    Signed-off-by: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+
+commit 2cccf8e38cabd4f987a0d88d6d4e6947f33f2021
+Author: Tien Hock Loh <thloh@pg-ice-nx17.altera.com>
+Date:   Fri Sep 11 19:04:00 2015 +0800
+
+    FogBugz #323810: Update u-boot recipe to use github
+    
+    We have moved to use github from git.rocketboards.org.
+    This is to update u-boot recipe to use github instead of git.rocketboards.org
+    
+    Signed-off-by: Tien Hock Loh <thloh@pg-ice-nx17.altera.com>
+
+-----------------------------------------------------------------------
+

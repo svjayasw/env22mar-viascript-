@@ -1,0 +1,52 @@
+
+Quick portal update to fix an A10 boot issue.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.09.02_pr
+new commits : 1
+4324962 Richard Gong FogBugz #593535: stmmac: resolve smc related boot crash for ARMv7
+
+
+++wiki:
+*Branch name*: socfpga-4.9.78-ltsi, *Tag name:* rel_socfpga-4.9.78-ltsi_18.09.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 593535 | stmmac: resolve smc related boot crash for ARMv7 | [[ https://github.com/altera-opensource/linux-socfpga/commit/432496214602b063d6f5606c89513a4ca361bee4 ][ 432496214602b063d6f5606c89513a4ca361bee4 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.9.78-ltsi_18.09.02_pr
+commit: 4324962 Richard Gong FogBugz #593535: stmmac: resolve smc related boot crash for ARMv7
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+commit 432496214602b063d6f5606c89513a4ca361bee4
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Mon Sep 10 11:05:12 2018 -0500
+
+    FogBugz #593535: stmmac: resolve smc related boot crash for ARMv7
+    
+    Fix previous commit e8c95776cfce ("FogBugz #577927: stmmac: Add SMC
+    support for EMAC System Manager register")
+    
+    The #ifdefs that check for SMC are insufficient, since currently only
+    Stratix10 has the trusted firmware that services these specific SMC calls.
+    Other ARMv7 platforms will crash at the first arm_smccc_smc() call. Fix
+    this by adding one additional check to allow the kernel boot properly on
+    other ARMv7 platforms.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+-----------------------------------------------------------------------
+

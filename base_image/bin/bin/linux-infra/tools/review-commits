@@ -1,0 +1,355 @@
+#!/usr/bin/env python
+#
+# Submit a linux patch for review on Crucible
+# Copyright 2012 Altera Corp
+# Written by Alan Tull
+#
+# TODO add cc to add reviewers like s/signed-off-by:/cc:/
+# TODO don't require whole group to sign off on review
+
+import os
+import sys
+import re
+import getpass
+import subprocess
+import argparse
+import signal
+import shutil
+import textwrap
+import linecache
+import smtplib
+from email.mime.text import MIMEText
+from subprocess import Popen, PIPE
+
+# Local libraries
+import crucible
+from git_utils import *
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'hooks'))
+from HooksUtils import *
+from TestCommits import *
+
+default_crucible_url = 'https://pg-rdcrucible.altera.com:8080'
+
+#=======================================================================================
+
+def signal_handler(signal, frame):
+        print 'You pressed Ctrl+C!'
+        exit(0)
+
+def send_review_email(git, commit, commit_num, num_commits, gcomment=None, verbose=False):
+
+    # IMPORTANT NOTE: not using 'git send-email'.  Because we have to hack git send-email to 
+    # make it work with our server.
+
+    smtp_server = 'sj-mail01.altera.com'
+
+    auth_email = git.author_email(commit.hash)
+    review_addrs = get_repo_setting(repo_name, 'review_addrs')
+#    review_addrs = [ 'atull@altera.com' ]
+
+    if review_addrs == []:
+        print
+        print 'This repo (%s) does not have review_addrs set up in repo_settings' % repo_name
+        print 'so I do not know who to send the review email to.'
+        print
+        print 'Please send an email to Alan Tull and Todd Riffel telling us what repository you'
+        print 'were reviewing and what mailing list/email address to send review to.'
+        return
+
+    # Create email message containing:
+    #  * patch (using -C option to show file renames instead of lots of - and + lines)
+    #  * note about what linux-infra version was used (gcomment)
+    patch, rc = git.git_cmd_with_status('format-patch', '-1', '-C', '--stdout', commit.hash)
+    msg = MIMEText("Review repository: " + repo_name + "\n\n" + patch + "\n=====================\n" + gcomment)
+
+    subject = commit.subject
+    header = commit.header()
+
+    commit_num = commit_num + 1
+    if num_commits == 1:
+        patch_msg = '[PATCH%s]' % patch_rev
+    else:
+        patch_msg = '[PATCH%s %d/%d] ' % (patch_rev, commit_num, num_commits)
+
+    msg['Subject'] = patch_msg + subject
+    msg['From'] = auth_email
+    COMMASPACE = ', '
+    msg['To'] = COMMASPACE.join(review_addrs)
+
+    print 'Email subject: %s' % msg['Subject']
+
+    p = Popen(["/usr/sbin/sendmail", "-t"], stdin=PIPE)
+    p.communicate(msg.as_string())
+
+    print 'Success (posted as email)...'
+
+def get_infra_version():
+    saved_path = os.getcwd()
+    infra_path = get_infra_path()
+    os.chdir(infra_path)
+
+    git = git_utils(verbose)
+    if not git.in_repo():
+        print "It appears that you are running review-commits without having cloned linux-infra."
+        print "This is not allowed because we want to be able to keep review-commits up to date."
+        exit(1)
+
+    linux_version = git.log('-1', '--pretty=format:"%h %cd %an %s"')
+
+    os.chdir(saved_path)
+    return "This review created by linux-infra scripts version:\n" + linux_version
+
+#=================================================================================================
+# Initialization
+
+signal.signal(signal.SIGINT, signal_handler)
+
+dry_run = False
+verbose = False
+do_fetch = True
+tmp_path = None
+post_crucible = False
+post_email = False
+patch_rev = ''
+commits = []
+
+infra_version_msg = 'review-commits called as:\n'
+infra_version_msg += str(sys.argv) + '\n\n'
+infra_version_msg += get_infra_version()
+
+script_name = os.path.basename(sys.argv[0])
+repo_toplevel = None
+
+repo = Repo(os.getcwd())
+
+git = repo.git
+if not git.in_repo():
+    print '--------------------------------------------------------'
+    print 'Error: current working directory is not a git repository'
+    print '       Please cd to your git tree and try again'
+    print '--------------------------------------------------------'
+    exit(1)
+
+branch = git.branch_name()
+remote = git.remote_for_branch(branch)
+if not remote:
+    git.remote_help(branch)
+    exit(1)
+
+repo_name = repo.repo_name
+if not repo_name:
+    print "couldn't get repo name"
+    exit(1)
+
+#============================================================================================
+# Parse command line arguments
+
+parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
+                                 description="Start a Crucible review of commits in a local git repository.",
+                                 epilog=textwrap.dedent('''\
+This script will run some coding standards tests on commits that are in your local git
+repository.  If it passes the tests, it will start a review in Crucible.  You only need
+to specify your user name if your local host has a different user name from Crucible.
+
+Examples:
+    %(prog)s
+       Review the top commit on the git branch that is currently checked out.
+
+    %(prog)s -2 --email
+       Review the top two commits and post the reviews as email.
+
+    %(prog)s -2 HEAD^^^ --crucible
+       Review the two commits that are at HEAD^^^ and HEAD^^ and post the reviews to crucible.
+
+Commit standards:
+  The main idea is to conform to community standards.  Plus we want FogBugz # or HSD # for all commits.
+  For the Linux kernel, see linux/Documentation/CodingStyle
+  * The commit must have an issue number like "FogBugz #123456" or "HSD #123456" in subject line.
+  * The header of the commit must have:
+     1. A subject line this is reasonably brief.
+     2. One blank line.
+     3. A description.
+     4. One blank line.
+     5. The author signoff line.  Other signoffs, cc's, and acked-by lines may follow.
+  * The commit must not have any checkpatch.pl warnings or errors.
+
+Note that you can use the '-s' paramater of 'git commit' to add the signoff line.
+
+Crucible username is set one of 3 ways:
+ * default is your Linux user name
+ * From CRUCIBLE_USER environmental variable if it is set
+ * Override is the -u USER option
+
+To report issues with this script:
+    Re-run the script with the -v option.  Capture the command you ran and the script
+    output in a file and email it to Alan Tull and Todd Riffel.
+'''))
+
+parser.add_argument("--crucible", action="store_true", help="post review in Crucible")
+parser.add_argument("--email", action="store_true", help="post review as email")
+parser.add_argument("-r", dest="rev", help="patch version: [num]")
+
+parser.add_argument("--dry-run", action="store_true", help="run patch tests but do not create review")
+parser.add_argument("--skip-fetch", action="store_true", help="skip fetching from git. implies '--dry-run'")
+parser.add_argument("--upstream", action="store_true", help="patch is destined for upstream")
+parser.add_argument("-u", dest="user", default=None, help="crucible username")
+parser.add_argument(dest="git", metavar='git_args', nargs='*', action='append', help="git params: [num] [commit]")
+parser.add_argument("--url", default=default_crucible_url, help="crucible url (default: %s)" % default_crucible_url)
+
+parser.add_argument("-v", "--verbose", action="store_true", help="turn on debug messages")
+args = parser.parse_args()
+
+if args.user != None:
+    username = args.user
+else:
+    try:
+        username = os.environ['CRUCIBLE_USER']
+    except:
+        username = getpass.getuser()
+
+if args.crucible and args.email:
+    print 'Do not specify both --crucible and --email.'
+    exit(1)
+
+if (args.crucible or args.email) and (args.dry_run or args.skip_fetch):
+    print '--crucible and --email are incompatible with --dry-run and --skip-fetch'
+    exit(1)
+
+if args.crucible:
+    post_crucible = True
+
+if args.email:
+    post_email = True
+
+if args.dry_run or args.skip_fetch:
+    dry_run = True
+
+if args.upstream:
+    do_fetch = False
+
+if args.rev:
+    patch_rev = 'v' + args.rev
+
+if args.skip_fetch:
+    do_fetch = False
+
+if args.verbose:
+    verbose = True
+    print args
+
+repo_toplevel = git.toplevel()
+num_commits = 1
+arg_rev = 'HEAD'
+if args.git and (len(args.git[0]) > 0):
+    git_args = args.git[0]
+    if len(git_args) == 1:
+        if re.match(".*\.(patch|diff)", git_args[0]):
+            print "error: this script only reviews commits in git"
+            exit(1)
+
+        if re.match("-?[1-9]*[0-9]", git_args[0]):
+            num_commits = abs(int(git_args[0]))
+        else:
+            arg_rev = git_args[0]
+
+    if len(git_args) == 2:
+        num_commits = abs(int(git_args[0]))
+        arg_rev = git_args[1]
+        
+    if len(git_args) > 2:
+        print "error: %s only takes 2 git args max [num] [commit]." % script_name
+        exit(1)
+
+#=================================================================================================
+if do_fetch:
+    print "Fetching the latest from git:"
+    try:
+        git_msg = git.fetch(remote)
+    except:
+        print 'Git error when doing \'git fetch %s\'' % remote
+        exit(1)
+
+    if not git.up_to_date():
+        exit(1)
+
+# Create list of commits we will review:
+for rev_ctr in range(num_commits, 0, -1):
+    if rev_ctr > 1:
+        rev = arg_rev + '~' + str(rev_ctr-1)
+    else:
+        rev = arg_rev
+    sha = git.rev_to_hash(rev)
+    if not sha:
+        print "Revision (%s) doesn't exist in this git repository. Has this been committed?" % arg_rev
+    commits.append(Commit(repo, sha))
+
+if verbose:
+    print "git args: num : %d  rev : %s" % (num_commits, arg_rev)
+
+print "Repo name    :", repo_name
+
+# For reviews, we run the update_tests set up for the 'local_upstream' repo.
+# The local upstream is the repo where the code will eventually end up (on our git server).
+local_upstream = get_first_repo_setting(repo_name, 'local_upstream', default=repo_name)
+
+crucible_project = get_first_repo_setting(local_upstream, 'crucible_project')
+if verbose:
+    print 'crucible_project:', crucible_project
+
+if crucible_project == '':
+    print \
+'''repo_settings does not specify a crucible project.  Probably we aren't doing code
+reviews for this remote git repository.  Maybe this branch is based on a bringup
+repository?'''
+    exit(1)
+
+print
+print "Commits to review:"
+for commit in commits:
+    print "%s %s" % (commit.shorthash, commit.subject)
+
+status = test_status()
+
+print
+test_commits(commits, local_upstream, status)
+
+if not status.is_good() and not args.upstream:
+    print
+    print 'Please fix the above issues and submit again.'
+    exit(1)
+    
+if not post_crucible and not post_email:
+    print
+    if status.is_good():
+        print 'So far so good.'
+    print 'Now if you want to post this review, please run review-commits'
+    print 'again with either --email or --crucible'
+    exit(0)
+
+if post_crucible:
+    print
+    print "User       : ", username
+    password = getpass.getpass("Enter Crucible password : ")
+
+for commit in commits:
+    commit_num = commits.index(commit)
+
+    if post_crucible:
+        try:
+            crucible.create_review(git, commit, commit_num, num_commits,
+                                   username, password, project=crucible_project,
+				   crucible_url=args.url,
+                                   gcomment=infra_version_msg, verbose=verbose)
+        except:
+            print 'Crucible had an error...exiting.'
+            exit(1)
+
+    if post_email:
+        try:
+            send_review_email(git, commit, commit_num, num_commits,
+                              gcomment=infra_version_msg, verbose=verbose)
+        except:
+            print 'Error sending email...exiting.'
+            exit(1)
+
+exit(0)

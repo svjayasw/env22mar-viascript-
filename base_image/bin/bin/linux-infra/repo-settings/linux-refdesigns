@@ -1,0 +1,13 @@
+repo_path: /usr/local/git/repositories/linux-refdesigns.git
+update_tests: nomerge
+email:
+sync-job:
+local_upstream:
+crucible_project: linux-refdesigns
+internal_git: gitolite@at-git:linux-refdesigns.git
+external_git:
+upstream_branches:
+release_branch:
+upstream_tag_regex:
+review_addrs: todd.riffel@intel.com dinh.nguyen@intel.com matthew.gerlach@intel.com ley.foon.tan@intel.com chin.liang.see@intel.com christopher.chun.yee.tan@intel.com tien.hock.loh@intel.com
+

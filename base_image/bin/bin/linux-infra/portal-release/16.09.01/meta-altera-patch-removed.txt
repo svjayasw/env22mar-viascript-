@@ -1,0 +1,45 @@
+From atull@opensource.altera.com Wed Sep  7 10:57:16 2016
+Date: Wed, 7 Sep 2016 10:57:01 -0500 (CDT)
+From: atull <atull@opensource.altera.com>
+To: atull@altera.com
+Subject: oob patch
+
+
+I have removed the following tag and commit from our github repo.  Appologies
+if this breaks your build.
+
+The code contained in this commit looks OK and is about to be accepted
+upstream (that's where it came from) but it was missing the author's
+signoff line.  So it's being removed essentially for licensing reasons
+rather than code issues.  Documentation pointing to the external patch
+will be added to our portal for the benefit of customers needing this
+functionality.
+
+This commit was at the top of the github branch, so I was able
+to just move the branch head back one commit.
+
+I rebased to remove it from our at-git git branch.
+------------------------------------------------------------
+repo:   meta-altera
+branch: angstrom-v2014.12-yocto1.7
+tags:   rel_angstrom-v2014.12-yocto1.7_16.08.02_pr
+        rel_angstrom-v2014.12-yocto1.7_16.09.01_pr
+
+commit f6d8e6cc10a454e3ff0242d06cb1ccf4bd3af8fc
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Jul 1 12:39:33 2016 -0500
+
+    FogBugz #381598: Add large OOB patch to mtd-utils to support new NAND 
+chips.
+    
+    This patch adds a bbappend file to the meta-altera layer so that
+    the mtd-utils will support large OOB sizes on the newer NAND chips.
+    The patch was obtained from online mailing lists, and is not
+    part of the upstream mtd-utils.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+    ---
+    V2: Add link to origin of patch in recipe bbappend file
+
+
+Alan

@@ -1,0 +1,29 @@
+#!/bin/bash
+
+function error()
+{
+    echo "error - do not want to delete : $1"
+    exit
+}
+
+cd ~/repos/portal/linux-socfpga
+
+branches="$(git branch -r  | grep -v master | cut -d'/' -f2 | egrep -v '(socfpga-4.15|socfpga-4.9.76-ltsi-rt|socfpga-4.9.78-ltsi)')"
+
+for br in $branches; do
+    case ${br} in
+	socfpga-4.15 ) error $br ;;
+	socfpga-4.9.76-ltsi-rt ) error $br ;;
+	socfpga-4.9.78-ltsi ) error $br ;;
+	master ) error $br ;;
+    esac
+    echo "to-delete:${br}:$(git describe origin/${br})"
+    echo "git push origin :refs/heads/${br}"
+    git push origin :refs/heads/${br}
+    echo "status=$?"
+    echo
+done
+
+
+#echo Done
+exit

@@ -1,0 +1,603 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.19
+branch tag  : rel_socfpga-4.19_19.04.01_pr
+new commits : 0
+
+
+branch      : socfpga-4.20
+branch tag  : rel_socfpga-4.20_19.04.01_pr
+new commits : 4
+2d95147 Ley Foon Tan HSD #1506998530: arm64: defconfig: Enable PCIE_ALTERA driver
+f731bf9 Ley Foon Tan PCI: altera: Enable driver on ARM64
+a6ef397 Ley Foon Tan PCI: altera: Add Stratix 10 PCIe support
+dc7baa0 Ley Foon Tan dt-bindings: PCI: altera: Add altr,pcie-root-port-2.0
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.20 *Tag name:* rel_socfpga-4.20_19.04.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| HSD #1506998530 | arm64: defconfig: Enable PCIE_ALTERA driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/2d951479ddbd0d5bb4670f606b53b1039cd66d44 ][ 2d951479ddbd0d5bb4670f606b53b1039cd66d44 ]] |
+| community | PCI: altera: Enable driver on ARM64 | [[ https://github.com/altera-opensource/linux-socfpga/commit/f731bf9fd184a70007b43066d96cfb778a33347b ][ f731bf9fd184a70007b43066d96cfb778a33347b ]] |
+| community | PCI: altera: Add Stratix 10 PCIe support | [[ https://github.com/altera-opensource/linux-socfpga/commit/a6ef397e10ed9a56880fc492fb8fdeb68839e59c ][ a6ef397e10ed9a56880fc492fb8fdeb68839e59c ]] |
+| community | dt-bindings: PCI: altera: Add altr,pcie-root-port-2.0 | [[ https://github.com/altera-opensource/linux-socfpga/commit/dc7baa03f204ba55e313435bddf9fb2d9dedbdbc ][ dc7baa03f204ba55e313435bddf9fb2d9dedbdbc ]] |
+--wiki:
+
+
+branch      : socfpga-4.14.73-ltsi
+branch tag  : rel_socfpga-4.14.73-ltsi_19.04.01_pr
+new commits : 5
+3286950 Ley Foon Tan HSD #1506998530: arm64: defconfig: Enable PCIE_ALTERA driver
+6106804 Dinh Nguyen arm64: dts: add the sysmgr-syscon property from the gmac's
+d602af3 Ley Foon Tan PCI: altera: Enable driver on ARM64
+df4ddd5 Ley Foon Tan PCI: altera: Add Stratix 10 PCIe support
+8984518 Ley Foon Tan dt-bindings: PCI: altera: Add altr,pcie-root-port-2.0
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.14.73-ltsi *Tag name:* rel_socfpga-4.14.73-ltsi_19.04.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| HSD #1506998530 | arm64: defconfig: Enable PCIE_ALTERA driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/3286950e98c92d8594145d8b96a06cbc9700e1d6 ][ 3286950e98c92d8594145d8b96a06cbc9700e1d6 ]] |
+| community | arm64: dts: add the sysmgr-syscon property from the gmac's | [[ https://github.com/altera-opensource/linux-socfpga/commit/61068049c18fe8d220828149581e37e872fb881c ][ 61068049c18fe8d220828149581e37e872fb881c ]] |
+| community | PCI: altera: Enable driver on ARM64 | [[ https://github.com/altera-opensource/linux-socfpga/commit/d602af3402f4cf05de4fb2bed3daccde0d063859 ][ d602af3402f4cf05de4fb2bed3daccde0d063859 ]] |
+| community | PCI: altera: Add Stratix 10 PCIe support | [[ https://github.com/altera-opensource/linux-socfpga/commit/df4ddd5c6c28e8dba9e8e9462a9dbfb9a8582938 ][ df4ddd5c6c28e8dba9e8e9462a9dbfb9a8582938 ]] |
+| community | dt-bindings: PCI: altera: Add altr,pcie-root-port-2.0 | [[ https://github.com/altera-opensource/linux-socfpga/commit/89845180fdc84e3d8c0dd40cfdf32ddcde575d25 ][ 89845180fdc84e3d8c0dd40cfdf32ddcde575d25 ]] |
+--wiki:
+
+
+branch      : socfpga-4.14.73-ltsi-rt
+branch tag  : rel_socfpga-4.14.73-ltsi-rt_19.04.01_pr
+new commits : 5
+a994782 Ley Foon Tan HSD #1506998530: arm64: defconfig: Enable PCIE_ALTERA driver
+6c9d291 Dinh Nguyen arm64: dts: add the sysmgr-syscon property from the gmac's
+bb5060a Ley Foon Tan PCI: altera: Enable driver on ARM64
+70a4643 Ley Foon Tan PCI: altera: Add Stratix 10 PCIe support
+7db765d Ley Foon Tan dt-bindings: PCI: altera: Add altr,pcie-root-port-2.0
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.14.73-ltsi-rt *Tag name:* rel_socfpga-4.14.73-ltsi-rt_19.04.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| HSD #1506998530 | arm64: defconfig: Enable PCIE_ALTERA driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/a99478259b45a2bc93107d5918a4e3442a208e3a ][ a99478259b45a2bc93107d5918a4e3442a208e3a ]] |
+| community | arm64: dts: add the sysmgr-syscon property from the gmac's | [[ https://github.com/altera-opensource/linux-socfpga/commit/6c9d291c88329a643254d46c06b5613ff7ba3ecf ][ 6c9d291c88329a643254d46c06b5613ff7ba3ecf ]] |
+| community | PCI: altera: Enable driver on ARM64 | [[ https://github.com/altera-opensource/linux-socfpga/commit/bb5060a37979d513f1d86400cbe96bf539b63047 ][ bb5060a37979d513f1d86400cbe96bf539b63047 ]] |
+| community | PCI: altera: Add Stratix 10 PCIe support | [[ https://github.com/altera-opensource/linux-socfpga/commit/70a464377867ae5a6519f8bb7f2ff12532909f96 ][ 70a464377867ae5a6519f8bb7f2ff12532909f96 ]] |
+| community | dt-bindings: PCI: altera: Add altr,pcie-root-port-2.0 | [[ https://github.com/altera-opensource/linux-socfpga/commit/7db765df29c0f07f7a7c3669665f2277c0f4473e ][ 7db765df29c0f07f7a7c3669665f2277c0f4473e ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.19_19.04.01_pr
+commit: e3b47dd Dinh Nguyen ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option
+
+tag:    rel_socfpga-4.20_19.04.01_pr
+commit: 2d95147 Ley Foon Tan HSD #1506998530: arm64: defconfig: Enable PCIE_ALTERA driver
+
+tag:    rel_socfpga-4.14.73-ltsi_19.04.01_pr
+commit: 3286950 Ley Foon Tan HSD #1506998530: arm64: defconfig: Enable PCIE_ALTERA driver
+
+tag:    rel_socfpga-4.14.73-ltsi-rt_19.04.01_pr
+commit: a994782 Ley Foon Tan HSD #1506998530: arm64: defconfig: Enable PCIE_ALTERA driver
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.04.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.04.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.04.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_19.04.01_pr
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.04.01_pr
+commit: af568f3 Tien Fong Chee FogBugz #604090-2: Enable FPGA manager HPS JTAG driver implementation
+
+tag:    rel_socfpga_v2017.09_19.04.01_pr
+commit: d593fae Chin Liang See HSD #1408570475: Fix RSU status SMC call to return correct error code
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.04.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_19.04.01_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.04.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.04.01_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.04.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_19.04.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.04.01_pr
+new commits : 1
+1538136 Ong, Hean Loong Update kernel 4.14.73-ltsi to commit 3286950
+
+
+++wiki:
+*Repo name*: meta-altera *Branch name*: angstrom-v2018.06-yocto2.5 *Tag name:* rel_angstrom-v2018.06-yocto2.5_19.04.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Update kernel 4.14.73-ltsi to commit 3286950 | [[ https://github.com/altera-opensource/meta-altera/commit/153813676b1707b45d61617803229f069f270970 ][ 153813676b1707b45d61617803229f069f270970 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.04.01_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_19.04.01_pr
+commit: 3a47b14 Ong, Hean Loong update 4.9.78-ltsi to commit ID 5704788
+
+tag:    rel_angstrom-v2018.06-yocto2.5_19.04.01_pr
+commit: 1538136 Ong, Hean Loong Update kernel 4.14.73-ltsi to commit 3286950
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.04.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_19.04.01_pr
+commit: 0a0715f David Koltak FogBugz #592404-4: Add raw slot data commands to example
+
+
+-----------------------------------------------------------------------
+
+repository: arm-trusted-firmware
+
+branch      : socfpga_v1.4
+branch tag  : rel_socfpga_v1.4_19.04.01_pr
+new commits : 4
+fd4f92c Loh Tien Hock libc: armclang: Implement compiler printf symbols
+fc118af dp-arm build: Introduce ARM Compiler 6 support
+76f6648 dp-arm build: Introduce clang support
+deee681 Loh, Tien Hock intel: Scrub memory to prevent ECC error
+
+
+++wiki:
+*Repo name*: arm-trusted-firmware *Branch name*: socfpga_v1.4 *Tag name:* rel_socfpga_v1.4_19.04.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | libc: armclang: Implement compiler printf symbols | [[ https://github.com/altera-opensource/arm-trusted-firmware/commit/fd4f92cf86c468eae51356439e44fc95d1ad8dac ][ fd4f92cf86c468eae51356439e44fc95d1ad8dac ]] |
+| community | build: Introduce ARM Compiler 6 support | [[ https://github.com/altera-opensource/arm-trusted-firmware/commit/fc118af2542d8dfe8dd56ac5480e4b4a2f7bc8d6 ][ fc118af2542d8dfe8dd56ac5480e4b4a2f7bc8d6 ]] |
+| community | build: Introduce clang support | [[ https://github.com/altera-opensource/arm-trusted-firmware/commit/76f66486837a4ca9da9d74d44b7cc6af8bc59dbe ][ 76f66486837a4ca9da9d74d44b7cc6af8bc59dbe ]] |
+| community | intel: Scrub memory to prevent ECC error | [[ https://github.com/altera-opensource/arm-trusted-firmware/commit/deee681356803286a0b915a7eb8208b3ebea855c ][ deee681356803286a0b915a7eb8208b3ebea855c ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v1.4_19.04.01_pr
+commit: fd4f92c Loh Tien Hock libc: armclang: Implement compiler printf symbols
+
+
+-----------------------------------------------------------------------
+
+repository: uefi-socfpga
+
+branch      : socvp_socfpga_udk2015
+branch tag  : rel_socvp_socfpga_udk2015_19.04.01_pr
+new commits : 3
+475bea4 Loh Tien Hock AlteraPlatformPkg: Change memory base due for Linux's reserved space
+dbe6c79 Loh, Tien Hock intel: Fix wrong value for clkfreq, causing delay issue
+2b08b22 Sau Kae Tan(old_UID 19060) AlteraPlatformPkg: Removing A10 and S10 unused driver
+
+
+++wiki:
+*Repo name*: uefi-socfpga *Branch name*: socvp_socfpga_udk2015 *Tag name:* rel_socvp_socfpga_udk2015_19.04.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | AlteraPlatformPkg: Change memory base due for Linux's reserved space | [[ https://github.com/altera-opensource/uefi-socfpga/commit/475bea4e5dbc3ea013a56bff6388c04fbf62e577 ][ 475bea4e5dbc3ea013a56bff6388c04fbf62e577 ]] |
+| community | intel: Fix wrong value for clkfreq, causing delay issue | [[ https://github.com/altera-opensource/uefi-socfpga/commit/dbe6c797fc1bc87d08b0e06aa8c5147d94e0cacc ][ dbe6c797fc1bc87d08b0e06aa8c5147d94e0cacc ]] |
+| community | AlteraPlatformPkg: Removing A10 and S10 unused driver | [[ https://github.com/altera-opensource/uefi-socfpga/commit/2b08b229f25149fc23cab0fd0c5751aeabe8c590 ][ 2b08b229f25149fc23cab0fd0c5751aeabe8c590 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socvp_socfpga_udk2015_19.04.01_pr
+commit: 475bea4 Loh Tien Hock AlteraPlatformPkg: Change memory base due for Linux's reserved space
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.20
+
+commit 2d951479ddbd0d5bb4670f606b53b1039cd66d44
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Tue Mar 19 04:48:52 2019 +0000
+
+    HSD #1506998530: arm64: defconfig: Enable PCIE_ALTERA driver
+    
+    Altera PCIe and MSI drivers for SoCFPGA Stratix 10 SoC.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+
+commit f731bf9fd184a70007b43066d96cfb778a33347b
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Thu Feb 28 18:52:51 2019 +0800
+
+    PCI: altera: Enable driver on ARM64
+    
+    Enable PCIE_ALTERA on ARM64 platform.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit a6ef397e10ed9a56880fc492fb8fdeb68839e59c
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Thu Feb 28 18:52:50 2019 +0800
+
+    PCI: altera: Add Stratix 10 PCIe support
+    
+    Add PCIe Root Port support for Stratix 10 device.
+    
+    Main differences compared to the PCIe Root Port IP on Cyclone V
+    and Arria 10 devices:
+    
+    - HIP interface to access Root Port configuration register
+    - TLP programming flow:
+      - One REG0 register
+      - Don't need to check alignment
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit dc7baa03f204ba55e313435bddf9fb2d9dedbdbc
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Thu Feb 28 18:52:52 2019 +0800
+
+    dt-bindings: PCI: altera: Add altr,pcie-root-port-2.0
+    
+    Add support for altr,pcie-root-port-2.0.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+    Reviewed-by: Rob Herring <robh@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi
+
+commit 3286950e98c92d8594145d8b96a06cbc9700e1d6
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Wed Mar 13 11:16:39 2019 +0800
+
+    HSD #1506998530: arm64: defconfig: Enable PCIE_ALTERA driver
+    
+    Altera PCIe and MSI drivers for SoCFPGA Stratix 10 SoC.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+
+commit 61068049c18fe8d220828149581e37e872fb881c
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Mar 13 17:28:37 2019 -0500
+
+    arm64: dts: add the sysmgr-syscon property from the gmac's
+    
+    The gmac ethernet driver uses the "altr,sysmgr-syscon" property to
+    configure phy settings for the gmac controller.
+    
+    Add the "altr,sysmgr-syscon" property to all gmac nodes.
+    
+    This patch fixes:
+    
+    [    0.917530] socfpga-dwmac ff800000.ethernet: No sysmgr-syscon node found
+    [    0.924209] socfpga-dwmac ff800000.ethernet: Unable to parse OF data
+    
+    Cc: stable@vger.kernel.org
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit d602af3402f4cf05de4fb2bed3daccde0d063859
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Wed Mar 13 16:02:37 2019 +0800
+
+    PCI: altera: Enable driver on ARM64
+    
+    Commit 5fd831cd16772188c
+    
+    Enable PCIE_ALTERA on ARM64 platform.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit df4ddd5c6c28e8dba9e8e9462a9dbfb9a8582938
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Wed Mar 13 15:59:37 2019 +0800
+
+    PCI: altera: Add Stratix 10 PCIe support
+    
+    Commit 49fdbd7cfece4181
+    
+    Add PCIe Root Port support for Stratix 10 device.
+    
+    Main differences compared to the PCIe Root Port IP on Cyclone V
+    and Arria 10 devices:
+    
+    - HIP interface to access Root Port configuration register
+    - TLP programming flow:
+      - One REG0 register
+      - Don't need to check alignment
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit 89845180fdc84e3d8c0dd40cfdf32ddcde575d25
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Wed Mar 13 16:06:00 2019 +0800
+
+    dt-bindings: PCI: altera: Add altr,pcie-root-port-2.0
+    
+    Commit d13af797154f4e033
+    
+    Add support for altr,pcie-root-port-2.0.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+    Reviewed-by: Rob Herring <robh@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi-rt
+
+commit a99478259b45a2bc93107d5918a4e3442a208e3a
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Wed Mar 13 11:16:39 2019 +0800
+
+    HSD #1506998530: arm64: defconfig: Enable PCIE_ALTERA driver
+    
+    Altera PCIe and MSI drivers for SoCFPGA Stratix 10 SoC.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+
+commit 6c9d291c88329a643254d46c06b5613ff7ba3ecf
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Mar 13 17:28:37 2019 -0500
+
+    arm64: dts: add the sysmgr-syscon property from the gmac's
+    
+    The gmac ethernet driver uses the "altr,sysmgr-syscon" property to
+    configure phy settings for the gmac controller.
+    
+    Add the "altr,sysmgr-syscon" property to all gmac nodes.
+    
+    This patch fixes:
+    
+    [    0.917530] socfpga-dwmac ff800000.ethernet: No sysmgr-syscon node found
+    [    0.924209] socfpga-dwmac ff800000.ethernet: Unable to parse OF data
+    
+    Cc: stable@vger.kernel.org
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit bb5060a37979d513f1d86400cbe96bf539b63047
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Wed Mar 13 16:02:37 2019 +0800
+
+    PCI: altera: Enable driver on ARM64
+    
+    Commit 5fd831cd16772188c
+    
+    Enable PCIE_ALTERA on ARM64 platform.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit 70a464377867ae5a6519f8bb7f2ff12532909f96
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Wed Mar 13 15:59:37 2019 +0800
+
+    PCI: altera: Add Stratix 10 PCIe support
+    
+    Commit 49fdbd7cfece4181
+    
+    Add PCIe Root Port support for Stratix 10 device.
+    
+    Main differences compared to the PCIe Root Port IP on Cyclone V
+    and Arria 10 devices:
+    
+    - HIP interface to access Root Port configuration register
+    - TLP programming flow:
+      - One REG0 register
+      - Don't need to check alignment
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit 7db765df29c0f07f7a7c3669665f2277c0f4473e
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Wed Mar 13 16:06:00 2019 +0800
+
+    dt-bindings: PCI: altera: Add altr,pcie-root-port-2.0
+    
+    Commit d13af797154f4e033
+    
+    Add support for altr,pcie-root-port-2.0.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+    Reviewed-by: Rob Herring <robh@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2018.06-yocto2.5
+
+commit 153813676b1707b45d61617803229f069f270970
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Fri Mar 22 08:40:33 2019 +0800
+
+    Update kernel 4.14.73-ltsi to commit 3286950
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of arm-trusted-firmware branch socfpga_v1.4
+
+commit fd4f92cf86c468eae51356439e44fc95d1ad8dac
+Author: Loh Tien Hock <tien.hock.loh@intel.com>
+Date:   Tue Jan 29 19:34:35 2019 +0800
+
+    libc: armclang: Implement compiler printf symbols
+    
+    armclang replaces calls to printf by calls to one of the symbols
+    __0printf, __1printf or __2printf. This patch adds new functions with
+    these names that internally call printf so that the Trusted Firmware can
+    be compiled with this compiler.
+    
+    Change-Id: I06a0e3e5001232fe5b2577615666ddd66e81eef0
+    Signed-off-by: Antonio Nino Diaz <antonio.ninodiaz@arm.com>
+    
+    Conflicts:
+    	Makefile
+
+commit fc118af2542d8dfe8dd56ac5480e4b4a2f7bc8d6
+Author: dp-arm <dimitris.papastamos@arm.com>
+Date:   Wed May 3 16:30:32 2017 +0100
+
+    build: Introduce ARM Compiler 6 support
+    
+    Only the compiler is switched to ARM Compiler 6.  The assembler and linker
+    are provided by the GCC toolchain.
+    
+    ARM Compiler 6 is used to build TF when the base name of the path assigned
+    to `CC` matches the string 'armclang'.
+    
+    `CROSS_COMPILE` is still needed and should point to the appropriate
+    GCC toolchain.
+    
+    Tested with ARM CC 6.7.
+    
+    Change-Id: Ib359bf9c1e8aeed3f662668e44830864f3fe7b4a
+    Signed-off-by: dp-arm <dimitris.papastamos@arm.com>
+
+commit 76f66486837a4ca9da9d74d44b7cc6af8bc59dbe
+Author: dp-arm <dimitris.papastamos@arm.com>
+Date:   Tue May 2 12:00:08 2017 +0100
+
+    build: Introduce clang support
+    
+    Only the compiler is switched to clang.  The assembler and linker are
+    provided by the GCC toolchain.
+    
+    clang is used to build TF when the base name of the path assigned to
+    `CC` contains the string 'clang'.
+    
+    `CROSS_COMPILE` is still needed and should point to the appropriate
+    GCC toolchain.
+    
+    Tested with clang 3.9.x and 4.0.x.
+    
+    Change-Id: I53236d64e3c83ad27fc843bae5fcdae30f2e325e
+    Signed-off-by: dp-arm <dimitris.papastamos@arm.com>
+
+commit deee681356803286a0b915a7eb8208b3ebea855c
+Author: Loh, Tien Hock <tien.hock.loh@intel.com>
+Date:   Mon Aug 20 15:03:51 2018 +0800
+
+    intel: Scrub memory to prevent ECC error
+    
+    Whenever ECC is enabled in hardware, DDR needs to be scrub to
+    prevent access errors.
+    
+    Signed-off-by: Loh, Tien Hock <tien.hock.loh@intel.com>
+    
+    --
+    v2:
+    Updated SDRam size to read from hardware instead of hardcoding
+
+-----------------------------------------------------------------------
+
+log of uefi-socfpga branch socvp_socfpga_udk2015
+
+commit 475bea4e5dbc3ea013a56bff6388c04fbf62e577
+Author: Loh Tien Hock <tien.hock.loh@intel.com>
+Date:   Tue Jan 22 18:42:29 2019 +0800
+
+    AlteraPlatformPkg: Change memory base due for Linux's reserved space
+    
+    Linux got updated with PSCI callback that uses some reserved space
+    in the beginning of DDR, this is to address the change
+    
+    Signed-off-by: Loh Tien Hock <tien.hock.loh@intel.com>
+
+commit dbe6c797fc1bc87d08b0e06aa8c5147d94e0cacc
+Author: Loh, Tien Hock <tien.hock.loh@intel.com>
+Date:   Fri May 25 11:25:12 2018 +0800
+
+    intel: Fix wrong value for clkfreq, causing delay issue
+    
+    Fix clock frequency of S10 that causes delay to be slower than normal
+    
+    Signed-off-by: Loh, Tien Hock <tien.hock.loh@intel.com>
+
+commit 2b08b229f25149fc23cab0fd0c5751aeabe8c590
+Author: Sau Kae Tan(old_UID 19060) <saktan@sj-nx13.altera.com>
+Date:   Sun Jun 24 19:21:23 2018 -0700
+
+    AlteraPlatformPkg: Removing A10 and S10 unused driver
+    
+    Removing A10 code from S10 branch.
+    Use upstream PrePeiCore.
+    Use upstream Default Exception Handler
+    Removing unused Sec driver
+    
+    Contributed-under: TianoCore Contribution Agreement 1.0
+    
+    Signed-off-by: Sau Kae Tan(old_UID 19060) <saktan@sj-nx13.altera.com>
+
+-----------------------------------------------------------------------
+

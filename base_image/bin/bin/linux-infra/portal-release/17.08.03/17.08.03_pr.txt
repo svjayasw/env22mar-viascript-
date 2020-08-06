@@ -1,0 +1,103 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.11
+branch tag  : rel_socfpga-4.11_17.08.03_pr
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.08.03_pr
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.08.03_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.11_17.08.03_pr
+commit: d085116 Richard Gong Revert "FogBugz #470510: Update stratix10_swvp.dts file for S10 SoC Simics/VP"
+
+tag:    rel_socfpga-4.1.33-ltsi_17.08.03_pr
+commit: 9d8d594 Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.08.03_pr
+commit: a63d21c Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.08.03_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.08.03_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.08.03_pr
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.08.03_pr
+commit: d143a7d Tien Fong Chee FogBugz #438770: Solve the overrun warning by coverity
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.08.03_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.08.03_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.08.03_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.08.03_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.08.03_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.08.03_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+

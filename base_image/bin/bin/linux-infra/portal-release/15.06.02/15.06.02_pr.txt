@@ -1,0 +1,325 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.0
+branch tag  : rel_socfpga-4.0_15.06.02_pr
+new commits : 2
+5b33a14 Tien Hock Loh FogBugz #298977: Add sys ID module to socfpga_defconfig
+1a885c8 Dinh Nguyen FogBugz #294156: Enable watchdog on Arria10
+
+
+++wiki:
+*Branch name*: socfpga-4.0, *Tag name:* rel_socfpga-4.0_15.06.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 298977 | Add sys ID module to socfpga_defconfig | [[ https://github.com/altera-opensource/linux-socfpga/commit/5b33a144c2d51023aceac8f8ce290c5bebd17f57 ][ 5b33a144c2d51023aceac8f8ce290c5bebd17f57 ]] |
+| 294156 | Enable watchdog on Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/1a885c87c7b837c9f191f105bfa794c2e81fbe2e ][ 1a885c87c7b837c9f191f105bfa794c2e81fbe2e ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.06.02_pr
+new commits : 2
+cd06bd5 Heiko Stübner watchdog: dw_wdt: use clk_prepare_enable and clk_disable_unprepare
+3ed4520 Dinh Nguyen FogBugz #294156: Enable watchdog on Arria10
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_15.06.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | watchdog: dw_wdt: use clk_prepare_enable and clk_disable_unprepare | [[ https://github.com/altera-opensource/linux-socfpga/commit/cd06bd579836ce5dcca6af718c1b09f7a3d6b214 ][ cd06bd579836ce5dcca6af718c1b09f7a3d6b214 ]] |
+| 294156 | Enable watchdog on Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/3ed45202d37ccf13ef89c242d5e07e7a99cb5783 ][ 3ed45202d37ccf13ef89c242d5e07e7a99cb5783 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.06.02_pr
+new commits : 2
+272f5cb Heiko Stübner watchdog: dw_wdt: use clk_prepare_enable and clk_disable_unprepare
+2233b27 Dinh Nguyen FogBugz #294156: Enable watchdog on Arria10
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_15.06.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | watchdog: dw_wdt: use clk_prepare_enable and clk_disable_unprepare | [[ https://github.com/altera-opensource/linux-socfpga/commit/272f5cbe8cadd7723bc3512d67f44e70e2339d9d ][ 272f5cbe8cadd7723bc3512d67f44e70e2339d9d ]] |
+| 294156 | Enable watchdog on Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/2233b277e8fbd2608a67b4f4b05b52dbd57ca5de ][ 2233b277e8fbd2608a67b4f4b05b52dbd57ca5de ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.0_15.06.02_pr
+commit: 5b33a14 Tien Hock Loh FogBugz #298977: Add sys ID module to socfpga_defconfig
+
+tag:    rel_socfpga-3.10-ltsi_15.06.02_pr
+commit: cd06bd5 Heiko Stübner watchdog: dw_wdt: use clk_prepare_enable and clk_disable_unprepare
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.06.02_pr
+commit: 272f5cb Heiko Stübner watchdog: dw_wdt: use clk_prepare_enable and clk_disable_unprepare
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.06.02_pr
+new commits : 1
+5a47f31 Radu Bacrau FogBugz #297134: Supporting Spansion devices(S25FL127S/S25FL512S) with x4 mode
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_15.06.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 297134 | Supporting Spansion devices(S25FL127S/S25FL512S) with x4 mode | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/5a47f31c98e6c70185f3423bc82f3414cb25ca2c ][ 5a47f31c98e6c70185f3423bc82f3414cb25ca2c ]] |
+--wiki:
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.06.02_pr
+new commits : 3
+3f9fc62 Graham Moore FogBugz #299961-2: Support NAND in Uboot on Arria10
+fd9022d Graham Moore FogBugz #299961-3: Support NAND in Uboot on Arria10
+ad9a256 Graham Moore FogBugz #299961-6: Support NAND in Uboot on Arria10
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_15.06.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 299961-2 | Support NAND in Uboot on Arria10 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/3f9fc625524d79e2746d50935026ff12a9bde5be ][ 3f9fc625524d79e2746d50935026ff12a9bde5be ]] |
+| 299961-3 | Support NAND in Uboot on Arria10 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/fd9022df6d12a390fa5d9e20a843225d31c2ef01 ][ fd9022df6d12a390fa5d9e20a843225d31c2ef01 ]] |
+| 299961-6 | Support NAND in Uboot on Arria10 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/ad9a25645991c18f2a6c6e87a54e11d404383bc3 ][ ad9a25645991c18f2a6c6e87a54e11d404383bc3 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.06.02_pr
+commit: 5a47f31 Radu Bacrau FogBugz #297134: Supporting Spansion devices(S25FL127S/S25FL512S) with x4 mode
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.06.02_pr
+commit: 3f9fc62 Graham Moore FogBugz #299961-2: Support NAND in Uboot on Arria10
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.06.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.06.02_pr
+commit: 380baf4 Yves Vandervennet update for github
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.06.02_pr
+new commits : 1
+d69775c Graham Moore Update busybox full configuration for version 1.22
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-yocto1.7, *Tag name:* rel_angstrom-v2014.12-yocto1.7_15.06.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Update busybox full configuration for version 1.22 | [[ https://github.com/altera-opensource/meta-altera/commit/d69775cb2a01301535579e41aecce9d659ad1431 ][ d69775cb2a01301535579e41aecce9d659ad1431 ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.06.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.06.02_pr
+commit: d69775c Graham Moore Update busybox full configuration for version 1.22
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.06.02_pr
+commit: 1d88fd2 Yves Vandervennet Addition of the Arria10 SWVP
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.0
+
+commit 5b33a144c2d51023aceac8f8ce290c5bebd17f57
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Thu May 14 16:03:39 2015 +0800
+
+    FogBugz #298977: Add sys ID module to socfpga_defconfig
+    
+    GSRD requires Sys ID driver to be loaded. Since this FPGA based, we will
+    compile it as a module
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+commit 1a885c87c7b837c9f191f105bfa794c2e81fbe2e
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri May 29 15:06:25 2015 -0500
+
+    FogBugz #294156: Enable watchdog on Arria10
+    
+    Enable watchdog timer on Arria10. On the A10, only watchdog1 is able to
+    trigger a reset reliably.
+    
+    Also, there is a dependency on the bootloader to enable the boot_clk
+    source to be from the cb_intosc_hs_clk/2, versus from EOSC1. This
+    corresponds to the (SWCTRLBTCLKEN | SWCTRLBTCLKSEL) bits enabled
+    in the clock manager.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit cd06bd579836ce5dcca6af718c1b09f7a3d6b214
+Author: Heiko Stübner <heiko@sntech.de>
+Date:   Wed Jun 26 20:04:31 2013 +0200
+
+    watchdog: dw_wdt: use clk_prepare_enable and clk_disable_unprepare
+    
+    This is necessary to make the driver work with platforms using the
+    common clock framework.
+    
+    Signed-off-by: Heiko Stuebner <heiko@sntech.de>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+    
+    Conflicts:
+    	drivers/watchdog/dw_wdt.c
+
+commit 3ed45202d37ccf13ef89c242d5e07e7a99cb5783
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri May 29 15:06:25 2015 -0500
+
+    FogBugz #294156: Enable watchdog on Arria10
+    
+    Enable watchdog timer on Arria10. On the A10, only watchdog1 is able to
+    trigger a reset reliably.
+    
+    Also, there is a dependency on the bootloader to enable the boot_clk
+    source to be from the cb_intosc_hs_clk/2, versus from EOSC1. This
+    corresponds to the (SWCTRLBTCLKEN | SWCTRLBTCLKSEL) bits enabled
+    in the clock manager.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 272f5cbe8cadd7723bc3512d67f44e70e2339d9d
+Author: Heiko Stübner <heiko@sntech.de>
+Date:   Wed Jun 26 20:04:31 2013 +0200
+
+    watchdog: dw_wdt: use clk_prepare_enable and clk_disable_unprepare
+    
+    This is necessary to make the driver work with platforms using the
+    common clock framework.
+    
+    Signed-off-by: Heiko Stuebner <heiko@sntech.de>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+    
+    Conflicts:
+    	drivers/watchdog/dw_wdt.c
+
+commit 2233b277e8fbd2608a67b4f4b05b52dbd57ca5de
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri May 29 15:06:25 2015 -0500
+
+    FogBugz #294156: Enable watchdog on Arria10
+    
+    Enable watchdog timer on Arria10. On the A10, only watchdog1 is able to
+    trigger a reset reliably.
+    
+    Also, there is a dependency on the bootloader to enable the boot_clk
+    source to be from the cb_intosc_hs_clk/2, versus from EOSC1. This
+    corresponds to the (SWCTRLBTCLKEN | SWCTRLBTCLKSEL) bits enabled
+    in the clock manager.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 5a47f31c98e6c70185f3423bc82f3414cb25ca2c
+Author: Radu Bacrau <rbacrau@altera.com>
+Date:   Fri Jun 5 13:47:34 2015 +0800
+
+    FogBugz #297134: Supporting Spansion devices(S25FL127S/S25FL512S) with x4 mode
+    
+    this patch enhanced the U-boot/SPL driver to support Spansion devices
+    (S25FL127S/S25FL512S) with x4 mode. This patch fixed the issue of
+    loading the next stage image from preloader also.
+    
+    Signed-off-by: Radu Bacrau <rbacrau@altera.com>
+    Signed-off-by: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 3f9fc625524d79e2746d50935026ff12a9bde5be
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Tue May 19 11:35:13 2015 -0700
+
+    FogBugz #299961-2: Support NAND in Uboot on Arria10
+    
+    Changes necessary to remove CONFIG_DESIGNWARE_ETH and
+    still be able to compile the code.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit fd9022df6d12a390fa5d9e20a843225d31c2ef01
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Tue May 19 12:20:23 2015 -0700
+
+    FogBugz #299961-3: Support NAND in Uboot on Arria10
+    
+    Use nand device tree, disable 64bit denali code.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit ad9a25645991c18f2a6c6e87a54e11d404383bc3
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Wed May 27 10:06:30 2015 -0700
+
+    FogBugz #299961-6: Support NAND in Uboot on Arria10
+    
+    Use kzalloc instead of malloc, to match upstream, and more
+    importantly, to assure proper alignment on DMA buffers.
+    The salient point is that kzalloc calls down to memalign.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7
+
+commit d69775cb2a01301535579e41aecce9d659ad1431
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Apr 24 13:21:15 2015 -0500
+
+    Update busybox full configuration for version 1.22
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

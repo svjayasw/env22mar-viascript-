@@ -1,0 +1,318 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.0
+branch tag  : rel_socfpga-4.0_15.06.01_rc1
+new commits : 0
+
+
+branch      : socfpga-3.18
+branch tag  : rel_socfpga-3.18_15.06.01_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.06.01_rc1
+new commits : 6
+d37310f Matthew Gerlach FogBugz #297773: Add missing binding documentation
+2eb4e9f Matthew Gerlach FogBugz #292777: Calibrate read_delay at runtime
+51c8124 Matthew Gerlach FogBugz #295680: Enable JFFS2 support with n25q00aa NOR flash
+421dbbb Ley Foon Tan nios2: rework cache
+1949411 Ley Foon Tan nios2: remove end address checking for initda
+365f866 Ley Foon Tan nios2: fix cache coherency issue when debug with gdb
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.06.01_rc1
+new commits : 3
+ed7a8e3 Ley Foon Tan nios2: rework cache
+aeec160 Ley Foon Tan nios2: remove end address checking for initda
+82c3751 Ley Foon Tan nios2: fix cache coherency issue when debug with gdb
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.0_15.06.01_rc1
+commit: 87d1ba3 Dinh Nguyen FogBugz #294479: Add the l4_sys_free_clk clock node
+
+tag:    rel_socfpga-3.18_15.06.01_rc1
+commit: 034e7cb Dinh Nguyen FogBugz #294479: Add the l4_sys_free_clk clock node
+
+tag:    rel_socfpga-3.10-ltsi_15.06.01_rc1
+commit: d37310f Matthew Gerlach FogBugz #297773: Add missing binding documentation
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.06.01_rc1
+commit: ed7a8e3 Ley Foon Tan nios2: rework cache
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.06.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.06.01_rc1
+new commits : 3
+eed1ab6 Thor Thayer FogBugz #297521: UBoot: Arria10: Mask ECC Errors
+bb36c82 Thor Thayer FogBugz #291234: UBoot: Arria10 DDR ECC support
+21362eb Matthew Gerlach FogBugz #290468: update device tree to one generated from reference design
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.06.01_rc1
+commit: 32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.06.01_rc1
+commit: eed1ab6 Thor Thayer FogBugz #297521: UBoot: Arria10: Mask ECC Errors
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.06.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.06.01_rc1
+commit: 380baf4 Yves Vandervennet update for github
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.06.01_rc1
+new commits : 1
+8566386 Yves Vandervennet support for kernel 4.0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.06.01_rc1
+new commits : 1
+4f81279 Yves Vandervennet support for kernel 4.0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.06.01_rc1
+commit: 8566386 Yves Vandervennet support for kernel 4.0
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.06.01_rc1
+commit: 4f81279 Yves Vandervennet support for kernel 4.0
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit d37310fa5250c484c508a519aac929cc0329c81a
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Fri May 8 09:26:59 2015 -0700
+
+    FogBugz #297773: Add missing binding documentation
+    
+    The binding documentation for the cadence qspi controller
+    is missing documentation for some key bindings. This change
+    adds the missing documentation.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 2eb4e9f543de629a0e5b9dddfd3b9b177e1b5076
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Fri May 8 09:15:48 2015 -0700
+
+    FogBugz #292777: Calibrate read_delay at runtime
+    
+    Instead of relying on a value in the device tree,
+    this changes the driver to calibrate the read_delay
+    value at run time.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 51c812435379e11981fd8f1a6e34af622c4d45b3
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Fri May 1 13:03:04 2015 -0700
+
+    FogBugz #295680: Enable JFFS2 support with n25q00aa NOR flash
+    
+    The minimum erase size for JFFS2 is 8KiB.  Like other flash
+    parts, change n25q00aa entry not to adverise the ability
+    to erase sizes less than 8KiB.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 421dbbb7e22ca3b11fb63aaef3715a40b42a073f
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Apr 27 18:13:16 2015 +0800
+
+    nios2: rework cache
+    
+    - flush dcache before flush instruction cache
+    - remork update_mmu_cache and flush_dcache_page
+    - add shmparam.h
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 1949411f29139be3bdf3c961bd56a9ff86dc7163
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Apr 15 10:45:49 2015 +0800
+
+    nios2: remove end address checking for initda
+    
+    Remove the end address checking for initda function. We need to invalidate
+    each address line for initda instruction, from start to end address.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 365f866ce07d8fe416f335de2c1f5212ca99a1d3
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Apr 10 11:10:08 2015 +0800
+
+    nios2: fix cache coherency issue when debug with gdb
+    
+    Remove the end address checking for flushda function. We need to flush
+    each address line for flushda instruction, from start to end address.
+    This is because flushda instruction only flush the cache if tag and line
+    fields are matched.
+    
+    Change to use ldwio instruction (bypass cache) to load the instruction
+    that causing trap. Our interest is the actual instruction that executed
+    by the processor, this should be uncached.
+    Note, EA address might be an userspace cached address.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit ed7a8e3483f8fff038afe0d73ef9a781043f7d0e
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Apr 27 18:13:16 2015 +0800
+
+    nios2: rework cache
+    
+    - flush dcache before flush instruction cache
+    - remork update_mmu_cache and flush_dcache_page
+    - add shmparam.h
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit aeec160bbafc01df9894de3bdbe08028c9f950ab
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Apr 15 10:45:49 2015 +0800
+
+    nios2: remove end address checking for initda
+    
+    Remove the end address checking for initda function. We need to invalidate
+    each address line for initda instruction, from start to end address.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 82c375179e2cf9d8de1d2325aa43a21e2f785b0c
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Apr 10 11:10:08 2015 +0800
+
+    nios2: fix cache coherency issue when debug with gdb
+    
+    Remove the end address checking for flushda function. We need to flush
+    each address line for flushda instruction, from start to end address.
+    This is because flushda instruction only flush the cache if tag and line
+    fields are matched.
+    
+    Change to use ldwio instruction (bypass cache) to load the instruction
+    that causing trap. Our interest is the actual instruction that executed
+    by the processor, this should be uncached.
+    Note, EA address might be an userspace cached address.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit eed1ab6bb894b8d1e0740735283d97ff8a3a7957
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Thu May 7 14:35:34 2015 -0500
+
+    FogBugz #297521: UBoot: Arria10: Mask ECC Errors
+    
+    Mask any ECC errors before transitioning to the next
+    stage (Linux). Since interrupts are shared, each module
+    should be masked off and then unmasked on the Linux
+    probe.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit bb36c8239044dffea5902248794b5be4c16ee5f8
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Tue Apr 7 14:31:51 2015 -0500
+
+    FogBugz #291234: UBoot: Arria10 DDR ECC support
+    
+    The ECC subsystem must be initialized in U-Boot before
+    Linux or another OS is loaded. This patch implements
+    the PL330 DMA to quickly clear the SDRAM after ECC
+    is enabled.
+    The ECC interrupt setup and handler functions are
+    removed since this will be handled by Linux.
+    The heap was reduced by 1K to support this addition.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+    ---
+    r2: Add pl330_csr.h. Better ECC success message. Add define for DMA size.
+
+commit 21362eba955625d9e4dbc945863b7fcc579784bb
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Tue Apr 28 09:51:48 2015 -0700
+
+    FogBugz #290468: update device tree to one generated from reference design
+    
+    This device tree was created by the bootloader generator
+    based on the Golden Hardware Reference Design for
+    the QSPI Version of the Arria10 DevKit.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7
+
+commit 856638668ca3f869b0de5de4f290cecdab1bad98
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Thu May 7 02:34:36 2015 -0500
+
+    support for kernel 4.0
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7_a10
+
+commit 4f812794851c029759fce308249e6fe09d4babce
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Thu May 7 02:36:15 2015 -0500
+
+    support for kernel 4.0
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

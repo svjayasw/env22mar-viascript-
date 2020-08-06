@@ -1,0 +1,109 @@
++ cd /home/atull/repos/internal/linux-socfpga
++ git push portal rel_socfpga-3.18_15.05.01_pr:refs/heads/socfpga-3.18
+To git@github.com:altera-opensource/linux-socfpga
+   0e9c1d9..53fa391  rel_socfpga-3.18_15.05.01_pr -> socfpga-3.18
++ git push portal rel_socfpga-3.18_15.05.01_pr:refs/tags/rel_socfpga-3.18_15.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         rel_socfpga-3.18_15.05.01_pr -> rel_socfpga-3.18_15.05.01_pr
++ echo
+
++ git push portal rel_socfpga-3.10-ltsi_15.05.01_pr:refs/heads/socfpga-3.10-ltsi
+To git@github.com:altera-opensource/linux-socfpga
+   512a3b0..55fdf0e  rel_socfpga-3.10-ltsi_15.05.01_pr -> socfpga-3.10-ltsi
++ git push portal rel_socfpga-3.10-ltsi_15.05.01_pr:refs/tags/rel_socfpga-3.10-ltsi_15.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         rel_socfpga-3.10-ltsi_15.05.01_pr -> rel_socfpga-3.10-ltsi_15.05.01_pr
++ echo
+
++ git push portal rel_socfpga-3.10-ltsi-rt_15.05.01_pr:refs/heads/socfpga-3.10-ltsi-rt
+To git@github.com:altera-opensource/linux-socfpga
+   e9fcb0a..bae4561  rel_socfpga-3.10-ltsi-rt_15.05.01_pr -> socfpga-3.10-ltsi-rt
++ git push portal rel_socfpga-3.10-ltsi-rt_15.05.01_pr:refs/tags/rel_socfpga-3.10-ltsi-rt_15.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         rel_socfpga-3.10-ltsi-rt_15.05.01_pr -> rel_socfpga-3.10-ltsi-rt_15.05.01_pr
++ echo
+
++ cd /home/atull/repos/internal/uboot-socfpga
++ git push portal rel_socfpga_v2013.01.01_15.05.01_pr:refs/heads/socfpga_v2013.01.01
+Everything up-to-date
++ git push portal rel_socfpga_v2013.01.01_15.05.01_pr:refs/tags/rel_socfpga_v2013.01.01_15.05.01_pr
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         rel_socfpga_v2013.01.01_15.05.01_pr -> rel_socfpga_v2013.01.01_15.05.01_pr
++ echo
+
++ git push portal rel_socfpga_v2014.10_arria10_bringup_15.05.01_pr:refs/heads/socfpga_v2014.10_arria10_bringup
+To git@github.com:altera-opensource/u-boot-socfpga
+   35f437e..90ce61b  rel_socfpga_v2014.10_arria10_bringup_15.05.01_pr -> socfpga_v2014.10_arria10_bringup
++ git push portal rel_socfpga_v2014.10_arria10_bringup_15.05.01_pr:refs/tags/rel_socfpga_v2014.10_arria10_bringup_15.05.01_pr
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         rel_socfpga_v2014.10_arria10_bringup_15.05.01_pr -> rel_socfpga_v2014.10_arria10_bringup_15.05.01_pr
++ echo
+
++ cd /home/atull/repos/internal/angstrom-socfpga
++ git push portal rel_angstrom-v2012.12-socfpga_15.05.01_pr:refs/heads/angstrom-v2012.12-socfpga
+Everything up-to-date
++ git push portal rel_angstrom-v2012.12-socfpga_15.05.01_pr:refs/tags/rel_angstrom-v2012.12-socfpga_15.05.01_pr
+To git@github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         rel_angstrom-v2012.12-socfpga_15.05.01_pr -> rel_angstrom-v2012.12-socfpga_15.05.01_pr
++ echo
+
++ git push portal rel_angstrom-v2013.12-socfpga_15.05.01_pr:refs/heads/angstrom-v2013.12-socfpga
+Everything up-to-date
++ git push portal rel_angstrom-v2013.12-socfpga_15.05.01_pr:refs/tags/rel_angstrom-v2013.12-socfpga_15.05.01_pr
+To git@github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         rel_angstrom-v2013.12-socfpga_15.05.01_pr -> rel_angstrom-v2013.12-socfpga_15.05.01_pr
++ echo
+
++ git push portal rel_angstrom-v2014.06-socfpga_15.05.01_pr:refs/heads/angstrom-v2014.06-socfpga
+Everything up-to-date
++ git push portal rel_angstrom-v2014.06-socfpga_15.05.01_pr:refs/tags/rel_angstrom-v2014.06-socfpga_15.05.01_pr
+To git@github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         rel_angstrom-v2014.06-socfpga_15.05.01_pr -> rel_angstrom-v2014.06-socfpga_15.05.01_pr
++ echo
+
++ git push portal rel_angstrom-v2014.12-socfpga_15.05.01_pr:refs/heads/angstrom-v2014.12-socfpga
+Everything up-to-date
++ git push portal rel_angstrom-v2014.12-socfpga_15.05.01_pr:refs/tags/rel_angstrom-v2014.12-socfpga_15.05.01_pr
+To git@github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         rel_angstrom-v2014.12-socfpga_15.05.01_pr -> rel_angstrom-v2014.12-socfpga_15.05.01_pr
++ echo
+
++ cd /home/atull/repos/internal/meta-altera
++ git push portal rel_angstrom-v2012.12-yocto1.3_15.05.01_pr:refs/heads/angstrom-v2012.12-yocto1.3
+Everything up-to-date
++ git push portal rel_angstrom-v2012.12-yocto1.3_15.05.01_pr:refs/tags/rel_angstrom-v2012.12-yocto1.3_15.05.01_pr
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         rel_angstrom-v2012.12-yocto1.3_15.05.01_pr -> rel_angstrom-v2012.12-yocto1.3_15.05.01_pr
++ echo
+
++ git push portal rel_angstrom-v2013.12-yocto1.5_15.05.01_pr:refs/heads/angstrom-v2013.12-yocto1.5
+Everything up-to-date
++ git push portal rel_angstrom-v2013.12-yocto1.5_15.05.01_pr:refs/tags/rel_angstrom-v2013.12-yocto1.5_15.05.01_pr
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         rel_angstrom-v2013.12-yocto1.5_15.05.01_pr -> rel_angstrom-v2013.12-yocto1.5_15.05.01_pr
++ echo
+
++ git push portal rel_angstrom-v2014.06-yocto1.6_15.05.01_pr:refs/heads/angstrom-v2014.06-yocto1.6
+Everything up-to-date
++ git push portal rel_angstrom-v2014.06-yocto1.6_15.05.01_pr:refs/tags/rel_angstrom-v2014.06-yocto1.6_15.05.01_pr
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         rel_angstrom-v2014.06-yocto1.6_15.05.01_pr -> rel_angstrom-v2014.06-yocto1.6_15.05.01_pr
++ echo
+
++ git push portal rel_angstrom-v2014.12-yocto1.7_15.05.01_pr:refs/heads/angstrom-v2014.12-yocto1.7
+Everything up-to-date
++ git push portal rel_angstrom-v2014.12-yocto1.7_15.05.01_pr:refs/tags/rel_angstrom-v2014.12-yocto1.7_15.05.01_pr
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         rel_angstrom-v2014.12-yocto1.7_15.05.01_pr -> rel_angstrom-v2014.12-yocto1.7_15.05.01_pr
++ echo
+
++ git push portal rel_angstrom-v2014.12-yocto1.7_a10_15.05.01_pr:refs/heads/angstrom-v2014.12-yocto1.7_a10
+Everything up-to-date
++ git push portal rel_angstrom-v2014.12-yocto1.7_a10_15.05.01_pr:refs/tags/rel_angstrom-v2014.12-yocto1.7_a10_15.05.01_pr
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         rel_angstrom-v2014.12-yocto1.7_a10_15.05.01_pr -> rel_angstrom-v2014.12-yocto1.7_a10_15.05.01_pr
++ echo
+
++ cd /home/atull/repos/internal/linux-tags
++ git tag rel_master_15.05.01_pr 09c4ae4d8a3f15751722997878c457f18c2e902f
+fatal: tag 'rel_master_15.05.01_pr' already exists

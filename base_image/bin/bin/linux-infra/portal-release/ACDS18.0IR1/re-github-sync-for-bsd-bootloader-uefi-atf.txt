@@ -1,0 +1,211 @@
+Hi all, Thanks for the regtest results.
+
+Hi Tien Hock,
+Do you have last commit ID for ATF? Thanks.
+
+Hi Alan,
+Need your help to push the UEFI and ATF to git. Please let us know if you still need any information. Thanks.
+
+UEFI Source: gitolite@at-git.intel.com:uefi-socfpga.git
+Branch: socvp_socfpga_udk2015
+Tag: “rel_socfpga_stratix10_soceds_18.0ir.1”
+Last commit: 32c4c1f3f68971eaa32f0ffef1de0fbe633f801f
+
+ATF Source: gitolite@at-git.intel.com:arm-trusted-firmware
+Branch: socfpga_v1.4
+Tag: rel_socfpga_stratix10_soceds_18.0ir.1
+
+Thanks.
+
+Regards
+Ying Cheh Tan
+Embedded Release Manager
+Intel Programmable Solutions Group
+
+From: Tan, Sau Kae
+Sent: Wednesday, March 7, 2018 6:34 PM
+To: Loh, Tien Hock <tien.hock.loh@intel.com>; See, Chin Liang <chin.liang.see@intel.com>; Vandervennet, Yves <yves.vandervennet@intel.com>; Tull, Alan <alan.tull@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>
+Cc: Shearer, Findlay <findlay.shearer@intel.com>
+Subject: RE: Github sync for BSD bootloader (UEFI & ATF)
+
+Hi Ying Cheh,
+
+UEFI test by using ACDS18.0ir.1 is also passing:
+https://pg-arc.altera.com/arc/dashboard/reports/show_job/378096661
+
+Thanks.
+
+Regards,
+Sau Kae
+From: Loh, Tien Hock
+Sent: Wednesday, March 7, 2018 5:05 PM
+To: Tan, Sau Kae <sau.kae.tan@intel.com>; See, Chin Liang <chin.liang.see@intel.com>; Vandervennet, Yves <yves.vandervennet@intel.com>; Tull, Alan <alan.tull@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>
+Cc: Shearer, Findlay <findlay.shearer@intel.com>
+Subject: RE: Github sync for BSD bootloader (UEFI & ATF)
+
+Hi Ying Cheh,
+
+Here’s the test using ACDS18.0ir.1: (Using soceds18.0 because ds-5 doesn’t support combined jtag, and we are testing SOF programming, etc. not testing SoCEDS’s components)
+https://sj-arc.altera.com/arc/dashboard/reports/show_job/691071301?
+
+Thanks
+Tien Hock
+
+From: Tan, Sau Kae
+Sent: Tuesday, March 6, 2018 9:52 PM
+To: Loh, Tien Hock <tien.hock.loh@intel.com>; See, Chin Liang <chin.liang.see@intel.com>; Vandervennet, Yves <yves.vandervennet@intel.com>; Tull, Alan <alan.tull@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>
+Cc: Shearer, Findlay <findlay.shearer@intel.com>
+Subject: RE: Github sync for BSD bootloader (UEFI & ATF)
+
+Hi Ying Cheh,
+
+For UEFI regtest is passed:
+http://sw-pert.altera.com/pert/pert.php?test_run_id=2230245
+
+UEFI Source: gitolite@at-git.intel.com:uefi-socfpga.git
+Branch: socvp_socfpga_udk2015
+Tag: “rel_socfpga_stratix10_soceds_18.0ir.1”
+Last commit: 32c4c1f3f68971eaa32f0ffef1de0fbe633f801f
+
+Thanks.
+
+Regards,
+Sau Kae
+
+From: Loh, Tien Hock
+Sent: Tuesday, March 6, 2018 2:53 PM
+To: See, Chin Liang <chin.liang.see@intel.com>; Vandervennet, Yves <yves.vandervennet@intel.com>; Tull, Alan <alan.tull@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>
+Cc: Tan, Sau Kae <sau.kae.tan@intel.com>; Shearer, Findlay <findlay.shearer@intel.com>
+Subject: RE: Github sync for BSD bootloader (UEFI & ATF)
+
+Ying Cheh,
+
+Here’s the regtest to boot from ATF to Linux prompt:
+https://sj-arc.altera.com/arc/dashboard/reports/show_job/690272305?
+P4 location: //acds/main/regtest/embedded/atf/s10_boot_linux
+
+ATF Source: gitolite@at-git.intel.com:arm-trusted-firmware
+Branch: socfpga_v1.4
+Tag: rel_socfpga_stratix10_soceds_18.0ir.1
+
+Thanks
+Tien Hock
+
+From: See, Chin Liang
+Sent: Tuesday, March 6, 2018 1:35 PM
+To: Vandervennet, Yves <yves.vandervennet@intel.com>; Tull, Alan <alan.tull@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>
+Cc: Tan, Sau Kae <sau.kae.tan@intel.com>; Loh, Tien Hock <tien.hock.loh@intel.com>; Shearer, Findlay <findlay.shearer@intel.com>
+Subject: RE: Github sync for BSD bootloader (UEFI & ATF)
+
+Hi Tien Hock and Sau Kae,
+
+Can you attached all the result here for Ying Cheh’s approval?
+Do ensure you have the proper git tag name and commit ID used.
+
+Thanks and have a nice day!
+
+Chin Liang
+Internal Global Dial: 2 701 8776
+Direct Line: +60 4 636 8776
+
+From: See, Chin Liang
+Sent: Wednesday, February 14, 2018 8:45 AM
+To: Vandervennet, Yves <yves.vandervennet@intel.com>; Tull, Alan <alan.tull@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>
+Cc: Tan, Sau Kae <sau.kae.tan@intel.com>; Loh, Tien Hock <tien.hock.loh@intel.com>; Shearer, Findlay <findlay.shearer@intel.com>
+Subject: RE: Github sync for BSD bootloader (UEFI & ATF)
+
+Definitely 😊
+I have all the paper works ready except forget the approval from Ying Cheh
+
+a.     PDT approval as attached
+b.     SDL completed > https://sp2010.amr.ith.intel.com/sites/sdl/MySDL/Dashboard.aspx?PN_ID=4289
+c.     SWLC scan complete > https://scipscn03.intel.com/protex/?uifsid=1#0=dW,ba,eA,dR,gc,gL,fI&a=c%5Fpsgsocfpgaarmtrustedfirmware%5F17729
+
+Hi Sau Kae and Tien Hock,
+Can you provide test result here so we can obtain approval from Ying Cheh?
+
+Thanks and have a nice day!
+
+Chin Liang
+Internal Global Dial: 2 701 8776
+Direct Line: +60 4 636 8776
+
+From: Vandervennet, Yves
+Sent: Wednesday, February 14, 2018 12:10 AM
+To: Tull, Alan <alan.tull@intel.com>; See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>
+Cc: Tan, Sau Kae <sau.kae.tan@intel.com>; Loh, Tien Hock <tien.hock.loh@intel.com>; Shearer, Findlay <findlay.shearer@intel.com>
+Subject: RE: Github sync for BSD bootloader (UEFI & ATF)
+
+Did it get approval from the OS PDT?
+
+From: Tull, Alan
+Sent: Tuesday, February 13, 2018 9:38 AM
+To: See, Chin Liang <chin.liang.see@intel.com>; Vandervennet, Yves <yves.vandervennet@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>
+Cc: Tan, Sau Kae <sau.kae.tan@intel.com>; Loh, Tien Hock <tien.hock.loh@intel.com>; Shearer, Findlay <findlay.shearer@intel.com>
+Subject: RE: Github sync for BSD bootloader (UEFI & ATF)
+
+Great!  I think this is the first time arm-trusted-firmware will be pushed to github, so that is new.
+
+Alan
+
+From: See, Chin Liang
+Sent: Tuesday, February 13, 2018 9:36 AM
+To: Tull, Alan <alan.tull@intel.com>; Vandervennet, Yves <yves.vandervennet@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>
+Cc: Tan, Sau Kae <sau.kae.tan@intel.com>; Loh, Tien Hock <tien.hock.loh@intel.com>; Shearer, Findlay <findlay.shearer@intel.com>
+Subject: RE: Github sync for BSD bootloader (UEFI & ATF)
+
+Hi Alan,
+
+Sure, we do have regtest for that today.
+We will obtain that from Ying Cheh tomorrow.
+
+Thanks and have a nice day!
+
+Chin Liang
+Internal Global Dial: 2 701 8776
+Direct Line: +60 4 636 8776
+
+From: Tull, Alan
+Sent: Tuesday, February 13, 2018 11:34 PM
+To: See, Chin Liang <chin.liang.see@intel.com>; Vandervennet, Yves <yves.vandervennet@intel.com>
+Cc: Tan, Sau Kae <sau.kae.tan@intel.com>; Loh, Tien Hock <tien.hock.loh@intel.com>; Shearer, Findlay <findlay.shearer@intel.com>
+Subject: RE: Github sync for BSD bootloader (UEFI & ATF)
+
+OK, I’ll need the regular approval email.
+
+Thanks,
+Alan
+
+From: See, Chin Liang
+Sent: Tuesday, February 13, 2018 7:13 AM
+To: Vandervennet, Yves <yves.vandervennet@intel.com>; Tull, Alan <alan.tull@intel.com>
+Cc: Tan, Sau Kae <sau.kae.tan@intel.com>; Loh, Tien Hock <tien.hock.loh@intel.com>; Shearer, Findlay <findlay.shearer@intel.com>
+Subject: Github sync for BSD bootloader (UEFI & ATF)
+
+Hi Yves and Alan,
+
+Thanks and good that we resume business as usual for Linux and U-Boot.
+
+With that, need your help to update the BSD bootloader.
+I am thinking this would be the right time that we include UEFI and Arm Trusted Firmware (ATF) as part of bi-weekly release cadence.
+
+1.   Arm Trusted Firmware (Tien Hock)
+Branch: socfpga_v1.4
+Tag: “rel_socfpga_stratix10_soceds_18.0ir.1”
+Last commit:
+commit d10347571e69320a4d14fe700c0fe6c039acfe49
+Author: Vasyl Vavrychuk <vasyl.vavrychuk@globallogic.com>
+Date:   Tue Jan 23 13:29:00 2018 +0200
+
+2.	UEFI
+Branch: socvp_socfpga_udk2015
+Tag: “rel_socfpga_stratix10_soceds_18.0ir.1”
+Last commit:
+commit f21d2c222304660da0e1610a1b295388b27da580
+Author: Sau Kae Tan saktan@pg-nx2.altera.com
+Date:   Fri Jan 5 15:58:59 2018 +0800
+Thanks and have a nice day!
+
+Chin Liang
+Internal Global Dial: 2 701 8776
+Direct Line: +60 4 636 8776

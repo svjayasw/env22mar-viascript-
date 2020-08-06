@@ -1,0 +1,1395 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+We backed one patch out of at-git and github git as it contained a patch that did
+not have the proper signoff from the original (upstream) author.
+  repo: meta-altera   branch: angstrom-v2014.12-yocto1.7
+  commit: f6d8e6c Graham Moore FogBugz #381598: Add large OOB patch to mtd-utils to support new NAND chips.
+The following tags that point to this patch have been removed:
+  rel_angstrom-v2014.12-yocto1.7_16.09.01_pr
+  rel_angstrom-v2014.12-yocto1.7_16.08.02_pr
+
+The following new branches were pushed:
+  repo : linux-socfpga          branch : socfpga-4.7
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.6
+branch tag  : rel_socfpga-4.6_16.09.02_pr
+new commits : 2
+c0028fa Alan Tull FogBugz #398879-2: fpga mgr debugfs
+ab29667 Alan Tull FogBugz #398879-1: fpga: doc: documentation for FPGA debugfs
+
+
+++wiki:
+*Branch name*: socfpga-4.6, *Tag name:* rel_socfpga-4.6_16.09.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 398879-2 | fpga mgr debugfs | [[ https://github.com/altera-opensource/linux-socfpga/commit/c0028fa343733d13b43e4a282290a125904d5892 ][ c0028fa343733d13b43e4a282290a125904d5892 ]] |
+| 398879-1 | fpga: doc: documentation for FPGA debugfs | [[ https://github.com/altera-opensource/linux-socfpga/commit/ab296677bb4c2b6769483307e43b9f0c10dcd47f ][ ab296677bb4c2b6769483307e43b9f0c10dcd47f ]] |
+--wiki:
+
+
+branch      : socfpga-4.7
+branch tag  : rel_socfpga-4.7_16.09.02_pr
+Pushing new branch to external git
+
+branch      : socfpga-4.1.22-ltsi
+branch tag  : rel_socfpga-4.1.22-ltsi_16.09.02_pr
+new commits : 27
+742f555 Alan Tull FogBugz #398879-2: fpga mgr debugfs
+8f32667 Alan Tull FogBugz #398879-1: fpga: doc: documentation for FPGA debugfs
+0ae2c8a Guenter Roeck watchdog: Make stop function optional
+ab7f057 Guenter Roeck watchdog: Add support for minimum time between heartbeats
+3b16e1a Guenter Roeck watchdog: Introduce WDOG_HW_RUNNING flag
+81ac194 Guenter Roeck watchdog: Introduce hardware maximum heartbeat in watchdog core
+42fffff Guenter Roeck watchdog: Make set_timeout function optional
+6cb2b04 Guenter Roeck watchdog: Drop pointer to watchdog device from struct watchdog_device
+d09deed Guenter Roeck watchdog: Add support for creating driver specific sysfs attributes
+222275e Tomas Winkler watchdog: kill unref/ref ops
+800e77e Guenter Roeck watchdog: Separate and maintain variables based on variable lifetime
+57af7bb Guenter Roeck watchdog: Create watchdog device in watchdog_dev.c
+6294c96 Pratyush Anand watchdog: Read device status through sysfs attributes
+af7df7a Pratyush Anand watchdog: Use static struct class watchdog_class in stead of pointer
+7c2ea5a Alexander Usyskin watchdog: core: propagate ping error code to the user space
+059c7cc Guenter Roeck watchdog: watchdog_dev: Use single variable name for struct watchdog_device
+03c3490 Damien Riegel watchdog: core: add reboot notifier support
+b3887d0 Damien Riegel watchdog: core: add restart handler support
+c40c819 Wolfram Sang watchdog: include: add units for timeout values in kerneldoc
+758c571 Wolfram Sang watchdog: include: fix some typos
+3094106 Guenter Roeck watchdog: Always evaluate new timeout against min_timeout
+5c9dec6 Guenter Roeck kernel/watchdog: move NMI function header declarations from watchdog.h to nmi.h
+4fef819 Jean-Baptiste Theou watchdog: watchdog_core: Add watchdog registration deferral mechanism
+9eb8624 Guenter Roeck watchdog: dw_wdt: Convert to use watchdog infrastructure
+0b108ed Jisheng Zhang watchdog: dw_wdt: fix signedness bug in dw_wdt_top_in_seconds()
+6edd3ce Doug Anderson watchdog: dw_wdt: keepalive the watchdog at write time
+c97d0f44 Doug Anderson watchdog: dw_wdt: No need for a spinlock
+
+
+++wiki:
+*Branch name*: socfpga-4.1.22-ltsi, *Tag name:* rel_socfpga-4.1.22-ltsi_16.09.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 398879-2 | fpga mgr debugfs | [[ https://github.com/altera-opensource/linux-socfpga/commit/742f555df70361ec80ae48df461f279487fd9959 ][ 742f555df70361ec80ae48df461f279487fd9959 ]] |
+| 398879-1 | fpga: doc: documentation for FPGA debugfs | [[ https://github.com/altera-opensource/linux-socfpga/commit/8f32667664b2a6189fc0072e9920a3c446fac428 ][ 8f32667664b2a6189fc0072e9920a3c446fac428 ]] |
+| community | watchdog: Make stop function optional | [[ https://github.com/altera-opensource/linux-socfpga/commit/0ae2c8a59c1c259368910938ed014b5a0d955f69 ][ 0ae2c8a59c1c259368910938ed014b5a0d955f69 ]] |
+| community | watchdog: Add support for minimum time between heartbeats | [[ https://github.com/altera-opensource/linux-socfpga/commit/ab7f057f332a4ecdda5a43fb7d55a4591810fc91 ][ ab7f057f332a4ecdda5a43fb7d55a4591810fc91 ]] |
+| community | watchdog: Introduce WDOG_HW_RUNNING flag | [[ https://github.com/altera-opensource/linux-socfpga/commit/3b16e1ab7fad57dada75ef7d15480a3462bfa944 ][ 3b16e1ab7fad57dada75ef7d15480a3462bfa944 ]] |
+| community | watchdog: Introduce hardware maximum heartbeat in watchdog core | [[ https://github.com/altera-opensource/linux-socfpga/commit/81ac194cc698d01d5fc34fe678883629c362c484 ][ 81ac194cc698d01d5fc34fe678883629c362c484 ]] |
+| community | watchdog: Make set_timeout function optional | [[ https://github.com/altera-opensource/linux-socfpga/commit/42fffff00ab9275042f7bc4d60d4be3418b56c94 ][ 42fffff00ab9275042f7bc4d60d4be3418b56c94 ]] |
+| community | watchdog: Drop pointer to watchdog device from struct watchdog_device | [[ https://github.com/altera-opensource/linux-socfpga/commit/6cb2b04e4b9346080b6c22a1393aca6a3d6301d2 ][ 6cb2b04e4b9346080b6c22a1393aca6a3d6301d2 ]] |
+| community | watchdog: Add support for creating driver specific sysfs attributes | [[ https://github.com/altera-opensource/linux-socfpga/commit/d09deed24f71e4327904fa0dd8e04dea409a1a25 ][ d09deed24f71e4327904fa0dd8e04dea409a1a25 ]] |
+| community | watchdog: kill unref/ref ops | [[ https://github.com/altera-opensource/linux-socfpga/commit/222275e837916e69d1bc999eed0ac4d1076d9b60 ][ 222275e837916e69d1bc999eed0ac4d1076d9b60 ]] |
+| community | watchdog: Separate and maintain variables based on variable lifetime | [[ https://github.com/altera-opensource/linux-socfpga/commit/800e77ea9eb6e0295dea4e4dbd1fac0947bcf5ae ][ 800e77ea9eb6e0295dea4e4dbd1fac0947bcf5ae ]] |
+| community | watchdog: Create watchdog device in watchdog_dev.c | [[ https://github.com/altera-opensource/linux-socfpga/commit/57af7bbbb34132fe4d16f1e5714607d31d093c43 ][ 57af7bbbb34132fe4d16f1e5714607d31d093c43 ]] |
+| community | watchdog: Read device status through sysfs attributes | [[ https://github.com/altera-opensource/linux-socfpga/commit/6294c9633dd27ba8fa389ff94d17d6e3027537f3 ][ 6294c9633dd27ba8fa389ff94d17d6e3027537f3 ]] |
+| community | watchdog: Use static struct class watchdog_class in stead of pointer | [[ https://github.com/altera-opensource/linux-socfpga/commit/af7df7a54459b4929b070e0365136b802e5c7257 ][ af7df7a54459b4929b070e0365136b802e5c7257 ]] |
+| community | watchdog: core: propagate ping error code to the user space | [[ https://github.com/altera-opensource/linux-socfpga/commit/7c2ea5a7628cec7ac7995b6e1dd23fef87f939e3 ][ 7c2ea5a7628cec7ac7995b6e1dd23fef87f939e3 ]] |
+| community | watchdog: watchdog_dev: Use single variable name for struct watchdog_device | [[ https://github.com/altera-opensource/linux-socfpga/commit/059c7ccb86340a14614b9bad245c6e4cdca3de57 ][ 059c7ccb86340a14614b9bad245c6e4cdca3de57 ]] |
+| community | watchdog: core: add reboot notifier support | [[ https://github.com/altera-opensource/linux-socfpga/commit/03c3490d23f317a238c9abf6eb5d44336bfa5e37 ][ 03c3490d23f317a238c9abf6eb5d44336bfa5e37 ]] |
+| community | watchdog: core: add restart handler support | [[ https://github.com/altera-opensource/linux-socfpga/commit/b3887d06b917ed60a5b5bb9ec026979553f75628 ][ b3887d06b917ed60a5b5bb9ec026979553f75628 ]] |
+| community | watchdog: include: add units for timeout values in kerneldoc | [[ https://github.com/altera-opensource/linux-socfpga/commit/c40c8191a29479ab95017b5a1f3d68ae6042d272 ][ c40c8191a29479ab95017b5a1f3d68ae6042d272 ]] |
+| community | watchdog: include: fix some typos | [[ https://github.com/altera-opensource/linux-socfpga/commit/758c5712ec9cdcc59fb5ed95d3067d726ee12519 ][ 758c5712ec9cdcc59fb5ed95d3067d726ee12519 ]] |
+| community | watchdog: Always evaluate new timeout against min_timeout | [[ https://github.com/altera-opensource/linux-socfpga/commit/3094106e58ea7df721197bc3ccfb6f63b0e665b6 ][ 3094106e58ea7df721197bc3ccfb6f63b0e665b6 ]] |
+| community | kernel/watchdog: move NMI function header declarations from watchdog.h to nmi.h | [[ https://github.com/altera-opensource/linux-socfpga/commit/5c9dec611fbce467a368022014ed29817ebbf3e1 ][ 5c9dec611fbce467a368022014ed29817ebbf3e1 ]] |
+| community | watchdog: watchdog_core: Add watchdog registration deferral mechanism | [[ https://github.com/altera-opensource/linux-socfpga/commit/4fef819494fc58b28440fd2425cb0e7750b53f50 ][ 4fef819494fc58b28440fd2425cb0e7750b53f50 ]] |
+| community | watchdog: dw_wdt: Convert to use watchdog infrastructure | [[ https://github.com/altera-opensource/linux-socfpga/commit/9eb86247ba79bbef6dc61d42d56e75e47b0b09dc ][ 9eb86247ba79bbef6dc61d42d56e75e47b0b09dc ]] |
+| community | watchdog: dw_wdt: fix signedness bug in dw_wdt_top_in_seconds() | [[ https://github.com/altera-opensource/linux-socfpga/commit/0b108edf85013e8b0a8ec2175fff9d29ec0b10fe ][ 0b108edf85013e8b0a8ec2175fff9d29ec0b10fe ]] |
+| community | watchdog: dw_wdt: keepalive the watchdog at write time | [[ https://github.com/altera-opensource/linux-socfpga/commit/6edd3ce7fd6ada8ed6a4455fee60b28878b219d0 ][ 6edd3ce7fd6ada8ed6a4455fee60b28878b219d0 ]] |
+| community | watchdog: dw_wdt: No need for a spinlock | [[ https://github.com/altera-opensource/linux-socfpga/commit/c97d0f44bd4140b82d54cc53db4533c41cae9a21 ][ c97d0f44bd4140b82d54cc53db4533c41cae9a21 ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.22-ltsi-rt
+branch tag  : rel_socfpga-4.1.22-ltsi-rt_16.09.02_pr
+new commits : 25
+f7f45ec Guenter Roeck watchdog: Make stop function optional
+09ea102 Guenter Roeck watchdog: Add support for minimum time between heartbeats
+cc1780a Guenter Roeck watchdog: Introduce WDOG_HW_RUNNING flag
+3340403 Guenter Roeck watchdog: Introduce hardware maximum heartbeat in watchdog core
+36b01e8 Guenter Roeck watchdog: Make set_timeout function optional
+8872759 Guenter Roeck watchdog: Drop pointer to watchdog device from struct watchdog_device
+ad1f209 Guenter Roeck watchdog: Add support for creating driver specific sysfs attributes
+8a3a0fe Tomas Winkler watchdog: kill unref/ref ops
+47a67e9 Guenter Roeck watchdog: Separate and maintain variables based on variable lifetime
+ab18ddb Guenter Roeck watchdog: Create watchdog device in watchdog_dev.c
+dd082d5 Pratyush Anand watchdog: Read device status through sysfs attributes
+5b0a912 Pratyush Anand watchdog: Use static struct class watchdog_class in stead of pointer
+50ccc76 Alexander Usyskin watchdog: core: propagate ping error code to the user space
+3aab431 Guenter Roeck watchdog: watchdog_dev: Use single variable name for struct watchdog_device
+6abb666 Damien Riegel watchdog: core: add reboot notifier support
+d5b3a6c Damien Riegel watchdog: core: add restart handler support
+d0b5c7e Wolfram Sang watchdog: include: add units for timeout values in kerneldoc
+c3716a7 Wolfram Sang watchdog: include: fix some typos
+50fb622 Guenter Roeck watchdog: Always evaluate new timeout against min_timeout
+aec7fc2 Guenter Roeck kernel/watchdog: move NMI function header declarations from watchdog.h to nmi.h
+cb4d64e Jean-Baptiste Theou watchdog: watchdog_core: Add watchdog registration deferral mechanism
+f7cc460 Guenter Roeck watchdog: dw_wdt: Convert to use watchdog infrastructure
+a321f55 Jisheng Zhang watchdog: dw_wdt: fix signedness bug in dw_wdt_top_in_seconds()
+5b88379 Doug Anderson watchdog: dw_wdt: keepalive the watchdog at write time
+e787f10 Doug Anderson watchdog: dw_wdt: No need for a spinlock
+
+
+++wiki:
+*Branch name*: socfpga-4.1.22-ltsi-rt, *Tag name:* rel_socfpga-4.1.22-ltsi-rt_16.09.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | watchdog: Make stop function optional | [[ https://github.com/altera-opensource/linux-socfpga/commit/f7f45ec421a7f3fd5101f6d4be21aecc1efa7b0c ][ f7f45ec421a7f3fd5101f6d4be21aecc1efa7b0c ]] |
+| community | watchdog: Add support for minimum time between heartbeats | [[ https://github.com/altera-opensource/linux-socfpga/commit/09ea1024e6dbab18d79d47a8297c8bc620c5baf4 ][ 09ea1024e6dbab18d79d47a8297c8bc620c5baf4 ]] |
+| community | watchdog: Introduce WDOG_HW_RUNNING flag | [[ https://github.com/altera-opensource/linux-socfpga/commit/cc1780aa8b7f0035e0b1e06810d6da8f80b04899 ][ cc1780aa8b7f0035e0b1e06810d6da8f80b04899 ]] |
+| community | watchdog: Introduce hardware maximum heartbeat in watchdog core | [[ https://github.com/altera-opensource/linux-socfpga/commit/33404036495c24855264550951f52e2f44e87d04 ][ 33404036495c24855264550951f52e2f44e87d04 ]] |
+| community | watchdog: Make set_timeout function optional | [[ https://github.com/altera-opensource/linux-socfpga/commit/36b01e8c8a9fe826506febc7a3d9afb9f8d28261 ][ 36b01e8c8a9fe826506febc7a3d9afb9f8d28261 ]] |
+| community | watchdog: Drop pointer to watchdog device from struct watchdog_device | [[ https://github.com/altera-opensource/linux-socfpga/commit/887275947d7dfcfd0ae8519a68bcfa28e2285a04 ][ 887275947d7dfcfd0ae8519a68bcfa28e2285a04 ]] |
+| community | watchdog: Add support for creating driver specific sysfs attributes | [[ https://github.com/altera-opensource/linux-socfpga/commit/ad1f209e061ca19a7c58f0364e37e5003900820a ][ ad1f209e061ca19a7c58f0364e37e5003900820a ]] |
+| community | watchdog: kill unref/ref ops | [[ https://github.com/altera-opensource/linux-socfpga/commit/8a3a0feedc885d82799a087cc9fb1d64a1395fee ][ 8a3a0feedc885d82799a087cc9fb1d64a1395fee ]] |
+| community | watchdog: Separate and maintain variables based on variable lifetime | [[ https://github.com/altera-opensource/linux-socfpga/commit/47a67e9257be5c0822a495f9f2eca894e4e26cde ][ 47a67e9257be5c0822a495f9f2eca894e4e26cde ]] |
+| community | watchdog: Create watchdog device in watchdog_dev.c | [[ https://github.com/altera-opensource/linux-socfpga/commit/ab18ddbff2b349c34f14ad2030c5e846c70a3e40 ][ ab18ddbff2b349c34f14ad2030c5e846c70a3e40 ]] |
+| community | watchdog: Read device status through sysfs attributes | [[ https://github.com/altera-opensource/linux-socfpga/commit/dd082d58c61c90d6a37974867cffde87e3e4e4c3 ][ dd082d58c61c90d6a37974867cffde87e3e4e4c3 ]] |
+| community | watchdog: Use static struct class watchdog_class in stead of pointer | [[ https://github.com/altera-opensource/linux-socfpga/commit/5b0a912319014f260b4a41b1704df714ce4297ae ][ 5b0a912319014f260b4a41b1704df714ce4297ae ]] |
+| community | watchdog: core: propagate ping error code to the user space | [[ https://github.com/altera-opensource/linux-socfpga/commit/50ccc76d84dc2360b17a0e42db7e023f9fc9f6fa ][ 50ccc76d84dc2360b17a0e42db7e023f9fc9f6fa ]] |
+| community | watchdog: watchdog_dev: Use single variable name for struct watchdog_device | [[ https://github.com/altera-opensource/linux-socfpga/commit/3aab431999a91ceea6fb697fcf6c35c9cd278db8 ][ 3aab431999a91ceea6fb697fcf6c35c9cd278db8 ]] |
+| community | watchdog: core: add reboot notifier support | [[ https://github.com/altera-opensource/linux-socfpga/commit/6abb6665487cdbf71b0c16478c01e00d55f7664b ][ 6abb6665487cdbf71b0c16478c01e00d55f7664b ]] |
+| community | watchdog: core: add restart handler support | [[ https://github.com/altera-opensource/linux-socfpga/commit/d5b3a6cdf3eb6df3f28ff395876dda465b92d1e2 ][ d5b3a6cdf3eb6df3f28ff395876dda465b92d1e2 ]] |
+| community | watchdog: include: add units for timeout values in kerneldoc | [[ https://github.com/altera-opensource/linux-socfpga/commit/d0b5c7e7a787b0e81d1601fc625dbcd0b8c2d4d9 ][ d0b5c7e7a787b0e81d1601fc625dbcd0b8c2d4d9 ]] |
+| community | watchdog: include: fix some typos | [[ https://github.com/altera-opensource/linux-socfpga/commit/c3716a79fd961248bdbac9cba211b2f8747f01b7 ][ c3716a79fd961248bdbac9cba211b2f8747f01b7 ]] |
+| community | watchdog: Always evaluate new timeout against min_timeout | [[ https://github.com/altera-opensource/linux-socfpga/commit/50fb622d83d9cf46aeb569bef16770660c928671 ][ 50fb622d83d9cf46aeb569bef16770660c928671 ]] |
+| community | kernel/watchdog: move NMI function header declarations from watchdog.h to nmi.h | [[ https://github.com/altera-opensource/linux-socfpga/commit/aec7fc225b968b7a0e617528e46e51abab6af245 ][ aec7fc225b968b7a0e617528e46e51abab6af245 ]] |
+| community | watchdog: watchdog_core: Add watchdog registration deferral mechanism | [[ https://github.com/altera-opensource/linux-socfpga/commit/cb4d64e5d9b2762167fa14c9b736e5f61041b628 ][ cb4d64e5d9b2762167fa14c9b736e5f61041b628 ]] |
+| community | watchdog: dw_wdt: Convert to use watchdog infrastructure | [[ https://github.com/altera-opensource/linux-socfpga/commit/f7cc460d1cd101103bb20f5c55acb1211898885e ][ f7cc460d1cd101103bb20f5c55acb1211898885e ]] |
+| community | watchdog: dw_wdt: fix signedness bug in dw_wdt_top_in_seconds() | [[ https://github.com/altera-opensource/linux-socfpga/commit/a321f55036e818809aeb72887cc47f2d3dc316ba ][ a321f55036e818809aeb72887cc47f2d3dc316ba ]] |
+| community | watchdog: dw_wdt: keepalive the watchdog at write time | [[ https://github.com/altera-opensource/linux-socfpga/commit/5b88379ae870cdb5dc6326620a6d4c2dbbac0788 ][ 5b88379ae870cdb5dc6326620a6d4c2dbbac0788 ]] |
+| community | watchdog: dw_wdt: No need for a spinlock | [[ https://github.com/altera-opensource/linux-socfpga/commit/e787f104b4a2bfb46063cd54b628058d6f273354 ][ e787f104b4a2bfb46063cd54b628058d6f273354 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.6_16.09.02_pr
+commit: c0028fa Alan Tull FogBugz #398879-2: fpga mgr debugfs
+
+tag:    rel_socfpga-4.7_16.09.02_pr
+commit: 923ea28 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+tag:    rel_socfpga-4.1.22-ltsi_16.09.02_pr
+commit: 742f555 Alan Tull FogBugz #398879-2: fpga mgr debugfs
+
+tag:    rel_socfpga-4.1.22-ltsi-rt_16.09.02_pr
+commit: f7f45ec Guenter Roeck watchdog: Make stop function optional
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.09.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.09.02_pr
+new commits : 1
+ab2181d Tien Fong Chee FogBugz #398001: Enable UART for console when FPGA is external configured
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_16.09.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 398001 | Enable UART for console when FPGA is external configured | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/ab2181dd766157a74b309d12e0b61c4f3cdc8564 ][ ab2181dd766157a74b309d12e0b61c4f3cdc8564 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.09.02_pr
+commit: f5cd6b9 Chin Liang See spi: cadence_qspi_apb: Ensure baudrate doesn't exceed max value
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.09.02_pr
+commit: ab2181d Tien Fong Chee FogBugz #398001: Enable UART for console when FPGA is external configured
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.09.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.09.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.09.02_pr
+new commits : 2
+d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+5c3c23f Graham Moore Add kernel v4.5 recipe, for stratix10swvp
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-yocto1.7, *Tag name:* rel_angstrom-v2014.12-yocto1.7_16.09.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp | [[ https://github.com/altera-opensource/meta-altera/commit/d6f1376455ff9341a67e44bbcb0253d5e78883a4 ][ d6f1376455ff9341a67e44bbcb0253d5e78883a4 ]] |
+| community | Add kernel v4.5 recipe, for stratix10swvp | [[ https://github.com/altera-opensource/meta-altera/commit/5c3c23fe1c84cd1568fbe1c00a24635aea2c33e2 ][ 5c3c23fe1c84cd1568fbe1c00a24635aea2c33e2 ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.09.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.09.02_pr
+commit: d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.09.02_pr
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.6
+
+commit c0028fa343733d13b43e4a282290a125904d5892
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Aug 17 16:25:59 2016 -0500
+
+    FogBugz #398879-2: fpga mgr debugfs
+    
+    Implement DebugFS for the FPGA Manager Framework.
+    
+    Each FPGA gets its own directory such as
+     <debugfs>/fpga_manager/fpga0 and three files:
+    
+     * [RW] flags          = flags as defined in fpga-mgr.h
+     * [RW] firmware_name  = write/read back name of FPGA image
+                             firmware file to program
+     * [WO] image          = write-only file for directly writing
+                             fpga image w/o firmware layer
+    
+    Enabled by CONFIG_FPGA_MGR_DEBUG_FS
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v2: s/Altera/Intel/
+        s/parital/partial/
+        Use dev_err instead of pr_err
+        Clean up print: remove "count="
+        Kconfig: depends on FPGA && DEBUGFS_FS
+        Move documentation out of code
+
+commit ab296677bb4c2b6769483307e43b9f0c10dcd47f
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue Aug 23 11:57:49 2016 -0500
+
+    FogBugz #398879-1: fpga: doc: documentation for FPGA debugfs
+    
+    Document the DebugFS interface for the core FPGA Manager
+    framework.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v2: Move documentation out of source to Documentation folder
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.7
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi
+
+commit 742f555df70361ec80ae48df461f279487fd9959
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Aug 17 16:25:59 2016 -0500
+
+    FogBugz #398879-2: fpga mgr debugfs
+    
+    Implement DebugFS for the FPGA Manager Framework.
+    
+    Each FPGA gets its own directory such as
+     <debugfs>/fpga_manager/fpga0 and three files:
+    
+     * [RW] flags          = flags as defined in fpga-mgr.h
+     * [RW] firmware_name  = write/read back name of FPGA image
+                             firmware file to program
+     * [WO] image          = write-only file for directly writing
+                             fpga image w/o firmware layer
+    
+    Enabled by CONFIG_FPGA_MGR_DEBUG_FS
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v2: s/Altera/Intel/
+        s/parital/partial/
+        Use dev_err instead of pr_err
+        Clean up print: remove "count="
+        Kconfig: depends on FPGA && DEBUGFS_FS
+        Move documentation out of code
+
+commit 8f32667664b2a6189fc0072e9920a3c446fac428
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue Aug 23 11:57:49 2016 -0500
+
+    FogBugz #398879-1: fpga: doc: documentation for FPGA debugfs
+    
+    Document the DebugFS interface for the core FPGA Manager
+    framework.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v2: Move documentation out of source to Documentation folder
+
+commit 0ae2c8a59c1c259368910938ed014b5a0d955f69
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Feb 28 13:12:17 2016 -0800
+
+    watchdog: Make stop function optional
+    
+    Not all hardware watchdogs can be stopped. The driver for
+    such watchdogs would typically only set the WATCHDOG_HW_RUNNING
+    flag in its stop function. Make the stop function optional and set
+    WATCHDOG_HW_RUNNING in the watchdog core if it is not provided.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit ab7f057f332a4ecdda5a43fb7d55a4591810fc91
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Feb 28 13:12:18 2016 -0800
+
+    watchdog: Add support for minimum time between heartbeats
+    
+    Some watchdogs require a minimum time between heartbeats.
+    Examples are the watchdogs in DA9062 and AT91SAM9x.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 3b16e1ab7fad57dada75ef7d15480a3462bfa944
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Feb 28 13:12:16 2016 -0800
+
+    watchdog: Introduce WDOG_HW_RUNNING flag
+    
+    The WDOG_HW_RUNNING flag is expected to be set by watchdog drivers if
+    the hardware watchdog is running. If the flag is set, the watchdog
+    subsystem will ping the watchdog even if the watchdog device is closed.
+    
+    The watchdog driver stop function is now optional and may be omitted
+    if the watchdog can not be stopped. If stopping the watchdog is not
+    possible but the driver implements a stop function, it is responsible
+    to set the WDOG_HW_RUNNING flag in its stop function.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 81ac194cc698d01d5fc34fe678883629c362c484
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Feb 28 13:12:15 2016 -0800
+
+    watchdog: Introduce hardware maximum heartbeat in watchdog core
+    
+    Introduce an optional hardware maximum heartbeat in the watchdog core.
+    The hardware maximum heartbeat can be lower than the maximum timeout.
+    
+    Drivers can set the maximum hardware heartbeat value in the watchdog data
+    structure. If the configured timeout exceeds the maximum hardware heartbeat,
+    the watchdog core enables a timer function to assist sending keepalive
+    requests to the watchdog driver.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 42fffff00ab9275042f7bc4d60d4be3418b56c94
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Feb 28 13:12:14 2016 -0800
+
+    watchdog: Make set_timeout function optional
+    
+    For some watchdogs, the watchdog driver handles timeout changes without
+    explicitly setting any registers. In this situation, the watchdog driver
+    might only set the 'timeout' variable but do nothing else.
+    This can as well be handled by the infrastructure, so make the set_timeout
+    callback optional. If WDIOF_SETTIMEOUT is configured but the .set_timeout
+    callback is not available, update the timeout variable in the
+    infrastructure code.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 6cb2b04e4b9346080b6c22a1393aca6a3d6301d2
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Jan 3 15:11:58 2016 -0800
+
+    watchdog: Drop pointer to watchdog device from struct watchdog_device
+    
+    The lifetime of the watchdog device pointer is different from the lifetime
+    of its character device. Remove it entirely to avoid race conditions.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit d09deed24f71e4327904fa0dd8e04dea409a1a25
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Jan 3 15:11:56 2016 -0800
+
+    watchdog: Add support for creating driver specific sysfs attributes
+    
+    The Zodiac watchdog driver attaches additional sysfs attributes to the
+    watchdog device. This has a number of problems: The watchdog device
+    lifetime differs from the driver lifetime, and the device structure
+    should therefore not be accessed from drivers. Also, creating sysfs
+    attributes after driver registration results in a potential race condition
+    if user space expects the attributes to exist but they don't exist yet.
+    
+    Add support for creating driver specific sysfs attributes to the watchdog
+    core to solve the problems.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 222275e837916e69d1bc999eed0ac4d1076d9b60
+Author: Tomas Winkler <tomas.winkler@intel.com>
+Date:   Sun Jan 3 13:32:37 2016 +0200
+
+    watchdog: kill unref/ref ops
+    
+    ref/unref ops are not called at all so even marked them as deprecated
+    is misleading, we need to just drop the API.
+    
+    Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 800e77ea9eb6e0295dea4e4dbd1fac0947bcf5ae
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Fri Dec 25 16:01:42 2015 -0800
+
+    watchdog: Separate and maintain variables based on variable lifetime
+    
+    All variables required by the watchdog core to manage a watchdog are
+    currently stored in struct watchdog_device. The lifetime of those
+    variables is determined by the watchdog driver. However, the lifetime
+    of variables used by the watchdog core differs from the lifetime of
+    struct watchdog_device. To remedy this situation, watchdog drivers
+    can implement ref and unref callbacks, to be used by the watchdog
+    core to lock struct watchdog_device in memory.
+    
+    While this solves the immediate problem, it depends on watchdog drivers
+    to actually implement the ref/unref callbacks. This is error prone,
+    often not implemented in the first place, or not implemented correctly.
+    
+    To solve the problem without requiring driver support, split the variables
+    in struct watchdog_device into two data structures - one for variables
+    associated with the watchdog driver, one for variables associated with
+    the watchdog core. With this approach, the watchdog core can keep track
+    of its variable lifetime and no longer depends on ref/unref callbacks
+    in the driver. As a side effect, some of the variables originally in
+    struct watchdog_driver are now private to the watchdog core and no longer
+    visible in watchdog drivers.
+    
+    As a side effect of the changes made, an ioctl will now always fail
+    with -ENODEV after a watchdog device was unregistered with the character
+    device still open. Previously, it would only fail with -ENODEV in some
+    situations. Also, ioctl operations are now atomic from driver perspective.
+    With this change, it is now guaranteed that the driver will not unregister
+    a watchdog between a timeout change and the subsequent ping.
+    
+    The 'ref' and 'unref' callbacks in struct watchdog_driver are no longer
+    used and marked as deprecated.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+    
+    Conflicts:
+    
+            drivers/watchdog/watchdog_core.c
+
+commit 57af7bbbb34132fe4d16f1e5714607d31d093c43
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Fri Dec 25 16:01:40 2015 -0800
+
+    watchdog: Create watchdog device in watchdog_dev.c
+    
+    The watchdog character device is currently created in watchdog_dev.c,
+    and the watchdog device in watchdog_core.c. This results in
+    cross-dependencies, since device creation needs to know the watchdog
+    character device number as well as the watchdog class, both of which
+    reside in watchdog_dev.c.
+    
+    Create the watchdog device in watchdog_dev.c to simplify the code.
+    
+    Inspired by earlier patch set from Damien Riegel.
+    
+    Cc: Damien Riegel <damien.riegel@savoirfairelinux.com>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+    
+    Conflicts:
+    
+            drivers/watchdog/watchdog_core.c
+
+commit 6294c9633dd27ba8fa389ff94d17d6e3027537f3
+Author: Pratyush Anand <panand@redhat.com>
+Date:   Thu Dec 17 17:53:59 2015 +0530
+
+    watchdog: Read device status through sysfs attributes
+    
+    This patch adds following attributes to watchdog device's sysfs interface
+    to read its different status.
+    
+    * state - reads whether device is active or not
+    * identity - reads Watchdog device's identity string.
+    * timeout - reads current timeout.
+    * timeleft - reads timeleft before watchdog generates a reset
+    * bootstatus - reads status of the watchdog device at boot
+    * status - reads watchdog device's  internal status bits
+    * nowayout - reads whether nowayout feature was set or not
+    
+    Testing with iTCO_wdt:
+     # cd /sys/class/watchdog/watchdog1/
+     # ls
+    bootstatus  dev  device  identity  nowayout  power  state
+    subsystem  timeleft  timeout  uevent
+     # cat identity
+    iTCO_wdt
+     # cat timeout
+    30
+     # cat state
+    inactive
+     # echo > /dev/watchdog1
+     # cat timeleft
+    26
+     # cat state
+    active
+     # cat bootstatus
+    0
+     # cat nowayout
+    0
+    
+    Signed-off-by: Pratyush Anand <panand@redhat.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit af7df7a54459b4929b070e0365136b802e5c7257
+Author: Pratyush Anand <panand@redhat.com>
+Date:   Thu Dec 17 17:53:58 2015 +0530
+
+    watchdog: Use static struct class watchdog_class in stead of pointer
+    
+    We need few sysfs attributes to know different status of a watchdog device.
+    To do that, we need to associate .dev_groups with watchdog_class. So
+    convert it from pointer to static.
+    Putting this static struct in watchdog_dev.c, so that static device
+    attributes defined in that file can be attached to it.
+    
+    Signed-off-by: Pratyush Anand <panand@redhat.com>
+    Suggested-by: Guenter Roeck <linux@roeck-us.net>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 7c2ea5a7628cec7ac7995b6e1dd23fef87f939e3
+Author: Alexander Usyskin <alexander.usyskin@intel.com>
+Date:   Mon Oct 26 14:07:58 2015 +0200
+
+    watchdog: core: propagate ping error code to the user space
+    
+    Watchdog ping return errors are ignored by watchdog core,
+    Whatchdog daemon should be informed about possible hardware error or
+    underlaying device driver get unregistered.
+    
+    Signed-off-by: Alexander Usyskin <alexander.usyskin@intel.com>
+    Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 059c7ccb86340a14614b9bad245c6e4cdca3de57
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Tue Sep 29 01:27:25 2015 -0700
+
+    watchdog: watchdog_dev: Use single variable name for struct watchdog_device
+    
+    The current code uses 'wdd', wddev', and 'watchdog' as variable names
+    for struct watchdog_device. This is confusing and makes it difficult
+    to enhance the code. Replace it all with 'wdd'.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Cc: Timo Kokkonen <timo.kokkonen@offcode.fi>
+    Acked-by: Uwe Kleine-König <u.kleine-koenig@pengutronix.de>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 03c3490d23f317a238c9abf6eb5d44336bfa5e37
+Author: Damien Riegel <damien.riegel@savoirfairelinux.com>
+Date:   Fri Nov 20 16:54:51 2015 -0500
+
+    watchdog: core: add reboot notifier support
+    
+    Many watchdog drivers register a reboot notifier in order to stop the
+    watchdog on system reboot. Thus we can factorize this code in the
+    watchdog core.
+    
+    For that purpose, a new notifier block is added in watchdog_device for
+    internal use only, as well as a new watchdog_stop_on_reboot helper
+    function.
+    
+    If this helper is called, watchdog core registers the related notifier
+    block and will stop the watchdog when SYS_HALT or SYS_DOWN is received.
+    
+    Since this operation can be critical on some platforms, abort the device
+    registration if the reboot notifier registration fails.
+    
+    Suggested-by: Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+    Signed-off-by: Damien Riegel <damien.riegel@savoirfairelinux.com>
+    Reviewed-by: Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit b3887d06b917ed60a5b5bb9ec026979553f75628
+Author: Damien Riegel <damien.riegel@savoirfairelinux.com>
+Date:   Mon Nov 16 12:27:59 2015 -0500
+
+    watchdog: core: add restart handler support
+    
+    Many watchdog drivers implement the same code to register a restart
+    handler. This patch provides a generic way to set such a function.
+    
+    The patch adds a new restart watchdog operation. If a restart priority
+    greater than 0 is needed, the driver can call
+    watchdog_set_restart_priority to set it.
+    
+    Suggested-by: Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+    Signed-off-by: Damien Riegel <damien.riegel@savoirfairelinux.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Reviewed-by: Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit c40c8191a29479ab95017b5a1f3d68ae6042d272
+Author: Wolfram Sang <wsa+renesas@sang-engineering.com>
+Date:   Tue Nov 3 09:00:16 2015 +0100
+
+    watchdog: include: add units for timeout values in kerneldoc
+    
+    Signed-off-by: Wolfram Sang <wsa+renesas@sang-engineering.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 758c5712ec9cdcc59fb5ed95d3067d726ee12519
+Author: Wolfram Sang <wsa+renesas@sang-engineering.com>
+Date:   Tue Nov 3 09:00:15 2015 +0100
+
+    watchdog: include: fix some typos
+    
+    Signed-off-by: Wolfram Sang <wsa+renesas@sang-engineering.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 3094106e58ea7df721197bc3ccfb6f63b0e665b6
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Tue Sep 29 01:27:24 2015 -0700
+
+    watchdog: Always evaluate new timeout against min_timeout
+    
+    Up to now, a new timeout value is only evaluated against min_timeout
+    if max_timeout is provided. This does not really make sense; a driver
+    can have a minimum timeout even if it does not have a maximum timeout.
+    Ensure that it is not smaller than min_timeout, even if max_timeout
+    is not set.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Acked-by: Uwe Kleine-König <u.kleine-koenig@pengutronix.de>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 5c9dec611fbce467a368022014ed29817ebbf3e1
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Fri Sep 4 15:45:12 2015 -0700
+
+    kernel/watchdog: move NMI function header declarations from watchdog.h to nmi.h
+    
+    The kernel's NMI watchdog has nothing to do with the watchdog subsystem.
+    Its header declarations should be in linux/nmi.h, not linux/watchdog.h.
+    
+    The code provided two sets of dummy functions if HARDLOCKUP_DETECTOR is
+    not configured, one in the include file and one in kernel/watchdog.c.
+    Remove the dummy functions from kernel/watchdog.c and use those from the
+    include file.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Cc: Stephane Eranian <eranian@google.com>
+    Cc: Peter Zijlstra (Intel) <peterz@infradead.org>
+    Cc: Ingo Molnar <mingo@kernel.org>
+    Cc: Don Zickus <dzickus@redhat.com>
+    Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
+    Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
+
+commit 4fef819494fc58b28440fd2425cb0e7750b53f50
+Author: Jean-Baptiste Theou <jtheou@adeneo-embedded.us>
+Date:   Tue Jun 9 09:55:02 2015 -0700
+
+    watchdog: watchdog_core: Add watchdog registration deferral mechanism
+    
+    Currently, watchdog subsystem require the misc subsystem to
+    register a watchdog. This may not be the case in case of an
+    early registration of a watchdog, which can be required when
+    the watchdog cannot be disabled.
+    
+    This patch introduces a deferral mechanism to remove this requirement.
+    
+    Signed-off-by: Jean-Baptiste Theou <jtheou@adeneo-embedded.us>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 9eb86247ba79bbef6dc61d42d56e75e47b0b09dc
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Feb 28 13:12:19 2016 -0800
+
+    watchdog: dw_wdt: Convert to use watchdog infrastructure
+    
+    Convert driver to use watchdog infrastructure. This includes
+    infrastructure support to handle watchdog keepalive if the watchdog
+    is running while the watchdog device is closed.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Tested-by: Douglas Anderson <dianders@chromium.org>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 0b108edf85013e8b0a8ec2175fff9d29ec0b10fe
+Author: Jisheng Zhang <jszhang@marvell.com>
+Date:   Tue Dec 15 22:25:27 2015 +0800
+
+    watchdog: dw_wdt: fix signedness bug in dw_wdt_top_in_seconds()
+    
+    On 64bit platforms, "(1 << (16 + top)) / clk_get_rate(dw_wdt.clk)" is
+    sign-extended to 64bit then converted to unsigned 64bit, finally divide
+    the clk rate. If the top is the maximum TOP i.e 15, "(1 << (16 +15))"
+    will be sign-extended to 0xffffffff80000000, then converted to unsigned
+    0xffffffff80000000, which is a huge number, thus the final result is
+    wrong.
+    
+    We fix this issue by giving usigned value(1U in this case) at first.
+    
+    Let's assume clk rate is 25MHZ,
+    Before the patch:
+    dw_wdt_top_in_seconds(15) = -864612050
+    
+    After the patch:
+    dw_wdt_top_in_seconds(15) = 85
+    
+    Signed-off-by: Jisheng Zhang <jszhang@marvell.com>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 6edd3ce7fd6ada8ed6a4455fee60b28878b219d0
+Author: Doug Anderson <dianders@chromium.org>
+Date:   Thu May 7 21:27:45 2015 -0700
+
+    watchdog: dw_wdt: keepalive the watchdog at write time
+    
+    If you've got code that does this in a tight loop
+      1. Open watchdog
+      2. Send 'expect close'
+      3. Close watchdog
+    ...you'll eventually trigger a watchdog reset.  You can reproduce this
+    by using daisydog (1) and running:
+      while true; do daisydog -c > /dev/null; done
+    
+    The problem is that each time you write to the watchdog for 'expect
+    close' it moves the timer .5 seconds out.  The timer thus never fires
+    and never pats the watchdog for you.
+    
+    1: http://git.chromium.org/gitweb/?p=chromiumos/third_party/daisydog.git
+    
+    Signed-off-by: Doug Anderson <dianders@chromium.org>
+    Tested-by: Jisheng Zhang <jszhang@marvell.com>
+    Reviewed-by: Dmitry Torokhov <dmitry.torokhov@gmail.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit c97d0f44bd4140b82d54cc53db4533c41cae9a21
+Author: Doug Anderson <dianders@chromium.org>
+Date:   Thu May 7 21:27:44 2015 -0700
+
+    watchdog: dw_wdt: No need for a spinlock
+    
+    Right now the dw_wdt uses a spinlock to protect dw_wdt_open().  The
+    problem is that while holding the spinlock we call:
+    -> dw_wdt_set_top()
+       -> dw_wdt_top_in_seconds()
+          -> clk_get_rate()
+             -> clk_prepare_lock()
+                -> mutex_lock()
+    
+    Locking a mutex while holding a spinlock is not allowed and leads to
+    warnings like "BUG: spinlock wrong CPU on CPU#1", among other
+    problems.
+    
+    There's no reason to use a spinlock.  Only dw_wdt_open() was protected
+    and the test_and_set_bit() at the start of that function protects us
+    anyway.
+    
+    Signed-off-by: Doug Anderson <dianders@chromium.org>
+    Tested-by: Jisheng Zhang <jszhang@marvell.com>
+    Reviewed-by: Dmitry Torokhov <dmitry.torokhov@gmail.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi-rt
+
+commit f7f45ec421a7f3fd5101f6d4be21aecc1efa7b0c
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Feb 28 13:12:17 2016 -0800
+
+    watchdog: Make stop function optional
+    
+    Not all hardware watchdogs can be stopped. The driver for
+    such watchdogs would typically only set the WATCHDOG_HW_RUNNING
+    flag in its stop function. Make the stop function optional and set
+    WATCHDOG_HW_RUNNING in the watchdog core if it is not provided.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 09ea1024e6dbab18d79d47a8297c8bc620c5baf4
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Feb 28 13:12:18 2016 -0800
+
+    watchdog: Add support for minimum time between heartbeats
+    
+    Some watchdogs require a minimum time between heartbeats.
+    Examples are the watchdogs in DA9062 and AT91SAM9x.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit cc1780aa8b7f0035e0b1e06810d6da8f80b04899
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Feb 28 13:12:16 2016 -0800
+
+    watchdog: Introduce WDOG_HW_RUNNING flag
+    
+    The WDOG_HW_RUNNING flag is expected to be set by watchdog drivers if
+    the hardware watchdog is running. If the flag is set, the watchdog
+    subsystem will ping the watchdog even if the watchdog device is closed.
+    
+    The watchdog driver stop function is now optional and may be omitted
+    if the watchdog can not be stopped. If stopping the watchdog is not
+    possible but the driver implements a stop function, it is responsible
+    to set the WDOG_HW_RUNNING flag in its stop function.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 33404036495c24855264550951f52e2f44e87d04
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Feb 28 13:12:15 2016 -0800
+
+    watchdog: Introduce hardware maximum heartbeat in watchdog core
+    
+    Introduce an optional hardware maximum heartbeat in the watchdog core.
+    The hardware maximum heartbeat can be lower than the maximum timeout.
+    
+    Drivers can set the maximum hardware heartbeat value in the watchdog data
+    structure. If the configured timeout exceeds the maximum hardware heartbeat,
+    the watchdog core enables a timer function to assist sending keepalive
+    requests to the watchdog driver.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 36b01e8c8a9fe826506febc7a3d9afb9f8d28261
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Feb 28 13:12:14 2016 -0800
+
+    watchdog: Make set_timeout function optional
+    
+    For some watchdogs, the watchdog driver handles timeout changes without
+    explicitly setting any registers. In this situation, the watchdog driver
+    might only set the 'timeout' variable but do nothing else.
+    This can as well be handled by the infrastructure, so make the set_timeout
+    callback optional. If WDIOF_SETTIMEOUT is configured but the .set_timeout
+    callback is not available, update the timeout variable in the
+    infrastructure code.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 887275947d7dfcfd0ae8519a68bcfa28e2285a04
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Jan 3 15:11:58 2016 -0800
+
+    watchdog: Drop pointer to watchdog device from struct watchdog_device
+    
+    The lifetime of the watchdog device pointer is different from the lifetime
+    of its character device. Remove it entirely to avoid race conditions.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit ad1f209e061ca19a7c58f0364e37e5003900820a
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Jan 3 15:11:56 2016 -0800
+
+    watchdog: Add support for creating driver specific sysfs attributes
+    
+    The Zodiac watchdog driver attaches additional sysfs attributes to the
+    watchdog device. This has a number of problems: The watchdog device
+    lifetime differs from the driver lifetime, and the device structure
+    should therefore not be accessed from drivers. Also, creating sysfs
+    attributes after driver registration results in a potential race condition
+    if user space expects the attributes to exist but they don't exist yet.
+    
+    Add support for creating driver specific sysfs attributes to the watchdog
+    core to solve the problems.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 8a3a0feedc885d82799a087cc9fb1d64a1395fee
+Author: Tomas Winkler <tomas.winkler@intel.com>
+Date:   Sun Jan 3 13:32:37 2016 +0200
+
+    watchdog: kill unref/ref ops
+    
+    ref/unref ops are not called at all so even marked them as deprecated
+    is misleading, we need to just drop the API.
+    
+    Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 47a67e9257be5c0822a495f9f2eca894e4e26cde
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Fri Dec 25 16:01:42 2015 -0800
+
+    watchdog: Separate and maintain variables based on variable lifetime
+    
+    All variables required by the watchdog core to manage a watchdog are
+    currently stored in struct watchdog_device. The lifetime of those
+    variables is determined by the watchdog driver. However, the lifetime
+    of variables used by the watchdog core differs from the lifetime of
+    struct watchdog_device. To remedy this situation, watchdog drivers
+    can implement ref and unref callbacks, to be used by the watchdog
+    core to lock struct watchdog_device in memory.
+    
+    While this solves the immediate problem, it depends on watchdog drivers
+    to actually implement the ref/unref callbacks. This is error prone,
+    often not implemented in the first place, or not implemented correctly.
+    
+    To solve the problem without requiring driver support, split the variables
+    in struct watchdog_device into two data structures - one for variables
+    associated with the watchdog driver, one for variables associated with
+    the watchdog core. With this approach, the watchdog core can keep track
+    of its variable lifetime and no longer depends on ref/unref callbacks
+    in the driver. As a side effect, some of the variables originally in
+    struct watchdog_driver are now private to the watchdog core and no longer
+    visible in watchdog drivers.
+    
+    As a side effect of the changes made, an ioctl will now always fail
+    with -ENODEV after a watchdog device was unregistered with the character
+    device still open. Previously, it would only fail with -ENODEV in some
+    situations. Also, ioctl operations are now atomic from driver perspective.
+    With this change, it is now guaranteed that the driver will not unregister
+    a watchdog between a timeout change and the subsequent ping.
+    
+    The 'ref' and 'unref' callbacks in struct watchdog_driver are no longer
+    used and marked as deprecated.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+    
+    Conflicts:
+    
+            drivers/watchdog/watchdog_core.c
+
+commit ab18ddbff2b349c34f14ad2030c5e846c70a3e40
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Fri Dec 25 16:01:40 2015 -0800
+
+    watchdog: Create watchdog device in watchdog_dev.c
+    
+    The watchdog character device is currently created in watchdog_dev.c,
+    and the watchdog device in watchdog_core.c. This results in
+    cross-dependencies, since device creation needs to know the watchdog
+    character device number as well as the watchdog class, both of which
+    reside in watchdog_dev.c.
+    
+    Create the watchdog device in watchdog_dev.c to simplify the code.
+    
+    Inspired by earlier patch set from Damien Riegel.
+    
+    Cc: Damien Riegel <damien.riegel@savoirfairelinux.com>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+    
+    Conflicts:
+    
+            drivers/watchdog/watchdog_core.c
+
+commit dd082d58c61c90d6a37974867cffde87e3e4e4c3
+Author: Pratyush Anand <panand@redhat.com>
+Date:   Thu Dec 17 17:53:59 2015 +0530
+
+    watchdog: Read device status through sysfs attributes
+    
+    This patch adds following attributes to watchdog device's sysfs interface
+    to read its different status.
+    
+    * state - reads whether device is active or not
+    * identity - reads Watchdog device's identity string.
+    * timeout - reads current timeout.
+    * timeleft - reads timeleft before watchdog generates a reset
+    * bootstatus - reads status of the watchdog device at boot
+    * status - reads watchdog device's  internal status bits
+    * nowayout - reads whether nowayout feature was set or not
+    
+    Testing with iTCO_wdt:
+     # cd /sys/class/watchdog/watchdog1/
+     # ls
+    bootstatus  dev  device  identity  nowayout  power  state
+    subsystem  timeleft  timeout  uevent
+     # cat identity
+    iTCO_wdt
+     # cat timeout
+    30
+     # cat state
+    inactive
+     # echo > /dev/watchdog1
+     # cat timeleft
+    26
+     # cat state
+    active
+     # cat bootstatus
+    0
+     # cat nowayout
+    0
+    
+    Signed-off-by: Pratyush Anand <panand@redhat.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 5b0a912319014f260b4a41b1704df714ce4297ae
+Author: Pratyush Anand <panand@redhat.com>
+Date:   Thu Dec 17 17:53:58 2015 +0530
+
+    watchdog: Use static struct class watchdog_class in stead of pointer
+    
+    We need few sysfs attributes to know different status of a watchdog device.
+    To do that, we need to associate .dev_groups with watchdog_class. So
+    convert it from pointer to static.
+    Putting this static struct in watchdog_dev.c, so that static device
+    attributes defined in that file can be attached to it.
+    
+    Signed-off-by: Pratyush Anand <panand@redhat.com>
+    Suggested-by: Guenter Roeck <linux@roeck-us.net>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 50ccc76d84dc2360b17a0e42db7e023f9fc9f6fa
+Author: Alexander Usyskin <alexander.usyskin@intel.com>
+Date:   Mon Oct 26 14:07:58 2015 +0200
+
+    watchdog: core: propagate ping error code to the user space
+    
+    Watchdog ping return errors are ignored by watchdog core,
+    Whatchdog daemon should be informed about possible hardware error or
+    underlaying device driver get unregistered.
+    
+    Signed-off-by: Alexander Usyskin <alexander.usyskin@intel.com>
+    Signed-off-by: Tomas Winkler <tomas.winkler@intel.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 3aab431999a91ceea6fb697fcf6c35c9cd278db8
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Tue Sep 29 01:27:25 2015 -0700
+
+    watchdog: watchdog_dev: Use single variable name for struct watchdog_device
+    
+    The current code uses 'wdd', wddev', and 'watchdog' as variable names
+    for struct watchdog_device. This is confusing and makes it difficult
+    to enhance the code. Replace it all with 'wdd'.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Cc: Timo Kokkonen <timo.kokkonen@offcode.fi>
+    Acked-by: Uwe Kleine-König <u.kleine-koenig@pengutronix.de>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 6abb6665487cdbf71b0c16478c01e00d55f7664b
+Author: Damien Riegel <damien.riegel@savoirfairelinux.com>
+Date:   Fri Nov 20 16:54:51 2015 -0500
+
+    watchdog: core: add reboot notifier support
+    
+    Many watchdog drivers register a reboot notifier in order to stop the
+    watchdog on system reboot. Thus we can factorize this code in the
+    watchdog core.
+    
+    For that purpose, a new notifier block is added in watchdog_device for
+    internal use only, as well as a new watchdog_stop_on_reboot helper
+    function.
+    
+    If this helper is called, watchdog core registers the related notifier
+    block and will stop the watchdog when SYS_HALT or SYS_DOWN is received.
+    
+    Since this operation can be critical on some platforms, abort the device
+    registration if the reboot notifier registration fails.
+    
+    Suggested-by: Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+    Signed-off-by: Damien Riegel <damien.riegel@savoirfairelinux.com>
+    Reviewed-by: Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit d5b3a6cdf3eb6df3f28ff395876dda465b92d1e2
+Author: Damien Riegel <damien.riegel@savoirfairelinux.com>
+Date:   Mon Nov 16 12:27:59 2015 -0500
+
+    watchdog: core: add restart handler support
+    
+    Many watchdog drivers implement the same code to register a restart
+    handler. This patch provides a generic way to set such a function.
+    
+    The patch adds a new restart watchdog operation. If a restart priority
+    greater than 0 is needed, the driver can call
+    watchdog_set_restart_priority to set it.
+    
+    Suggested-by: Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+    Signed-off-by: Damien Riegel <damien.riegel@savoirfairelinux.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Reviewed-by: Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit d0b5c7e7a787b0e81d1601fc625dbcd0b8c2d4d9
+Author: Wolfram Sang <wsa+renesas@sang-engineering.com>
+Date:   Tue Nov 3 09:00:16 2015 +0100
+
+    watchdog: include: add units for timeout values in kerneldoc
+    
+    Signed-off-by: Wolfram Sang <wsa+renesas@sang-engineering.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit c3716a79fd961248bdbac9cba211b2f8747f01b7
+Author: Wolfram Sang <wsa+renesas@sang-engineering.com>
+Date:   Tue Nov 3 09:00:15 2015 +0100
+
+    watchdog: include: fix some typos
+    
+    Signed-off-by: Wolfram Sang <wsa+renesas@sang-engineering.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 50fb622d83d9cf46aeb569bef16770660c928671
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Tue Sep 29 01:27:24 2015 -0700
+
+    watchdog: Always evaluate new timeout against min_timeout
+    
+    Up to now, a new timeout value is only evaluated against min_timeout
+    if max_timeout is provided. This does not really make sense; a driver
+    can have a minimum timeout even if it does not have a maximum timeout.
+    Ensure that it is not smaller than min_timeout, even if max_timeout
+    is not set.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Acked-by: Uwe Kleine-König <u.kleine-koenig@pengutronix.de>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit aec7fc225b968b7a0e617528e46e51abab6af245
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Fri Sep 4 15:45:12 2015 -0700
+
+    kernel/watchdog: move NMI function header declarations from watchdog.h to nmi.h
+    
+    The kernel's NMI watchdog has nothing to do with the watchdog subsystem.
+    Its header declarations should be in linux/nmi.h, not linux/watchdog.h.
+    
+    The code provided two sets of dummy functions if HARDLOCKUP_DETECTOR is
+    not configured, one in the include file and one in kernel/watchdog.c.
+    Remove the dummy functions from kernel/watchdog.c and use those from the
+    include file.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Cc: Stephane Eranian <eranian@google.com>
+    Cc: Peter Zijlstra (Intel) <peterz@infradead.org>
+    Cc: Ingo Molnar <mingo@kernel.org>
+    Cc: Don Zickus <dzickus@redhat.com>
+    Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
+    Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
+
+commit cb4d64e5d9b2762167fa14c9b736e5f61041b628
+Author: Jean-Baptiste Theou <jtheou@adeneo-embedded.us>
+Date:   Tue Jun 9 09:55:02 2015 -0700
+
+    watchdog: watchdog_core: Add watchdog registration deferral mechanism
+    
+    Currently, watchdog subsystem require the misc subsystem to
+    register a watchdog. This may not be the case in case of an
+    early registration of a watchdog, which can be required when
+    the watchdog cannot be disabled.
+    
+    This patch introduces a deferral mechanism to remove this requirement.
+    
+    Signed-off-by: Jean-Baptiste Theou <jtheou@adeneo-embedded.us>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit f7cc460d1cd101103bb20f5c55acb1211898885e
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Sun Feb 28 13:12:19 2016 -0800
+
+    watchdog: dw_wdt: Convert to use watchdog infrastructure
+    
+    Convert driver to use watchdog infrastructure. This includes
+    infrastructure support to handle watchdog keepalive if the watchdog
+    is running while the watchdog device is closed.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Tested-by: Douglas Anderson <dianders@chromium.org>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit a321f55036e818809aeb72887cc47f2d3dc316ba
+Author: Jisheng Zhang <jszhang@marvell.com>
+Date:   Tue Dec 15 22:25:27 2015 +0800
+
+    watchdog: dw_wdt: fix signedness bug in dw_wdt_top_in_seconds()
+    
+    On 64bit platforms, "(1 << (16 + top)) / clk_get_rate(dw_wdt.clk)" is
+    sign-extended to 64bit then converted to unsigned 64bit, finally divide
+    the clk rate. If the top is the maximum TOP i.e 15, "(1 << (16 +15))"
+    will be sign-extended to 0xffffffff80000000, then converted to unsigned
+    0xffffffff80000000, which is a huge number, thus the final result is
+    wrong.
+    
+    We fix this issue by giving usigned value(1U in this case) at first.
+    
+    Let's assume clk rate is 25MHZ,
+    Before the patch:
+    dw_wdt_top_in_seconds(15) = -864612050
+    
+    After the patch:
+    dw_wdt_top_in_seconds(15) = 85
+    
+    Signed-off-by: Jisheng Zhang <jszhang@marvell.com>
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit 5b88379ae870cdb5dc6326620a6d4c2dbbac0788
+Author: Doug Anderson <dianders@chromium.org>
+Date:   Thu May 7 21:27:45 2015 -0700
+
+    watchdog: dw_wdt: keepalive the watchdog at write time
+    
+    If you've got code that does this in a tight loop
+      1. Open watchdog
+      2. Send 'expect close'
+      3. Close watchdog
+    ...you'll eventually trigger a watchdog reset.  You can reproduce this
+    by using daisydog (1) and running:
+      while true; do daisydog -c > /dev/null; done
+    
+    The problem is that each time you write to the watchdog for 'expect
+    close' it moves the timer .5 seconds out.  The timer thus never fires
+    and never pats the watchdog for you.
+    
+    1: http://git.chromium.org/gitweb/?p=chromiumos/third_party/daisydog.git
+    
+    Signed-off-by: Doug Anderson <dianders@chromium.org>
+    Tested-by: Jisheng Zhang <jszhang@marvell.com>
+    Reviewed-by: Dmitry Torokhov <dmitry.torokhov@gmail.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+commit e787f104b4a2bfb46063cd54b628058d6f273354
+Author: Doug Anderson <dianders@chromium.org>
+Date:   Thu May 7 21:27:44 2015 -0700
+
+    watchdog: dw_wdt: No need for a spinlock
+    
+    Right now the dw_wdt uses a spinlock to protect dw_wdt_open().  The
+    problem is that while holding the spinlock we call:
+    -> dw_wdt_set_top()
+       -> dw_wdt_top_in_seconds()
+          -> clk_get_rate()
+             -> clk_prepare_lock()
+                -> mutex_lock()
+    
+    Locking a mutex while holding a spinlock is not allowed and leads to
+    warnings like "BUG: spinlock wrong CPU on CPU#1", among other
+    problems.
+    
+    There's no reason to use a spinlock.  Only dw_wdt_open() was protected
+    and the test_and_set_bit() at the start of that function protects us
+    anyway.
+    
+    Signed-off-by: Doug Anderson <dianders@chromium.org>
+    Tested-by: Jisheng Zhang <jszhang@marvell.com>
+    Reviewed-by: Dmitry Torokhov <dmitry.torokhov@gmail.com>
+    Reviewed-by: Guenter Roeck <linux@roeck-us.net>
+    Signed-off-by: Wim Van Sebroeck <wim@iguana.be>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit ab2181dd766157a74b309d12e0b61c4f3cdc8564
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Tue Aug 23 10:19:29 2016 +0800
+
+    FogBugz #398001: Enable UART for console when FPGA is external configured
+    
+    UART peripheral with shared IO is enabled for console after FPGA image is
+    programmed by HPS in current implementation, so this doesn't work if the
+    FPGA image is programmed by external host. Hence, this patch allows UART
+    is enabled for console when FPGA is external configured.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+    ---
+    Changes for v2
+    - Pass blob to is_external_fpga_config() instead gd->blob
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7
+
+commit d6f1376455ff9341a67e44bbcb0253d5e78883a4
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Wed Aug 24 09:38:10 2016 -0500
+
+    Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit 5c3c23fe1c84cd1568fbe1c00a24635aea2c33e2
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Wed Aug 24 09:37:22 2016 -0500
+
+    Add kernel v4.5 recipe, for stratix10swvp
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

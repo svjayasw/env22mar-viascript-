@@ -1,0 +1,641 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.16
+branch tag  : rel_socfpga-4.16_18.05.03_rc1
+new commits : 6
+0fbcbde Thor Thayer arm64: dts: stratix10: Backport QSPI DT node from upstream
+af7cd13 Dinh Nguyen FogBugz #560426: fix the peripheral clocks div-reg property
+e4982e6 Dinh Nguyen FogBugz #560428: fix up sdmmc_clk's parents
+0e50e5b Richard Gong FogBugz #559704-3: update RSU driver to align with changes at svc
+b827e5e Richard Gong FogBugz #559704-2: update S10 FPGA driver to align with changes at svc
+61ee0aa Richard Gong FogBugz #559704-1: minimize service layer thread usage
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.05.03_rc1
+new commits : 9
+4a6ab70 Thor Thayer arm64: dts: stratix10: Backport QSPI DT node from upstream
+9e33b26 Thor Thayer FogBugz #560773: Fix QSPI read-delay value in DT
+a1ef149 Richard Gong FogBugz #559704-3: update RSU driver to align with changes at svc
+e1eab26 Richard Gong FogBugz #559704-2: update S10 FPGA driver to align with changes at svc
+c18c636 Richard Gong FogBugz #559704-1: minimize service layer thread usage
+592993d Dinh Nguyen FogBugz #560426: fix the peripheral clocks div-reg property
+1a0884c Dinh Nguyen FogBugz #560428: fix up sdmmc_clk's parents
+9393fc4 Thor Thayer FogBugz #560661: Fix QSPI Cadence driver warning.
+44360cd Thor Thayer mtd: spi-nor: Add Micron MT25QU02 support
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.05.03_rc1
+new commits : 9
+cdba831 Thor Thayer arm64: dts: stratix10: Backport QSPI DT node from upstream
+2b79991 Thor Thayer FogBugz #560773: Fix QSPI read-delay value in DT
+01f473d Richard Gong FogBugz #559704-3: update RSU driver to align with changes at svc
+ac3b3d4 Richard Gong FogBugz #559704-2: update S10 FPGA driver to align with changes at svc
+a0286c5 Richard Gong FogBugz #559704-1: minimize service layer thread usage
+63be248 Dinh Nguyen FogBugz #560426: fix the peripheral clocks div-reg property
+f2c8fde Dinh Nguyen FogBugz #560428: fix up sdmmc_clk's parents
+e155ad5 Thor Thayer FogBugz #560661: Fix QSPI Cadence driver warning.
+972f2f9 Thor Thayer mtd: spi-nor: Add Micron MT25QU02 support
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.16_18.05.03_rc1
+commit: 0fbcbde Thor Thayer arm64: dts: stratix10: Backport QSPI DT node from upstream
+
+tag:    rel_socfpga-4.9.78-ltsi_18.05.03_rc1
+commit: 4a6ab70 Thor Thayer arm64: dts: stratix10: Backport QSPI DT node from upstream
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.05.03_rc1
+commit: cdba831 Thor Thayer arm64: dts: stratix10: Backport QSPI DT node from upstream
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.05.03_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.05.03_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.05.03_rc1
+new commits : 6
+74d7ae2 Chee Hong Ang FogBugz #553814-3: Disable/enable bridges in full FPGA reconfiguration
+bc02cff Chee Hong Ang FogBugz #553814-2: Add SOCFPGA bridges reset support for SMC/PSCI call
+b10124e Chee Hong Ang FogBugz #553814-1: Ensure FPGA2SOC is not toggled during bridge reset
+3eeb902 Chin Liang See FogBugz #560505: Ensure U-Boot SDRAM size is calculated instead defined
+81dda55 Chee Hong Ang FogBugz #540144-9: Fix comment typos
+e646d61 Chee Hong Ang FogBugz #516535: Fix QSPI write issues
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.05.03_rc1
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.05.03_rc1
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_18.05.03_rc1
+commit: 74d7ae2 Chee Hong Ang FogBugz #553814-3: Disable/enable bridges in full FPGA reconfiguration
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.05.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.05.03_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.05.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.05.03_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.05.03_rc1
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.05.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.05.03_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.05.03_rc1
+commit: 69c4320 Ong, Hean Loong Backport systemd change e266c06 from systemd v234-stable
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.05.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_18.05.03_rc1
+commit: 79b1ebd David Koltak FogBugz #547564: Initial Source Code Commit
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.16
+
+commit 0fbcbded57c6ad7f4e83c7023e64825670223d3f
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Wed May 30 10:02:05 2018 -0500
+
+    arm64: dts: stratix10: Backport QSPI DT node from upstream
+    
+    The upstream Stratix10 QSPI device tree removed the unused bus-num
+    node and added the partitions node with individual partitions as
+    children.
+    Backport the patch for consistency.
+    
+    [backport 'commit 490b7fd24dae ("arm64: dts: stratix10: Add QSPI
+     support for Stratix10")']
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit af7cd13fb0799cf828a9d75e9998afb814979f2a
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu May 17 14:13:31 2018 -0500
+
+    FogBugz #560426: fix the peripheral clocks div-reg property
+    
+    The peripheral clocks, peri_noc_base_clk and peri_mpu_base_clk, should
+    have a 'div-reg' entry instead of the reg entry. The clock driver is
+    keyeing off the div-reg entry for the clock frequency divider.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit e4982e6bc2722c1a2ee51e24da065f82236a7966
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu May 17 14:12:53 2018 -0500
+
+    FogBugz #560428: fix up sdmmc_clk's parents
+    
+    The clock documentation is a bit confusing. Had to resort to Quartus to
+    get a clear sense of the clocking on Stratix10. The main_sdmmc_clk is the
+    parent clock for the sdmmc_clk. The main_sdmmc_clk's parent is the
+    main_noc_base_clk. This patch gets the correct clock parent for the SDMMC.
+    
+    main_noc_base_clk
+    	|->main_sdmmc_clk
+       		|->sdmmc_free_clk
+    			|->sdmmc_clk
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 0e50e5b14b0583b5c40d9c3207b566e8c2bc826a
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue May 15 13:13:52 2018 -0500
+
+    FogBugz #559704-3: update RSU driver to align with changes at svc
+    
+    Intel-rsu driver call service layer to free service layer resources when
+    status or update request is completed, or there is an error in status or
+    update request process.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit b827e5e35b8e300338cbcdc67fd1287cd96aa061
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue May 15 13:11:17 2018 -0500
+
+    FogBugz #559704-2: update S10 FPGA driver to align with changes at svc
+    
+    Stratix10 SOC FPGA manager will call service layer to free service layer
+    resources when FPGA configuration initialization or status request is
+    completed, or there is an error in initialization or status request
+    process.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 61ee0aa52c75e7b9fbfa833a2bd61b951f4752fb
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue May 15 13:01:58 2018 -0500
+
+    FogBugz #559704-1: minimize service layer thread usage
+    
+    Kernel thread created by service layer driver for SMC call is running
+    all the time. Make changes to start service layer thread whenever client
+    service is started, and to stop service layer thread when all client
+    services are completed. As a result kernel resources are maximizing saved.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+commit 4a6ab70238bfa5efb18699bccf578728edfef7af
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Wed May 30 10:02:05 2018 -0500
+
+    arm64: dts: stratix10: Backport QSPI DT node from upstream
+    
+    The upstream Stratix10 QSPI device tree removed the unused bus-num
+    node and added the partitions node with individual partitions as
+    children.
+    Backport the patch for consistency.
+    
+    [backport 'commit 490b7fd24dae ("arm64: dts: stratix10: Add QSPI
+     support for Stratix10")']
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 9e33b26fe350f7819bff13edb1df6c8fdb2e077f
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri May 18 17:03:09 2018 -0500
+
+    FogBugz #560773: Fix QSPI read-delay value in DT
+    
+    The 4.9.78ltsi branch doesn't have the correct read-delay.
+    An earlier bug 530030 proposed changing this to 1 but
+    doesn't appear to have made it into the current branch.
+    3 boards show better results with QSPI read-delay values
+    of 1 so use that value.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit a1ef1496e0c83a317d1e89e4079fb72836d0ee3d
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue May 15 13:13:52 2018 -0500
+
+    FogBugz #559704-3: update RSU driver to align with changes at svc
+    
+    Intel-rsu driver call service layer to free service layer resources when
+    status or update request is completed, or there is an error in status or
+    update request process.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit e1eab26e994e24ddf0e21407ea6c22dbcd96ed75
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue May 15 13:11:17 2018 -0500
+
+    FogBugz #559704-2: update S10 FPGA driver to align with changes at svc
+    
+    Stratix10 SOC FPGA manager will call service layer to free service layer
+    resources when FPGA configuration initialization or status request is
+    completed, or there is an error in initialization or status request
+    process.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit c18c6360292c751d47e114b634fade627c54b541
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue May 15 13:01:58 2018 -0500
+
+    FogBugz #559704-1: minimize service layer thread usage
+    
+    Kernel thread created by service layer driver for SMC call is running
+    all the time. Make changes to start service layer thread whenever client
+    service is started, and to stop service layer thread when all client
+    services are completed. As a result kernel resources are maximizing saved.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 592993d2bdea461898d0905f2e5b7b799a1a3322
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu May 17 14:13:31 2018 -0500
+
+    FogBugz #560426: fix the peripheral clocks div-reg property
+    
+    The peripheral clocks, peri_noc_base_clk and peri_mpu_base_clk, should
+    have a 'div-reg' entry instead of the reg entry. The clock driver is
+    keyeing off the div-reg entry for the clock frequency divider.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 1a0884cd720a1a71c0c32fb21a2cf26c808b59c8
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu May 17 14:12:53 2018 -0500
+
+    FogBugz #560428: fix up sdmmc_clk's parents
+    
+    The clock documentation is a bit confusing. Had to resort to Quartus to
+    get a clear sense of the clocking on Stratix10. The main_sdmmc_clk is the
+    parent clock for the sdmmc_clk. The main_sdmmc_clk's parent is the
+    main_noc_base_clk. This patch gets the correct clock parent for the SDMMC.
+    
+    main_noc_base_clk
+    	|->main_sdmmc_clk
+       		|->sdmmc_free_clk
+    			|->sdmmc_clk
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 9393fc4c12a8cad6cbaa59030abe1d1b4b59bbde
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri May 18 09:57:07 2018 -0500
+
+    FogBugz #560661: Fix QSPI Cadence driver warning.
+    
+    The 4.9.78ltsi branch has this build warning when building
+    for Stratix10.
+    
+    In file included from ./include/linux/clk.h:16:0,
+                     from drivers/mtd/spi-nor/cadence-quadspi.c:18:
+    drivers/mtd/spi-nor/cadence-quadspi.c:
+     In function ‘cqspi_indirect_write_execute’:
+      CC      net/ipv4/ipconfig.o
+    ./include/linux/kernel.h:739:16: warning: comparison of distinct pointer
+     types lacks a cast
+      (void) (&min1 == &min2);   \
+                    ^
+    ./include/linux/kernel.h:742:2: note: in expansion of macro ‘__min’
+      __min(typeof(x), typeof(y),   \
+      ^
+    drivers/mtd/spi-nor/cadence-quadspi.c:637:25: note: in expansion of macro
+     ‘min’
+        memcpy(&temp, txbuf, min(sizeof(temp), mod_bytes));
+                             ^
+    Use min_t() function which handles the correct type.
+    
+    Fixes: f4af4cbdb882f ("FogBugz #532777: Fix Cadence QSPI driver page fault
+     kernel panic")
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 44360cd4b3d78a7fa229ae1d935a75d531367348
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Thu Apr 5 14:12:49 2018 -0500
+
+    mtd: spi-nor: Add Micron MT25QU02 support
+    
+    Add support for a new Micron 2Gb Flash memory part.
+    Datasheet is available: mt25q_qlkt_l_02g_cbb_0.pdf
+    
+    [backport 'commit 56c6855c81c8 ("mtd: spi-nor: Add Micron
+     MT25QU02 support")']
+    
+    Testing was done on a Stratix10 SoCFPGA Development Kit.
+    
+    Reported-by: Sujith Chidurala <sujith.chakra.chidurala@intel.com>
+    Tested-by: Paul Kim <paul.kim@intel.com>
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Acked-by: Marek Vasut <marek.vasut@gmail.com>
+    Signed-off-by: Boris Brezillon <boris.brezillon@bootlin.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.76-ltsi-rt
+
+commit cdba831925df25a4865c6daac24243ba4ddf1363
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Wed May 30 10:02:05 2018 -0500
+
+    arm64: dts: stratix10: Backport QSPI DT node from upstream
+    
+    The upstream Stratix10 QSPI device tree removed the unused bus-num
+    node and added the partitions node with individual partitions as
+    children.
+    Backport the patch for consistency.
+    
+    [backport 'commit 490b7fd24dae ("arm64: dts: stratix10: Add QSPI
+     support for Stratix10")']
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 2b79991b6130d303cb22a01672ccc6ace21686bd
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri May 18 17:03:09 2018 -0500
+
+    FogBugz #560773: Fix QSPI read-delay value in DT
+    
+    The 4.9.78ltsi branch doesn't have the correct read-delay.
+    An earlier bug 530030 proposed changing this to 1 but
+    doesn't appear to have made it into the current branch.
+    3 boards show better results with QSPI read-delay values
+    of 1 so use that value.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 01f473d9baee0f51eabd0d7b2ef8b315b251d0ec
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue May 15 13:13:52 2018 -0500
+
+    FogBugz #559704-3: update RSU driver to align with changes at svc
+    
+    Intel-rsu driver call service layer to free service layer resources when
+    status or update request is completed, or there is an error in status or
+    update request process.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit ac3b3d43b9255b97a81011b0ffda695d9f52c34f
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue May 15 13:11:17 2018 -0500
+
+    FogBugz #559704-2: update S10 FPGA driver to align with changes at svc
+    
+    Stratix10 SOC FPGA manager will call service layer to free service layer
+    resources when FPGA configuration initialization or status request is
+    completed, or there is an error in initialization or status request
+    process.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit a0286c5cecaed51ca8d6ab22ecfffc61a3c3020b
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue May 15 13:01:58 2018 -0500
+
+    FogBugz #559704-1: minimize service layer thread usage
+    
+    Kernel thread created by service layer driver for SMC call is running
+    all the time. Make changes to start service layer thread whenever client
+    service is started, and to stop service layer thread when all client
+    services are completed. As a result kernel resources are maximizing saved.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 63be248e1219a6347f25623851fc07ae3465ea94
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu May 17 14:13:31 2018 -0500
+
+    FogBugz #560426: fix the peripheral clocks div-reg property
+    
+    The peripheral clocks, peri_noc_base_clk and peri_mpu_base_clk, should
+    have a 'div-reg' entry instead of the reg entry. The clock driver is
+    keyeing off the div-reg entry for the clock frequency divider.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit f2c8fdeeec88d3e1686199b0c47d2bbc3e2f2d70
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu May 17 14:12:53 2018 -0500
+
+    FogBugz #560428: fix up sdmmc_clk's parents
+    
+    The clock documentation is a bit confusing. Had to resort to Quartus to
+    get a clear sense of the clocking on Stratix10. The main_sdmmc_clk is the
+    parent clock for the sdmmc_clk. The main_sdmmc_clk's parent is the
+    main_noc_base_clk. This patch gets the correct clock parent for the SDMMC.
+    
+    main_noc_base_clk
+    	|->main_sdmmc_clk
+       		|->sdmmc_free_clk
+    			|->sdmmc_clk
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit e155ad5e182f9ca5cfb224bcd4af575951075feb
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri May 18 09:57:07 2018 -0500
+
+    FogBugz #560661: Fix QSPI Cadence driver warning.
+    
+    The 4.9.78ltsi branch has this build warning when building
+    for Stratix10.
+    
+    In file included from ./include/linux/clk.h:16:0,
+                     from drivers/mtd/spi-nor/cadence-quadspi.c:18:
+    drivers/mtd/spi-nor/cadence-quadspi.c:
+     In function ‘cqspi_indirect_write_execute’:
+      CC      net/ipv4/ipconfig.o
+    ./include/linux/kernel.h:739:16: warning: comparison of distinct pointer
+     types lacks a cast
+      (void) (&min1 == &min2);   \
+                    ^
+    ./include/linux/kernel.h:742:2: note: in expansion of macro ‘__min’
+      __min(typeof(x), typeof(y),   \
+      ^
+    drivers/mtd/spi-nor/cadence-quadspi.c:637:25: note: in expansion of macro
+     ‘min’
+        memcpy(&temp, txbuf, min(sizeof(temp), mod_bytes));
+                             ^
+    Use min_t() function which handles the correct type.
+    
+    Fixes: f4af4cbdb882f ("FogBugz #532777: Fix Cadence QSPI driver page fault
+     kernel panic")
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 972f2f9dc20e58ef08373b730d7a8f8ce17d2010
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Thu Apr 5 14:12:49 2018 -0500
+
+    mtd: spi-nor: Add Micron MT25QU02 support
+    
+    Add support for a new Micron 2Gb Flash memory part.
+    Datasheet is available: mt25q_qlkt_l_02g_cbb_0.pdf
+    
+    [backport 'commit 56c6855c81c8 ("mtd: spi-nor: Add Micron
+     MT25QU02 support")']
+    
+    Testing was done on a Stratix10 SoCFPGA Development Kit.
+    
+    Reported-by: Sujith Chidurala <sujith.chakra.chidurala@intel.com>
+    Tested-by: Paul Kim <paul.kim@intel.com>
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Acked-by: Marek Vasut <marek.vasut@gmail.com>
+    Signed-off-by: Boris Brezillon <boris.brezillon@bootlin.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 74d7ae2eb23c74fb196dc369d4735e548e9f922c
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Fri May 25 13:27:01 2018 +0800
+
+    FogBugz #553814-3: Disable/enable bridges in full FPGA reconfiguration
+    
+    Disable bridges before the full FPGA reconfiguration is started
+    and re-enable bridges only after the full FPGA reconfiguration
+    is completed with success. This only apply to performing FPGA
+    reconfiguration from OS (EL1). User still need to disable/enable
+    the bridges manually when performing FPGA reconfiguration in
+    u-boot command prompt.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit bc02cfff31d392af9a1ac5cc2c4f0476a9734aba
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Fri May 25 13:05:41 2018 +0800
+
+    FogBugz #553814-2: Add SOCFPGA bridges reset support for SMC/PSCI call
+    
+    Add SOCFPGA bridges reset support for FPGA configuration SMC
+    services to disable/enable the bridges before and after the
+    FPGA configuration process.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit b10124e42995612afee1069aa5500ef731901acd
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Fri May 25 12:53:38 2018 +0800
+
+    FogBugz #553814-1: Ensure FPGA2SOC is not toggled during bridge reset
+    
+    Software must never reset FPGA2SOC bridge. This bridge must only be
+    reset by POR/COLD/WARM reset. Asserting the FPGA2SOC reset by software
+    can cause the SoC to lock-up if there are traffics being drived into
+    FPGA2SOC bridge.
+
+commit 3eeb9022fbb60ac5c83d0386a656e39f32b03a24
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Fri May 25 16:56:08 2018 +0800
+
+    FogBugz #560505: Ensure U-Boot SDRAM size is calculated instead defined
+    
+    Instead of statically defining the size of SDRAM, this patch will
+    dynamically get the SDRAM size from the DDR controller.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 81dda5537374484beff24c69b9fef8fee839c889
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Fri May 25 15:26:36 2018 +0800
+
+    FogBugz #540144-9: Fix comment typos
+    
+    Fix comment typos in arch/arm/mach-socfpga/smc_fpga_reconfig_s10.c.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit e646d614caad064952e751e40a06bd4a6c6f33a9
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Fri May 25 11:11:59 2018 +0800
+
+    FogBugz #516535: Fix QSPI write issues
+    
+    QSPI driver perform chip select on every flash read/write
+    access. The driver need to disable/enable the QSPI controller
+    while performing chip select. This may cause some data lost
+    especially the QSPI controller is configured to run at slower
+    speed as it may take longer time to access the flash device.
+    This patch prevent the driver from disable/enable the QSPI
+    controller too soon and inadvertently halting any ongoing flash
+    read/write access by ensuring the QSPI controller is always in
+    idle mode after each read/write access.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+-----------------------------------------------------------------------
+

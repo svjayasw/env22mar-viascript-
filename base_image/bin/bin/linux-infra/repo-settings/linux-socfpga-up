@@ -1,0 +1,12 @@
+repo_path: /usr/local/git/repositories/linux-socfpga-up.git
+update_tests:
+email: dinh.nguyen@intel.com
+sync-job: linux
+local_upstream:
+crucible_project:
+release_branch:
+internal_git: gitolite@at-git:linux-socfpga-up.git
+external_git:
+upstream_branches:
+upstream_tag_regex:
+review_addrs:

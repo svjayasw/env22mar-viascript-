@@ -1,0 +1,13 @@
+repo_path: /usr/local/git/repositories/linux-sandbox.git
+update_tests: nomerge header checkpatch copyright_year license_linux_kernel_gplv2
+email:
+sync-job: linux
+local_upstream:
+crucible_project: linux-socfpga
+release_branch:
+upstream_branches: master linux-[3-9]\.[0-9]{1,2}\.y
+internal_git: gitolite@at-git:linux-sandbox.git
+external_git:
+release_branch:
+upstream_tag_regex:
+review_addrs:

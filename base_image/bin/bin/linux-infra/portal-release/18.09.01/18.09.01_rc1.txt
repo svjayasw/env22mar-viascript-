@@ -1,0 +1,380 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.17
+branch tag  : rel_socfpga-4.17_18.09.01_rc1
+new commits : 1
+b7a0b88 Thor Thayer EDAC, altera: Fix ARM64 build warning
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.09.01_rc1
+new commits : 2
+39d5763 Thor Thayer EDAC, altera: Fix ARM64 build warning
+e8c9577 Ooi, Joyce FogBugz #577927: stmmac: Add SMC support for EMAC System Manager register
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.09.01_rc1
+new commits : 1
+b72a6bc Thor Thayer EDAC, altera: Fix ARM64 build warning
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.17_18.09.01_rc1
+commit: b7a0b88 Thor Thayer EDAC, altera: Fix ARM64 build warning
+
+tag:    rel_socfpga-4.9.78-ltsi_18.09.01_rc1
+commit: 39d5763 Thor Thayer EDAC, altera: Fix ARM64 build warning
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.09.01_rc1
+commit: b72a6bc Thor Thayer EDAC, altera: Fix ARM64 build warning
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.09.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.09.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.09.01_rc1
+new commits : 8
+53ce6e5 Chee Hong Ang FogBugz #590861: Enable SError exception handling at current EL
+559a9ee Chee Hong Ang FogBugz #586154-2: Use macro for coding clarity and readability
+dbd90ac Chee Hong Ang FogBugz #586154-1: Add macros for mailbox's arguments
+046cffe Chee Hong Ang FogBugz #583743-2: Enable EL3 SError exception handling for Stratix10
+d286282 Chee Hong Ang FogBugz #583743-1: ECC Double Bit Error exception handling for S10
+32055bd Chee Hong Ang FogBugz #583782: SError exception handling in PSCI exception vectors
+1ccc0cc Chee Hong Ang FogBugz #583067-2: Add EL3 exception handling for ARMv8's Kconfig
+d00cd8a Chee Hong Ang FogBugz #583067-1: Enable all asynchronous abort exceptions taken to EL3
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.09.01_rc1
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.09.01_rc1
+commit: 3d79f8a Tien Fong Chee FogBugz #582382: Fix integer overflow for Arria 10
+
+tag:    rel_socfpga_v2017.09_18.09.01_rc1
+commit: 53ce6e5 Chee Hong Ang FogBugz #590861: Enable SError exception handling at current EL
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.09.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.09.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.09.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.09.01_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.09.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.09.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.09.01_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.09.01_rc1
+commit: ec7bfa2 Ong, Hean Loong update 4.9.78-ltsi to commit ID da71e4b
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.09.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_18.09.01_rc1
+commit: a9e0753 David Koltak FogBugz #568818-2: Better command line arg checking in example client
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.17
+
+commit b7a0b88d86d484cc5461f15ba1098e2e3c3ddc60
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon May 14 12:04:01 2018 -0500
+
+    EDAC, altera: Fix ARM64 build warning
+    
+    [backport 'commit 9ef20753e044 ("EDAC, altera: Fix ARM64 build warning")']
+    
+    Backported from 4.18
+    
+    The kbuild test robot reported the following warning:
+    
+      drivers/edac/altera_edac.c: In function 'ocram_free_mem':
+      drivers/edac/altera_edac.c:1410:42: warning: cast from pointer to integer
+    	of different size [-Wpointer-to-int-cast]
+        gen_pool_free((struct gen_pool *)other, (u32)p, size);
+                                                 ^
+    
+    After adding support for ARM64 architectures, the unsigned long
+    parameter is 64 bits and causes a build warning on 64-bit configs. Fix
+    by casting to the correct size (unsigned long) instead of u32.
+    
+    Reported-by: kbuild test robot <lkp@intel.com>
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Cc: linux-arm-kernel@lists.infradead.org
+    Cc: linux-edac <linux-edac@vger.kernel.org>
+    Fixes: c3eea1942a16 ("EDAC, altera: Add Altera L2 cache and OCRAM support")
+    Link: http://lkml.kernel.org/r/1526317441-4996-1-git-send-email-thor.thayer@linux.intel.com
+    Signed-off-by: Borislav Petkov <bp@suse.de>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+commit 39d57637e5cb6ce17a296152206043ede3f167c2
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon May 14 12:04:01 2018 -0500
+
+    EDAC, altera: Fix ARM64 build warning
+    
+    [backport 'commit 9ef20753e044 ("EDAC, altera: Fix ARM64 build warning")']
+    
+    Backported from 4.18
+    
+    The kbuild test robot reported the following warning:
+    
+      drivers/edac/altera_edac.c: In function 'ocram_free_mem':
+      drivers/edac/altera_edac.c:1410:42: warning: cast from pointer to integer
+    	of different size [-Wpointer-to-int-cast]
+        gen_pool_free((struct gen_pool *)other, (u32)p, size);
+                                                 ^
+    
+    After adding support for ARM64 architectures, the unsigned long
+    parameter is 64 bits and causes a build warning on 64-bit configs. Fix
+    by casting to the correct size (unsigned long) instead of u32.
+    
+    Reported-by: kbuild test robot <lkp@intel.com>
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Cc: linux-arm-kernel@lists.infradead.org
+    Cc: linux-edac <linux-edac@vger.kernel.org>
+    Fixes: c3eea1942a16 ("EDAC, altera: Add Altera L2 cache and OCRAM support")
+    Link: http://lkml.kernel.org/r/1526317441-4996-1-git-send-email-thor.thayer@linux.intel.com
+    Signed-off-by: Borislav Petkov <bp@suse.de>
+
+commit e8c95776cfced263277374fc67897746962e6e49
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Thu Jul 19 17:28:24 2018 +0800
+
+    FogBugz #577927: stmmac: Add SMC support for EMAC System Manager register
+    
+    As there is restriction to access to EMAC System Manager registers in
+    the kernel, the use of SMC calls are required and added in
+    dwmac-socfpga driver.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.76-ltsi-rt
+
+commit b72a6bc15141146d5f3aa95fbcbde96e00b6e77c
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon May 14 12:04:01 2018 -0500
+
+    EDAC, altera: Fix ARM64 build warning
+    
+    [backport 'commit 9ef20753e044 ("EDAC, altera: Fix ARM64 build warning")']
+    
+    Backported from 4.18
+    
+    The kbuild test robot reported the following warning:
+    
+      drivers/edac/altera_edac.c: In function 'ocram_free_mem':
+      drivers/edac/altera_edac.c:1410:42: warning: cast from pointer to integer
+    	of different size [-Wpointer-to-int-cast]
+        gen_pool_free((struct gen_pool *)other, (u32)p, size);
+                                                 ^
+    
+    After adding support for ARM64 architectures, the unsigned long
+    parameter is 64 bits and causes a build warning on 64-bit configs. Fix
+    by casting to the correct size (unsigned long) instead of u32.
+    
+    Reported-by: kbuild test robot <lkp@intel.com>
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Cc: linux-arm-kernel@lists.infradead.org
+    Cc: linux-edac <linux-edac@vger.kernel.org>
+    Fixes: c3eea1942a16 ("EDAC, altera: Add Altera L2 cache and OCRAM support")
+    Link: http://lkml.kernel.org/r/1526317441-4996-1-git-send-email-thor.thayer@linux.intel.com
+    Signed-off-by: Borislav Petkov <bp@suse.de>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 53ce6e587a478bf613b1af42b49b5beba2dd2f3a
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 29 13:45:47 2018 +0800
+
+    FogBugz #590861: Enable SError exception handling at current EL
+    
+    Currently, PSCI/SMC exception vectors only handle all SError exceptions
+    from lower exception levels (lower than EL3), but it should also handle
+    SError exception at current exception level (EL3). When double bit error
+    is triggered in Linux (EL1), two SError exceptions are triggered in
+    sequence. First SError exception is taken from lower exception (from
+    EL1 to EL3) and second SError exception is taken from current exception
+    level (from EL3 to EL3). Second SError exception will only be triggered
+    right after the SError exception handler return from first SError
+    exception. This patch is to enable PSCI interrupt vector handle SError
+    exceptions generated at current exception level (EL3) as well.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 559a9eec2aa1e1aa416b02d474350fa69b908395
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Mon Aug 20 12:10:19 2018 +0800
+
+    FogBugz #586154-2: Use macro for coding clarity and readability
+    
+    Use macro to specify number of argument descriptor for RECONFIG_DATA
+    for coding clarity and readability. Number of argument descriptor
+    for RECONFIG_DATA must always be 1.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    v2 - Update commit message
+
+commit dbd90ac5d461c04f8e758c28c32f49b23bacac64
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 15 16:25:21 2018 +0800
+
+    FogBugz #586154-1: Add macros for mailbox's arguments
+    
+    Add macros for specifying number of arguments in mailbox command.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    v2 - Removed double underscore from macro function
+
+commit 046cffe102a25d707c0505c7a917c95d5a9ef513
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 18:34:44 2018 +0800
+
+    FogBugz #583743-2: Enable EL3 SError exception handling for Stratix10
+    
+    All External Abort and SError exception will be handled in EL3
+    (secure mode) for Stratix10.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    v2 - Changed ARMV8_EA_EL3_FIRST to ARMV8_HANDLE_EA_EL3_FIRST
+
+commit d2862822377b3504a687c41bd44ad68da5e1e523
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 18:30:59 2018 +0800
+
+    FogBugz #583743-1: ECC Double Bit Error exception handling for S10
+    
+    When ECC DBE (Double Bit Error) exception occur, the handler
+    will copy the ECC DBE status information to system's manager
+    scratch registers and trigger L2 reset.
+    In next kernel boot, Linux (EL1) will check for these scratch
+    registers and alert the users if there was a ECC DBE occurred.
+    ECC double bit error is uncorrectable error in memory.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    v2 - Changed ARMV8_EA_EL3_FIRST to ARMV8_HANDLE_EA_EL3_FIRST
+    v3 - Removed redundant CONFIG_TARGET_SOCFPGA_STRATIX10
+
+commit 32055bd84414a083542ee20a69bd008394de5f37
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 17:19:36 2018 +0800
+
+    FogBugz #583782: SError exception handling in PSCI exception vectors
+    
+    Allow platform vendors to handle SError interrupt exceptions from
+    ARMv8 PSCI exception vectors by overriding this weak function
+    'plat_error_handler'.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    v2 - Changed ARMV8_EA_EL3_FIRST to ARMV8_HANDLE_EA_EL3_FIRST
+
+commit 1ccc0cc7dc8440efd04c30cf64c9d33f39a4d0f3
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 16:38:24 2018 +0800
+
+    FogBugz #583067-2: Add EL3 exception handling for ARMv8's Kconfig
+    
+    Kconfig option to allow all External Abort and SError exception
+    taken to EL3.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    v2 - Changed ARMV8_EA_EL3_FIRST to ARMV8_HANDLE_EA_EL3_FIRST
+
+commit d00cd8a5f79996235593957deed36fd1e634f227
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 16:34:39 2018 +0800
+
+    FogBugz #583067-1: Enable all asynchronous abort exceptions taken to EL3
+    
+    Allow EL3 to handle all the External Abort and SError interrupt
+    exception occur in all exception levels.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    v2 - Changed ARMV8_EA_EL3_FIRST to ARMV8_HANDLE_EA_EL3_FIRST
+
+-----------------------------------------------------------------------
+

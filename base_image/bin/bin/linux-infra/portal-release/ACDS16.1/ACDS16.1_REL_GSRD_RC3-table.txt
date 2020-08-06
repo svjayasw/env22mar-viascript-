@@ -1,0 +1,8 @@
+Repo                Branch                            Commit id                                 Tag                                  
+Linux-socfpga       socfpga-4.1.22-ltsi               fa6814fa3d8ff6590086171fa01b61fb90e8e6b8  refs/tags/ACDS16.1_REL_GSRD_RC3      
+Uboot-socfpga       socfpga_v2013.01.01               f5cd6b9becaee79161edda315cde6ffe67b9677e  refs/tags/ACDS16.1_REL_GSRD_RC3      
+Meta-altera         angstrom-v2015.12-yocto2.0        7e994b19f90c019075a2c7292a9043e542e899ed  refs/tags/ACDS16.1_REL_GSRD_RC3      
+Meta-altera-refdes  gsrd-16.1                         d39581d037c5bf50856d5f3d5e89f8df8434f1af  refs/tags/ACDS16.1_REL_GSRD_RC3      
+Linux-refdesigns    socfpga-16.1                      a3d4e657087dbf535401b18cdd810591857b6961  refs/tags/ACDS16.1_REL_GSRD_RC3      
+Uboot-socfpga       socfpga_v2014.10_arria10_bringup  ab2181dd766157a74b309d12e0b61c4f3cdc8564  refs/tags/ACDS16.1_REL_A10_GSRD_RC3  
+Linux-socfpga       socfpga-3.10-ltsi                 28bac3edbcdc74f98b865986be5d340381896192  refs/tags/ACDS16.1_REL_M10_GSRD_RC3  

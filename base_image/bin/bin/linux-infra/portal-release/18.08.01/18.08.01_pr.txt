@@ -1,0 +1,231 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.17
+branch tag  : rel_socfpga-4.17_18.08.01_pr
+new commits : 0
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.08.01_pr
+new commits : 0
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.08.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.17_18.08.01_pr
+commit: 103d053 Richard Gong FogBugz #574552: misc: intel-service: resolve a possible memory exception
+
+tag:    rel_socfpga-4.9.78-ltsi_18.08.01_pr
+commit: da71e4b Richard Gong FogBugz #574552: misc: intel-service: resolve a possible memory exception
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.08.01_pr
+commit: aaf2f73 Richard Gong FogBugz #574552: misc: intel-service: resolve a possible memory exception
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.08.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.08.01_pr
+new commits : 1
+3d79f8a Tien Fong Chee FogBugz #582382: Fix integer overflow for Arria 10
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_18.08.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 582382 | Fix integer overflow for Arria 10 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/3d79f8aaf8930da2c118a52ef831739e6d855295 ][ 3d79f8aaf8930da2c118a52ef831739e6d855295 ]] |
+--wiki:
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.08.01_pr
+new commits : 4
+c6316ed Chee Hong Ang FogBugz #583312-3: Refactor S10 FPGA reconfig status SMC/PSCI function
+72713e8 Chee Hong Ang FogBugz #583312-2: Refactor S10 FPGA reconfig status polling function
+2d158cd Chee Hong Ang FogBugz #583312-1: Add generic FPGA reconfig mailbox API for S10
+97e7c4d Ooi, Joyce FogBugz #577927: arm64: socfpga: add EMAC registers in SMC functions
+
+
+++wiki:
+*Branch name*: socfpga_v2017.09, *Tag name:* rel_socfpga_v2017.09_18.08.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 583312-3 | Refactor S10 FPGA reconfig status SMC/PSCI function | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/c6316edf709a49d52f2c613eda6f15994ce7cd31 ][ c6316edf709a49d52f2c613eda6f15994ce7cd31 ]] |
+| 583312-2 | Refactor S10 FPGA reconfig status polling function | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/72713e8c6b52f590028dfb4c41ca43ab90407c4c ][ 72713e8c6b52f590028dfb4c41ca43ab90407c4c ]] |
+| 583312-1 | Add generic FPGA reconfig mailbox API for S10 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/2d158cd24fd9fa314272d86756a90121a02521b1 ][ 2d158cd24fd9fa314272d86756a90121a02521b1 ]] |
+| 577927 | arm64: socfpga: add EMAC registers in SMC functions | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/97e7c4d8a426a063c9a3ea019dcf7b290b482984 ][ 97e7c4d8a426a063c9a3ea019dcf7b290b482984 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.08.01_pr
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.08.01_pr
+commit: 3d79f8a Tien Fong Chee FogBugz #582382: Fix integer overflow for Arria 10
+
+tag:    rel_socfpga_v2017.09_18.08.01_pr
+commit: c6316ed Chee Hong Ang FogBugz #583312-3: Refactor S10 FPGA reconfig status SMC/PSCI function
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.08.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.08.01_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.08.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.08.01_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.08.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.08.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.08.01_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.08.01_pr
+commit: ec7bfa2 Ong, Hean Loong update 4.9.78-ltsi to commit ID da71e4b
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.08.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_18.08.01_pr
+commit: a9e0753 David Koltak FogBugz #568818-2: Better command line arg checking in example client
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 3d79f8aaf8930da2c118a52ef831739e6d855295
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Fri Aug 3 12:41:21 2018 +0800
+
+    FogBugz #582382: Fix integer overflow for Arria 10
+    
+    dramaddrw data structure are defined as u32. Compiler assume 32-bit
+    arithmetic on expression and the shifting operation to be done on a
+    32-bit value. So, the expression would overflow if the shifting
+    is more than 32-bit.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit c6316edf709a49d52f2c613eda6f15994ce7cd31
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Tue Aug 7 14:36:06 2018 +0800
+
+    FogBugz #583312-3: Refactor S10 FPGA reconfig status SMC/PSCI function
+    
+    Use FPGA reconfig mailbox API in FPGA reconfig status SMC/PSCI
+    function for S10.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    v2 - Update commit message
+
+commit 72713e8c6b52f590028dfb4c41ca43ab90407c4c
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Tue Aug 7 14:32:23 2018 +0800
+
+    FogBugz #583312-2: Refactor S10 FPGA reconfig status polling function
+    
+    Use FPGA reconfig mailbox API in FPGA reconfig status polling function.
+    This FPGA reconfig status polling function is called to poll the FPGA
+    reconfiguration status after user finished programming the FPGA in
+    u-boot.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    v2 - Update commit message
+
+commit 2d158cd24fd9fa314272d86756a90121a02521b1
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Tue Aug 7 14:19:41 2018 +0800
+
+    FogBugz #583312-1: Add generic FPGA reconfig mailbox API for S10
+    
+    Add a generic mailbox API for FPGA reconfig status which can be
+    called by others. This new function accepts 2 different mailbox
+    commands: CONFIG_STATUS or RECONFIG_STATUS.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    v2 - Update commit message
+       - Minor code fix
+
+commit 97e7c4d8a426a063c9a3ea019dcf7b290b482984
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Thu Jul 19 16:50:18 2018 +0800
+
+    FogBugz #577927: arm64: socfpga: add EMAC registers in SMC functions
+    
+    The EMAC registers are used to specify the EMAC settings (e.g. selecting
+    PHY interface). As these EMAC registers are needed in the Linux kernel,
+    they are added to SMC functions for read, write and update purposes.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+-----------------------------------------------------------------------
+

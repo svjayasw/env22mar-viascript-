@@ -1,0 +1,115 @@
+From:	Tan, Ying Cheh
+Sent:	Friday, April 19, 2019 3:13 AM
+To:	Ong, Hean Loong; Tull, Alan
+Cc:	Li, Sen; See, Chin Liang
+Subject:	RE: updating the commit for meta-altera-refdes
+
+Follow Up Flag:	Follow up
+Flag Status:	Flagged
+
+Hi Alan, 
+
+Please help to update the tag, thanks.
+
+
+Regards
+Ying Cheh Tan
+Embedded Release Manager
+Intel Programmable Solutions Group
+
+From: Ong, Hean Loong  
+Sent: Friday, April 19, 2019 4:09 PM 
+To: Tull, Alan <alan.tull@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com> 
+Cc: Li, Sen <sen.li@intel.com>; See, Chin Liang <chin.liang.see@intel.com> 
+Subject: RE: updating the commit for meta-altera-refdes
+
+Hi Ying Cheh,
+
+A snapshot of the Jenkins build result for GSRD Angstrom using the new commit
+
+ 
+
+Best Regards,
+
+Hean Loong
+Internal Global Dial: 2 701 6773
+Direct Line: +60 4 636 6773
+
+
+From: Ong, Hean Loong  
+Sent: Friday, April 19, 2019 8:12 AM 
+To: Tull, Alan <alan.tull@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com> 
+Cc: Li, Sen <sen.li@intel.com>; See, Chin Liang <chin.liang.see@intel.com> 
+Subject: RE: updating the commit for meta-altera-refdes
+
+Hi Ying Cheh
+
+Attached is the build report
+http://pg-eswnode-l:8080/job/Angstrom-Build/42/console
+
+Do let me know your  concerns about this commit
+
+Best Regards,
+
+Hean Loong
+Internal Global Dial: 2 701 6773
+Direct Line: +60 4 636 6773
+
+
+From: Tull, Alan  
+Sent: Thursday, April 18, 2019 10:48 PM 
+To: Tan, Ying Cheh <ying.cheh.tan@intel.com>; Ong, Hean Loong <hean.loong.ong@intel.com> 
+Cc: Li, Sen <sen.li@intel.com> 
+Subject: RE: updating the commit for meta-altera-refdes
+
+Ying Cheh,
+
+Do you approve this update tag?
+
+Alan
+
+From: Ong, Hean Loong  
+Sent: Thursday, April 18, 2019 5:57 AM 
+To: Tull, Alan <alan.tull@intel.com> 
+Subject: RE: updating the commit for meta-altera-refdes
+
+Hi Alan
+
+Apologies the previous mail the proposed commit should be:
+
+9f26170f5357002456d5bd499e4a4bfe62308f43
+
+Proposed Tag: ACDS19.1_REL_GSRD_PR_UPDATE1
+
+Best Regards,
+
+Hean Loong
+Internal Global Dial: 2 701 6773
+Direct Line: +60 4 636 6773
+
+
+From: Ong, Hean Loong  
+Sent: Thursday, April 18, 2019 10:47 AM 
+To: Tull, Alan <alan.tull@intel.com> 
+Subject: updating the commit for meta-altera-refdes
+
+Hi Alan
+
+I realize I made a mistake on the meta-altera-refdes recipe. Can I update the commit and tag ?
+
+If so please advise on the best method possible
+
+Current commit and tag
+1430630afc78c935c931fe11d6f528dae0c90a67 ACDS19.1_REL_GSRD_PR
+
+Proposed commit
+1430630afc78c935c931fe11d6f528dae0c90a67 ACDS19.1_REL_GSRD_PR_UPDATE1
+
+
+BR
+
+Hean Loong
+Internal Global Dial: 2 701 6773
+Direct Line: +60 4 636 6773
+
+

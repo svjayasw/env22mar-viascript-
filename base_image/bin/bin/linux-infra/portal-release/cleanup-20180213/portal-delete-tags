@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cd ~/repos/portal/linux-socfpga
+
+for tag in $(git tag | grep -v '^v' | egrep -v '(socfpga-4.15|socfpga-4.9.76-ltsi-rt|socfpga-4.9.78-ltsi)'); do
+    echo $tag
+#    continue
+    echo "git push origin :refs/tags/${tag}"
+    git push origin :refs/tags/${tag}
+    echo "status=$?"
+    echo
+done
+#echo Done
+exit

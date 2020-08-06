@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Cleans whitespace from a file
+
+usage()
+{
+    echo "Usage: $(basename $0) [FILE]..."
+    echo "   Cleans whitespace in source files."
+    exit
+}
+
+clean_file()
+{
+    if file $1 | grep 'text' >/dev/null 2>&1; then
+	# Clean trailing whitespace
+	sed -i 's/[ \t]*$//' $1
+
+	# change first 8 spaces on a line to a tab
+	sed -i -r 's/^[ ]{8}/\t/g' $1
+
+	# If initial tabs on a line are followed by 8 spaces, change thoses 8 spaces to a tab.
+	sed -i -r 's/^([\t]*)[ ]{8}/\1\t/g' $1
+    fi
+}
+
+#======================================================================
+
+if [ -z "$1" ]; then
+    usage
+fi
+
+while [ ! -z "$1" ]; do
+    clean_file "$1"
+    shift
+done

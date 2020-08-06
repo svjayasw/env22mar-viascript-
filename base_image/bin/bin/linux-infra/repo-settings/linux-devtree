@@ -1,0 +1,13 @@
+repo_path: /usr/local/git/repositories/linux-devtree.git
+update_tests:
+email:
+sync-job: linux
+local_upstream: linux-socfpga
+crucible_project:
+release_branch:
+internal_git: gitolite@at-git:linux-devtree.git
+external_git:
+upstream_branches: master linux-[3-9]\.[0-9]{1,2}\.y
+release_branch:
+upstream_tag_regex:
+review_addrs:

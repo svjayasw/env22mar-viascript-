@@ -1,0 +1,12 @@
+Portal report for Oct 18, 2013
+
+The following tags were pushed out (for linux-socfpga, uboot-socfpga, and poky):
+ACDS13.1_REL_GSRD_CB
+ACDS13.1_REL_GSRD_RC3
+ACDS13.1_REL_GSRD_RC4
+ACDS13.1_REL_GSRD_RC5
+ACDS13.1_REL_GSRD_RC6
+
+No new commits on the normal development branches.
+
+Alan

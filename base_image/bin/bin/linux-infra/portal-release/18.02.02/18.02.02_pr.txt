@@ -1,0 +1,290 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+repo : meta-altera            branch : angstrom-v2016.12-yocto2.2
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.15
+branch tag  : rel_socfpga-4.15_18.02.02_pr
+new commits : 1
+8879084 Thor Thayer FogBugz #532777: ARM: socfpga_defconfig: Remove QSPI Sector 4K size force
+
+
+++wiki:
+*Branch name*: socfpga-4.15, *Tag name:* rel_socfpga-4.15_18.02.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 532777 | ARM: socfpga_defconfig: Remove QSPI Sector 4K size force | [[ https://github.com/altera-opensource/linux-socfpga/commit/887908471a67bb9dc4cd0eda0e8f2dfd8d2259d1 ][ 887908471a67bb9dc4cd0eda0e8f2dfd8d2259d1 ]] |
+--wiki:
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.02.02_pr
+new commits : 1
+e681fba Thor Thayer FogBugz #532777: ARM: socfpga_defconfig: Remove QSPI Sector 4K size force
+
+
+++wiki:
+*Branch name*: socfpga-4.9.78-ltsi, *Tag name:* rel_socfpga-4.9.78-ltsi_18.02.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 532777 | ARM: socfpga_defconfig: Remove QSPI Sector 4K size force | [[ https://github.com/altera-opensource/linux-socfpga/commit/e681fba61a85fa13e546bba277083c49c091e361 ][ e681fba61a85fa13e546bba277083c49c091e361 ]] |
+--wiki:
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.02.02_pr
+new commits : 5
+fc0319f9 Thor Thayer FogBugz #532777: ARM: socfpga_defconfig: Remove QSPI Sector 4K size force
+2eb4e95 Thor Thayer FogBugz #411698-4: socfpga: dts: Add A10-SR Devkit power supply alarms
+f94218f Thor Thayer FogBugz #532583-3: mtd: a10sr: Add A10SR HWMON
+0c15ad6 Thor Thayer FogBugz #532583-2: hwmon: Fix buffer calls for SDL compliance.
+3d6b6c2 Thor Thayer FogBugz #532583-1: hwmon: Update A10SR HWMON register calls
+
+
+++wiki:
+*Branch name*: socfpga-4.9.76-ltsi-rt, *Tag name:* rel_socfpga-4.9.76-ltsi-rt_18.02.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 532777 | ARM: socfpga_defconfig: Remove QSPI Sector 4K size force | [[ https://github.com/altera-opensource/linux-socfpga/commit/fc0319f9730bb122e4f1ab73b44c0b70c0a51ed7 ][ fc0319f9730bb122e4f1ab73b44c0b70c0a51ed7 ]] |
+| 411698-4 | socfpga: dts: Add A10-SR Devkit power supply alarms | [[ https://github.com/altera-opensource/linux-socfpga/commit/2eb4e95cceb29e79225f749615389d9486b83fc5 ][ 2eb4e95cceb29e79225f749615389d9486b83fc5 ]] |
+| 532583-3 | mtd: a10sr: Add A10SR HWMON | [[ https://github.com/altera-opensource/linux-socfpga/commit/f94218f06c0a540e85a4813ee6bbedb445beb817 ][ f94218f06c0a540e85a4813ee6bbedb445beb817 ]] |
+| 532583-2 | hwmon: Fix buffer calls for SDL compliance. | [[ https://github.com/altera-opensource/linux-socfpga/commit/0c15ad6dab90d3e42210a6aa7def91f1b355cecf ][ 0c15ad6dab90d3e42210a6aa7def91f1b355cecf ]] |
+| 532583-1 | hwmon: Update A10SR HWMON register calls | [[ https://github.com/altera-opensource/linux-socfpga/commit/3d6b6c2968fb1a8927f9150325b1166c474a0b2f ][ 3d6b6c2968fb1a8927f9150325b1166c474a0b2f ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.15_18.02.02_pr
+commit: 8879084 Thor Thayer FogBugz #532777: ARM: socfpga_defconfig: Remove QSPI Sector 4K size force
+
+tag:    rel_socfpga-4.9.78-ltsi_18.02.02_pr
+commit: e681fba Thor Thayer FogBugz #532777: ARM: socfpga_defconfig: Remove QSPI Sector 4K size force
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.02.02_pr
+commit: fc0319f9 Thor Thayer FogBugz #532777: ARM: socfpga_defconfig: Remove QSPI Sector 4K size force
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.02.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.02.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.02.02_pr
+new commits : 1
+8807902 Chee Hong Ang FogBugz #529840: arm: socfpga: stratix10: Move armv8 secure region base to upper 128k
+
+
+++wiki:
+*Branch name*: socfpga_v2017.09, *Tag name:* rel_socfpga_v2017.09_18.02.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 529840 | arm: socfpga: stratix10: Move armv8 secure region base to upper 128k | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/8807902b23aea7dc6f25d1818fc68f10220afcb4 ][ 8807902b23aea7dc6f25d1818fc68f10220afcb4 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.02.02_pr
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.02.02_pr
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_18.02.02_pr
+commit: 8807902 Chee Hong Ang FogBugz #529840: arm: socfpga: stratix10: Move armv8 secure region base to upper 128k
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.02.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.02.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.02.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.02.02_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.02.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.02.02_pr
+Pushing new branch to external git
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.02.02_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.02.02_pr
+commit: 7c4b4b9 Yves Vandervennet removed old kernels, no longer supported
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.15
+
+commit 887908471a67bb9dc4cd0eda0e8f2dfd8d2259d1
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Feb 12 15:36:33 2018 -0600
+
+    FogBugz #532777: ARM: socfpga_defconfig: Remove QSPI Sector 4K size force
+    
+    This config was inadvertently added but should not be removed. This is
+    causing QSPI boot problems with the JFFS2 root filesystem.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+commit e681fba61a85fa13e546bba277083c49c091e361
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Feb 12 15:36:33 2018 -0600
+
+    FogBugz #532777: ARM: socfpga_defconfig: Remove QSPI Sector 4K size force
+    
+    This config was inadvertently added but should not be removed. This is
+    causing QSPI boot problems with the JFFS2 root filesystem.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.76-ltsi-rt
+
+commit fc0319f9730bb122e4f1ab73b44c0b70c0a51ed7
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Feb 12 15:36:33 2018 -0600
+
+    FogBugz #532777: ARM: socfpga_defconfig: Remove QSPI Sector 4K size force
+    
+    This config was inadvertently added but should not be removed. This is
+    causing QSPI boot problems with the JFFS2 root filesystem.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 2eb4e95cceb29e79225f749615389d9486b83fc5
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Fri Apr 22 10:33:39 2016 -0500
+
+    FogBugz #411698-4: socfpga: dts: Add A10-SR Devkit power supply alarms
+    
+    Add the Altera Arria10 Devkit power supply alarms.
+    [backport 'commit c5c3b0edeffe ("FogBugz #411698-4: socfpga: dts:
+                             Add A10-SR Devkit power supply alarms")']
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit f94218f06c0a540e85a4813ee6bbedb445beb817
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri Feb 2 11:44:13 2018 -0600
+
+    FogBugz #532583-3: mtd: a10sr: Add A10SR HWMON
+    
+    Add HWMON to the A10 System Resource Multi-Function Device.
+    This fixes a previous patch
+    ['commit b5678c1b894d ("FogBugz #411698-2: Add Altera A10-SR
+                            power supply alarms")']
+    that removed this change when cherry-picked.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Add explanation of previous patch problem along with hash.
+
+commit 0c15ad6dab90d3e42210a6aa7def91f1b355cecf
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri Feb 2 09:24:43 2018 -0600
+
+    FogBugz #532583-2: hwmon: Fix buffer calls for SDL compliance.
+    
+    The buffer calls need to be more secure so pass the buffer size
+    in the sprintf functions. Limit buffer size to 5.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Explicitly call out buffer size.
+
+commit 3d6b6c2968fb1a8927f9150325b1166c474a0b2f
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri Feb 2 11:39:37 2018 -0600
+
+    FogBugz #532583-1: hwmon: Update A10SR HWMON register calls
+    
+    The A10 System Resource HWMON needs to be updated to fit the
+    newer hwmon register calls. Update the copyright and date
+    as part of this update.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2 Fix copyright & date. Don't change devm_kzalloc.
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 8807902b23aea7dc6f25d1818fc68f10220afcb4
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Thu Jan 18 21:54:40 2018 -0800
+
+    FogBugz #529840: arm: socfpga: stratix10: Move armv8 secure
+    region base to upper 128k
+    
+    SSBL copies the secure section code (mostly PSCI / SMC code)
+    to OCRAM before booting Linux. This patch make sure the FSBL's
+    SMP code which is still located at OCRAM not being overwritten by
+    the SSBL code when SSBL copies the secure section code to OCRAM.
+    This patch also prevent the problem as described above due to
+    increase of code size in secure section when compiled with newer
+    version of GCC.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    Changes for v4
+    - Make amendments to the commit messages
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2016.12-yocto2.2
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+

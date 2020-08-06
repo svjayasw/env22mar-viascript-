@@ -1,0 +1,279 @@
+This is a script-generated report of what will be pushed to the portal today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch socfpga-3.11:
+  new commits: 7
+f43d408 Ley Foon Tan FogBugz #163802: arch/nios2: Copy FDT from init memory to regular memory
+cd5aca6 Graham Moore FogBugz #163905: Support Denali NAND driver on socfpga platform
+ecc6f7d Thor Thayer FogBugz #119760: Document Designware SPI driver bindings
+04b772b Thor Thayer FogBugz #163712: Add SDRAM ECC/EDAC support to Altera CycloneV board
+f7762be Vince Bridgers FogBugz #133693: Fixes for Jumbo frame crash caused by improper sizing of receive buffers
+67588a1 Vince Bridgers FogBugz #162387: Add config options to defconfig to support VLAN tagging
+83e5c73 Ley Foon Tan FogBugz #162062: arch/nios2: Add .got section to linker script
+
+
+branch socfpga-3.4-ltsi:
+  new commits: 0
+
+
+Tags to push out to rocketboards.git:
+New tag : ACDS13.1_REL_GSRD_PR (ed01b8c9e884c871714806ecf010195ab2e8cf93)
+New tag : ACDS13.1_REL_GSRD_RC8 (ed01b8c9e884c871714806ecf010195ab2e8cf93)
+
+-----------------------------------------------------------------------
+
+repository: uboot-socfpga
+
+branch socfpga_v2013.01.01:
+  new commits: 1
+9dc4261 Chin Liang See FogBugz #112256: Adding Denali NAND driver
+
+
+Tags to push out to rocketboards.git:
+New tag : ACDS13.1_REL_GSRD_PR (1740999a39ea4217bf926002d10869c0d925a5dc)
+New tag : ACDS13.1_REL_GSRD_RC8 (1740999a39ea4217bf926002d10869c0d925a5dc)
+
+-----------------------------------------------------------------------
+
+repository: poky
+
+branch danny-altera:
+  new commits: 0
+
+
+Tags to push out to rocketboards.git:
+New tag : ACDS13.1_REL_GSRD_RC8 (52bea0aac74fa41fca9c62e9cb40fbb766558e70)
+
+Repush this tag :
+Current version on rocketboards.git:
+ ACDS13.1_REL_GSRD_PR (791d65dc466ee22e2b9836f68fffca6e8b68d012)
+Updated to:
+ ACDS13.1_REL_GSRD_PR (52bea0aac74fa41fca9c62e9cb40fbb766558e70)
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.11
+
+commit f43d408cd117b9109e492bb5b243579acc8a7b43
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Oct 25 17:05:24 2013 +0800
+
+    FogBugz #163802: arch/nios2: Copy FDT from init memory to regular memory
+    
+    If the supplied DTB is builtin into kernel, it is in __init memory and
+    will eventually be destroyed after bootup. But if drivers are loaded as
+    modules, they still need to access the DTB entries after the kernel has
+    started. Therefore, the DTB is moved to a new allocated area.
+    Thanks Jeroen Van den Keybus for the fix.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit cd5aca67c2d12f12b4bdb2b8ef5254fdae98b239
+Author: Graham Moore <grmoore@altera.com>
+Date:   Mon Oct 28 11:01:37 2013 -0500
+
+    FogBugz #163905: Support Denali NAND driver on socfpga platform
+    
+    This patch addresses a few bugs and features in the Denali NAND driver on the socfpga platform.
+    
+    First the bugs:
+    
+    - Reading ONFI parameters would cause a timeout, because the code sent the wrong
+    commands to the controller/device.  That was fixed, and in the process, code was
+    added to wait for the appropriate interrupt.
+    
+    - When using the JFFS2 file system, a bug was discovered in the write OOB
+    data function, whereby the controller was left in SPARE mode causing
+    subsequent page reads to fail.  The write OOB function was modified
+    so that the controller is left in MAIN access mode.
+    
+    Now the features:
+    
+    - The Denali NAND controller in the socfpga platform has hardware ECC, and several
+    status bits are different because of that.  A patch from Jamie Iles <jamie at jamieiles.com>
+    was used as the basis for supporting hardware ECC in the code.
+    
+    - The device tree and documentation were modified to support hardware ECC.
+    
+    - One of our test socfpga boards had a NAND chip which was locked by default.  To support
+    writing to the chip, the UNLOCK1 and UNLOCK2 commands were implemented.  The nand_unlock
+    calls were added as well.  (Note, the mtd layer has _lock, _unlock, and is probably a
+    better place to implement this functionality than the nand driver).
+    
+    - The mtd_device_register call was replaced with mtd_device_parse_register so that
+    device tree partitions are setup by the mtd layer.  Example partitions were added
+    to the device tree.
+    
+    - In the process of supporting our specific controller configuration, duplicate
+    definitions of bad block table descriptions were removed from the denali code.  They
+    also exist in the nand driver code.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit ecc6f7d5cf5173c3e3e711d370dd6a3afe652c03
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Wed Oct 23 09:02:18 2013 -0500
+
+    FogBugz #119760: Document Designware SPI driver bindings
+    
+    The community Memory Mapped Designware SPI driver is not
+    currently documented so it is added here.
+    
+    V2:
+      Use generic interrupt description instead of GIC specific.
+    
+    V3:
+      Cleanup of extra lines & compatible description.
+    
+    V4:
+      Addition of clock source.
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit 04b772b755572ce2645714ab531745b96e1e1ffc
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Tue Oct 29 12:34:01 2013 -0500
+
+    FogBugz #163712: Add SDRAM ECC/EDAC support to Altera CycloneV board
+    
+    Firmware to support the EDAC framework for the SDRAM ECC on the
+    Altera CycloneV board is added in this patch.
+    - The SDRAM Controller registers are used by the FPGA bridge so
+      these are accessed through the syscon interface.
+    - The interrupts are included in the sdramedac device tree node
+      and accessed with the platform functions.
+    - The configuration of the SDRAM memory size for the EDAC framework
+      is discovered from the memory node of the device tree.
+    - Documentation of the bindings in devicetree/bindings/arm/altera
+    
+    V2: Implement review changes.
+    - Fix copyright.
+    - Call edac_mc_free() if error on devres_open_group().
+    - Remove pr_debugs.
+    - Fix spacing in calculation for readability.
+    - Add platform_set_drvdata() in alt_sdram_mc_remove().
+    - Add of_match_ptr() around .of_match_table element.
+    
+    V3:
+    - Replace pr_debug() with dev_dbg().
+    - Remove /r line endings.
+    
+    V4:
+    - Check return code of regmap_read() in probe.
+    
+    V5:
+    - Clear regmap_read() variables before use.
+    - Check return code when looking for memory size.
+    - Include attribution in copyright.
+    - Enable IRQ after successfully adding memory controller.
+    
+    V6:
+    - Rename functions and macros from ALT to ALTR
+    - Cleanup of code to reflect Linux conventions.
+    - Replace MODULE_ALIAS with MODULE_AUTHOR("Altera Corporation");
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit f7762be21f19be5b4f5fa78e06b0a8851df168c3
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Tue Oct 22 15:44:11 2013 -0500
+
+    FogBugz #133693: Fixes for Jumbo frame crash caused by improper sizing of receive buffers
+    
+    The root causes for the Jumbo frame problems seen were:
+    
+    1) The driver was enabling Jumbo frames up to 9018 bytes in length (MTU = 9000)
+       without allocating the correct amount of receive buffer space. When the
+       controller received a packet larger than the smaller receive buffer,
+       the controller's DMA overwrote kernel memory, causing code/data
+       corruption eventually leading to a kernel crash.
+    
+    2) The driver was not setting the correct DMA mapping length before
+       mapping receive buffers. This led to a subsequent unmapping operation
+       using an incorrect mapping length with respect to the one used for
+       mapping. As long as the user did not bring down then up the driver, there
+       was no problem. This problem only showed up as a result of testing
+       MTU changes by cycling the interface up and down through different MTUs.
+    
+    The fixes implemented for these problems were:
+    
+    1) Add configuration parameter in the device tree for maximum Jumbo
+       frame size. This is needed since the transmit and receive fifos
+       sizes are configurable when the cores are created through Synopsys
+       Core Consultant. Having this parameter allows DMA I/O memory to
+       be conserved as much as possible by only allocating what's required
+       for packet receives.
+    
+       Example: If the MTU was set to 9000 and the transmit and receive
+       fifos were set to 4096 bytes, then a receive buffer size of 16K
+       would be used when only 4096 is required.
+    
+       The valid range for the C5 SOC is 2000 through 4062, inclusive.
+    
+    2) Update Documentation text file for stmmac parameters by adding
+       "snps,max-mtu" See 1) above for details.
+    
+    3) Changes to handle proper range checking of MTU in stmmac_change_mtu
+    
+    4) Use correct DMA buffer length when allocating receive buffers
+    
+    5) Default Configuration Register 0 settings were changed to
+       not enable Jumbo frame by default. 802.3as frame size expansion
+       is enabled by default, and Jumbo frame is enabled only if MTU
+       size is set for Jumbo frames. This permits receive buffer
+       size allocation per current MTU settings.
+    
+    6) DMA buffer sizes are properly sized for the maximum MTU size configured.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit 67588a1f285940ec1d4e8ab985f6c21972de66f7
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Mon Oct 21 15:09:21 2013 -0500
+
+    FogBugz #162387: Add config options to defconfig to support VLAN tagging
+    
+    This change enables VLAN tagging to work with the vconfig utility. See
+    FogBugz #162656 for more details about adding vconfig to the default
+    file system.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit 83e5c732384578e36cb1e476f6e95c86cdc5e8e1
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Oct 17 18:03:33 2013 +0800
+
+    FogBugz #162062: arch/nios2: Add .got section to linker script
+    
+    This fix the Nios II kernel links to LIBGCC library
+    functions issue. The GOT PLT needs to be on the beginning
+    of the GOT.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 9dc4261da5d7ce90ee46a8e04ab38f2e5478cede
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Oct 23 06:57:54 2013 -0700
+
+    FogBugz #112256: Adding Denali NAND driver
+    
+    Leveraged the Denali NAND driver from kernel. Bug fix and modification
+    was being done to the driver to ensure its working on hardware.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+

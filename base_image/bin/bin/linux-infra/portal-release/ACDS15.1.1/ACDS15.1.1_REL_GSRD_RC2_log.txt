@@ -1,0 +1,36 @@
+ACDS15.1.1_REL_GSRD_RC2
+
+/home/atull/repos/internal/angstrom-socfpga
+e178d8e Tien Hock Loh : FogBugz #327063: Update commit ID to include fix for syschk refresh rate issueTo git@github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         ACDS15.1.1_REL_GSRD_RC2 -> ACDS15.1.1_REL_GSRD_RC2
+Everything up-to-date
+
+/home/atull/repos/internal/linux-refdesigns
+4065da1 Chee Nouk Phoon : FogBugz #324265 Max10: Add ADC demo shellTo git@github.com:altera-opensource/linux-refdesigns.git
+ * [new tag]         ACDS15.1.1_REL_GSRD_RC2 -> ACDS15.1.1_REL_GSRD_RC2
+Everything up-to-date
+
+/home/atull/repos/internal/linux-socfpga
+bcf9c64 Matthew Gerlach : FogBugz #334036: Fix qspi partitioningTo git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         ACDS15.1.1_REL_GSRD_RC2 -> ACDS15.1.1_REL_GSRD_RC2
+Everything up-to-date
+
+/home/atull/repos/internal/meta-altera
+45c0f23 Yves Vandervennet : Code in the kernel build include file disabled support for INITRD when no INITRAMFS image is specified. This is an issue with the Stratix10 SWVP, since we do use INITRD images to bootTo git@github.com:altera-opensource/meta-altera
+ * [new tag]         ACDS15.1.1_REL_GSRD_RC2 -> ACDS15.1.1_REL_GSRD_RC2
+Everything up-to-date
+
+/home/atull/repos/internal/meta-altera-refdes
+c48ec1a Tien Hock Loh : FogBugz #327063: Update commit ID of meta-altera-refdes for syschk refresh issueTo git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         ACDS15.1.1_REL_GSRD_RC2 -> ACDS15.1.1_REL_GSRD_RC2
+Everything up-to-date
+
+/home/atull/repos/internal/uboot-socfpga
+4003f38 Chin Liang See : FogBugz #297183: Enabling ECC overwrite when SDRAM ECC is enabledTo git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         ACDS15.1.1_REL_GSRD_RC2 -> ACDS15.1.1_REL_GSRD_RC2
+To git@github.com:altera-opensource/u-boot-socfpga
+ ! [rejected]        ACDS15.1.1_REL_GSRD_RC2 -> uboot-socfpga (non-fast-forward)
+error: failed to push some refs to 'git@github.com:altera-opensource/u-boot-socfpga'
+To prevent you from losing history, non-fast-forward updates were rejected
+Merge the remote changes (e.g. 'git pull') before pushing again.  See the
+'Note about fast-forwards' section of 'git push --help' for details.

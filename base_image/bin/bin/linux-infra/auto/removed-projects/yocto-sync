@@ -1,0 +1,25 @@
+#!/bin/bash
+
+source $(dirname $0)/sync_repo_common.sh
+
+export lock_filename="$(basename $0 | sed 's/.sh//')"
+script_lock
+
+# Send email if there is an error exit
+trap 'error_exit ${LINENO}' ERR
+
+#====================================================================================
+
+LOCAL_REPOS="poky"
+UPSTREAM=https://git.yoctoproject.org/git/poky.git
+
+#====================================================================================
+
+echo "--- Sync Start --- $(date)"
+cd_or_clone $UPSTREAM
+push_tags_only $LOCAL_REPOS
+push_all_branches $LOCAL_REPOS
+echo '--- Sync Finished ---'
+echo
+
+unlock_exit

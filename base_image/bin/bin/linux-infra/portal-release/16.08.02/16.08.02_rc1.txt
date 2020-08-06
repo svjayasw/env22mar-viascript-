@@ -1,0 +1,527 @@
+
+Script-generated report of what we tagged today in internal git.These tags/branches will be pushed to the portal in two weeks.
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.6
+branch tag  : rel_socfpga-4.6_16.08.02_rc1
+new commits : 1
+f9fb6e1 Alan Tull FogBugz #384743: altera-hps2fpga: race condition in probe
+
+
+branch      : socfpga-4.1.22-ltsi
+branch tag  : rel_socfpga-4.1.22-ltsi_16.08.02_rc1
+new commits : 4
+0393488 Alan Tull FogBugz #384743: altera-hps2fpga: race condition in probe
+7dbdfc2 Ley Foon Tan PCI: altera: Poll for link up status after retraining the link
+b5da42b Ley Foon Tan PCI: altera: Check link status before retrain link
+43e1f52 Bjorn Helgaas PCI: altera: Reorder read/write functions
+
+
+branch      : socfpga-4.1.22-ltsi-rt
+branch tag  : rel_socfpga-4.1.22-ltsi-rt_16.08.02_rc1
+new commits : 4
+727b1dc Alan Tull FogBugz #384743: altera-hps2fpga: race condition in probe
+26f1620 Ley Foon Tan PCI: altera: Poll for link up status after retraining the link
+f16d096 Ley Foon Tan PCI: altera: Check link status before retrain link
+4de9271 Bjorn Helgaas PCI: altera: Reorder read/write functions
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.6_16.08.02_rc1
+commit: f9fb6e1 Alan Tull FogBugz #384743: altera-hps2fpga: race condition in probe
+
+tag:    rel_socfpga-4.1.22-ltsi_16.08.02_rc1
+commit: 0393488 Alan Tull FogBugz #384743: altera-hps2fpga: race condition in probe
+
+tag:    rel_socfpga-4.1.22-ltsi-rt_16.08.02_rc1
+commit: 727b1dc Alan Tull FogBugz #384743: altera-hps2fpga: race condition in probe
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.08.02_rc1
+new commits : 1
+8cffb2d Chin Liang See FogBugz #353914: Fix SPL FPGA configuration with bridge enabled
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.08.02_rc1
+new commits : 18
+418ef75 Chin Liang See FogBugz #354841: add correct dtb board filename for arria10
+c959f0b Chin Liang See FogBugz #385101: Fix PLL ramp code to support 1:2 clock ratio
+763b7ec Chin Liang See FogBugz #384923: Fix incorrect reset manager status offset
+25a39a3 Chin Liang See FogBugz #384921: Fix overwritten rst_mgr_status variable
+d65a82f Chin Liang See FogBugz #393096: Update DTS handoff based on SOCEDS 16.1
+e9d5251 Chin Liang See FogBugz #385177: Enabling Ethernet support when boot from NAND
+c0a7fd1 Chin Liang See FogBugz #385309-6: Fix malloc limit calculation error
+3066d61 Chin Liang See FogBugz #385309-5: Reduce the OCRAM malloc and stack size
+35d1d41 Chin Liang See FogBugz #385309-4: Reduce the cff buffer size for QSPI and NAND boot
+8660021 Chin Liang See FogBugz #385309-3: Enabling relocation of malloc and stack to SDRAM
+ae9fcc5 Chin Liang See FogBugz #385309-2: Enhance memalign to support simple malloc
+1f2d29e Chin Liang See FogBugz #385309-1: Enhance simple malloc implementation
+7b50a3b Chin Liang See FogBugz #383897: Enhance the compatibility of early IO release
+03afac4 Chin Liang See FogBugz #381722: Update SDMMC smpsel value
+29c7ed9 Tien Fong Chee FogBugz #381162-3: Enable optional checksum checking on SDMMC FPGA image
+c6bf340 Chin Liang See FogBugz #385177: Fix memory low address setup issue at denali_setup_dma
+a4275e0 Tien Fong Chee FogBugz #381162-2: Enhance for consistent checksum checking design flow
+1c2528c Tien Fong Chee FogBugz #381162-1: Set the environment rbfcoreimage with mkimage extension
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.08.02_rc1
+commit: 8cffb2d Chin Liang See FogBugz #353914: Fix SPL FPGA configuration with bridge enabled
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.08.02_rc1
+commit: 418ef75 Chin Liang See FogBugz #354841: add correct dtb board filename for arria10
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.08.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.08.02_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.08.02_rc1
+new commits : 1
+f6d8e6c Graham Moore FogBugz #381598: Add large OOB patch to mtd-utils to support new NAND chips.
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.08.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.08.02_rc1
+commit: f6d8e6c Graham Moore FogBugz #381598: Add large OOB patch to mtd-utils to support new NAND chips.
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.08.02_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.6
+
+commit f9fb6e108eb61b1397a38e5536158ab0441e4663
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Jun 20 15:47:44 2016 -0500
+
+    FogBugz #384743: altera-hps2fpga: race condition in probe
+    
+    Currently there is a potential race condition created by
+    initializing the bridge's enable/disable state after
+    registering the bridge driver.  Should initialize before
+    registering.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi
+
+commit 03934880d13f511ce0bf50c7cd77ca95b5bf90a1
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Jun 20 15:47:44 2016 -0500
+
+    FogBugz #384743: altera-hps2fpga: race condition in probe
+    
+    Currently there is a potential race condition created by
+    initializing the bridge's enable/disable state after
+    registering the bridge driver.  Should initialize before
+    registering.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 7dbdfc24e669e3ce24731ebc20588c8b7c346183
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Jun 21 16:53:13 2016 +0800
+
+    PCI: altera: Poll for link up status after retraining the link
+    
+    Some PCIe devices take a long time to reach link up state after retrain.
+    Poll for link up status after retraining the link.  This is to make sure
+    the link is up before we access configuration space.
+    
+    [bhelgaas: changelog]
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+
+commit b5da42b8bdee982d14a771d3edbecd728f3b5815
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Jun 21 16:53:12 2016 +0800
+
+    PCI: altera: Check link status before retrain link
+    
+    Check the link status before retraining.  If the link is not up, don't
+    bother trying to retrain it.
+    
+    [bhelgaas: split code move to separate patch, changelog]
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+
+commit 43e1f524dda285dbbfe09368544a09befd5eadc2
+Author: Bjorn Helgaas <bhelgaas@google.com>
+Date:   Fri Jul 22 15:54:41 2016 -0500
+
+    PCI: altera: Reorder read/write functions
+    
+    Move cra_writel(), cra_readl(), and altera_pcie_link_is_up() so a future
+    patch can use them in altera_pcie_retrain().  No functional change
+    intended.
+    
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+    Conflicts:
+    
+            drivers/pci/host/pcie-altera.c
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi-rt
+
+commit 727b1dc203b2bd1d7d966c0216c1353789936dae
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Jun 20 15:47:44 2016 -0500
+
+    FogBugz #384743: altera-hps2fpga: race condition in probe
+    
+    Currently there is a potential race condition created by
+    initializing the bridge's enable/disable state after
+    registering the bridge driver.  Should initialize before
+    registering.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 26f16202b13d0c537c04380ef6c4d5d7c79e2e0c
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Jun 21 16:53:13 2016 +0800
+
+    PCI: altera: Poll for link up status after retraining the link
+    
+    Some PCIe devices take a long time to reach link up state after retrain.
+    Poll for link up status after retraining the link.  This is to make sure
+    the link is up before we access configuration space.
+    
+    [bhelgaas: changelog]
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+
+commit f16d09680073912e004bb2b296025d0e27b65793
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Jun 21 16:53:12 2016 +0800
+
+    PCI: altera: Check link status before retrain link
+    
+    Check the link status before retraining.  If the link is not up, don't
+    bother trying to retrain it.
+    
+    [bhelgaas: split code move to separate patch, changelog]
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+
+commit 4de9271842144911e89132630b0079c9a47d35fd
+Author: Bjorn Helgaas <bhelgaas@google.com>
+Date:   Fri Jul 22 15:54:41 2016 -0500
+
+    PCI: altera: Reorder read/write functions
+    
+    Move cra_writel(), cra_readl(), and altera_pcie_link_is_up() so a future
+    patch can use them in altera_pcie_retrain().  No functional change
+    intended.
+    
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+    Conflicts:
+    
+            drivers/pci/host/pcie-altera.c
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 8cffb2d0b4efb9d14dfd9ce4e0ef693e6962e6cf
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Jul 29 00:04:21 2016 +0800
+
+    FogBugz #353914: Fix SPL FPGA configuration with bridge enabled
+    
+    To fix the Preloader to ensure the bridges are disabled when
+    programming the FPGA. The bridge is now enabled upon Reset Manager
+    initialization but left open even during FPGA programming which is
+    not safe to do so.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 418ef7526215c7dafe7b8090c767e84296787477
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Aug 4 16:30:12 2016 +0800
+
+    FogBugz #354841: add correct dtb board filename for arria10
+    
+    The Linux DTB board files for Arria10 consists of one of the following:
+    socfpga_arria10_socdk_sdmmc.dtb, socfpga_arria10_socdk_qspi.dtb, or
+    socfpga_arria10_socdk_nand.dtb.
+    
+    socfpga_arria10_socdk.dtb is no longer used to support the devkit. Update
+    the fdtimage environment variable for the appropriate devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit c959f0b0531eec227c6c3a9691925dc4f3094b94
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Jul 28 23:53:28 2016 +0800
+
+    FogBugz #385101: Fix PLL ramp code to support 1:2 clock ratio
+    
+    To fix the PLL ramp code to support use case 1:2 ratio of
+    MPU clock:NOC clock. Previous algorithm has error as it
+    is assuming valid ratio of 1:3 and above only. Hence this patch
+    will take care use case where NOC clock is faster than ramp
+    threshold while MPU clock is below ramp threshold.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 763b7ec325cb18379fe3bf7e856f8f2852f0a760
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Jul 28 22:28:04 2016 +0800
+
+    FogBugz #384923: Fix incorrect reset manager status offset
+    
+    To fix the incorrect offset of reset manager status register
+    from the share memory region. It is passed by BootROM during
+    entry of bootloader.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 25a39a39faa411984d6f1f7c503bd2086d1d5298
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Jul 28 22:18:36 2016 +0800
+
+    FogBugz #384921: Fix overwritten rst_mgr_status variable
+    
+    To move the rst_mgr_status variable from BSS section to
+    data section. This is to avoid the variable being cleared when
+    initialization of BSS to zeroes.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit d65a82fd67c86bf712d4620f04503f7a918099ce
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Jul 27 10:27:13 2016 +0800
+
+    FogBugz #393096: Update DTS handoff based on SOCEDS 16.1
+    
+    To update the DTS handoff within the git based on SOCEDS 16.1
+    generated DTS handoff.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit e9d5251416a1e2a2c39da87088643096b364bc8c
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Jul 27 10:14:13 2016 +0800
+
+    FogBugz #385177: Enabling Ethernet support when boot from NAND
+    
+    To enable the Ethernet support such as dhcp and tftp when boot
+    from NAND. This is possible due to better on-chip memory consumption.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit c0a7fd1d4023cd9aff75c74caf34853b57dfdc7a
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Aug 2 17:35:34 2016 +0800
+
+    FogBugz #385309-6: Fix malloc limit calculation error
+    
+    To fix the malloc_limit calculation error where the size
+    should be used instead of address. This malloc limit is
+    used for simple malloc implementation prior U-Boot relocation.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 3066d61cbcd2b2b28567fc5dac4d4adbf5c5279c
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Aug 2 17:33:06 2016 +0800
+
+    FogBugz #385309-5: Reduce the OCRAM malloc and stack size
+    
+    To reduce the malloc and stack size allocated at on-chip RAM. We
+    can save memory consumption in on-chip RAM due to cff buffer
+    reduction and relocation of stack + malloc to SDRAM.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 35d1d41e37a840c53f83f460a19a53d622a7b14d
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Jul 27 10:33:19 2016 +0800
+
+    FogBugz #385309-4: Reduce the cff buffer size for QSPI and NAND boot
+    
+    To reduce the buffer size allocated for cff operation during boot from
+    QSPI and NAND. Unlike SDMMC, QSPI and NAND don't need large buffer size
+    as required for FAT filesystem access. It won't impact the performance
+    as QSPI and NAND is accessed in 4k chunks (sub-sector and page).
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 866002129c365a2e83d7814e3e1f02371f45d947
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Jul 27 10:33:07 2016 +0800
+
+    FogBugz #385309-3: Enabling relocation of malloc and stack to SDRAM
+    
+    To enhance Arria10 SoC U-Boot memory usage by enabling relocation
+    of malloc and stack to SDRAM once SDRAM is functioning. Prior
+    relocation, will use the simple malloc implementation which make
+    malloc consumption at OCRAM much lower.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit ae9fcc5de38df0f754aed12aa03a62be9b9e1957
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Aug 2 17:31:30 2016 +0800
+
+    FogBugz #385309-2: Enhance memalign to support simple malloc
+    
+    To enhance existing memalign function to support simple malloc
+    implementation. It will call malloc and this will work in term of
+    functionality. The sat back would the additional memory consumption
+    but we won't take care since its meant for simple malloc implementation.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 1f2d29efc7b61b6d71b05de6d4330d09a7c0cbab
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Aug 2 17:22:27 2016 +0800
+
+    FogBugz #385309-1: Enhance simple malloc implementation
+    
+    To enhance existing simple malloc implementation which is implemented
+    prior U-Boot self relocation. malloc free function is improved where
+    we shall free up the memory if free is called after the malloc. This
+    will avoid huge memory consumption if we are doing complex operation
+    like FAT access prior U-Boot self relocation.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 7b50a3b1765719dac2b85da520f87072239d39fa
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Aug 2 17:45:28 2016 +0800
+
+    FogBugz #383897: Enhance the compatibility of early IO release
+    
+    To enhance the compatibility of early IO release by using
+    CDRATIO1 when sending the sync packet. The sync is needed after
+    programming periph RBF. This resolve incident where early IO
+    release failed when certain IO banks are used for FPGA config.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 03afac4d0efb4ade08d0c51bd983a64b479a93b8
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Jul 27 10:31:38 2016 +0800
+
+    FogBugz #381722: Update SDMMC smpsel value
+    
+    To update SDMMC sample select value based on the characterization
+    result. This is to ensure that the smpsel value is set to the
+    optimal value for the SD/MMC card which based on the frequency
+    used in the system.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 29c7ed95d6e5480351f75780255d8f8bca38d5de
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Tue Aug 2 11:16:20 2016 +0800
+
+    FogBugz #381162-3: Enable optional checksum checking on SDMMC FPGA image
+    
+    This patch allows checksum checking on FPGA image which loading from
+    SDMMC when macro CONFIG_CHECK_FPGA_DATA_CRC is defined. This macro is
+    undefined as default for booting performance.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit c6bf3409cd90ee8e5b2e154fb391141cabf2479b
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Jul 27 09:50:04 2016 +0800
+
+    FogBugz #385177: Fix memory low address setup issue at denali_setup_dma
+    
+    To fix memory low address setup issue where the address field will
+    overwrite other adjacent field such as bank select. This bug cause
+    data abort when NAND controller's DMA engine is transferring data
+    to certain address region. Having a mask in place to fix this.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit a4275e02641843b7bf89df6bd6f270fcc120f785
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Wed Jun 29 14:36:56 2016 +0800
+
+    FogBugz #381162-2: Enhance for consistent checksum checking design flow
+    
+    This patch enhances some functions to enable FPGA image loading
+    from SDMMC, QSPI and NAND to share the same checksum checking design
+    flow in later patch.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 1c2528cacbd42f82cfe4d24109e9d3491761955f
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Mon Jul 4 11:34:43 2016 +0800
+
+    FogBugz #381162-1: Set the environment rbfcoreimage with mkimage extension
+    
+    This patch would set the core image filename with mkimage extension
+    and assigned to rbfcoreimage environment variable when macro
+    CONFIG_FPGA_DATA_CRC is defined.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7
+
+commit f6d8e6cc10a454e3ff0242d06cb1ccf4bd3af8fc
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Jul 1 12:39:33 2016 -0500
+
+    FogBugz #381598: Add large OOB patch to mtd-utils to support new NAND chips.
+    
+    This patch adds a bbappend file to the meta-altera layer so that
+    the mtd-utils will support large OOB sizes on the newer NAND chips.
+    The patch was obtained from online mailing lists, and is not
+    part of the upstream mtd-utils.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+    ---
+    V2: Add link to origin of patch in recipe bbappend file
+
+-----------------------------------------------------------------------
+

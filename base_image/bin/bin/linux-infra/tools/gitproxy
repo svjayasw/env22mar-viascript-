@@ -1,0 +1,10 @@
+#!/bin/bash
+declare -r PROXY=proxy-us.intel.com
+
+if [[ $1 =~ intel.com ]] ; then
+    exec socat STDIO TCP:$1:$2
+else
+    exec socat STDIO SOCKS4A:$PROXY:$1:$2,socksport=1080
+fi
+
+exit $?

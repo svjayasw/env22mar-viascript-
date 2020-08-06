@@ -1,0 +1,40 @@
+repos located at : /home/atull/repos/internal
+tag              : ACDS15.1.1_REL_GSRD_RC6
+
+angstrom-socfpga
+      e178d8ea82eec643c2c44c6811977858e5ac79c7 FogBugz #327063: Update commit ID to include fix for syschk refresh rate 
+      ACDS15.1.1_REL_GSRD_RC6 == ACDS15.1.1_REL_GSRD_RC5
+        origin/angstrom-v2014.12-socfpga_gsrd15.1
+        portal/angstrom-v2014.12-socfpga_gsrd15.1
+      
+linux-refdesigns
+      4065da1b6d7cd0c3cc220b9f76dae7b25d00e17c FogBugz #324265 Max10: Add ADC demo shell
+      ACDS15.1.1_REL_GSRD_RC6 == ACDS15.1.1_REL_GSRD_RC5
+        origin/socfpga-15.1
+        portal/socfpga-15.1
+      
+linux-socfpga
+      6b67245b33cc350ac8f1b27f4d44d27f8955b129 usb: dwc2: fix thinko in dwc2_hc_set_even_odd_frame()
+      ACDS15.1.1_REL_GSRD_RC6 != ACDS15.1.1_REL_GSRD_RC5 ***
+        github/socfpga-3.10-ltsi
+        origin/socfpga-3.10-ltsi
+        portal/socfpga-3.10-ltsi
+      
+meta-altera
+      2477f90c6c0aaedd9fd9d463318f30aa4a3a4df5 FogBugz #329135: Add iperf and pciutils to GSRD rootfs
+      ACDS15.1.1_REL_GSRD_RC6 == ACDS15.1.1_REL_GSRD_RC5
+        origin/angstrom-v2014.12-yocto1.7
+        portal/angstrom-v2014.12-yocto1.7
+      
+meta-altera-refdes
+      c48ec1a7ad05c56320e17faa9d600377741791fd FogBugz #327063: Update commit ID of meta-altera-refdes for syschk refres
+      ACDS15.1.1_REL_GSRD_RC6 == ACDS15.1.1_REL_GSRD_RC5
+        origin/gsrd-15.1
+        portal/gsrd-15.1
+      
+uboot-socfpga
+      4003f38429d308c48773897a1ccf166486b9dd7f FogBugz #297183: Enabling ECC overwrite when SDRAM ECC is enabled
+      ACDS15.1.1_REL_GSRD_RC6 == ACDS15.1.1_REL_GSRD_RC5
+        origin/socfpga_v2013.01.01
+        portal/socfpga_v2013.01.01
+      

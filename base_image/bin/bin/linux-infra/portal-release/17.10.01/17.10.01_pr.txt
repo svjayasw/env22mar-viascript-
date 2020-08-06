@@ -1,0 +1,417 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.11
+branch tag  : rel_socfpga-4.11_17.10.01_pr
+new commits : 9
+e691756 Dinh Nguyen reset: socfpga: fix for 64-bit compilation
+268b5ba Dinh Nguyen arm64: dts: stratix10: add reset property for various peripherals
+fe7e2e5 Dinh Nguyen arm64: stratix10: add the 'altr,modrst-off' property
+b6904e9 Dinh Nguyen arm64: stratix10: include the reset manager bindings
+ada00fc Dinh Nguyen reset: socfpga: build the reset-socfpga for Stratix10 SOC
+68bbaf0 Thor Thayer FogBugz #495013-2: defconfig: s10_devkit: Enable Cadence QSPI
+5d750a3 Thor Thayer FogBugz #495013-1: dts: stratix10: Add QSPI support for Stratix10
+572a83c Thor Thayer mtd: spi-nor: Allow Cadence QSPI support for ARM64
+62d103b Alan Tull FogBugz #500926: defconfig: s10_devkit: enable gpio sysfs
+
+
+++wiki:
+*Branch name*: socfpga-4.11, *Tag name:* rel_socfpga-4.11_17.10.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | reset: socfpga: fix for 64-bit compilation | [[ https://github.com/altera-opensource/linux-socfpga/commit/e691756e4d16ff6f55b7242d533e09d5477c2ded ][ e691756e4d16ff6f55b7242d533e09d5477c2ded ]] |
+| community | arm64: dts: stratix10: add reset property for various peripherals | [[ https://github.com/altera-opensource/linux-socfpga/commit/268b5ba478b20dc1e572e5a2a8b6293d3645a3a5 ][ 268b5ba478b20dc1e572e5a2a8b6293d3645a3a5 ]] |
+| community | arm64: stratix10: add the 'altr,modrst-off' property | [[ https://github.com/altera-opensource/linux-socfpga/commit/fe7e2e528fb1ec91db97f7f70cc923b3125654a1 ][ fe7e2e528fb1ec91db97f7f70cc923b3125654a1 ]] |
+| community | arm64: stratix10: include the reset manager bindings | [[ https://github.com/altera-opensource/linux-socfpga/commit/b6904e93fec4b713717bd4c83586727ea80c2471 ][ b6904e93fec4b713717bd4c83586727ea80c2471 ]] |
+| community | reset: socfpga: build the reset-socfpga for Stratix10 SOC | [[ https://github.com/altera-opensource/linux-socfpga/commit/ada00fc592c34d5d4e48d0df8091062270fade20 ][ ada00fc592c34d5d4e48d0df8091062270fade20 ]] |
+| 495013-2 | defconfig: s10_devkit: Enable Cadence QSPI | [[ https://github.com/altera-opensource/linux-socfpga/commit/68bbaf0346b95763b6ced538bfc966bdcaa9afcd ][ 68bbaf0346b95763b6ced538bfc966bdcaa9afcd ]] |
+| 495013-1 | dts: stratix10: Add QSPI support for Stratix10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/5d750a30494627c5dc1f2f6da4e08ec8dbc0994a ][ 5d750a30494627c5dc1f2f6da4e08ec8dbc0994a ]] |
+| community | mtd: spi-nor: Allow Cadence QSPI support for ARM64 | [[ https://github.com/altera-opensource/linux-socfpga/commit/572a83c2b38f11f161cefbca6d783c07a6bf3e36 ][ 572a83c2b38f11f161cefbca6d783c07a6bf3e36 ]] |
+| 500926 | defconfig: s10_devkit: enable gpio sysfs | [[ https://github.com/altera-opensource/linux-socfpga/commit/62d103b07efa54c2eb4c5e8dfdeb0ee3f0531372 ][ 62d103b07efa54c2eb4c5e8dfdeb0ee3f0531372 ]] |
+--wiki:
+
+
+branch      : socfpga-4.12
+branch tag  : rel_socfpga-4.12_17.10.01_pr
+new commits : 5
+08ff27e Thor Thayer FogBugz #495013-2: defconfig: s10_devkit: Enable Cadence QSPI
+43925e2 Alan Tull FogBugz #500926: defconfig: s10_devkit: enable gpio sysfs
+8a42a9a Thor Thayer mtd: spi-nor: Allow Cadence QSPI support for ARM64
+96805c7 Thor Thayer FogBugz #495013-1: dts: stratix10: Add QSPI support for Stratix10
+2856464 Dinh Nguyen reset: socfpga: fix for 64-bit compilation
+
+
+++wiki:
+*Branch name*: socfpga-4.12, *Tag name:* rel_socfpga-4.12_17.10.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 495013-2 | defconfig: s10_devkit: Enable Cadence QSPI | [[ https://github.com/altera-opensource/linux-socfpga/commit/08ff27e9593bcd10aaa63fcb9cc3a93257742564 ][ 08ff27e9593bcd10aaa63fcb9cc3a93257742564 ]] |
+| 500926 | defconfig: s10_devkit: enable gpio sysfs | [[ https://github.com/altera-opensource/linux-socfpga/commit/43925e2e8f2675e44e8953bd140108c17ff982c1 ][ 43925e2e8f2675e44e8953bd140108c17ff982c1 ]] |
+| community | mtd: spi-nor: Allow Cadence QSPI support for ARM64 | [[ https://github.com/altera-opensource/linux-socfpga/commit/8a42a9a0e484ecaac3c2af0710c705c02149af1e ][ 8a42a9a0e484ecaac3c2af0710c705c02149af1e ]] |
+| 495013-1 | dts: stratix10: Add QSPI support for Stratix10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/96805c736c9a991235be50aa0825285aa0ce500b ][ 96805c736c9a991235be50aa0825285aa0ce500b ]] |
+| community | reset: socfpga: fix for 64-bit compilation | [[ https://github.com/altera-opensource/linux-socfpga/commit/2856464d6dce358620423466681483d0d28d5e30 ][ 2856464d6dce358620423466681483d0d28d5e30 ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.10.01_pr
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.10.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.11_17.10.01_pr
+commit: e691756 Dinh Nguyen reset: socfpga: fix for 64-bit compilation
+
+tag:    rel_socfpga-4.12_17.10.01_pr
+commit: 08ff27e Thor Thayer FogBugz #495013-2: defconfig: s10_devkit: Enable Cadence QSPI
+
+tag:    rel_socfpga-4.1.33-ltsi_17.10.01_pr
+commit: 0175aa1 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.10.01_pr
+commit: 5b7a4c0 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.10.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.10.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_17.10.01_pr
+new commits : 4
+3ba08e7 Thor Thayer arm: socfpga: stratix10: Move QSPI U-Boot Image Location
+9528eb0 Dinh Nguyen arm: stratix10: enable non-secure access to GPIOs
+07ef6d1 Dinh Nguyen arm: stratix10: enable non-secure access to USB
+4e5901f Dinh Nguyen arm: stratix10: enable non-secure access to reset manager
+
+
+++wiki:
+*Branch name*: socfpga_v2017.09, *Tag name:* rel_socfpga_v2017.09_17.10.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | arm: socfpga: stratix10: Move QSPI U-Boot Image Location | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/3ba08e74c119aaa3530c3924a02f32154f54dd22 ][ 3ba08e74c119aaa3530c3924a02f32154f54dd22 ]] |
+| community | arm: stratix10: enable non-secure access to GPIOs | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/9528eb0a73aa2a3ecfe8d2d7850f2bf5c7298010 ][ 9528eb0a73aa2a3ecfe8d2d7850f2bf5c7298010 ]] |
+| community | arm: stratix10: enable non-secure access to USB | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/07ef6d15e2ea27558869cc93eacf8bbefe0d9454 ][ 07ef6d15e2ea27558869cc93eacf8bbefe0d9454 ]] |
+| community | arm: stratix10: enable non-secure access to reset manager | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/4e5901fdace8a18e54952ac8d32067416fbf5faf ][ 4e5901fdace8a18e54952ac8d32067416fbf5faf ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.10.01_pr
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.10.01_pr
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_17.10.01_pr
+commit: 3ba08e7 Thor Thayer arm: socfpga: stratix10: Move QSPI U-Boot Image Location
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.10.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.10.01_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.10.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.10.01_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.10.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.10.01_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.11
+
+commit e691756e4d16ff6f55b7242d533e09d5477c2ded
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Fri Sep 22 13:42:47 2017 -0500
+
+    reset: socfpga: fix for 64-bit compilation
+    
+    The SoCFPGA Stratix10 reset controller has 32-bit registers. Thus, we
+    cannot use BITS_PER_LONG in computing the register and bit offset. Instead,
+    we should be using the width of the hardware register for the calculation.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+
+commit 268b5ba478b20dc1e572e5a2a8b6293d3645a3a5
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Sep 20 16:36:02 2017 -0500
+
+    arm64: dts: stratix10: add reset property for various peripherals
+    
+    Add reset property for emac, gpio, i2c, sdmmc, timers, and watchdog.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    
+    Conflicts:
+    
+    	arch/arm64/boot/dts/altera/socfpga_stratix10.dtsi
+
+commit fe7e2e528fb1ec91db97f7f70cc923b3125654a1
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Sep 20 12:31:55 2017 -0500
+
+    arm64: stratix10: add the 'altr,modrst-off' property
+    
+    Update the Stratix10 reset manager with the 'altr,modrst-offset' property.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit b6904e93fec4b713717bd4c83586727ea80c2471
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Sep 20 12:11:27 2017 -0500
+
+    arm64: stratix10: include the reset manager bindings
+    
+    Add the reset manager includes for Stratix10. Need to use the '#include'
+    instead of '/include/' to avoid a DTC syntax error.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit ada00fc592c34d5d4e48d0df8091062270fade20
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Sep 20 10:25:41 2017 -0500
+
+    reset: socfpga: build the reset-socfpga for Stratix10 SOC
+    
+    Enable the reset driver to get built for the Stratix10 platform.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+
+commit 68bbaf0346b95763b6ced538bfc966bdcaa9afcd
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Tue Oct 10 18:07:56 2017 -0500
+
+    FogBugz #495013-2: defconfig: s10_devkit: Enable Cadence QSPI
+    
+    Enable QSPI support by default on S10 DevKit.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Change where CONFIG_SPI_CADENCE_QUADSPI is to match savedefconfig
+
+commit 5d750a30494627c5dc1f2f6da4e08ec8dbc0994a
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Wed Sep 27 13:25:59 2017 -0500
+
+    FogBugz #495013-1: dts: stratix10: Add QSPI support for Stratix10
+    
+    Add support for the QSPI interface. This includes enabling QSPI
+    in the device tree.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Make qspi_clk a fixed clock - updated by U-Boot
+        Remove status = "okay" - updated by U-Boot
+        Change the QSPI partition split to 50/50.
+
+commit 572a83c2b38f11f161cefbca6d783c07a6bf3e36
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Wed Sep 27 13:30:07 2017 -0500
+
+    mtd: spi-nor: Allow Cadence QSPI support for ARM64
+    
+    [backport 'commit 82a72a149c8d ("mtd: spi-nor: Allow Cadence
+     QSPI support for ARM64")']
+    
+    Backported from local branch instead of linux-next but this
+    is a trivial change and I have 1 Reviewed-by.
+    
+    Allow ARM64 support for the Cadence QSPI interface by
+    adding ARM64 as a dependency.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Reviewed-by: Marek Vasut <marek.vasut@gmail.com>
+
+commit 62d103b07efa54c2eb4c5e8dfdeb0ee3f0531372
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Oct 2 15:45:55 2017 -0500
+
+    FogBugz #500926: defconfig: s10_devkit: enable gpio sysfs
+    
+    Enable sysfs interface for the gpio subsystem.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.12
+
+commit 08ff27e9593bcd10aaa63fcb9cc3a93257742564
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Tue Oct 10 18:07:56 2017 -0500
+
+    FogBugz #495013-2: defconfig: s10_devkit: Enable Cadence QSPI
+    
+    Enable QSPI support by default on S10 DevKit.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Change where CONFIG_SPI_CADENCE_QUADSPI is to match savedefconfig
+
+commit 43925e2e8f2675e44e8953bd140108c17ff982c1
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Oct 2 15:45:55 2017 -0500
+
+    FogBugz #500926: defconfig: s10_devkit: enable gpio sysfs
+    
+    Enable sysfs interface for the gpio subsystem.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 8a42a9a0e484ecaac3c2af0710c705c02149af1e
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Wed Sep 27 13:30:07 2017 -0500
+
+    mtd: spi-nor: Allow Cadence QSPI support for ARM64
+    
+    [backport 'commit 82a72a149c8d ("mtd: spi-nor: Allow Cadence
+     QSPI support for ARM64")']
+    
+    Backported from local branch instead of linux-next but this
+    is a trivial change and I have 1 Reviewed-by.
+    
+    Allow ARM64 support for the Cadence QSPI interface by
+    adding ARM64 as a dependency.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Reviewed-by: Marek Vasut <marek.vasut@gmail.com>
+
+commit 96805c736c9a991235be50aa0825285aa0ce500b
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Wed Sep 27 13:25:59 2017 -0500
+
+    FogBugz #495013-1: dts: stratix10: Add QSPI support for Stratix10
+    
+    Add support for the QSPI interface. This includes enabling QSPI
+    in the device tree.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Make qspi_clk a fixed clock - updated by U-Boot
+        Remove status = "okay" - updated by U-Boot
+        Change the QSPI partition split to 50/50.
+
+commit 2856464d6dce358620423466681483d0d28d5e30
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Fri Sep 22 13:42:47 2017 -0500
+
+    reset: socfpga: fix for 64-bit compilation
+    
+    The SoCFPGA Stratix10 reset controller has 32-bit registers. Thus, we
+    cannot use BITS_PER_LONG in computing the register and bit offset. Instead,
+    we should be using the width of the hardware register for the calculation.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 3ba08e74c119aaa3530c3924a02f32154f54dd22
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Thu Oct 5 14:52:19 2017 -0500
+
+    arm: socfpga: stratix10: Move QSPI U-Boot Image Location
+    
+    Move expected image of U-Boot QSPI image to the end of
+    the first partition (0 to 0x400_0000) to allow room for
+    FPGA programming image.
+    1. The complete partition is from 0 to 0x400_0000 for the
+       1Gb QSPI size. This may change for 2Gb QSPI.
+    2. The FPGA-first image will be from 0 to 0x3C0_0000
+    3. The U-Boot image will be from 0x3C0_0000 to 0x400_0000
+    4. This is an interim solution for U-Boot in the raw partition.
+       In the future, it is planned to move U-Boot inside the 2nd
+       partition where the filesystem/etc resides.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 9528eb0a73aa2a3ecfe8d2d7850f2bf5c7298010
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Mon Oct 2 14:36:11 2017 -0700
+
+    arm: stratix10: enable non-secure access to GPIOs
+    
+    Enables non-secure access to gpio0 and gpio1.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 07ef6d15e2ea27558869cc93eacf8bbefe0d9454
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Fri Sep 22 15:23:34 2017 -0700
+
+    arm: stratix10: enable non-secure access to USB
+    
+    Enables non-secure access to USB0 and USB1.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 4e5901fdace8a18e54952ac8d32067416fbf5faf
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Sep 19 13:28:25 2017 -0700
+
+    arm: stratix10: enable non-secure access to reset manager
+    
+    Non-secure OS needs access to the reset manager register in order
+    to bring peripherals out of reset.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+-----------------------------------------------------------------------
+

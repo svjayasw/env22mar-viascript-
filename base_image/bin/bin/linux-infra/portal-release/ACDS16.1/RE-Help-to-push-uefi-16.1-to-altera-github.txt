@@ -1,0 +1,79 @@
+From:	Dao, Viet Nga
+Sent:	Tuesday, November 29, 2016 10:20 PM
+To:	Tull, Alan
+Cc:	See, Chin Liang; Tan, Sau Kae; Vandervennet, Yves
+Subject:	RE: Help to push uefi 16.1 to altera github
+
+Hi Alan, 
+Thank you so much for your help.
+Regards,
+Viet Nga
+ 
+From: Tull, Alan 
+Sent: Wednesday, November 30, 2016 10:59 AM 
+To: Dao, Viet Nga 
+Cc: See, Chin Liang; Tan, Sau Kae; Vandervennet, Yves 
+Subject: RE: Help to push uefi 16.1 to altera github
+Hi Viet Nga,
+ 
+I pushed the tag today!  Thanks for your understanding and patience!
+ 
+Alan
+ 
+From: Dao, Viet Nga  
+Sent: Wednesday, November 23, 2016 7:03 PM 
+To: Tull, Alan <alan.tull@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Sau Kae <sau.kae.tan@intel.com>; Vandervennet, 
+Yves <yves.vandervennet@intel.com> 
+Subject: RE: Help to push uefi 16.1 to altera github
+ 
+Totally understand. Thanks a lot Alan
+ 
+From: Tull, Alan 
+Sent: Wednesday, November 23, 2016 10:09 PM 
+To: Dao, Viet Nga 
+Cc: See, Chin Liang; Tan, Sau Kae; Vandervennet, Yves 
+Subject: RE: Help to push uefi 16.1 to altera github
+Hi Viet Nga,
+ 
+At-git is down currently.  When at-git is back up again, I will be able to push your tags.  Thanks for your 
+patience.  This has been hard for all of us.
+ 
+Alan
+ 
+From: Dao, Viet Nga  
+Sent: Tuesday, November 22, 2016 8:57 PM 
+To: Tull, Alan <alan.tull@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Sau Kae <sau.kae.tan@intel.com>; Vandervennet, 
+Yves <yves.vandervennet@intel.com> 
+Subject: RE: Help to push uefi 16.1 to altera github
+ 
+Hi Alan, 
+Wonder if you have access to at-git yet?
+Thanks, 
+Viet Nga
+ 
+From: Tull, Alan 
+Sent: Friday, November 11, 2016 1:01 AM 
+To: Dao, Viet Nga 
+Cc: See, Chin Liang; Tan, Sau Kae; Vandervennet, Yves 
+Subject: RE: Help to push uefi 16.1 to altera github
+Hi Viet Nga,
+ 
+Unfortunately due to the move to the Intel building, I currently do not have access to at-git.  I am talking 
+with IT and hope to have access soon.
+ 
+Alan
+ 
+From: Dao, Viet Nga  
+Sent: Monday, November 7, 2016 3:24 AM 
+To: Tull, Alan <alan.tull@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Sau Kae <sau.kae.tan@intel.com> 
+Subject: Help to push uefi 16.1 to altera github
+ 
+Hi Alan, 
+Could you please help me to push to UEFI 16.1 code ( tag = rel_socfpga_arria10_soceds_16.1) to Altera 
+github?
+ 
+Many thanks,
+Viet Nga

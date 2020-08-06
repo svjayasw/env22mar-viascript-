@@ -1,0 +1,150 @@
+From:	Ong, Hean Loong
+Sent:	Thursday, April 25, 2019 8:12 PM
+To:	Li, Sen; Tull, Alan; See, Chin Liang; Tan, Ying Cheh
+Subject:	RE: Pushing meta-altera-refdes into bi-weekly release
+
+Follow Up Flag:	Follow up
+Flag Status:	Flagged
+
+Hi Sen,
+
+Yes it is agreed. Like I have mentioned we have our own weekly tests to ensure it. All is fine 
+with his plan
+
+Best Regards,
+
+Hean Loong
+Internal Global Dial: 2 701 6773
+Direct Line: +60 4 636 6773
+
+
+From: Li, Sen  
+Sent: Friday, April 26, 2019 9:10 AM 
+To: Tull, Alan <alan.tull@intel.com>; Ong, Hean Loong <hean.loong.ong@intel.com>; See, Chin Liang 
+<chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com> 
+Subject: RE: Pushing meta-altera-refdes into bi-weekly release
+
+Just to ensure we are all on the same page.
+
+Alan is OK to do the bi-weekly release. However, he does not responsible for the quality of your repos. I 
+wanted to ensure there is a light weight process on this… will all of you agree on the point Alan 
+mentioned below?
+
+  Thanks
+
+Sen
+
+From: Tull, Alan  
+Sent: Thursday, April 25, 2019 8:09 AM 
+To: Ong, Hean Loong <hean.loong.ong@intel.com>; Li, Sen <sen.li@intel.com>; See, Chin Liang 
+<chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com> 
+Subject: RE: Pushing meta-altera-refdes into bi-weekly release
+
+Hi Hean Loong,
+
+Please see below.
+
+Alan
+
+From: Ong, Hean Loong  
+Sent: Wednesday, April 24, 2019 7:10 PM 
+To: Tull, Alan <alan.tull@intel.com>; Li, Sen <sen.li@intel.com>; See, Chin Liang 
+<chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com> 
+Subject: RE: Pushing meta-altera-refdes into bi-weekly release
+
+Hi Alan
+
+We do have weekly regressions running along with the ACDS tests. Therefore the entire LTSI 
+kernel would be tested bi weekly in case of any changes
+
+I have no issues with your plans as it seems to be part of what is working for us now. As long as 
+the commits are updated monthly I do not see an issue.
+
+[ATULL] I’m a little confused by this statement.  The updates are biweekly, so I don’t 
+understand what you mean by ‘updated monthly’
+
+Best Regards,
+
+Hean Loong
+Internal Global Dial: 2 701 6773
+Direct Line: +60 4 636 6773
+
+
+From: Tull, Alan  
+Sent: Thursday, April 25, 2019 6:15 AM 
+To: Ong, Hean Loong <hean.loong.ong@intel.com>; Li, Sen <sen.li@intel.com>; See, Chin Liang 
+<chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com> 
+Subject: RE: Pushing meta-altera-refdes into bi-weekly release
+
+Hi Hean Loong and Ying Cheh,
+
+This means we’re adding 4 repos recently and I think it’s good if we clarify the process and the 
+ownership of testing.   Part of the goal here is: since the release happens every other week, we need to 
+keep the process light so it can keep flowing without normally requiring extra time.  Here’s the process, I 
+repeated some of the stuff that is probably already known to you just for clarity.
+
+Each biweekly release day:
+*	I will tag the head of the specified repo branches as rc1 in internal git (at-git) and send out a 
+portal report email for the rc1.
+*	Two weeks later, I retag the rc1 tags as ‘pr’ and push them out to github, and send out a portal 
+report email for the pr.
+*	So actually each biweekly release day I’ll do a pr from the previous rc1 (i.e. 19.04.02_pr ) and 
+then I’ll tag the new rc1 that becomes a pr in two weeks (i.e. 19.05.01_rc1)
+*	That leaves less than 2 weeks for testing rc1 before pr.  Testing rc1 for the repos that we are 
+adding will continue be owned by PNG.  If there are any issues, the testers will need to reply to 
+the portal report email and let me know before the release day.  Then we’ll have to decide what 
+is the best thing to do in this case.  Possible options would be:
+o	If a fix has been pushed, I can retag as rc2 and proceed with the pr from that.  
+o	If no fix exists yet, I can retag rc2 from the previous tag and then proceed with the pr.
+*	Breakages that require me to retag as rc2 before doing the pr should be very rare so that the 
+process doesn’t start to take extra time normally.
+*	Also normally, I won’t be delaying the release to wait for a fix.  This shouldn’t be a problem since 
+there’s always another release coming in 2 weeks that can have the fix.
+
+Do you see any issues with  this process and plan for ownership?
+
+Also, is there anybody else that should be added for the portal report email now?
+
+Thanks,
+Alan
+
+From: Tull, Alan  
+Sent: Monday, April 22, 2019 10:30 AM 
+To: Ong, Hean Loong <hean.loong.ong@intel.com>; Li, Sen <sen.li@intel.com>; See, Chin Liang 
+<chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com> 
+Subject: RE: Pushing meta-altera-refdes into bi-weekly release
+
+Hi Hean Loong,
+
+That will be fine with me.  Next update is May 2.  We can start then if that is ok with you all.
+
+That means that all these repos that are being added will be tagged with the biweekly style tags such as
+rel_socvp_socfpga_udk2015_19.04.02_pr (this was a uefi-socfpga tag from last week’s update.  I just 
+want to make it clear that whatever we are pushing out biweekly gets the ‘rel_’ tags also.
+
+Alan
+
+
+From: Ong, Hean Loong  
+Sent: Thursday, April 18, 2019 7:16 PM 
+To: Li, Sen <sen.li@intel.com>; Tull, Alan <alan.tull@intel.com>; See, Chin Liang 
+<chin.liang.see@intel.com> 
+Subject: Pushing meta-altera-refdes into bi-weekly release
+
+Hi Alan,
+
+Would it be possible to push the meta-altera-refdes and linux-refdesigns into github biweekly 
+(following the linux-soicfpga cadence) so that in the future we have a constant update on the 
+github for reference design codes ?
+
+As well as if there are problem we could just point to next releases
+
+Let me know your thoughts
+
+Best Regards,
+
+Hean Loong
+Internal Global Dial: 2 701 6773
+Direct Line: +60 4 636 6773
+
+

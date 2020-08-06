@@ -1,0 +1,94 @@
+#!/bin/bash -e
+
+REPO_URL="gitolite@at-git:linux-infra"
+SELF="$(basename $0)"
+SELF_FULL="$(readlink -f $0)"
+SELF_DIR_FULL="$(dirname $SELF_FULL)"
+INFRA_DIR="$(readlink -f ${SELF_DIR_FULL}/..)"
+
+cd $INFRA_DIR
+
+usage()
+{
+    echo "$SELF [--hard]"
+    echo "  Updates the linux-infra repository at $INFRA_DIR"
+    echo
+    echo " Usage:"
+    echo "   $SELF        : fetch and rebase"
+    echo "   $SELF --hard : fetch and 'git reset --hard'"
+    echo "                       : --hard will dump your local changes to infra."
+    echo
+}
+
+RESET_HARD=0
+while [ -n "$1" ]; do
+    case $1 in
+	-h|--help ) usage ; exit ;;
+	--hard ) RESET_HARD=1 ;;
+    esac
+    shift
+done
+
+#==========================================================================
+
+branch=$(git branch|grep '*'|sed 's,* ,,')
+if [ "$branch" = '(no branch)' ]; then
+    echo "Error, not on a branch: * (no branch)"
+    echo "Either checkout the master branch or delete and reclone this repo"
+    echo " git clone $REPO_URL"
+    exit 1
+fi
+if [ "$branch" != master ]; then
+    echo "You are on branch $branch.  You are not on the master branch!"
+    echo "Either checkout the master branch or delete and reclone this repo"
+    echo " git clone $REPO_URL"
+    exit 1
+fi
+
+remote_branch=$(git config branch.$branch.merge|sed 's,refs/heads/,,')
+remote=$(git config branch.$branch.remote)
+remote_url=$(git config remote.origin.url)
+if [ -z "$remote" ] || [ -z "$remote_branch" ]; then
+    echo "Error, this branch not set up with remote tracking branch."
+    echo "That is just plain weird."
+    echo "I recommend you delete this repo and clone again."
+    echo " git clone $REPO_URL"
+    exit 1
+fi
+if [ "$remote" != origin ] || [ "$remote_branch" != master ]; then
+    echo "Error, this branch is not tracking origin/master"
+    echo "That is just plain weird."
+    echo "I recommend you delete this repo and clone again."
+    echo " git clone $REPO_URL"
+    exit 1
+fi
+if [ "$remote_url" != "$REPO_URL" ]; then
+    echo "Error, this repo not cloned from the right server"
+    echo " I recommend you delete this repo and clone again."
+    echo " git clone $REPO_URL"
+    exit 1
+fi
+
+#==========================================================================
+
+if [ "$RESET_HARD" != 1 ]; then
+    if git status|grep -sq 'modified:'; then
+	echo "There are changed files.  Commit them or use 'do git reset --hard' to clean up"
+	exit 1
+    fi
+    echo "git fetch origin && git rebase origin/master"
+    git fetch origin || exit 1
+    echo
+    echo "status before rebase:"
+    git status
+    echo
+    git rebase origin/master
+else
+    echo "git fetch origin && git reset --hard origin/master"
+    git fetch origin || exit 1
+    echo
+    echo "status before reset:"
+    git status
+    echo
+    git reset --hard origin/master
+fi

@@ -1,0 +1,35 @@
+From 22351ceb823155639b8515a5d9efe7a7aacdabfc Mon Sep 17 00:00:00 2001
+From: Graham Moore <grmoore@opensource.altera.com>
+Date: Fri, 16 Jan 2015 12:48:50 -0600
+Subject: [PATCH] Config settings for DMA test modules
+
+Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+---
+ arch/arm/configs/socfpga_defconfig |    7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+diff --git a/arch/arm/configs/socfpga_defconfig b/arch/arm/configs/socfpga_defconfig
+index a55bb53..e8120c2 100644
+--- a/arch/arm/configs/socfpga_defconfig
++++ b/arch/arm/configs/socfpga_defconfig
+@@ -99,7 +99,6 @@ CONFIG_MMC_DW_IDMAC=y
+ CONFIG_SPI=y
+ CONFIG_SPI_CADENCE_QSPI=y
+ CONFIG_SPI_DESIGNWARE=y
+-CONFIG_SPI_DW_PL330_DMA=y
+ CONFIG_SPI_DW_MMIO=y
+ CONFIG_SPI_SPIDEV=y
+ CONFIG_GPIOLIB=y
+@@ -182,3 +181,9 @@ CONFIG_PPS=y
+ CONFIG_NETWORK_PHY_TIMESTAMPING=y
+ CONFIG_PTP_1588_CLOCK=y
+ CONFIG_MARVELL_PHY=y
++CONFIG_SERIAL_8250_DMA=y
++CONFIG_DMADEVICES=y
++CONFIG_PL330_DMA=m
++CONFIG_DMA_ENGINE=y
++CONFIG_DMA_OF=y
++CONFIG_DMATEST=m
+-- 
+1.7.10.4
+

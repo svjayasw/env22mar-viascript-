@@ -1,0 +1,204 @@
+From:	Tan, Ying Cheh
+Sent:	Monday, April 15, 2019 9:30 PM
+To:	Ong, Hean Loong; Khor, Boon Pin; Liew, Lawrence
+Cc:	Tull, Alan; See, Chin Liang
+Subject:	RE: PR tagging for Linux GSRD release ACDS 19.1
+
+Follow Up Flag:	Follow up
+Flag Status:	Flagged
+
+Hi Alan, 
+
+Please help to push the tag for the GSRD19.1 to GitHub, thanks.
+
+Regards
+Ying Cheh Tan
+Embedded Release Manager
+Intel Programmable Solutions Group
+
+From: Ong, Hean Loong  
+Sent: Tuesday, April 16, 2019 10:25 AM 
+To: Khor, Boon Pin <boon.pin.khor@intel.com>; Liew, Lawrence <lawrence.liew@intel.com>; Tan, Ying 
+Cheh <ying.cheh.tan@intel.com> 
+Cc: Tull, Alan <alan.tull@intel.com>; See, Chin Liang <chin.liang.see@intel.com> 
+Subject: RE: PR tagging for Linux GSRD release ACDS 19.1
+
+Hi Ying Cheh,
+
+Based on Boon Pin's comments can we push the tag out?
+
+BR
+
+Hean Loong
+Internal Global Dial: 2 701 6773
+Direct Line: +60 4 636 6773
+
+
+From: Khor, Boon Pin  
+Sent: Thursday, April 11, 2019 12:34 PM 
+To: Liew, Lawrence <lawrence.liew@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>; Ong, Hean 
+Loong <hean.loong.ong@intel.com> 
+Cc: Tull, Alan <alan.tull@intel.com>; See, Chin Liang <chin.liang.see@intel.com> 
+Subject: RE: PR tagging for Linux GSRD release ACDS 19.1
+
+10 failure ( red color ) is infra issue . 
+6 failure is kernel panic in nand ( HSD )
+8 failure due to test content 
+
+From: Liew, Lawrence  
+Sent: Thursday, April 11, 2019 12:43 AM 
+To: Tan, Ying Cheh <ying.cheh.tan@intel.com>; Ong, Hean Loong <hean.loong.ong@intel.com>; Khor, 
+Boon Pin <boon.pin.khor@intel.com> 
+Cc: Tull, Alan <alan.tull@intel.com>; See, Chin Liang <chin.liang.see@intel.com> 
+Subject: RE: PR tagging for Linux GSRD release ACDS 19.1
+
+Hi Boon Pin,
+Please let us know if the failures are all infra related?  Let us know also if there are any suspected 
+genuine failure.
+Thank you.
+
+
+Best Regards,
+Lawrence Liew
+
+From: Tan, Ying Cheh  
+Sent: Wednesday, April 10, 2019 9:02 AM 
+To: Ong, Hean Loong <hean.loong.ong@intel.com>; Khor, Boon Pin <boon.pin.khor@intel.com> 
+Cc: Tull, Alan <alan.tull@intel.com>; See, Chin Liang <chin.liang.see@intel.com>; Liew, Lawrence 
+<lawrence.liew@intel.com> 
+Subject: RE: PR tagging for Linux GSRD release ACDS 19.1
+
+Hi Boon Pin, 
+
+Please could you comment on the failures, and the recommendation from the SV standpoint, thanks.
+
+Regards
+Ying Cheh Tan
+Embedded Release Manager
+Intel Programmable Solutions Group
+
+From: Ong, Hean Loong  
+Sent: Monday, April 8, 2019 9:28 PM 
+To: Khor, Boon Pin <boon.pin.khor@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com> 
+Cc: Tull, Alan <alan.tull@intel.com>; See, Chin Liang <chin.liang.see@intel.com>; Liew, Lawrence 
+<lawrence.liew@intel.com> 
+Subject: RE: PR tagging for Linux GSRD release ACDS 19.1
+
+Hi Ying Cheh,
+
+Can we continue with the push of the tags or you have concerns over the results ?
+
+BR
+
+Hean Loong
+Internal Global Dial: 2 701 6773
+Direct Line: +60 4 636 6773
+
+
+From: Khor, Boon Pin  
+Sent: Monday, April 8, 2019 8:35 AM 
+To: Tan, Ying Cheh <ying.cheh.tan@intel.com> 
+Cc: Tull, Alan <alan.tull@intel.com>; See, Chin Liang <chin.liang.see@intel.com>; Ong, Hean Loong 
+<hean.loong.ong@intel.com>; Liew, Lawrence <lawrence.liew@intel.com> 
+Subject: RE: PR tagging for Linux GSRD release ACDS 19.1
+
+S10 result 
+
+ACDS_TAG=19.1/240
+SOCEDS_TAG=19.1/240
+QEDITION_TAG=pro
+TAG_LINUX_REFDES=ACDS19.1_REL_GSRD_PR
+TAG_META_ALTERA_REFDES=ACDS19.1_REL_GSRD_PR
+TAG_META_ALTERA=ACDS19.1_REL_GSRD_PR
+TAG_LINUX=ACDS19.1_REL_GSRD_PR
+TAG_THIRD_STAGE_BOOTLOADER=ACDS19.1_REL_S10_GSRD_PR
+
+ 
+
+S10 failure is not a failure , as I have done the manual test on RC6
+
+ 
+
+A10 result 
+
+ACDS_TAG=19.1/240
+SOCEDS_TAG=19.1/240
+QEDITION_TAG=pro
+TAG_LINUX_REFDES=ACDS19.1_REL_GSRD_PR
+TAG_META_ALTERA_REFDES=ACDS19.1_REL_GSRD_PR
+TAG_META_ALTERA=ACDS19.1_REL_GSRD_PR
+TAG_LINUX=ACDS19.1_REL_GSRD_PR
+TAG_THIRD_STAGE_BOOTLOADER=ACDS19.1_REL_S10_GSRD_PR
+
+ 
+
+
+
+
+
+From: Tan, Ying Cheh  
+Sent: Wednesday, April 3, 2019 6:23 PM 
+To: Ong, Hean Loong <hean.loong.ong@intel.com>; Khor, Boon Pin <boon.pin.khor@intel.com>; Liew, 
+Lawrence <lawrence.liew@intel.com> 
+Cc: Tull, Alan <alan.tull@intel.com>; See, Chin Liang <chin.liang.see@intel.com> 
+Subject: RE: PR tagging for Linux GSRD release ACDS 19.1
+
+Hi Hean Loong, 
+Thanks for the update. 
+
+Hi Boon Pin, Lawrence,
+Please share us the SV test results and the failure analysis, and I will approve the tag to push to github, 
+thanks.
+
+Regards
+Ying Cheh Tan
+Embedded Release Manager
+Intel Programmable Solutions Group
+
+From: Ong, Hean Loong  
+Sent: Wednesday, April 3, 2019 10:32 AM 
+To: Tan, Ying Cheh <ying.cheh.tan@intel.com> 
+Cc: Tull, Alan <alan.tull@intel.com>; Khor, Boon Pin <boon.pin.khor@intel.com>; See, Chin Liang 
+<chin.liang.see@intel.com> 
+Subject: PR tagging for Linux GSRD release ACDS 19.1
+
+Hi All,
+
+Attached are the report for GSRD PR tag
+
+Ying Cheh please verify the tags with Boon Pin (ESV) and let us know if it is good enough to push 
+it out 
+
+
+Build report
+https://pg-arc.altera.com/arc/dashboard/reports/show_job/509300815
+
+Tag report
+http://pg-eswnode-l:8080/view/Reference%20Design/job/check_gsrd_tags/122/console
+
+
+Repository	Branch			Commit ID					Tags			Commit Message
+linux-socfpga	socfpga-4.14.73-ltsi	3286950e98c92d8594145d8b96a06cbc9700e1d6	ACDS19.1_REL_GSRD_PR	arm64: dts: add the sysmgr-syscon property from the gmac's
+
+uboot-socfpga	socfpga_v2013.01.01	0c9a3bdf3ca1326e3bc539676452f2d4f8895aeb	ACDS19.1_REL_GSRD_PR	FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+uboot-socfpga	socfpga_v2017.09	d593faea8cd00b6db8c1fa54c47c0716577539a0	ACDS19.1_REL_S10_GSRD_PR HSD #1408570475: Fix RSU status SMC call to return correct error code
+
+linux-redesigns	master			32a06cfa40f97c7b2bb84287b97784a94ae38f14	ACDS19.1_REL_GSRD_PR	Fogbugz #529811 update common.c with new request block
+
+meta-altera	angstrom-v2018.06-yocto2.5 20e297889f0413143deac8375ebbde9bb7e519d5	ACDS19.1_REL_GSRD_PR	ammend opkg pakage for Stratix10
+
+meta-altera-refdes master		1430630afc78c935c931fe11d6f528dae0c90a67	ACDS19.1_REL_GSRD_PR	Include open ssh ftp server into release image
+
+linux-socfpga	socfpga-4.9.78-ltsi	57047883442e58369cde6c8f8f710f7c91fcbfbe	ACDS19.1_REL_MAX10_GSRD_PR net: stmmac: build the dwmac-socfpga platform driver for Stratix10
+
+
+refdes-files: 1d6c5bb7ee446a7bea7aa06df50f29a2d640ce76 ACDS19.1_REL_GSRD_PR add 
+angstrom-v2018.06-yocto2.5 to altera.xml
+
+
+BR
+
+Hean Loong
+Internal Global Dial: 2 701 6773
+Direct Line: +60 4 636 6773

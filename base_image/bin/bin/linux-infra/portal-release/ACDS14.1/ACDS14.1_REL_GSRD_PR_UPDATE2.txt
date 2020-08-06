@@ -1,0 +1,56 @@
+#!/bin/bash
+
+cd ~/repos/internal/meta-altera
+git push portal ACDS14.1_REL_GSRD_PR_UPDATE2
+git push github ACDS14.1_REL_GSRD_PR_UPDATE2
+
+git push portal ACDS14.1_REL_GSRD_PR_UPDATE2:refs/heads/angstrom-v2013.12-yocto1.5_gsrd14.1
+git push github ACDS14.1_REL_GSRD_PR_UPDATE2:refs/heads/angstrom-v2013.12-yocto1.5_gsrd14.1
+
+
+cd ~/repos/internal/linux-socfpga
+git push portal ACDS14.1_REL_GSRD_PR_UPDATE2
+git push github ACDS14.1_REL_GSRD_PR_UPDATE2
+
+git push portal ACDS14.1_REL_GSRD_PR_UPDATE2:refs/heads/socfpga-3.10-ltsi
+git push github ACDS14.1_REL_GSRD_PR_UPDATE2:refs/heads/socfpga-3.10-ltsi
+
+cd ~/repos/internal/uboot-socfpga
+git push portal ACDS14.1_REL_GSRD_PR_UPDATE2
+git push github ACDS14.1_REL_GSRD_PR_UPDATE2
+
+git push portal ACDS14.1_REL_GSRD_PR_UPDATE2:refs/heads/socfpga_v2013.01.01
+git push github ACDS14.1_REL_GSRD_PR_UPDATE2:refs/heads/socfpga_v2013.01.01
+
+cd ~/repos/internal/linux-refdesigns
+git push portal ACDS14.1_REL_GSRD_PR_UPDATE2
+git push github ACDS14.1_REL_GSRD_PR_UPDATE2
+
+git push portal ACDS14.1_REL_GSRD_PR_UPDATE2:refs/heads/socfpga-14.1
+git push github ACDS14.1_REL_GSRD_PR_UPDATE2:refs/heads/socfpga-14.1
+
+cd ~/repos/internal/angstrom-socfpga
+git push portal ACDS14.1_REL_GSRD_PR_UPDATE2
+git push github ACDS14.1_REL_GSRD_PR_UPDATE2
+
+git push portal ACDS14.1_REL_GSRD_PR_UPDATE2:refs/heads/angstrom-v2013.12-socfpga_gsrd14.1
+git push github ACDS14.1_REL_GSRD_PR_UPDATE2:refs/heads/angstrom-v2013.12-socfpga_gsrd14.1
+
+exit
+
+
+
+ACDS14.1_REL_GSRD_PR_UPDATE2
+
+Repository	       Branch			  		   Tags to be pused to external GIT   Tags in internal GIT
+
+meta-altera	       angstrom-v2013.12-yocto1.5_gsrd14.1	   ACDS14.1_REL_GSRD_PR_UPDATE2	      ACDS14.1_REL_GSRD_PR_UPDATE2
+
+linux-socfpga	       socfpga-3.10-ltsi			   ACDS14.1_REL_GSRD_PR_UPDATE2	      ACDS14.1_REL_GSRD_PR_UPDATE2
+
+uboot-socfpga	       socfpga_v2013.01.01			   ACDS14.1_REL_GSRD_PR_UPDATE2	      ACDS14.1_REL_GSRD_PR_UPDATE2
+
+linux-refdesigns       socfpga-14.1				   ACDS14.1_REL_GSRD_PR_UPDATE2	      ACDS14.1_REL_GSRD_PR_UPDATE2
+
+angstrom-socfpga       angstrom-v2013.12-socfpga_gsrd14.1	   ACDS14.1_REL_GSRD_PR_UPDATE2	      ACDS14.1_REL_GSRD_PR_UPDATE2
+

@@ -1,0 +1,16 @@
+Need your help to push the tags (ACDS16.0_REL_GSRD_RC2) of these repositories up
+to github.
+
+Repository		Branch					Commit ID
+
+meta-altera		angstrom-v2014.12-yocto1.7		8d6e9b468630aa4d9d4c946080f5023dea43d891
+
+angstrom-socfpga	Angstrom-v2014.12-socfpga		0a2c33dbc636dc02049cfb77f73132d70b36c183
+
+linux-socfpga		socfpga-3.10-ltsi			28bac3edbcdc74f98b865986be5d340381896192
+
+meta-altera-refdes	gsrd-16.0				660224209baf74937656cc7d6be92fa7d2765acb
+
+uboot-socfpga		socfpga_v2013.01.01			e552a7f90788460e00f15fadbebd66606d0a6db4
+
+linux-refdesigns	socfpga-16.0				89acc83e9e3a66920e7bf949c60a9898419e946b

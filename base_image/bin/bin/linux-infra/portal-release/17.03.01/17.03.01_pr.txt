@@ -1,0 +1,395 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+The following new branches were pushed:
+repo : linux-socfpga          branch : socfpga-4.9
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.8
+branch tag  : rel_socfpga-4.8_17.03.01_pr
+new commits : 1
+fc938ff Matthew Gerlach FogBugz #439132: fix warning for unexpected version number
+
+
+++wiki:
+*Branch name*: socfpga-4.8, *Tag name:* rel_socfpga-4.8_17.03.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 439132 | fix warning for unexpected version number | [[ https://github.com/altera-opensource/linux-socfpga/commit/fc938fff1781f8fbb47bb40269211284a6b6dd7b ][ fc938fff1781f8fbb47bb40269211284a6b6dd7b ]] |
+--wiki:
+
+
+branch      : socfpga-4.9
+branch tag  : rel_socfpga-4.9_17.03.01_pr
+Pushing new branch to external git
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.03.01_pr
+new commits : 5
+7656aaf Jia Jie Ho ARM: socfpga: updates for socfpga_defconfig
+5e96ddf Matthew Gerlach FogBugz #439132: fix warning for unexpected version number
+82aaf46 Ong Hean Loong FogBugz #421702-3: socfpga_defconfig for Frame Buffer II Driver
+52320f6 Ong Hean Loong FogBugz #421702-2: implement Frame Buffer II for Display Port IP
+8860bc8 Ong Hean Loong FogBugz #421702-1: Device tree bindings Frame Buffer II for Display Port IP
+
+
+++wiki:
+*Branch name*: socfpga-4.1.33-ltsi, *Tag name:* rel_socfpga-4.1.33-ltsi_17.03.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | ARM: socfpga: updates for socfpga_defconfig | [[ https://github.com/altera-opensource/linux-socfpga/commit/7656aaf8b6501308e78c6babcd777b341ee4f7e9 ][ 7656aaf8b6501308e78c6babcd777b341ee4f7e9 ]] |
+| 439132 | fix warning for unexpected version number | [[ https://github.com/altera-opensource/linux-socfpga/commit/5e96ddfbb45b3885bc4c60892ea41d62e7cba56e ][ 5e96ddfbb45b3885bc4c60892ea41d62e7cba56e ]] |
+| 421702-3 | socfpga_defconfig for Frame Buffer II Driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/82aaf4677eea169bcbcf8bbcde2f3c0081411dc8 ][ 82aaf4677eea169bcbcf8bbcde2f3c0081411dc8 ]] |
+| 421702-2 | implement Frame Buffer II for Display Port IP | [[ https://github.com/altera-opensource/linux-socfpga/commit/52320f606b489931652d233c82ec124da7169cf7 ][ 52320f606b489931652d233c82ec124da7169cf7 ]] |
+| 421702-1 | Device tree bindings Frame Buffer II for Display Port IP | [[ https://github.com/altera-opensource/linux-socfpga/commit/8860bc88014789530ba23f6f202785a15fa13071 ][ 8860bc88014789530ba23f6f202785a15fa13071 ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.03.01_pr
+new commits : 1
+18e6917 Matthew Gerlach FogBugz #439132: fix warning for unexpected version number
+
+
+++wiki:
+*Branch name*: socfpga-4.1.33-ltsi-rt, *Tag name:* rel_socfpga-4.1.33-ltsi-rt_17.03.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 439132 | fix warning for unexpected version number | [[ https://github.com/altera-opensource/linux-socfpga/commit/18e6917ea932c6c972082e823fac6ee4f6304d6e ][ 18e6917ea932c6c972082e823fac6ee4f6304d6e ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.8_17.03.01_pr
+commit: fc938ff Matthew Gerlach FogBugz #439132: fix warning for unexpected version number
+
+tag:    rel_socfpga-4.9_17.03.01_pr
+commit: 84d4f8a Dinh Nguyen FogBugz #427770: Update socfpga_defconfig
+
+tag:    rel_socfpga-4.1.33-ltsi_17.03.01_pr
+commit: 7656aaf Jia Jie Ho ARM: socfpga: updates for socfpga_defconfig
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.03.01_pr
+commit: 18e6917 Matthew Gerlach FogBugz #439132: fix warning for unexpected version number
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.03.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.03.01_pr
+new commits : 8
+a711b5f Tien Fong Chee FogBugz #428963: Enhanced U-boot to support 2GB SDRAM
+2e93eff Tien Fong Chee FogBugz #303766: Enhanced ECC SDRAM initialization up to 2GB
+9727866 Tien Fong Chee FogBugz #410989-6: Masking hardware sequenced warm reset for logic in FPGA
+7df64c7 Tien Fong Chee FogBugz #410989-5: Enable RAM boot
+74b7da5 Tien Fong Chee FogBugz #410989-4: Added software reset for QSPI
+ea10eb2 Tien Fong Chee FogBugz #410989-3: Disable redundant redundant messages after a warm reset
+4593b0e Tien Fong Chee FogBugz #410989-2: Reset MPFE NoC after programming periperal rbf
+b8ca000 Tien Fong Chee FogBugz #410989-1: Functions for setting/checking magic no. to isw_handoff
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_17.03.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 428963 | Enhanced U-boot to support 2GB SDRAM | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/a711b5f67d9e44ab54d77e9af523fe73cabc3629 ][ a711b5f67d9e44ab54d77e9af523fe73cabc3629 ]] |
+| 303766 | Enhanced ECC SDRAM initialization up to 2GB | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/2e93eff5ef03dd0b79dbf410caf3a40dc8572aa8 ][ 2e93eff5ef03dd0b79dbf410caf3a40dc8572aa8 ]] |
+| 410989-6 | Masking hardware sequenced warm reset for logic in FPGA | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/9727866a42d160480997c9f00a5b64c980a6cf57 ][ 9727866a42d160480997c9f00a5b64c980a6cf57 ]] |
+| 410989-5 | Enable RAM boot | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/7df64c71d4502fed0d7774994a78d9faa015a01b ][ 7df64c71d4502fed0d7774994a78d9faa015a01b ]] |
+| 410989-4 | Added software reset for QSPI | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/74b7da56078cd307e96e57c89b3e84c70ef51bb8 ][ 74b7da56078cd307e96e57c89b3e84c70ef51bb8 ]] |
+| 410989-3 | Disable redundant redundant messages after a warm reset | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/ea10eb24c07acbe4e16baefe9e140f162131cc38 ][ ea10eb24c07acbe4e16baefe9e140f162131cc38 ]] |
+| 410989-2 | Reset MPFE NoC after programming periperal rbf | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/4593b0ebb9d6a3975f7dcc71337df1e748f3fc15 ][ 4593b0ebb9d6a3975f7dcc71337df1e748f3fc15 ]] |
+| 410989-1 | Functions for setting/checking magic no. to isw_handoff | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/b8ca00034392ea8efdcc39445927ab7afa6f1e80 ][ b8ca00034392ea8efdcc39445927ab7afa6f1e80 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.03.01_pr
+commit: 95ab599 Chin Liang See FogBugz #385884: Configuring SDRAM extra cycles on timing parameters
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.03.01_pr
+commit: a711b5f Tien Fong Chee FogBugz #428963: Enhanced U-boot to support 2GB SDRAM
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.03.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.03.01_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_17.03.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_17.03.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.03.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_17.03.01_pr
+commit: d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_17.03.01_pr
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+tag:    rel_angstrom-v2015.12-yocto2.0_17.03.01_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.8
+
+commit fc938fff1781f8fbb47bb40269211284a6b6dd7b
+Author: Matthew Gerlach <matthew.gerlach@linux.intel.com>
+Date:   Wed Feb 22 11:19:32 2017 -0800
+
+    FogBugz #439132: fix warning for unexpected version number
+    
+    The value in the version register of the altera freeze bridge
+    controller changed from the beta value of 2 to the
+    value of 0xad000003 in the official release of the IP.
+    This patch supports the old and new version numbers
+    without printing an warning.
+    
+    Signed-off-by: Matthew Gerlach <matthew.gerlach@linux.intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.33-ltsi
+
+commit 7656aaf8b6501308e78c6babcd777b341ee4f7e9
+Author: Jia Jie Ho <ho.jia.jie@intel.com>
+Date:   Thu Mar 16 08:05:46 2017 -0500
+
+    ARM: socfpga: updates for socfpga_defconfig
+    
+    This patch enables Altera TSE support in socfpga_defconfig
+    
+    Signed-off-by: Jia Jie Ho <ho.jia.jie@intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    
+    Conflicts:
+    
+    	arch/arm/configs/socfpga_defconfig
+
+commit 5e96ddfbb45b3885bc4c60892ea41d62e7cba56e
+Author: Matthew Gerlach <matthew.gerlach@linux.intel.com>
+Date:   Wed Feb 22 11:19:32 2017 -0800
+
+    FogBugz #439132: fix warning for unexpected version number
+    
+    The value in the version register of the altera freeze bridge
+    controller changed from the beta value of 2 to the
+    value of 0xad000003 in the official release of the IP.
+    This patch supports the old and new version numbers
+    without printing an warning.
+    
+    Signed-off-by: Matthew Gerlach <matthew.gerlach@linux.intel.com>
+
+commit 82aaf4677eea169bcbcf8bbcde2f3c0081411dc8
+Author: Ong Hean Loong <hean.loong.ong@intel.com>
+Date:   Tue Jan 31 15:46:19 2017 +0800
+
+    FogBugz #421702-3: socfpga_defconfig for Frame Buffer II Driver
+    
+    	Add build options to support Frame Buffer II Driver
+    
+    Signed-off-by: Ong Hean Loong <hean.loong.ong@intel.com>
+
+commit 52320f606b489931652d233c82ec124da7169cf7
+Author: Ong Hean Loong <hean.loong.ong@intel.com>
+Date:   Mon Dec 19 17:04:48 2016 +0800
+
+    FogBugz #421702-2: implement Frame Buffer II for Display Port IP
+    
+    Frame Buffer II implemntation for Display Port IP. The Intel PSG
+    (Altera) Video Image Processing Suite requires the Frame Reader
+    to be updated to Frame Buffer II. A new driver is required to
+    support the CSR for Frame Buffer II.
+    
+    Signed-off-by: Ong Hean Loong <hean.loong.ong@intel.com>
+    
+    ---
+    v5: Made changes to fix warnings and static analysis errors
+    
+    v4: Added changes to decouple the ARM platform support from the
+    driver so that future platform can also use the driver
+    
+    v3: Added changes fallback for compatibility to work without
+    device tree default information
+    
+    v2: Created a separate file for altvipfb2.c to allow separate
+    compilation options for Frame Buffer II
+
+commit 8860bc88014789530ba23f6f202785a15fa13071
+Author: Ong Hean Loong <hean.loong.ong@intel.com>
+Date:   Mon Dec 19 17:03:35 2016 +0800
+
+    FogBugz #421702-1: Device tree bindings Frame Buffer II for Display Port IP
+    
+    Device tree bindings required for the Intel PSG (Altera) Frame Buffer II.
+    
+    Signed-off-by: Ong Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.33-ltsi-rt
+
+commit 18e6917ea932c6c972082e823fac6ee4f6304d6e
+Author: Matthew Gerlach <matthew.gerlach@linux.intel.com>
+Date:   Wed Feb 22 11:19:32 2017 -0800
+
+    FogBugz #439132: fix warning for unexpected version number
+    
+    The value in the version register of the altera freeze bridge
+    controller changed from the beta value of 2 to the
+    value of 0xad000003 in the official release of the IP.
+    This patch supports the old and new version numbers
+    without printing an warning.
+    
+    Signed-off-by: Matthew Gerlach <matthew.gerlach@linux.intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit a711b5f67d9e44ab54d77e9af523fe73cabc3629
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Tue Feb 21 17:47:42 2017 +0800
+
+    FogBugz #428963: Enhanced U-boot to support 2GB SDRAM
+    
+    This patches enable U-boot to support SDRAM up to 2GB.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 2e93eff5ef03dd0b79dbf410caf3a40dc8572aa8
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Thu Feb 23 11:15:07 2017 +0800
+
+    FogBugz #303766: Enhanced ECC SDRAM initialization up to 2GB
+    
+    This patch increases the buffer size up to 2500 bytes which is used by
+    DMA microcodes for initializing SDRAM up to 2GB when ECC is enabled.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 9727866a42d160480997c9f00a5b64c980a6cf57
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Thu Feb 16 13:19:12 2017 +0800
+
+    FogBugz #410989-6: Masking hardware sequenced warm reset for logic in FPGA
+    
+    On customer design scenario, the design connects the HPS cold/warm reset
+    output (h2f_reset_n) to the HPS EMIF's reset input. This design has
+    potential of putting the NOC at risk of being corrupted once again when
+    using warm reset recovery mechanism from previous patches. Applying this
+    patch would prevent logic in FPGA being effected by warm reset. This issue
+    doesn't effect Early I/O Release flow, because HPS EMIF IP will break that
+    connection internally and permanently connect its reset input inactive
+    (1'b1) at all fanout destinations (atoms and any internal logic).
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 7df64c71d4502fed0d7774994a78d9faa015a01b
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Thu Feb 16 16:40:59 2017 +0800
+
+    FogBugz #410989-5: Enable RAM boot
+    
+    This patch enables the RAM boot, no U-boot reloading required from ROM
+    after warm reset is triggered.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 74b7da56078cd307e96e57c89b3e84c70ef51bb8
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Feb 8 20:25:43 2017 +0800
+
+    FogBugz #410989-4: Added software reset for QSPI
+    
+    On some boards, the QSPI reset may not be connected to the HPS warm reset.
+    To ensure the QSPI gets reset during a warm reset, this patch issues a
+    software reset command to the QSPI before issuing the warm reset.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit ea10eb24c07acbe4e16baefe9e140f162131cc38
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Dec 21 16:00:24 2016 +0800
+
+    FogBugz #410989-3: Disable redundant redundant messages after a warm reset
+    
+    This patch prevents redundant messages from being printed after a warm
+    reset. Console print out is enabled after redundant messages.
+    Applying this patch would make all the console messages print out looks
+    seamlessly, and similar as previous version.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 4593b0ebb9d6a3975f7dcc71337df1e748f3fc15
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Dec 21 15:57:13 2016 +0800
+
+    FogBugz #410989-2: Reset MPFE NoC after programming periperal rbf
+    
+    This patch setting the magic number "0xd15ea5e" to isw_handoff reg[7]
+    after peripheral rbf programmed and triggering warm reset to recover the
+    MPFE NoC from corruption due to high frequency transient clock output from
+    HSP EMIF IOPLL at VCO startup. The magic number would be checked after
+    u-boot re-entrance. No periph rbf reprogrammed is required if magic number
+    is set and continue boot like normal.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit b8ca00034392ea8efdcc39445927ab7afa6f1e80
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Dec 21 15:53:19 2016 +0800
+
+    FogBugz #410989-1: Functions for setting/checking magic no. to isw_handoff
+    
+    This patch contains function to set/unset the magic number 0xd15ea5e to
+    isw_handoff[7], and also function to check the magic number from the
+    register. The magic number is part of the boot progress tracking and
+    required by boot to initialize the HW.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+-----------------------------------------------------------------------
+

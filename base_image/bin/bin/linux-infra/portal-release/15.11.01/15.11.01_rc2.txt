@@ -1,0 +1,530 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.2
+branch tag  : rel_socfpga-4.2_15.11.01_rc2
+new commits : 14
+e7c2065 Matthew Gerlach FogBugz #334036: Fix qspi partitioning
+5527ef6 Yves Vandervennet FogBugz #334039: enable SMP for the Stratix10 SWVP
+f6456ec Yves Vandervennet FogBugz #333771: fix boot from the openembedded initrd failure
+96d3bec Dinh Nguyen Revert "phylib: Make PHYs children of their MDIO bus, not the bus' parent."
+0263eaf Yves Vandervennet FogBugz #332965: missing Makefile to build Stratix10 SWVP dts
+9962a8b Ley Foon Tan FogBugz #331066: misc: altera_hwmutex: remove redundant unused of_match_ptr
+3a28a3d Ley Foon Tan FogBugz #331067: misc: altera_hwmutex: remove .owner
+f34ec06 Yves Vandervennet FogBugz #332657-3: Stratix 10 Software Virtual Platform
+ac3bc27 Yves Vandervennet FogBugz #332657-2: Stratix 10 Software Virtual Platform
+f1a6b47 Yves Vandervennet FogBugz #332657-1: Stratix 10 Software Virtual Platform
+835bd55 Roman Bulgakov FogBugz #316846-4: docs: dts-bindings: add doc for Arria 10 NAND ECC
+1e760c6 Roman Bulgakov FogBugz #316846-3: dts: add NAND EDAC entries for Arria 10
+7d5e938 Dinh Nguyen FogBugz #316846-2: drivers portion of NAND ECC for Arria10
+278f964 Dinh Nguyen FogBugz #316846-1: MSL: Add platform specific code to support NAND ECC
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.11.01_rc2
+Pushing new branch to external git
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.11.01_rc2
+Pushing new branch to external git
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.2_15.11.01_rc2
+commit: e7c2065 Matthew Gerlach FogBugz #334036: Fix qspi partitioning
+
+tag:    rel_socfpga-3.10-ltsi_15.11.01_rc2
+commit: bcf9c64 Matthew Gerlach FogBugz #334036: Fix qspi partitioning
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.11.01_rc2
+commit: ef8b7fe Vince Bridgers FogBugz #200285: Add Preempt-RT Config options by default
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.11.01_rc2
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.11.01_rc2
+new commits : 10
+52122ec Graham Moore FogBugz #331587: Arria10 NAND patches broke the SDMMC build.
+f946fe1 Graham Moore FogBugz #310428-1: dts: A10 SoC Boot from NAND Flash support
+332f06b Graham Moore FogBugz #310428-2 A10 SoC Boot from NAND Flash support
+448d951 Graham Moore FogBugz #299961-4: Support NAND in Uboot on Arria10
+0907b67 Graham Moore FogBugz #299961-7: Support NAND in Uboot on Arria10
+2fc001c Graham Moore FogBugz #299961-1: Support NAND in Uboot on Arria10
+533ebcd Graham Moore FogBugz #299961-5: Support NAND in Uboot on Arria10
+ced9cbc Graham Moore FogBugz #299961-8: Support NAND in Uboot on Arria10
+21d6a65 Tien Fong Chee FogBugz #327738: Remove SDMMC clock max frequency constraint
+0a05c2b Matthew Gerlach FogBugz #321488: Add sdram ddr calibration support for new silicon
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.11.01_rc2
+commit: 4003f38 Chin Liang See FogBugz #297183: Enabling ECC overwrite when SDRAM ECC is enabled
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.11.01_rc2
+commit: 52122ec Graham Moore FogBugz #331587: Arria10 NAND patches broke the SDMMC build.
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.11.01_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.11.01_rc2
+commit: 28881bd Tien Hock Loh FogBugz #323201: Update branch of meta-altera
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.11.01_rc2
+new commits : 9
+45c0f23 Yves Vandervennet Code in the kernel build include file disabled support for INITRD when no INITRAMFS image is specified. This is an issue with the Stratix10 SWVP, since we do use INITRD images to boot
+fc9b42b Yves Vandervennet update for aarch64
+d3fc611 Yves Vandervennet add S10
+b879ba3 Yves Vandervennet removed unecessary assignment to KERNEL_DEVICETREE
+6b454ea Yves Vandervennet updated list of device trees to include Arria10
+bac1270 Tien Hock Loh FogBugz #243680: Add gdbserver to file system
+002c0f3 Yves Vandervennet support for kernel 4.2
+48ae997 Yves Vandervennet update for github
+fcdb5be Tien Hock Loh FogBugz #: Remove all GSRD contents from meta-altera
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.11.01_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.11.01_rc2
+commit: 45c0f23 Yves Vandervennet Code in the kernel build include file disabled support for INITRD when no INITRAMFS image is specified. This is an issue with the Stratix10 SWVP, since we do use INITRD images to boot
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.11.01_rc2
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.2
+
+commit e7c206510d7606d38f71ad70bad377e390734958
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Thu Nov 5 15:40:31 2015 -0800
+
+    FogBugz #334036: Fix qspi partitioning
+    
+    The maximum size for an Arria10 uncompressed
+    RBF is 31 MB.  Increase the space reserved
+    for the RBF to 32 MB and reduce the space for the
+    root file system, accordingly.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 5527ef680a8658e6f55c441ecc3f786a3ab8dc30
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Thu Nov 5 00:05:22 2015 -0600
+
+    FogBugz #334039: enable SMP for the Stratix10 SWVP
+    
+    Added cpu definition nodes into the DTS
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit f6456ec9fea5ed743fdfac14b06f3c665875f374
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Tue Nov 3 22:35:25 2015 -0600
+
+    FogBugz #333771: fix boot from the openembedded initrd failure
+    
+    This enables support for RAMFS
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit 96d3bec132bae105c26824868ba10984e2e9c364
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Nov 3 09:01:29 2015 -0600
+
+    Revert "phylib: Make PHYs children of their MDIO bus, not the bus' parent."
+    
+    This reverts commit 8b63ec1837fa4c1ea604b278d201454eb3b85066.
+    
+    This patch changes the PHY parent of the MAC node, which then does not allow
+    the PHY configuration code to happen.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 0263eafb77b39d6f6e43c7a7b93c6cb06c6af472
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Thu Oct 29 11:47:51 2015 -0500
+
+    FogBugz #332965: missing Makefile to build Stratix10 SWVP dts
+    
+    The Makefile was missing in previous commits (332657-1)
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit 9962a8b866a21b1d1c0262f0510a9207b34c1307
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Oct 20 12:33:31 2015 +0800
+
+    FogBugz #331066: misc: altera_hwmutex: remove redundant unused of_match_ptr
+    
+    The data structure of_match_ptr() protects is always compiled in.
+    Hence of_match_ptr() is not needed.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 3a28a3d6902dd8771a4aa7c3d4fe34a8db2b05e9
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Oct 20 12:31:52 2015 +0800
+
+    FogBugz #331067: misc: altera_hwmutex: remove .owner
+    
+    drivers/misc/altera_hwmutex.c:300:3-8: No need to set .owner here.
+    The core will do it.
+    
+    Remove .owner field if calls are used which set it automatically
+    
+    Generated by: scripts/coccinelle/api/platform_no_drv_owner.cocci
+    
+    Signed-off-by: Fengguang Wu <fengguang.wu@intel.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit f34ec0604600affe9acc07e6b6bd7867c1018651
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Wed Oct 28 02:41:04 2015 -0500
+
+    FogBugz #332657-3: Stratix 10 Software Virtual Platform
+    
+    Changes to the ARM64 defconfig to enable the Stratix10 SWVP
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit ac3bc277d2dda957770dbc1d67e9709ff4c99d35
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Wed Oct 28 02:39:52 2015 -0500
+
+    FogBugz #332657-2: Stratix 10 Software Virtual Platform
+    
+    Addition of the configuration infrastructure for the SWVP
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit f1a6b4732776a71b16e006f3ad67c3d0ba8c271d
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Wed Oct 28 03:19:04 2015 -0500
+
+    FogBugz #332657-1: Stratix 10 Software Virtual Platform
+    
+    add the device tree for the SWVP
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit 835bd558395d5f2640ee65297fdd5ba99d56ccd7
+Author: Roman Bulgakov <roman.bulgakov@globallogic.com>
+Date:   Fri Aug 7 17:35:45 2015 +0300
+
+    FogBugz #316846-4: docs: dts-bindings: add doc for Arria 10 NAND ECC
+    
+    This patch adds the Altera NAND Flash Controller
+    ECC device tree documentation to describe Arria 10
+    NAND EDAC entries.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 1e760c629cd3cd8e9c1b954940aa4bb9603faabb
+Author: Roman Bulgakov <roman.bulgakov@globallogic.com>
+Date:   Fri Aug 7 17:13:21 2015 +0300
+
+    FogBugz #316846-3: dts: add NAND EDAC entries for Arria 10
+    
+    This patch adds the new EDAC entries for the NAND Flash
+    Controller local FIFOs into the Arria 10 DTSI file.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 7d5e938c0af7236a0090c72769aa872b1e0a2340
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Aug 11 14:22:12 2015 -0500
+
+    FogBugz #316846-2: drivers portion of NAND ECC for Arria10
+    
+    Add the NAND ECC driver.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 278f964a8d90a8ae01111bac967b5449db2f12f0
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Aug 11 14:04:58 2015 -0500
+
+    FogBugz #316846-1: MSL: Add platform specific code to support NAND ECC
+    
+    This patch adds the platform specific init code for enabling NAND
+    ECC on Arria10.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 52122ec266d7582d9274d836fdd36670c647c353
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Wed Oct 21 09:44:06 2015 -0700
+
+    FogBugz #331587: Arria10 NAND patches broke the SDMMC build.
+    
+    The NAND changes removed the setting of CONFIG_MMC in the socfpga_arria10.h
+    config file, which then caused the 'normal' SDMMC build configuration to fail.
+    The solution is to add CONFIG_MMC to socfpga_arria10_defconfig and to Kconfig.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit f946fe1a070d8b0df881aafbd01c0ad066a799ed
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Oct 2 08:47:58 2015 -0700
+
+    FogBugz #310428-1: dts: A10 SoC Boot from NAND Flash support
+    
+    Update NAND device tree with mpuclk setting from generated device
+    tree.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+    ---
+    V2: Remove questionable clock changes in dts, leave only the mpuclk
+    setting.  Add 'dts:' to commit message.
+
+commit 332f06b1f31b9241e7e74e15866a109b92de6b72
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Oct 2 08:48:47 2015 -0700
+
+    FogBugz #310428-2 A10 SoC Boot from NAND Flash support
+    
+    In support of Macronix chips, use a better method of replacing
+    the NAND_CMD_READOOB command.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit 448d951bf5ec180c4a7dbaa79c6b56c4416b9d29
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Tue Mar 31 10:27:56 2015 -0500
+
+    FogBugz #299961-4: Support NAND in Uboot on Arria10
+    
+    Add NAND device tree file, created from qsys
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+    ---
+    V3: Remove cff filenames, booting from NAND does not require
+    filenames.
+    V2: Fix line over 80 characters in Makefile.  Add dedicated
+    config settings back, as obtained from Eamon and Rajesh.
+    Remove generated file notice.
+
+commit 0907b67129043b3eaa0c527d0e367fb317aea686
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Wed May 27 13:59:52 2015 -0700
+
+    FogBugz #299961-7: Support NAND in Uboot on Arria10
+    
+    The patch contains the CONFIG_ modifications to support
+    Denali NAND on Arria10.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+    ---
+    V2:  Expand #error messages, explicitly undef CONFIG_SYS_NAND_USE_FLASH_BBT
+    and CONFIG_SYS_NAND_SELF_INIT, set env size back to 4K.
+
+commit 2fc001ccf2a5b51f2d2799fc3443b90cb5f937b5
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Tue May 19 10:45:57 2015 -0700
+
+    FogBugz #299961-1: Support NAND in Uboot on Arria10
+    
+    This is the code to load the fpga from NAND when booting from NAND.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+    ---
+    V2: Add explanation of negative return codes in cff_from_nand.
+
+commit 533ebcd3c92b2813cb4a406ff324e8e7e8c14e4d
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Wed May 27 10:01:28 2015 -0700
+
+    FogBugz #299961-5: Support NAND in Uboot on Arria10
+    
+    Emulate the NAND_CMD_READOOB command, as it is not supported by all
+    chips.  Use the denali SPARE read mode to read oob data.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+    ---
+    V2: remove max-banks calculation, as it needs more work, and is
+    in another patch.
+
+commit ced9cbcd08039c6352cc53a59856753672a7b495
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Tue Jun 2 14:01:08 2015 -0700
+
+    FogBugz #299961-8: Support NAND in Uboot on Arria10
+    
+    Read Denali hardware revision number and use it to
+    calculate max_banks,  The encoding of max_banks changed
+    in Denali revision 5.1.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit 21d6a65d68d84efba88ff21ceae9bc8f2aa06857
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Mon Oct 12 13:38:16 2015 +0800
+
+    FogBugz #327738: Remove SDMMC clock max frequency constraint
+    
+    Remove SDMMC clock constraint as new rev B A10 SoC Dev Kit
+    can run at 50MHz instead 25MHz.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    Signed-off-by: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+
+commit 0a05c2bc8a535331b7a145da1a770b9a0b20f465
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Wed Oct 14 11:11:59 2015 -0700
+
+    FogBugz #321488: Add sdram ddr calibration support for new silicon
+    
+    The ddr calibration workaround only needs to get executed
+    for Engineering Sample version of silicon.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7
+
+commit 45c0f230fc35b809e32f848105fbcddb2ebfdd3d
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Tue Nov 10 23:24:44 2015 -0600
+
+    Code in the kernel build include file disabled support for INITRD
+    when no INITRAMFS image is specified. This is an issue with the
+    Stratix10 SWVP, since we do use INITRD images to boot
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit fc9b42bcd28b593d9d23e01e5bd696108864543c
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Thu Oct 29 10:21:03 2015 -0500
+
+    update for aarch64
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit d3fc6110584e5d34e7bc7ce943b826428822fcea
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Thu Oct 29 02:19:07 2015 -0500
+
+    add S10
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit b879ba324d5bcf527377a1622e997dd983827d05
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Thu Oct 22 21:48:19 2015 -0500
+
+    removed unecessary assignment to KERNEL_DEVICETREE
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit 6b454eadc4f0984a95797d222fca7d93450de74a
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Wed Oct 21 00:24:21 2015 -0500
+
+    updated list of device trees to include Arria10
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit bac127007cb7d0d828e37e97941db098ab1618ab
+Author: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+Date:   Wed Oct 7 18:01:43 2015 +0800
+
+    FogBugz #243680: Add gdbserver to file system
+    
+    This is to add gdbserver to the file system to improve OOBE. With this
+    change, user is able to debug user's application remotely using DS-5 without
+    making any changes to the file system.
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+commit 002c0f3f56eb4e4582b9b2237eb890a2fe5999a6
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Fri Oct 9 02:11:17 2015 -0500
+
+    support for kernel 4.2
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit 48ae9975297af77bd840c749422b9efed6cb4e13
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Wed Apr 22 06:13:35 2015 -0500
+
+    update for github
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit fcdb5be931564423ce616d48d75b58b8af9bde5d
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Wed May 13 10:06:58 2015 +0800
+
+    FogBugz #: Remove all GSRD contents from meta-altera
+    
+    This is to remove GSRD content from meta-altera and move to meta-altera-refdes
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+    
+    Conflicts:
+    	recipes-gsrd/altera-gsrd-apps/altera-gsrd-apps_1.0.bb
+    	recipes-gsrd/altera-gsrd-pio-interrupt/altera-gsrd-pio-interrupt_1.0.bb
+    	recipes-gsrd/altera-gsrd-webcontent/files/index.sh
+
+-----------------------------------------------------------------------
+

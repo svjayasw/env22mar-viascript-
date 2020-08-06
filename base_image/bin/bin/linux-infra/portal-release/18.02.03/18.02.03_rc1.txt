@@ -1,0 +1,282 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.15
+branch tag  : rel_socfpga-4.15_18.02.03_rc1
+new commits : 8
+1d50e4d Alan Tull defconfig: stratix10 socdk: enable overlays and configfs
+29f9910 Alan Tull arm64: dts: stratix10: add fpga manager and region
+f8f7261 Alan Tull defconfig: stratix10 socdk: enable fpga and service layer
+951b5ec Alan Tull fpga: add intel stratix10 soc fpga manager driver
+7aa834b Alan Tull dt-bindings: fpga: add Stratix10 SoC FPGA manager binding
+7a65576 Richard Gong driver, misc: add Intel Stratix10 service layer driver
+90ca1ef Richard Gong arm64: dts: stratix10: add service driver binding to base dtsi
+e91ddfa Richard Gong dt-bindings, firmware: add Intel Stratix10 service layer binding
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.02.03_rc1
+new commits : 0
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.02.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.15_18.02.03_rc1
+commit: 1d50e4d Alan Tull defconfig: stratix10 socdk: enable overlays and configfs
+
+tag:    rel_socfpga-4.9.78-ltsi_18.02.03_rc1
+commit: e681fba Thor Thayer FogBugz #532777: ARM: socfpga_defconfig: Remove QSPI Sector 4K size force
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.02.03_rc1
+commit: fc0319f9 Thor Thayer FogBugz #532777: ARM: socfpga_defconfig: Remove QSPI Sector 4K size force
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.02.03_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.02.03_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.02.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.02.03_rc1
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.02.03_rc1
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_18.02.03_rc1
+commit: 8807902 Chee Hong Ang FogBugz #529840: arm: socfpga: stratix10: Move armv8 secure region base to upper 128k
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.02.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.02.03_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.02.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.02.03_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.02.03_rc1
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.02.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.02.03_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.02.03_rc1
+commit: 7c4b4b9 Yves Vandervennet removed old kernels, no longer supported
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.15
+
+commit 1d50e4d02625eb41f19cce0c4d8bf19cd30f5652
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Dec 5 15:07:50 2017 -0600
+
+    defconfig: stratix10 socdk: enable overlays and configfs
+    
+    Enable device tree overlays and the device tree overlay configfs
+    interface for Stratix10 SoC.
+    
+    +CONFIG_OF_OVERLAY=y
+    +CONFIG_OF_CONFIGFS=y
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 29f99105e4186ba4a88fea2b54b5f6fc91b9912e
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Nov 9 10:04:03 2017 -0600
+
+    arm64: dts: stratix10: add fpga manager and region
+    
+    Add the Stratix10 FPGA manager and a FPGA region to the
+    device tree.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v3: change binding to "intel,stratix10-soc-fpga-mgr"
+
+commit f8f7261ef004e2bd60aef66afb476c6c6c57c6f7
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Feb 5 09:42:01 2018 -0600
+
+    defconfig: stratix10 socdk: enable fpga and service layer
+    
+    Enable fpga framework, Stratix10 SoC FPGA manager, and the
+    Intel Service Layer.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 951b5ec06c6620d6267fe5edb4a2c7bdb5f4cde5
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Sep 7 13:20:04 2017 -0500
+
+    fpga: add intel stratix10 soc fpga manager driver
+    
+    Add driver for reconfiguring Intel Stratix10 SoC FPGA devices.
+    This driver communicates through the Intel Service Driver which
+    does communication with privileged hardware (that does the
+    FPGA programming) through a secure mailbox.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: added of.h
+        renamed from SoCFPGA S10 to Stratix10 SoC
+        socfpga-s10.c -> stratix10-soc.c
+        remove #ifdef CONFIG_OF
+        added some comments
+    v3: change binding to "intel,stratix10-soc-fpga-mgr"
+        Fix PR flag==1 if we are doing PR
+    v4: update per changes at service client header
+
+commit 7aa834b3a6243499400131ba0a52291700d5449c
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Nov 9 10:07:16 2017 -0600
+
+    dt-bindings: fpga: add Stratix10 SoC FPGA manager binding
+    
+    Add a Device Tree binding for the Intel Stratix10 SoC FPGA manager.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v3: change binding to "intel,stratix10-soc-fpga-mgr"
+
+commit 7a65576dc07aa8287ce534f765dc560452a33047
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Wed Feb 14 14:19:50 2018 -0600
+
+    driver, misc: add Intel Stratix10 service layer driver
+    
+    Intel Stratix10 SoC is composed of a 64 bit quad-core ARM Cortex A53 hard
+    processor system (HPS) and Secure Device Manager (SDM). SDM is the
+    hardware which does the FPGA configuration, QSPI, Crypto and warm reset.
+    
+    When the FPGA is configured from HPS, there needs to be a way for HPS to
+    notify SDM the location and size of the configuration data. Then SDM will
+    get the configuration data from that location and perform the FPGA
+    configuration.
+    
+    To meet the whole system security needs and support virtual machine
+    requesting communication with SDM, only the secure world of software (EL3,
+    Exception Level 3) can interface with SDM. All software entities running
+    on other exception levels must channel through the EL3 software whenever
+    it needs service from SDM.
+    
+    Intel Stratix10 service layer driver is added to provide the service for
+    FPGA configuration. Running at privileged exception level (EL1, Exception
+    Level 1), Intel Stratix10 service layer driver interfaces with the service
+    provider at EL1 (Intel Stratix10 FPGA Manager) and manages secure monitor
+    call (SMC) to communicate with secure monitor software at secure monitor
+    exception level (EL3).
+    
+    Header file intel-service-client.h defines the interface between service
+    providers (FPGA manager is one of them) and service layer.
+    
+    Header file intel-smc.h defines the secure monitor call (SMC)
+    message protocols used for service layer driver in normal world
+    (EL1) to communicate with secure monitor SW in secure monitor exception
+    level 3 (EL3). This file is shared with secure firmware (FW) which is
+    out of kernel tree.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    ---
+    v2: Remove intel-service subdirectory and intel-service.h, move
+        intel-smc.h and intel-service.c to driver/misc subdirectory
+        Correct SPDX markers
+        Change service layer driver be 'default n'
+        Remove a global variables
+    v3: Add timeout for do..while() loop
+        Add kernel-doc for the functions and structs, correct multiline comments
+        Replace kfifo_in or kfifo_out with kfifo_in_spinlocked or
+        kfifo_out_spinlocked
+        Other corrections from Intel internal code reviews
+    v4: Add kernel-doc for all structs
+        rename struct intel_svc_data (at client header) to intel_svc_client_msg
+        rename struct intel_svc_private_mem to intel_svc_data
+        Other corrections/changes from Intel internal code reviews
+    v5: Changes from Intel internal code reviews
+
+commit 90ca1efa1790ba4d8b991bb39e65e3cd17f3217b
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Wed Feb 14 16:52:46 2018 -0600
+
+    arm64: dts: stratix10: add service driver binding to base dtsi
+    
+    Add Intel Stratix10 service layer to the device tree
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit e91ddfa8fdd37a816173fe1575dee0ee1ac1c07d
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Wed Feb 14 13:45:06 2018 -0600
+
+    dt-bindings, firmware: add Intel Stratix10 service layer binding
+    
+    Add a device tree binding for the Intel Stratix10 service layer driver
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    ---
+    v2: Change to put service layer driver node under the firmware node
+        Change compatible to "intel, stratix10-svc"
+
+-----------------------------------------------------------------------
+

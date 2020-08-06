@@ -1,0 +1,354 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.7
+branch tag  : rel_socfpga-4.7_16.10.02_pr
+new commits : 8
+e18ed57 Alan Tull FogBugz #405912-3: socfpga: DTS: remove reset-names for hps bridges
+5c6e26e Alan Tull FogBugz #405912-2: socfpga: eliminate need to specify reset names
+913af19 Alan Tull FogBugz #405912-1: doc: socfpga: eliminate need to specify reset names
+3d5eccb Matthew Gerlach FogBugz #403733-2: completely configure l2c_aux_val
+bd738b1 Dinh Nguyen FogBugz #403733: Update cache settings for A10
+d8ca51c Alan Tull FogBugz #384748: socfpga: use devm_clk_get
+cf309a5 Alan Tull FogBugz #405861: socfpga: remove unneeded clk_put
+4134d28 Matthew Gerlach FogBugz #408205: fix printf format error
+
+
+++wiki:
+*Branch name*: socfpga-4.7, *Tag name:* rel_socfpga-4.7_16.10.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 405912-3 | socfpga: DTS: remove reset-names for hps bridges | [[ https://github.com/altera-opensource/linux-socfpga/commit/e18ed5786335e7fa6a0b9a418d6d59cceb80ba47 ][ e18ed5786335e7fa6a0b9a418d6d59cceb80ba47 ]] |
+| 405912-2 | socfpga: eliminate need to specify reset names | [[ https://github.com/altera-opensource/linux-socfpga/commit/5c6e26e65d209ee8e20657077503feeba717d7c7 ][ 5c6e26e65d209ee8e20657077503feeba717d7c7 ]] |
+| 405912-1 | doc: socfpga: eliminate need to specify reset names | [[ https://github.com/altera-opensource/linux-socfpga/commit/913af19d6609954b2111fbd0dc9d86ea0fd92790 ][ 913af19d6609954b2111fbd0dc9d86ea0fd92790 ]] |
+| 403733-2 | completely configure l2c_aux_val | [[ https://github.com/altera-opensource/linux-socfpga/commit/3d5eccb78392d9e9288be05b4e10681fe8b0d330 ][ 3d5eccb78392d9e9288be05b4e10681fe8b0d330 ]] |
+| 403733 | Update cache settings for A10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/bd738b1d1cb6c4c99cf4c7658b137eb53279c6af ][ bd738b1d1cb6c4c99cf4c7658b137eb53279c6af ]] |
+| 384748 | socfpga: use devm_clk_get | [[ https://github.com/altera-opensource/linux-socfpga/commit/d8ca51ceba575aed5babb608684a8e8769f7613a ][ d8ca51ceba575aed5babb608684a8e8769f7613a ]] |
+| 405861 | socfpga: remove unneeded clk_put | [[ https://github.com/altera-opensource/linux-socfpga/commit/cf309a58a46d1cdb1e6322a6d7ec7caf83522932 ][ cf309a58a46d1cdb1e6322a6d7ec7caf83522932 ]] |
+| 408205 | fix printf format error | [[ https://github.com/altera-opensource/linux-socfpga/commit/4134d284d69a40b95bc0b40fb28dc361792ccd1b ][ 4134d284d69a40b95bc0b40fb28dc361792ccd1b ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.22-ltsi
+branch tag  : rel_socfpga-4.1.22-ltsi_16.10.02_pr
+new commits : 3
+9689ce4 Alan Tull FogBugz #384750: altera-hps2fpga: don't look up l3regs for f2h
+51a3fc0 Alan Tull FogBugz #384748: altera-hps2fpga: leak due to not releasing clocks
+19f45b0 Alan Tull Revert "FogBugz #384748: socfpga: use devm_clk_get"
+
+
+++wiki:
+*Branch name*: socfpga-4.1.22-ltsi, *Tag name:* rel_socfpga-4.1.22-ltsi_16.10.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 384750 | altera-hps2fpga: don't look up l3regs for f2h | [[ https://github.com/altera-opensource/linux-socfpga/commit/9689ce4f759ad0f13f6911d1f1309384f2b05f91 ][ 9689ce4f759ad0f13f6911d1f1309384f2b05f91 ]] |
+| 384748 | altera-hps2fpga: leak due to not releasing clocks | [[ https://github.com/altera-opensource/linux-socfpga/commit/51a3fc013ef9d27ee8692dfa9d35de325cb0add4 ][ 51a3fc013ef9d27ee8692dfa9d35de325cb0add4 ]] |
+| community | Revert "FogBugz #384748: socfpga: use devm_clk_get" | [[ https://github.com/altera-opensource/linux-socfpga/commit/19f45b018bec1cd0a806550c5a03bcabc4937730 ][ 19f45b018bec1cd0a806550c5a03bcabc4937730 ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.22-ltsi-rt
+branch tag  : rel_socfpga-4.1.22-ltsi-rt_16.10.02_pr
+new commits : 5
+ae24f5c Matthew Gerlach FogBugz #403389-1: Altera Partial Reconfiguration IP Core
+49d4707 Alan Tull FogBugz #384748: socfpga: use devm_clk_get
+5869074 Alan Tull FogBugz #405861: socfpga: remove unneeded clk_put
+cd4d746 Matthew Gerlach FogBugz #403733-2: completely configure l2c_aux_val
+6362396 Matthew Gerlach FogBugz #408205: fix printf format error
+
+
+++wiki:
+*Branch name*: socfpga-4.1.22-ltsi-rt, *Tag name:* rel_socfpga-4.1.22-ltsi-rt_16.10.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 403389-1 | Altera Partial Reconfiguration IP Core | [[ https://github.com/altera-opensource/linux-socfpga/commit/ae24f5c381017020be89d0f0e9aeb40952e806d3 ][ ae24f5c381017020be89d0f0e9aeb40952e806d3 ]] |
+| 384748 | socfpga: use devm_clk_get | [[ https://github.com/altera-opensource/linux-socfpga/commit/49d47074d3caf7235a374720b089cd92e10a1f94 ][ 49d47074d3caf7235a374720b089cd92e10a1f94 ]] |
+| 405861 | socfpga: remove unneeded clk_put | [[ https://github.com/altera-opensource/linux-socfpga/commit/5869074a9cac5da23f937debb54dc429eb41a0dc ][ 5869074a9cac5da23f937debb54dc429eb41a0dc ]] |
+| 403733-2 | completely configure l2c_aux_val | [[ https://github.com/altera-opensource/linux-socfpga/commit/cd4d746b1407ff4f111f1d8d8dd03796b06b6932 ][ cd4d746b1407ff4f111f1d8d8dd03796b06b6932 ]] |
+| 408205 | fix printf format error | [[ https://github.com/altera-opensource/linux-socfpga/commit/636239688738eb8e44eda39407fa44f51789eb66 ][ 636239688738eb8e44eda39407fa44f51789eb66 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.7_16.10.02_pr
+commit: e18ed57 Alan Tull FogBugz #405912-3: socfpga: DTS: remove reset-names for hps bridges
+
+tag:    rel_socfpga-4.1.22-ltsi_16.10.02_pr
+commit: 9689ce4 Alan Tull FogBugz #384750: altera-hps2fpga: don't look up l3regs for f2h
+
+tag:    rel_socfpga-4.1.22-ltsi-rt_16.10.02_pr
+commit: ae24f5c Matthew Gerlach FogBugz #403389-1: Altera Partial Reconfiguration IP Core
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.10.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.10.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.10.02_pr
+commit: 95ab599 Chin Liang See FogBugz #385884: Configuring SDRAM extra cycles on timing parameters
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.10.02_pr
+commit: ab2181d Tien Fong Chee FogBugz #398001: Enable UART for console when FPGA is external configured
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.10.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.10.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.10.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.10.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.10.02_pr
+commit: d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.10.02_pr
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.7
+
+commit e18ed5786335e7fa6a0b9a418d6d59cceb80ba47
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Thu Sep 22 10:23:30 2016 -0500
+
+    FogBugz #405912-3: socfpga: DTS: remove reset-names for hps bridges
+    
+    No longer need to specify reset-names for hps bridges.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 5c6e26e65d209ee8e20657077503feeba717d7c7
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Thu Sep 22 10:23:30 2016 -0500
+
+    FogBugz #405912-2: socfpga: eliminate need to specify reset names
+    
+    Use of_reset_control_get_by_index since only one reset
+    is used by driver.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 913af19d6609954b2111fbd0dc9d86ea0fd92790
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Thu Sep 22 10:23:30 2016 -0500
+
+    FogBugz #405912-1: doc: socfpga: eliminate need to specify reset names
+    
+    Only one reset is used; no need to specify reset names.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 3d5eccb78392d9e9288be05b4e10681fe8b0d330
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Tue Oct 4 13:34:32 2016 -0700
+
+    FogBugz #403733-2: completely configure l2c_aux_val
+    
+    Depending on the execution path, the A10 boot rom may or
+    may not set some bits in the l2c aux ctrl register.  Due to this
+    abiguity, linux must explicitly set the register.  This patch
+    forces the configuration to match the full boot flow, which
+    also matches the setting used in the 3.10-ltsi version of the
+    kernel.
+    
+    Signed-off-by: Matthew Gerlach <matthew.gerlach@intel.com>
+    ---
+    v2:
+        removed redundant EARLY_BRESP and FULL_LINE_ZERO
+
+commit bd738b1d1cb6c4c99cf4c7658b137eb53279c6af
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Sep 19 13:59:04 2016 -0500
+
+    FogBugz #403733: Update cache settings for A10
+    
+    The L2 Cache settings for Arria10 need to have the
+    L2C_AUX_CTRL_SHARED_OVERRIDE bit set to prevent an ethernet crash.
+    
+    This commit should only be applicable to a downstream LTSI branch, as
+    the upstream kernels, this bit should get set by the bootloader.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit d8ca51ceba575aed5babb608684a8e8769f7613a
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Thu Sep 22 10:36:43 2016 -0500
+
+    FogBugz #384748: socfpga: use devm_clk_get
+    
+    Need to use devm_clk_get to eliminate need to do
+    clk_put's.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit cf309a58a46d1cdb1e6322a6d7ec7caf83522932
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Thu Sep 22 10:17:45 2016 -0500
+
+    FogBugz #405861: socfpga: remove unneeded clk_put
+    
+    Using devm_clk_get to get clocks, so clk_put's should
+    not be used.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 4134d284d69a40b95bc0b40fb28dc361792ccd1b
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Fri Sep 30 14:25:10 2016 -0700
+
+    FogBugz #408205: fix printf format error
+    
+    The version 4.8.5 of gcc complains when %d is
+    used to printf a variable of size_t.  Using %zu
+    fixes the problem.
+    
+    Signed-off-by: Matthew Gerlach <matthew.gerlach@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi
+
+commit 9689ce4f759ad0f13f6911d1f1309384f2b05f91
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Jun 13 14:17:04 2016 -0500
+
+    FogBugz #384750: altera-hps2fpga: don't look up l3regs for f2h
+    
+    The fpga2hps bridge support doesn't write the l3regs, so don't
+    look up the l3regs syscon in the probe function for that one
+    bridge.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 51a3fc013ef9d27ee8692dfa9d35de325cb0add4
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Jun 20 15:41:48 2016 -0500
+
+    FogBugz #384748: altera-hps2fpga: leak due to not releasing clocks
+    
+    Was getting clocks and never letting them go.  Use devm_clk_get
+    to remedy this.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v2: remove clk_put()
+
+commit 19f45b018bec1cd0a806550c5a03bcabc4937730
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue Oct 18 11:00:28 2016 -0500
+
+    Revert "FogBugz #384748: socfpga: use devm_clk_get"
+    
+    This reverts commit 5edf531426040ef02e9bd67472036aa82b5aef0e.
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi-rt
+
+commit ae24f5c381017020be89d0f0e9aeb40952e806d3
+Author: Matthew Gerlach <matthew.gerlach@intel.com>
+Date:   Thu Sep 15 11:47:21 2016 -0700
+
+    FogBugz #403389-1: Altera Partial Reconfiguration IP Core
+    
+    Add device tree bindings documentation for the Altera
+    Partial Reconfiguration IP Core.
+    
+    Signed-off-by: Matthew Gerlach <matthew.gerlach@intel.com>
+    ---
+    v2: change name to match documentation
+
+commit 49d47074d3caf7235a374720b089cd92e10a1f94
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Thu Sep 22 10:36:43 2016 -0500
+
+    FogBugz #384748: socfpga: use devm_clk_get
+    
+    Need to use devm_clk_get to eliminate need to do
+    clk_put's.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 5869074a9cac5da23f937debb54dc429eb41a0dc
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Thu Sep 22 10:17:45 2016 -0500
+
+    FogBugz #405861: socfpga: remove unneeded clk_put
+    
+    Using devm_clk_get to get clocks, so clk_put's should
+    not be used.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit cd4d746b1407ff4f111f1d8d8dd03796b06b6932
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Tue Oct 4 13:34:32 2016 -0700
+
+    FogBugz #403733-2: completely configure l2c_aux_val
+    
+    Depending on the execution path, the A10 boot rom may or
+    may not set some bits in the l2c aux ctrl register.  Due to this
+    abiguity, linux must explicitly set the register.  This patch
+    forces the configuration to match the full boot flow, which
+    also matches the setting used in the 3.10-ltsi version of the
+    kernel.
+    
+    Signed-off-by: Matthew Gerlach <matthew.gerlach@intel.com>
+    ---
+    v2:
+        removed redundant EARLY_BRESP and FULL_LINE_ZERO
+
+commit 636239688738eb8e44eda39407fa44f51789eb66
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Fri Sep 30 14:25:10 2016 -0700
+
+    FogBugz #408205: fix printf format error
+    
+    The version 4.8.5 of gcc complains when %d is
+    used to printf a variable of size_t.  Using %zu
+    fixes the problem.
+    
+    Signed-off-by: Matthew Gerlach <matthew.gerlach@intel.com>
+
+-----------------------------------------------------------------------
+

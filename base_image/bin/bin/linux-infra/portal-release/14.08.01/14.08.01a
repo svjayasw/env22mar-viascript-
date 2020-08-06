@@ -1,0 +1,939 @@
+
+
+If this is Wednesday, this is a script-generated report of what we will push to the portal on Friday.
+
+However if this is Friday, this is a script-generated report of what we just pushed out to the portal.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.15
+branch tag  : rel_socfpga-3.15_14.08.01
+new commits : 12
+25deacd Ley Foon Tan FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+98200b3 Ley Foon Tan FogBugz #216207: nios2: fix pfn_valid range
+0c0ec25 Ley Foon Tan FogBugz #143478: drivers/misc: Move sysid from arch to drivers
+f36b25c Ley Foon Tan FogBugz #109717: Removed unused sysid driver from drivers/misc.
+4e6c2eb Ley Foon Tan FogBugz #97184: Add Altera SYSID soft IP driver
+1d4b8e8 cnphoon FogBugz #178225: Add Altera interrupt latency counter driver
+6e9d66e Ley Foon Tan FogBugz #194497: mailbox: Fixed compilation warning
+648a6b3 Ley Foon Tan FogBugz #144109: Remove extra lines from license header
+5a534c9 Ley Foon Tan FogBugz #141478: Use "linux,mailbox-name" from DTS
+23d1e3a Ley Foon Tan FogBugz #138164: Add Altera mailbox driver
+6f0c7bf Ley Foon Tan FogBugz #143451: Fix mutex compatible string
+033d22b Ley Foon Tan FogBugz #138162: Add Altera hardware mutex driver
+
+
+++wiki:
+*Branch name*: socfpga-3.15, *Tag name:* rel_socfpga-3.15_14.08.01
+| *ID* | *Comment* | *GIT Commit* |
+| 216208 | nios2: fix warning from get_fb_unmapped_area | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=25deacde98fd5771e5e3ffee008113d0bea56180 ][ 25deacde98fd5771e5e3ffee008113d0bea56180 ]] |
+| 216207 | nios2: fix pfn_valid range | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=98200b36f9e9a729c071b5a42c712c3862fcd0be ][ 98200b36f9e9a729c071b5a42c712c3862fcd0be ]] |
+| 143478 | drivers/misc: Move sysid from arch to drivers | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=0c0ec257895fd8b9915baa87aa52cc9b12408207 ][ 0c0ec257895fd8b9915baa87aa52cc9b12408207 ]] |
+| 109717 | Removed unused sysid driver from drivers/misc. | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=f36b25c47d3609837494381a67f96bb78caacbad ][ f36b25c47d3609837494381a67f96bb78caacbad ]] |
+| 97184 | Add Altera SYSID soft IP driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=4e6c2eb84685145ef4c208a7f705d81453369253 ][ 4e6c2eb84685145ef4c208a7f705d81453369253 ]] |
+| 178225 | Add Altera interrupt latency counter driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=1d4b8e84141d6ba3b8ecc7b5331b910873eb8c87 ][ 1d4b8e84141d6ba3b8ecc7b5331b910873eb8c87 ]] |
+| 194497 | mailbox: Fixed compilation warning | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6e9d66e7b515d72fe9a17c2a1e133a6d9cd7742f ][ 6e9d66e7b515d72fe9a17c2a1e133a6d9cd7742f ]] |
+| 144109 | Remove extra lines from license header | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=648a6b38e71e3917547c8e31c87a26de652408f6 ][ 648a6b38e71e3917547c8e31c87a26de652408f6 ]] |
+| 141478 | Use "linux,mailbox-name" from DTS | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=5a534c9263cae3159521062ed02a4808b2123c98 ][ 5a534c9263cae3159521062ed02a4808b2123c98 ]] |
+| 138164 | Add Altera mailbox driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=23d1e3afbfe0dfbc8237c714ae40166f3b0ddaa7 ][ 23d1e3afbfe0dfbc8237c714ae40166f3b0ddaa7 ]] |
+| 143451 | Fix mutex compatible string | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6f0c7bf7cc46ba1f2a866487b4f350b688710528 ][ 6f0c7bf7cc46ba1f2a866487b4f350b688710528 ]] |
+| 138162 | Add Altera hardware mutex driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=033d22be2a8c2d3fa371b37ee7b238da312636ae ][ 033d22be2a8c2d3fa371b37ee7b238da312636ae ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.08.01
+new commits : 13
+3c9c2ba Ley Foon Tan FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+37c1d99 Ley Foon Tan FogBugz #216207: nios2: fix pfn_valid range
+5c6a7fe Alan Tull FogBugz #215085: gpio-dw: remove old bindings
+591aee7 Alan Tull FogBugz #211575: gpio-dwapb: backport to 3.10-ltsi
+9094046 Fabio Estevam genirq: generic-chip: Export some irq_gc_ functions
+b685946 Sebastian Andrzej Siewior gpio: dwapb: drop irq_setup_generic_chip()
+1d78df8 Alan Tull FogBugz #99945-2: add gpio-dwapb driver to defconfig and dts
+0f5bc5c Sebastian Andrzej Siewior ARM: dts: socfpga: add gpio pieces
+e2bb8b7 Sebastian Andrzej Siewior gpio: dwapb: correct gpio-cells in binding document
+6005ce3 Alan Tull gpio: gpio-dwapb size-cells should be two
+621690b Alan Tull fix build error in gpio-dwapb patch
+231b5cb Jamie Iles gpio: add a driver for the Synopsys DesignWare APB GPIO block
+a7552f1 Alan Tull FogBugz #99945-1: Remove gpio-dw driver
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.08.01
+| *ID* | *Comment* | *GIT Commit* |
+| 216208 | nios2: fix warning from get_fb_unmapped_area | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=3c9c2baa8b74ea3834503ce7df899325c3bd4303 ][ 3c9c2baa8b74ea3834503ce7df899325c3bd4303 ]] |
+| 216207 | nios2: fix pfn_valid range | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=37c1d9964019a7832f191b5898c4d4429c181a0c ][ 37c1d9964019a7832f191b5898c4d4429c181a0c ]] |
+| 215085 | gpio-dw: remove old bindings | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=5c6a7fe950610ca15b32f9b74ef97ee6921d8a4e ][ 5c6a7fe950610ca15b32f9b74ef97ee6921d8a4e ]] |
+| 211575 | gpio-dwapb: backport to 3.10-ltsi | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=591aee7f142e39dc8429e03b29e5aa6cb11326d9 ][ 591aee7f142e39dc8429e03b29e5aa6cb11326d9 ]] |
+| community | genirq: generic-chip: Export some irq_gc_ functions | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=9094046332d86f19d00176f14425fcb2614d95f3 ][ 9094046332d86f19d00176f14425fcb2614d95f3 ]] |
+| community | gpio: dwapb: drop irq_setup_generic_chip() | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=b685946e29e864fccc30e8d27623f9539a101e03 ][ b685946e29e864fccc30e8d27623f9539a101e03 ]] |
+| 99945-2 | add gpio-dwapb driver to defconfig and dts | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=1d78df8bd5a08ea097800f2069ac32bc19f7b2b1 ][ 1d78df8bd5a08ea097800f2069ac32bc19f7b2b1 ]] |
+| community | ARM: dts: socfpga: add gpio pieces | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=0f5bc5cd0c35c1b9b2fde2d37963fa3c5bd149b5 ][ 0f5bc5cd0c35c1b9b2fde2d37963fa3c5bd149b5 ]] |
+| community | gpio: dwapb: correct gpio-cells in binding document | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=e2bb8b7f13c57508974af101cca73eb4f4e21788 ][ e2bb8b7f13c57508974af101cca73eb4f4e21788 ]] |
+| community | gpio: gpio-dwapb size-cells should be two | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6005ce34873cdece52da27d4e43c501ada45d7a6 ][ 6005ce34873cdece52da27d4e43c501ada45d7a6 ]] |
+| community | fix build error in gpio-dwapb patch | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=621690b528132914087f7f312bf5e4f454790433 ][ 621690b528132914087f7f312bf5e4f454790433 ]] |
+| community | gpio: add a driver for the Synopsys DesignWare APB GPIO block | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=231b5cbb218523fce62128515cc94f8e867a4294 ][ 231b5cbb218523fce62128515cc94f8e867a4294 ]] |
+| 99945-1 | Remove gpio-dw driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a7552f100d1d7320ce617e687ede78b510dd7cc6 ][ a7552f100d1d7320ce617e687ede78b510dd7cc6 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_14.08.01
+new commits : 14
+dfe62c0 Ley Foon Tan FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+1fac6f9 Ley Foon Tan FogBugz #216207: nios2: fix pfn_valid range
+8c558ac Alan Tull FogBugz #215085: gpio-dw: remove old bindings
+6bfc528 Alan Tull FogBugz #211575: gpio-dwapb: backport to 3.10-ltsi
+34099b0 Fabio Estevam genirq: generic-chip: Export some irq_gc_ functions
+f135507 Sebastian Andrzej Siewior gpio: dwapb: drop irq_setup_generic_chip()
+aca05b1 Alan Tull FogBugz #99945-2: add gpio-dwapb driver to defconfig and dts
+941b5e0 Sebastian Andrzej Siewior ARM: dts: socfpga: add gpio pieces
+30e347b Sebastian Andrzej Siewior gpio: dwapb: correct gpio-cells in binding document
+32d3694 Alan Tull gpio: gpio-dwapb size-cells should be two
+10fe2a5 Alan Tull fix build error in gpio-dwapb patch
+80d2754 Jamie Iles gpio: add a driver for the Synopsys DesignWare APB GPIO block
+dfff316 Alan Tull FogBugz #99945-1: Remove gpio-dw driver
+4d8eb74 Ley Foon Tan FogBugz #214042: nios2: add nios2 gen2 dts support
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_14.08.01
+| *ID* | *Comment* | *GIT Commit* |
+| 216208 | nios2: fix warning from get_fb_unmapped_area | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=dfe62c07571b3ef37034c0ebd2910847288a904b ][ dfe62c07571b3ef37034c0ebd2910847288a904b ]] |
+| 216207 | nios2: fix pfn_valid range | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=1fac6f9a07f046b9d24f336c105178d46cea0f72 ][ 1fac6f9a07f046b9d24f336c105178d46cea0f72 ]] |
+| 215085 | gpio-dw: remove old bindings | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=8c558ac3bf77a5b9fb47c62920ea38e117d8b6e5 ][ 8c558ac3bf77a5b9fb47c62920ea38e117d8b6e5 ]] |
+| 211575 | gpio-dwapb: backport to 3.10-ltsi | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6bfc52813af6f179a83d4a2eef1b9d2d5056aeff ][ 6bfc52813af6f179a83d4a2eef1b9d2d5056aeff ]] |
+| community | genirq: generic-chip: Export some irq_gc_ functions | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=34099b08f7336efb716c7b2a82900e8c771f2bc8 ][ 34099b08f7336efb716c7b2a82900e8c771f2bc8 ]] |
+| community | gpio: dwapb: drop irq_setup_generic_chip() | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=f135507a9cceefa55374b771d5b78ad13f39d8ac ][ f135507a9cceefa55374b771d5b78ad13f39d8ac ]] |
+| 99945-2 | add gpio-dwapb driver to defconfig and dts | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=aca05b1c0bcf888ee8bcdae13f5584643fe76483 ][ aca05b1c0bcf888ee8bcdae13f5584643fe76483 ]] |
+| community | ARM: dts: socfpga: add gpio pieces | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=941b5e06671717f953a2da795248b45890203022 ][ 941b5e06671717f953a2da795248b45890203022 ]] |
+| community | gpio: dwapb: correct gpio-cells in binding document | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=30e347b3c7905e4136ac492b54dc2f018da8270c ][ 30e347b3c7905e4136ac492b54dc2f018da8270c ]] |
+| community | gpio: gpio-dwapb size-cells should be two | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=32d3694ab9e7070e9678aa19adcae8757d06961b ][ 32d3694ab9e7070e9678aa19adcae8757d06961b ]] |
+| community | fix build error in gpio-dwapb patch | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=10fe2a597c63b52714f41adbe69afa12d258c99c ][ 10fe2a597c63b52714f41adbe69afa12d258c99c ]] |
+| community | gpio: add a driver for the Synopsys DesignWare APB GPIO block | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=80d27542fcb04362c4e117405f8b93cb5400c1d1 ][ 80d27542fcb04362c4e117405f8b93cb5400c1d1 ]] |
+| 99945-1 | Remove gpio-dw driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=dfff316ab5dff3652368e960ff0f68d736d3d5d2 ][ dfff316ab5dff3652368e960ff0f68d736d3d5d2 ]] |
+| 214042 | nios2: add nios2 gen2 dts support | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=4d8eb74f48497e7de506569ad5f7a9db630d534a ][ 4d8eb74f48497e7de506569ad5f7a9db630d534a ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.10-ltsi-rt_14.08.01
+commit: dfe62c0 Ley Foon Tan FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+
+tag:    rel_socfpga-3.15_14.08.01
+commit: 25deacd Ley Foon Tan FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+
+tag:    rel_socfpga-3.10-ltsi_14.08.01
+commit: 3c9c2ba Ley Foon Tan FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.08.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.08.01
+commit: c2aa20d Chin Liang See FogBugz #210587: Fixing PLL HW configuration issue
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_14.08.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_14.08.01
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_14.08.01
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_14.08.01
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_14.08.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2013.12-socfpga_14.08.01
+commit: 86e1731 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2012.12-socfpga_14.08.01
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2014.06-socfpga_14.08.01
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_14.08.01
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_14.08.01
+new commits : 1
+4f25637 Graham Moore The new version of LAVA needs more options in meta-altera busybox utilities. A full-option busybox config file and bbappend Yocto recipe are added.
+
+
+++wiki:
+*Branch name*: angstrom-v2013.12-yocto1.5, *Tag name:* rel_angstrom-v2013.12-yocto1.5_14.08.01
+| *ID* | *Comment* | *GIT Commit* |
+| community | The new version of LAVA needs more options in meta-altera busybox utilities. A full-option busybox config file and bbappend Yocto recipe are added. | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=4f25637302c4713325271298c11c2ade3956f190 ][ 4f25637302c4713325271298c11c2ade3956f190 ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_14.08.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2014.06-yocto1.6_14.08.01
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2012.12-yocto1.3_14.08.01
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_14.08.01
+commit: 4f25637 Graham Moore The new version of LAVA needs more options in meta-altera busybox utilities. A full-option busybox config file and bbappend Yocto recipe are added.
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.15
+
+commit 25deacde98fd5771e5e3ffee008113d0bea56180
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 16 10:40:06 2014 +0800
+
+    FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+    
+    arch/nios2/kernel/sys_nios2.c: In function 'get_fb_unmapped_area':
+    
+    arch/nios2/kernel/sys_nios2.c:92:2: warning: return makes integer
+    from pointer without a cast [enabled by default]
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 98200b36f9e9a729c071b5a42c712c3862fcd0be
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 16 10:35:19 2014 +0800
+
+    FogBugz #216207: nios2: fix pfn_valid range
+    
+    pfn_valid should be between ARCH_PFN_OFFSET (start of memory) and
+    max_mapnr. max_mapnr is maximum page frame number and it is points
+    to end of memory now.
+    The original code will cause the kernel access to invalid and not exist
+    memory location.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 0c0ec257895fd8b9915baa87aa52cc9b12408207
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Aug 12 11:12:56 2013 +0800
+
+    FogBugz #143478: drivers/misc: Move sysid from arch to drivers
+    
+    Add sysid driver.
+    Usage:
+      cat /sys/bus/platform/devices/[addr.sysid]/sysid/id
+      cat /sys/bus/platform/devices/[addr.sysid]/sysid/timestamp
+    
+    v2:
+    - Updated license header
+    - Removed ID and timestamp from documentation
+    
+    v3:
+    - Removed ID and timestamp from optional properties in documentation
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit f36b25c47d3609837494381a67f96bb78caacbad
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Mar 25 16:14:30 2013 +0800
+
+    FogBugz #109717: Removed unused sysid driver from drivers/misc.
+    
+    Sysid feature is moved to arch/arm/mach-socfpga/socfpga.c
+    (see Fogbugz 106327).
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 4e6c2eb84685145ef4c208a7f705d81453369253
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Feb 5 13:23:32 2013 +0800
+
+    FogBugz #97184: Add Altera SYSID soft IP driver
+    
+    This is to add Altera System ID (sysid) soft IP driver.
+    Usage:
+    cat /sys/bus/platform/devices/[addr].sysid/sysid/id
+    cat /sys/bus/platform/devices/[addr].sysid/sysid/timestamp
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 1d4b8e84141d6ba3b8ecc7b5331b910873eb8c87
+Author: cnphoon <cnphoon@altera.com>
+Date:   Fri Feb 21 17:39:05 2014 +0800
+
+    FogBugz #178225: Add Altera interrupt latency counter driver
+    
+    Adding Altera interrupt latency counter driver support. This driver works
+    together with the Altera interrupt latency driver soft IP to measure the
+    time from the interrupt being asserted to the execution of the interrupt
+    service routine. This driver and soft ip supports for both edge and level
+    interrupt.
+    
+    V2:
+    - Update fifo-depth property name in device tree
+    - Update binding document to add sysfs path and use case
+    - Update includes header in alphabetical order
+    - Remove global variables
+    - Rename kfifo stucts naming to avoid confusion
+    - Validate offset return value
+    - Changing read and write register functions
+    - Update on misc coding styles and format
+    
+    V3:
+    - Update coding styles
+    - Update irq_request function
+    - Changing print out to dev_dbg() in ISR
+    - Fix ISR return values
+    
+    V4:
+    - Remove stray line
+    
+    Signed-off-by: Phoon Chee Nouk <cnphoon@altera.com>
+
+commit 6e9d66e7b515d72fe9a17c2a1e133a6d9cd7742f
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Apr 3 14:02:22 2014 +0800
+
+    FogBugz #194497: mailbox: Fixed compilation warning
+    
+    Compilation warning when compiling for x86_64.
+    config: make ARCH=x86_64 allmodconfig
+    drivers/mailbox/mailbox-altera.c:337:3: warning:
+    format '%d' expects argument of type 'int', but
+    argument 3 has type 'long unsigned int' [-Wformat=]
+    
+    v2:
+    - Change to use %zu
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 648a6b38e71e3917547c8e31c87a26de652408f6
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Aug 7 10:04:23 2013 +0800
+
+    FogBugz #144109: Remove extra lines from license header
+    
+    Follow approved GPLv2 header standard.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 5a534c9263cae3159521062ed02a4808b2123c98
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Jul 29 19:37:09 2013 +0800
+
+    FogBugz #141478: Use "linux,mailbox-name" from DTS
+    
+    Uses "linux,mailbox-name" from DTS. Sopc2dts tool already support
+    to add this property automatically.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 23d1e3afbfe0dfbc8237c714ae40166f3b0ddaa7
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 24 20:15:49 2013 +0800
+
+    FogBugz #138164: Add Altera mailbox driver
+    
+    Altera mailbox specific driver that uses the mailbox
+    common framework.
+    
+    v2:
+    - Updated documentation to include mailbox client node.
+    - Checked NULL pointer
+    - Read PTR register first.
+    - Changed full and pending functions to inline.
+    - Used macro for Pending and full mask/offset.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 6f0c7bf7cc46ba1f2a866487b4f350b688710528
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Aug 5 16:33:24 2013 +0800
+
+    FogBugz #143451: Fix mutex compatible string
+    
+    Fix mutex compatible string from mutex-1.0 to hwmutex-1.0.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 033d22be2a8c2d3fa371b37ee7b238da312636ae
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Jul 25 11:27:34 2013 +0800
+
+    FogBugz #138162: Add Altera hardware mutex driver
+    
+    Driver for Altera hardware mutex soft IP.
+    
+    v4:
+    - Changed pr_debug to pr_info.
+    
+    v3:
+    - Change dts compatible string from "altr,mutex-1.0"
+      to "altr,hwmutex-1.0"
+    
+    v2:
+    -Updated altera_mutex_request() for error handling message.
+    -Updated altera_mutex_unlock().
+    -Used of_match_ptr.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 3c9c2baa8b74ea3834503ce7df899325c3bd4303
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 16 10:40:06 2014 +0800
+
+    FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+    
+    arch/nios2/kernel/sys_nios2.c: In function 'get_fb_unmapped_area':
+    
+    arch/nios2/kernel/sys_nios2.c:92:2: warning: return makes integer
+    from pointer without a cast [enabled by default]
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 37c1d9964019a7832f191b5898c4d4429c181a0c
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 16 10:35:19 2014 +0800
+
+    FogBugz #216207: nios2: fix pfn_valid range
+    
+    pfn_valid should be between ARCH_PFN_OFFSET (start of memory) and
+    max_mapnr. max_mapnr is maximum page frame number and it is points
+    to end of memory now.
+    The original code will cause the kernel access to invalid and not exist
+    memory location.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 5c6a7fe950610ca15b32f9b74ef97ee6921d8a4e
+Author: Alan Tull <atull@altera.com>
+Date:   Wed Jul 9 09:22:39 2014 -0500
+
+    FogBugz #215085: gpio-dw: remove old bindings
+    
+    Replaced gpio-dw with upstreamed gpio-dwapb.  Need to clean up
+    by removing the bindings for the old driver.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+
+commit 591aee7f142e39dc8429e03b29e5aa6cb11326d9
+Author: Alan Tull <atull@altera.com>
+Date:   Wed Jun 18 12:24:07 2014 -0500
+
+    FogBugz #211575: gpio-dwapb: backport to 3.10-ltsi
+    
+    Backport gpio-dwapb to linux-3.10-ltsi.
+    
+    All the changes have to do with interrupts.
+     * Save trigger type for each gpio.
+     * Write gpio's EOI register directly in handler to ack irqs.
+     * Alloc with irq_alloc_generic_chip since
+       irq_alloc_domain_generic_chips didn't exist in 3.10
+    
+    This patch is to be added after the following patches:
+     Fabio Estevam : genirq: generic-chip: Export some irq_gc_ function
+     Sebastian Andrzej Siewior : gpio: dwapb: drop irq_setup_generic_chip()
+     Alan Tull : FogBugz #99945-2: add gpio-dwapb driver to defconfig and dts
+     Sebastian Andrzej Siewior : ARM: dts: socfpga: add gpio pieces
+     Sebastian Andrzej Siewior : gpio: dwapb: correct gpio-cells in binding doc
+     Alan Tull : gpio: gpio-dwapb size-cells should be two
+     Alan Tull : fix build error in gpio-dwapb patch
+     Jamie Iles : gpio: add a driver for the Synopsys DesignWare APB GPIO block
+     Alan Tull : FogBugz #99945-1: Remove gpio-dw driver
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    
+    v2: fix parameter order on irq_setup_generic_chip
+        fix eoi callback
+        don't irq_alloc_generic_chip for each gpio line == less changes.
+
+commit 9094046332d86f19d00176f14425fcb2614d95f3
+Author: Fabio Estevam <festevam@gmail.com>
+Date:   Fri Jun 28 00:23:09 2013 -0300
+
+    genirq: generic-chip: Export some irq_gc_ functions
+    
+    When building imx_v6_v7_defconfig with imx-drm drivers selected as
+    modules, we get the following build errors:
+    
+    ERROR: "irq_gc_mask_clr_bit" [drivers/staging/imx-drm/ipu-v3/imx-ipu-v3.ko] undefined!
+    ERROR: "irq_gc_mask_set_bit" [drivers/staging/imx-drm/ipu-v3/imx-ipu-v3.ko] undefined!
+    ERROR: "irq_gc_ack_set_bit" [drivers/staging/imx-drm/ipu-v3/imx-ipu-v3.ko] undefined!
+    
+    Export the required functions to avoid this problem.
+    
+    Signed-off-by: Fabio Estevam <fabio.estevam@freescale.com>
+    Cc: shawn.guo@linaro.org
+    Cc: kernel@pengutronix.de
+    Link: http://lkml.kernel.org/r/1372389789-7048-1-git-send-email-festevam@gmail.com
+    Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
+
+commit b685946e29e864fccc30e8d27623f9539a101e03
+Author: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+Date:   Mon Apr 7 12:13:05 2014 +0200
+
+    gpio: dwapb: drop irq_setup_generic_chip()
+    
+    The driver calls irq_alloc_domain_generic_chips() which creates a gc and
+    adds it to gc_list. The driver later then calls irq_setup_generic_chip()
+    which also initializes the gc and adds it to the gc_list() and this
+    corrupts the list. Enable LIST_DEBUG and you see the kernel complain.
+    This isn't required, irq_alloc_domain_generic_chips() did the init.
+    
+    Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+    Signed-off-by: Alan Tull <atull@altera.com>
+
+commit 1d78df8bd5a08ea097800f2069ac32bc19f7b2b1
+Author: Alan Tull <atull@altera.com>
+Date:   Thu Mar 6 16:22:27 2014 -0600
+
+    FogBugz #99945-2: add gpio-dwapb driver to defconfig and dts
+    
+    * Add the gpio-dwapb driver to the defconfig and device tree.
+    * Fix LED definitions in device tree
+    * Move the LED definitions that are specific to the Altera
+      CycloneV socdk board to the proper device tree file.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    
+    v4: remove socfpga.dtsi changes which were upstreamed
+        fix led definitions to match upstream socfpga.dtsi
+        enable gpios in cyclone5 and arria5 dtsi
+    v3: fix arria5 socdk led definitions
+        move cyclone5 led definitions to cyclone5 socdk dts
+        move clock property to gpio main node, not gpio port nodes
+    v2: fix cyclone5 led definitions
+
+commit 0f5bc5cd0c35c1b9b2fde2d37963fa3c5bd149b5
+Author: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+Date:   Thu Mar 20 18:21:55 2014 -0500
+
+    ARM: dts: socfpga: add gpio pieces
+    
+    The cycloneV has three gpio controllers, each one with 29 gpios. This patch
+    adds the three controller with the gpio driver which is now sitting the
+    gpio tree.
+    
+    Cc: devicetree@vger.kernel.org
+    Acked-by: Alan Tull <atull@altera.com>
+    Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit e2bb8b7f13c57508974af101cca73eb4f4e21788
+Author: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+Date:   Sat Mar 22 17:16:39 2014 +0100
+
+    gpio: dwapb: correct gpio-cells in binding document
+    
+    The example uses gpio-cells = 1 while it should be two (it is even
+    mentioned in the text above).
+    
+    Cc: devicetree@vger.kernel.org
+    Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+    Signed-off-by: Linus Walleij <linus.walleij@linaro.org>
+
+commit 6005ce34873cdece52da27d4e43c501ada45d7a6
+Author: Alan Tull <atull@altera.com>
+Date:   Fri Mar 14 11:08:54 2014 -0500
+
+    gpio: gpio-dwapb size-cells should be two
+    
+    Fix size-cells to show use of OF_GPIO_ACTIVE_LOW flag.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    Signed-off-by: Linus Walleij <linus.walleij@linaro.org>
+
+commit 621690b528132914087f7f312bf5e4f454790433
+Author: Alan Tull <atull@altera.com>
+Date:   Thu Mar 6 13:29:40 2014 -0600
+
+    fix build error in gpio-dwapb patch
+    
+    fix build error with this message:
+    kernel/irq/Kconfig:41:error: recursive dependency detected!
+    kernel/irq/Kconfig:41:  symbol GENERIC_IRQ_CHIP is selected by GPIO_DWAPB
+    drivers/gpio/Kconfig:131:       symbol GPIO_DWAPB depends on IRQ_DOMAIN
+    kernel/irq/Kconfig:46:  symbol IRQ_DOMAIN is selected by GENERIC_IRQ_CHIP
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    Signed-off-by: Linus Walleij <linus.walleij@linaro.org>
+
+commit 231b5cbb218523fce62128515cc94f8e867a4294
+Author: Jamie Iles <jamie@jamieiles.com>
+Date:   Tue Feb 25 17:01:01 2014 -0600
+
+    gpio: add a driver for the Synopsys DesignWare APB GPIO block
+    
+    The Synopsys DesignWare block is used in some ARM devices (picoxcell)
+    and can be configured to provide multiple banks of GPIO pins.
+    
+    v12: - Add irq_startup/shutdown
+         - do irq_create_mapping() in probe, irq_find_mapping() in to_irq()
+         - Adjust mappings to show support for 1 gpio per port.
+         - gpio-cells = <1>
+    v11: - Use NULL when checking existence of 'interrupts' property
+         - Bindings descriptions cleanup
+    v10: - in documentation nr-gpio -> nr-gpios
+    v9:  - cleanup in dt bindings doc
+         - use of_get_child_count()
+    v8:  - remove socfpga.dtsi changes
+         - minor cleanup in devicetree documentation
+    v7:  - use irq_generic_chip
+         - support one irq per gpio line or one irq for many
+         - s/bank/port/ and other cleanup
+    v6:  - (atull) squash the set of patches
+         - use linear irq domain
+         - build fixes. Original driver was reviewed on v3.2.
+         - Fix setting irq edge type for 'rising' and 'both'.
+         - Support as a loadable module.
+         - Use bgpio_chip's spinlock during register access.
+         - Clean up register names to match spec
+         - s/bank/port/ because register names use the word 'port'
+         - s/nr-gpio/nr-gpios/
+         - don't get/put the of_node
+         - remove signoffs/acked-by's because of changes
+         - other cleanup
+    v5:  - handle sparse bank population correctly
+    v3:  - depend on rather than select IRQ_DOMAIN
+         - split IRQ support into a separate patch
+    v2:  - use Rob Herring's irqdomain in generic irq chip patches
+         - use reg property to indicate bank index
+         - support irqs on both edges based on LinusW's u300 driver
+    
+    Signed-off-by: Jamie Iles <jamie@jamieiles.com>
+    Signed-off-by: Alan Tull <atull@altera.com>
+    Reviewed-by: Sebastian Hesselbarth <sebastian.hesselbarth@gmail.com>
+    Signed-off-by: Linus Walleij <linus.walleij@linaro.org>
+
+commit a7552f100d1d7320ce617e687ede78b510dd7cc6
+Author: Alan Tull <atull@altera.com>
+Date:   Thu Oct 24 17:17:59 2013 -0500
+
+    FogBugz #99945-1: Remove gpio-dw driver
+    
+    To support the DesignWare gpio with interrupts, we are moving to
+    the upstreamed gpio-dwapb driver.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit dfe62c07571b3ef37034c0ebd2910847288a904b
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 16 10:40:06 2014 +0800
+
+    FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+    
+    arch/nios2/kernel/sys_nios2.c: In function 'get_fb_unmapped_area':
+    
+    arch/nios2/kernel/sys_nios2.c:92:2: warning: return makes integer
+    from pointer without a cast [enabled by default]
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 1fac6f9a07f046b9d24f336c105178d46cea0f72
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 16 10:35:19 2014 +0800
+
+    FogBugz #216207: nios2: fix pfn_valid range
+    
+    pfn_valid should be between ARCH_PFN_OFFSET (start of memory) and
+    max_mapnr. max_mapnr is maximum page frame number and it is points
+    to end of memory now.
+    The original code will cause the kernel access to invalid and not exist
+    memory location.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 8c558ac3bf77a5b9fb47c62920ea38e117d8b6e5
+Author: Alan Tull <atull@altera.com>
+Date:   Wed Jul 9 09:22:39 2014 -0500
+
+    FogBugz #215085: gpio-dw: remove old bindings
+    
+    Replaced gpio-dw with upstreamed gpio-dwapb.  Need to clean up
+    by removing the bindings for the old driver.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+
+commit 6bfc52813af6f179a83d4a2eef1b9d2d5056aeff
+Author: Alan Tull <atull@altera.com>
+Date:   Wed Jun 18 12:24:07 2014 -0500
+
+    FogBugz #211575: gpio-dwapb: backport to 3.10-ltsi
+    
+    Backport gpio-dwapb to linux-3.10-ltsi.
+    
+    All the changes have to do with interrupts.
+     * Save trigger type for each gpio.
+     * Write gpio's EOI register directly in handler to ack irqs.
+     * Alloc with irq_alloc_generic_chip since
+       irq_alloc_domain_generic_chips didn't exist in 3.10
+    
+    This patch is to be added after the following patches:
+     Fabio Estevam : genirq: generic-chip: Export some irq_gc_ function
+     Sebastian Andrzej Siewior : gpio: dwapb: drop irq_setup_generic_chip()
+     Alan Tull : FogBugz #99945-2: add gpio-dwapb driver to defconfig and dts
+     Sebastian Andrzej Siewior : ARM: dts: socfpga: add gpio pieces
+     Sebastian Andrzej Siewior : gpio: dwapb: correct gpio-cells in binding doc
+     Alan Tull : gpio: gpio-dwapb size-cells should be two
+     Alan Tull : fix build error in gpio-dwapb patch
+     Jamie Iles : gpio: add a driver for the Synopsys DesignWare APB GPIO block
+     Alan Tull : FogBugz #99945-1: Remove gpio-dw driver
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    
+    v2: fix parameter order on irq_setup_generic_chip
+        fix eoi callback
+        don't irq_alloc_generic_chip for each gpio line == less changes.
+
+commit 34099b08f7336efb716c7b2a82900e8c771f2bc8
+Author: Fabio Estevam <festevam@gmail.com>
+Date:   Fri Jun 28 00:23:09 2013 -0300
+
+    genirq: generic-chip: Export some irq_gc_ functions
+    
+    When building imx_v6_v7_defconfig with imx-drm drivers selected as
+    modules, we get the following build errors:
+    
+    ERROR: "irq_gc_mask_clr_bit" [drivers/staging/imx-drm/ipu-v3/imx-ipu-v3.ko] undefined!
+    ERROR: "irq_gc_mask_set_bit" [drivers/staging/imx-drm/ipu-v3/imx-ipu-v3.ko] undefined!
+    ERROR: "irq_gc_ack_set_bit" [drivers/staging/imx-drm/ipu-v3/imx-ipu-v3.ko] undefined!
+    
+    Export the required functions to avoid this problem.
+    
+    Signed-off-by: Fabio Estevam <fabio.estevam@freescale.com>
+    Cc: shawn.guo@linaro.org
+    Cc: kernel@pengutronix.de
+    Link: http://lkml.kernel.org/r/1372389789-7048-1-git-send-email-festevam@gmail.com
+    Signed-off-by: Thomas Gleixner <tglx@linutronix.de>
+
+commit f135507a9cceefa55374b771d5b78ad13f39d8ac
+Author: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+Date:   Mon Apr 7 12:13:05 2014 +0200
+
+    gpio: dwapb: drop irq_setup_generic_chip()
+    
+    The driver calls irq_alloc_domain_generic_chips() which creates a gc and
+    adds it to gc_list. The driver later then calls irq_setup_generic_chip()
+    which also initializes the gc and adds it to the gc_list() and this
+    corrupts the list. Enable LIST_DEBUG and you see the kernel complain.
+    This isn't required, irq_alloc_domain_generic_chips() did the init.
+    
+    Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+    Signed-off-by: Alan Tull <atull@altera.com>
+
+commit aca05b1c0bcf888ee8bcdae13f5584643fe76483
+Author: Alan Tull <atull@altera.com>
+Date:   Thu Mar 6 16:22:27 2014 -0600
+
+    FogBugz #99945-2: add gpio-dwapb driver to defconfig and dts
+    
+    * Add the gpio-dwapb driver to the defconfig and device tree.
+    * Fix LED definitions in device tree
+    * Move the LED definitions that are specific to the Altera
+      CycloneV socdk board to the proper device tree file.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    
+    v4: remove socfpga.dtsi changes which were upstreamed
+        fix led definitions to match upstream socfpga.dtsi
+        enable gpios in cyclone5 and arria5 dtsi
+    v3: fix arria5 socdk led definitions
+        move cyclone5 led definitions to cyclone5 socdk dts
+        move clock property to gpio main node, not gpio port nodes
+    v2: fix cyclone5 led definitions
+
+commit 941b5e06671717f953a2da795248b45890203022
+Author: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+Date:   Thu Mar 20 18:21:55 2014 -0500
+
+    ARM: dts: socfpga: add gpio pieces
+    
+    The cycloneV has three gpio controllers, each one with 29 gpios. This patch
+    adds the three controller with the gpio driver which is now sitting the
+    gpio tree.
+    
+    Cc: devicetree@vger.kernel.org
+    Acked-by: Alan Tull <atull@altera.com>
+    Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 30e347b3c7905e4136ac492b54dc2f018da8270c
+Author: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+Date:   Sat Mar 22 17:16:39 2014 +0100
+
+    gpio: dwapb: correct gpio-cells in binding document
+    
+    The example uses gpio-cells = 1 while it should be two (it is even
+    mentioned in the text above).
+    
+    Cc: devicetree@vger.kernel.org
+    Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+    Signed-off-by: Linus Walleij <linus.walleij@linaro.org>
+
+commit 32d3694ab9e7070e9678aa19adcae8757d06961b
+Author: Alan Tull <atull@altera.com>
+Date:   Fri Mar 14 11:08:54 2014 -0500
+
+    gpio: gpio-dwapb size-cells should be two
+    
+    Fix size-cells to show use of OF_GPIO_ACTIVE_LOW flag.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    Signed-off-by: Linus Walleij <linus.walleij@linaro.org>
+
+commit 10fe2a597c63b52714f41adbe69afa12d258c99c
+Author: Alan Tull <atull@altera.com>
+Date:   Thu Mar 6 13:29:40 2014 -0600
+
+    fix build error in gpio-dwapb patch
+    
+    fix build error with this message:
+    kernel/irq/Kconfig:41:error: recursive dependency detected!
+    kernel/irq/Kconfig:41:  symbol GENERIC_IRQ_CHIP is selected by GPIO_DWAPB
+    drivers/gpio/Kconfig:131:       symbol GPIO_DWAPB depends on IRQ_DOMAIN
+    kernel/irq/Kconfig:46:  symbol IRQ_DOMAIN is selected by GENERIC_IRQ_CHIP
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    Signed-off-by: Linus Walleij <linus.walleij@linaro.org>
+
+commit 80d27542fcb04362c4e117405f8b93cb5400c1d1
+Author: Jamie Iles <jamie@jamieiles.com>
+Date:   Tue Feb 25 17:01:01 2014 -0600
+
+    gpio: add a driver for the Synopsys DesignWare APB GPIO block
+    
+    The Synopsys DesignWare block is used in some ARM devices (picoxcell)
+    and can be configured to provide multiple banks of GPIO pins.
+    
+    v12: - Add irq_startup/shutdown
+         - do irq_create_mapping() in probe, irq_find_mapping() in to_irq()
+         - Adjust mappings to show support for 1 gpio per port.
+         - gpio-cells = <1>
+    v11: - Use NULL when checking existence of 'interrupts' property
+         - Bindings descriptions cleanup
+    v10: - in documentation nr-gpio -> nr-gpios
+    v9:  - cleanup in dt bindings doc
+         - use of_get_child_count()
+    v8:  - remove socfpga.dtsi changes
+         - minor cleanup in devicetree documentation
+    v7:  - use irq_generic_chip
+         - support one irq per gpio line or one irq for many
+         - s/bank/port/ and other cleanup
+    v6:  - (atull) squash the set of patches
+         - use linear irq domain
+         - build fixes. Original driver was reviewed on v3.2.
+         - Fix setting irq edge type for 'rising' and 'both'.
+         - Support as a loadable module.
+         - Use bgpio_chip's spinlock during register access.
+         - Clean up register names to match spec
+         - s/bank/port/ because register names use the word 'port'
+         - s/nr-gpio/nr-gpios/
+         - don't get/put the of_node
+         - remove signoffs/acked-by's because of changes
+         - other cleanup
+    v5:  - handle sparse bank population correctly
+    v3:  - depend on rather than select IRQ_DOMAIN
+         - split IRQ support into a separate patch
+    v2:  - use Rob Herring's irqdomain in generic irq chip patches
+         - use reg property to indicate bank index
+         - support irqs on both edges based on LinusW's u300 driver
+    
+    Signed-off-by: Jamie Iles <jamie@jamieiles.com>
+    Signed-off-by: Alan Tull <atull@altera.com>
+    Reviewed-by: Sebastian Hesselbarth <sebastian.hesselbarth@gmail.com>
+    Signed-off-by: Linus Walleij <linus.walleij@linaro.org>
+
+commit dfff316ab5dff3652368e960ff0f68d736d3d5d2
+Author: Alan Tull <atull@altera.com>
+Date:   Thu Oct 24 17:17:59 2013 -0500
+
+    FogBugz #99945-1: Remove gpio-dw driver
+    
+    To support the DesignWare gpio with interrupts, we are moving to
+    the upstreamed gpio-dwapb driver.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+
+commit 4d8eb74f48497e7de506569ad5f7a9db630d534a
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 16 10:55:25 2014 +0800
+
+    FogBugz #214042: nios2: add nios2 gen2 dts support
+    
+    Add nios2 gen2 dts support. Software will search for altr first and
+    then search for ALTR if can't find with altr prefix.
+    This is to backward compatible with nios2 legacy (with ALTR prefix).
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2013.12-yocto1.5
+
+commit 4f25637302c4713325271298c11c2ade3956f190
+Author: Graham Moore <grmoore@altera.com>
+Date:   Mon Jul 28 15:41:08 2014 -0500
+
+    The new version of LAVA needs more options in meta-altera busybox utilities.
+    A full-option busybox config file and bbappend Yocto recipe are added.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+-----------------------------------------------------------------------
+

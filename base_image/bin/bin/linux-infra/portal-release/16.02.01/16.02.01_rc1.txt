@@ -1,0 +1,99 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.3
+branch tag  : rel_socfpga-4.3_16.02.01_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_16.02.01_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_16.02.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.3_16.02.01_rc1
+commit: 36cbe30 Tien Hock Loh FogBugz #338696: Update socfpga_defconfig for PCI-E reference design
+
+tag:    rel_socfpga-3.10-ltsi_16.02.01_rc1
+commit: 22e8856 Matthew Gerlach FogBugz #340555: Fix A10 failure to receieve 1Gb ethernet traffic
+
+tag:    rel_socfpga-3.10-ltsi-rt_16.02.01_rc1
+commit: 0de1eb3 Matthew Gerlach FogBugz #340555: Fix A10 failure to receieve 1Gb ethernet traffic
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.02.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.02.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.02.01_rc1
+commit: d141e21 Chin Liang See arm: Switch to -mno-unaligned-access when supported by the compiler
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.02.01_rc1
+commit: 570a0b5 Tien Fong Chee FogBugz #346622-5: Extend Early I/O release support to QSPI boot flow.
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.02.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.02.01_rc1
+commit: bc6ea8d Tien Hock Loh FogBugz #327063: Update commit ID to include fix for syschk refresh rate issue
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.02.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.02.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.02.01_rc1
+commit: 8d6e9b4 Yves Vandervennet Support for the kernel v4.3
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.02.01_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+

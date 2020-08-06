@@ -1,0 +1,180 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.11
+branch tag  : rel_socfpga-4.11_17.09.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.09.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.09.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.11_17.09.01_rc1
+commit: d085116 Richard Gong Revert "FogBugz #470510: Update stratix10_swvp.dts file for S10 SoC Simics/VP"
+
+tag:    rel_socfpga-4.1.33-ltsi_17.09.01_rc1
+commit: 9d8d594 Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.09.01_rc1
+commit: a63d21c Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.09.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.09.01_rc1
+new commits : 4
+673e854 Peng Fan common: env_flags: fix loop condition when using env_flags_varaccess_mask
+5b40f8b Tien Fong Chee common: cmd_nvedit: use snprintf instead of sprintf
+8ae9754 Tien Fong Chee common: cli_simple: use strlcpy instead of strcpy
+255f903 Masahiro Yamada lib: string: move strlcpy() to a common place
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.09.01_rc1
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.09.01_rc1
+commit: 673e854 Peng Fan common: env_flags: fix loop condition when using env_flags_varaccess_mask
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.09.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.09.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.09.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.09.01_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.09.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.09.01_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 673e8540217f45dd6d72293754b40287d77956d3
+Author: Peng Fan <peng.fan@nxp.com>
+Date:   Tue Jan 12 17:23:12 2016 +0800
+
+    common: env_flags: fix loop condition when using env_flags_varaccess_mask
+    
+    We should use ARRAY_SIZE, but not sizeof. The size of
+    env_flags_varaccess_mask is 16bytes, but we only need 4 loops.
+    If using 16 as the end condition, we may access memory that
+    not belong to array env_flags_varaccess_mask.
+    
+    Signed-off-by: Peng Fan <peng.fan@nxp.com>
+    Cc: Joe Hershberger <joe.hershberger@ni.com>
+    Cc: York Sun <yorksun@freescale.com>
+    Cc: Simon Glass <sjg@chromium.org>
+    Cc: Tom Rini <trini@konsulko.com>
+    Reviewed-by: Simon Glass <sjg@chromium.org>
+    Acked-by: Joe Hershberger <joe.hershberger@ni.com>
+
+commit 5b40f8b4854186553ed50ad52a9a0f812f1fd248
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Thu Aug 24 15:55:04 2017 +0800
+
+    common: cmd_nvedit: use snprintf instead of sprintf
+    
+    Use snprintf to replace sprintf.
+    
+    Coverity log:
+    "
+    Unbounded source buffer (STRING_SIZE)
+    string_size: Passing string init_val of unknown size to sprintf.
+    "
+    
+    Signed-off-by: Peng Fan <peng.fan@nxp.com>
+    Cc: Tom Rini <trini@konsulko.com>
+    Cc: Simon Glass <sjg@chromium.org>
+    Reviewed-by: Joe Hershberger <joe.hershberger@ni.com>
+
+commit 8ae9754e3b974a05711d8c8a983e11e56b957844
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Thu Aug 24 15:41:46 2017 +0800
+
+    common: cli_simple: use strlcpy instead of strcpy
+    
+    Report Coverity log:
+    Destination buffer too small (STRING_OVERFLOW)
+    string_overflow: You might overrun the 1024 byte destination string
+    lastcommand by writing 1025 bytes from console_buffer
+    
+    Signed-off-by: Peng Fan <van.freenix@gmail.com>
+    Cc: Heiko Schocher <hs@denx.de>
+    Cc: Simon Glass <sjg@chromium.org>
+    Cc: Tom Rini <trini@konsulko.com>
+    Reviewed-by: Simon Glass <sjg@chromium.org>
+
+commit 255f903b4612357aab3a7748e6d2691fbc262577
+Author: Masahiro Yamada <yamada.m@jp.panasonic.com>
+Date:   Thu Nov 20 21:20:32 2014 +0900
+
+    lib: string: move strlcpy() to a common place
+    
+    Move strlcpy() definition from drivers/usb/gadget/ether.c to
+    lib/string.c because it is a very useful function.
+    Let's add the prototype to include/linux/string.h too.
+    
+    Signed-off-by: Masahiro Yamada <yamada.m@jp.panasonic.com>
+    Acked-by: Simon Glass <sjg@chromium.org>
+
+-----------------------------------------------------------------------
+

@@ -1,0 +1,1004 @@
+From atull@altera.com Wed Oct  5 09:37:40 2016
+Date: Wed, 5 Oct 2016 14:37:34 +0000
+From: Alan Tull <atull@altera.com>
+To: atull <atull@opensource.altera.com>
+Subject: FW: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+
+ 
+
+ 
+
+From: Ying Cheh Tan
+Sent: Wednesday, October 05, 2016 3:22 AM
+To: Tien Hock Loh; Alan Tull; Yves Vandervennet; Chin Liang See; Kai Lin Ng;
+Graham Moore
+Cc: Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+ 
+
+Hi Alan,
+
+ 
+
+Approved. Please help to push the tags, thanks.
+
+ 
+
+Regards
+
+Ying Cheh
+
+ 
+
+From: Tien Hock Loh
+Sent: Wednesday, October 05, 2016 2:36 PM
+To: Alan Tull; Ying Cheh Tan; Yves Vandervennet; Chin Liang See; Kai Lin Ng;
+Graham Moore
+Cc: Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+ 
+
+Alan,
+
+Need your help with GSRD tag push, table as below
+
+ 
+
+Chin Liang, Graham, Ying Cheh, Yves,
+
+I’ve checked the commit id of each component, but do raise concern if the commit
+in respective component/repository is not ready for release.
+
+ 
+
+Ying Cheh,
+
+Need your approval on the release
+
+ 
+
+Note: u-boot for CV/AV’s commit ID is one commit ahead of SoCEDS’s preloader.
+
+ 
+
+Repo                
+
+Branch
+
+Commit id
+
+Tag
+
+Linux-socfpga
+
+socfpga-4.1.22-ltsi
+
+c19a0cfb3b778fb522b3a7ebc7ac2a7c5251cd05
+
+refs/tags/ACDS16.1_REL_GSRD_RC4
+
+Uboot-socfpga
+
+socfpga_v2013.01.01
+
+95ab599e1ad7840e08be0aa567eea3fca357572f
+
+refs/tags/ACDS16.1_REL_GSRD_RC4
+
+Meta-altera
+
+angstrom-v2015.12-yocto2.0
+
+7e994b19f90c019075a2c7292a9043e542e899ed
+
+refs/tags/ACDS16.1_REL_GSRD_RC4
+
+Meta-altera-refdes
+
+gsrd-16.1
+
+d39581d037c5bf50856d5f3d5e89f8df8434f1af
+
+refs/tags/ACDS16.1_REL_GSRD_RC4
+
+Linux-refdesigns
+
+socfpga-16.1
+
+a3d4e657087dbf535401b18cdd810591857b6961
+
+refs/tags/ACDS16.1_REL_GSRD_RC4
+
+Uboot-socfpga
+
+socfpga_v2014.10_arria10_bringup
+
+ab2181dd766157a74b309d12e0b61c4f3cdc8564
+
+refs/tags/ACDS16.1_REL_A10_GSRD_RC4
+
+Linux-socfpga
+
+socfpga-3.10-ltsi
+
+28bac3edbcdc74f98b865986be5d340381896192
+
+refs/tags/ACDS16.1_REL_M10_GSRD_RC4
+
+ 
+
+Regtest passing rate is at 100%
+(http://sj-regtest/pert/pert.php?test_run_ids=1338964). Some tests were rerun
+because of bootstrapping (http://fogbugz.altera.com/default.asp?403733) and
+infrastructural issues.
+
+ 
+
+Tags information are generated at
+http://pg-eswnode-l:8080/job/check_gsrd_tags/13/console.
+
+
+Thanks
+
+Tien Hock
+
+ 
+
+ 
+
+From: Tien Hock Loh
+Sent: Thursday, September 29, 2016 3:23 PM
+To: Alan Tull; Ying Cheh Tan; Yves Vandervennet; Chin Liang See; Kai Lin Ng;
+Graham Moore
+Cc: Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+ 
+
+Thanks Alan
+
+ 
+
+From: Alan Tull
+Sent: Thursday, September 29, 2016 4:45 AM
+To: Ying Cheh Tan; Tien Hock Loh; Yves Vandervennet; Chin Liang See; Kai Lin Ng;
+Graham Moore
+Cc: Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+ 
+
+I’ve pushed the tags.
+
+ 
+
+Thanks,
+
+Alan
+
+ 
+
+From: Ying Cheh Tan
+Sent: Wednesday, September 28, 2016 10:34 AM
+To: Tien Hock Loh; Yves Vandervennet; Alan Tull; Chin Liang See; Kai Lin Ng;
+Graham Moore
+Cc: Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+ 
+
+Hi Alan,
+
+ 
+
+Approved, please help to push the tag, thanks.
+
+Thanks.
+
+ 
+
+Regards
+
+Ying Cheh
+
+ 
+
+From: Tien Hock Loh
+Sent: Wednesday, September 28, 2016 11:23 PM
+To: Yves Vandervennet; Alan Tull; Ying Cheh Tan; Chin Liang See; Kai Lin Ng;
+Graham Moore
+Cc: Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+ 
+
+Ouch… its http://pg-eswnode-l:8080/job/check_gsrd_tags/
+
+ 
+
+From: Yves Vandervennet
+Sent: Wednesday, September 28, 2016 11:20 PM
+To: Tien Hock Loh; Alan Tull; Ying Cheh Tan; Chin Liang See; Kai Lin Ng; Graham
+Moore
+Cc: Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+ 
+
+Tien Hock,
+
+ 
+
+                I can’t access the link below, I get a 404!
+
+ 
+
+Yves
+
+ 
+
+From: Tien Hock Loh
+Sent: Tuesday, September 27, 2016 10:26 PM
+To: Alan Tull; Ying Cheh Tan; Chin Liang See; Kai Lin Ng; Graham Moore
+Cc: Yves Vandervennet; Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+ 
+
+Alan,
+
+Table updated and attached.
+
+ 
+
+Ying Cheh,
+
+Approval needed.
+
+ 
+
+Repo                
+
+Branch
+
+Commit id
+
+Tag
+
+Linux-socfpga
+
+socfpga-4.1.22-ltsi
+
+fa6814fa3d8ff6590086171fa01b61fb90e8e6b8
+
+refs/tags/ACDS16.1_REL_GSRD_RC3
+
+Uboot-socfpga
+
+socfpga_v2013.01.01
+
+f5cd6b9becaee79161edda315cde6ffe67b9677e
+
+refs/tags/ACDS16.1_REL_GSRD_RC3
+
+Meta-altera
+
+angstrom-v2015.12-yocto2.0
+
+7e994b19f90c019075a2c7292a9043e542e899ed
+
+refs/tags/ACDS16.1_REL_GSRD_RC3
+
+Meta-altera-refdes
+
+gsrd-16.1
+
+d39581d037c5bf50856d5f3d5e89f8df8434f1af
+
+refs/tags/ACDS16.1_REL_GSRD_RC3
+
+Linux-refdesigns
+
+socfpga-16.1
+
+a3d4e657087dbf535401b18cdd810591857b6961
+
+refs/tags/ACDS16.1_REL_GSRD_RC3
+
+Uboot-socfpga
+
+socfpga_v2014.10_arria10_bringup
+
+ab2181dd766157a74b309d12e0b61c4f3cdc8564
+
+refs/tags/ACDS16.1_REL_A10_GSRD_RC3
+
+Linux-socfpga
+
+socfpga-3.10-ltsi
+
+28bac3edbcdc74f98b865986be5d340381896192
+
+refs/tags/ACDS16.1_REL_M10_GSRD_RC3
+
+ 
+
+To prevent mistakes in the commit IDs, the table’s commit ID is now automated
+and generated in a script from http://pg-eswnode-l:8080/job/check_gsrd_tag/
+
+
+Thanks
+
+Tien Hock
+
+ 
+
+ 
+
+From: Alan Tull
+Sent: Tuesday, September 27, 2016 10:22 PM
+To: Ying Cheh Tan; Tien Hock Loh; Chin Liang See; Kai Lin Ng; Graham Moore
+Cc: Yves Vandervennet; Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+ 
+
+Hi Tien Hock,
+
+ 
+
+The ACDS16.1_REL_GSRD_RC3 linux-socfpga tag is not set on the commit that you
+listed below.  Please update the tag or the table and get approval.
+
+ 
+
+~/repos/linux-socfpga$ git log  -1 ACDS16.1_REL_GSRD_RC3
+
+ 
+
+commit fa6814fa3d8ff6590086171fa01b61fb90e8e6b8
+
+Author: Alan Tull <atull@opensource.altera.com>
+
+Date:   Wed Sep 21 14:04:08 2016 -0500
+
+ 
+
+    FogBugz #405628-2: fpga: add config complete timeout
+
+   
+
+    Adding timeout for maximum allowed time for FPGA to go to
+
+    operating mode after a FPGA region has been programmed.
+
+   
+
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+ 
+
+Regards,
+
+Alan
+
+ 
+
+ 
+
+From: Ying Cheh Tan
+Sent: Monday, September 26, 2016 7:53 PM
+To: Alan Tull; Tien Hock Loh; Chin Liang See; Kai Lin Ng; Graham Moore
+Cc: Yves Vandervennet; Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+ 
+
+Hi Alan,
+
+ 
+
+Please help to push the tags, thanks.
+
+ 
+
+Regards
+
+Ying Cheh Tan
+
+ 
+
+From: Alan Tull
+Sent: Tuesday, September 27, 2016 1:53 AM
+To: Tien Hock Loh; Ying Cheh Tan; Chin Liang See; Kai Lin Ng; Graham Moore
+Cc: Yves Vandervennet; Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+ 
+
+OK I will push after the tags are approved.
+
+ 
+
+Thanks,
+
+Alan
+
+ 
+
+From: Tien Hock Loh
+Sent: Monday, September 26, 2016 5:31 AM
+To: Alan Tull; Ying Cheh Tan; Chin Liang See; Kai Lin Ng; Graham Moore
+Cc: Yves Vandervennet; Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: ACDS16.1_REL_GSRD_RC3 push to github.com
+
+ 
+
+Alan,
+
+Need your help with GSRD tag push, table as below
+
+ 
+
+Chin Liang, Graham, Ying Cheh, Yves,
+
+I’ve checked the commit id of each component, but do raise concern if the commit
+in respective component/repository is not ready for release.
+
+ 
+
+Ying Cheh,
+
+Need your approval on the release
+
+ 
+
+Note: u-boot for CV/AV’s commit ID is one commit ahead of SoCEDS’s preloader.
+
+ 
+
+Repo
+
+Branch
+
+Commit id
+
+Tag
+
+Linux-socfpga
+
+socfpga-4.1.22-ltsi
+
+47fdd11c2ba13e7c5412a1ad70d1f666fab3fa8c
+
+ACDS16.1_REL_GSRD_RC3
+
+Uboot-socfpga
+
+socfpga_v2013.01.01
+
+f5cd6b9becaee79161edda315cde6ffe67b9677e
+
+ACDS16.1_REL_GSRD_RC3
+
+Meta-altera
+
+angstrom-v2015.12-yocto2.0
+
+7e994b19f90c019075a2c7292a9043e542e899ed
+
+ACDS16.1_REL_GSRD_RC3
+
+Meta-altera-refdes
+
+gsrd-16.1
+
+d39581d037c5bf50856d5f3d5e89f8df8434f1af
+
+ACDS16.1_REL_GSRD_RC3
+
+Linux-refdesigns
+
+socfpga-16.1
+
+a3d4e657087dbf535401b18cdd810591857b6961
+
+ACDS16.1_REL_GSRD_RC3
+
+Uboot-socfpga
+
+socfpga_v2014.10_arria10_bringup
+
+ab2181dd766157a74b309d12e0b61c4f3cdc8564
+
+ACDS16.1_REL_A10_GSRD_RC3
+
+Linux-socfpga
+
+socfpga-3.10-ltsi
+
+28bac3edbcdc74f98b865986be5d340381896192
+
+ACDS16.1_REL_M10_GSRD_RC3
+
+ 
+
+ 
+
+Regtest is at 100% passing rate:
+http://sj-regtest/pert/pert.php?test_run_id=1330183
+
+Build binaries can be obtained at /tools/socfpga_refdes/16.1/190/8 (SJ may have
+some delay due to sync)
+
+Checking on the tags - http://pg-eswnode-l:8080/job/check_gsrd_tags/5/console
+
+ 
+
+Thanks
+
+Tien Hock
+
+ 
+
+ 
+
+From: Alan Tull
+Sent: Thursday, September 22, 2016 12:41 AM
+To: Ying Cheh Tan; Chin Liang See; Tien Hock Loh; Kai Lin Ng; Graham Moore
+Cc: Yves Vandervennet; Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC2 push to github.com
+
+ 
+
+I have pushed out the RC2 tags.
+
+ 
+
+Thanks,
+
+Alan
+
+ 
+
+From: Ying Cheh Tan
+Sent: Wednesday, September 21, 2016 2:30 AM
+To: Chin Liang See; Tien Hock Loh; Kai Lin Ng; Alan Tull; Graham Moore
+Cc: Yves Vandervennet; Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC2 push to github.com
+
+ 
+
+Hi Alan,
+
+ 
+
+Please help to push the tags to github, thanks.
+
+ 
+
+Regards
+
+Ying Cheh
+
+ 
+
+From: Chin Liang See
+Sent: Wednesday, September 21, 2016 2:53 PM
+To: Tien Hock Loh; Kai Lin Ng; Alan Tull; Graham Moore; Ying Cheh Tan
+Cc: Yves Vandervennet; Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: ACDS16.1_REL_GSRD_RC2 push to github.com
+
+ 
+
+Good for bootloader
+
+ 
+
+From: Tien Hock Loh
+Sent: Wednesday, September 21, 2016 2:10 PM
+To: Kai Lin Ng; Alan Tull; Graham Moore; Ying Cheh Tan
+Cc: Yves Vandervennet; Chin Liang See; Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: ACDS16.1_REL_GSRD_RC2 push to github.com
+
+ 
+
+Alan,
+
+Need your help with GSRD tag push, table as below
+
+ 
+
+Chin Liang, Graham, Ying Cheh, Yves,
+
+I’ve checked the commit id of each component, but do raise concern if the commit
+in respective component/repository is not ready for release.
+
+ 
+
+Ying Cheh,
+
+Need your approval on the release
+
+ 
+
+Note: u-boot for CV/AV’s commit ID is one commit ahead of SoCEDS’s preloader.
+
+ 
+
+Repo
+
+Branch
+
+Commit id
+
+Tag
+
+Linux-socfpga
+
+socfpga-4.1.22-ltsi
+
+47fdd11c2ba13e7c5412a1ad70d1f666fab3fa8c
+
+ACDS16.1_REL_GSRD_RC2
+
+Uboot-socfpga
+
+socfpga_v2013.01.01
+
+f5cd6b9becaee79161edda315cde6ffe67b9677e
+
+ACDS16.1_REL_GSRD_RC2
+
+Meta-altera
+
+angstrom-v2015.12-yocto2.0
+
+7e994b19f90c019075a2c7292a9043e542e899ed
+
+ACDS16.1_REL_GSRD_RC2
+
+Meta-altera-refdes
+
+gsrd-16.1
+
+7ac789598c9044681f2e737de54eca0641a97348
+
+ACDS16.1_REL_GSRD_RC2
+
+Linux-refdesigns
+
+socfpga-16.1
+
+a3d4e657087dbf535401b18cdd810591857b6961
+
+ACDS16.1_REL_GSRD_RC2
+
+Uboot-socfpga
+
+socfpga_v2014.10_arria10_bringup
+
+ab2181dd766157a74b309d12e0b61c4f3cdc8564
+
+ACDS16.1_REL_A10_GSRD_RC2
+
+Linux-socfpga
+
+socfpga-3.10-ltsi
+
+28bac3edbcdc74f98b865986be5d340381896192
+
+ACDS16.1_REL_M10_GSRD_RC2
+
+ 
+
+ 
+
+Regtest is at 100% passing rate:
+http://sj-regtest/pert/pert.php?test_run_id=1325059
+
+Build binaries can be obtained at /tools/socfpga_refdes/16.1/190/8 (SJ may have
+some delay due to sync)
+
+Checking on the tags - http://pg-eswnode-l:8080/job/check_gsrd_tags/3/console
+
+ 
+
+Thanks
+
+Tien Hock
+
+ 
+
+From: Kai Lin Ng
+Sent: Monday, September 19, 2016 11:27 AM
+To: Tien Hock Loh; Alan Tull; Graham Moore; Ying Cheh Tan
+Cc: Yves Vandervennet; Chin Liang See; Chung Weng Gooi; Lawrence Yee Lun Liew
+Subject: RE: github.com pushes heads up
+
+ 
+
+Can we have an update on this ?
+
+ 
+
+ 
+
+From: Tien Hock Loh
+Sent: Wednesday, September 14, 2016 4:29 PM
+To: Alan Tull; Graham Moore; Ying Cheh Tan
+Cc: Yves Vandervennet; Chin Liang See; Chung Weng Gooi; Kai Lin Ng
+Subject: RE: github.com pushes heads up
+
+ 
+
+All,
+
+ 
+
+Let’s wait for the socfpga_refdes nightly build/test tonight to pass (with
+Graham’s squash changes), then I do a retag the RC1 tags then only we go for the
+pushes.
+
+ 
+
+A quick note: The repo have dtbt commits included, which is still under PDT
+approval process, are there concerns on pushing it up to github.com?
+
+ 
+
+Thanks
+
+Tien Hock
+
+ 
+
+From: Alan Tull
+Sent: Wednesday, September 14, 2016 3:30 AM
+To: Graham Moore; Tien Hock Loh; Ying Cheh Tan
+Cc: Yves Vandervennet; Chin Liang See; Chung Weng Gooi; Kai Lin Ng
+Subject: RE: github.com pushes heads up
+
+ 
+
+Hi Tien Hock,
+
+ 
+
+I haven’t pushed out the tags yet, waiting on meta-altera.  I am unclear about
+whether more commits need to be added to the uboot/linux commit ids that Graham
+mentioned.  Please retag meta-altera, get the approvals, and I’ll do the push.
+
+ 
+
+Thanks,
+
+Alan
+
+ 
+
+From: Graham Moore
+Sent: Tuesday, September 13, 2016 1:35 PM
+To: Alan Tull; Tien Hock Loh; Ying Cheh Tan
+Cc: Yves Vandervennet; Chin Liang See; Chung Weng Gooi; Kai Lin Ng
+Subject: RE: github.com pushes heads up
+
+ 
+
+I’ve squashed and pushed the commits to at-git:meta-altera.  I saved the old
+angstrom-v2015.12-yocto2.0 branch to angstrom-v2015.12-yocto2.0-saved-by-graham.
+
+ 
+
+The code is the same with the exception that the uboot 2016.03 recipe is in the
+branch.
+
+ 
+
+Please note that this process involved deleting the old
+angstrom-v2015.12-yocto2.0, and recreating it with the squashed version.  If you
+have any local copies of the branch, they will be out of sync.  You should
+delete/rename your local copies and recheckout the angstrom-v2015.12-yocto2.0
+branch.
+
+ 
+
+I did not change any uboot or 4.1.22 commit ids, those would be separate
+patches.
+
+ 
+
+-Graham
+
+ 
+
+From: Alan Tull
+Sent: Tuesday, September 13, 2016 11:30 AM
+To: Tien Hock Loh; Ying Cheh Tan
+Cc: Yves Vandervennet; Graham Moore; Chin Liang See; Chung Weng Gooi; Kai Lin Ng
+Subject: RE: github.com pushes heads up
+
+ 
+
+The meta-altera commits need to be squashed before they can be pushed to
+github.   I am sorry if that was not clear.
+
+ 
+
+Alan
+
+ 
+
+From: Tien Hock Loh
+Sent: Tuesday, September 13, 2016 3:48 AM
+To: Alan Tull; Ying Cheh Tan
+Cc: Yves Vandervennet; Graham Moore; Chin Liang See; Chung Weng Gooi; Kai Lin Ng
+Subject: RE: github.com pushes heads up
+
+ 
+
+Missed out M10 tags, added M10 tags.
+
+ 
+
+Thanks
+
+Tien Hock
+
+ 
+
+From: Tien Hock Loh
+Sent: Tuesday, September 13, 2016 4:40 PM
+To: Alan Tull; Ying Cheh Tan
+Cc: Yves Vandervennet; Graham Moore; Chin Liang See; Chung Weng Gooi; Kai Lin Ng
+Subject: RE: github.com pushes heads up
+
+ 
+
+Alan,
+
+Need your help with GSRD tag push, table as below
+
+ 
+
+Chin Liang, Graham, Ying Cheh, Yves,
+
+I’ve checked the commit id of each component, but extra pairs of eyes wouldn’t
+hurt J.
+
+A quick note on the meta-altera side, Graham hasn’t pushed the squashed commits
+up at at-git yet, so the current commit id is with the changes that Graham
+previously committed. If anyone has concerns over this please raise it.
+Otherwise, we’ll need approval from Ying Cheh for the pushes.
+
+ 
+
+Note: u-boot for CV/AV’s commit ID is one commit ahead of SoCEDS’s preloader.
+
+ 
+
+Repo
+
+Branch
+
+Commit id
+
+Tag
+
+Linux-socfpga
+
+socfpga-4.1.22-ltsi
+
+742f555df70361ec80ae48df461f279487fd9959
+
+ACDS16.1_REL_GSRD_RC1
+
+Uboot-socfpga
+
+socfpga_v2013.01.01
+
+f5cd6b9becaee79161edda315cde6ffe67b9677e
+
+ACDS16.1_REL_GSRD_RC1
+
+Meta-altera
+
+angstrom-v2015.12-yocto2.0
+
+1a74c6a88970105dcae23c8047bcaa95d48fa1f5
+
+ACDS16.1_REL_GSRD_RC1
+
+Meta-altera-refdes
+
+gsrd-16.1
+
+7ac789598c9044681f2e737de54eca0641a97348
+
+ACDS16.1_REL_GSRD_RC1
+
+Linux-refdesigns
+
+socfpga-16.1
+
+a3d4e657087dbf535401b18cdd810591857b6961
+
+ACDS16.1_REL_GSRD_RC1
+
+Uboot-socfpga
+
+socfpga_v2014.10_arria10_bringup
+
+ab2181dd766157a74b309d12e0b61c4f3cdc8564
+
+ACDS16.1_REL_A10_GSRD_RC1
+
+Linux-socfpga
+
+socfpga-3.10-ltsi
+
+28bac3edbcdc74f98b865986be5d340381896192
+
+ACDS16.1_REL_M10_GSRD_RC1
+
+ 
+
+ 
+
+Regtest is at 100% passing rate:
+http://sj-regtest/pert/pert.php?test_run_id=1315896&v=1&fs=2&ffas=-1
+
+Build binaries can be obtained at /tools/socfpga_refdes/16.1/189/4 (SJ may have
+some delay due to sync)
+
+Checking on the tags - http://pg-eswnode-l:8080/job/check_gsrd_tags/2/console
+
+ 
+
+Thanks
+
+Tien Hock
+
+ 
+
+From: Tien Hock Loh
+Sent: Monday, September 05, 2016 3:36 PM
+To: Alan Tull
+Cc: Yves Vandervennet; Ying Cheh Tan
+Subject: github.com pushes heads up
+
+ 
+
+Hi Alan,
+
+ 
+
+A quick heads up, we’re closing to RC builds, and will need to be pushing tags
+up from at-git to github.com/altera-opensource.
+
+I’ll ping you once we have the tags ready to be pushed.
+
+ 
+
+Let me know if there’re concerns on this.
+
+ 
+
+Thanks
+
+Tien Hock
+
+
+________________________________________________________________________________
+
+Confidentiality Notice.
+This message may contain information that is confidential or otherwise protected
+from disclosure. If you are not the intended recipient, you are hereby notified
+that any use, disclosure, dissemination, distribution, or copying of this
+message, or any attachments, is strictly prohibited. If you have received this
+message in error, please advise the sender by reply e-mail, and delete the
+message and any attachments. Thank you.
+

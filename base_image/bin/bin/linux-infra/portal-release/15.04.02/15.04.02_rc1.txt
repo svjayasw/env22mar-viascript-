@@ -1,0 +1,181 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.18
+branch tag  : rel_socfpga-3.18_15.04.02_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.04.02_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.04.02_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.18_15.04.02_rc1
+commit: 0e9c1d9 Alan Tull FogBugz #288812-2: arria10 fpga manager status support
+
+tag:    rel_socfpga-3.10-ltsi_15.04.02_rc1
+commit: 512a3b0 Vince Bridgers FogBugz #284801: Add explicit RMII case to stmmac initialization
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.04.02_rc1
+commit: e9fcb0a Vince Bridgers FogBugz #284801: Add explicit RMII case to stmmac initialization
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.04.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.04.02_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_15.04.02_rc1
+commit: 32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.04.02_rc1
+commit: 35f437e Vince Bridgers FogBugz #285044-3: Configure ksz9031 phy skews from uboot environment
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_15.04.02_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_15.04.02_rc1
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_15.04.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_15.04.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_15.04.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.04.02_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_15.04.02_rc1
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_15.04.02_rc1
+commit: 65417bc Yves Vandervennet kde repo moved, it's now meta-kde4
+
+tag:    rel_angstrom-v2014.06-socfpga_15.04.02_rc1
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+tag:    rel_angstrom-v2014.12-socfpga_15.04.02_rc1
+commit: 3990895 Yves Vandervennet update for kde and gumstix git repos
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_15.04.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_15.04.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_15.04.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.04.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.04.02_rc1
+new commits : 1
+28888cd Yves Vandervennet fixed DT issue
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-yocto1.7_a10, *Tag name:* rel_angstrom-v2014.12-yocto1.7_a10_15.04.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | fixed DT issue | [[ http://git.rocketboards.org/gitweb/?p=meta-altera.git;a=commit;h=28888cd94a4afd88a67929f47b895f0b0c65699e ][ 28888cd94a4afd88a67929f47b895f0b0c65699e ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_15.04.02_rc1
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_15.04.02_rc1
+commit: 1090ffb Yves Vandervennet recipe for kernel 3.18
+
+tag:    rel_angstrom-v2014.06-yocto1.6_15.04.02_rc1
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2014.12-yocto1.7_15.04.02_rc1
+commit: 95d38e0 Yves Vandervennet recipe for 3.18
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.04.02_rc1
+commit: 28888cd Yves Vandervennet fixed DT issue
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7_a10
+
+commit 28888cd94a4afd88a67929f47b895f0b0c65699e
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Fri Apr 3 12:52:12 2015 -0500
+
+    fixed DT issue
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

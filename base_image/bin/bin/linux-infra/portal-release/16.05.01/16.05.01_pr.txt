@@ -1,0 +1,251 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.4
+branch tag  : rel_socfpga-4.4_16.05.01_pr
+new commits : 1
+84eb65f Dinh Nguyen stmmac: socfpga: remove extra call to socfpga_dwmac_setup
+
+
+++wiki:
+*Branch name*: socfpga-4.4, *Tag name:* rel_socfpga-4.4_16.05.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | stmmac: socfpga: remove extra call to socfpga_dwmac_setup | [[ https://github.com/altera-opensource/linux-socfpga/commit/84eb65f84ea7a15cd73766fb16e6a868dc7a734b ][ 84eb65f84ea7a15cd73766fb16e6a868dc7a734b ]] |
+--wiki:
+
+
+branch      : socfpga-4.5
+branch tag  : rel_socfpga-4.5_16.05.01_pr
+Pushing new branch to external git
+
+branch      : socfpga-4.1-ltsi
+branch tag  : rel_socfpga-4.1-ltsi_16.05.01_pr
+new commits : 0
+
+
+branch      : socfpga-4.1-ltsi-rt
+branch tag  : rel_socfpga-4.1-ltsi-rt_16.05.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.4_16.05.01_pr
+commit: 84eb65f Dinh Nguyen stmmac: socfpga: remove extra call to socfpga_dwmac_setup
+
+tag:    rel_socfpga-4.5_16.05.01_pr
+commit: ffea805 Dinh Nguyen ARM: dts: socfpga: add ethernet alias on Arria10
+
+tag:    rel_socfpga-4.1-ltsi_16.05.01_pr
+commit: 451753c Dinh Nguyen stmmac: socfpga: remove extra call to socfpga_dwmac_setup
+
+tag:    rel_socfpga-4.1-ltsi-rt_16.05.01_pr
+commit: 3367642 Dinh Nguyen FogBugz #361542: Add PREEMPT_RT to socfpga_defconfig
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.05.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.05.01_pr
+new commits : 5
+a4e19a8 Chin Liang See FogBugz #368841-3: Enable U-Boot environment in QSPI
+63c3787 Chin Liang See FogBugz #368841-2: Increase malloc when ethernet is enabled
+236e3f7 Chin Liang See FogBugz #373066: Fix OCRAM Double Bit Error during BSS access
+3d3477d Stefan Agner net: phy: do not read configuration register on reset
+33d0f14 Chin Liang See FogBugz #368841-1: Reduced U-Boot size by removing long help message
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_16.05.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 368841-3 | Enable U-Boot environment in QSPI | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/a4e19a83f21b0d71e1cf799403529daf5942f548 ][ a4e19a83f21b0d71e1cf799403529daf5942f548 ]] |
+| 368841-2 | Increase malloc when ethernet is enabled | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/63c37874ade8b7485f42954b718f0ca014fb9751 ][ 63c37874ade8b7485f42954b718f0ca014fb9751 ]] |
+| 373066 | Fix OCRAM Double Bit Error during BSS access | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/236e3f72526ef8e9334d6c35f3512896554c877c ][ 236e3f72526ef8e9334d6c35f3512896554c877c ]] |
+| community | net: phy: do not read configuration register on reset | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/3d3477d4e8e8e0cdb3e39e5527e47e2a2747eb59 ][ 3d3477d4e8e8e0cdb3e39e5527e47e2a2747eb59 ]] |
+| 368841-1 | Reduced U-Boot size by removing long help message | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/33d0f1475d03b64c81fb843abfeee4529b44258b ][ 33d0f1475d03b64c81fb843abfeee4529b44258b ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.05.01_pr
+commit: 7dd0473 Chin Liang See FogBugz #353914: Fix SDRAM self refresh failure
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.05.01_pr
+commit: a4e19a8 Chin Liang See FogBugz #368841-3: Enable U-Boot environment in QSPI
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.05.01_pr
+new commits : 1
+993831b Tien Hock Loh FogBugz #369619: Update meta-altera-refdes commit id
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-socfpga, *Tag name:* rel_angstrom-v2014.12-socfpga_16.05.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 369619 | Update meta-altera-refdes commit id | [[ https://github.com/altera-opensource/angstrom-socfpga/commit/993831b4830af2341ca26cd96e16732fa2d00e19 ][ 993831b4830af2341ca26cd96e16732fa2d00e19 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.05.01_pr
+commit: 993831b Tien Hock Loh FogBugz #369619: Update meta-altera-refdes commit id
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.05.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.05.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.05.01_pr
+commit: 8d6e9b4 Yves Vandervennet Support for the kernel v4.3
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.05.01_pr
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.4
+
+commit 84eb65f84ea7a15cd73766fb16e6a868dc7a734b
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Apr 14 14:21:28 2016 -0500
+
+    stmmac: socfpga: remove extra call to socfpga_dwmac_setup
+    
+    In the socfpga_dwmac_probe function, we have a call to socfpga_dwmac_setup,
+    which is already called from socfpga_dwmac_init later in the probe function.
+    Remove this extra call to socfpga_dwmac_setup.
+    
+    Also we should not be calling socfpga_dwmac_setup() directly without wrapping
+    it around the proper reset assert/deasserts. That is because the
+    socfpga_dwmac_setup() is setting up PHY modes in the system manager, and it
+    is requires the EMAC's to be in reset during the PHY setup.
+    
+    Reported-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.5
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit a4e19a83f21b0d71e1cf799403529daf5942f548
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Apr 13 10:38:49 2016 +0800
+
+    FogBugz #368841-3: Enable U-Boot environment in QSPI
+    
+    Enable U-Boot environment in SPI flash.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 63c37874ade8b7485f42954b718f0ca014fb9751
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Apr 13 10:42:40 2016 +0800
+
+    FogBugz #368841-2: Increase malloc when ethernet is enabled
+    
+    Increased the malloc size from 35kB to 42kB when ethernet is
+    enabled. This is to avoid malloc failure when enabling new
+    feature such as U-Boot environment at QSPI.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 236e3f72526ef8e9334d6c35f3512896554c877c
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Apr 26 17:38:18 2016 +0800
+
+    FogBugz #373066: Fix OCRAM Double Bit Error during BSS access
+    
+    Ensuring the BSS region's start address always align to 8 bytes
+    alignment which is the access size for on-chip RAM. This will
+    avoid on-chip RAM double bit error when accessing the first
+    global variable in BSS section if it is out of alignment.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 3d3477d4e8e8e0cdb3e39e5527e47e2a2747eb59
+Author: Stefan Agner <stefan@agner.ch>
+Date:   Wed Dec 9 11:21:25 2015 -0800
+
+    net: phy: do not read configuration register on reset
+    
+    When doing a software reset, the reset flag should be written without
+    other bits set. Writing the current state will lead to restoring the
+    state of the PHY (e.g. Powerdown), which is not what is expected from
+    a software reset.
+    
+    Signed-off-by: Stefan Agner <stefan@agner.ch>
+    Acked-by: Michael Welling <mwelling@ieee.org>
+    Reviewed-by: Bin Meng <bmeng.cn@gmail.com>
+    Acked-by: Joe Hershberger <joe.hershberger@ni.com>
+
+commit 33d0f1475d03b64c81fb843abfeee4529b44258b
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Apr 8 14:27:18 2016 +0800
+
+    FogBugz #368841-1: Reduced U-Boot size by removing long help message
+    
+    Removed U-Boot console addtional help message feature to shrink
+    down the U-Boot image size.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+-----------------------------------------------------------------------
+
+log of angstrom-socfpga branch angstrom-v2014.12-socfpga
+
+commit 993831b4830af2341ca26cd96e16732fa2d00e19
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Mon Apr 25 16:41:51 2016 +0800
+
+    FogBugz #369619: Update meta-altera-refdes commit id
+    
+    Updates the commit ID of meta-altera-refdes to include the fix for
+    GSRD for linux kernel 4.1-ltsi for the removal of the use of
+    IRQF_DISABLED
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+    
+    Conflicts:
+    	sources/layers.txt
+
+-----------------------------------------------------------------------
+

@@ -1,0 +1,2382 @@
+ACDS13.1_REL_AMP_PR
+git push origin :refs/tags/ACDS13.1_REL_AMP_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS13.1_REL_AMP_PR
+status=0
+
+ACDS13.1_REL_GSRD_CB
+git push origin :refs/tags/ACDS13.1_REL_GSRD_CB
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS13.1_REL_GSRD_CB
+status=0
+
+ACDS13.1_REL_GSRD_PR
+git push origin :refs/tags/ACDS13.1_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS13.1_REL_GSRD_PR
+status=0
+
+ACDS13.1_REL_GSRD_RC3
+git push origin :refs/tags/ACDS13.1_REL_GSRD_RC3
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS13.1_REL_GSRD_RC3
+status=0
+
+ACDS13.1_REL_GSRD_RC4
+git push origin :refs/tags/ACDS13.1_REL_GSRD_RC4
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS13.1_REL_GSRD_RC4
+status=0
+
+ACDS13.1_REL_GSRD_RC5
+git push origin :refs/tags/ACDS13.1_REL_GSRD_RC5
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS13.1_REL_GSRD_RC5
+status=0
+
+ACDS13.1_REL_GSRD_RC6
+git push origin :refs/tags/ACDS13.1_REL_GSRD_RC6
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS13.1_REL_GSRD_RC6
+status=0
+
+ACDS13.1_REL_GSRD_RC8
+git push origin :refs/tags/ACDS13.1_REL_GSRD_RC8
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS13.1_REL_GSRD_RC8
+status=0
+
+ACDS14.0.1_REL_GSRD_PR
+git push origin :refs/tags/ACDS14.0.1_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.0.1_REL_GSRD_PR
+status=0
+
+ACDS14.0.1_REL_GSRD_RC1
+git push origin :refs/tags/ACDS14.0.1_REL_GSRD_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.0.1_REL_GSRD_RC1
+status=0
+
+ACDS14.0.1_REL_GSRD_RC2
+git push origin :refs/tags/ACDS14.0.1_REL_GSRD_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.0.1_REL_GSRD_RC2
+status=0
+
+ACDS14.0.1_REL_GSRD_RC3
+git push origin :refs/tags/ACDS14.0.1_REL_GSRD_RC3
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.0.1_REL_GSRD_RC3
+status=0
+
+ACDS14.0.2_REL_GSRD_PR
+git push origin :refs/tags/ACDS14.0.2_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.0.2_REL_GSRD_PR
+status=0
+
+ACDS14.0.2_REL_SGMII_PR
+git push origin :refs/tags/ACDS14.0.2_REL_SGMII_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.0.2_REL_SGMII_PR
+status=0
+
+ACDS14.0_REL_GSRD_PR
+git push origin :refs/tags/ACDS14.0_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.0_REL_GSRD_PR
+status=0
+
+ACDS14.0_REL_GSRD_RC
+git push origin :refs/tags/ACDS14.0_REL_GSRD_RC
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.0_REL_GSRD_RC
+status=0
+
+ACDS14.0_REL_GSRD_RC2
+git push origin :refs/tags/ACDS14.0_REL_GSRD_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.0_REL_GSRD_RC2
+status=0
+
+ACDS14.0_REL_GSRD_RC3
+git push origin :refs/tags/ACDS14.0_REL_GSRD_RC3
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.0_REL_GSRD_RC3
+status=0
+
+ACDS14.0_REL_GSRD_RC4
+git push origin :refs/tags/ACDS14.0_REL_GSRD_RC4
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.0_REL_GSRD_RC4
+status=0
+
+ACDS14.1_REL_GSRD_PR
+git push origin :refs/tags/ACDS14.1_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.1_REL_GSRD_PR
+status=0
+
+ACDS14.1_REL_GSRD_PR_UPDATE1
+git push origin :refs/tags/ACDS14.1_REL_GSRD_PR_UPDATE1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.1_REL_GSRD_PR_UPDATE1
+status=0
+
+ACDS14.1_REL_GSRD_PR_UPDATE2
+git push origin :refs/tags/ACDS14.1_REL_GSRD_PR_UPDATE2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS14.1_REL_GSRD_PR_UPDATE2
+status=0
+
+ACDS15.0.1_REL_GSRD_PR
+git push origin :refs/tags/ACDS15.0.1_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.0.1_REL_GSRD_PR
+status=0
+
+ACDS15.0.1_REL_GSRD_RC1
+git push origin :refs/tags/ACDS15.0.1_REL_GSRD_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.0.1_REL_GSRD_RC1
+status=0
+
+ACDS15.0.1_REL_GSRD_UPDATE1_PR
+git push origin :refs/tags/ACDS15.0.1_REL_GSRD_UPDATE1_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.0.1_REL_GSRD_UPDATE1_PR
+status=0
+
+ACDS15.0_REL_GSRD_RC2
+git push origin :refs/tags/ACDS15.0_REL_GSRD_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.0_REL_GSRD_RC2
+status=0
+
+ACDS15.1.1_REL_GSRD_PR
+git push origin :refs/tags/ACDS15.1.1_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1.1_REL_GSRD_PR
+status=0
+
+ACDS15.1.1_REL_GSRD_RC1
+git push origin :refs/tags/ACDS15.1.1_REL_GSRD_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1.1_REL_GSRD_RC1
+status=0
+
+ACDS15.1.1_REL_GSRD_RC10
+git push origin :refs/tags/ACDS15.1.1_REL_GSRD_RC10
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1.1_REL_GSRD_RC10
+status=0
+
+ACDS15.1.1_REL_GSRD_RC2
+git push origin :refs/tags/ACDS15.1.1_REL_GSRD_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1.1_REL_GSRD_RC2
+status=0
+
+ACDS15.1.1_REL_GSRD_RC3
+git push origin :refs/tags/ACDS15.1.1_REL_GSRD_RC3
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1.1_REL_GSRD_RC3
+status=0
+
+ACDS15.1.1_REL_GSRD_RC4
+git push origin :refs/tags/ACDS15.1.1_REL_GSRD_RC4
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1.1_REL_GSRD_RC4
+status=0
+
+ACDS15.1.1_REL_GSRD_RC5
+git push origin :refs/tags/ACDS15.1.1_REL_GSRD_RC5
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1.1_REL_GSRD_RC5
+status=0
+
+ACDS15.1.1_REL_GSRD_RC6
+git push origin :refs/tags/ACDS15.1.1_REL_GSRD_RC6
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1.1_REL_GSRD_RC6
+status=0
+
+ACDS15.1.1_REL_PCIE_PR
+git push origin :refs/tags/ACDS15.1.1_REL_PCIE_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1.1_REL_PCIE_PR
+status=0
+
+ACDS15.1_REL_GSRD_PR
+git push origin :refs/tags/ACDS15.1_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1_REL_GSRD_PR
+status=0
+
+ACDS15.1_REL_GSRD_RC2
+git push origin :refs/tags/ACDS15.1_REL_GSRD_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1_REL_GSRD_RC2
+status=0
+
+ACDS15.1_REL_GSRD_RC3
+git push origin :refs/tags/ACDS15.1_REL_GSRD_RC3
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1_REL_GSRD_RC3
+status=0
+
+ACDS15.1_REL_GSRD_RC4
+git push origin :refs/tags/ACDS15.1_REL_GSRD_RC4
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1_REL_GSRD_RC4
+status=0
+
+ACDS15.1_REL_GSRD_RC5
+git push origin :refs/tags/ACDS15.1_REL_GSRD_RC5
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1_REL_GSRD_RC5
+status=0
+
+ACDS15.1_REL_GSRD_RC6
+git push origin :refs/tags/ACDS15.1_REL_GSRD_RC6
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1_REL_GSRD_RC6
+status=0
+
+ACDS15.1_REL_GSRD_RC7
+git push origin :refs/tags/ACDS15.1_REL_GSRD_RC7
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS15.1_REL_GSRD_RC7
+status=0
+
+ACDS16.0_REL_GSRD_PR
+git push origin :refs/tags/ACDS16.0_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.0_REL_GSRD_PR
+status=0
+
+ACDS16.0_REL_GSRD_RC1
+git push origin :refs/tags/ACDS16.0_REL_GSRD_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.0_REL_GSRD_RC1
+status=0
+
+ACDS16.0_REL_GSRD_RC2
+git push origin :refs/tags/ACDS16.0_REL_GSRD_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.0_REL_GSRD_RC2
+status=0
+
+ACDS16.0_REL_GSRD_RC3
+git push origin :refs/tags/ACDS16.0_REL_GSRD_RC3
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.0_REL_GSRD_RC3
+status=0
+
+ACDS16.0_REL_GSRD_RC4
+git push origin :refs/tags/ACDS16.0_REL_GSRD_RC4
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.0_REL_GSRD_RC4
+status=0
+
+ACDS16.0_REL_GSRD_RC5
+git push origin :refs/tags/ACDS16.0_REL_GSRD_RC5
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.0_REL_GSRD_RC5
+status=0
+
+ACDS16.0_REL_GSRD_RC6
+git push origin :refs/tags/ACDS16.0_REL_GSRD_RC6
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.0_REL_GSRD_RC6
+status=0
+
+ACDS16.0_REL_GSRD_RC7
+git push origin :refs/tags/ACDS16.0_REL_GSRD_RC7
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.0_REL_GSRD_RC7
+status=0
+
+ACDS16.0_REL_PCIE_PR
+git push origin :refs/tags/ACDS16.0_REL_PCIE_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.0_REL_PCIE_PR
+status=0
+
+ACDS16.0_REL_PCIE_RC1
+git push origin :refs/tags/ACDS16.0_REL_PCIE_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.0_REL_PCIE_RC1
+status=0
+
+ACDS16.1_REL_GSRD_PR
+git push origin :refs/tags/ACDS16.1_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_GSRD_PR
+status=0
+
+ACDS16.1_REL_GSRD_RC2
+git push origin :refs/tags/ACDS16.1_REL_GSRD_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_GSRD_RC2
+status=0
+
+ACDS16.1_REL_GSRD_RC3
+git push origin :refs/tags/ACDS16.1_REL_GSRD_RC3
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_GSRD_RC3
+status=0
+
+ACDS16.1_REL_GSRD_RC4
+git push origin :refs/tags/ACDS16.1_REL_GSRD_RC4
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_GSRD_RC4
+status=0
+
+ACDS16.1_REL_GSRD_RC5
+git push origin :refs/tags/ACDS16.1_REL_GSRD_RC5
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_GSRD_RC5
+status=0
+
+ACDS16.1_REL_GSRD_RC6
+git push origin :refs/tags/ACDS16.1_REL_GSRD_RC6
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_GSRD_RC6
+status=0
+
+ACDS16.1_REL_GSRD_RC7
+git push origin :refs/tags/ACDS16.1_REL_GSRD_RC7
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_GSRD_RC7
+status=0
+
+ACDS16.1_REL_M10_GSRD_PR
+git push origin :refs/tags/ACDS16.1_REL_M10_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_M10_GSRD_PR
+status=0
+
+ACDS16.1_REL_M10_GSRD_RC2
+git push origin :refs/tags/ACDS16.1_REL_M10_GSRD_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_M10_GSRD_RC2
+status=0
+
+ACDS16.1_REL_M10_GSRD_RC3
+git push origin :refs/tags/ACDS16.1_REL_M10_GSRD_RC3
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_M10_GSRD_RC3
+status=0
+
+ACDS16.1_REL_M10_GSRD_RC4
+git push origin :refs/tags/ACDS16.1_REL_M10_GSRD_RC4
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_M10_GSRD_RC4
+status=0
+
+ACDS16.1_REL_M10_GSRD_RC5
+git push origin :refs/tags/ACDS16.1_REL_M10_GSRD_RC5
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_M10_GSRD_RC5
+status=0
+
+ACDS16.1_REL_M10_GSRD_RC6
+git push origin :refs/tags/ACDS16.1_REL_M10_GSRD_RC6
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_M10_GSRD_RC6
+status=0
+
+ACDS16.1_REL_M10_GSRD_RC7
+git push origin :refs/tags/ACDS16.1_REL_M10_GSRD_RC7
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS16.1_REL_M10_GSRD_RC7
+status=0
+
+ACDS17.0_REL_GSRD_PR
+git push origin :refs/tags/ACDS17.0_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS17.0_REL_GSRD_PR
+status=0
+
+ACDS17.0_REL_GSRD_RC1
+git push origin :refs/tags/ACDS17.0_REL_GSRD_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS17.0_REL_GSRD_RC1
+status=0
+
+ACDS17.0_REL_M10_GSRD_PR
+git push origin :refs/tags/ACDS17.0_REL_M10_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS17.0_REL_M10_GSRD_PR
+status=0
+
+ACDS17.0_REL_M10_GSRD_RC1
+git push origin :refs/tags/ACDS17.0_REL_M10_GSRD_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS17.0_REL_M10_GSRD_RC1
+status=0
+
+ACDS17.1_REL_GSRD_PR
+git push origin :refs/tags/ACDS17.1_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS17.1_REL_GSRD_PR
+status=0
+
+ACDS17.1_REL_GSRD_RC2
+git push origin :refs/tags/ACDS17.1_REL_GSRD_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS17.1_REL_GSRD_RC2
+status=0
+
+ACDS17.1_REL_M10_GSRD_PR
+git push origin :refs/tags/ACDS17.1_REL_M10_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS17.1_REL_M10_GSRD_PR
+status=0
+
+ACDS17.1_REL_M10_GSRD_RC2
+git push origin :refs/tags/ACDS17.1_REL_M10_GSRD_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         ACDS17.1_REL_M10_GSRD_RC2
+status=0
+
+nios2-3.7-3c120-RC1
+git push origin :refs/tags/nios2-3.7-3c120-RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         nios2-3.7-3c120-RC1
+status=0
+
+nios2-3.8-3c120-RC1
+git push origin :refs/tags/nios2-3.8-3c120-RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         nios2-3.8-3c120-RC1
+status=0
+
+nios2-3.9-3c120-RC1
+git push origin :refs/tags/nios2-3.9-3c120-RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         nios2-3.9-3c120-RC1
+status=0
+
+rel_12.12
+git push origin :refs/tags/rel_12.12
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_12.12
+status=0
+
+rel_13.02_RC1
+git push origin :refs/tags/rel_13.02_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.02_RC1
+status=0
+
+rel_13.02_RC10
+git push origin :refs/tags/rel_13.02_RC10
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.02_RC10
+status=0
+
+rel_13.02_RC2
+git push origin :refs/tags/rel_13.02_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.02_RC2
+status=0
+
+rel_13.02_RC3
+git push origin :refs/tags/rel_13.02_RC3
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.02_RC3
+status=0
+
+rel_13.02_RC4
+git push origin :refs/tags/rel_13.02_RC4
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.02_RC4
+status=0
+
+rel_13.02_RC5
+git push origin :refs/tags/rel_13.02_RC5
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.02_RC5
+status=0
+
+rel_13.02_RC6
+git push origin :refs/tags/rel_13.02_RC6
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.02_RC6
+status=0
+
+rel_13.02_RC7
+git push origin :refs/tags/rel_13.02_RC7
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.02_RC7
+status=0
+
+rel_13.02_RC8
+git push origin :refs/tags/rel_13.02_RC8
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.02_RC8
+status=0
+
+rel_13.02_RC9
+git push origin :refs/tags/rel_13.02_RC9
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.02_RC9
+status=0
+
+rel_13.07_RC0
+git push origin :refs/tags/rel_13.07_RC0
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.07_RC0
+status=0
+
+rel_13.07_RC1
+git push origin :refs/tags/rel_13.07_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.07_RC1
+status=0
+
+rel_13.07_RC2
+git push origin :refs/tags/rel_13.07_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.07_RC2
+status=0
+
+rel_13.07_RC3
+git push origin :refs/tags/rel_13.07_RC3
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.07_RC3
+status=0
+
+rel_13.07_RC4
+git push origin :refs/tags/rel_13.07_RC4
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.07_RC4
+status=0
+
+rel_13.07_RC5
+git push origin :refs/tags/rel_13.07_RC5
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_13.07_RC5
+status=0
+
+rel_ghrd_RC1
+git push origin :refs/tags/rel_ghrd_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_ghrd_RC1
+status=0
+
+rel_ghrd_RC10
+git push origin :refs/tags/rel_ghrd_RC10
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_ghrd_RC10
+status=0
+
+rel_ghrd_RC2
+git push origin :refs/tags/rel_ghrd_RC2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_ghrd_RC2
+status=0
+
+rel_ghrd_RC3
+git push origin :refs/tags/rel_ghrd_RC3
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_ghrd_RC3
+status=0
+
+rel_ghrd_RC4
+git push origin :refs/tags/rel_ghrd_RC4
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_ghrd_RC4
+status=0
+
+rel_ghrd_RC5
+git push origin :refs/tags/rel_ghrd_RC5
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_ghrd_RC5
+status=0
+
+rel_ghrd_RC6
+git push origin :refs/tags/rel_ghrd_RC6
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_ghrd_RC6
+status=0
+
+rel_ghrd_RC7
+git push origin :refs/tags/rel_ghrd_RC7
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_ghrd_RC7
+status=0
+
+rel_ghrd_RC8
+git push origin :refs/tags/rel_ghrd_RC8
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_ghrd_RC8
+status=0
+
+rel_ghrd_RC9
+git push origin :refs/tags/rel_ghrd_RC9
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_ghrd_RC9
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.05.01
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.05.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.05.01
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.05.02
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.05.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.05.02
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.05.03
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.05.03
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.05.03
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.06.01
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.06.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.06.01
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.06.02
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.06.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.06.02
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.07.01
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.07.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.07.01
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.07.02
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.07.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.07.02
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.08.01
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.08.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.08.01
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.08.02
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.08.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.08.02
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.09.01
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.09.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.09.01
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.09.02
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.09.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.09.02
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.10.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.10.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.10.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.10.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.10.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.11.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.11.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.11.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.11.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.11.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.11.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_14.12.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_14.12.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_14.12.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.01.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.01.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.01.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.01.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.01.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.01.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.02.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.02.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.02.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.02.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.02.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.03.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.03.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.03.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.03.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.03.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.03.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.04.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.04.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.04.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.04.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.04.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.04.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.05.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.05.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.05.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.05.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.05.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.05.03_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.05.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.05.03_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.06.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.06.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.06.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.06.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.06.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.06.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.07.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.07.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.07.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.07.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.07.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.07.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.08.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.08.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.08.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.08.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.08.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.08.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.09.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.09.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.09.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.09.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.09.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.09.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.10.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.10.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.10.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.10.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.10.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.11.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.11.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.11.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.11.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.11.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.11.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_15.12.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_15.12.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_15.12.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_16.01.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_16.01.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_16.01.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_16.01.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_16.01.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_16.01.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_16.02.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_16.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_16.02.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_16.02.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_16.02.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_16.02.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_16.03.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_16.03.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_16.03.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_16.03.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_16.03.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_16.03.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi-rt_arria10_bringup_gsrd_ies
+git push origin :refs/tags/rel_socfpga-3.10-ltsi-rt_arria10_bringup_gsrd_ies
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi-rt_arria10_bringup_gsrd_ies
+status=0
+
+rel_socfpga-3.10-ltsi_14.03.02
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.03.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.03.02
+status=0
+
+rel_socfpga-3.10-ltsi_14.04.01
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.04.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.04.01
+status=0
+
+rel_socfpga-3.10-ltsi_14.04.02
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.04.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.04.02
+status=0
+
+rel_socfpga-3.10-ltsi_14.05.01
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.05.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.05.01
+status=0
+
+rel_socfpga-3.10-ltsi_14.05.02
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.05.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.05.02
+status=0
+
+rel_socfpga-3.10-ltsi_14.05.03
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.05.03
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.05.03
+status=0
+
+rel_socfpga-3.10-ltsi_14.06.01
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.06.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.06.01
+status=0
+
+rel_socfpga-3.10-ltsi_14.06.02
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.06.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.06.02
+status=0
+
+rel_socfpga-3.10-ltsi_14.07.01
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.07.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.07.01
+status=0
+
+rel_socfpga-3.10-ltsi_14.07.02
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.07.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.07.02
+status=0
+
+rel_socfpga-3.10-ltsi_14.08.01
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.08.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.08.01
+status=0
+
+rel_socfpga-3.10-ltsi_14.08.02
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.08.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.08.02
+status=0
+
+rel_socfpga-3.10-ltsi_14.09.01
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.09.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.09.01
+status=0
+
+rel_socfpga-3.10-ltsi_14.09.02
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.09.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.09.02
+status=0
+
+rel_socfpga-3.10-ltsi_14.10.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.10.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_14.10.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.10.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.10.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_14.11.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.11.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.11.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_14.11.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.11.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.11.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_14.12.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_14.12.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_14.12.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.01.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.01.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.01.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.01.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.01.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.01.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.02.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.02.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.02.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.02.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.02.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.03.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.03.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.03.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.03.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.03.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.03.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.04.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.04.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.04.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.04.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.04.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.04.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.05.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.05.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.05.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.05.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.05.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.05.03_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.05.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.05.03_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.06.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.06.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.06.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.06.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.06.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.06.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.07.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.07.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.07.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.07.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.07.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.07.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.08.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.08.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.08.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.08.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.08.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.08.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.09.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.09.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.09.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.09.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.09.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.09.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.10.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.10.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.10.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.10.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.10.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.11.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.11.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.11.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.11.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.11.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.11.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_15.12.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_15.12.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_15.12.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_16.01.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_16.01.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_16.01.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_16.01.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_16.01.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_16.01.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_16.02.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_16.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_16.02.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_16.02.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_16.02.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_16.02.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_16.03.01_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_16.03.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_16.03.01_pr
+status=0
+
+rel_socfpga-3.10-ltsi_16.03.02_pr
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_16.03.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_16.03.02_pr
+status=0
+
+rel_socfpga-3.10-ltsi_arria10_bringup_gsrd_ies
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_arria10_bringup_gsrd_ies
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_arria10_bringup_gsrd_ies
+status=0
+
+rel_socfpga-3.10-ltsi_arria10_bringup_ies
+git push origin :refs/tags/rel_socfpga-3.10-ltsi_arria10_bringup_ies
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.10-ltsi_arria10_bringup_ies
+status=0
+
+rel_socfpga-3.13-rel14.0_14.06.01
+git push origin :refs/tags/rel_socfpga-3.13-rel14.0_14.06.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.13-rel14.0_14.06.01
+status=0
+
+rel_socfpga-3.13-rel14.0_14.06.02
+git push origin :refs/tags/rel_socfpga-3.13-rel14.0_14.06.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.13-rel14.0_14.06.02
+status=0
+
+rel_socfpga-3.13-rel14.0_14.07.01
+git push origin :refs/tags/rel_socfpga-3.13-rel14.0_14.07.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.13-rel14.0_14.07.01
+status=0
+
+rel_socfpga-3.13_14.02.02
+git push origin :refs/tags/rel_socfpga-3.13_14.02.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.13_14.02.02
+status=0
+
+rel_socfpga-3.13_14.03.01
+git push origin :refs/tags/rel_socfpga-3.13_14.03.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.13_14.03.01
+status=0
+
+rel_socfpga-3.13_14.03.02
+git push origin :refs/tags/rel_socfpga-3.13_14.03.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.13_14.03.02
+status=0
+
+rel_socfpga-3.13_14.04.01
+git push origin :refs/tags/rel_socfpga-3.13_14.04.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.13_14.04.01
+status=0
+
+rel_socfpga-3.13_14.04.02
+git push origin :refs/tags/rel_socfpga-3.13_14.04.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.13_14.04.02
+status=0
+
+rel_socfpga-3.13_14.05.01
+git push origin :refs/tags/rel_socfpga-3.13_14.05.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.13_14.05.01
+status=0
+
+rel_socfpga-3.14_14.05.01
+git push origin :refs/tags/rel_socfpga-3.14_14.05.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.14_14.05.01
+status=0
+
+rel_socfpga-3.14_14.05.02
+git push origin :refs/tags/rel_socfpga-3.14_14.05.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.14_14.05.02
+status=0
+
+rel_socfpga-3.14_14.05.03
+git push origin :refs/tags/rel_socfpga-3.14_14.05.03
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.14_14.05.03
+status=0
+
+rel_socfpga-3.14_14.06.01
+git push origin :refs/tags/rel_socfpga-3.14_14.06.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.14_14.06.01
+status=0
+
+rel_socfpga-3.14_14.06.02
+git push origin :refs/tags/rel_socfpga-3.14_14.06.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.14_14.06.02
+status=0
+
+rel_socfpga-3.14_14.07.01
+git push origin :refs/tags/rel_socfpga-3.14_14.07.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.14_14.07.01
+status=0
+
+rel_socfpga-3.15_14.07.01
+git push origin :refs/tags/rel_socfpga-3.15_14.07.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.15_14.07.01
+status=0
+
+rel_socfpga-3.15_14.07.02
+git push origin :refs/tags/rel_socfpga-3.15_14.07.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.15_14.07.02
+status=0
+
+rel_socfpga-3.15_14.08.01
+git push origin :refs/tags/rel_socfpga-3.15_14.08.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.15_14.08.01
+status=0
+
+rel_socfpga-3.15_14.08.02
+git push origin :refs/tags/rel_socfpga-3.15_14.08.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.15_14.08.02
+status=0
+
+rel_socfpga-3.15_14.09.01
+git push origin :refs/tags/rel_socfpga-3.15_14.09.01
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.15_14.09.01
+status=0
+
+rel_socfpga-3.15_14.09.02
+git push origin :refs/tags/rel_socfpga-3.15_14.09.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.15_14.09.02
+status=0
+
+rel_socfpga-3.16_14.09.02
+git push origin :refs/tags/rel_socfpga-3.16_14.09.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.16_14.09.02
+status=0
+
+rel_socfpga-3.16_14.10.01_pr
+git push origin :refs/tags/rel_socfpga-3.16_14.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.16_14.10.01_pr
+status=0
+
+rel_socfpga-3.16_14.10.02_pr
+git push origin :refs/tags/rel_socfpga-3.16_14.10.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.16_14.10.02_pr
+status=0
+
+rel_socfpga-3.16_14.11.01_pr
+git push origin :refs/tags/rel_socfpga-3.16_14.11.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.16_14.11.01_pr
+status=0
+
+rel_socfpga-3.17_14.11.01_pr
+git push origin :refs/tags/rel_socfpga-3.17_14.11.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.17_14.11.01_pr
+status=0
+
+rel_socfpga-3.17_14.11.02_pr
+git push origin :refs/tags/rel_socfpga-3.17_14.11.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.17_14.11.02_pr
+status=0
+
+rel_socfpga-3.17_14.12.01_pr
+git push origin :refs/tags/rel_socfpga-3.17_14.12.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.17_14.12.01_pr
+status=0
+
+rel_socfpga-3.17_15.01.01_pr
+git push origin :refs/tags/rel_socfpga-3.17_15.01.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.17_15.01.01_pr
+status=0
+
+rel_socfpga-3.17_15.01.02_pr
+git push origin :refs/tags/rel_socfpga-3.17_15.01.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.17_15.01.02_pr
+status=0
+
+rel_socfpga-3.17_15.02.01_pr
+git push origin :refs/tags/rel_socfpga-3.17_15.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.17_15.02.01_pr
+status=0
+
+rel_socfpga-3.18_15.02.01_pr
+git push origin :refs/tags/rel_socfpga-3.18_15.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.18_15.02.01_pr
+status=0
+
+rel_socfpga-3.18_15.02.02_pr
+git push origin :refs/tags/rel_socfpga-3.18_15.02.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.18_15.02.02_pr
+status=0
+
+rel_socfpga-3.18_15.03.01_pr
+git push origin :refs/tags/rel_socfpga-3.18_15.03.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.18_15.03.01_pr
+status=0
+
+rel_socfpga-3.18_15.03.02_pr
+git push origin :refs/tags/rel_socfpga-3.18_15.03.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.18_15.03.02_pr
+status=0
+
+rel_socfpga-3.18_15.04.01_pr
+git push origin :refs/tags/rel_socfpga-3.18_15.04.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.18_15.04.01_pr
+status=0
+
+rel_socfpga-3.18_15.04.02_pr
+git push origin :refs/tags/rel_socfpga-3.18_15.04.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.18_15.04.02_pr
+status=0
+
+rel_socfpga-3.18_15.05.01_pr
+git push origin :refs/tags/rel_socfpga-3.18_15.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.18_15.05.01_pr
+status=0
+
+rel_socfpga-3.18_15.05.02_pr
+git push origin :refs/tags/rel_socfpga-3.18_15.05.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.18_15.05.02_pr
+status=0
+
+rel_socfpga-3.18_arria10_bringup_gsrd_ies
+git push origin :refs/tags/rel_socfpga-3.18_arria10_bringup_gsrd_ies
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.18_arria10_bringup_gsrd_ies
+status=0
+
+rel_socfpga-3.9-rel_14.02.02
+git push origin :refs/tags/rel_socfpga-3.9-rel_14.02.02
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-3.9-rel_14.02.02
+status=0
+
+rel_socfpga-4.0_15.05.02_pr
+git push origin :refs/tags/rel_socfpga-4.0_15.05.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.0_15.05.02_pr
+status=0
+
+rel_socfpga-4.0_15.05.03_pr
+git push origin :refs/tags/rel_socfpga-4.0_15.05.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.0_15.05.03_pr
+status=0
+
+rel_socfpga-4.0_15.06.01_pr
+git push origin :refs/tags/rel_socfpga-4.0_15.06.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.0_15.06.01_pr
+status=0
+
+rel_socfpga-4.0_15.06.02_pr
+git push origin :refs/tags/rel_socfpga-4.0_15.06.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.0_15.06.02_pr
+status=0
+
+rel_socfpga-4.0_15.07.01_pr
+git push origin :refs/tags/rel_socfpga-4.0_15.07.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.0_15.07.01_pr
+status=0
+
+rel_socfpga-4.0_15.07.02_pr
+git push origin :refs/tags/rel_socfpga-4.0_15.07.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.0_15.07.02_pr
+status=0
+
+rel_socfpga-4.0_15.08.01_pr
+git push origin :refs/tags/rel_socfpga-4.0_15.08.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.0_15.08.01_pr
+status=0
+
+rel_socfpga-4.1-ltsi-rt_16.04.01_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi-rt_16.04.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi-rt_16.04.01_pr
+status=0
+
+rel_socfpga-4.1-ltsi-rt_16.04.02_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi-rt_16.04.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi-rt_16.04.02_pr
+status=0
+
+rel_socfpga-4.1-ltsi-rt_16.05.01_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi-rt_16.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi-rt_16.05.01_pr
+status=0
+
+rel_socfpga-4.1-ltsi-rt_16.05.02_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi-rt_16.05.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi-rt_16.05.02_pr
+status=0
+
+rel_socfpga-4.1-ltsi-rt_16.06.01_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi-rt_16.06.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi-rt_16.06.01_pr
+status=0
+
+rel_socfpga-4.1-ltsi-rt_16.06.02_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi-rt_16.06.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi-rt_16.06.02_pr
+status=0
+
+rel_socfpga-4.1-ltsi_16.03.01_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi_16.03.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi_16.03.01_pr
+status=0
+
+rel_socfpga-4.1-ltsi_16.03.02_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi_16.03.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi_16.03.02_pr
+status=0
+
+rel_socfpga-4.1-ltsi_16.03.03_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi_16.03.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi_16.03.03_pr
+status=0
+
+rel_socfpga-4.1-ltsi_16.04.01_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi_16.04.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi_16.04.01_pr
+status=0
+
+rel_socfpga-4.1-ltsi_16.04.02_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi_16.04.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi_16.04.02_pr
+status=0
+
+rel_socfpga-4.1-ltsi_16.05.01_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi_16.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi_16.05.01_pr
+status=0
+
+rel_socfpga-4.1-ltsi_16.05.02_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi_16.05.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi_16.05.02_pr
+status=0
+
+rel_socfpga-4.1-ltsi_16.06.01_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi_16.06.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi_16.06.01_pr
+status=0
+
+rel_socfpga-4.1-ltsi_16.06.02_pr
+git push origin :refs/tags/rel_socfpga-4.1-ltsi_16.06.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1-ltsi_16.06.02_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi-rt_16.06.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.06.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi-rt_16.06.02_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi-rt_16.07.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.07.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi-rt_16.07.01_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi-rt_16.07.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.07.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi-rt_16.07.02_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi-rt_16.08.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.08.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi-rt_16.08.01_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi-rt_16.08.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.08.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi-rt_16.08.02_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi-rt_16.09.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.09.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi-rt_16.09.01_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi-rt_16.09.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.09.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi-rt_16.09.02_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi-rt_16.10.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi-rt_16.10.01_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi-rt_16.10.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.10.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi-rt_16.10.02_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi-rt_17.02.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi-rt_17.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi-rt_17.02.01_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi_16.06.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi_16.06.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi_16.06.02_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi_16.07.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi_16.07.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi_16.07.01_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi_16.07.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi_16.07.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi_16.07.02_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi_16.08.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi_16.08.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi_16.08.01_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi_16.08.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi_16.08.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi_16.08.02_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi_16.09.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi_16.09.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi_16.09.01_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi_16.09.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi_16.09.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi_16.09.02_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi_16.09.03_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi_16.09.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi_16.09.03_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi_16.10.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi_16.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi_16.10.01_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi_16.10.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi_16.10.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi_16.10.02_pr
+status=0
+
+rel_socfpga-4.1.22-ltsi_17.02.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.22-ltsi_17.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.22-ltsi_17.02.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.02.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.02.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.03.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.03.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.03.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.04.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.04.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.04.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.04.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.04.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.04.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.05.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.05.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.05.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.05.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.05.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.06.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.06.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.06.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.06.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.06.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.06.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.07.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.07.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.07.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.07.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.07.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.07.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.08.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.08.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.08.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.08.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.08.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.08.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.08.03_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.08.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.08.03_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.09.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.09.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.09.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.09.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.09.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.09.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.09.03_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.09.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.09.03_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.10.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.10.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.10.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.10.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.10.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.11.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.11.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.11.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.11.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.11.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.11.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi-rt_17.12.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi-rt_17.12.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi-rt_17.12.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.02.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.02.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.03.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.03.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.03.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.04.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.04.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.04.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.04.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.04.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.04.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.05.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.05.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.05.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.05.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.05.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.06.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.06.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.06.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.06.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.06.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.06.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.07.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.07.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.07.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.07.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.07.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.07.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.08.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.08.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.08.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.08.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.08.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.08.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.08.03_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.08.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.08.03_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.09.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.09.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.09.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.09.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.09.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.09.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.09.03_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.09.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.09.03_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.10.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.10.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.10.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.10.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.10.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.11.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.11.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.11.01_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.11.02_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.11.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.11.02_pr
+status=0
+
+rel_socfpga-4.1.33-ltsi_17.12.01_pr
+git push origin :refs/tags/rel_socfpga-4.1.33-ltsi_17.12.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1.33-ltsi_17.12.01_pr
+status=0
+
+rel_socfpga-4.10_17.05.01_pr
+git push origin :refs/tags/rel_socfpga-4.10_17.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.10_17.05.01_pr
+status=0
+
+rel_socfpga-4.10_17.05.02_pr
+git push origin :refs/tags/rel_socfpga-4.10_17.05.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.10_17.05.02_pr
+status=0
+
+rel_socfpga-4.10_17.06.01_pr
+git push origin :refs/tags/rel_socfpga-4.10_17.06.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.10_17.06.01_pr
+status=0
+
+rel_socfpga-4.10_17.06.02_pr
+git push origin :refs/tags/rel_socfpga-4.10_17.06.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.10_17.06.02_pr
+status=0
+
+rel_socfpga-4.10_17.07.01_pr
+git push origin :refs/tags/rel_socfpga-4.10_17.07.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.10_17.07.01_pr
+status=0
+
+rel_socfpga-4.10_17.07.02_pr
+git push origin :refs/tags/rel_socfpga-4.10_17.07.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.10_17.07.02_pr
+status=0
+
+rel_socfpga-4.10_17.08.01_pr
+git push origin :refs/tags/rel_socfpga-4.10_17.08.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.10_17.08.01_pr
+status=0
+
+rel_socfpga-4.10_17.08.02_pr
+git push origin :refs/tags/rel_socfpga-4.10_17.08.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.10_17.08.02_pr
+status=0
+
+rel_socfpga-4.11_17.07.02_pr
+git push origin :refs/tags/rel_socfpga-4.11_17.07.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.11_17.07.02_pr
+status=0
+
+rel_socfpga-4.11_17.08.01_pr
+git push origin :refs/tags/rel_socfpga-4.11_17.08.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.11_17.08.01_pr
+status=0
+
+rel_socfpga-4.11_17.08.02_pr
+git push origin :refs/tags/rel_socfpga-4.11_17.08.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.11_17.08.02_pr
+status=0
+
+rel_socfpga-4.11_17.08.03_pr
+git push origin :refs/tags/rel_socfpga-4.11_17.08.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.11_17.08.03_pr
+status=0
+
+rel_socfpga-4.11_17.09.01_pr
+git push origin :refs/tags/rel_socfpga-4.11_17.09.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.11_17.09.01_pr
+status=0
+
+rel_socfpga-4.11_17.09.02_pr
+git push origin :refs/tags/rel_socfpga-4.11_17.09.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.11_17.09.02_pr
+status=0
+
+rel_socfpga-4.11_17.09.03_pr
+git push origin :refs/tags/rel_socfpga-4.11_17.09.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.11_17.09.03_pr
+status=0
+
+rel_socfpga-4.11_17.10.01_pr
+git push origin :refs/tags/rel_socfpga-4.11_17.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.11_17.10.01_pr
+status=0
+
+rel_socfpga-4.12_17.09.01_pr
+git push origin :refs/tags/rel_socfpga-4.12_17.09.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.12_17.09.01_pr
+status=0
+
+rel_socfpga-4.12_17.09.02_pr
+git push origin :refs/tags/rel_socfpga-4.12_17.09.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.12_17.09.02_pr
+status=0
+
+rel_socfpga-4.12_17.09.03_pr
+git push origin :refs/tags/rel_socfpga-4.12_17.09.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.12_17.09.03_pr
+status=0
+
+rel_socfpga-4.12_17.10.01_pr
+git push origin :refs/tags/rel_socfpga-4.12_17.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.12_17.10.01_pr
+status=0
+
+rel_socfpga-4.12_17.10.02_pr
+git push origin :refs/tags/rel_socfpga-4.12_17.10.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.12_17.10.02_pr
+status=0
+
+rel_socfpga-4.12_17.11.01_pr
+git push origin :refs/tags/rel_socfpga-4.12_17.11.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.12_17.11.01_pr
+status=0
+
+rel_socfpga-4.13_17.11.02_pr
+git push origin :refs/tags/rel_socfpga-4.13_17.11.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.13_17.11.02_pr
+status=0
+
+rel_socfpga-4.13_17.12.01_pr
+git push origin :refs/tags/rel_socfpga-4.13_17.12.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.13_17.12.01_pr
+status=0
+
+rel_socfpga-4.1_15.07.02_pr
+git push origin :refs/tags/rel_socfpga-4.1_15.07.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1_15.07.02_pr
+status=0
+
+rel_socfpga-4.1_15.08.01_pr
+git push origin :refs/tags/rel_socfpga-4.1_15.08.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1_15.08.01_pr
+status=0
+
+rel_socfpga-4.1_15.08.02_pr
+git push origin :refs/tags/rel_socfpga-4.1_15.08.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1_15.08.02_pr
+status=0
+
+rel_socfpga-4.1_15.09.01_pr
+git push origin :refs/tags/rel_socfpga-4.1_15.09.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1_15.09.01_pr
+status=0
+
+rel_socfpga-4.1_15.09.02_pr
+git push origin :refs/tags/rel_socfpga-4.1_15.09.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1_15.09.02_pr
+status=0
+
+rel_socfpga-4.1_15.10.01_pr
+git push origin :refs/tags/rel_socfpga-4.1_15.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.1_15.10.01_pr
+status=0
+
+rel_socfpga-4.2_15.10.02_pr
+git push origin :refs/tags/rel_socfpga-4.2_15.10.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.2_15.10.02_pr
+status=0
+
+rel_socfpga-4.2_15.11.01_pr
+git push origin :refs/tags/rel_socfpga-4.2_15.11.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.2_15.11.01_pr
+status=0
+
+rel_socfpga-4.2_15.11.02_pr
+git push origin :refs/tags/rel_socfpga-4.2_15.11.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.2_15.11.02_pr
+status=0
+
+rel_socfpga-4.2_15.12.01_pr
+git push origin :refs/tags/rel_socfpga-4.2_15.12.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.2_15.12.01_pr
+status=0
+
+rel_socfpga-4.3_15.12.01_pr
+git push origin :refs/tags/rel_socfpga-4.3_15.12.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.3_15.12.01_pr
+status=0
+
+rel_socfpga-4.3_16.01.01_pr
+git push origin :refs/tags/rel_socfpga-4.3_16.01.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.3_16.01.01_pr
+status=0
+
+rel_socfpga-4.3_16.01.02_pr
+git push origin :refs/tags/rel_socfpga-4.3_16.01.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.3_16.01.02_pr
+status=0
+
+rel_socfpga-4.3_16.02.01_pr
+git push origin :refs/tags/rel_socfpga-4.3_16.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.3_16.02.01_pr
+status=0
+
+rel_socfpga-4.3_16.02.02_pr
+git push origin :refs/tags/rel_socfpga-4.3_16.02.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.3_16.02.02_pr
+status=0
+
+rel_socfpga-4.4_16.03.01_pr
+git push origin :refs/tags/rel_socfpga-4.4_16.03.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.4_16.03.01_pr
+status=0
+
+rel_socfpga-4.4_16.03.02_pr
+git push origin :refs/tags/rel_socfpga-4.4_16.03.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.4_16.03.02_pr
+status=0
+
+rel_socfpga-4.4_16.03.03_pr
+git push origin :refs/tags/rel_socfpga-4.4_16.03.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.4_16.03.03_pr
+status=0
+
+rel_socfpga-4.4_16.04.01_pr
+git push origin :refs/tags/rel_socfpga-4.4_16.04.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.4_16.04.01_pr
+status=0
+
+rel_socfpga-4.4_16.04.02_pr
+git push origin :refs/tags/rel_socfpga-4.4_16.04.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.4_16.04.02_pr
+status=0
+
+rel_socfpga-4.4_16.05.01_pr
+git push origin :refs/tags/rel_socfpga-4.4_16.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.4_16.05.01_pr
+status=0
+
+rel_socfpga-4.5_16.05.01_pr
+git push origin :refs/tags/rel_socfpga-4.5_16.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.5_16.05.01_pr
+status=0
+
+rel_socfpga-4.5_16.05.02_pr
+git push origin :refs/tags/rel_socfpga-4.5_16.05.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.5_16.05.02_pr
+status=0
+
+rel_socfpga-4.5_16.06.01_pr
+git push origin :refs/tags/rel_socfpga-4.5_16.06.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.5_16.06.01_pr
+status=0
+
+rel_socfpga-4.6_16.06.02_pr
+git push origin :refs/tags/rel_socfpga-4.6_16.06.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.6_16.06.02_pr
+status=0
+
+rel_socfpga-4.6_16.07.01_pr
+git push origin :refs/tags/rel_socfpga-4.6_16.07.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.6_16.07.01_pr
+status=0
+
+rel_socfpga-4.6_16.07.02_pr
+git push origin :refs/tags/rel_socfpga-4.6_16.07.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.6_16.07.02_pr
+status=0
+
+rel_socfpga-4.6_16.08.01_pr
+git push origin :refs/tags/rel_socfpga-4.6_16.08.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.6_16.08.01_pr
+status=0
+
+rel_socfpga-4.6_16.08.02_pr
+git push origin :refs/tags/rel_socfpga-4.6_16.08.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.6_16.08.02_pr
+status=0
+
+rel_socfpga-4.6_16.09.01_pr
+git push origin :refs/tags/rel_socfpga-4.6_16.09.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.6_16.09.01_pr
+status=0
+
+rel_socfpga-4.6_16.09.02_pr
+git push origin :refs/tags/rel_socfpga-4.6_16.09.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.6_16.09.02_pr
+status=0
+
+rel_socfpga-4.6_16.09.03_pr
+git push origin :refs/tags/rel_socfpga-4.6_16.09.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.6_16.09.03_pr
+status=0
+
+rel_socfpga-4.7_16.09.02_pr
+git push origin :refs/tags/rel_socfpga-4.7_16.09.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.7_16.09.02_pr
+status=0
+
+rel_socfpga-4.7_16.09.03_pr
+git push origin :refs/tags/rel_socfpga-4.7_16.09.03_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.7_16.09.03_pr
+status=0
+
+rel_socfpga-4.7_16.10.01_pr
+git push origin :refs/tags/rel_socfpga-4.7_16.10.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.7_16.10.01_pr
+status=0
+
+rel_socfpga-4.7_16.10.02_pr
+git push origin :refs/tags/rel_socfpga-4.7_16.10.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.7_16.10.02_pr
+status=0
+
+rel_socfpga-4.7_17.02.01_pr
+git push origin :refs/tags/rel_socfpga-4.7_17.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.7_17.02.01_pr
+status=0
+
+rel_socfpga-4.8_17.02.01_pr
+git push origin :refs/tags/rel_socfpga-4.8_17.02.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.8_17.02.01_pr
+status=0
+
+rel_socfpga-4.8_17.03.01_pr
+git push origin :refs/tags/rel_socfpga-4.8_17.03.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.8_17.03.01_pr
+status=0
+
+rel_socfpga-4.9_17.03.01_pr
+git push origin :refs/tags/rel_socfpga-4.9_17.03.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.9_17.03.01_pr
+status=0
+
+rel_socfpga-4.9_17.04.01_pr
+git push origin :refs/tags/rel_socfpga-4.9_17.04.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.9_17.04.01_pr
+status=0
+
+rel_socfpga-4.9_17.04.02_pr
+git push origin :refs/tags/rel_socfpga-4.9_17.04.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.9_17.04.02_pr
+status=0
+
+rel_socfpga-4.9_17.05.01_pr
+git push origin :refs/tags/rel_socfpga-4.9_17.05.01_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.9_17.05.01_pr
+status=0
+
+rel_socfpga-4.9_17.05.02_pr
+git push origin :refs/tags/rel_socfpga-4.9_17.05.02_pr
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         rel_socfpga-4.9_17.05.02_pr
+status=0
+

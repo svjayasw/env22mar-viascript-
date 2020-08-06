@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Doing 'gbl' lists branches by timestamp.  'gbls' sorts it so
+# your most recent branch is at the bottom.
+
+for remote in $(git branch -r); do
+if [[ "${remote}" != "origin/HEAD" ]]; then
+echo "git checkout -b ${remote:7};"
+git checkout ${remote:7}
+fi
+done

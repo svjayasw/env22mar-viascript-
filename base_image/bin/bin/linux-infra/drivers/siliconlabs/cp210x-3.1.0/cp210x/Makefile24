@@ -1,0 +1,51 @@
+SHELL = /bin/sh
+
+# Comment/uncomment the following line to enable/disable debugging
+#DEBUG = y
+
+include $(PWD)/defaults.mk
+
+# This Makefile has been simplified as much as possible, by putting all
+# generic material, independent of this specific directory, into
+# ../Rules.make. Read that file for details
+
+TOPDIR  := $(shell pwd)
+include $(TOPDIR)/Rules.make
+
+ifeq ($(DEBUG),y)
+  DEBFLAGS = -O -g
+else
+  DEBFLAGS = -O2
+endif
+
+CFLAGS += $(DEBFLAGS) -I..
+
+OBJS = cp210x.o
+
+# Rules
+
+all:	modules
+#all: $(OBJS)
+
+install:
+	cp $(KOFILE) $(MODFILE)
+	./installmod $(MODFILE) $(MODDIR)
+#	install -d $(INSTALLDIR)
+#	install -c cp210x.o $(INSTALLDIR)
+
+distclean: clean mrproper
+	rm -f Makefile.config
+
+clean:
+	rm -f *.o *~ core .*.o.flags
+	rm -f *.ko .*.o.cmd .*.ko.cmd *.mod.c
+	rm -rf .tmp_versions
+
+mrproper:
+	rm -f *~
+	rm -f Makefile.bak
+
+modules: $(OBJS)
+
+default: $(OBJS)
+

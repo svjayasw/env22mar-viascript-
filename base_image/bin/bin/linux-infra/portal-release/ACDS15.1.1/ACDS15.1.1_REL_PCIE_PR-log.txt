@@ -1,0 +1,35 @@
+
+/home/atull/repos/internal/angstrom-socfpga
+3ab059e Tien Hock Loh : FogBugz #338393: PCIe: Update meta-altera-refdes commit IDTo git@github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         ACDS15.1.1_REL_PCIE_PR -> ACDS15.1.1_REL_PCIE_PR
+To git@github.com:altera-opensource/angstrom-socfpga
+   e178d8e..3ab059e  ACDS15.1.1_REL_PCIE_PR -> angstrom-v2014.12-socfpga_gsrd15.1
+
+/home/atull/repos/internal/linux-refdesigns
+89acc83 Ley Foon Tan : FogBugz #338130: add dma transfer modulesTo git@github.com:altera-opensource/linux-refdesigns
+ * [new tag]         ACDS15.1.1_REL_PCIE_PR -> ACDS15.1.1_REL_PCIE_PR
+To git@github.com:altera-opensource/linux-refdesigns
+   4065da1..89acc83  ACDS15.1.1_REL_PCIE_PR -> socfpga-15.1
+
+/home/atull/repos/internal/linux-socfpga
+6de99ee Borislav Petkov : cpu/cacheinfo: Fix teardown pathTo git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         ACDS15.1.1_REL_PCIE_PR -> ACDS15.1.1_REL_PCIE_PR
+To git@github.com:altera-opensource/linux-socfpga
+   2b31e57..6de99ee  ACDS15.1.1_REL_PCIE_PR -> socfpga-4.1
+
+/home/atull/repos/internal/meta-altera
+8d6e9b4 Yves Vandervennet : Support for the kernel v4.3To git@github.com:altera-opensource/meta-altera
+ * [new tag]         ACDS15.1.1_REL_PCIE_PR -> ACDS15.1.1_REL_PCIE_PR
+not pushing branch
+
+/home/atull/repos/internal/meta-altera-refdes
+6602242 Tien Hock Loh : FogBugz #338393: Add fio package to PCIe reference designTo git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         ACDS15.1.1_REL_PCIE_PR -> ACDS15.1.1_REL_PCIE_PR
+To git@github.com:altera-opensource/meta-altera-refdes
+   c48ec1a..6602242  ACDS15.1.1_REL_PCIE_PR -> gsrd-15.1
+
+/home/atull/repos/internal/uboot-socfpga
+63eeca1 Matthew Gerlach : FogBugz #340555: Fix A10 intermittent failure to receieve 1Gb ethernet trafficTo git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         ACDS15.1.1_REL_PCIE_PR -> ACDS15.1.1_REL_PCIE_PR
+not pushing branch
+Success

@@ -1,0 +1,800 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: altera-opensource/linux-socfpga
+
+branch      : socfpga-3.18
+branch tag  : rel_socfpga-3.18_15.05.02_rc1
+new commits : 11
+034e7cb Dinh Nguyen FogBugz #294479: Add the l4_sys_free_clk clock node
+43f9529 Andreas Oetken altera tse: Fix network-delays and -retransmissions after high throughput.
+659d104 Chee Nouk Phoon FogBugz #291165:TSE-MSGMDA linux driver is not working for Max10
+a19d826 Vince Bridgers ARM: socfpga: dts: Add tx-fifo-depth and rx-fifo-depth properties
+bdf5981 Vince Bridgers ARM: socfpga: dts: Add multicast bins and unicast filter entries
+5e0acc2 Vince Bridgers stmmac: Configure Flow Control to work correctly based on rxfifo size
+969d54a Vince Bridgers stmmac: Enable unicast pause frame detect in GMAC Register 6
+46c167b Vince Bridgers stmmac: Read tx-fifo-depth and rx-fifo-depth from the devicetree
+1302910 Vince Bridgers stmmac: Add defines and documentation for enabling flow control
+19593db Vince Bridgers stmmac: Add properties for transmit and receive fifo sizes
+2d4f5ef Dinh Nguyen ARM: socfpga: dts: Add a clock node for sdmmc CIU
+
+
+++wiki:
+*Branch name*: socfpga-3.18, *Tag name:* rel_socfpga-3.18_15.05.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| 294479 | Add the l4_sys_free_clk clock node | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/034e7cbef5db4a259e9658939e16c53909fc1f34 ][ 034e7cbef5db4a259e9658939e16c53909fc1f34 ]] |
+| community | altera tse: Fix network-delays and -retransmissions after high throughput. | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/43f9529d05f3b59f48f49f36d7d40044da7ff353 ][ 43f9529d05f3b59f48f49f36d7d40044da7ff353 ]] |
+| community | FogBugz #291165:TSE-MSGMDA linux driver is not working for Max10 | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/659d104a27d7bdd72b02133006b6f882bdd744d3 ][ 659d104a27d7bdd72b02133006b6f882bdd744d3 ]] |
+| community | ARM: socfpga: dts: Add tx-fifo-depth and rx-fifo-depth properties | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/a19d826034a319294d971e835d8433c687e6faa1 ][ a19d826034a319294d971e835d8433c687e6faa1 ]] |
+| community | ARM: socfpga: dts: Add multicast bins and unicast filter entries | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/bdf598134e4dd7bc2e03b3fca0fce09dd4ab659e ][ bdf598134e4dd7bc2e03b3fca0fce09dd4ab659e ]] |
+| community | stmmac: Configure Flow Control to work correctly based on rxfifo size | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/5e0acc24cff24166c8b7e578790a4f9024c7298e ][ 5e0acc24cff24166c8b7e578790a4f9024c7298e ]] |
+| community | stmmac: Enable unicast pause frame detect in GMAC Register 6 | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/969d54a759148d094ad6f4027ad68412952d9db2 ][ 969d54a759148d094ad6f4027ad68412952d9db2 ]] |
+| community | stmmac: Read tx-fifo-depth and rx-fifo-depth from the devicetree | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/46c167bc00f72511c2ad47861d1daadd9d3e8c86 ][ 46c167bc00f72511c2ad47861d1daadd9d3e8c86 ]] |
+| community | stmmac: Add defines and documentation for enabling flow control | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/13029100f99c60f8e21d3679c8263dbf152bf360 ][ 13029100f99c60f8e21d3679c8263dbf152bf360 ]] |
+| community | stmmac: Add properties for transmit and receive fifo sizes | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/19593db218a455529a077a957751d7adb08dfd4e ][ 19593db218a455529a077a957751d7adb08dfd4e ]] |
+| community | ARM: socfpga: dts: Add a clock node for sdmmc CIU | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/2d4f5ef31603d95d384362c71b731164c22519e3 ][ 2d4f5ef31603d95d384362c71b731164c22519e3 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.05.02_rc1
+new commits : 10
+77c9b87 Dinh Nguyen FogBugz #294479: Add the l4_sys_free_clk clock node
+519e5f0 Andreas Oetken altera tse: Fix network-delays and -retransmissions after high throughput.
+51706ad Vince Bridgers ARM: socfpga: dts: Add tx-fifo-depth and rx-fifo-depth properties
+85f8dad Vince Bridgers ARM: socfpga: dts: Add multicast bins and unicast filter entries
+e58d012 Vince Bridgers stmmac: Configure Flow Control to work correctly based on rxfifo size
+74e9aa2 Vince Bridgers stmmac: Enable unicast pause frame detect in GMAC Register 6
+f9f50b2 Vince Bridgers stmmac: Read tx-fifo-depth and rx-fifo-depth from the devicetree
+724139a Vince Bridgers stmmac: Add defines and documentation for enabling flow control
+c0a2817 Vince Bridgers stmmac: Add properties for transmit and receive fifo sizes
+37161a7 Chee Nouk Phoon FogBugz #291165:TSE-MSGMDA linux driver is not working for Max10
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_15.05.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| 294479 | Add the l4_sys_free_clk clock node | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/77c9b87c1fad21d2382d6d208ecda1a3def16c55 ][ 77c9b87c1fad21d2382d6d208ecda1a3def16c55 ]] |
+| community | altera tse: Fix network-delays and -retransmissions after high throughput. | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/519e5f0113f62f15741709af122f07863eeb24d3 ][ 519e5f0113f62f15741709af122f07863eeb24d3 ]] |
+| community | ARM: socfpga: dts: Add tx-fifo-depth and rx-fifo-depth properties | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/51706ad6c841ccadc5ab4d9bb933057d6dd6a665 ][ 51706ad6c841ccadc5ab4d9bb933057d6dd6a665 ]] |
+| community | ARM: socfpga: dts: Add multicast bins and unicast filter entries | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/85f8dadae5ec8b10f590c94e26a89486661f1cac ][ 85f8dadae5ec8b10f590c94e26a89486661f1cac ]] |
+| community | stmmac: Configure Flow Control to work correctly based on rxfifo size | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/e58d012d689bccd65d0b0ddb9eda75487aaf1cf5 ][ e58d012d689bccd65d0b0ddb9eda75487aaf1cf5 ]] |
+| community | stmmac: Enable unicast pause frame detect in GMAC Register 6 | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/74e9aa2ad64b329b0eea040e5b2052680bc74dbf ][ 74e9aa2ad64b329b0eea040e5b2052680bc74dbf ]] |
+| community | stmmac: Read tx-fifo-depth and rx-fifo-depth from the devicetree | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/f9f50b29399c641687db9bbadcb1ece707f5ae16 ][ f9f50b29399c641687db9bbadcb1ece707f5ae16 ]] |
+| community | stmmac: Add defines and documentation for enabling flow control | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/724139a8808a005bcb77c318432d50cc842b4f8b ][ 724139a8808a005bcb77c318432d50cc842b4f8b ]] |
+| community | stmmac: Add properties for transmit and receive fifo sizes | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/c0a281727f667d748491ff205622403d0f43403b ][ c0a281727f667d748491ff205622403d0f43403b ]] |
+| community | FogBugz #291165:TSE-MSGMDA linux driver is not working for Max10 | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/37161a75998d212e1e21c086bd832b85ffdf3650 ][ 37161a75998d212e1e21c086bd832b85ffdf3650 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.05.02_rc1
+new commits : 10
+56adec9 Dinh Nguyen FogBugz #294479: Add the l4_sys_free_clk clock node
+d10776f Andreas Oetken altera tse: Fix network-delays and -retransmissions after high throughput.
+878800b Chee Nouk Phoon FogBugz #291165:TSE-MSGMDA linux driver is not working for Max10
+5220f0c Vince Bridgers ARM: socfpga: dts: Add tx-fifo-depth and rx-fifo-depth properties
+123f963 Vince Bridgers ARM: socfpga: dts: Add multicast bins and unicast filter entries
+398c9eb Vince Bridgers stmmac: Configure Flow Control to work correctly based on rxfifo size
+875c3a9 Vince Bridgers stmmac: Enable unicast pause frame detect in GMAC Register 6
+fb9d7b1 Vince Bridgers stmmac: Read tx-fifo-depth and rx-fifo-depth from the devicetree
+cd75123 Vince Bridgers stmmac: Add defines and documentation for enabling flow control
+a626c30 Vince Bridgers stmmac: Add properties for transmit and receive fifo sizes
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_15.05.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| 294479 | Add the l4_sys_free_clk clock node | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/56adec96ecbc3df5e4320d409c515b9a568cfe7b ][ 56adec96ecbc3df5e4320d409c515b9a568cfe7b ]] |
+| community | altera tse: Fix network-delays and -retransmissions after high throughput. | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/d10776f779ddb8d032eb49233c2ec382504188a2 ][ d10776f779ddb8d032eb49233c2ec382504188a2 ]] |
+| community | FogBugz #291165:TSE-MSGMDA linux driver is not working for Max10 | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/878800b42a7090ae496c399d7c58460dd64a1f81 ][ 878800b42a7090ae496c399d7c58460dd64a1f81 ]] |
+| community | ARM: socfpga: dts: Add tx-fifo-depth and rx-fifo-depth properties | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/5220f0c80811a19395843330b779c2ec46e3eeb4 ][ 5220f0c80811a19395843330b779c2ec46e3eeb4 ]] |
+| community | ARM: socfpga: dts: Add multicast bins and unicast filter entries | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/123f96391036d73912abd240556ff10149e1b828 ][ 123f96391036d73912abd240556ff10149e1b828 ]] |
+| community | stmmac: Configure Flow Control to work correctly based on rxfifo size | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/398c9eb1071d0536212eeb75036411b52d693516 ][ 398c9eb1071d0536212eeb75036411b52d693516 ]] |
+| community | stmmac: Enable unicast pause frame detect in GMAC Register 6 | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/875c3a9b2015e57383060a7da8bcd684869a5d2a ][ 875c3a9b2015e57383060a7da8bcd684869a5d2a ]] |
+| community | stmmac: Read tx-fifo-depth and rx-fifo-depth from the devicetree | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/fb9d7b1e08dccad7d17d56db230519a7d3fc364e ][ fb9d7b1e08dccad7d17d56db230519a7d3fc364e ]] |
+| community | stmmac: Add defines and documentation for enabling flow control | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/cd7512323d3feb999e916ee90cb85637ba9b9cf5 ][ cd7512323d3feb999e916ee90cb85637ba9b9cf5 ]] |
+| community | stmmac: Add properties for transmit and receive fifo sizes | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/a626c3041a6ace7fe6639560281104a4ae31d5f0 ][ a626c3041a6ace7fe6639560281104a4ae31d5f0 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-3.18_15.05.02_rc1
+commit: 034e7cb Dinh Nguyen FogBugz #294479: Add the l4_sys_free_clk clock node
+
+tag:    rel_socfpga-3.10-ltsi_15.05.02_rc1
+commit: 77c9b87 Dinh Nguyen FogBugz #294479: Add the l4_sys_free_clk clock node
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.05.02_rc1
+commit: 56adec9 Dinh Nguyen FogBugz #294479: Add the l4_sys_free_clk clock node
+
+
+-----------------------------------------------------------------------
+
+repository: altera-opensource/u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.05.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.05.02_rc1
+new commits : 2
+f036048 Thor Thayer FogBugz #295861: Fix UART0 output
+df4f8c5 Matthew Gerlach FogBugz #292775: qspi calibration needs to round up
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_15.05.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| 295861 | Fix UART0 output | [[ https://github.com/altera-opensource/altera-opensource/u-boot-socfpga/commit/f036048565eeaa2ed5717b1d2798dab329442c38 ][ f036048565eeaa2ed5717b1d2798dab329442c38 ]] |
+| 292775 | qspi calibration needs to round up | [[ https://github.com/altera-opensource/altera-opensource/u-boot-socfpga/commit/df4f8c522faf56d9b1f5eed5fc801c77640d77c6 ][ df4f8c522faf56d9b1f5eed5fc801c77640d77c6 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.05.02_rc1
+commit: 32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.05.02_rc1
+commit: f036048 Thor Thayer FogBugz #295861: Fix UART0 output
+
+
+-----------------------------------------------------------------------
+
+repository: altera-opensource/angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_15.05.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_15.05.02_rc1
+new commits : 1
+b5eabfb Yves Vandervennet update for github
+
+
+++wiki:
+*Branch name*: angstrom-v2013.12-socfpga, *Tag name:* rel_angstrom-v2013.12-socfpga_15.05.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | update for github | [[ https://github.com/altera-opensource/altera-opensource/angstrom-socfpga/commit/b5eabfbc4d1d7da4f2cd8ee34025ce40d657f661 ][ b5eabfbc4d1d7da4f2cd8ee34025ce40d657f661 ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_15.05.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.05.02_rc1
+new commits : 1
+380baf4 Yves Vandervennet update for github
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-socfpga, *Tag name:* rel_angstrom-v2014.12-socfpga_15.05.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | update for github | [[ https://github.com/altera-opensource/altera-opensource/angstrom-socfpga/commit/380baf43477eb1a994eae009f748d26607a39532 ][ 380baf43477eb1a994eae009f748d26607a39532 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2012.12-socfpga_15.05.02_rc1
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_15.05.02_rc1
+commit: b5eabfb Yves Vandervennet update for github
+
+tag:    rel_angstrom-v2014.06-socfpga_15.05.02_rc1
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+tag:    rel_angstrom-v2014.12-socfpga_15.05.02_rc1
+commit: 380baf4 Yves Vandervennet update for github
+
+
+-----------------------------------------------------------------------
+
+repository: altera-opensource/meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_15.05.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_15.05.02_rc1
+new commits : 1
+0d7c7de Yves Vandervennet update for github
+
+
+++wiki:
+*Branch name*: angstrom-v2013.12-yocto1.5, *Tag name:* rel_angstrom-v2013.12-yocto1.5_15.05.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | update for github | [[ https://github.com/altera-opensource/altera-opensource/meta-altera/commit/0d7c7de5a35a34ab3c6154b51f362815e5405900 ][ 0d7c7de5a35a34ab3c6154b51f362815e5405900 ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_15.05.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.05.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.05.02_rc1
+new commits : 2
+2f5c57c Graham Moore Update busybox full configuration for version 1.22
+0ba7114 Yves Vandervennet update for github
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-yocto1.7_a10, *Tag name:* rel_angstrom-v2014.12-yocto1.7_a10_15.05.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | Update busybox full configuration for version 1.22 | [[ https://github.com/altera-opensource/altera-opensource/meta-altera/commit/2f5c57c03f1b2a9aa1343d6b5ddf00202a3381a5 ][ 2f5c57c03f1b2a9aa1343d6b5ddf00202a3381a5 ]] |
+| community | update for github | [[ https://github.com/altera-opensource/altera-opensource/meta-altera/commit/0ba7114c7c0702017925916b5c13e6502ed59b2d ][ 0ba7114c7c0702017925916b5c13e6502ed59b2d ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2012.12-yocto1.3_15.05.02_rc1
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_15.05.02_rc1
+commit: 0d7c7de Yves Vandervennet update for github
+
+tag:    rel_angstrom-v2014.06-yocto1.6_15.05.02_rc1
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2014.12-yocto1.7_15.05.02_rc1
+commit: 95d38e0 Yves Vandervennet recipe for 3.18
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.05.02_rc1
+commit: 2f5c57c Graham Moore Update busybox full configuration for version 1.22
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.18
+
+commit 034e7cbef5db4a259e9658939e16c53909fc1f34
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Apr 23 15:41:51 2015 -0500
+
+    FogBugz #294479: Add the l4_sys_free_clk clock node
+    
+    The l4_sys_free_clk is noc_free_clk that goes through a fixed divider of 4
+    and cannot get gated. The l4_sys_free_clk is also the correct clock for
+    timers 2 and 3.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 43f9529d05f3b59f48f49f36d7d40044da7ff353
+Author: Andreas Oetken <andreas@oetken.name>
+Date:   Thu Apr 16 23:48:08 2015 +0200
+
+    altera tse: Fix network-delays and -retransmissions after high throughput.
+    
+    Fix bug which occurs when more than <limit> packets are available during
+    napi-poll, leading to "delays" and retransmissions on the network.
+    
+    Check for (count < limit) before checking the get_rx_status in tse_rx-function.
+    Function get_rx_status is reading from the response-fifo.
+    If there is currently a response in the fifo,
+    reading the last byte of the response pops the value from the fifo.
+    If the limit is checked as second condition
+    and the limit is reached the fifo is popped but the packet is not processed.
+    
+    Signed-off-by: Andreas Oetken <ennoerlangen@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 659d104a27d7bdd72b02133006b6f882bdd744d3
+Author: Chee Nouk Phoon <cnphoon@altera.com>
+Date:   Wed Apr 15 13:49:59 2015 +0800
+
+    FogBugz #291165:TSE-MSGMDA linux driver is not working for Max10
+    
+    This patch resolves false CRC errors from mSGDMA in TX mSGDMA MM to ST
+    mode. Hence the error IRQ needs to be masked off, otherwise mSGDMA will
+    indicate data as errors to TSE block. Previous mSGDMA had hardware bug that
+    masked off this errors as default.
+    
+    Signed-off-by: Chee Nouk Phoon <cnphoon@altera.com>
+
+commit a19d826034a319294d971e835d8433c687e6faa1
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Tue Apr 14 09:27:38 2015 -0500
+
+    ARM: socfpga: dts: Add tx-fifo-depth and rx-fifo-depth properties
+    
+    Add tx-fifo-depth and rx-fifo-depth devicetree properties for socfpga
+    stmmac. These devicetree properties will be used to configure certain
+    features of the stmmac on the socfpga.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+commit bdf598134e4dd7bc2e03b3fca0fce09dd4ab659e
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Tue Apr 14 09:31:19 2015 -0500
+
+    ARM: socfpga: dts: Add multicast bins and unicast filter entries
+    
+    Add multicast-filter-bins and perfect-filter-entries configuration properties
+    to the socfpga devicetree for the Arria 10 socfpga.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+commit 5e0acc24cff24166c8b7e578790a4f9024c7298e
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:42 2015 -0500
+
+    stmmac: Configure Flow Control to work correctly based on rxfifo size
+    
+    Configure flow control correctly, and based on the receive fifo size read
+    as a property from the devicetree since the Synopsys stmmac fifo sizes are
+    configurable based on a particular chip's implementation. This patch maintains
+    the previous incorrect behavior unless the receive fifo size is found in the
+    devicetree.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 969d54a759148d094ad6f4027ad68412952d9db2
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:41 2015 -0500
+
+    stmmac: Enable unicast pause frame detect in GMAC Register 6
+    
+    Unicast pause frame detect was not being enabled for the Synopsys stmmac. This
+    patch sets Unicast pause frame detect in MAC register 6 so that pause frame
+    detection by the stmmac conforms to IEEE 802.3, Annex 31B.3.3 Receive
+    Operation - Specifically, a MAC shall respond to pause frames containing
+    either the reserved multicast address or the unique physical address
+    associated with this station.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 46c167bc00f72511c2ad47861d1daadd9d3e8c86
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:40 2015 -0500
+
+    stmmac: Read tx-fifo-depth and rx-fifo-depth from the devicetree
+    
+    Read the tx-fifo-depth and rx-fifo-depth from the devicetree. The Synopsys
+    stmmac controller fifos are configurable per product instance, and the fifo
+    sizes are needed to configure certain features correctly such as flow control.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 13029100f99c60f8e21d3679c8263dbf152bf360
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:39 2015 -0500
+
+    stmmac: Add defines and documentation for enabling flow control
+    
+    Add defines and documentation for enabling flow control on the stmmac. Flow
+    control was not implemented correctly on the stmmac driver and is currently
+    non-functional as a result. This is the first in a series of small patches
+    to correctly implement this feature.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 19593db218a455529a077a957751d7adb08dfd4e
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:38 2015 -0500
+
+    stmmac: Add properties for transmit and receive fifo sizes
+    
+    The Synopsys stmmac fifo sizes are configurable, and need to be known
+    in order to configure certain controller features. This patch adds
+    tx-fifo-depth and rx-fifo-depth properties to the stmmac document
+    file.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 2d4f5ef31603d95d384362c71b731164c22519e3
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri Apr 10 15:40:42 2015 -0500
+
+    ARM: socfpga: dts: Add a clock node for sdmmc CIU
+    
+    The CIU(Card Interface Unit) get its clock from the sdmmc_clk_divided clock
+    which is used to clock the card. The sdmmc_clk_divided clock is the sdmmc_clk
+    passed through a fixed divider of 4. This patch adds the sdmmc_clk_divided
+    node and makes the sdmmc_clk it's parent.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: renamed ciu_clk to sdmmc_clk_divided
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 77c9b87c1fad21d2382d6d208ecda1a3def16c55
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Apr 23 15:41:51 2015 -0500
+
+    FogBugz #294479: Add the l4_sys_free_clk clock node
+    
+    The l4_sys_free_clk is noc_free_clk that goes through a fixed divider of 4
+    and cannot get gated. The l4_sys_free_clk is also the correct clock for
+    timers 2 and 3.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 519e5f0113f62f15741709af122f07863eeb24d3
+Author: Andreas Oetken <andreas@oetken.name>
+Date:   Thu Apr 16 23:48:08 2015 +0200
+
+    altera tse: Fix network-delays and -retransmissions after high throughput.
+    
+    Fix bug which occurs when more than <limit> packets are available during
+    napi-poll, leading to "delays" and retransmissions on the network.
+    
+    Check for (count < limit) before checking the get_rx_status in tse_rx-function.
+    Function get_rx_status is reading from the response-fifo.
+    If there is currently a response in the fifo,
+    reading the last byte of the response pops the value from the fifo.
+    If the limit is checked as second condition
+    and the limit is reached the fifo is popped but the packet is not processed.
+    
+    Signed-off-by: Andreas Oetken <ennoerlangen@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 51706ad6c841ccadc5ab4d9bb933057d6dd6a665
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Tue Apr 14 09:27:38 2015 -0500
+
+    ARM: socfpga: dts: Add tx-fifo-depth and rx-fifo-depth properties
+    
+    Add tx-fifo-depth and rx-fifo-depth devicetree properties for socfpga
+    stmmac. These devicetree properties will be used to configure certain
+    features of the stmmac on the socfpga.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+commit 85f8dadae5ec8b10f590c94e26a89486661f1cac
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Tue Apr 14 09:31:19 2015 -0500
+
+    ARM: socfpga: dts: Add multicast bins and unicast filter entries
+    
+    Add multicast-filter-bins and perfect-filter-entries configuration properties
+    to the socfpga devicetree for the Arria 10 socfpga.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+commit e58d012d689bccd65d0b0ddb9eda75487aaf1cf5
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:42 2015 -0500
+
+    stmmac: Configure Flow Control to work correctly based on rxfifo size
+    
+    Configure flow control correctly, and based on the receive fifo size read
+    as a property from the devicetree since the Synopsys stmmac fifo sizes are
+    configurable based on a particular chip's implementation. This patch maintains
+    the previous incorrect behavior unless the receive fifo size is found in the
+    devicetree.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 74e9aa2ad64b329b0eea040e5b2052680bc74dbf
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:41 2015 -0500
+
+    stmmac: Enable unicast pause frame detect in GMAC Register 6
+    
+    Unicast pause frame detect was not being enabled for the Synopsys stmmac. This
+    patch sets Unicast pause frame detect in MAC register 6 so that pause frame
+    detection by the stmmac conforms to IEEE 802.3, Annex 31B.3.3 Receive
+    Operation - Specifically, a MAC shall respond to pause frames containing
+    either the reserved multicast address or the unique physical address
+    associated with this station.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit f9f50b29399c641687db9bbadcb1ece707f5ae16
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:40 2015 -0500
+
+    stmmac: Read tx-fifo-depth and rx-fifo-depth from the devicetree
+    
+    Read the tx-fifo-depth and rx-fifo-depth from the devicetree. The Synopsys
+    stmmac controller fifos are configurable per product instance, and the fifo
+    sizes are needed to configure certain features correctly such as flow control.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 724139a8808a005bcb77c318432d50cc842b4f8b
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:39 2015 -0500
+
+    stmmac: Add defines and documentation for enabling flow control
+    
+    Add defines and documentation for enabling flow control on the stmmac. Flow
+    control was not implemented correctly on the stmmac driver and is currently
+    non-functional as a result. This is the first in a series of small patches
+    to correctly implement this feature.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit c0a281727f667d748491ff205622403d0f43403b
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:38 2015 -0500
+
+    stmmac: Add properties for transmit and receive fifo sizes
+    
+    The Synopsys stmmac fifo sizes are configurable, and need to be known
+    in order to configure certain controller features. This patch adds
+    tx-fifo-depth and rx-fifo-depth properties to the stmmac document
+    file.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 37161a75998d212e1e21c086bd832b85ffdf3650
+Author: Chee Nouk Phoon <cnphoon@altera.com>
+Date:   Wed Apr 15 13:49:59 2015 +0800
+
+    FogBugz #291165:TSE-MSGMDA linux driver is not working for Max10
+    
+    This patch resolves false CRC errors from mSGDMA in TX mSGDMA MM to ST
+    mode. Hence the error IRQ needs to be masked off, otherwise mSGDMA will
+    indicate data as errors to TSE block. Previous mSGDMA had hardware bug that
+    masked off this errors as default.
+    
+    Signed-off-by: Chee Nouk Phoon <cnphoon@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 56adec96ecbc3df5e4320d409c515b9a568cfe7b
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Apr 23 15:41:51 2015 -0500
+
+    FogBugz #294479: Add the l4_sys_free_clk clock node
+    
+    The l4_sys_free_clk is noc_free_clk that goes through a fixed divider of 4
+    and cannot get gated. The l4_sys_free_clk is also the correct clock for
+    timers 2 and 3.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit d10776f779ddb8d032eb49233c2ec382504188a2
+Author: Andreas Oetken <andreas@oetken.name>
+Date:   Thu Apr 16 23:48:08 2015 +0200
+
+    altera tse: Fix network-delays and -retransmissions after high throughput.
+    
+    Fix bug which occurs when more than <limit> packets are available during
+    napi-poll, leading to "delays" and retransmissions on the network.
+    
+    Check for (count < limit) before checking the get_rx_status in tse_rx-function.
+    Function get_rx_status is reading from the response-fifo.
+    If there is currently a response in the fifo,
+    reading the last byte of the response pops the value from the fifo.
+    If the limit is checked as second condition
+    and the limit is reached the fifo is popped but the packet is not processed.
+    
+    Signed-off-by: Andreas Oetken <ennoerlangen@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 878800b42a7090ae496c399d7c58460dd64a1f81
+Author: Chee Nouk Phoon <cnphoon@altera.com>
+Date:   Wed Apr 15 13:49:59 2015 +0800
+
+    FogBugz #291165:TSE-MSGMDA linux driver is not working for Max10
+    
+    This patch resolves false CRC errors from mSGDMA in TX mSGDMA MM to ST
+    mode. Hence the error IRQ needs to be masked off, otherwise mSGDMA will
+    indicate data as errors to TSE block. Previous mSGDMA had hardware bug that
+    masked off this errors as default.
+    
+    Signed-off-by: Chee Nouk Phoon <cnphoon@altera.com>
+
+commit 5220f0c80811a19395843330b779c2ec46e3eeb4
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Tue Apr 14 09:27:38 2015 -0500
+
+    ARM: socfpga: dts: Add tx-fifo-depth and rx-fifo-depth properties
+    
+    Add tx-fifo-depth and rx-fifo-depth devicetree properties for socfpga
+    stmmac. These devicetree properties will be used to configure certain
+    features of the stmmac on the socfpga.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+commit 123f96391036d73912abd240556ff10149e1b828
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Tue Apr 14 09:31:19 2015 -0500
+
+    ARM: socfpga: dts: Add multicast bins and unicast filter entries
+    
+    Add multicast-filter-bins and perfect-filter-entries configuration properties
+    to the socfpga devicetree for the Arria 10 socfpga.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+commit 398c9eb1071d0536212eeb75036411b52d693516
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:42 2015 -0500
+
+    stmmac: Configure Flow Control to work correctly based on rxfifo size
+    
+    Configure flow control correctly, and based on the receive fifo size read
+    as a property from the devicetree since the Synopsys stmmac fifo sizes are
+    configurable based on a particular chip's implementation. This patch maintains
+    the previous incorrect behavior unless the receive fifo size is found in the
+    devicetree.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 875c3a9b2015e57383060a7da8bcd684869a5d2a
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:41 2015 -0500
+
+    stmmac: Enable unicast pause frame detect in GMAC Register 6
+    
+    Unicast pause frame detect was not being enabled for the Synopsys stmmac. This
+    patch sets Unicast pause frame detect in MAC register 6 so that pause frame
+    detection by the stmmac conforms to IEEE 802.3, Annex 31B.3.3 Receive
+    Operation - Specifically, a MAC shall respond to pause frames containing
+    either the reserved multicast address or the unique physical address
+    associated with this station.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit fb9d7b1e08dccad7d17d56db230519a7d3fc364e
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:40 2015 -0500
+
+    stmmac: Read tx-fifo-depth and rx-fifo-depth from the devicetree
+    
+    Read the tx-fifo-depth and rx-fifo-depth from the devicetree. The Synopsys
+    stmmac controller fifos are configurable per product instance, and the fifo
+    sizes are needed to configure certain features correctly such as flow control.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit cd7512323d3feb999e916ee90cb85637ba9b9cf5
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:39 2015 -0500
+
+    stmmac: Add defines and documentation for enabling flow control
+    
+    Add defines and documentation for enabling flow control on the stmmac. Flow
+    control was not implemented correctly on the stmmac driver and is currently
+    non-functional as a result. This is the first in a series of small patches
+    to correctly implement this feature.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit a626c3041a6ace7fe6639560281104a4ae31d5f0
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Apr 15 11:17:38 2015 -0500
+
+    stmmac: Add properties for transmit and receive fifo sizes
+    
+    The Synopsys stmmac fifo sizes are configurable, and need to be known
+    in order to configure certain controller features. This patch adds
+    tx-fifo-depth and rx-fifo-depth properties to the stmmac document
+    file.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit f036048565eeaa2ed5717b1d2798dab329442c38
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Wed Apr 29 13:20:33 2015 -0500
+
+    FogBugz #295861: Fix UART0 output
+    
+    Changing from UART1 to UART0 for the Arria10 PE board
+    in San Jose revealed one of the test conditions was
+    using an old define.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit df4f8c522faf56d9b1f5eed5fc801c77640d77c6
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Mon Apr 20 15:14:43 2015 -0700
+
+    FogBugz #292775: qspi calibration needs to round up
+    
+    The qpsi read-delay calibration determines minimum
+    and maximum delay values and divides by two to
+    get the average.  This division must be rounded
+    up to work with the widest range of variations.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of angstrom-socfpga branch angstrom-v2013.12-socfpga
+
+commit b5eabfbc4d1d7da4f2cd8ee34025ce40d657f661
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Wed Apr 22 07:37:17 2015 -0500
+
+    update for github
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of angstrom-socfpga branch angstrom-v2014.12-socfpga
+
+commit 380baf43477eb1a994eae009f748d26607a39532
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Wed Apr 22 06:18:29 2015 -0500
+
+    update for github
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2013.12-yocto1.5
+
+commit 0d7c7de5a35a34ab3c6154b51f362815e5405900
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Wed Apr 22 07:40:00 2015 -0500
+
+    update for github
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7_a10
+
+commit 2f5c57c03f1b2a9aa1343d6b5ddf00202a3381a5
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Apr 24 13:21:15 2015 -0500
+
+    Update busybox full configuration for version 1.22
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit 0ba7114c7c0702017925916b5c13e6502ed59b2d
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Wed Apr 22 06:13:35 2015 -0500
+
+    update for github
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

@@ -1,0 +1,190 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.17
+branch tag  : rel_socfpga-3.17_15.02.01_pr
+new commits : 1
+9d03095 Yves Vandervennet FogBugz #249283: update of SoCFPGA defconfig
+
+
+++wiki:
+*Branch name*: socfpga-3.17, *Tag name:* rel_socfpga-3.17_15.02.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 249283 | update of SoCFPGA defconfig | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=9d0309531462b73f670d41a78d6a93ae5775a721 ][ 9d0309531462b73f670d41a78d6a93ae5775a721 ]] |
+--wiki:
+
+
+branch      : socfpga-3.18
+branch tag  : rel_socfpga-3.18_15.02.01_pr
+Pushing new branch to rocketboards.org
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.02.01_pr
+new commits : 1
+3bffc0d Yves Vandervennet FogBugz #249283: update of SoCFPGA defconfig
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_15.02.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 249283 | update of SoCFPGA defconfig | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=3bffc0d0f49e1136ab31448c4e48c2a9980921ac ][ 3bffc0d0f49e1136ab31448c4e48c2a9980921ac ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.02.01_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.17_15.02.01_pr
+commit: 9d03095 Yves Vandervennet FogBugz #249283: update of SoCFPGA defconfig
+
+tag:    rel_socfpga-3.18_15.02.01_pr
+commit: ab3f83e Thor Thayer FogBugz #261262: Cleanup of SPI device tree (3.18)
+
+tag:    rel_socfpga-3.10-ltsi_15.02.01_pr
+commit: 3bffc0d Yves Vandervennet FogBugz #249283: update of SoCFPGA defconfig
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.02.01_pr
+commit: 7ea94617 Ley Foon Tan FogBugz #246108: nios2: initialize one timer only
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.02.01_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_15.02.01_pr
+commit: 32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_15.02.01_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_15.02.01_pr
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_15.02.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_15.02.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_15.02.01_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_15.02.01_pr
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_15.02.01_pr
+commit: 65417bc Yves Vandervennet kde repo moved, it's now meta-kde4
+
+tag:    rel_angstrom-v2014.06-socfpga_15.02.01_pr
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_15.02.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_15.02.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_15.02.01_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_15.02.01_pr
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_15.02.01_pr
+commit: fe61959 Yves Vandervennet Recipe for 3.17
+
+tag:    rel_angstrom-v2014.06-yocto1.6_15.02.01_pr
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.17
+
+commit 9d0309531462b73f670d41a78d6a93ae5775a721
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Thu Dec 4 22:14:43 2014 -0600
+
+    FogBugz #249283: update of SoCFPGA defconfig
+    
+    This patch enables CONFIG_FHANDLE, required for Angstrom
+    This patch also updates the socfpga defconfig for this kernel version,
+    and was generated with 'make savedefconfig'. This helps have the minimal
+    set of CONFIG options on in the defconfig.
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.18
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 3bffc0d0f49e1136ab31448c4e48c2a9980921ac
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Fri Jan 16 21:28:12 2015 -0600
+
+    FogBugz #249283: update of SoCFPGA defconfig
+    
+    CONFIG_FHANDLE is enabled, to accomodate Angstrom/systemd needs
+    Defconfig file generated with 'make savedefconfig'
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

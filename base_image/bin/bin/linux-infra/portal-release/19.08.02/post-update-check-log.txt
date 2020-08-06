@@ -1,0 +1,901 @@
+release : 19.08.02_pr
+rel num : 19.08.02
+log     : /home/tthayer/bin/linux-infra/portal-release/19.08.02/19.08.02_pr-log.txt
+
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/rel_socfpga-5.0_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-socfpga/releases/tag/rel_socfpga-5.0_19.08.02_pr
+--2019-08-22 11:51:28--  https://github.com/altera-opensource/linux-socfpga/releases/tag/rel_socfpga-5.0_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_socfpga-5.0_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  224K
+    50K .......... .                                            155K=0.3s
+
+2019-08-22 11:51:29 (207 KB/s) - ‘rel_socfpga-5.0_19.08.02_pr’ saved [62828]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-5.0
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-socfpga/tree/socfpga-5.0
+--2019-08-22 11:51:29--  https://github.com/altera-opensource/linux-socfpga/tree/socfpga-5.0
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘socfpga-5.0’
+
+     0K .......... .......... .......... .......... ..........  124K
+    50K .......... .......... .......... .......... ..........  248K
+   100K ..........                                             37.0M=0.6s
+
+2019-08-22 11:51:31 (182 KB/s) - ‘socfpga-5.0’ saved [113026]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/linux-socfpga/commit/bc95527ed36b1b08bf699abbf1a67e5ecca1c5f8
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-socfpga/commit/bc95527ed36b1b08bf699abbf1a67e5ecca1c5f8
+--2019-08-22 11:51:31--  https://github.com/altera-opensource/linux-socfpga/commit/bc95527ed36b1b08bf699abbf1a67e5ecca1c5f8
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘bc95527ed36b1b08bf699abbf1a67e5ecca1c5f8’
+
+     0K .......... .......... .......... .......... ..........  202K
+    50K .......... .......... .                                 425K=0.3s
+
+2019-08-22 11:51:33 (239 KB/s) - ‘bc95527ed36b1b08bf699abbf1a67e5ecca1c5f8’ saved [72707]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/rel_socfpga-5.1_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-socfpga/releases/tag/rel_socfpga-5.1_19.08.02_pr
+--2019-08-22 11:51:33--  https://github.com/altera-opensource/linux-socfpga/releases/tag/rel_socfpga-5.1_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_socfpga-5.1_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  149K
+    50K .......... .                                            291K=0.4s
+
+2019-08-22 11:51:34 (164 KB/s) - ‘rel_socfpga-5.1_19.08.02_pr’ saved [62908]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-5.1
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-socfpga/tree/socfpga-5.1
+--2019-08-22 11:51:34--  https://github.com/altera-opensource/linux-socfpga/tree/socfpga-5.1
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘socfpga-5.1’
+
+     0K .......... .......... .......... .......... ..........  168K
+    50K .......... .......... .......... .......... ..........  505K
+   100K .........                                              30.9M=0.4s
+
+2019-08-22 11:51:36 (276 KB/s) - ‘socfpga-5.1’ saved [111899]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/linux-socfpga/commit/3797a1f72e544aac68aee48618518f73bfe5f83f
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-socfpga/commit/3797a1f72e544aac68aee48618518f73bfe5f83f
+--2019-08-22 11:51:36--  https://github.com/altera-opensource/linux-socfpga/commit/3797a1f72e544aac68aee48618518f73bfe5f83f
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘3797a1f72e544aac68aee48618518f73bfe5f83f’
+
+     0K .......... .......... .......... .......... ..........  133K
+    50K .......... .........                                    295K=0.4s
+
+2019-08-22 11:51:38 (158 KB/s) - ‘3797a1f72e544aac68aee48618518f73bfe5f83f’ saved [71523]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/rel_socfpga-4.14.130-ltsi_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-socfpga/releases/tag/rel_socfpga-4.14.130-ltsi_19.08.02_pr
+--2019-08-22 11:51:38--  https://github.com/altera-opensource/linux-socfpga/releases/tag/rel_socfpga-4.14.130-ltsi_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_socfpga-4.14.130-ltsi_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  201K
+    50K .......... .                                            325K=0.3s
+
+2019-08-22 11:51:39 (217 KB/s) - ‘rel_socfpga-4.14.130-ltsi_19.08.02_pr’ saved [63152]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.14.130-ltsi
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.14.130-ltsi
+--2019-08-22 11:51:39--  https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.14.130-ltsi
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘socfpga-4.14.130-ltsi’
+
+     0K .......... .......... .......... .......... ..........  124K
+    50K .......... .......... .......... .......... ..........  248K
+   100K .......... .......... .......... .......... .           407K=0.7s
+
+2019-08-22 11:51:41 (200 KB/s) - ‘socfpga-4.14.130-ltsi’ saved [145222]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/linux-socfpga/commit/d05b2e5d32d094cba882a52bf7ab4ac8a0d6a9e2
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-socfpga/commit/d05b2e5d32d094cba882a52bf7ab4ac8a0d6a9e2
+--2019-08-22 11:51:41--  https://github.com/altera-opensource/linux-socfpga/commit/d05b2e5d32d094cba882a52bf7ab4ac8a0d6a9e2
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘d05b2e5d32d094cba882a52bf7ab4ac8a0d6a9e2’
+
+     0K .......... .......... .......... .......... ..........  202K
+    50K .......... .........                                    396K=0.3s
+
+2019-08-22 11:51:42 (234 KB/s) - ‘d05b2e5d32d094cba882a52bf7ab4ac8a0d6a9e2’ saved [71310]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/rel_socfpga-4.14.126-ltsi-rt_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-socfpga/releases/tag/rel_socfpga-4.14.126-ltsi-rt_19.08.02_pr
+--2019-08-22 11:51:42--  https://github.com/altera-opensource/linux-socfpga/releases/tag/rel_socfpga-4.14.126-ltsi-rt_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_socfpga-4.14.126-ltsi-rt_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  133K
+    50K .......... .                                            419K=0.4s
+
+2019-08-22 11:51:44 (153 KB/s) - ‘rel_socfpga-4.14.126-ltsi-rt_19.08.02_pr’ saved [63243]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.14.126-ltsi-rt
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.14.126-ltsi-rt
+--2019-08-22 11:51:44--  https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.14.126-ltsi-rt
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘socfpga-4.14.126-ltsi-rt’
+
+     0K .......... .......... .......... .......... ..........  174K
+    50K .......... .......... .......... .......... ..........  504K
+   100K .......... .                                           1.05M=0.4s
+
+2019-08-22 11:51:46 (280 KB/s) - ‘socfpga-4.14.126-ltsi-rt’ saved [113833]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/linux-socfpga/commit/6cecf60f97fd892516c1fb54a5e8f986cd03fff3
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-socfpga/commit/6cecf60f97fd892516c1fb54a5e8f986cd03fff3
+--2019-08-22 11:51:46--  https://github.com/altera-opensource/linux-socfpga/commit/6cecf60f97fd892516c1fb54a5e8f986cd03fff3
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘6cecf60f97fd892516c1fb54a5e8f986cd03fff3’
+
+     0K .......... .......... .......... .......... ..........  201K
+    50K .......... .........                                    396K=0.3s
+
+2019-08-22 11:51:47 (233 KB/s) - ‘6cecf60f97fd892516c1fb54a5e8f986cd03fff3’ saved [71301]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/rel_socfpga_v2013.01.01_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/u-boot-socfpga/releases/tag/rel_socfpga_v2013.01.01_19.08.02_pr
+--2019-08-22 11:51:47--  https://github.com/altera-opensource/u-boot-socfpga/releases/tag/rel_socfpga_v2013.01.01_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_socfpga_v2013.01.01_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  253K
+    50K .......... .                                           41.3M=0.2s
+
+2019-08-22 11:51:48 (311 KB/s) - ‘rel_socfpga_v2013.01.01_19.08.02_pr’ saved [63045]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2013.01.01
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2013.01.01
+--2019-08-22 11:51:48--  https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2013.01.01
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘socfpga_v2013.01.01’
+
+     0K .......... .......... .......... .......... ..........  132K
+    50K .......... .......... .......... .......... ..........  535K
+   100K .......... .......... .......... .......... ..........  461K
+   150K .......... .......... .......... .......... ..........  741K
+   200K .......... .......... .......... .......... ..........  753K
+   250K .......... .......... .......... .......... .......... 1.83M
+   300K .......... ..                                          34.5M=0.7s
+
+2019-08-22 11:51:50 (422 KB/s) - ‘socfpga_v2013.01.01’ saved [320156]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/0c9a3bdf3ca1326e3bc539676452f2d4f8895aeb
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/u-boot-socfpga/commit/0c9a3bdf3ca1326e3bc539676452f2d4f8895aeb
+--2019-08-22 11:51:50--  https://github.com/altera-opensource/u-boot-socfpga/commit/0c9a3bdf3ca1326e3bc539676452f2d4f8895aeb
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘0c9a3bdf3ca1326e3bc539676452f2d4f8895aeb’
+
+     0K .......... .......... .......... .......... ..........  124K
+    50K .......... .......... .                                 315K=0.5s
+
+2019-08-22 11:51:52 (151 KB/s) - ‘0c9a3bdf3ca1326e3bc539676452f2d4f8895aeb’ saved [72884]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/rel_socfpga_v2014.10_arria10_bringup_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/u-boot-socfpga/releases/tag/rel_socfpga_v2014.10_arria10_bringup_19.08.02_pr
+--2019-08-22 11:51:52--  https://github.com/altera-opensource/u-boot-socfpga/releases/tag/rel_socfpga_v2014.10_arria10_bringup_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_socfpga_v2014.10_arria10_bringup_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  252K
+    50K .......... ..                                           582K=0.2s
+
+2019-08-22 11:51:54 (285 KB/s) - ‘rel_socfpga_v2014.10_arria10_bringup_19.08.02_pr’ saved [64298]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2014.10_arria10_bringup
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2014.10_arria10_bringup
+--2019-08-22 11:51:54--  https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2014.10_arria10_bringup
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘socfpga_v2014.10_arria10_bringup’
+
+     0K .......... .......... .......... .......... ..........  148K
+    50K .......... .......... .......... .......... ..........  372K
+   100K .......... .......... .......... .......... ..........  487K
+   150K .......... .......... .......... .......... ..........  740K
+   200K .......... .......... .......... .......... ..........  746K
+   250K .......... .......... .......... .......... .......... 1.49M
+   300K .......... .......... .......... .......... ..........  757K
+   350K ....                                                   20.5M=0.8s
+
+2019-08-22 11:51:56 (439 KB/s) - ‘socfpga_v2014.10_arria10_bringup’ saved [363152]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/f7a7e26db7a0653bdd607cb8f38cc731efe347f1
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/u-boot-socfpga/commit/f7a7e26db7a0653bdd607cb8f38cc731efe347f1
+--2019-08-22 11:51:56--  https://github.com/altera-opensource/u-boot-socfpga/commit/f7a7e26db7a0653bdd607cb8f38cc731efe347f1
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘f7a7e26db7a0653bdd607cb8f38cc731efe347f1’
+
+     0K .......... .......... .......... .......... ..........  175K
+    50K .......... .......... .......... .......... ..........  496K
+   100K .......... .......... .......... .......... ..........  820K
+   150K .......... ....                                        39.7M=0.4s
+
+2019-08-22 11:51:58 (367 KB/s) - ‘f7a7e26db7a0653bdd607cb8f38cc731efe347f1’ saved [168301]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/rel_socfpga_v2017.09_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/u-boot-socfpga/releases/tag/rel_socfpga_v2017.09_19.08.02_pr
+--2019-08-22 11:51:58--  https://github.com/altera-opensource/u-boot-socfpga/releases/tag/rel_socfpga_v2017.09_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_socfpga_v2017.09_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  162K
+    50K .......... ..                                           442K=0.3s
+
+2019-08-22 11:51:59 (185 KB/s) - ‘rel_socfpga_v2017.09_19.08.02_pr’ saved [63745]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2017.09
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2017.09
+--2019-08-22 11:51:59--  https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2017.09
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘socfpga_v2017.09’
+
+     0K .......... .......... .......... .......... ..........  202K
+    50K .......... .......... .......... .......... ..........  506K
+   100K .......... .......... .......... .......... ..........  999K
+   150K .......... .......... .......... .......... .......... 1007K
+   200K .......... .......... .......... .......... .......... 1015K
+   250K .......... .......... .......... ..........            1.06M=0.5s
+
+2019-08-22 11:52:01 (545 KB/s) - ‘socfpga_v2017.09’ saved [297254]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/a2cf064e6c87683173aebda9399f6bd9a5ea3a8c
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/u-boot-socfpga/commit/a2cf064e6c87683173aebda9399f6bd9a5ea3a8c
+--2019-08-22 11:52:01--  https://github.com/altera-opensource/u-boot-socfpga/commit/a2cf064e6c87683173aebda9399f6bd9a5ea3a8c
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘a2cf064e6c87683173aebda9399f6bd9a5ea3a8c’
+
+     0K .......... .......... .......... .......... ..........  123K
+    50K .......... .........                                    148K=0.5s
+
+2019-08-22 11:52:03 (129 KB/s) - ‘a2cf064e6c87683173aebda9399f6bd9a5ea3a8c’ saved [71637]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/angstrom-socfpga/releases/tag/rel_angstrom-v2014.12-socfpga_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/angstrom-socfpga/releases/tag/rel_angstrom-v2014.12-socfpga_19.08.02_pr
+--2019-08-22 11:52:03--  https://github.com/altera-opensource/angstrom-socfpga/releases/tag/rel_angstrom-v2014.12-socfpga_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_angstrom-v2014.12-socfpga_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  168K
+    50K .......... ..                                           253K=0.3s
+
+2019-08-22 11:52:04 (180 KB/s) - ‘rel_angstrom-v2014.12-socfpga_19.08.02_pr’ saved [63936]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/angstrom-socfpga/tree/angstrom-v2014.12-socfpga
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/angstrom-socfpga/tree/angstrom-v2014.12-socfpga
+--2019-08-22 11:52:04--  https://github.com/altera-opensource/angstrom-socfpga/tree/angstrom-v2014.12-socfpga
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘angstrom-v2014.12-socfpga’
+
+     0K .......... .......... .......... .......... ..........  149K
+    50K .......... .......... .........                         281K=0.4s
+
+2019-08-22 11:52:06 (180 KB/s) - ‘angstrom-v2014.12-socfpga’ saved [80991]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/angstrom-socfpga/commit/9a77a4b560faebc54f2ef124e16e422adb4ac21d
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/angstrom-socfpga/commit/9a77a4b560faebc54f2ef124e16e422adb4ac21d
+--2019-08-22 11:52:06--  https://github.com/altera-opensource/angstrom-socfpga/commit/9a77a4b560faebc54f2ef124e16e422adb4ac21d
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘9a77a4b560faebc54f2ef124e16e422adb4ac21d’
+
+     0K .......... .......... .......... .......... ..........  124K
+    50K .......... ........                                     269K=0.5s
+
+2019-08-22 11:52:08 (145 KB/s) - ‘9a77a4b560faebc54f2ef124e16e422adb4ac21d’ saved [69755]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/angstrom-manifest/releases/tag/rel_angstrom-v2015.12-yocto2.0_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/angstrom-manifest/releases/tag/rel_angstrom-v2015.12-yocto2.0_19.08.02_pr
+--2019-08-22 11:52:08--  https://github.com/altera-opensource/angstrom-manifest/releases/tag/rel_angstrom-v2015.12-yocto2.0_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_angstrom-v2015.12-yocto2.0_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  148K
+    50K .......... ..                                           181K=0.4s
+
+2019-08-22 11:52:09 (154 KB/s) - ‘rel_angstrom-v2015.12-yocto2.0_19.08.02_pr’ saved [63681]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/angstrom-manifest/tree/angstrom-v2015.12-yocto2.0
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/angstrom-manifest/tree/angstrom-v2015.12-yocto2.0
+--2019-08-22 11:52:09--  https://github.com/altera-opensource/angstrom-manifest/tree/angstrom-v2015.12-yocto2.0
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘angstrom-v2015.12-yocto2.0’
+
+     0K .......... .......... .......... .......... ..........  252K
+    50K .......... .......... .......... ......                 364K=0.3s
+
+2019-08-22 11:52:11 (289 KB/s) - ‘angstrom-v2015.12-yocto2.0’ saved [88337]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/angstrom-manifest/commit/1bba4332709c7b79fc9902e6f32b4e896960b49f
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/angstrom-manifest/commit/1bba4332709c7b79fc9902e6f32b4e896960b49f
+--2019-08-22 11:52:11--  https://github.com/altera-opensource/angstrom-manifest/commit/1bba4332709c7b79fc9902e6f32b4e896960b49f
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘1bba4332709c7b79fc9902e6f32b4e896960b49f’
+
+     0K .......... .......... .......... .......... ..........  201K
+    50K .......... .......... ....                              270K=0.3s
+
+2019-08-22 11:52:12 (219 KB/s) - ‘1bba4332709c7b79fc9902e6f32b4e896960b49f’ saved [75930]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/rel_angstrom-v2015.12-yocto2.0_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/meta-altera/releases/tag/rel_angstrom-v2015.12-yocto2.0_19.08.02_pr
+--2019-08-22 11:52:12--  https://github.com/altera-opensource/meta-altera/releases/tag/rel_angstrom-v2015.12-yocto2.0_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_angstrom-v2015.12-yocto2.0_19.08.02_pr.1’
+
+     0K .......... .......... .......... .......... ..........  166K
+    50K .......... ..                                           245K=0.4s
+
+2019-08-22 11:52:14 (177 KB/s) - ‘rel_angstrom-v2015.12-yocto2.0_19.08.02_pr.1’ saved [63654]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2015.12-yocto2.0
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/meta-altera/tree/angstrom-v2015.12-yocto2.0
+--2019-08-22 11:52:14--  https://github.com/altera-opensource/meta-altera/tree/angstrom-v2015.12-yocto2.0
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘angstrom-v2015.12-yocto2.0.1’
+
+     0K .......... .......... .......... .......... ..........  186K
+    50K .......... .......... ..........                        450K=0.3s
+
+2019-08-22 11:52:16 (239 KB/s) - ‘angstrom-v2015.12-yocto2.0.1’ saved [82172]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/meta-altera/commit/3cfd56bb15673795435cf7684ef9c723283a6bce
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/meta-altera/commit/3cfd56bb15673795435cf7684ef9c723283a6bce
+--2019-08-22 11:52:16--  https://github.com/altera-opensource/meta-altera/commit/3cfd56bb15673795435cf7684ef9c723283a6bce
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘3cfd56bb15673795435cf7684ef9c723283a6bce’
+
+     0K .......... .......... .......... .......... ..........  124K
+    50K .......... .........                                    297K=0.5s
+
+2019-08-22 11:52:17 (149 KB/s) - ‘3cfd56bb15673795435cf7684ef9c723283a6bce’ saved [71651]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/rel_angstrom-v2016.12-yocto2.2_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/meta-altera/releases/tag/rel_angstrom-v2016.12-yocto2.2_19.08.02_pr
+--2019-08-22 11:52:17--  https://github.com/altera-opensource/meta-altera/releases/tag/rel_angstrom-v2016.12-yocto2.2_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_angstrom-v2016.12-yocto2.2_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  149K
+    50K .......... .                                            293K=0.4s
+
+2019-08-22 11:52:19 (164 KB/s) - ‘rel_angstrom-v2016.12-yocto2.2_19.08.02_pr’ saved [62876]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2016.12-yocto2.2
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/meta-altera/tree/angstrom-v2016.12-yocto2.2
+--2019-08-22 11:52:19--  https://github.com/altera-opensource/meta-altera/tree/angstrom-v2016.12-yocto2.2
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘angstrom-v2016.12-yocto2.2’
+
+     0K .......... .......... .......... .......... ..........  124K
+    50K .......... .......... ..........                        225K=0.5s
+
+2019-08-22 11:52:21 (149 KB/s) - ‘angstrom-v2016.12-yocto2.2’ saved [82191]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/meta-altera/commit/3a47b14561fae740f9205d3163be4390bfc509a8
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/meta-altera/commit/3a47b14561fae740f9205d3163be4390bfc509a8
+--2019-08-22 11:52:21--  https://github.com/altera-opensource/meta-altera/commit/3a47b14561fae740f9205d3163be4390bfc509a8
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘3a47b14561fae740f9205d3163be4390bfc509a8’
+
+     0K .......... .......... .......... .......... ..........  133K
+    50K .......... .......                                      257K=0.4s
+
+2019-08-22 11:52:23 (152 KB/s) - ‘3a47b14561fae740f9205d3163be4390bfc509a8’ saved [68812]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/rel_angstrom-v2018.06-yocto2.5_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/meta-altera/releases/tag/rel_angstrom-v2018.06-yocto2.5_19.08.02_pr
+--2019-08-22 11:52:23--  https://github.com/altera-opensource/meta-altera/releases/tag/rel_angstrom-v2018.06-yocto2.5_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_angstrom-v2018.06-yocto2.5_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  234K
+    50K .......... .                                            230K=0.3s
+
+2019-08-22 11:52:24 (233 KB/s) - ‘rel_angstrom-v2018.06-yocto2.5_19.08.02_pr’ saved [62879]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2018.06-yocto2.5
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/meta-altera/tree/angstrom-v2018.06-yocto2.5
+--2019-08-22 11:52:24--  https://github.com/altera-opensource/meta-altera/tree/angstrom-v2018.06-yocto2.5
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘angstrom-v2018.06-yocto2.5’
+
+     0K .......... .......... .......... .......... ..........  199K
+    50K .......... .......... ..........                        501K=0.3s
+
+2019-08-22 11:52:25 (258 KB/s) - ‘angstrom-v2018.06-yocto2.5’ saved [82561]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/meta-altera/commit/2a4cadc2eaea1fd887369dcbace0629e57de2b30
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/meta-altera/commit/2a4cadc2eaea1fd887369dcbace0629e57de2b30
+--2019-08-22 11:52:25--  https://github.com/altera-opensource/meta-altera/commit/2a4cadc2eaea1fd887369dcbace0629e57de2b30
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘2a4cadc2eaea1fd887369dcbace0629e57de2b30’
+
+     0K .......... .......... .......... .......... ..........  200K
+    50K .......... .......... .......... ......                 378K=0.3s
+
+2019-08-22 11:52:27 (250 KB/s) - ‘2a4cadc2eaea1fd887369dcbace0629e57de2b30’ saved [88880]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/intel-rsu/releases/tag/rel_master_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/intel-rsu/releases/tag/rel_master_19.08.02_pr
+--2019-08-22 11:52:27--  https://github.com/altera-opensource/intel-rsu/releases/tag/rel_master_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_master_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  167K
+    50K ..........                                              219K=0.3s
+
+2019-08-22 11:52:28 (175 KB/s) - ‘rel_master_19.08.02_pr’ saved [62263]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/intel-rsu/tree/master
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/intel-rsu/tree/master
+--2019-08-22 11:52:28--  https://github.com/altera-opensource/intel-rsu/tree/master
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘master’
+
+     0K .......... .......... .......... .......... ..........  124K
+    50K .......... ..........                                   196K=0.5s
+
+2019-08-22 11:52:30 (139 KB/s) - ‘master’ saved [72452]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/intel-rsu/commit/25e1b3207997c7285493675f5edf42a7cfa843ed
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/intel-rsu/commit/25e1b3207997c7285493675f5edf42a7cfa843ed
+--2019-08-22 11:52:30--  https://github.com/altera-opensource/intel-rsu/commit/25e1b3207997c7285493675f5edf42a7cfa843ed
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.225
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.225|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘25e1b3207997c7285493675f5edf42a7cfa843ed’
+
+     0K .......... .......... .......... .......... ..........  186K
+    50K .......... .......... .......... .......... ..........  372K
+   100K .......... .......... .......... .......... ..........  473K
+   150K .......... .......... .......... .......... ..........  741K
+   200K .......... .......... .......... .......... ..........  747K
+   250K .....                                                  39.7M=0.6s
+
+2019-08-22 11:52:32 (396 KB/s) - ‘25e1b3207997c7285493675f5edf42a7cfa843ed’ saved [261153]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/arm-trusted-firmware/releases/tag/rel_socfpga_v1.4_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/arm-trusted-firmware/releases/tag/rel_socfpga_v1.4_19.08.02_pr
+--2019-08-22 11:52:32--  https://github.com/altera-opensource/arm-trusted-firmware/releases/tag/rel_socfpga_v1.4_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_socfpga_v1.4_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  195K
+    50K .......... ..                                           327K=0.3s
+
+2019-08-22 11:52:34 (212 KB/s) - ‘rel_socfpga_v1.4_19.08.02_pr’ saved [63806]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/arm-trusted-firmware/tree/socfpga_v1.4
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/arm-trusted-firmware/tree/socfpga_v1.4
+--2019-08-22 11:52:34--  https://github.com/altera-opensource/arm-trusted-firmware/tree/socfpga_v1.4
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘socfpga_v1.4’
+
+     0K .......... .......... .......... .......... ..........  170K
+    50K .......... .......... .......... .......... ..........  339K
+   100K .......... .......... ......                            356K=0.5s
+
+2019-08-22 11:52:35 (245 KB/s) - ‘socfpga_v1.4’ saved [129051]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/arm-trusted-firmware/commit/fd4f92cf86c468eae51356439e44fc95d1ad8dac
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/arm-trusted-firmware/commit/fd4f92cf86c468eae51356439e44fc95d1ad8dac
+--2019-08-22 11:52:35--  https://github.com/altera-opensource/arm-trusted-firmware/commit/fd4f92cf86c468eae51356439e44fc95d1ad8dac
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘fd4f92cf86c468eae51356439e44fc95d1ad8dac’
+
+     0K .......... .......... .......... .......... ..........  179K
+    50K .......... .......... .......... .......... ..........  446K
+   100K .....                                                   141K=0.4s
+
+2019-08-22 11:52:37 (246 KB/s) - ‘fd4f92cf86c468eae51356439e44fc95d1ad8dac’ saved [107640]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/uefi-socfpga/releases/tag/rel_socvp_socfpga_udk2015_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/uefi-socfpga/releases/tag/rel_socvp_socfpga_udk2015_19.08.02_pr
+--2019-08-22 11:52:37--  https://github.com/altera-opensource/uefi-socfpga/releases/tag/rel_socvp_socfpga_udk2015_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_socvp_socfpga_udk2015_19.08.02_pr’
+
+     0K .......... .......... .......... .......... ..........  136K
+    50K .......... ..                                           165K=0.4s
+
+2019-08-22 11:52:38 (141 KB/s) - ‘rel_socvp_socfpga_udk2015_19.08.02_pr’ saved [63579]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/uefi-socfpga/tree/socvp_socfpga_udk2015
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/uefi-socfpga/tree/socvp_socfpga_udk2015
+--2019-08-22 11:52:38--  https://github.com/altera-opensource/uefi-socfpga/tree/socvp_socfpga_udk2015
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘socvp_socfpga_udk2015’
+
+     0K .......... .......... .......... .......... ..........  149K
+    50K .......... .......... .......... .......... ..........  330K
+   100K .......... .......... .........                         530K=0.5s
+
+2019-08-22 11:52:40 (239 KB/s) - ‘socvp_socfpga_udk2015’ saved [132810]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/uefi-socfpga/commit/475bea4e5dbc3ea013a56bff6388c04fbf62e577
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/uefi-socfpga/commit/475bea4e5dbc3ea013a56bff6388c04fbf62e577
+--2019-08-22 11:52:40--  https://github.com/altera-opensource/uefi-socfpga/commit/475bea4e5dbc3ea013a56bff6388c04fbf62e577
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘475bea4e5dbc3ea013a56bff6388c04fbf62e577’
+
+     0K .......... .......... .......... .......... ..........  191K
+    50K .......... ..........                                  43.1K=0.7s
+
+2019-08-22 11:52:42 (96.0 KB/s) - ‘475bea4e5dbc3ea013a56bff6388c04fbf62e577’ saved [71916]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/meta-altera-refdes/releases/tag/rel_master_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/meta-altera-refdes/releases/tag/rel_master_19.08.02_pr
+--2019-08-22 11:52:42--  https://github.com/altera-opensource/meta-altera-refdes/releases/tag/rel_master_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_master_19.08.02_pr.1’
+
+     0K .......... .......... .......... .......... ..........  224K
+    50K .......... .                                            536K=0.2s
+
+2019-08-22 11:52:43 (250 KB/s) - ‘rel_master_19.08.02_pr.1’ saved [62580]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/meta-altera-refdes/tree/master
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/meta-altera-refdes/tree/master
+--2019-08-22 11:52:43--  https://github.com/altera-opensource/meta-altera-refdes/tree/master
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘master.1’
+
+     0K .......... .......... .......... .......... ..........  179K
+    50K .......... .......... ........                          506K=0.3s
+
+2019-08-22 11:52:44 (234 KB/s) - ‘master.1’ saved [80332]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/meta-altera-refdes/commit/b98e2e21af009c95b29a1a366bf6d224e3ca5be1
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/meta-altera-refdes/commit/b98e2e21af009c95b29a1a366bf6d224e3ca5be1
+--2019-08-22 11:52:44--  https://github.com/altera-opensource/meta-altera-refdes/commit/b98e2e21af009c95b29a1a366bf6d224e3ca5be1
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘b98e2e21af009c95b29a1a366bf6d224e3ca5be1’
+
+     0K .......... .......... .......... .......... ..........  179K
+    50K .......... .........                                    352K=0.3s
+
+2019-08-22 11:52:46 (208 KB/s) - ‘b98e2e21af009c95b29a1a366bf6d224e3ca5be1’ saved [71234]
+
+OK
+===========================================================================
+tag    : https://github.com/altera-opensource/linux-refdesigns/releases/tag/rel_master_19.08.02_pr
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-refdesigns/releases/tag/rel_master_19.08.02_pr
+--2019-08-22 11:52:46--  https://github.com/altera-opensource/linux-refdesigns/releases/tag/rel_master_19.08.02_pr
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘rel_master_19.08.02_pr.2’
+
+     0K .......... .......... .......... .......... ..........  224K
+    50K .......... .                                            201K=0.3s
+
+2019-08-22 11:52:47 (219 KB/s) - ‘rel_master_19.08.02_pr.2’ saved [62651]
+
+OK
+===========================================================================
+branch : https://github.com/altera-opensource/linux-refdesigns/tree/master
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-refdesigns/tree/master
+--2019-08-22 11:52:47--  https://github.com/altera-opensource/linux-refdesigns/tree/master
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘master.2’
+
+     0K .......... .......... .......... .......... ..........  113K
+    50K .......... .......... .......... .........              181K=0.7s
+
+2019-08-22 11:52:49 (136 KB/s) - ‘master.2’ saved [91871]
+
+OK
+===========================================================================
+commit : https://github.com/altera-opensource/linux-refdesigns/commit/769f842433462efb96ba3dadb4047b194930adf7
+----------------------------------------------------------------------
+wget  https://github.com/altera-opensource/linux-refdesigns/commit/769f842433462efb96ba3dadb4047b194930adf7
+--2019-08-22 11:52:49--  https://github.com/altera-opensource/linux-refdesigns/commit/769f842433462efb96ba3dadb4047b194930adf7
+Resolving proxy-chain.intel.com (proxy-chain.intel.com)... 10.19.8.224
+Connecting to proxy-chain.intel.com (proxy-chain.intel.com)|10.19.8.224|:912... connected.
+Proxy request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘769f842433462efb96ba3dadb4047b194930adf7’
+
+     0K .......... .......... .......... .......... ..........  123K
+    50K .......... .......... .......... .......... ..........  340K
+   100K .......... .......... .......... ........               357K=0.7s
+
+2019-08-22 11:52:51 (210 KB/s) - ‘769f842433462efb96ba3dadb4047b194930adf7’ saved [142211]
+
+OK
+===========================================================================
+Success!

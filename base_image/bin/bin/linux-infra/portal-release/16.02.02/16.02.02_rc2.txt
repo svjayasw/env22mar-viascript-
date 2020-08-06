@@ -1,0 +1,312 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.3
+branch tag  : rel_socfpga-4.3_16.02.02_rc2
+new commits : 8
+5cfcedd Graham Moore FogBugz #355518: Stratix10 SWVP device tree needs updating.
+0893449 Graham Moore FogBugz #354520: Stratix10 SWVP USB not working.
+d93b467 Dinh Nguyen FogBugz #352163-2: fix error checking in interrupt latency driver
+0174033 Dinh Nguyen FogBugz #352163: fix error checking in interrupt latency driver
+376900f Thor Thayer FogBugz #352782: Fix A10SyCon Button Indexing
+4380e64 Graham Moore FogBugz #353158: Stratix10 SWVP ethernet not working.
+412ed28 Thor Thayer FogBugz #350137: Fix A10SyCon Button Export Crash
+93e6e37 Ley Foon Tan FogBugz #349590: arm:socfpga: fix memory leak in socfpga_cti
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_16.02.02_rc2
+new commits : 2
+28bac3e Thor Thayer FogBugz #350137: Fix A10SyCon Button Export Crash
+5065701 Ley Foon Tan FogBugz #349590: arm:socfpga: fix memory leak in socfpga_cti
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_16.02.02_rc2
+new commits : 1
+5d6c0ba Ley Foon Tan FogBugz #349590: arm:socfpga: fix memory leak in socfpga_cti
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.3_16.02.02_rc2
+commit: 5cfcedd Graham Moore FogBugz #355518: Stratix10 SWVP device tree needs updating.
+
+tag:    rel_socfpga-3.10-ltsi_16.02.02_rc2
+commit: 28bac3e Thor Thayer FogBugz #350137: Fix A10SyCon Button Export Crash
+
+tag:    rel_socfpga-3.10-ltsi-rt_16.02.02_rc2
+commit: 5d6c0ba Ley Foon Tan FogBugz #349590: arm:socfpga: fix memory leak in socfpga_cti
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.02.02_rc2
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.02.02_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.02.02_rc2
+commit: d141e21 Chin Liang See arm: Switch to -mno-unaligned-access when supported by the compiler
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.02.02_rc2
+commit: 570a0b5 Tien Fong Chee FogBugz #346622-5: Extend Early I/O release support to QSPI boot flow.
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.02.02_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.02.02_rc2
+commit: bc6ea8d Tien Hock Loh FogBugz #327063: Update commit ID to include fix for syschk refresh rate issue
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.02.02_rc2
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.02.02_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.02.02_rc2
+commit: 8d6e9b4 Yves Vandervennet Support for the kernel v4.3
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.02.02_rc2
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.3
+
+commit 5cfcedda974096ed2be90f490879c0b0e1a0171b
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Wed Feb 3 05:20:04 2016 -0600
+
+    FogBugz #355518: Stratix10 SWVP device tree needs updating.
+    
+    arm64: dts: Add device tree for version 1.0 of the Stratix10
+    software virtual platform.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+    ---
+    V2: incorporate comments from review
+    V3: memreserve region is needed, put it back
+    V4: make memory region size match bootargs, use stdout-path instead
+    of console=
+
+commit 08934499c0349259f612ca17097622ca1d66cd8b
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Wed Feb 3 05:30:17 2016 -0600
+
+    FogBugz #354520: Stratix10 SWVP USB not working.
+    
+    arm64: config: Add DesignWare USB2 DRD Core Support to arm64
+    default configuration.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit d93b4676bb243a11d01600391c1c5f8ed5a41710
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Sun Feb 7 21:03:25 2016 -0600
+
+    FogBugz #352163-2: fix error checking in interrupt latency driver
+    
+    The ZERO-day testing revealed an error in how a variable is declared.
+    The variable was declared as an unsigned int, but the error check if
+    a value < 0. This will never happen if the variable is an unsigned int.
+    
+    An addendum to commit 01740330db6f ("FogBugz #352163: fix error checking
+    in interrupt latency driver").
+    
+    Reported-by: kbuild test robot <fengguang.wu@intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 01740330db6fd66ed57b82eac3b50d66691314d9
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Jan 25 15:19:22 2016 -0600
+
+    FogBugz #352163: fix error checking in interrupt latency driver
+    
+    The ZERO-day testing revealed an error in how a variable is declared.
+    The variable was declared as an unsigned int, but the error check if
+    a value < 0. This will never happen if the variable is an unsigned int.
+    
+    Reported-by: kbuild test robot <fengguang.wu@intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 376900f90c277df7a454aa346537672a5551773d
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Tue Jan 26 13:39:49 2016 -0600
+
+    FogBugz #352782: Fix A10SyCon Button Indexing
+    
+    The indexing of the A10 System Controller GPIO Buttons is incorrect
+    in the current GPIO read implementation. The GPIO requires an offset
+    into the LED register which is the first GPIO register.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 4380e64695fdfa149cc82c423f3ece666531d79e
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Thu Jan 28 03:53:45 2016 -0600
+
+    FogBugz #353158: Stratix10 SWVP ethernet not working.
+    
+    arm64: config: Add stmmac device to default arm64 configuration.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+    ---
+    V2:  remove CONFIG_STMMAC_PLATFORM as it is automatically
+    included with STMMAC_ETH
+    V3:  remove CONFIG_DWMAC_SOCFPGA as it is not needed either
+
+commit 412ed286faa2831932f5ab1f078abed1c754f684
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Tue Jan 26 13:27:07 2016 -0600
+
+    FogBugz #350137: Fix A10SyCon Button Export Crash
+    
+    Exporting the A10Sycon buttons would cause a kernel crash. The root
+    cause was that the interrupt was not mapped but was being accessed.
+    In part this was because the GPIO bank that handled the Button was
+    disabled but this should be handled gracefully.
+    
+    Check for a valid IRQ each time and exit if not valid.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 93e6e37391a5dab157838aef6df810e3b528b10f
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Jan 22 15:37:57 2016 +0800
+
+    FogBugz #349590: arm:socfpga: fix memory leak in socfpga_cti
+    
+    There is kernel intermittent hang issue when kernel is booting up in
+    socfpga-4.1 branch. Kernel will hang at random locations. We found this
+    issue in PCIe ref design regression test. Branch 3.10-ltsi have same issue,
+    but this driver is disabled in 3.10-ltsi by default.
+    
+    This fixes the memory leak issues.
+    1. kzalloc sizeof(socfpga_cti) means size of socfpga_cti pointer
+       (4 bytes only), not struct size of socfpga_cti (20 bytes).
+       This cause it actually allocates less memory size than it expected.
+       It should be sizeof(*socfpga_cti).
+    
+    2. Same also for socfpga_cti += sizeof(socfpga_cti). This will increase
+       socfpga_cti pointer + [4*(sizeof(*socfpga_cti))] offset. This cause
+       socfpga_cti access to memory beyond its boundary. We should just use
+       socfpga_cti++ to point to next socfpga_cti.
+    
+    It also change to use devm_kzalloc instead of kzalloc.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 28bac3edbcdc74f98b865986be5d340381896192
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Tue Jan 26 13:27:07 2016 -0600
+
+    FogBugz #350137: Fix A10SyCon Button Export Crash
+    
+    Exporting the A10Sycon buttons would cause a kernel crash. The root
+    cause was that the interrupt was not mapped but was being accessed.
+    In part this was because the GPIO bank that handled the Button was
+    disabled but this should be handled gracefully.
+    
+    Check for a valid IRQ each time and exit if not valid.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 50657012474bcbd9c288baf40b179673611e9998
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Jan 22 15:37:57 2016 +0800
+
+    FogBugz #349590: arm:socfpga: fix memory leak in socfpga_cti
+    
+    There is kernel intermittent hang issue when kernel is booting up in
+    socfpga-4.1 branch. Kernel will hang at random locations. We found this
+    issue in PCIe ref design regression test. Branch 3.10-ltsi have same issue,
+    but this driver is disabled in 3.10-ltsi by default.
+    
+    This fixes the memory leak issues.
+    1. kzalloc sizeof(socfpga_cti) means size of socfpga_cti pointer
+       (4 bytes only), not struct size of socfpga_cti (20 bytes).
+       This cause it actually allocates less memory size than it expected.
+       It should be sizeof(*socfpga_cti).
+    
+    2. Same also for socfpga_cti += sizeof(socfpga_cti). This will increase
+       socfpga_cti pointer + [4*(sizeof(*socfpga_cti))] offset. This cause
+       socfpga_cti access to memory beyond its boundary. We should just use
+       socfpga_cti++ to point to next socfpga_cti.
+    
+    It also change to use devm_kzalloc instead of kzalloc.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 5d6c0ba8572262c29ea3d97fe6d1d5b58650b6e5
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Jan 22 15:37:57 2016 +0800
+
+    FogBugz #349590: arm:socfpga: fix memory leak in socfpga_cti
+    
+    There is kernel intermittent hang issue when kernel is booting up in
+    socfpga-4.1 branch. Kernel will hang at random locations. We found this
+    issue in PCIe ref design regression test. Branch 3.10-ltsi have same issue,
+    but this driver is disabled in 3.10-ltsi by default.
+    
+    This fixes the memory leak issues.
+    1. kzalloc sizeof(socfpga_cti) means size of socfpga_cti pointer
+       (4 bytes only), not struct size of socfpga_cti (20 bytes).
+       This cause it actually allocates less memory size than it expected.
+       It should be sizeof(*socfpga_cti).
+    
+    2. Same also for socfpga_cti += sizeof(socfpga_cti). This will increase
+       socfpga_cti pointer + [4*(sizeof(*socfpga_cti))] offset. This cause
+       socfpga_cti access to memory beyond its boundary. We should just use
+       socfpga_cti++ to point to next socfpga_cti.
+    
+    It also change to use devm_kzalloc instead of kzalloc.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+

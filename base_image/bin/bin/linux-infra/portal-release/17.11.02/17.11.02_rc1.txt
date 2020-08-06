@@ -1,0 +1,226 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+The following new branches were tagged:
+repo : linux-socfpga          branch : socfpga-4.13
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.13
+branch tag  : rel_socfpga-4.13_17.11.02_rc1
+Pushing new branch to external git
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.11.02_rc1
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.11.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.13_17.11.02_rc1
+commit: 7b1a432 Dinh Nguyen usb: dwc2: disable erroneous overcurrent condition
+
+tag:    rel_socfpga-4.1.33-ltsi_17.11.02_rc1
+commit: 0175aa1 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.11.02_rc1
+commit: 5b7a4c0 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.11.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.11.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_17.11.02_rc1
+new commits : 7
+17db534 Chin Liang See FogBugz #507879-3: arm: stratix10: Enable Linux QSPI controller support
+3f589ee Chin Liang See FogBugz #507879-2: arm: stratix10: Removing hard code of QSPI reference clock
+fc190e5 Chin Liang See FogBugz #507879-1: arm: stratix10: Enable retry for QSPI_OPEN
+04d5048 Chee Hong Ang FogBugz #506599: Add Stratix10 FPGA reconfiguration support
+4b99b56 Chin Liang See FogBugz #507880: arm: stratix10: Enable HUSH parser
+ccefa12 Chin Liang See FogBugz #503965: arm: stratix10: Enable HPS reboot support
+9a0eafd Dinh Nguyen FogBugz #510027: Enable USB on Stratix10 platform
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.11.02_rc1
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.11.02_rc1
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_17.11.02_rc1
+commit: 17db534 Chin Liang See FogBugz #507879-3: arm: stratix10: Enable Linux QSPI controller support
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.11.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.11.02_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.11.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.11.02_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.11.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.11.02_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.13
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 17db5346b50262fb7f5aadc92de92c6a43d30226
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Mon Nov 13 18:16:00 2017 +0800
+
+    FogBugz #507879-3: arm: stratix10: Enable Linux QSPI controller support
+    
+    U-Boot will enable Linux QSPI controller support through
+    updating the Linux device tree blob. This include updating the
+    QSPI controller reference clock.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 3f589ee8f7380271f30efd1aca99db55afaa1d82
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Thu Nov 16 17:15:58 2017 +0800
+
+    FogBugz #507879-2: arm: stratix10: Removing hard code of QSPI reference clock
+    
+    Obtaining the QSPI reference clock from QSPI_DIRECT mailbox
+    command. The QSPI reference clock is setup by SDM and this
+    info need to be passed by SDM to HPS.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit fc190e5f3dec13be90e186e75f2a1792c431bd89
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Thu Nov 2 20:07:50 2017 +0800
+
+    FogBugz #507879-1: arm: stratix10: Enable retry for QSPI_OPEN
+    
+    Do retry the QSPI_OPEN command again if it's failing for first time.
+    This is to overcome scenario where HPS didn't properly issue
+    QSPI_CLOSE during previous reset or reloading of HPS software.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 04d5048232cedf8aac2d57c343243317aea9aef8
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Tue Nov 7 01:41:06 2017 -0800
+
+    FogBugz #506599: Add Stratix10 FPGA reconfiguration support
+    
+    FPGA reconfiguration support through Secure Device Manager's mailbox.
+    User is required to program the bitstream into the QSPI flash. Then
+    use "fpga load" command with bitstream location address in QSPI to
+    start the FPGA reconfiguration process.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 4b99b56bb897e942cd74fbeec5164a9f3f460143
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Mon Nov 13 17:20:45 2017 +0800
+
+    FogBugz #507880: arm: stratix10: Enable HUSH parser
+    
+    Enable command line interpreter in Stratix10 SoC U-Boot
+    in order to support more powerful command line syntax
+    such as if...else...fi
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit ccefa1214d3fe88aa8c0a06a853c12ffd87d36fa
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Mon Nov 13 17:12:06 2017 +0800
+
+    FogBugz #503965: arm: stratix10: Enable HPS reboot support
+    
+    Enable HPS reboot support in Stratix 10 SoC. Hard Processor
+    System (HPS) only can initiate reboot by sending mailbox
+    command to Secure Device Manager (SDM)
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+    —
+    Changes for v5
+    - Update the commit message
+    Changes for v4
+    - Always return 0 if mailbox successfully sent
+    Changes for v3
+    - Added more clarity to comments
+    - Fixed a change that break CV build
+    Changes for v2
+    - Put processor into while loop and wait for watchdog when mailbox failed
+
+commit 9a0eafd63aca180cdfe2f8cfcb9d4d59a09f2730
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Wed Nov 1 13:11:38 2017 -0700
+
+    FogBugz #510027: Enable USB on Stratix10 platform
+    
+    Add USB functionality on the Stratix10 devkit. This includes adding the
+    USB DTS entry, de-assert the USB and USB_OCP reset bits, add the USB
+    command support to defconfig.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+-----------------------------------------------------------------------
+

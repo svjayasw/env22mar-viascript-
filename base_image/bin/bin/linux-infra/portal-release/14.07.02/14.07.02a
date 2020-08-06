@@ -1,0 +1,295 @@
+
+
+If this is Wednesday, this is a script-generated report of what we will push to the portal on Friday.
+
+However if this is Friday, this is a script-generated report of what we just pushed out to the portal.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.15
+branch tag  : rel_socfpga-3.15_14.07.02
+new commits : 4
+734deeb Ley Foon Tan FogBugz #214042: nios2: add nios2 gen2 dts support
+92a5360 Ley Foon Tan FogBugz #212188: nios2: Flush page regardless of if there is a mapping
+c0d61ac Ley Foon Tan FogBugz #212187: nios2: Avoid flush_dcache_page() for zero page
+fb0a3b5 Ley Foon Tan FogBugz #212185: nios2: define "PG_arch_1" as PG_dcache_clean
+
+
+++wiki:
+*Branch name*: socfpga-3.15, *Tag name:* rel_socfpga-3.15_14.07.02
+| *ID* | *Comment* | *GIT Commit* |
+| 214042 | nios2: add nios2 gen2 dts support | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=734deeb63fffad4cd78564cca65a2912daf0a31b ][ 734deeb63fffad4cd78564cca65a2912daf0a31b ]] |
+| 212188 | nios2: Flush page regardless of if there is a mapping | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=92a5360c0109d2d1da58aa529b63306dae1f8542 ][ 92a5360c0109d2d1da58aa529b63306dae1f8542 ]] |
+| 212187 | nios2: Avoid flush_dcache_page() for zero page | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=c0d61ac4f539a28f7b8ab7a38867331a67ec34cf ][ c0d61ac4f539a28f7b8ab7a38867331a67ec34cf ]] |
+| 212185 | nios2: define "PG_arch_1" as PG_dcache_clean | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=fb0a3b5ed28c41edd46dfbeea849a6f0671599a5 ][ fb0a3b5ed28c41edd46dfbeea849a6f0671599a5 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.07.02
+new commits : 1
+78002dc Ley Foon Tan FogBugz #214042: nios2: add nios2 gen2 dts support
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.07.02
+| *ID* | *Comment* | *GIT Commit* |
+| 214042 | nios2: add nios2 gen2 dts support | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=78002dcddc9735fcff039f760c2d5b2a3221b678 ][ 78002dcddc9735fcff039f760c2d5b2a3221b678 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_14.07.02
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.10-ltsi-rt_14.07.02
+commit: 63e74b9 Ley Foon Tan FogBugz #212188: nios2: Flush page regardless of if there is a mapping
+
+tag:    rel_socfpga-3.15_14.07.02
+commit: 734deeb Ley Foon Tan FogBugz #214042: nios2: add nios2 gen2 dts support
+
+tag:    rel_socfpga-3.10-ltsi_14.07.02
+commit: 78002dc Ley Foon Tan FogBugz #214042: nios2: add nios2 gen2 dts support
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.07.02
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.07.02
+commit: c2aa20d Chin Liang See FogBugz #210587: Fixing PLL HW configuration issue
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_14.07.02
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_14.07.02
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_14.07.02
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_14.07.02
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_14.07.02
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_14.07.02
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2014.06-socfpga_14.07.02
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+tag:    rel_angstrom-v2013.12-socfpga_14.07.02
+commit: 86e1731 Yves Vandervennet changed clone of layer from http to git
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_14.07.02
+new commits : 1
+b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+
+++wiki:
+*Branch name*: angstrom-v2012.12-yocto1.3, *Tag name:* rel_angstrom-v2012.12-yocto1.3_14.07.02
+| *ID* | *Comment* | *GIT Commit* |
+| community | removed duplicate line with AUTOREV | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=b16478f2ddd65afa7821b1937885dfb96eff266f ][ b16478f2ddd65afa7821b1937885dfb96eff266f ]] |
+--wiki:
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_14.07.02
+new commits : 2
+62fe008 Yves Vandervennet extended image, that adds a few developer packages to the console image
+eadeda6 Yves Vandervennet removed duplicate line with AUTOREV
+
+
+++wiki:
+*Branch name*: angstrom-v2013.12-yocto1.5, *Tag name:* rel_angstrom-v2013.12-yocto1.5_14.07.02
+| *ID* | *Comment* | *GIT Commit* |
+| community | extended image, that adds a few developer packages to the console image | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=62fe00848b43c6f9860861e17e5aa61af996c5a8 ][ 62fe00848b43c6f9860861e17e5aa61af996c5a8 ]] |
+| community | removed duplicate line with AUTOREV | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=eadeda640a62d09099d41a567c4bf41380449783 ][ eadeda640a62d09099d41a567c4bf41380449783 ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_14.07.02
+new commits : 1
+9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+
+++wiki:
+*Branch name*: angstrom-v2014.06-yocto1.6, *Tag name:* rel_angstrom-v2014.06-yocto1.6_14.07.02
+| *ID* | *Comment* | *GIT Commit* |
+| community | removed duplicate line with AUTOREV | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=9fe06573ef9f9a3b284edc66d590cb32b67a2f00 ][ 9fe06573ef9f9a3b284edc66d590cb32b67a2f00 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_14.07.02
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_14.07.02
+commit: 62fe008 Yves Vandervennet extended image, that adds a few developer packages to the console image
+
+tag:    rel_angstrom-v2014.06-yocto1.6_14.07.02
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.15
+
+commit 734deeb63fffad4cd78564cca65a2912daf0a31b
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 16 10:55:25 2014 +0800
+
+    FogBugz #214042: nios2: add nios2 gen2 dts support
+    
+    Add nios2 gen2 dts support. Software will search for altr first and
+    then search for ALTR if can't find with altr prefix.
+    This is to backward compatible with nios2 legacy (with ALTR prefix).
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 92a5360c0109d2d1da58aa529b63306dae1f8542
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Jun 23 14:09:33 2014 +0800
+
+    FogBugz #212188: nios2: Flush page regardless of if there is a mapping
+    
+    This is how ARM does it.
+    
+    This fixes a problem with applications such as libpcap reading stale
+    data from mmapped buffers.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit c0d61ac4f539a28f7b8ab7a38867331a67ec34cf
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Jun 23 14:06:21 2014 +0800
+
+    FogBugz #212187: nios2: Avoid flush_dcache_page() for zero page
+    
+    The zero page is read-only, and has its cache state cleared during
+    boot.  No further maintenance for this page is required.
+    
+    Follow commit 421fe93cc4b06b2f5e875cbe0f692800d4862ee5 for ARM.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit fb0a3b5ed28c41edd46dfbeea849a6f0671599a5
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 2 17:05:45 2014 +0800
+
+    FogBugz #212185: nios2: define "PG_arch_1" as PG_dcache_clean
+    
+    Define PG_arch_1 as PG_dcache_clean and set it when a page is flushed.
+    Follow commit c01778001a4f5ad9c62d882776235f3f31922fdd for ARM.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 78002dcddc9735fcff039f760c2d5b2a3221b678
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 16 10:55:25 2014 +0800
+
+    FogBugz #214042: nios2: add nios2 gen2 dts support
+    
+    Add nios2 gen2 dts support. Software will search for altr first and
+    then search for ALTR if can't find with altr prefix.
+    This is to backward compatible with nios2 legacy (with ALTR prefix).
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2012.12-yocto1.3
+
+commit b16478f2ddd65afa7821b1937885dfb96eff266f
+Author: Yves Vandervennet <yvanderv@altera.com>
+Date:   Wed Jul 16 19:27:32 2014 -0500
+
+    removed duplicate line with AUTOREV
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2013.12-yocto1.5
+
+commit 62fe00848b43c6f9860861e17e5aa61af996c5a8
+Author: Yves Vandervennet <yvanderv@altera.com>
+Date:   Fri Jul 18 15:54:43 2014 -0500
+
+    extended image, that adds a few developer packages to the console image
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@altera.com>
+
+commit eadeda640a62d09099d41a567c4bf41380449783
+Author: Yves Vandervennet <yvanderv@altera.com>
+Date:   Wed Jul 16 19:26:16 2014 -0500
+
+    removed duplicate line with AUTOREV
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.06-yocto1.6
+
+commit 9fe06573ef9f9a3b284edc66d590cb32b67a2f00
+Author: Yves Vandervennet <yvanderv@altera.com>
+Date:   Wed Jul 16 19:24:04 2014 -0500
+
+    removed duplicate line with AUTOREV
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@altera.com>
+
+-----------------------------------------------------------------------
+
+

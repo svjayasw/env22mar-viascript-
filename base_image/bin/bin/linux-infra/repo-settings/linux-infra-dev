@@ -1,0 +1,11 @@
+repo_path: /usr/local/git/repositories/linux-infra.git
+update_tests: nomerge
+email: thor.thayer@intel.com dinh.nguyen@intel.com
+local_upstream:
+crucible_project:
+release_branch:
+internal_git: gitolite@at-git:linux-infra-dev.git
+external_git:
+upstream_branches:
+upstream_tag_regex:
+review_addrs:

@@ -1,0 +1,415 @@
+
+
+If this is Wednesday, this is a script-generated report of what we will push to the portal on Friday.
+
+However if this is Friday, this is a script-generated report of what we just pushed out to the portal.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.15
+branch tag  : rel_socfpga-3.15_14.09.01
+new commits : 3
+9aefe9e Dinh Nguyen FogBugz #228175: Fix merge error that removed CONFIG_SRAM
+09b62c3 Suman Anna mailbox: move the internal definitions into a private file
+358fc67 Jassi Brar mailbox: Introduce a new common API
+
+
+++wiki:
+*Branch name*: socfpga-3.15, *Tag name:* rel_socfpga-3.15_14.09.01
+| *ID* | *Comment* | *GIT Commit* |
+| 228175 | Fix merge error that removed CONFIG_SRAM | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=9aefe9edc66e7f658df94749966cc8a5defe7e26 ][ 9aefe9edc66e7f658df94749966cc8a5defe7e26 ]] |
+| community | mailbox: move the internal definitions into a private file | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=09b62c323473dc985ac222435ffc027d9cc74632 ][ 09b62c323473dc985ac222435ffc027d9cc74632 ]] |
+| community | mailbox: Introduce a new common API | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=358fc67b9c53447c61404bf3a9ee67dbe148df09 ][ 358fc67b9c53447c61404bf3a9ee67dbe148df09 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.09.01
+new commits : 2
+4b124f5 Ley Foon Tan FogBugz #224994: add fix_mac_speed support for stmmac
+b4dfc88 Ley Foon Tan FogBugz #224985: Enable mac_config.dcrs by default
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.09.01
+| *ID* | *Comment* | *GIT Commit* |
+| 224994 | add fix_mac_speed support for stmmac | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=4b124f5314b336384454c9a22abf85e01715be66 ][ 4b124f5314b336384454c9a22abf85e01715be66 ]] |
+| 224985 | Enable mac_config.dcrs by default | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=b4dfc882fceb6cb31b1a4150fb19acd16d55cfcb ][ b4dfc882fceb6cb31b1a4150fb19acd16d55cfcb ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_14.09.01
+new commits : 2
+765dc3c Ley Foon Tan FogBugz #224994: add fix_mac_speed support for stmmac
+e1aee7a Ley Foon Tan FogBugz #224985: Enable mac_config.dcrs by default
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_14.09.01
+| *ID* | *Comment* | *GIT Commit* |
+| 224994 | add fix_mac_speed support for stmmac | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=765dc3cafff7642c9c6fb4862129aea5eaf3c897 ][ 765dc3cafff7642c9c6fb4862129aea5eaf3c897 ]] |
+| 224985 | Enable mac_config.dcrs by default | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=e1aee7a42627606b8eb5438ce3ff0b2dc87ecbab ][ e1aee7a42627606b8eb5438ce3ff0b2dc87ecbab ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.10-ltsi_14.09.01
+commit: 4b124f5 Ley Foon Tan FogBugz #224994: add fix_mac_speed support for stmmac
+
+tag:    rel_socfpga-3.15_14.09.01
+commit: 9aefe9e Dinh Nguyen FogBugz #228175: Fix merge error that removed CONFIG_SRAM
+
+tag:    rel_socfpga-3.10-ltsi-rt_14.09.01
+commit: 765dc3c Ley Foon Tan FogBugz #224994: add fix_mac_speed support for stmmac
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.09.01
+new commits : 4
+fcfc02e Vince Bridgers Fogbugz #197088: Configure Debug Clock source from Quartus/Qsys Handoff
+2205fdd Vince Bridgers Fogbugz #227666: Initialize local variable for SDMMC raw mode
+94fe6cd Vince Bridgers Fogbugz #223741: Workaround SDRAM controller hang when reading beyond max mem
+badd257 Chin Keong Ang FogBugz #194224: Enable SDRAM self refresh support
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_14.09.01
+| *ID* | *Comment* | *GIT Commit* |
+| community | Fogbugz #197088: Configure Debug Clock source from Quartus/Qsys Handoff | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=fcfc02e512294e905681af6e600b16bf67dea5c5 ][ fcfc02e512294e905681af6e600b16bf67dea5c5 ]] |
+| community | Fogbugz #227666: Initialize local variable for SDMMC raw mode | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=2205fdd992c0a2ade73ef1c0727e077c5f1fa6a1 ][ 2205fdd992c0a2ade73ef1c0727e077c5f1fa6a1 ]] |
+| community | Fogbugz #223741: Workaround SDRAM controller hang when reading beyond max mem | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=94fe6cd52142238ca2e6c90d4da15c9fad888cdd ][ 94fe6cd52142238ca2e6c90d4da15c9fad888cdd ]] |
+| 194224 | Enable SDRAM self refresh support | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=badd257c0ab9fa8adbc7b46bffcbad5f611af8f5 ][ badd257c0ab9fa8adbc7b46bffcbad5f611af8f5 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.09.01
+commit: fcfc02e Vince Bridgers Fogbugz #197088: Configure Debug Clock source from Quartus/Qsys Handoff
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_14.09.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_14.09.01
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_14.09.01
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_14.09.01
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_14.09.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2014.06-socfpga_14.09.01
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+tag:    rel_angstrom-v2012.12-socfpga_14.09.01
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_14.09.01
+commit: 86e1731 Yves Vandervennet changed clone of layer from http to git
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_14.09.01
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_14.09.01
+new commits : 3
+4c9cfd3 Graham Moore FogBugz #224904 - Add systemd watchdog off during shutdown.
+cb45f75 Graham Moore FogBugz #224904 - Add systemd watchdog off during shutdown.
+c0fc404 Tien Hock Loh FogBugz #228089: Move lighttpd configuration to a separate recipe
+
+
+++wiki:
+*Branch name*: angstrom-v2013.12-yocto1.5, *Tag name:* rel_angstrom-v2013.12-yocto1.5_14.09.01
+| *ID* | *Comment* | *GIT Commit* |
+| community | FogBugz #224904 - Add systemd watchdog off during shutdown. | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=4c9cfd361e4926eef216fdb39da6288d9a491397 ][ 4c9cfd361e4926eef216fdb39da6288d9a491397 ]] |
+| community | FogBugz #224904 - Add systemd watchdog off during shutdown. | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=cb45f75195039539d1bec8963b60a79cd1834b15 ][ cb45f75195039539d1bec8963b60a79cd1834b15 ]] |
+| 228089 | Move lighttpd configuration to a separate recipe | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=c0fc404e3e0d5425edabc27e2bac666265ce41fc ][ c0fc404e3e0d5425edabc27e2bac666265ce41fc ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_14.09.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_14.09.01
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_14.09.01
+commit: 4c9cfd3 Graham Moore FogBugz #224904 - Add systemd watchdog off during shutdown.
+
+tag:    rel_angstrom-v2014.06-yocto1.6_14.09.01
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.15
+
+commit 9aefe9edc66e7f658df94749966cc8a5defe7e26
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Aug 28 10:55:07 2014 -0500
+
+    FogBugz #228175: Fix merge error that removed CONFIG_SRAM
+    
+    Commit [83ed053c] "FogBugz #138162: Add Altera hardware mutex driver"
+    accidently removed the CONFIG_SRAM option the is needed to enable
+    the SRAM driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 09b62c323473dc985ac222435ffc027d9cc74632
+Author: Suman Anna <s-anna@ti.com>
+Date:   Thu May 16 15:45:52 2013 -0500
+
+    mailbox: move the internal definitions into a private file
+    
+    This is needed for extracting the omap_mbox. The OMAP mailbox
+    code has a need for exporting some pre-existing API to not
+    break the current clients.
+    
+    Signed-off-by: Suman Anna <s-anna@ti.com>
+
+commit 358fc67b9c53447c61404bf3a9ee67dbe148df09
+Author: Jassi Brar <jaswinder.singh@linaro.org>
+Date:   Fri Apr 26 19:56:26 2013 +0530
+
+    mailbox: Introduce a new common API
+    
+    Introduce common framework for client/protocol drivers and
+    controller drivers of Inter-Processor-Communication (IPC).
+    
+    Client driver developers should have a look at
+     include/linux/mailbox_client.h to understand the part of
+    the API exposed to client drivers.
+    Similarly controller driver developers should have a look
+    at include/linux/mailbox_controller.h
+    
+    Signed-off-by: Jassi Brar <jaswinder.singh@linaro.org>
+    
+    Conflicts:
+    	drivers/mailbox/mailbox.c
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 4b124f5314b336384454c9a22abf85e01715be66
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Aug 26 15:13:47 2014 +0800
+
+    FogBugz #224994: add fix_mac_speed support for stmmac
+    
+    This patch adds fix_mac_speed() support for
+    Altera socfpga Ethernet controller. Emac splitter is a
+    soft IP core in FPGA system that converts GMII interface from
+    Synopsys mac to RGMII/SGMII interface. This splitter core is
+    an optional IP if user would like to use RGMII/SGMII
+    interface in their system. Software needs to update a register
+    in splitter core when there is speed change.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit b4dfc882fceb6cb31b1a4150fb19acd16d55cfcb
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Aug 13 14:26:44 2014 +0800
+
+    FogBugz #224985: Enable mac_config.dcrs by default
+    
+    Set DCRS bit by default in GMAC_CORE_INIT() macro. This is required for
+    RGMII/SGMII example design to work.
+    
+    When set high, this bit makes the MAC transmitter ignore the (G)MII CRS
+    signal during frame transmission in the half-duplex mode. This request
+    results in no errors generated because of Loss of Carrier or No Carrier
+    during such transmission.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 765dc3cafff7642c9c6fb4862129aea5eaf3c897
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Aug 26 15:13:47 2014 +0800
+
+    FogBugz #224994: add fix_mac_speed support for stmmac
+    
+    This patch adds fix_mac_speed() support for
+    Altera socfpga Ethernet controller. Emac splitter is a
+    soft IP core in FPGA system that converts GMII interface from
+    Synopsys mac to RGMII/SGMII interface. This splitter core is
+    an optional IP if user would like to use RGMII/SGMII
+    interface in their system. Software needs to update a register
+    in splitter core when there is speed change.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit e1aee7a42627606b8eb5438ce3ff0b2dc87ecbab
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Aug 13 14:26:44 2014 +0800
+
+    FogBugz #224985: Enable mac_config.dcrs by default
+    
+    Set DCRS bit by default in GMAC_CORE_INIT() macro. This is required for
+    RGMII/SGMII example design to work.
+    
+    When set high, this bit makes the MAC transmitter ignore the (G)MII CRS
+    signal during frame transmission in the half-duplex mode. This request
+    results in no errors generated because of Loss of Carrier or No Carrier
+    during such transmission.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit fcfc02e512294e905681af6e600b16bf67dea5c5
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Thu Aug 28 03:57:17 2014 -0500
+
+    Fogbugz #197088: Configure Debug Clock source from Quartus/Qsys Handoff
+    
+    This patch configures the debug clock source according to the handoff from
+    Quartus.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    ---
+    V2: Change email references to opensource emails
+
+commit 2205fdd992c0a2ade73ef1c0727e077c5f1fa6a1
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Fri Aug 29 16:29:12 2014 -0500
+
+    Fogbugz #227666: Initialize local variable for SDMMC raw mode
+    
+    This patch initializes a local variable required to read the correct sector
+    when in raw mode.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+commit 94fe6cd52142238ca2e6c90d4da15c9fad888cdd
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Thu Aug 21 05:53:01 2014 -0500
+
+    Fogbugz #223741: Workaround SDRAM controller hang when reading beyond max mem
+    
+    This patch prevents the SDRAM controller from hanging indeterminately if
+    a memory read operation is posted to the SDRAM controller beyond the
+    amount of memory controlled by the SDRAM controller.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    ---
+    V5: - Read sdram register and change values back to handoff values
+          before calculating sdram size
+        - Add informative message to user about sdram addrorder change
+    V4: - Remove extra linefeeds, remove references to FBs in source code,
+          restate commit header again.
+    V3: - Change emails to opensource emails
+    V2: - Updates per first Crucible review
+        - Simplify commit log entry
+
+commit badd257c0ab9fa8adbc7b46bffcbad5f611af8f5
+Author: Chin Keong Ang <ckang@altera.com>
+Date:   Thu Aug 21 13:34:02 2014 +0800
+
+    FogBugz #194224: Enable SDRAM self refresh support
+    
+    To enable SDRAM contents preservation over warm reset.
+    
+    Enable by defining CONFIG_PRELOADER_WARMRST_PRESERVE_SDRAM as 1 in build.h
+    Once enabled, during warm reset, it will skip resetting SDRAM controller
+    and skip calibrating SDRAM PHY.
+    
+    Signed-off-by: Chin Keong Ang <ckang@altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2013.12-yocto1.5
+
+commit 4c9cfd361e4926eef216fdb39da6288d9a491397
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Wed Sep 3 10:53:57 2014 -0500
+
+    FogBugz #224904 - Add systemd watchdog off during shutdown.
+    
+    This is a fix for commit cb45f75195039539d1bec8963b60a79cd1834b15,
+    wrong code was pushed.  See the comment for that commit.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit cb45f75195039539d1bec8963b60a79cd1834b15
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Mon Aug 25 15:08:11 2014 -0500
+
+    FogBugz #224904 - Add systemd watchdog off during shutdown.
+    
+    It was reported, and observed during QSPI boot testing, that reboot on
+    Angstrom file system caused an unclean shutdown.  Debugging showed
+    that systemd was attempting to use the watchog during shutdown, but
+    this interfered with the watchdog daemon, causing the watchdog to fire,
+    and thereby rebooting the system before shutdown was complete.
+    
+    The solution was to tell systemd not to use the watchdog during shutdown.
+    A complete system.conf file was added, via bbappand.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit c0fc404e3e0d5425edabc27e2bac666265ce41fc
+Author: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+Date:   Thu Aug 28 11:39:58 2014 +0800
+
+    FogBugz #228089: Move lighttpd configuration to a separate recipe
+    
+    This change is to change the lighttpd configuration file to a separate
+    recipe so that it doesn't mingle with existing configuration and user
+    may install ipk of the recipe on top of existing configuration.
+    
+    Signed-off-by: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+
+-----------------------------------------------------------------------
+

@@ -1,0 +1,31 @@
+./cp210x-3.1.0.spec
+./install - build and installation notes
+./makerpm - script file to start the RPM Build
+./PACKAGE_LIST - this file
+./readme - general information
+./RELEASE-NOTES - notes specific for this release.  New features, fixes in this version, known defects in this version.
+./REPORTING-BUGS - how to report bugs
+./cp210x/.rpmmacros - required for RPM builds
+./cp210x/configure - driver build configuration file
+./cp210x/cp210x.c - driver source file
+./cp210x/cp210x.h - driver header file
+./cp210x/installmod - depreciated
+./cp210x/Makefile24 - 2.4 kernel specific make file
+./cp210x/Makefile26 - 2.6 kernel specific make file
+./cp210x/Rules.make - 2.4 kernel build rules
+
+./rpm/brp-java-repack-jars - file required by 2.4 rpm builds that might be
+	 installed in the wrong directory on certain systems.  If so, this
+	 will be copied to the correct location.
+
+./rpm/brp-python-bytecompile - file required by 2.4 rpm builds that might be
+	 installed in the wrong directory on certain systems.  If so, this
+	 will be copied to the correct location.
+
+./rpm/check-rpaths - file required by 2.4 rpm builds that might be
+	 installed in the wrong directory on certain systems.  If so, this
+	 will be copied to the correct location.
+
+./rpm/check-rpaths-worker - file required by 2.4 rpm builds that might be
+	 installed in the wrong directory on certain systems.  If so, this
+	 will be copied to the correct location.

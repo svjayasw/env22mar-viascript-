@@ -1,0 +1,184 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.1
+branch tag  : rel_socfpga-4.1_15.07.02_pr
+Pushing new branch to external git
+
+branch      : socfpga-4.0
+branch tag  : rel_socfpga-4.0_15.07.02_pr
+new commits : 1
+5d36469 Krzysztof Kozlowski dmaengine: pl330: Fix hang on dmaengine_terminate_all on certain boards
+
+
+++wiki:
+*Branch name*: socfpga-4.0, *Tag name:* rel_socfpga-4.0_15.07.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | dmaengine: pl330: Fix hang on dmaengine_terminate_all on certain boards | [[ https://github.com/altera-opensource/linux-socfpga/commit/5d36469775e2b77a33e778d1b606edfc5ed13bd4 ][ 5d36469775e2b77a33e778d1b606edfc5ed13bd4 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.07.02_pr
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.07.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.1_15.07.02_pr
+commit: 60fd5d4 Matthew Gerlach FogBugz #292777: Calibrate read_delay at runtime
+
+tag:    rel_socfpga-4.0_15.07.02_pr
+commit: 5d36469 Krzysztof Kozlowski dmaengine: pl330: Fix hang on dmaengine_terminate_all on certain boards
+
+tag:    rel_socfpga-3.10-ltsi_15.07.02_pr
+commit: 51a8393 Yves Vandervennet FogBugz #309368: add QSPI definitions to the DTS of the Arria10 SWVP
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.07.02_pr
+commit: ed5a99c Dinh Nguyen usb: dwc2: call dwc2_is_controller_alive() under spinlock
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.07.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.07.02_pr
+new commits : 1
+65fa9d0 Chin Liang See FogBugz #301188: Fix the reset release for dedicated IO
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_15.07.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 301188 | Fix the reset release for dedicated IO | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/65fa9d0ca579016f28fa5ee5c2915642ca917615 ][ 65fa9d0ca579016f28fa5ee5c2915642ca917615 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.07.02_pr
+commit: 5a47f31 Radu Bacrau FogBugz #297134: Supporting Spansion devices(S25FL127S/S25FL512S) with x4 mode
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.07.02_pr
+commit: 65fa9d0 Chin Liang See FogBugz #301188: Fix the reset release for dedicated IO
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.07.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.07.02_pr
+commit: 380baf4 Yves Vandervennet update for github
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.07.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.07.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.07.02_pr
+commit: d69775c Graham Moore Update busybox full configuration for version 1.22
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.07.02_pr
+commit: 1d88fd2 Yves Vandervennet Addition of the Arria10 SWVP
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.0
+
+commit 5d36469775e2b77a33e778d1b606edfc5ed13bd4
+Author: Krzysztof Kozlowski <k.kozlowski@samsung.com>
+Date:   Thu May 21 09:34:09 2015 +0900
+
+    dmaengine: pl330: Fix hang on dmaengine_terminate_all on certain boards
+    
+    The pl330 device could hang infinitely on certain boards when DMA
+    channels are terminated.
+    
+    It was caused by lack of runtime resume when executing
+    pl330_terminate_all() which calls the _stop() function. _stop() accesses
+    device register and can loop infinitely while checking for device state.
+    
+    The hang was confirmed by Dinh Nguyen on Altera SOCFPGA Cyclone V
+    board during boot. It can be also triggered with:
+    
+    $ echo 1 > /sys/module/dmatest/parameters/iterations
+    $ echo dma1chan0 > /sys/module/dmatest/parameters/channel
+    $ echo 1 > /sys/module/dmatest/parameters/run
+    $ sleep 1
+    $ cat /sys/module/dmatest/parameters/run
+    
+    Reported-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    Signed-off-by: Krzysztof Kozlowski <k.kozlowski@samsung.com>
+    Fixes: ae43b3289186 ("ARM: 8202/1: dmaengine: pl330: Add runtime Power Management support v12")
+    Cc: <stable@vger.kernel.org>
+    Tested-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    Signed-off-by: Vinod Koul <vinod.koul@intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 65fa9d0ca579016f28fa5ee5c2915642ca917615
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Jul 1 15:28:54 2015 +0800
+
+    FogBugz #301188: Fix the reset release for dedicated IO
+    
+    Fix the Reset Manager driver on handling the reset release
+    for peripherals connected to dedicated IO. Besides flash
+    controller, peripherals I2C2-4, EMAC's MDIO0-1, SPIS0, SPIM0,
+    UART1, and GPIO2 are connected to dedicated IO too.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v3
+    - Separating usefpga fix into separate patch
+    Changes for v2
+    - rearrange the case number from small numbers to large numbers
+    - added more comments and descriptions
+
+-----------------------------------------------------------------------
+

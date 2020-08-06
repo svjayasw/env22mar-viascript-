@@ -1,0 +1,240 @@
+to-delete:socfpga-3.10:v3.10-167-g9914410
+git push origin :refs/heads/socfpga-3.10
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.10
+status=0
+
+to-delete:socfpga-3.10-ltsi:v3.10-5172-g28bac3e
+git push origin :refs/heads/socfpga-3.10-ltsi
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.10-ltsi
+status=0
+
+to-delete:socfpga-3.10-ltsi-rt:v3.10-5837-g5d6c0ba
+git push origin :refs/heads/socfpga-3.10-ltsi-rt
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.10-ltsi-rt
+status=0
+
+to-delete:socfpga-3.11:v3.11-rc6-434-ga946a64
+git push origin :refs/heads/socfpga-3.11
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.11
+status=0
+
+to-delete:socfpga-3.12:v3.12-rc7-324-g28301d2
+git push origin :refs/heads/socfpga-3.12
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.12
+status=0
+
+to-delete:socfpga-3.13:v3.13-299-ga2e769f
+git push origin :refs/heads/socfpga-3.13
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.13
+status=0
+
+to-delete:socfpga-3.13-rel14.0:v3.13-298-g3c7cbb9
+git push origin :refs/heads/socfpga-3.13-rel14.0
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.13-rel14.0
+status=0
+
+to-delete:socfpga-3.14:v3.14-306-gd9114981
+git push origin :refs/heads/socfpga-3.14
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.14
+status=0
+
+to-delete:socfpga-3.15:v3.15-184-g5ae31a7
+git push origin :refs/heads/socfpga-3.15
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.15
+status=0
+
+to-delete:socfpga-3.16:v3.16-201-g9e70f26
+git push origin :refs/heads/socfpga-3.16
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.16
+status=0
+
+to-delete:socfpga-3.17:v3.17-212-g6f67ff9
+git push origin :refs/heads/socfpga-3.17
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.17
+status=0
+
+to-delete:socfpga-3.18:v3.18-257-g034e7cb
+git push origin :refs/heads/socfpga-3.18
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.18
+status=0
+
+to-delete:socfpga-3.4-ltsi:v3.4-3625-gaa85c5b
+git push origin :refs/heads/socfpga-3.4-ltsi
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.4-ltsi
+status=0
+
+to-delete:socfpga-3.6:v3.6-77-g17b9b41
+git push origin :refs/heads/socfpga-3.6
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.6
+status=0
+
+to-delete:socfpga-3.7:v3.7-90-g1dddc7c
+git push origin :refs/heads/socfpga-3.7
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.7
+status=0
+
+to-delete:socfpga-3.7-ghrd:v3.7-66-g349364a
+git push origin :refs/heads/socfpga-3.7-ghrd
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.7-ghrd
+status=0
+
+to-delete:socfpga-3.8:v3.8-108-g0a4ad1c
+git push origin :refs/heads/socfpga-3.8
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.8
+status=0
+
+to-delete:socfpga-3.9:v3.9-154-g3e1a0ef
+git push origin :refs/heads/socfpga-3.9
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.9
+status=0
+
+to-delete:socfpga-3.9-rel:v3.9-161-ged01b8c
+git push origin :refs/heads/socfpga-3.9-rel
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.9-rel
+status=0
+
+to-delete:socfpga-3.9-rel-amp:v3.9-162-g83718f8
+git push origin :refs/heads/socfpga-3.9-rel-amp
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-3.9-rel-amp
+status=0
+
+to-delete:socfpga-4.0:v4.0-178-g5d36469
+git push origin :refs/heads/socfpga-4.0
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.0
+status=0
+
+to-delete:socfpga-4.1:v4.1-203-g6de99ee
+git push origin :refs/heads/socfpga-4.1
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.1
+status=0
+
+to-delete:socfpga-4.1-ltsi:v4.1-2221-g43492a7
+git push origin :refs/heads/socfpga-4.1-ltsi
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.1-ltsi
+status=0
+
+to-delete:socfpga-4.1-ltsi-rt:v4.1-2562-g8b4890e
+git push origin :refs/heads/socfpga-4.1-ltsi-rt
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.1-ltsi-rt
+status=0
+
+to-delete:socfpga-4.1.22-ltsi:v4.1-2999-g9689ce4
+git push origin :refs/heads/socfpga-4.1.22-ltsi
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.1.22-ltsi
+status=0
+
+to-delete:socfpga-4.1.22-ltsi-rt:v4.1-3363-gfa465b2
+git push origin :refs/heads/socfpga-4.1.22-ltsi-rt
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.1.22-ltsi-rt
+status=0
+
+to-delete:socfpga-4.1.33-ltsi:v4.1-3989-g0175aa1
+git push origin :refs/heads/socfpga-4.1.33-ltsi
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.1.33-ltsi
+status=0
+
+to-delete:socfpga-4.1.33-ltsi-rt:v4.1-4360-g5b7a4c0
+git push origin :refs/heads/socfpga-4.1.33-ltsi-rt
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.1.33-ltsi-rt
+status=0
+
+to-delete:socfpga-4.10:v4.10-85-g80ee99f
+git push origin :refs/heads/socfpga-4.10
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.10
+status=0
+
+to-delete:socfpga-4.11:v4.11-126-ge691756
+git push origin :refs/heads/socfpga-4.11
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.11
+status=0
+
+to-delete:socfpga-4.12:v4.12-99-g243edde
+git push origin :refs/heads/socfpga-4.12
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.12
+status=0
+
+to-delete:socfpga-4.13:v4.13-99-g2ff7e34
+git push origin :refs/heads/socfpga-4.13
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.13
+status=0
+
+to-delete:socfpga-4.2:v4.2-146-gbe211eb
+git push origin :refs/heads/socfpga-4.2
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.2
+status=0
+
+to-delete:socfpga-4.3:v4.3-174-gcb5bb3a
+git push origin :refs/heads/socfpga-4.3
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.3
+status=0
+
+to-delete:socfpga-4.4:v4.4-155-g84eb65f
+git push origin :refs/heads/socfpga-4.4
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.4
+status=0
+
+to-delete:socfpga-4.5:v4.5-185-g3bb556b
+git push origin :refs/heads/socfpga-4.5
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.5
+status=0
+
+to-delete:socfpga-4.6:v4.6-180-g982c902
+git push origin :refs/heads/socfpga-4.6
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.6
+status=0
+
+to-delete:socfpga-4.7:v4.7-190-gf130b91
+git push origin :refs/heads/socfpga-4.7
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.7
+status=0
+
+to-delete:socfpga-4.8:v4.8-158-gfc938ff
+git push origin :refs/heads/socfpga-4.8
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.8
+status=0
+
+to-delete:socfpga-4.9:v4.9-112-ge4c2b71
+git push origin :refs/heads/socfpga-4.9
+To git@github.com:altera-opensource/linux-socfpga
+ - [deleted]         socfpga-4.9
+status=0
+

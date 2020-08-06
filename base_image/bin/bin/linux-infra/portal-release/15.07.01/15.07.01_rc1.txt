@@ -1,0 +1,151 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.0
+branch tag  : rel_socfpga-4.0_15.07.01_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.07.01_rc1
+new commits : 1
+253214e Dinh Nguyen usb: dwc2: call dwc2_is_controller_alive() under spinlock
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.07.01_rc1
+new commits : 1
+ed5a99c Dinh Nguyen usb: dwc2: call dwc2_is_controller_alive() under spinlock
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.0_15.07.01_rc1
+commit: 5b33a14 Tien Hock Loh FogBugz #298977: Add sys ID module to socfpga_defconfig
+
+tag:    rel_socfpga-3.10-ltsi_15.07.01_rc1
+commit: 253214e Dinh Nguyen usb: dwc2: call dwc2_is_controller_alive() under spinlock
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.07.01_rc1
+commit: ed5a99c Dinh Nguyen usb: dwc2: call dwc2_is_controller_alive() under spinlock
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.07.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.07.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.07.01_rc1
+commit: 5a47f31 Radu Bacrau FogBugz #297134: Supporting Spansion devices(S25FL127S/S25FL512S) with x4 mode
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.07.01_rc1
+commit: 3f9fc62 Graham Moore FogBugz #299961-2: Support NAND in Uboot on Arria10
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.07.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.07.01_rc1
+commit: 380baf4 Yves Vandervennet update for github
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.07.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.07.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.07.01_rc1
+commit: d69775c Graham Moore Update busybox full configuration for version 1.22
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.07.01_rc1
+commit: 1d88fd2 Yves Vandervennet Addition of the Arria10 SWVP
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 253214eb370059e798ca426a334f8f638147732c
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Mar 11 13:19:57 2015 -0500
+
+    usb: dwc2: call dwc2_is_controller_alive() under spinlock
+    
+    This patch fixes the following problem: data transmission in direction
+    IN break unless the GSNPSID register access is done with spinlock held.
+    This issue occurs at least in Exynos4412 SoC, probably in many SoC's
+    from Exynos familly.
+    
+    The problem is described here:
+    https://lkml.org/lkml/2014/12/22/185
+    And there is linux mailing list discussion:
+    https://lkml.org/lkml/2015/1/14/17
+    
+    Signed-off-by: Robert Baldyga <r.baldyga@samsung.com>
+    Signed-off-by: Felipe Balbi <balbi@ti.com>
+    [dinh: ported to 3.10-ltsi]
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit ed5a99ca83527c807b288361c50cb265c181ef0f
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Mar 11 13:19:57 2015 -0500
+
+    usb: dwc2: call dwc2_is_controller_alive() under spinlock
+    
+    This patch fixes the following problem: data transmission in direction
+    IN break unless the GSNPSID register access is done with spinlock held.
+    This issue occurs at least in Exynos4412 SoC, probably in many SoC's
+    from Exynos familly.
+    
+    The problem is described here:
+    https://lkml.org/lkml/2014/12/22/185
+    And there is linux mailing list discussion:
+    https://lkml.org/lkml/2015/1/14/17
+    
+    Signed-off-by: Robert Baldyga <r.baldyga@samsung.com>
+    Signed-off-by: Felipe Balbi <balbi@ti.com>
+    [dinh: ported to 3.10-ltsi]
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

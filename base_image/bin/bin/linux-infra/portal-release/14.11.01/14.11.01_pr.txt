@@ -1,0 +1,307 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.17
+branch tag  : rel_socfpga-3.17_14.11.01_pr
+Pushing new branch to rocketboards.org
+
+branch      : socfpga-3.16
+branch tag  : rel_socfpga-3.16_14.11.01_pr
+new commits : 1
+9e70f26 Graham Moore FogBugz #240948: Cadence QSPI needs to have spi-nor framework enabled.
+
+
+++wiki:
+*Branch name*: socfpga-3.16, *Tag name:* rel_socfpga-3.16_14.11.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 240948 | Cadence QSPI needs to have spi-nor framework enabled. | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=9e70f262ad67bfe59979da9db32c6ffaba4f52c7 ][ 9e70f262ad67bfe59979da9db32c6ffaba4f52c7 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.11.01_pr
+new commits : 1
+4ce3474 Elie De Brauwer mtd: m25p80: Fix 4 byte addressing mode for Micron devices.
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.11.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | mtd: m25p80: Fix 4 byte addressing mode for Micron devices. | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=4ce347478243906d9ac598a23890265a1eb193ac ][ 4ce347478243906d9ac598a23890265a1eb193ac ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_14.11.01_pr
+new commits : 1
+bc5b6fb Elie De Brauwer mtd: m25p80: Fix 4 byte addressing mode for Micron devices.
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_14.11.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | mtd: m25p80: Fix 4 byte addressing mode for Micron devices. | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=bc5b6fb2e02500130a8f2a4b5e90752adeb1a965 ][ bc5b6fb2e02500130a8f2a4b5e90752adeb1a965 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.17_14.11.01_pr
+commit: c29c849 Viet Nga Dao net: phy: Adding SGMII support for Marvell 88ee1145 driver
+
+tag:    rel_socfpga-3.16_14.11.01_pr
+commit: 9e70f26 Graham Moore FogBugz #240948: Cadence QSPI needs to have spi-nor framework enabled.
+
+tag:    rel_socfpga-3.10-ltsi_14.11.01_pr
+commit: 4ce3474 Elie De Brauwer mtd: m25p80: Fix 4 byte addressing mode for Micron devices.
+
+tag:    rel_socfpga-3.10-ltsi-rt_14.11.01_pr
+commit: bc5b6fb Elie De Brauwer mtd: m25p80: Fix 4 byte addressing mode for Micron devices.
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.11.01_pr
+new commits : 1
+5f58921 Vince Bridgers FogBugz #241780: Disable ECC, add preprocessor checks for consistent state
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_14.11.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 241780 | Disable ECC, add preprocessor checks for consistent state | [[ http://git.rocketboards.org/gitweb/?p=u-boot-socfpga.git;a=commit;h=5f58921738debfc7b09d15b08cd0a13a303bc504 ][ 5f58921738debfc7b09d15b08cd0a13a303bc504 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.11.01_pr
+commit: 5f58921 Vince Bridgers FogBugz #241780: Disable ECC, add preprocessor checks for consistent state
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_14.11.01_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_14.11.01_pr
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_14.11.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_14.11.01_pr
+new commits : 1
+65417bc Yves Vandervennet kde repo moved, it's now meta-kde4
+
+
+++wiki:
+*Branch name*: angstrom-v2013.12-socfpga, *Tag name:* rel_angstrom-v2013.12-socfpga_14.11.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | kde repo moved, it's now meta-kde4 | [[ http://git.rocketboards.org/gitweb/?p=angstrom-socfpga.git;a=commit;h=65417bcfd8d2859fd74ce5d5358fc26152db9991 ][ 65417bcfd8d2859fd74ce5d5358fc26152db9991 ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_14.11.01_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_14.11.01_pr
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_14.11.01_pr
+commit: 65417bc Yves Vandervennet kde repo moved, it's now meta-kde4
+
+tag:    rel_angstrom-v2014.06-socfpga_14.11.01_pr
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_14.11.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_14.11.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_14.11.01_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_14.11.01_pr
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_14.11.01_pr
+commit: 6b5ff63 Yves Vandervennet remove 3.17 for now
+
+tag:    rel_angstrom-v2014.06-yocto1.6_14.11.01_pr
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.17
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.16
+
+commit 9e70f262ad67bfe59979da9db32c6ffaba4f52c7
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Tue Oct 21 15:00:22 2014 -0500
+
+    FogBugz #240948: Cadence QSPI needs to have spi-nor framework enabled.
+    
+    Add config setting for qspi under 3.16 kernel, this is
+    required by the new spi-nor framework.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 4ce347478243906d9ac598a23890265a1eb193ac
+Author: Elie De Brauwer <eliedebrauwer@gmail.com>
+Date:   Tue Sep 17 19:48:22 2013 +0200
+
+    mtd: m25p80: Fix 4 byte addressing mode for Micron devices.
+    
+    According to the datasheet for Micron n25q256a (N25Q256A13ESF40F) 4-byte
+    addressing mode should be entered as follows:
+    
+    <quote>
+    To enter or exit the 4-byte address mode, the WRITE ENABLE command
+    must be executed to set the write enable latch bit to 1. (Note: The
+    WRITE ENABLE command must NOT be executed on the N25Q256A83ESF40x and
+    N25Q256A83E1240x devices.) S# must be driven LOW. The effect of the
+    command is immediate; after the command has been executed, the write
+    enable latch bit is cleared to 0.
+    </quote>
+    
+    Micron's portable way to perform this for all types of Micron flash
+    is to first issue a write enable, then switch the addressing mode
+    followed by a write disable to avoid leaving the flash in a write-
+    able state.
+    
+    Signed-off-by: Elie De Brauwer <eliedebrauwer@email.com>
+    [Brian: reworked a bit]
+    Signed-off-by: Brian Norris <computersforpeace@gmail.com>
+    Signed-off-by: David Woodhouse <David.Woodhouse@intel.com>
+    
+    Conflicts:
+    	drivers/mtd/devices/m25p80.c
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit bc5b6fb2e02500130a8f2a4b5e90752adeb1a965
+Author: Elie De Brauwer <eliedebrauwer@gmail.com>
+Date:   Tue Sep 17 19:48:22 2013 +0200
+
+    mtd: m25p80: Fix 4 byte addressing mode for Micron devices.
+    
+    According to the datasheet for Micron n25q256a (N25Q256A13ESF40F) 4-byte
+    addressing mode should be entered as follows:
+    
+    <quote>
+    To enter or exit the 4-byte address mode, the WRITE ENABLE command
+    must be executed to set the write enable latch bit to 1. (Note: The
+    WRITE ENABLE command must NOT be executed on the N25Q256A83ESF40x and
+    N25Q256A83E1240x devices.) S# must be driven LOW. The effect of the
+    command is immediate; after the command has been executed, the write
+    enable latch bit is cleared to 0.
+    </quote>
+    
+    Micron's portable way to perform this for all types of Micron flash
+    is to first issue a write enable, then switch the addressing mode
+    followed by a write disable to avoid leaving the flash in a write-
+    able state.
+    
+    Signed-off-by: Elie De Brauwer <eliedebrauwer@email.com>
+    [Brian: reworked a bit]
+    Signed-off-by: Brian Norris <computersforpeace@gmail.com>
+    Signed-off-by: David Woodhouse <David.Woodhouse@intel.com>
+    
+    Conflicts:
+    	drivers/mtd/devices/m25p80.c
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 5f58921738debfc7b09d15b08cd0a13a303bc504
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Thu Oct 30 13:38:27 2014 -0500
+
+    FogBugz #241780: Disable ECC, add preprocessor checks for consistent state
+    
+    Somehow, ECC was enabled but scrubbing was disabled for our git repo
+    default board configuration. This patch corrects that issue by setting
+    CONFIG_HPS_SDR_CTRLCFG_CTRLCFG_ECCEN to 0 for the default configuration,
+    makes sure CONFIG_HPS_SDR_CTRLCFG_STATICCFG_USEECCASDATA is always disabled,
+    and CONFIG_HPS_SDR_CTRLCFG_CTRLCFG_ECCCORREN is also always disabled. Note
+    that the SDRAM configuration code always sets
+    CONFIG_HPS_SDR_CTRLCFG_STATICCFG_USEECCASDATA and
+    CONFIG_HPS_SDR_CTRLCFG_CTRLCFG_ECCCORREN to 0 overriding the preloader
+    generator handoffs leaving an OS specific driver with the choice of
+    using those features if needed. The preloader does the basic SDRAM ECC
+    initialization tasks required for basic ECC initialization and protection.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of angstrom-socfpga branch angstrom-v2013.12-socfpga
+
+commit 65417bcfd8d2859fd74ce5d5358fc26152db9991
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Mon Nov 3 22:11:49 2014 -0600
+
+    kde repo moved, it's now meta-kde4
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

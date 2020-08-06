@@ -1,0 +1,31 @@
+====================
+at-git master branch
+====================
+These internal commits were mistakenly pushed to the at-git master branch:
+
+3402beb 2018-02-01 09:52:06 +0800 : Sau Kae Tan : IntelFpgaPlatformPkg: Fix compilation error for GCC7.2.1
+e5f92f1 2018-01-25 15:44:27 +0800 : Sau Kae Tan : EDK2: Update upstream code to UDK 2018
+f21d2c2 2018-01-05 15:58:59 +0800 : Sau Kae Tan : EDK2: Remove unused files for upstraming
+62988af 2017-12-26 15:20:46 +0800 : Sau Kae Tan : EDK2: Merge PEI and DXE ROM
+798ea4e 2017-11-27 14:41:36 +0800 : Sau Kae Tan : EDK2 : upstream part 5
+2226ba0 2017-11-06 16:07:14 +0800 : Sau Kae Tan : IntelFrameworkModulePkg: Upstream code part 3
+018c595 2017-11-06 16:01:18 +0800 : Sau Kae Tan : CorebootModulePkg: Upstream code part 2
+64464e5 2017-11-06 15:50:37 +0800 : Sau Kae Tan : AppPkg: Upstream code part 1
+
+on top of this upstream commit:
+df60fb4 2015-10-30 17:53:53 +0000 : Michael Kinney : SourceLevelDebugPkg: DebugAgent: Set Local APIC SoftwareEnable
+
+See email RE-Bi-weekly-sync-between-github-and-at-git-for-arm-trusted-firmware-and-uefi-socfpga.txt
+for more info.
+
+====================
+portal master branch
+====================
+Portal master branch was == linaro-edk2-2014.09 tag which is on github:
+ https://github.com/altera-opensource/uefi-socfpga/releases/tag/linaro-edk2-2014.09
+
+atull@linuxheads98:~/repos/uefi-socfpga$ glo -1 linaro-edk2-2014.09
+443bf46 2014-09-26 15:50:25 +0100 : Leif Lindholm : Merged 2014.09 release into master
+
+atull@linuxheads98:~/repos/uefi-socfpga$ glo -1 portal/master
+443bf46 2014-09-26 15:50:25 +0100 : Leif Lindholm : Merged 2014.09 release into master

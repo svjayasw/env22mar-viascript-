@@ -1,0 +1,85 @@
+#!/bin/bash
+
+function usage()
+{
+    echo "$(basename $0) [-u|<tag>] [-r <path>]"
+    echo " check that tag exists in the following repos:"
+    echo $REPOS | xargs -n1 | sed 's/^/     /'
+    echo
+    echo " -r <path> = specify that repos are located at this path."
+    echo " -u        = fetch from the repos and then exit."
+}
+
+function do_update()
+{
+    cd ${REPOS_DIR}
+    for repo in $REPOS; do
+        cd "$repo" || exit 1
+	pwd
+	git fetch origin || exit 1
+	git fetch portal || exit 1
+	echo
+	cd ${REPOS_DIR}
+    done
+    echo "Done updating"
+}
+
+#=======================================================================
+
+declare -r REPOS="angstrom-socfpga linux-refdesigns linux-socfpga meta-altera meta-altera-refdes uboot-socfpga"
+
+REPOS_DIR=~/repos/internal
+UPDATE=
+
+while [ -n "$1" ]; do
+    case "$1" in
+	-h* ) usage; exit 1;;
+	-u ) UPDATE=1 ;;
+	-r ) REPOS_DIR="$2" ; shift ;;
+	-* ) echo "invalid parameter: $1"; usage; exit 1;;
+	* ) declare -r TAG=$1; shift ;;
+    esac
+    shift
+done
+
+echo "repos located at : $REPOS_DIR"
+
+if [ "$UPDATE" == 1 ]; then
+    do_update
+    exit 0
+fi
+
+if [ -z "$TAG" ]; then
+    echo "Need to specify a tag"
+    echo
+    usage
+    exit 1
+fi
+
+echo "tag              : $TAG"
+echo
+
+cd ${REPOS_DIR}
+
+not_tagged=
+for repo in $REPOS; do
+    cd $repo || exit 1
+    git log -1 --pretty=oneline "$TAG" >/dev/null 2>/dev/null
+    if [ "$?" -eq 0 ]; then
+        echo $repo
+	git log -1 --pretty=oneline "$TAG" | sed 's/^/      /' | cut -c1-120
+	git branch -r --contains $TAG | sed 's/^/      /' | cut -c1-120
+        echo
+	
+    else
+	not_tagged="$not_tagged $repo"
+    fi
+
+    cd ${REPOS_DIR}/
+done
+
+if [ -n "$not_tagged" ]; then
+    echo "Repos not tagged:"
+    echo "$not_tagged" | xargs -n1 | sed 's/^/      /'
+fi
+

@@ -1,0 +1,10 @@
+repos located at : /home/atull/repos/internal
+tag              : ACDS16.0_REL_GSRD_RC4
+
+Repos not tagged:
+      angstrom-socfpga
+      linux-refdesigns
+      linux-socfpga
+      meta-altera
+      meta-altera-refdes
+      uboot-socfpga

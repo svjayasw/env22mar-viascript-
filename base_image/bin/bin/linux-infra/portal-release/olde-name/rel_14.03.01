@@ -1,0 +1,235 @@
+
+New portal update procedure.  Every other week we will:
+  On Wednesday, tag the trees and send this report out.
+  On Friday, update the portal git using the tags.
+
+This is a script-generated report of what we will push to the portal on Friday.
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.13
+branch tag  : rel_socfpga-3.13_14.03.01
+new commits : 9
+5453b8f Vince Bridgers FogBugz #187411: Add TSE MSGDMA and SGMDA Hybrid Driver
+e1f652f Ley Foon Tan FogBugz #186973: nios2: Fix warning from cacheflush.h
+64fbb52 Tien Hock Loh FogBugz #183948: Fix Nios II build failure
+0945e9c Thor Thayer FogBugz #184650: Cleanup Altera license headers.
+3a2f524 Ley Foon Tan FogBugz #185226: nios2: Simplify current_thread_info() implementation
+2c62c7c cnphoon FogBugz #178225: Add Altera interrupt latency counter driver
+0b27c4a Ley Foon Tan FogBugz #184715: nios2: irq: s/unsigned/u32
+e4484df8 Dinh Nguyen FogBugz #184646: Turn on all peripheral clocks for a system reboot
+cf40527 Dinh Nguyen FogBugz #184641: Remove unused define
+
+
+++wiki:
+*Branch name*: socfpga-3.13, *Tag name:* rel_socfpga-3.13_14.03.01
+| *ID* | *Comment* | *GIT Commit* |
+| 187411 | Add TSE MSGDMA and SGMDA Hybrid Driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=5453b8f5bf607bdd80c08d7dfd24a701f0a39f89 ][ 5453b8f5bf607bdd80c08d7dfd24a701f0a39f89 ]] |
+| 186973 | nios2: Fix warning from cacheflush.h | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=e1f652f9c2e9343adc6f9205a375b0c354dbc043 ][ e1f652f9c2e9343adc6f9205a375b0c354dbc043 ]] |
+| 183948 | Fix Nios II build failure | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=64fbb520e222c5bc326e5e28d7b710fddcf5ccff ][ 64fbb520e222c5bc326e5e28d7b710fddcf5ccff ]] |
+| 184650 | Cleanup Altera license headers. | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=0945e9cc99c8dc7765c75050b0035bf15296f830 ][ 0945e9cc99c8dc7765c75050b0035bf15296f830 ]] |
+| 185226 | nios2: Simplify current_thread_info() implementation | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=3a2f524ca3d6246f0d18dc0f6d1ac717bdc58f17 ][ 3a2f524ca3d6246f0d18dc0f6d1ac717bdc58f17 ]] |
+| 178225 | Add Altera interrupt latency counter driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=2c62c7ceb5bedaa728c12171588e1e64addf5b88 ][ 2c62c7ceb5bedaa728c12171588e1e64addf5b88 ]] |
+| 184715 | nios2: irq: s/unsigned/u32 | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=0b27c4a7820014edb4ce03567cfca2258b56f01e ][ 0b27c4a7820014edb4ce03567cfca2258b56f01e ]] |
+| 184646 | Turn on all peripheral clocks for a system reboot | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=e4484df8953bb0f2d2ad5ccb68fc4c08032a8a43 ][ e4484df8953bb0f2d2ad5ccb68fc4c08032a8a43 ]] |
+| 184641 | Remove unused define | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=cf405274e33ca8ef9b6b0ceffce0105e82142ede ][ cf405274e33ca8ef9b6b0ceffce0105e82142ede ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.13_14.03.01
+commit: 5453b8f Vince Bridgers FogBugz #187411: Add TSE MSGDMA and SGMDA Hybrid Driver
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.03.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.03.01
+commit: e0d19aa Tien Hock Loh FogBugz #121124:Fix DW USB driver failing to run on board.
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.13
+
+commit 5453b8f5bf607bdd80c08d7dfd24a701f0a39f89
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Fri Feb 28 16:03:02 2014 -0600
+
+    FogBugz #187411: Add TSE MSGDMA and SGMDA Hybrid Driver
+    
+    This commit adds the TSE MSGDMA and SGDMA hybrid driver. The
+    driver checks the device tree bindings compatibility string
+    to determine what mode the driver is operating in, and
+    probes the device tree for required resources accordingly.
+    SGDMA will be deprecated very soon by Altera, but is still
+    supported in this driver for customers that still use SGDMA.
+    The driver serves as a good example of how to use two
+    different types of soft DMA IP. The driver was tested on
+    ARM and NIOS systems, and issues specific to those systems
+    are handled by the driver such as misaligned exceptions on
+    the NIOS processor.
+    
+    V3:
+    - Remove maintainer changes
+    - Correct git commit log line lengths
+    
+    V2:
+    - Update per Crucible review 596
+    - Update bindings descriptions altera_tse.txt per review comments
+    - Changed altera_tse_driver to alteratse in Makefile and Kconfig
+    - Added entry in the Maintainers file
+    - changed altera_sgdmahw.h to use BIT macro instead of like (1<<0)
+    - corrected copyrights per review comments
+    - moved cacheflush.h to bottom of header inclusions in altera_tse.c
+    - use apis to extract lower and upper 32 bits of dma addresss
+    - remove barriers since dma apis ensure memory consistency
+    - add max-frame-size property
+    - change platform id from AVALON to "platform"
+    - use of function of_get_phy_mode instead of custom function
+    - remove use of netif_carrier_off, not needed in driver
+    - move probing of phy from open to the probe function
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit e1f652f9c2e9343adc6f9205a375b0c354dbc043
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Feb 27 16:00:53 2014 +0800
+
+    FogBugz #186973: nios2: Fix warning from cacheflush.h
+    
+    Fixed this warning by adding <linux/mm_types.h> and remove unused
+    cacheflush.h in process.c.
+    
+    Example warning message:
+    arch/nios2/include/asm/cacheflush.h:21:2: warning:
+    'struct vm_area_struct' declared inside parameter list
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 64fbb520e222c5bc326e5e28d7b710fddcf5ccff
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Fri Feb 28 16:58:12 2014 +0800
+
+    FogBugz #183948: Fix Nios II build failure
+    
+    GPIO Altera driver uses writel_relaxed, which doesn't exist in nios2 io.h.
+    This is to add the _relaxed function to io.h.
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+commit 0945e9cc99c8dc7765c75050b0035bf15296f830
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Tue Feb 18 16:34:13 2014 -0600
+
+    FogBugz #184650: Cleanup Altera license headers.
+    
+    A few files have incorrect headers and some files do not have
+    any headers. The biggest issue is that some files say "GPLv2 or
+    later". The "or later" part is the problem.
+    
+    V2:
+    Remove asterisks from date.
+    Correct lower portion of header
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit 3a2f524ca3d6246f0d18dc0f6d1ac717bdc58f17
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Feb 20 17:09:02 2014 +0800
+
+    FogBugz #185226: nios2: Simplify current_thread_info() implementation
+    
+    This commit replaces the assembler implementation by a more
+    readable and equivalent pure-C implementation.
+    
+    Signed-off-by: Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 2c62c7ceb5bedaa728c12171588e1e64addf5b88
+Author: cnphoon <cnphoon@altera.com>
+Date:   Fri Feb 21 17:39:05 2014 +0800
+
+    FogBugz #178225: Add Altera interrupt latency counter driver
+    
+    Adding Altera interrupt latency counter driver support. This driver works
+    together with the Altera interrupt latency driver soft IP to measure the
+    time from the interrupt being asserted to the execution of the interrupt
+    service routine. This driver and soft ip supports for both edge and level
+    interrupt.
+    
+    V2:
+    - Update fifo-depth property name in device tree
+    - Update binding document to add sysfs path and use case
+    - Update includes header in alphabetical order
+    - Remove global variables
+    - Rename kfifo stucts naming to avoid confusion
+    - Validate offset return value
+    - Changing read and write register functions
+    - Update on misc coding styles and format
+    
+    V3:
+    - Update coding styles
+    - Update irq_request function
+    - Changing print out to dev_dbg() in ISR
+    - Fix ISR return values
+    
+    V4:
+    - Remove stray line
+    
+    Signed-off-by: Phoon Chee Nouk <cnphoon@altera.com>
+
+commit 0b27c4a7820014edb4ce03567cfca2258b56f01e
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Feb 19 11:04:30 2014 +0800
+
+    FogBugz #184715: nios2: irq: s/unsigned/u32
+    
+    Usage of 'unsigned' with implicit type is frowned upon so let's
+    replace it with 'u32'.
+    
+    Signed-off-by: Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit e4484df8953bb0f2d2ad5ccb68fc4c08032a8a43
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Feb 18 15:58:20 2014 -0600
+
+    FogBugz #184646: Turn on all peripheral clocks for a system reboot
+    
+    When doing a software reboot, all peripheral clocks must get turned on for the
+    L3 interconnect to work.
+    
+    This code is needed when doing a "reboot" from user-space and a peripheral
+    clock as been gated off. Why would a peripheral clock get gated? An example
+    use case would be a .ko that gets insmod and rmmod during runtime. The insmod
+    would turn on the IP's clock, and the rmmod would turn off the IP's clock.
+    Doing a "reboot" would cause the system to hang.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit cf405274e33ca8ef9b6b0ceffce0105e82142ede
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Feb 18 15:45:06 2014 -0600
+
+    FogBugz #184641: Remove unused define
+    
+    SOCFPGA_IRQ_GIC_START is not used for anything. Remove it.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+-----------------------------------------------------------------------
+
+

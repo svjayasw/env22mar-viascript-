@@ -1,0 +1,1 @@
+0 8 * * * rm -f ~/klocwork-cronjob/log-kw-auto.txt && ~/klocwork-cronjob/linux-infra/nightlybuild/update/kw-auto.sh >> ~/klocwork-cronjob/log-kw-auto.txt 2>&1

@@ -1,0 +1,666 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.15
+branch tag  : rel_socfpga-4.15_18.04.02_pr
+new commits : 5
+990acaf VIET NGA DAO FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+d60d5c5 Ooi, Joyce FogBugz #525801: gpio: Kconfig: Add CONFIG_LEDS_TRIGGER_TIMER
+edfca70 Ooi, Joyce FogBugz #251539-3: Nios2: defconfig: Max10: Add Altera Quad SPI
+09dc2f1 VIET NGA DAO FogBugz #251539-1: Add Altera Quad SPI Driver
+74d5344 Ooi, Joyce FogBugz #538491: arm: socfpga_defconfig: Add Altera SysID and Altera ILC
+
+
+++wiki:
+*Branch name*: socfpga-4.15, *Tag name:* rel_socfpga-4.15_18.04.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 251539-2 | dts: Add Altera Quad SPI Driver Device Tree Binding | [[ https://github.com/altera-opensource/linux-socfpga/commit/990acaf14261901a67c96f2effab389556d87c60 ][ 990acaf14261901a67c96f2effab389556d87c60 ]] |
+| 525801 | gpio: Kconfig: Add CONFIG_LEDS_TRIGGER_TIMER | [[ https://github.com/altera-opensource/linux-socfpga/commit/d60d5c51d780a514da39a6873e2f023f0f88dd23 ][ d60d5c51d780a514da39a6873e2f023f0f88dd23 ]] |
+| 251539-3 | Nios2: defconfig: Max10: Add Altera Quad SPI | [[ https://github.com/altera-opensource/linux-socfpga/commit/edfca70aea151fefda2b5560d643865d8bdb75e4 ][ edfca70aea151fefda2b5560d643865d8bdb75e4 ]] |
+| 251539-1 | Add Altera Quad SPI Driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/09dc2f10a87141935cfef75a8adbbe4a3928465f ][ 09dc2f10a87141935cfef75a8adbbe4a3928465f ]] |
+| 538491 | arm: socfpga_defconfig: Add Altera SysID and Altera ILC | [[ https://github.com/altera-opensource/linux-socfpga/commit/74d53444142b4e4f5db94a305e223db7ddccc0a9 ][ 74d53444142b4e4f5db94a305e223db7ddccc0a9 ]] |
+--wiki:
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.04.02_pr
+new commits : 5
+2314712 VIET NGA DAO FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+44aa0b7 Ooi, Joyce FogBugz #525801: gpio: Kconfig: Add CONFIG_LEDS_TRIGGER_TIMER
+903bb7d Ooi, Joyce FogBugz #251539-3: Nios2: defconfig: Max10: Add Altera Quad SPI
+22a3fa4 VIET NGA DAO FogBugz #251539-1: Add Altera Quad SPI Driver
+b44219b Ooi, Joyce FogBugz #538491: arm: socfpga_defconfig: Add Altera SysID and Altera ILC
+
+
+++wiki:
+*Branch name*: socfpga-4.9.78-ltsi, *Tag name:* rel_socfpga-4.9.78-ltsi_18.04.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 251539-2 | dts: Add Altera Quad SPI Driver Device Tree Binding | [[ https://github.com/altera-opensource/linux-socfpga/commit/23147125756d1ebddfdda416bce5b75b9d01f18d ][ 23147125756d1ebddfdda416bce5b75b9d01f18d ]] |
+| 525801 | gpio: Kconfig: Add CONFIG_LEDS_TRIGGER_TIMER | [[ https://github.com/altera-opensource/linux-socfpga/commit/44aa0b7ec5fb3942b2ed9494cc976ddbdcfe689f ][ 44aa0b7ec5fb3942b2ed9494cc976ddbdcfe689f ]] |
+| 251539-3 | Nios2: defconfig: Max10: Add Altera Quad SPI | [[ https://github.com/altera-opensource/linux-socfpga/commit/903bb7da81e3962abb54ad05ecd438a011f3efb6 ][ 903bb7da81e3962abb54ad05ecd438a011f3efb6 ]] |
+| 251539-1 | Add Altera Quad SPI Driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/22a3fa4cf1b096ec2b4662c3fd0ffd13f32b520b ][ 22a3fa4cf1b096ec2b4662c3fd0ffd13f32b520b ]] |
+| 538491 | arm: socfpga_defconfig: Add Altera SysID and Altera ILC | [[ https://github.com/altera-opensource/linux-socfpga/commit/b44219b642ff4d2fc10058f6d4b9656e29c925ff ][ b44219b642ff4d2fc10058f6d4b9656e29c925ff ]] |
+--wiki:
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.04.02_pr
+new commits : 5
+1d046f6 VIET NGA DAO FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+b191a9b Ooi, Joyce FogBugz #525801: gpio: Kconfig: Add CONFIG_LEDS_TRIGGER_TIMER
+0c596d7 Ooi, Joyce FogBugz #251539-3: Nios2: defconfig: Max10: Add Altera Quad SPI
+3c47310 VIET NGA DAO FogBugz #251539-1: Add Altera Quad SPI Driver
+c0dda25 Ooi, Joyce FogBugz #538491: arm: socfpga_defconfig: Add Altera SysID and Altera ILC
+
+
+++wiki:
+*Branch name*: socfpga-4.9.76-ltsi-rt, *Tag name:* rel_socfpga-4.9.76-ltsi-rt_18.04.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 251539-2 | dts: Add Altera Quad SPI Driver Device Tree Binding | [[ https://github.com/altera-opensource/linux-socfpga/commit/1d046f6a4d9d2bf7b03ba279e1dedff461ee2505 ][ 1d046f6a4d9d2bf7b03ba279e1dedff461ee2505 ]] |
+| 525801 | gpio: Kconfig: Add CONFIG_LEDS_TRIGGER_TIMER | [[ https://github.com/altera-opensource/linux-socfpga/commit/b191a9bfc47cc95295e0711405f7a4d2e2d2f9f8 ][ b191a9bfc47cc95295e0711405f7a4d2e2d2f9f8 ]] |
+| 251539-3 | Nios2: defconfig: Max10: Add Altera Quad SPI | [[ https://github.com/altera-opensource/linux-socfpga/commit/0c596d7e2159820314111e2564c0f1be166b5eb0 ][ 0c596d7e2159820314111e2564c0f1be166b5eb0 ]] |
+| 251539-1 | Add Altera Quad SPI Driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/3c47310b390701cf8653dbb024cc2e34841a07f0 ][ 3c47310b390701cf8653dbb024cc2e34841a07f0 ]] |
+| 538491 | arm: socfpga_defconfig: Add Altera SysID and Altera ILC | [[ https://github.com/altera-opensource/linux-socfpga/commit/c0dda25648e77431b112b895dc9550b0c610b468 ][ c0dda25648e77431b112b895dc9550b0c610b468 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.15_18.04.02_pr
+commit: 990acaf VIET NGA DAO FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+
+tag:    rel_socfpga-4.9.78-ltsi_18.04.02_pr
+commit: 2314712 VIET NGA DAO FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.04.02_pr
+commit: 1d046f6 VIET NGA DAO FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.04.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.04.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.04.02_pr
+new commits : 18
+1c74e1d Tien Fong Chee FogBugz #548483-12: Replace the duplicate DBE config with address mismatch
+1f9fac5 Tien Fong Chee FogBugz #548483-11: Reduce the buffer size for DMA microcode
+66f9fa9 Chin Liang See FogBugz #548145: arm: socfpga: stratix10: Enhance QSPI driver to use 4k sector
+96df848 Chin Liang See FogBugz #548149: arm: socfpga: stratix10: Fix QSPI flash compatible string
+6d2a327 Thor Thayer FogBugz #548210-4: Add SMC functions to support ECC
+eb4e90c Thor Thayer FogBugz #548210-3: Refactor SMC shared code into common header
+70bb2e0 Thor Thayer FogBugz #548210-2: Add SysMan and ECC Reads to intel-smc.h
+3797a5d Thor Thayer FogBugz #548210-1: Update intel-smc.h from Linux
+68ad6be Tien Fong Chee FogBugz #548483-10: Add helper function for write/read DDR
+ff37a90 Tien Fong Chee FogBugz #548483-9: Enhance DDR address mismatch test to support 64 bits DDR
+a34868d Tien Fong Chee FogBugz #548483-8: Enhance DDR DBE ECC test to support 64 bits DDR
+9e263c4 Tien Fong Chee FogBugz #548483-7: Enhance DDR SBE ECC test to support 64 bits DDR
+6211aab Tien Fong Chee FogBugz #548483-6: Enable DMA driver for better DDR scrubbing performance
+00cb9f0 Tien Fong Chee FogBugz #548483-5: Miss setting of transfer status polling on DMA channel
+2c01b4d Tien Fong Chee FogBugz #548483-4: Remove global data variable
+c563acf Tien Fong Chee FogBugz #548483-3: Add watchdog reset for DDR scrubbing with DMA
+61a8ec0 Tien Fong Chee FogBugz #548483-2: Add watchdog reset for DDR scrubbing with CPU
+d54b778 Tien Fong Chee FogBugz #548483-1: Doing DDR scrubbing, chunk by chunk by CPU
+
+
+++wiki:
+*Branch name*: socfpga_v2017.09, *Tag name:* rel_socfpga_v2017.09_18.04.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 548483-12 | Replace the duplicate DBE config with address mismatch | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/1c74e1d6a4726d1bf4472584d3303a2663d9b116 ][ 1c74e1d6a4726d1bf4472584d3303a2663d9b116 ]] |
+| 548483-11 | Reduce the buffer size for DMA microcode | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/1f9fac5e8877bec3be9bee3987c0a1221708d0ee ][ 1f9fac5e8877bec3be9bee3987c0a1221708d0ee ]] |
+| 548145 | arm: socfpga: stratix10: Enhance QSPI driver to use 4k sector | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/66f9fa95c3fef319664e3276f4b0e606ad3bacd6 ][ 66f9fa95c3fef319664e3276f4b0e606ad3bacd6 ]] |
+| 548149 | arm: socfpga: stratix10: Fix QSPI flash compatible string | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/96df848741a5dd9c46c67e27633a62c15d654abe ][ 96df848741a5dd9c46c67e27633a62c15d654abe ]] |
+| 548210-4 | Add SMC functions to support ECC | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/6d2a32786ea370061adf26243bf186928fd57ffb ][ 6d2a32786ea370061adf26243bf186928fd57ffb ]] |
+| 548210-3 | Refactor SMC shared code into common header | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/eb4e90cd83cf0a07b957cc0ac358d16c6b3bd45b ][ eb4e90cd83cf0a07b957cc0ac358d16c6b3bd45b ]] |
+| 548210-2 | Add SysMan and ECC Reads to intel-smc.h | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/70bb2e02ade516ff503db1a732b65a7505edcf67 ][ 70bb2e02ade516ff503db1a732b65a7505edcf67 ]] |
+| 548210-1 | Update intel-smc.h from Linux | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/3797a5d46c6fe904cde12d339b49941fc87fba58 ][ 3797a5d46c6fe904cde12d339b49941fc87fba58 ]] |
+| 548483-10 | Add helper function for write/read DDR | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/68ad6becbeba0e1c6e53e936d3538574852f973a ][ 68ad6becbeba0e1c6e53e936d3538574852f973a ]] |
+| 548483-9 | Enhance DDR address mismatch test to support 64 bits DDR | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/ff37a90c0379c9737359aec4018370815d198fd2 ][ ff37a90c0379c9737359aec4018370815d198fd2 ]] |
+| 548483-8 | Enhance DDR DBE ECC test to support 64 bits DDR | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/a34868d1adb239390f86060a6f2988a5d44402a1 ][ a34868d1adb239390f86060a6f2988a5d44402a1 ]] |
+| 548483-7 | Enhance DDR SBE ECC test to support 64 bits DDR | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/9e263c468893bd549a17379dae057180b772cd95 ][ 9e263c468893bd549a17379dae057180b772cd95 ]] |
+| 548483-6 | Enable DMA driver for better DDR scrubbing performance | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/6211aab304998336d84b7561b4aa0aeae8392eac ][ 6211aab304998336d84b7561b4aa0aeae8392eac ]] |
+| 548483-5 | Miss setting of transfer status polling on DMA channel | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/00cb9f0746f891ff5ac7fe869a44845213bd0b6f ][ 00cb9f0746f891ff5ac7fe869a44845213bd0b6f ]] |
+| 548483-4 | Remove global data variable | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/2c01b4de2dd1b28bbe976332bccf5f5314740a56 ][ 2c01b4de2dd1b28bbe976332bccf5f5314740a56 ]] |
+| 548483-3 | Add watchdog reset for DDR scrubbing with DMA | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/c563acf4bd8aac6ac50e0a85c22f65362c40d820 ][ c563acf4bd8aac6ac50e0a85c22f65362c40d820 ]] |
+| 548483-2 | Add watchdog reset for DDR scrubbing with CPU | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/61a8ec06e9f904380769895d2ef78c5a0336d4bc ][ 61a8ec06e9f904380769895d2ef78c5a0336d4bc ]] |
+| 548483-1 | Doing DDR scrubbing, chunk by chunk by CPU | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/d54b778a4bda91164b37cf66d854540e1b902daf ][ d54b778a4bda91164b37cf66d854540e1b902daf ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.04.02_pr
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.04.02_pr
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_18.04.02_pr
+commit: 1c74e1d Tien Fong Chee FogBugz #548483-12: Replace the duplicate DBE config with address mismatch
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.04.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.04.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.04.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.04.02_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.04.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.04.02_pr
+new commits : 3
+69c4320 Ong, Hean Loong Backport systemd change e266c06 from systemd v234-stable
+9e1fcf9 Ong, Hean Loong update 4.9.78-ltsi to commit ID 2314712
+056579d Ong, Hean Loong add ttyS0 into 99-systemd.rules
+
+
+++wiki:
+*Branch name*: angstrom-v2016.12-yocto2.2, *Tag name:* rel_angstrom-v2016.12-yocto2.2_18.04.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Backport systemd change e266c06 from systemd v234-stable | [[ https://github.com/altera-opensource/meta-altera/commit/69c4320bc17f4f93be3da268be0466b747e521c8 ][ 69c4320bc17f4f93be3da268be0466b747e521c8 ]] |
+| community | update 4.9.78-ltsi to commit ID 2314712 | [[ https://github.com/altera-opensource/meta-altera/commit/9e1fcf9888c9075a7500198a6f089bcadf35f82d ][ 9e1fcf9888c9075a7500198a6f089bcadf35f82d ]] |
+| community | add ttyS0 into 99-systemd.rules | [[ https://github.com/altera-opensource/meta-altera/commit/056579d4aee987e7249f1f3dda4f6c0f98626d09 ][ 056579d4aee987e7249f1f3dda4f6c0f98626d09 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.04.02_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.04.02_pr
+commit: 69c4320 Ong, Hean Loong Backport systemd change e266c06 from systemd v234-stable
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.15
+
+commit 990acaf14261901a67c96f2effab389556d87c60
+Author: VIET NGA DAO <vndao@altera.com>
+Date:   Tue May 12 10:08:55 2015 +0800
+
+    FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+    
+    This patch adds Device Tree Binding for Altera Quad SPI Driver.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit d60d5c51d780a514da39a6873e2f023f0f88dd23
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Wed Feb 14 11:16:15 2018 +0800
+
+    FogBugz #525801: gpio: Kconfig: Add CONFIG_LEDS_TRIGGER_TIMER
+    
+    Enable LED timer trigger to allow LEDs to be controlled via sysfs. This
+    is needed for customers using the GHRD.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit edfca70aea151fefda2b5560d643865d8bdb75e4
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Tue Jan 9 11:57:36 2018 +0800
+
+    FogBugz #251539-3: Nios2: defconfig: Max10: Add Altera Quad SPI
+    
+    Update defconfig based on new Max10 reference design.
+    Updated reference designs includes addition of Altera Quad SPI
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 09dc2f10a87141935cfef75a8adbbe4a3928465f
+Author: VIET NGA DAO <vndao@altera.com>
+Date:   Tue May 12 10:00:30 2015 +0800
+
+    FogBugz #251539-1: Add Altera Quad SPI Driver
+    
+    This patch adds linux driver for Altera Quad SPI controller.
+    Quad SPI controller is a soft IP designed to access EPCS, EPCQ
+    and Micron flash chips.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 74d53444142b4e4f5db94a305e223db7ddccc0a9
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Wed Mar 7 18:14:34 2018 +0800
+
+    FogBugz #538491: arm: socfpga_defconfig: Add Altera SysID and Altera ILC
+    
+    Enable Altera Interrupt Latency Counter and Altera System ID as they
+    are required by GSRD customers in 18.0 release.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+commit 23147125756d1ebddfdda416bce5b75b9d01f18d
+Author: VIET NGA DAO <vndao@altera.com>
+Date:   Tue May 12 10:08:55 2015 +0800
+
+    FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+    
+    This patch adds Device Tree Binding for Altera Quad SPI Driver.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 44aa0b7ec5fb3942b2ed9494cc976ddbdcfe689f
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Wed Feb 14 11:16:15 2018 +0800
+
+    FogBugz #525801: gpio: Kconfig: Add CONFIG_LEDS_TRIGGER_TIMER
+    
+    Enable LED timer trigger to allow LEDs to be controlled via sysfs. This
+    is needed for customers using the GHRD.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 903bb7da81e3962abb54ad05ecd438a011f3efb6
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Tue Jan 9 11:57:36 2018 +0800
+
+    FogBugz #251539-3: Nios2: defconfig: Max10: Add Altera Quad SPI
+    
+    Update defconfig based on new Max10 reference design.
+    Updated reference designs includes addition of Altera Quad SPI
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 22a3fa4cf1b096ec2b4662c3fd0ffd13f32b520b
+Author: VIET NGA DAO <vndao@altera.com>
+Date:   Tue May 12 10:00:30 2015 +0800
+
+    FogBugz #251539-1: Add Altera Quad SPI Driver
+    
+    This patch adds linux driver for Altera Quad SPI controller.
+    Quad SPI controller is a soft IP designed to access EPCS, EPCQ
+    and Micron flash chips.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit b44219b642ff4d2fc10058f6d4b9656e29c925ff
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Wed Mar 7 18:14:34 2018 +0800
+
+    FogBugz #538491: arm: socfpga_defconfig: Add Altera SysID and Altera ILC
+    
+    Enable Altera Interrupt Latency Counter and Altera System ID as they
+    are required by GSRD customers in 18.0 release.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.76-ltsi-rt
+
+commit 1d046f6a4d9d2bf7b03ba279e1dedff461ee2505
+Author: VIET NGA DAO <vndao@altera.com>
+Date:   Tue May 12 10:08:55 2015 +0800
+
+    FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+    
+    This patch adds Device Tree Binding for Altera Quad SPI Driver.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit b191a9bfc47cc95295e0711405f7a4d2e2d2f9f8
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Wed Feb 14 11:16:15 2018 +0800
+
+    FogBugz #525801: gpio: Kconfig: Add CONFIG_LEDS_TRIGGER_TIMER
+    
+    Enable LED timer trigger to allow LEDs to be controlled via sysfs. This
+    is needed for customers using the GHRD.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 0c596d7e2159820314111e2564c0f1be166b5eb0
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Tue Jan 9 11:57:36 2018 +0800
+
+    FogBugz #251539-3: Nios2: defconfig: Max10: Add Altera Quad SPI
+    
+    Update defconfig based on new Max10 reference design.
+    Updated reference designs includes addition of Altera Quad SPI
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 3c47310b390701cf8653dbb024cc2e34841a07f0
+Author: VIET NGA DAO <vndao@altera.com>
+Date:   Tue May 12 10:00:30 2015 +0800
+
+    FogBugz #251539-1: Add Altera Quad SPI Driver
+    
+    This patch adds linux driver for Altera Quad SPI controller.
+    Quad SPI controller is a soft IP designed to access EPCS, EPCQ
+    and Micron flash chips.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit c0dda25648e77431b112b895dc9550b0c610b468
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Wed Mar 7 18:14:34 2018 +0800
+
+    FogBugz #538491: arm: socfpga_defconfig: Add Altera SysID and Altera ILC
+    
+    Enable Altera Interrupt Latency Counter and Altera System ID as they
+    are required by GSRD customers in 18.0 release.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 1c74e1d6a4726d1bf4472584d3303a2663d9b116
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Apr 18 15:42:54 2018 +0800
+
+    FogBugz #548483-12: Replace the duplicate DBE config with address mismatch
+    
+    Replace the duplicate CONFIG_SOCFPGA_SDRAM_DBE_ECC_CHECKING with
+    CONFIG_SOCFPGA_SDRAM_ADDR_MISMATCH_ECC_CHECKING.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 1f9fac5e8877bec3be9bee3987c0a1221708d0ee
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Apr 16 14:45:01 2018 +0800
+
+    FogBugz #548483-11: Reduce the buffer size for DMA microcode
+    
+    Reduce the buffer size for the DMA microcode since the whole DDR
+    is scrubbed by chunk by chunk. 256B buffer is enough for storing
+    DMA microcode which is used to initialize DDR through DMA per 64MB chunk.
+    
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 66f9fa95c3fef319664e3276f4b0e606ad3bacd6
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Tue Apr 10 22:08:48 2018 +0800
+
+    FogBugz #548145: arm: socfpga: stratix10: Enhance QSPI driver to use 4k sector
+    
+    Enhance the Stratix10 SoC is using 4k sectors instead of 64k sector.
+    This will ensure better granularity of flash partitioning.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 96df848741a5dd9c46c67e27633a62c15d654abe
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Thu Mar 29 13:51:53 2018 +0800
+
+    FogBugz #548149: arm: socfpga: stratix10: Fix QSPI flash compatible string
+    
+    Fix QSPI flash compatible string as today QSPI flash speed is 0 Hz
+    when sf probe command is used without speed argument.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 6d2a32786ea370061adf26243bf186928fd57ffb
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Wed Apr 4 14:29:16 2018 -0700
+
+    FogBugz #548210-4: Add SMC functions to support ECC
+    
+    ECC needs to access the System Manager register block as
+    well as the hmc_adapter register block. Add the register
+    read and write functions.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Fix register offset calculation. Increment patch # (-4)
+    v3  Fix warnings
+
+commit eb4e90cd83cf0a07b957cc0ac358d16c6b3bd45b
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Wed Apr 4 13:42:46 2018 -0700
+
+    FogBugz #548210-3: Refactor SMC shared code into common header
+    
+    The common macros are pulled into a separate header file so that
+    additional SMC functions can reference them.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  No change except for different patch number (-3)
+
+commit 70bb2e02ade516ff503db1a732b65a7505edcf67
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Wed Apr 11 06:31:47 2018 -0700
+
+    FogBugz #548210-2: Add SysMan and ECC Reads to intel-smc.h
+    
+    Add the System Manager and ECC reads and writes to the intel-smc.h
+    file.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Separate patch for this addition.
+
+commit 3797a5d46c6fe904cde12d339b49941fc87fba58
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Wed Apr 11 06:24:08 2018 -0700
+
+    FogBugz #548210-1: Update intel-smc.h from Linux
+    
+    Update intel-smc to the  the most recent intel-smc.h file
+    from Linux review v3 [1] in preparation for direct call.
+    
+    [1] https://patchwork.kernel.org/patch/10311577/
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2 Grab latest intel-smc.h version from review V3.
+
+commit 68ad6becbeba0e1c6e53e936d3538574852f973a
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Tue Apr 10 20:21:29 2018 +0800
+
+    FogBugz #548483-10: Add helper function for write/read DDR
+    
+    Add helper function to reduce repetitive write/read DDR codes.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit ff37a90c0379c9737359aec4018370815d198fd2
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Apr 9 16:29:04 2018 +0800
+
+    FogBugz #548483-9: Enhance DDR address mismatch test to support 64 bits DDR
+    
+    Enhance DDR address mismatch ECC test to support both 64 bits and 32 bits
+    DDR.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit a34868d1adb239390f86060a6f2988a5d44402a1
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Apr 9 16:28:45 2018 +0800
+
+    FogBugz #548483-8: Enhance DDR DBE ECC test to support 64 bits DDR
+    
+    Enhance DDR double bit error ECC test to support both 64 bits and 32 bits
+    DDR.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 9e263c468893bd549a17379dae057180b772cd95
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Apr 9 16:28:23 2018 +0800
+
+    FogBugz #548483-7: Enhance DDR SBE ECC test to support 64 bits DDR
+    
+    Enhance DDR single bit error ECC test to support both 64 bits and 32 bits
+    DDR.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 6211aab304998336d84b7561b4aa0aeae8392eac
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Apr 9 16:28:06 2018 +0800
+
+    FogBugz #548483-6: Enable DMA driver for better DDR scrubbing performance
+    
+    Enable DMA driver by default for better DDR scrubbing performance, which
+    can help to reduce around 97% of time spending on scrubbing DDR with CPU.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 00cb9f0746f891ff5ac7fe869a44845213bd0b6f
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Apr 9 16:27:40 2018 +0800
+
+    FogBugz #548483-5: Miss setting of transfer status polling on DMA channel
+    
+    Polling on DMA data transfer status should be done on DMA channel instead
+    of DMA manager. Replace polling on DMA manager to DMA channel.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 2c01b4de2dd1b28bbe976332bccf5f5314740a56
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Apr 9 16:26:29 2018 +0800
+
+    FogBugz #548483-4: Remove global data variable
+    
+    Using the global data variable when global data memory structure is not
+    fully supported by SPL at that moment may lead to unexpected behavior.
+    For example: Synchronous abourt due to memory access randomly such as
+    accessing DDR before scrubbing DDR.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit c563acf4bd8aac6ac50e0a85c22f65362c40d820
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Apr 9 16:25:24 2018 +0800
+
+    FogBugz #548483-3: Add watchdog reset for DDR scrubbing with DMA
+    
+    Reset watchdog need to be triggered before watchdog timer expired
+    during scrubbing DDR with DMA.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 61a8ec06e9f904380769895d2ef78c5a0336d4bc
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Apr 9 15:13:09 2018 +0800
+
+    FogBugz #548483-2: Add watchdog reset for DDR scrubbing with CPU
+    
+    Reset watchdog need to be triggered before watchdog timer expired
+    during scrubbing DDR with CPU.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+    ---
+    Changes for v2
+    - Split the patch from previous version into two, previous patch for DDR
+    scrubbing, and current patch for adding watchdog reset.
+
+commit d54b778a4bda91164b37cf66d854540e1b902daf
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Apr 9 15:12:12 2018 +0800
+
+    FogBugz #548483-1: Doing DDR scrubbing, chunk by chunk by CPU
+    
+    Refactor the codes to scrub DDR, chunk by chunk by CPU. Designed in this
+    way so watchdog reset can be added into the loop in later patch for
+    preventing the watchdog timer expired.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+    ---
+    Changes for v3
+    -  Split the patch into two, current patch for scrubbing DDR chunk by chunk, and
+    , and the next patch for adding watchdog reset.
+    Changes for v2
+    - Used SZ_64M which is already defined for 64MB size.
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2016.12-yocto2.2
+
+commit 69c4320bc17f4f93be3da268be0466b747e521c8
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Tue Apr 3 18:51:34 2018 +0800
+
+    Backport systemd change e266c06 from systemd v234-stable
+    
+    Add backport for systemd version 234 to 232 to minimize race condition that lead to
+    ttyS0 timeout. The fixes were discussed on https://jira.automotivelinux.org/browse/SPEC-544
+    
+    The commit e266c06 service: serialize information about currently executing command
+    
+    This change also appends the ttyS0 to the SUBSYSTEM=="tty"
+    instead of creating a new one which was done previously
+
+commit 9e1fcf9888c9075a7500198a6f089bcadf35f82d
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Tue Apr 10 11:26:58 2018 +0800
+
+    update 4.9.78-ltsi to commit ID 2314712
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+commit 056579d4aee987e7249f1f3dda4f6c0f98626d09
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Tue Apr 3 18:45:16 2018 +0800
+
+    add ttyS0 into 99-systemd.rules
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+

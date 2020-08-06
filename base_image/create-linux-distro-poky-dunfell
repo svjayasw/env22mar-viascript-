@@ -1,0 +1,345 @@
+#!/bin/bash -e
+
+GSRD_RELEASE=poky-v2020.03-dunfell
+DEFAULT_MNAME=agilex
+YOCTO_BRANCH=dunfell
+LINUX_SOCFPGA_BRANCH=socfpga-5.4.34-lts
+UBOOT_SOCFPGA_BRANCH=socfpga_v2020.04
+
+usage() {
+	echo "Usage: Builds SoC Linux distribution, kernel"
+	echo "NOTE: This builds the Linux distro in dmz machine"
+	echo " -t <target> choose arria10, cyclone5, arria5, stratix10"
+	echo " -f <build location> should be under the /tools/rootfs/ directory"
+	echo " -i <image type> only applicable to arria10 with the options of NAND or QSPI"
+	echo " --tag	Builds the specific tag"
+}
+
+# Ensures that no other bitbake is running, otherwise sleep for a random time and try again
+sanity_bitbake() {
+while true
+do
+	BITBAKE_PROCESS_RUNNING=`ps aux | grep bitbake | wc -l`
+	if [ $BITBAKE_PROCESS_RUNNING -eq 1 ]; then
+		break;
+	else
+		sleep `expr $RANDOM % 30`
+	fi
+done
+}
+
+environment_cleanup() {
+	if [[ -d "$BUILDDIR" ]]; then
+		pushd $BUILDDIR
+		if [[ -d "$MACHINE-rootfs" ]]; then
+			rm -rf $BUILDDIR/$MACHINE-rootfs/tmp/
+			rm -rf $BUILDDIR/$MACHINE-rootfs/conf/
+			rm -rf $BUILDDIR/$MACHINE-rootfs/*.tar
+			rm -rf $BUILDDIR/$MACHINE-rootfs/*.tar.gz
+		fi
+
+		if [[ -d "$MACHINE-images" ]]; then
+		    rm -rf $MACHINE-images
+		fi
+
+		if [ ! -z $CLEANSSTATE ]; then
+			rm -rf $BUILDDIR/$MACHINE-rootfs/sstate-cache/
+			exit 0
+		fi
+		popd
+	else
+		mkdir -p $BUILDDIR/$MACHINE-rootfs
+	fi
+}
+
+update_meta() {
+	pushd $BUILDDIR
+
+		if [[ -d "poky" ]]
+		then
+			echo "Poky source tree available. Proceed to update poky source tree."
+			pushd poky
+				git checkout master
+				git branch -D $YOCTO_BRANCH
+				git fetch origin
+				git pull
+				git checkout $YOCTO_BRANCH
+				sed -i "s/cross-localedef-hardlink \-c \-v/cross-localedef-hardlink \-c \-v \-f/g"  /build/yocto-dunfell-socfpga/poky/meta/classes/libc-package.bbclass
+			popd
+		else
+			git clone -b $YOCTO_BRANCH https://git.yoctoproject.org/git/poky.git
+		fi
+
+		if [[ -d "meta-altera" ]]
+		then
+			echo "meta-altera source tree available. Proceed to update meta-altera source tree."
+			pushd meta-altera
+				git checkout -- .
+				git checkout master
+				git fetch origin
+				git pull
+			popd
+		else
+			git clone -b master https://github.com/kraj/meta-altera.git
+		fi
+
+		if [[ -d "meta-altera-refdes" ]]
+		then
+			echo "meta-altera-refdes source tree available. Proceed to update meta-altera-refdes source tree."
+			pushd meta-altera-refdes
+				git checkout master-next
+				git fetch origin
+				git pull
+			popd
+		else
+			git clone -b master-next ssh://git@gitlab.devtools.intel.com:29418/psg-opensource/meta-altera-refdes.git
+		fi
+
+		if [[ -d "meta-openembedded" ]]
+		then
+			echo "meta-openembedded source tree available. Proceed to update meta-openembedded source tree."
+			pushd meta-openembedded
+				git checkout master
+				git branch -D $YOCTO_BRANCH
+				git fetch origin
+				git pull
+				git checkout $YOCTO_BRANCH
+			popd
+		else
+			git clone -b $YOCTO_BRANCH https://git.openembedded.org/meta-openembedded
+		fi
+
+		# Workaround: Kernel branching strategy
+		# Get COMMIT ID HASH from linux-socfpga
+		pushd /build/rebeccas/contrib/linux-socfpga
+			git checkout $LINUX_SOCFPGA_BRANCH
+			git pull
+			COMMIT_HASH="$(git rev-parse HEAD)"
+		popd
+
+		# Change SRCREV in kernel recipe to get latest commit
+		pushd meta-altera/recipes-kernel/linux
+			sed -i /SRCREV\ =\ \"/d linux-altera-lts_5.4.bb
+			echo "SRCREV = \"$COMMIT_HASH\"" >> linux-altera-lts_5.4.bb
+
+			sed -i /LINUX\_VERSION\ =\ \"/d linux-altera-lts_5.4.bb
+			echo 'LINUX_VERSION = "5.4.34"' >> linux-altera-lts_5.4.bb
+		popd
+
+		# Get COMMIT ID HASH from uboot-socfpga
+		pushd /build/rebeccas/contrib/uboot-socfpga
+			git checkout $UBOOT_SOCFPGA_BRANCH
+			git pull
+			UB_COMMIT_HASH="$(git rev-parse HEAD)"
+		popd
+
+		pushd meta-altera/recipes-bsp/u-boot
+			sed -i /SRCREV\ =\ \"/d u-boot-socfpga_v2020.04.bb
+			echo "SRCREV = \"$UB_COMMIT_HASH\"" >> u-boot-socfpga_v2020.04.bb
+		popd
+	popd
+}
+
+build_linux_distro() {
+	pushd $BUILDDIR
+	source poky/oe-init-build-env $BUILDDIR/$MACHINE-rootfs/
+
+	# Settings for local.conf
+	sed -i /MACHINE\ \?\?=\ \"qemux86-64\"/d conf/local.conf
+
+	echo "MACHINE = \"${MACHINE}\"" >> conf/local.conf
+	echo 'DISTRO_FEATURES_append = " systemd"' >> conf/local.conf
+	echo 'VIRTUAL-RUNTIME_init_manager = "systemd"' >> conf/local.conf
+	echo 'PREFERRED_PROVIDER_virtual/kernel = "linux-altera-lts"' >> conf/local.conf
+	echo 'PREFERRED_VERSION_linux-altera-lts = "5.4.34%"' >> conf/local.conf
+	echo 'IMAGE_FSTYPES += "cpio ext3 jffs2 tar.gz tar.xz"' >> conf/local.conf
+	echo "DL_DIR = \"/build/yocto-dunfell-socfpga/downloads\"" >> conf/local.conf
+
+	# Settings for Arria10 NAND and QSPI image type
+	sed -i /A10\_IMAGE\_TYPE\ =\ \"NAND\"/d conf/local.conf
+	sed -i /A10\_IMAGE\_TYPE\ =\ \"QSPI\"/d conf/local.conf
+	if [ ! -z $IMAGE ]; then
+		if [ "$IMAGE" == "NAND" ]; then
+			echo "A10_IMAGE_TYPE = \"NAND\"" >> conf/local.conf
+		elif [ "$IMAGE" == "QSPI" ]; then
+			echo "A10_IMAGE_TYPE = \"QSPI\"" >> conf/local.conf
+		fi
+	fi
+
+	# Settings for bblayers.conf
+	echo 'BBLAYERS += " ${TOPDIR}/../meta-altera "' >> conf/bblayers.conf
+	echo 'BBLAYERS += " ${TOPDIR}/../meta-altera-refdes "' >> conf/bblayers.conf
+	echo 'BBLAYERS += " ${TOPDIR}/../meta-openembedded/meta-oe "' >> conf/bblayers.conf
+	echo 'BBLAYERS += " ${TOPDIR}/../meta-openembedded/meta-networking "' >> conf/bblayers.conf
+	echo 'BBLAYERS += " ${TOPDIR}/../meta-openembedded/meta-python "' >> conf/bblayers.conf
+
+	export BB_ENV_EXTRAWHITE="$BB_ENV_EXTRAWHITE REFDES_PROT REFDES_REPO KERNEL_PROT KERNEL_REPO KERNEL_PROVIDER KBRANCH DTBT_PROT DTBT_REPO UBOOT_PROT UBOOT_REPO UBOOT_BRANCH"
+	export REFDES_PROT=ssh
+	export REFDES_REPO=git://git@gitlab.devtools.intel.com:29418/psg-opensource/linux-refdesigns
+	export KERNEL_PROVIDER=linux-altera-lts
+	export KERNEL_PROT=ssh
+	export KERNEL_REPO=git://git@gitlab.devtools.intel.com:29418/psg-opensource/linux-socfpga
+	export KBRANCH=$LINUX_SOCFPGA_BRANCH
+	export DTBT_PROT=http
+	export DTBT_REPO=git://github.com/altera-opensource/dtbt
+	export UBOOT_PROT=ssh
+	export UBOOT_REPO=git://git@gitlab.devtools.intel.com:29418/psg-opensource/uboot-socfpga
+	export UBOOT_BRANCH=$UBOOT_SOCFPGA_BRANCH
+
+	bitbake -c cleanall virtual/kernel
+	bitbake -c cleanall u-boot-socfpga
+
+	if [[ "$MACHINE" == "stratix10" || "$MACHINE" == "agilex" ]]; then
+		echo "MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += \"kernel-modules\"" >> conf/local.conf
+		bitbake virtual/kernel gsrd-console-image console-image-minimal 2>&1
+	elif [ "$MACHINE" == "arria10" ]; then
+		# Build both Image and zImage for Arria10
+		echo "KERNEL_ALT_IMAGETYPE = \"Image\"" >> conf/local.conf
+		bitbake virtual/kernel gsrd-console-image console-image-minimal xvfb-console-image 2>&1
+	else
+		# CycloneV and ArriaV
+		bitbake virtual/kernel gsrd-console-image console-image-minimal 2>&1
+	fi
+
+	echo "[DEBUG] BUILDDIR is now at: $BUILDDIR"
+
+	if [[ "$MACHINE" == "stratix10" || "$MACHINE" == "agilex" ]]; then
+		SRC_FOLDER=$BUILDDIR/tmp/work/aarch64-poky-linux/
+	else
+		SRC_FOLDER=$BUILDDIR/tmp/work/armv7at2hf-neon-poky-linux-gnueabi/
+	fi
+
+	echo "[DEBUG] Source code folder: $SRC_FOLDER"
+
+	# List of files and folders to exclude from source tarball
+	EXCLD1=$(find $SRC_FOLDER -type d -name "image")
+	EXCLD2=$(find $SRC_FOLDER -type d -name "pseudo")
+	EXCLD3=$(find $SRC_FOLDER -type d -name "pkgdata*")
+	EXCLD4=$(find $SRC_FOLDER -type d -name "temp")
+	EXCLD5=$(find $SRC_FOLDER -type d -name "build")
+	EXCLD6=$(find $SRC_FOLDER -type d -name "sstate-install*")
+	EXCLD7=$(find $SRC_FOLDER -type d -name "recipe-*")
+	EXCLD8=$(find $SRC_FOLDER -type d -name "deploy-*")
+	EXCLD9=$(find $SRC_FOLDER -type d -name "package*")
+	EXCLD10=$(find $SRC_FOLDER -type d -name "sysroot*")
+	EXCLD11=$(find $SRC_FOLDER -name "*.o*")
+	EXCLD12=$(find $SRC_FOLDER -name "*.dep*")
+	EXCLD13=$(find $SRC_FOLDER -name "log.do*")
+	EXCLD14=$(find $SRC_FOLDER -name "run.do*")
+
+	EXCLD="${EXCLD1} ${EXCLD2} ${EXCLD3} ${EXCLD4} ${EXCLD5} ${EXCLD6} ${EXCLD7} ${EXCLD8} ${EXCLD9} ${EXCLD10} ${EXCLD11} ${EXCLD12} ${EXCLD13} ${EXCLD14}"
+	tar -X <(for i in ${EXCLD}; do echo $i; done) -cvf $MACHINE-$GSRD_RELEASE-source.tar $SRC_FOLDER
+	gzip $MACHINE-$GSRD_RELEASE-source.tar
+
+	mkdir -p $location/$MACHINE-images
+	if [ ! -z "$IMAGE" ]; then
+                echo "[SKIP] Do not need to copy source file."
+	else
+		cp -vL $MACHINE-$GSRD_RELEASE-source.tar.gz $location/$MACHINE-images/ || echo "No tar.gz found."
+	fi
+
+	popd
+}
+
+packaging() {
+	pushd $location/$MACHINE-rootfs/tmp/deploy/images/$MACHINE/
+
+	array_output=(`ls *console-image*.gz -lah | grep "\->" | awk '{print $9}'`)
+	array_len=${#array_output[@]}
+	for (( i=0; i<$array_len; i++ )); do
+		filename=`echo ${array_output[$i]} | sed s/.tar.gz//`
+		echo $filename
+		rm $filename-nfs.tar* -rf
+		# NFS workaround was implemented in recipe level
+		# Keep a copy of NFS tarball for regtest
+		cp -rL ${array_output[$i]} $filename-nfs.tar.gz
+	done
+
+	if [ ! -z "$IMAGE" ]; then
+		cp -vL console-image-minimal-arria10.jffs2 $location/$MACHINE-images/console-image-minimal-arria10-$IMAGE.jffs2 	|| echo "[DEBUG] No jffs2 found."
+		cp -vL console-image-minimal-arria10.ext3 $location/$MACHINE-images/console-image-minimal-arria10-$IMAGE.ext3		|| echo "[DEBUG] No ext3 found."
+		cp -vL console-image-minimal-arria10.tar.xz $location/$MACHINE-images/console-image-minimal-arria10-$IMAGE.tar.xz	|| echo "[DEBUG] No tar.xz found."
+
+		cp -vL gsrd-console-image-arria10.jffs2 $location/$MACHINE-images/gsrd-console-image-arria10-$IMAGE.jffs2	|| echo "[DEBUG] No jffs2 found."
+		cp -vL gsrd-console-image-arria10.ext3 $location/$MACHINE-images/gsrd-console-image-arria10-$IMAGE.ext3		|| echo "[DEBUG] No ext3 found."
+		cp -vL gsrd-console-image-arria10.tar.xz $location/$MACHINE-images/gsrd-console-image-arria10-$IMAGE.tar.xz	|| echo "[DEBUG] No tar.xz found."
+
+		cp -vL rel-console-image-arria10.jffs2 $location/$MACHINE-images/rel-console-image-arria10-$IMAGE.jffs2		|| echo "[DEBUG] No jffs2 found."
+		cp -vL rel-console-image-arria10.ext3 $location/$MACHINE-images/rel-console-image-arria10-$IMAGE.ext3		|| echo "[DEBUG] No ext3 found."
+		cp -vL rel-console-image-arria10.tar.xz $location/$MACHINE-images/rel-console-image-arria10-$IMAGE.tar.xz	|| echo "[DEBUG] No tar.xz found."
+
+		cp -vL xvfb-console-image-arria10.jffs2 $location/$MACHINE-images/xvfb-console-image-arria10-$IMAGE.jffs2	|| echo "[DEBUG] No jffs2 found."
+		cp -vL xvfb-console-image-arria10.ext3 $location/$MACHINE-images/xvfb-console-image-arria10-$IMAGE.ext3		|| echo "[DEBUG] No ext3 found."
+		cp -vL xvfb-console-image-arria10.tar.xz $location/$MACHINE-images/xvfb-console-image-arria10-$IMAGE.tar.xz	|| echo "[DEBUG] No tar.xz found."
+	else
+		cp -vL *.tar.gz $location/$MACHINE-images/ || echo "[DEBUG] No tar.gz found."
+		cp -vL *.tar.xz $location/$MACHINE-images/ || echo "[DEBUG] No tar.xz found."
+		cp -vL *.jffs2 $location/$MACHINE-images/  || echo "[DEBUG] No jffs2 found."
+		cp -vL *.cpio $location/$MACHINE-images/   || echo "[DEBUG] No cpio found."
+		cp -vL *.ext3 $location/$MACHINE-images/   || echo "[DEBUG] No ext3 found."
+		cp -vrL u-boot* $location/$MACHINE-images/ || echo "[DEBUG] No u-boot found. Assuming no u-boot is required (A10 or above)"
+		cp -vrL *.dtb $location/$MACHINE-images/   || echo "[DEBUG] No dtb found."
+		cp -vrL *.wic $location/$MACHINE-images/   || echo "[DEBUG] No wic found."
+	fi
+
+	if [ "$MACHINE" == "arria10" ]; then
+		cp -vrL zImage $location/$MACHINE-images/
+		cp -vrL Image $location/$MACHINE-images/
+	else
+		cp -vrL zImage $location/$MACHINE-images/ || cp -vrL Image $location/$MACHINE-images/ || echo "[DEBUG] No zImage / Image found."
+	fi
+	popd
+}
+
+while [ "$1" != "" ]; do
+	case $1 in
+		-t | --target )
+			shift
+			target=$1
+			;;
+		-f | --folder )
+			shift
+			location=$1
+			;;
+		-i | --image )
+			shift
+			IMAGE=$1
+			;;
+		--tag )
+			shift
+			tag=$1
+			;;
+		--cleansstate )
+			shift
+			CLEANSSTATE=$1
+			;;
+		-h | --help )
+			usage
+			exit
+			;;
+		* )
+			usage
+			exit 1
+			;;
+	esac
+	shift
+done
+
+set -x
+
+if [ -z $target ]; then
+	MACHINE=$DEFAULT_MNAME
+else
+	MACHINE=$target
+fi
+echo "[DEBUG] MACHINE selected for the build: $MACHINE"
+
+BUILDDIR=$location
+
+sanity_bitbake
+environment_cleanup
+update_meta
+build_linux_distro
+packaging
+
+exit 0

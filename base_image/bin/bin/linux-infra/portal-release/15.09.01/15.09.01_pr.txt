@@ -1,0 +1,234 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.1
+branch tag  : rel_socfpga-4.1_15.09.01_pr
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.09.01_pr
+new commits : 2
+bdab836 Yves Vandervennet FogBugz #320003-2: Update the A10 SWVP DTS with USB definitions
+77fd42d Yves Vandervennet FogBugz #320003-1: Update the A10 SWVP DTS with I2C definitions
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_15.09.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 320003-2 | Update the A10 SWVP DTS with USB definitions | [[ https://github.com/altera-opensource/linux-socfpga/commit/bdab83643ff8f5fd4039202b980b6b6806306236 ][ bdab83643ff8f5fd4039202b980b6b6806306236 ]] |
+| 320003-1 | Update the A10 SWVP DTS with I2C definitions | [[ https://github.com/altera-opensource/linux-socfpga/commit/77fd42d3f4875d2d1231965a51bf45f7df7ac0d6 ][ 77fd42d3f4875d2d1231965a51bf45f7df7ac0d6 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.09.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.1_15.09.01_pr
+commit: 186070d4 Dinh Nguyen FogBugz #317771: Fix all the memory leaks
+
+tag:    rel_socfpga-3.10-ltsi_15.09.01_pr
+commit: bdab836 Yves Vandervennet FogBugz #320003-2: Update the A10 SWVP DTS with USB definitions
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.09.01_pr
+commit: 8a34ee1 Graham Moore FogBugz #314791: QSPI: Set jedec_id in flash data structure
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.09.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.09.01_pr
+new commits : 2
+3839532 Andrew Gabbasov mmc: Continue polling MMC card for OCR only if it is still not ready
+28c6adf Jaehoon Chung mmc: dw_mmc: fixed the wrong bit control
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_15.09.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | mmc: Continue polling MMC card for OCR only if it is still not ready | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/383953202356edc9c069d3eed0052865521befb2 ][ 383953202356edc9c069d3eed0052865521befb2 ]] |
+| community | mmc: dw_mmc: fixed the wrong bit control | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/28c6adf9ae4cceeeca1a642be4de11da521e6a67 ][ 28c6adf9ae4cceeeca1a642be4de11da521e6a67 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.09.01_pr
+commit: 353283b Tien Fong Chee FogBugz #241114: Fixed the compilation issue when BOOT_FROM_NAND is checked on preloader.
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.09.01_pr
+commit: 3839532 Andrew Gabbasov mmc: Continue polling MMC card for OCR only if it is still not ready
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.09.01_pr
+new commits : 1
+627d4b6 Graham Moore Remove unstable kde4 layer.  Remove non-Altera machine specific layers
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-socfpga, *Tag name:* rel_angstrom-v2014.12-socfpga_15.09.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Remove unstable kde4 layer.  Remove non-Altera machine specific layers | [[ https://github.com/altera-opensource/angstrom-socfpga/commit/627d4b6f99bf2a97b3368e70190665359aecb24a ][ 627d4b6f99bf2a97b3368e70190665359aecb24a ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.09.01_pr
+commit: 627d4b6 Graham Moore Remove unstable kde4 layer.  Remove non-Altera machine specific layers
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.09.01_pr
+new commits : 1
+0465ae7 Graham Moore Add ARCH and CROSS_COMPILE to do_install script for socfpga-test
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-yocto1.7, *Tag name:* rel_angstrom-v2014.12-yocto1.7_15.09.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Add ARCH and CROSS_COMPILE to do_install script for socfpga-test | [[ https://github.com/altera-opensource/meta-altera/commit/0465ae7ec155e364a1ec44d8f888e62a21b583dd ][ 0465ae7ec155e364a1ec44d8f888e62a21b583dd ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.09.01_pr
+new commits : 1
+90dd886 Graham Moore Add ARCH and CROSS_COMPILE to do_install script for socfpga-test
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-yocto1.7_a10, *Tag name:* rel_angstrom-v2014.12-yocto1.7_a10_15.09.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Add ARCH and CROSS_COMPILE to do_install script for socfpga-test | [[ https://github.com/altera-opensource/meta-altera/commit/90dd886cb060260e775e6796606622c335342905 ][ 90dd886cb060260e775e6796606622c335342905 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.09.01_pr
+commit: 0465ae7 Graham Moore Add ARCH and CROSS_COMPILE to do_install script for socfpga-test
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.09.01_pr
+commit: 90dd886 Graham Moore Add ARCH and CROSS_COMPILE to do_install script for socfpga-test
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit bdab83643ff8f5fd4039202b980b6b6806306236
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Wed Aug 26 01:58:35 2015 -0500
+
+    FogBugz #320003-2: Update the A10 SWVP DTS with USB definitions
+    
+    Addition of the USB Interface and the PHY nodes
+    The reference to the clock is a phandle
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit 77fd42d3f4875d2d1231965a51bf45f7df7ac0d6
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Wed Aug 26 01:49:43 2015 -0500
+
+    FogBugz #320003-1: Update the A10 SWVP DTS with I2C definitions
+    
+    Addition of the I2C Interface nodes
+    The reference to the clock is a phandle
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 383953202356edc9c069d3eed0052865521befb2
+Author: Andrew Gabbasov <andrew_gabbasov@mentor.com>
+Date:   Tue Aug 18 22:09:21 2015 +0800
+
+    mmc: Continue polling MMC card for OCR only if it is still not ready
+    
+    Some MMC cards come to ready state quite quickly, so that the respective
+    flag appears to be set in mmc_send_op_cond already. In this case trying
+    to continue polling the card with CMD1 in mmc_complete_op_cond is incorrect
+    and may lead to unpredictable results. So check the flag before polling
+    and skip it appropriately.
+    
+    Signed-off-by: Andrew Gabbasov <andrew_gabbasov@mentor.com>
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 28c6adf9ae4cceeeca1a642be4de11da521e6a67
+Author: Jaehoon Chung <jh80.chung@samsung.com>
+Date:   Tue Aug 18 21:22:49 2015 +0800
+
+    mmc: dw_mmc: fixed the wrong bit control
+    
+    If mode is not DDR-mode, then it needs to clear it.
+    
+    Signed-off-by: Jaehoon Chung <jh80.chung@samsung.com>
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+log of angstrom-socfpga branch angstrom-v2014.12-socfpga
+
+commit 627d4b6f99bf2a97b3368e70190665359aecb24a
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Tue Aug 18 10:49:57 2015 -0500
+
+    Remove unstable kde4 layer.  Remove non-Altera machine specific layers
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7
+
+commit 0465ae7ec155e364a1ec44d8f888e62a21b583dd
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Aug 14 12:07:20 2015 -0500
+
+    Add ARCH and CROSS_COMPILE to do_install script for socfpga-test
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7_a10
+
+commit 90dd886cb060260e775e6796606622c335342905
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Aug 14 12:07:20 2015 -0500
+
+    Add ARCH and CROSS_COMPILE to do_install script for socfpga-test
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

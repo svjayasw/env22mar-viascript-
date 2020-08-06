@@ -1,0 +1,392 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal on the next
+
+scheduled update day.
+
+The following new branches were tagged:
+repo : linux-socfpga          branch : socfpga-4.12
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.11
+branch tag  : rel_socfpga-4.11_17.09.01_rc2
+new commits : 13
+cbacf34 Alan Tull FogBugz #492768: i2c: dw: temporary workaround for i2c clocks
+f9167c8 Alan Tull FogBugz #491967-2: dts: stratix10: enable i2c
+ab4b8be Alan Tull FogBugz #491967-1: defconfig: stratix10 socdk: add i2c devices
+b7d1bdd Dinh Nguyen FogBugz #492420: fix up the correct order of parents for noc_clk
+babb1b4 Dinh Nguyen arm64: dts: stratix10: add ethernet/sdmmc support to S10 devkit
+eaf6087 Dinh Nguyen FogBugz #491251: temporary remove PSCI node
+11f7616 Dinh Nguyen arm64: dts: fix up the gic register for the Stratix10 platform
+40d9cdb Dinh Nguyen FogBugz #488928: defconfig: add s10_devkit_defconfig file
+982eb81 Dinh Nguyen FogBugz #488936-2: Add clocks to emac/sdmmc node
+405a171 Dinh Nguyen FogBugz #488936-1: dts: bringup SoCFPGA Stratix10 devkit
+23f0e79 Dinh Nguyen FogBugz #488843-2: add clock driver for Stratix10 SOC
+ad48fe4 Dinh Nguyen FogBugz #488843-1: dts: clock bindings for the SoCFPGA Stratix10
+36f903c Dinh Nguyen FogBugz #488851: dts: use spin-table for SMP
+
+
+branch      : socfpga-4.12
+branch tag  : rel_socfpga-4.12_17.09.01_rc2
+Pushing new branch to external git
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.09.01_rc2
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.09.01_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.11_17.09.01_rc2
+commit: cbacf34 Alan Tull FogBugz #492768: i2c: dw: temporary workaround for i2c clocks
+
+tag:    rel_socfpga-4.12_17.09.01_rc2
+commit: 84316f46 Alan Tull FogBugz #492768: i2c: dw: temporary workaround for i2c clocks
+
+tag:    rel_socfpga-4.1.33-ltsi_17.09.01_rc2
+commit: 9d8d594 Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.09.01_rc2
+commit: a63d21c Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.09.01_rc2
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.09.01_rc2
+new commits : 4
+673e854 Peng Fan common: env_flags: fix loop condition when using env_flags_varaccess_mask
+5b40f8b Tien Fong Chee common: cmd_nvedit: use snprintf instead of sprintf
+8ae9754 Tien Fong Chee common: cli_simple: use strlcpy instead of strcpy
+255f903 Masahiro Yamada lib: string: move strlcpy() to a common place
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.09.01_rc2
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.09.01_rc2
+commit: 673e854 Peng Fan common: env_flags: fix loop condition when using env_flags_varaccess_mask
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.09.01_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.09.01_rc2
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.09.01_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.09.01_rc2
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.09.01_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.09.01_rc2
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.11
+
+commit cbacf34be31cf77aa2b166d4df3a1218f44933e4
+Author: Alan Tull <atull@kernel.org>
+Date:   Wed Aug 30 16:55:44 2017 -0500
+
+    FogBugz #492768: i2c: dw: temporary workaround for i2c clocks
+    
+    This is a temporary workaround that:
+    * will not be submitted upstream
+    * will be reverted when the clock driver is fixed
+    
+    Currently there are issues with writing to the stratix 10 clock
+    controller registers.  This commit allows the i2c controller to work
+    without doing any clock controller register access since we know the
+    clocks are enabled and we know what frequency they are.
+    
+    This workaround is enabled by a setting in the stratix 10 dts, so it
+    will not affect other platforms that don't have this setting.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v3: clarify explanation that this workaround is targeted to s10
+        changed FB# to track the clock register issue
+    v2: add a setting in the device tree so this can be s10-only
+
+commit f9167c8ab8df2ac029b66a742d7d9f8bee9a8468
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Aug 28 11:29:47 2017 -0500
+
+    FogBugz #491967-2: dts: stratix10: enable i2c
+    
+    Add i2c clocks
+    Enable i2c1
+    Set the i2c bus speed to 100KHz
+    Add the following i2c peripherals
+     * ds1339 RTC
+     * 24c32 EEPROM
+     * max1619 temperature monitor
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit ab4b8bed279a594247a2f3eb242ae403b12dcdcb
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Aug 31 16:35:52 2017 -0500
+
+    FogBugz #491967-1: defconfig: stratix10 socdk: add i2c devices
+    
+    Enable the following i2c peripherals in the s10_devkit_defconfig
+    * ds1339 RTC
+    * 24c32 EEPROM
+    * max1619 temperature monitor
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit b7d1bddc74256dd6216858012a15eb7da397a350
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Sep 12 10:31:20 2017 -0500
+
+    FogBugz #492420: fix up the correct order of parents for noc_clk
+    
+    According the clock manager specification, if the bypass-reg is set,
+    the NOC clock group will be bypassed to boot_clk. Thus, the boot_clk
+    should be the 2nd clock in the list of possible clock parents for the
+    noc_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+    ---
+    v2: update the commit message to be more clear
+
+commit babb1b44e1e9fbfd8a2df852deb3a999aff5b62d
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Sep 7 15:00:13 2017 -0500
+
+    arm64: dts: stratix10: add ethernet/sdmmc support to S10 devkit
+    
+    Enable ethernet and sdmmc support on the Stratix10 devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit eaf6087bfb355898090f109910780423f27a523c
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Sep 6 16:15:14 2017 -0500
+
+    FogBugz #491251: temporary remove PSCI node
+    
+    Currently the bootloader does not have the PSCI extensions Linux needs.
+    Remove the PSCI DTS entry temporarily until PSCI is support is added in
+    the bootloader.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 11f76163c680aa66c661da092b15ff980fa2ae4a
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Sep 6 16:13:09 2017 -0500
+
+    arm64: dts: fix up the gic register for the Stratix10 platform
+    
+    The register entries for the ARM GIC-400 should have a 2nd set of address.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 40d9cdb321023479a1ffa79335d8db67565dcbd1
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Aug 29 14:00:26 2017 -0500
+
+    FogBugz #488928: defconfig: add s10_devkit_defconfig file
+    
+    This should be just a temporary commit that will eventually go away after
+    a few kernel version. The arm64 support should only have a single
+    defconfig. The only difference between s10_devkit_defconfig and the
+    default defconfig is the exclusion of other ARMv8 platforms.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 982eb81c212a4bc30cf733651d1352352b4a161b
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Sep 7 14:57:18 2017 -0500
+
+    FogBugz #488936-2: Add clocks to emac/sdmmc node
+    
+    Add the clocks to the emac/sdmmc dts node.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 405a17151586aaa8a8e5ab7b5678b37a0bae7346
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Aug 29 14:10:04 2017 -0500
+
+    FogBugz #488936-1: dts: bringup SoCFPGA Stratix10 devkit
+    
+    This commit hard codes the clock frequency for the timers and uarts. This
+    patch will eventually go away after the proper clock driver is accepted
+    upstream, and the need for the clock-frequency property will go away.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 23f0e79fd3f5871d2934cb53b0d6db005a72316c
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Jun 7 13:52:53 2017 -0500
+
+    FogBugz #488843-2: add clock driver for Stratix10 SOC
+    
+    Add a clock driver for the SoCFPGA Stratix10.
+    
+    This version was upstreamed, but was rejected because the DTS/clock
+    maintainers want a single clock binding. Thus for now, this version
+    is for downstream consumption only.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+    ---
+    v2: s/parent_name/parent_names
+        use unsigned long for div in clk_periclk_recalc_rate
+
+commit ad48fe480b8582b1d9c1d8cc6fd71afadfa5f8cd
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Aug 29 11:12:00 2017 -0500
+
+    FogBugz #488843-1: dts: clock bindings for the SoCFPGA Stratix10
+    
+    Add the DTS bindings the clocks on the SoCFPGA Stratix10.
+    
+    This version was upstreamed, but was rejected because the DTS/clock
+    maintainers want a single clock binding. Thus for now, this version
+    is for downstream consumption only.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 36f903c964758d117acfea7cee7568edb6a04cf0
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Aug 29 11:18:04 2017 -0500
+
+    FogBugz #488851: dts: use spin-table for SMP
+    
+    For initial bringup, use spin-table for SMP. Cannot be upstreamed because
+    SMP should be using PSCI.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.12
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 673e8540217f45dd6d72293754b40287d77956d3
+Author: Peng Fan <peng.fan@nxp.com>
+Date:   Tue Jan 12 17:23:12 2016 +0800
+
+    common: env_flags: fix loop condition when using env_flags_varaccess_mask
+    
+    We should use ARRAY_SIZE, but not sizeof. The size of
+    env_flags_varaccess_mask is 16bytes, but we only need 4 loops.
+    If using 16 as the end condition, we may access memory that
+    not belong to array env_flags_varaccess_mask.
+    
+    Signed-off-by: Peng Fan <peng.fan@nxp.com>
+    Cc: Joe Hershberger <joe.hershberger@ni.com>
+    Cc: York Sun <yorksun@freescale.com>
+    Cc: Simon Glass <sjg@chromium.org>
+    Cc: Tom Rini <trini@konsulko.com>
+    Reviewed-by: Simon Glass <sjg@chromium.org>
+    Acked-by: Joe Hershberger <joe.hershberger@ni.com>
+
+commit 5b40f8b4854186553ed50ad52a9a0f812f1fd248
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Thu Aug 24 15:55:04 2017 +0800
+
+    common: cmd_nvedit: use snprintf instead of sprintf
+    
+    Use snprintf to replace sprintf.
+    
+    Coverity log:
+    "
+    Unbounded source buffer (STRING_SIZE)
+    string_size: Passing string init_val of unknown size to sprintf.
+    "
+    
+    Signed-off-by: Peng Fan <peng.fan@nxp.com>
+    Cc: Tom Rini <trini@konsulko.com>
+    Cc: Simon Glass <sjg@chromium.org>
+    Reviewed-by: Joe Hershberger <joe.hershberger@ni.com>
+
+commit 8ae9754e3b974a05711d8c8a983e11e56b957844
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Thu Aug 24 15:41:46 2017 +0800
+
+    common: cli_simple: use strlcpy instead of strcpy
+    
+    Report Coverity log:
+    Destination buffer too small (STRING_OVERFLOW)
+    string_overflow: You might overrun the 1024 byte destination string
+    lastcommand by writing 1025 bytes from console_buffer
+    
+    Signed-off-by: Peng Fan <van.freenix@gmail.com>
+    Cc: Heiko Schocher <hs@denx.de>
+    Cc: Simon Glass <sjg@chromium.org>
+    Cc: Tom Rini <trini@konsulko.com>
+    Reviewed-by: Simon Glass <sjg@chromium.org>
+
+commit 255f903b4612357aab3a7748e6d2691fbc262577
+Author: Masahiro Yamada <yamada.m@jp.panasonic.com>
+Date:   Thu Nov 20 21:20:32 2014 +0900
+
+    lib: string: move strlcpy() to a common place
+    
+    Move strlcpy() definition from drivers/usb/gadget/ether.c to
+    lib/string.c because it is a very useful function.
+    Let's add the prototype to include/linux/string.h too.
+    
+    Signed-off-by: Masahiro Yamada <yamada.m@jp.panasonic.com>
+    Acked-by: Simon Glass <sjg@chromium.org>
+
+-----------------------------------------------------------------------
+

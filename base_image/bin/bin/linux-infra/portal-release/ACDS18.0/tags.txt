@@ -1,0 +1,20 @@
+$ for br in $(git tag|grep ACDS18); do echo $br; git branch -r --contains $br; echo ; done
+ACDS18.0IR.1_REL_GSRD_RC_EAP
+  origin/socfpga-4.1.33-ltsi
+  portal/socfpga-4.1.33-ltsi
+
+ACDS18.0IR.1_REL_GSRD_RC_S10_EAP
+  origin/socfpga-4.12
+
+ACDS18.0IR.1_REL_M10_GSRD_RC_EAP
+  origin/socfpga-3.10-ltsi
+  portal/socfpga-3.10-ltsi
+
+ACDS18.0ir.1_REL_GSRD_RCEAP
+  origin/socfpga-4.1.33-ltsi
+  portal/socfpga-4.1.33-ltsi
+
+ACDS18.0ir.1_REL_M10_GSRD_RCEAP
+  origin/socfpga-3.10-ltsi
+  portal/socfpga-3.10-ltsi
+    

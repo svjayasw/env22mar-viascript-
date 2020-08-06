@@ -1,0 +1,62 @@
+
+Tags found:
+ACDS18.0_REL_GSRD_PR
+ACDS18.0_REL_S10_GSRD_PR
+
+   repo                 branch                            commit        tag name
+linux-socfpga        socfpga-4.9.78-ltsi                  2314712  ACDS18.0_REL_GSRD_PR
+uboot-socfpga        socfpga_v2013.01.01                  239ae4d  ACDS18.0_REL_GSRD_PR
+meta-altera          angstrom-v2016.12-yocto2.2           69c4320  ACDS18.0_REL_GSRD_PR
+meta-altera-refdes   master                               2a631a9  ACDS18.0_REL_GSRD_PR
+linux-refdesigns     master                               d1686ef  ACDS18.0_REL_GSRD_PR
+uboot-socfpga        socfpga_v2017.09                     03db6f4  ACDS18.0_REL_S10_GSRD_PR
+
+-----------------------------------------------------------------------
+repo:   linux-socfpga
+-----------------------------------------------------------------------
+2314712 VIET NGA DAO FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS18.0_REL_GSRD_PR
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.9.78-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/23147125756d1ebddfdda416bce5b75b9d01f18d
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   uboot-socfpga
+-----------------------------------------------------------------------
+239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS18.0_REL_GSRD_PR
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2013.01.01
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/239ae4dbaab424881fe9f4a11dc354abdd53cb1e
+-----------------------------------------------------------------------
+03db6f4 Chin Liang See FogBugz #544650: Ensure watchdog paused when debugging
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS18.0_REL_S10_GSRD_PR
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2017.09
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/03db6f4894450a0a8b80478a8567a7353cb2ab99
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera
+-----------------------------------------------------------------------
+69c4320 Ong, Hean Loong Backport systemd change e266c06 from systemd v234-stable
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/ACDS18.0_REL_GSRD_PR
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2016.12-yocto2.2
+commit : https://github.com/altera-opensource/meta-altera/commit/69c4320bc17f4f93be3da268be0466b747e521c8
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera-refdes
+-----------------------------------------------------------------------
+2a631a9 Ong, Hean Loong enable passwordless login for console image
+tag    : https://github.com/altera-opensource/meta-altera-refdes/releases/tag/ACDS18.0_REL_GSRD_PR
+branch : https://github.com/altera-opensource/meta-altera-refdes/tree/master
+commit : https://github.com/altera-opensource/meta-altera-refdes/commit/2a631a932a66221509e751245cc73c2b80142cdd
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   linux-refdesigns
+-----------------------------------------------------------------------
+d1686ef Ooi, Joyce FogBugz #538209: Add intr_type parameter for GPIO interrupt
+tag    : https://github.com/altera-opensource/linux-refdesigns/releases/tag/ACDS18.0_REL_GSRD_PR
+branch : https://github.com/altera-opensource/linux-refdesigns/tree/master
+commit : https://github.com/altera-opensource/linux-refdesigns/commit/d1686ef5bdb8167801bf9d890d9d7d1cf69a987d
+-----------------------------------------------------------------------

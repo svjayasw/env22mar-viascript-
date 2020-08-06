@@ -1,0 +1,982 @@
+
+Script-generated report of what we tagged today in internal git.
+These rc tags/branches will retagged as pr and pushed to the portal in two weeks.
+
+The following new branches were tagged:
+repo : arm-trusted-firmware   branch : socfpga_v2.1
+repo : uefi-socfpga           branch : socfpga_udk201905
+repo : edk2-platforms-socfpga   branch : socfpga_udk201905
+
+Richard
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-5.1
+branch tag  : rel_socfpga-5.1_19.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga-5.2
+branch tag  : rel_socfpga-5.2_19.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.14.130-ltsi
+branch tag  : rel_socfpga-4.14.130-ltsi_19.11.01_rc1
+new commits : 7
+30098b74 Dinh Nguyen arm64: dts: agilex: populate clock dts entries for Intel SoCFPGA Agilex
+c8591e6 Dinh Nguyen clk: socfpga: agilex: add clock driver for the Agilex platform
+fe80d74 Dinh Nguyen dt-bindings: documentation: add clock bindings information for Agilex
+98a7b6c Russell King - ARM Linux admin drivers/amba: fix reset control error handling
+4ba6f2a DINH L NGUYEN ARM: 8906/1: drivers/amba: add reset control to amba bus probe
+19667cc Dinh Nguyen Revert "drivers/amba: add reset control to amba bus probe"
+4fe04c1 Dinh Nguyen arm64: dts: agilex/stratix10: Add reset properties for DMA
+
+
+branch      : socfpga-4.14.126-ltsi-rt
+branch tag  : rel_socfpga-4.14.126-ltsi-rt_19.11.01_rc1
+new commits : 7
+ea7f8bb Dinh Nguyen arm64: dts: agilex: populate clock dts entries for Intel SoCFPGA Agilex
+bae603b Dinh Nguyen clk: socfpga: agilex: add clock driver for the Agilex platform
+553dd42 Dinh Nguyen dt-bindings: documentation: add clock bindings information for Agilex
+acd1adc Russell King - ARM Linux admin drivers/amba: fix reset control error handling
+5bebebe DINH L NGUYEN ARM: 8906/1: drivers/amba: add reset control to amba bus probe
+8612e73 Dinh Nguyen Revert "drivers/amba: add reset control to amba bus probe"
+b851315 Dinh Nguyen arm64: dts: agilex/stratix10: Add reset properties for DMA
+
+
+Tags added to internal git:
+tag:    rel_socfpga-5.1_19.11.01_rc1
+commit: 5c21be7 Dinh Nguyen clk: socfpga: stratix10: fix rate caclulationg for cnt_clks
+
+tag:    rel_socfpga-5.2_19.11.01_rc1
+commit: 8cfde63 Russell King - ARM Linux admin drivers/amba: fix reset control error handling
+
+tag:    rel_socfpga-4.14.130-ltsi_19.11.01_rc1
+commit: 30098b74 Dinh Nguyen arm64: dts: agilex: populate clock dts entries for Intel SoCFPGA Agilex
+
+tag:    rel_socfpga-4.14.126-ltsi-rt_19.11.01_rc1
+commit: ea7f8bb Dinh Nguyen arm64: dts: agilex: populate clock dts entries for Intel SoCFPGA Agilex
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2019.04
+branch tag  : rel_socfpga_v2019.04_19.11.01_rc1
+new commits : 28
+c51e989 Chin Liang See Use post-increment only in inffast.c.
+1e4d8c1 Chin Liang See Remove offset pointer optimization in inftrees.c.
+84835f3 liucheng (G) CVE-2019-14196: nfs: fix unbounded memcpy with a failed length check at nfs_lookup_reply
+f9e0c53 liucheng (G) CVE-2019-14195: nfs: fix unbounded memcpy with unvalidated length at nfs_readlink_reply
+d6198dc liucheng (G) CVE-2019-14194/CVE-2019-14198: nfs: fix unbounded memcpy with a failed length check at nfs_read_reply
+cb44f2b liucheng (G) CVE: nfs: fix stack-based buffer overflow in some nfs_handler reply helper functions
+c8bc539 liucheng (G) CVE: net: fix unbounded memcpy of UDP packet
+0e95104 Chin Liang See CVE-2019-13106: ext4: fix out-of-bounds memset
+9b32017 Paul Emge CVE-2019-13104: ext4: check for underflow in ext4fs_read_file
+5e66344 Chin Liang See CVE-2019-13103: disk: stop infinite recursion in DOS Partitions
+dd1a749 Eugeniu Rosca lib: uuid: Fix unseeded PRNG on RANDOM_UUID=y
+ef89225 Stephen Warren fs: ext4: cache extent data
+b379cc4 Benjamin Lim Fix ext4 block group descriptor sizing
+40228ae Ooi, Joyce HSD #1507453717: arm: socfpga: agilex: add QSPI boot feature
+de20fb0 Ooi, Joyce HSD #1507453717: arm: socfpga: stratix10: add QSPI boot feature
+6705a42 Ooi, Joyce HSD #1507453717: arm: spl: create a common spl for Stratix10 and Agilex
+0b7a01d Tien Fong Chee(old_UID 16019) configs: Add CMD_DHCP config to socfpga
+5c4d443 Tien Fong Chee ARM: socfpga: Add default kernel fitImage for Arria10 NAND SoCDK
+5b35d3b Tien Fong Chee ARM: socfpga: Rename kernel fitImage its for Arria10 QSPI SoCDK
+2ecbfd8 Tien Fong Chee ARM: socfpga: Synchronize the configuration for A10 NAND SoCDK
+6512124 Tien Fong Chee ARM: socfpga: Include required functions for FIT implementation in NAND
+e5a17b2 Tien Fong Chee misc: fs_loader: Add NAND RAW partition loading support
+7a2f342 Tien Fong Chee ARM: dts: socfpga: Add dts support for NAND Arria 10 SoCDK
+554c69b6 Tien Fong Chee mtd: nand: Add reset ctrl to driver
+e54c70f Tien Fong Chee mtd: nand: denali: Add SPL image loader
+4cbbcc3 Tien Fong Chee mtd: nand: Allow full NAND framework in SPL
+2610d42 Tien Fong Chee ARM: socfpga: Add NAND register address and data register
+6e17c29 Tien Fong Chee configs: remove "socfpga_arria10 #" prompt
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v2013.01.01_19.11.01_rc1
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.11.01_rc1
+commit: f7a7e26 Tien Fong Chee net: A10: Use packed structures for networking
+
+tag:    rel_socfpga_v2017.09_19.11.01_rc1
+commit: 8c74272 radu bacrau HSD #1707046651: Add support for RSU Retry
+
+tag:    rel_socfpga_v2019.04_19.11.01_rc1
+commit: c51e989 Chin Liang See Use post-increment only in inffast.c.
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.11.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2014.12-socfpga_19.11.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.11.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.11.01_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.11.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2019.06-yocto2.7
+branch tag  : rel_angstrom-v2019.06-yocto2.7_19.11.01_rc1
+new commits : 3
+e0bd3ff Ong, Hean Loong add jffs2 for socfpga_armv8a.inc
+90ecd11 Ong, Hean Loong add JFFS2 build option to sstratix10 and agilex
+2b1e26f Ong, Hean Loong Add QSPI JFFS2 option to agilex and stratix10
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2018.06-yocto2.5_19.11.01_rc1
+commit: 2a4cadc Ong, Hean Loong update to linux-altera-ltsi_4.14.130
+
+tag:    rel_angstrom-v2019.06-yocto2.7_19.11.01_rc1
+commit: e0bd3ff Ong, Hean Loong add jffs2 for socfpga_armv8a.inc
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.11.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.11.01_rc1
+commit: e6e29b8 radu bacrau HSD #1707061410: Add support for RSU Retry
+
+
+-----------------------------------------------------------------------
+
+repository: arm-trusted-firmware
+
+branch      : socfpga_v1.4
+branch tag  : rel_socfpga_v1.4_19.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2.1
+branch tag  : rel_socfpga_v2.1_19.11.01_rc1
+Pushing new branch to external git
+
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v1.4_19.11.01_rc1
+commit: fd4f92c Loh Tien Hock libc: armclang: Implement compiler printf symbols
+
+tag:    rel_socfpga_v2.1_19.11.01_rc1
+commit: 0b9789a Tien Hock, Loh plat: intel: Fix UEFI decompression issue
+
+
+-----------------------------------------------------------------------
+
+repository: uefi-socfpga
+
+branch      : socvp_socfpga_udk2015
+branch tag  : rel_socvp_socfpga_udk2015_19.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga_udk201905
+branch tag  : rel_socfpga_udk201905_19.11.01_rc1
+Pushing new branch to external git
+
+
+
+Tags added to internal git:
+tag:    rel_socvp_socfpga_udk2015_19.11.01_rc1
+commit: 475bea4 Loh Tien Hock AlteraPlatformPkg: Change memory base due for Linux's reserved space
+
+tag:    rel_socfpga_udk201905_19.11.01_rc1
+commit: a2a1076 Haojian Zhuang EmbeddedPkg/Drivers: add DwMmcHcDxe driver
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera-refdes
+
+branch      : master
+branch tag  : rel_master_19.11.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.11.01_rc1
+commit: 97e7d7a Ong, Hean Loong fix issue of lighttpd for yocto-warrior
+
+
+-----------------------------------------------------------------------
+
+repository: linux-refdesigns
+
+branch      : master
+branch tag  : rel_master_19.11.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.11.01_rc1
+commit: 769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+
+
+-----------------------------------------------------------------------
+
+repository: edk2-platforms-socfpga
+
+branch      : socfpga_udk201905
+branch tag  : rel_socfpga_udk201905_19.11.01_rc1
+Pushing new branch to external git
+
+
+
+Tags added to internal git:
+tag:    rel_socfpga_udk201905_19.11.01_rc1
+commit: 69d829a Tien Hock, Loh Plat: Intel: Fix decompression failure when size is too big
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.130-ltsi
+
+commit 30098b7411059b00e183564b7425087714fe635d
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Fri Aug 9 12:28:06 2019 -0700
+
+    arm64: dts: agilex: populate clock dts entries for Intel SoCFPGA Agilex
+    
+    [upstream commit 357fc0f53e984d943ace9d25b4da1d10f1935f5c]
+    
+    Add clock dts entries to the Intel SoCFPGA Agilex platform.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit c8591e6d8c0f54143733ca5bc7d76e5f60c34b2d
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Apr 3 09:54:58 2019 -0500
+
+    clk: socfpga: agilex: add clock driver for the Agilex platform
+    
+    [upstream commit c46d40563183f0045378258b93e2ca8a1a8471aa]
+    
+    For the most part the Agilex clock structure is very similar to
+    Stratix10, so we re-use most of the Stratix10 clock driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit fe80d74c80638b6666c720f0716e9331fa7b385e
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Aug 20 20:37:50 2019 -0500
+
+    dt-bindings: documentation: add clock bindings information for Agilex
+    
+    [upstream commit cd2e1ad122471fcd475077531047b1c8ab8317e9]
+    
+    Document the Agilex clock bindings, and add the clock header file. The
+    clock header is an enumeration of all the different clocks on the Agilex
+    platform.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 98a7b6ce7ec4f5317753d693a20fd415d5bd965b
+Author: Russell King - ARM Linux admin <linux@armlinux.org.uk>
+Date:   Wed Oct 2 15:39:16 2019 -0500
+
+    drivers/amba: fix reset control error handling
+    
+    With commit 79bdcb202a35 ("ARM: 8906/1: drivers/amba: add reset control
+    to amba bus probe") it is possible for the the amba bus driver to defer
+    probing the device for its IDs because the reset driver may be probed
+    later.
+    
+    However when a subsequent probe occurs, the call to request_resource()
+    in the driver returns -EBUSY as the driver has not released the resource
+    from the initial probe attempt - or cleaned up any of the preceding
+    actions.
+    
+    Fix this both for the deferred probe case as well as a failure to get
+    the reset.
+    
+    Fixes: 79bdcb202a35 ("ARM: 8906/1: drivers/amba: add reset control to amba bus probe")
+    Signed-off-by: Russell King <rmk+kernel@armlinux.org.uk>
+
+commit 4ba6f2a5ca87b2d743122be5ed4ba5e6dc099d18
+Author: DINH L NGUYEN <dinguyen@kernel.org>
+Date:   Wed Sep 4 02:13:08 2019 +0100
+
+    ARM: 8906/1: drivers/amba: add reset control to amba bus probe
+    
+    [upstream commit 79bdcb202a35bf2701779afafa0db07e2852d46b]
+    
+    The primecell controller on some SoCs, i.e. SoCFPGA, is held in reset
+    by default. Until recently, the DMA controller was brought out of reset by the bootloader(i.e. U-Boot). But a recent change in U-Boot, the peripherals that are not used are held in reset and are left to Linux to bring them out of reset.
+    
+    Add a mechanism for getting the reset property and de-assert the primecell module from reset if found. This is a not a hard fail if the reset property is not present in the device tree node, so the driver will continue to probe.
+    
+    Because there are different variants of the controller that may have
+    multiple reset signals, the code will find all reset(s) specified and
+    de-assert them.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Reviewed-by: Rob Herring <robh@kernel.org>
+    Reviewed-by: Philipp Zabel <p.zabel@pengutronix.de>
+    Reviewed-by: Linus Walleij <linus.walleij@linaro.org>
+    Signed-off-by: Russell King <rmk+kernel@armlinux.org.uk>
+
+commit 19667ccc8bdf9f280c7ace01772f83931ffa03ba
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu Oct 3 14:52:08 2019 -0500
+
+    Revert "drivers/amba: add reset control to amba bus probe"
+    
+    This reverts commit 7392bc2dd76443c3f7750c90726f041da33099ed.
+    We revert this patch because we're adopting the accepted upstream
+    patch and fix.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 4fe04c156b5040da3027bc30e6c7808cb9785059
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Thu Jun 20 10:25:07 2019 -0500
+
+    arm64: dts: agilex/stratix10: Add reset properties for DMA
+    
+    [upstream commit e10c18484b66afa830f9a36348e12143f0ec2267]
+    
+    Add both the reset and reset-ocp properties for the DMA node on the
+    Stratix10 and Agilex platforms.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.126-ltsi-rt
+
+commit ea7f8bb255113fcf3703f86580246793eae18dff
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Fri Aug 9 12:28:06 2019 -0700
+
+    arm64: dts: agilex: populate clock dts entries for Intel SoCFPGA Agilex
+    
+    [upstream commit 357fc0f53e984d943ace9d25b4da1d10f1935f5c]
+    
+    Add clock dts entries to the Intel SoCFPGA Agilex platform.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit bae603b5d3fca4b4da727c4ba76f4c03ebf555ce
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Apr 3 09:54:58 2019 -0500
+
+    clk: socfpga: agilex: add clock driver for the Agilex platform
+    
+    [upstream commit c46d40563183f0045378258b93e2ca8a1a8471aa]
+    
+    For the most part the Agilex clock structure is very similar to
+    Stratix10, so we re-use most of the Stratix10 clock driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 553dd42b69d90795b2dd7c0128072b0157cd2264
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Aug 20 20:37:50 2019 -0500
+
+    dt-bindings: documentation: add clock bindings information for Agilex
+    
+    [upstream commit cd2e1ad122471fcd475077531047b1c8ab8317e9]
+    
+    Document the Agilex clock bindings, and add the clock header file. The
+    clock header is an enumeration of all the different clocks on the Agilex
+    platform.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit acd1adcad7ff88b0db8c0f90a046e476b6a0f927
+Author: Russell King - ARM Linux admin <linux@armlinux.org.uk>
+Date:   Wed Oct 2 15:39:16 2019 -0500
+
+    drivers/amba: fix reset control error handling
+    
+    With commit 79bdcb202a35 ("ARM: 8906/1: drivers/amba: add reset control
+    to amba bus probe") it is possible for the the amba bus driver to defer
+    probing the device for its IDs because the reset driver may be probed
+    later.
+    
+    However when a subsequent probe occurs, the call to request_resource()
+    in the driver returns -EBUSY as the driver has not released the resource
+    from the initial probe attempt - or cleaned up any of the preceding
+    actions.
+    
+    Fix this both for the deferred probe case as well as a failure to get
+    the reset.
+    
+    Fixes: 79bdcb202a35 ("ARM: 8906/1: drivers/amba: add reset control to amba bus probe")
+    Signed-off-by: Russell King <rmk+kernel@armlinux.org.uk>
+
+commit 5bebebed22009d99810778869424cc970e52d1c6
+Author: DINH L NGUYEN <dinguyen@kernel.org>
+Date:   Wed Sep 4 02:13:08 2019 +0100
+
+    ARM: 8906/1: drivers/amba: add reset control to amba bus probe
+    
+    [upstream commit 79bdcb202a35bf2701779afafa0db07e2852d46b]
+    
+    The primecell controller on some SoCs, i.e. SoCFPGA, is held in reset
+    by default. Until recently, the DMA controller was brought out of reset by the bootloader(i.e. U-Boot). But a recent change in U-Boot, the peripherals that are not used are held in reset and are left to Linux to bring them out of reset.
+    
+    Add a mechanism for getting the reset property and de-assert the primecell module from reset if found. This is a not a hard fail if the reset property is not present in the device tree node, so the driver will continue to probe.
+    
+    Because there are different variants of the controller that may have
+    multiple reset signals, the code will find all reset(s) specified and
+    de-assert them.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Reviewed-by: Rob Herring <robh@kernel.org>
+    Reviewed-by: Philipp Zabel <p.zabel@pengutronix.de>
+    Reviewed-by: Linus Walleij <linus.walleij@linaro.org>
+    Signed-off-by: Russell King <rmk+kernel@armlinux.org.uk>
+
+commit 8612e731e08ffec90922331844d7e69d59d79c97
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu Oct 3 14:52:08 2019 -0500
+
+    Revert "drivers/amba: add reset control to amba bus probe"
+    
+    This reverts commit 7392bc2dd76443c3f7750c90726f041da33099ed.
+    We revert this patch because we're adopting the accepted upstream
+    patch and fix.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit b851315cb1d0b29fff2d8d2ba3d79b4d0655ac4a
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Thu Jun 20 10:25:07 2019 -0500
+
+    arm64: dts: agilex/stratix10: Add reset properties for DMA
+    
+    [upstream commit e10c18484b66afa830f9a36348e12143f0ec2267]
+    
+    Add both the reset and reset-ocp properties for the DMA node on the
+    Stratix10 and Agilex platforms.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2019.04
+
+commit c51e9895ee31ab74d4b58c2617369b6161a3d1fc
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Thu Oct 17 11:21:34 2019 +0800
+
+    Use post-increment only in inffast.c.
+    
+    An old inffast.c optimization turns out to not be optimal anymore
+    with modern compilers, and furthermore was not compliant with the
+    C standard, for which decrementing a pointer before its allocated
+    memory is undefined. Per the recommendation of a security audit of
+    the zlib code by Trail of Bits and TrustInSoft, in support of the
+    Mozilla Foundation, this "optimization" was removed, in order to
+    avoid the possibility of undefined behavior.
+    
+    Signed-off-by: Mark Adler <madler@alumni.caltech.edu>
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 1e4d8c19682d584e82ab9faa3ec85c8c315397e7
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Thu Oct 17 11:07:41 2019 +0800
+
+    Remove offset pointer optimization in inftrees.c.
+    
+    inftrees.c was subtracting an offset from a pointer to an array,
+    in order to provide a pointer that allowed indexing starting at
+    the offset. This is not compliant with the C standard, for which
+    the behavior of a pointer decremented before its allocated memory
+    is undefined. Per the recommendation of a security audit of the
+    zlib code by Trail of Bits and TrustInSoft, in support of the
+    Mozilla Foundation, this tiny optimization was removed, in order
+    to avoid the possibility of undefined behavior.
+    
+    Signed-off-by: Mark Adler <madler@alumni.caltech.edu>
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 84835f3ac37370887ffef0716e6d233a67b06598
+Author: liucheng (G) <liucheng32@huawei.com>
+Date:   Thu Aug 29 13:48:02 2019 +0000
+
+    CVE-2019-14196: nfs: fix unbounded memcpy with a failed length check at nfs_lookup_reply
+    
+    This patch adds a check to rpc_pkt.u.reply.data at nfs_lookup_reply.
+    
+    Signed-off-by: Cheng Liu <liucheng32@huawei.com>
+    Reported-by: Fermín Serna <fermin@semmle.com>
+    Acked-by: Joe Hershberger <joe.hershberger@ni.com>
+
+commit f9e0c535214195738fcc464ee7bd12a628e087fd
+Author: liucheng (G) <liucheng32@huawei.com>
+Date:   Thu Aug 29 13:47:54 2019 +0000
+
+    CVE-2019-14195: nfs: fix unbounded memcpy with unvalidated length at nfs_readlink_reply
+    
+    This patch adds a check to rpc_pkt.u.reply.data at nfs_readlink_reply.
+    
+    Signed-off-by: Cheng Liu <liucheng32@huawei.com>
+    Reported-by: Fermín Serna <fermin@semmle.com>
+    Acked-by: Joe Hershberger <joe.hershberger@ni.com>
+
+commit d6198dc1dfea6e56970cb6930b860cbca51cf277
+Author: liucheng (G) <liucheng32@huawei.com>
+Date:   Thu Aug 29 13:47:48 2019 +0000
+
+    CVE-2019-14194/CVE-2019-14198: nfs: fix unbounded memcpy with a failed length check at nfs_read_reply
+    
+    This patch adds a check to rpc_pkt.u.reply.data at nfs_read_reply.
+    
+    Signed-off-by: Cheng Liu <liucheng32@huawei.com>
+    Reported-by: Fermín Serna <fermin@semmle.com>
+    Acked-by: Joe Hershberger <joe.hershberger@ni.com>
+
+commit cb44f2bd555d40e5950039c9c36518f4d0489d89
+Author: liucheng (G) <liucheng32@huawei.com>
+Date:   Thu Aug 29 13:47:40 2019 +0000
+
+    CVE: nfs: fix stack-based buffer overflow in some nfs_handler reply helper functions
+    
+    This patch adds a check to nfs_handler to fix buffer overflow for CVE-2019-14197,
+    CVE-2019-14200, CVE-2019-14201, CVE-2019-14202, CVE-2019-14203 and CVE-2019-14204.
+    
+    Signed-off-by: Cheng Liu <liucheng32@huawei.com>
+    Reported-by: Fermín Serna <fermin@semmle.com>
+    Acked-by: Joe Hershberger <joe.hershberger@ni.com>
+
+commit c8bc539d6127b85d29ed4122bda976663045f3a6
+Author: liucheng (G) <liucheng32@huawei.com>
+Date:   Thu Aug 29 13:47:33 2019 +0000
+
+    CVE: net: fix unbounded memcpy of UDP packet
+    
+    This patch adds a check to udp_len to fix unbounded memcpy for
+    CVE-2019-14192, CVE-2019-14193 and CVE-2019-14199.
+    
+    Signed-off-by: Cheng Liu <liucheng32@huawei.com>
+    Reviewed-by: Simon Goldschmidt <simon.k.r.goldschmidt@gmail.com>
+    Reported-by: Fermín Serna <fermin@semmle.com>
+    Acked-by: Joe Hershberger <joe.hershberger@ni.com>
+
+commit 0e95104c7c0fd37050e7c0922b3387ebadf1d6bc
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Thu Oct 17 11:00:53 2019 +0800
+
+    CVE-2019-13106: ext4: fix out-of-bounds memset
+    
+    In ext4fs_read_file in ext4fs.c, a memset can overwrite the bounds of
+    the destination memory region. This patch adds a check to disallow
+    this.
+    
+    Signed-off-by: Paul Emge <paulemge@forallsecure.com>
+
+commit 9b320176763ec3961320918b86461a9e5a31a03c
+Author: Paul Emge <paulemge@forallsecure.com>
+Date:   Mon Jul 8 16:37:05 2019 -0700
+
+    CVE-2019-13104: ext4: check for underflow in ext4fs_read_file
+    
+    in ext4fs_read_file, it is possible for a broken/malicious file
+    system to cause a memcpy of a negative number of bytes, which
+    overflows all memory. This patch fixes the issue by checking for
+    a negative length.
+    
+    Signed-off-by: Paul Emge <paulemge@forallsecure.com>
+
+commit 5e66344ea528508d5addb6328a6ff517bd48434e
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Thu Oct 17 10:58:34 2019 +0800
+
+    CVE-2019-13103: disk: stop infinite recursion in DOS Partitions
+    
+    part_get_info_extended and print_partition_extended can recurse infinitely
+    while parsing a self-referential filesystem or one with a silly number of
+    extended partitions. This patch adds a limit to the number of recursive
+    partitions.
+    
+    Signed-off-by: Paul Emge <paulemge@forallsecure.com>
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit dd1a7494eb263aa82b316f85e67ed59612aa730f
+Author: Eugeniu Rosca <erosca@de.adit-jv.com>
+Date:   Thu May 2 14:27:06 2019 +0200
+
+    lib: uuid: Fix unseeded PRNG on RANDOM_UUID=y
+    
+    The random uuid values (enabled via CONFIG_RANDOM_UUID=y) on our
+    platform are always the same. Below is consistent on each cold boot:
+    
+     => ### interrupt autoboot
+     => env default -a; gpt write mmc 1 $partitions; print uuid_gpt_misc
+     ...
+     uuid_gpt_misc=d117f98e-6f2c-d04b-a5b2-331a19f91cb2
+     => env default -a; gpt write mmc 1 $partitions; print uuid_gpt_misc
+     ...
+     uuid_gpt_misc=ad5ec4b6-2d9f-8544-9417-fe3bd1c9b1b3
+     => env default -a; gpt write mmc 1 $partitions; print uuid_gpt_misc
+     ...
+     uuid_gpt_misc=cceb0b18-39cb-d547-9db7-03b405fa77d4
+     => env default -a; gpt write mmc 1 $partitions; print uuid_gpt_misc
+     ...
+     uuid_gpt_misc=d4981a2b-0478-544e-9607-7fd3c651068d
+     => env default -a; gpt write mmc 1 $partitions; print uuid_gpt_misc
+     ...
+     uuid_gpt_misc=6d6c9a36-e919-264d-a9ee-bd00379686c7
+    
+    While the uuids do change on every 'gpt write' command, the values
+    appear to be taken from the same pool, in the same order.
+    
+    Assuming U-Boot with RANDOM_UUID=y is deployed on a large number of
+    devices, all those devices would essentially expose the same UUID,
+    breaking the assumption of system/RFS/application designers who rely
+    on UUID as being globally unique (e.g. a database using UUID as key
+    would alias/mix up entries/records due to duplicated UUID).
+    
+    The root cause seems to be simply _not_ seeding PRNG before generating
+    a random value. It turns out this belongs to an established class of
+    PRNG-specific problems, commonly known as "unseeded randomness", for
+    which I am able to find below bugs/CVE/CWE:
+     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2015-0285
+       ("CVE-2015-0285 openssl: handshake with unseeded PRNG")
+     - https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2015-9019
+       ("CVE-2015-9019 libxslt: math.random() in xslt uses unseeded
+       randomness")
+     - https://cwe.mitre.org/data/definitions/336.html
+       ("CWE-336: Same Seed in Pseudo-Random Number Generator (PRNG)")
+    
+    The first revision [1] of this patch updated the seed based on the
+    output of get_timer(), similar to [4].
+    
+    There are two problems with this approach:
+     - get_timer() has a poor _ms_ resolution
+     - when gen_rand_uuid() is called in a loop, get_timer() returns the
+       same result, leading to the same seed being passed to srand(),
+       leading to the same uuid being generated for several partitions
+       with different names
+    
+    The above drawbacks have been addressed in the second version [2].
+    In its third revision (current), the patch reworded the description
+    and summary line to emphasize it is a *fix* rather than an improvement.
+    
+    Testing [3] consisted of running 'gpt write mmc 1 $partitions' in a
+    loop on R-Car3 for several minutes, collecting 8844 randomly generated
+    UUIDS. Two consecutive cold boots are concatenated in the log.
+    As a result, all uuid values are unique (scripted check).
+    
+    Thanks to Roman, who reported the issue and provided support in fixing.
+    
+    [1] https://patchwork.ozlabs.org/patch/1091802/
+    [2] https://patchwork.ozlabs.org/patch/1092945/
+    [3] https://gist.github.com/erosca/2820be9d554f76b982edd48474d0e7ca
+    [4] commit da384a9d7628 ("net: rename and refactor eth_rand_ethaddr() function")
+    
+    Reported-by: Roman Stratiienko <roman.stratiienko@globallogic.com>
+    Signed-off-by: Eugeniu Rosca <erosca@de.adit-jv.com>
+    Reviewed-by: Heinrich Schuchardt <xypron.glpk@gmx.de>
+
+commit ef892254176f106c658b146d0d671289b5abf77b
+Author: Stephen Warren <swarren@nvidia.com>
+Date:   Wed Jan 30 12:58:05 2019 -0700
+
+    fs: ext4: cache extent data
+    
+    When a file contains extents, U-Boot currently reads extent-related data
+    for each block in the file, even if that data is located in the same
+    block each time. This significantly slows down loading of files that use
+    extents. Implement a very dumb cache to prevent repeatedly reading the
+    same block. Files with extents now load as fast as files without.
+    
+    Note: There are many cases where read_allocated_block() is called. This
+    patch only addresses one of those places; all others still read redundant
+    data in any case they did before. This is a minimal patch to fix the
+    load command; other cases aren't fixed.
+    
+    Signed-off-by: Stephen Warren <swarren@nvidia.com>
+
+commit b379cc42b7d4271d6c266617a865ab7e4405d885
+Author: Benjamin Lim <jarsp.ctf@gmail.com>
+Date:   Fri Mar 29 07:29:45 2019 -0400
+
+    Fix ext4 block group descriptor sizing
+    
+    Ext4 allows for arbitrarily sized block group descriptors when 64-bit
+    addressing is enabled, which was previously not properly supported. This
+    patch dynamically allocates a chunk of memory of the correct size.
+    
+    Signed-off-by: Benjamin Lim <jarsp.ctf@gmail.com>
+
+commit 40228aee520dd7aef620b857a61847a13cf0a3e0
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Tue Oct 8 17:24:45 2019 +0800
+
+    HSD #1507453717: arm: socfpga: agilex: add QSPI boot feature
+    
+    This patch adds the QSPI boot feature for Agilex
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit de20fb0574d08cf39fc94fc6131b5caee0d8718e
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Tue Oct 8 17:20:21 2019 +0800
+
+    HSD #1507453717: arm: socfpga: stratix10: add QSPI boot feature
+    
+    This patch adds the QSPI boot feature for Stratix10
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 6705a427cc85f3fd3cd579c0f78c49fa1e383573
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Tue Oct 8 17:16:29 2019 +0800
+
+    HSD #1507453717: arm: spl: create a common spl for Stratix10 and Agilex
+    
+    Since Stratix10 and Agilex are using ARM64, there are some common codes
+    in the SPL. Hence, spl_soc64.c is created to place the common codes.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 0b7a01de49a5615d863e09a620e5d6ed45bf1fe3
+Author: Tien Fong Chee(old_UID 16019) <tfchee@sj-iccf0232.altera.com>
+Date:   Tue Oct 8 02:58:14 2019 -0700
+
+    configs: Add CMD_DHCP config to socfpga
+    
+    Enable DHCP function in socfpga plaforms.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 5c4d4439cd74a20062874b22e45bb422a91f15a8
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Sun Sep 29 23:37:52 2019 +0800
+
+    ARM: socfpga: Add default kernel fitImage for Arria10 NAND SoCDK
+    
+    Add default fitImage file bundling kernel and dtb images for Arria10
+    NAND.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 5b35d3b0a2d665785c28d3557aa1debd6dc0dd36
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Tue Oct 1 19:43:22 2019 +0800
+
+    ARM: socfpga: Rename kernel fitImage its for Arria10 QSPI SoCDK
+    
+    Rename kernel fitImage its for Arria10 QSPI SoCDK to appropriate name so
+    that kernel fitImage its can be differentiated between QSPI SoCDK and NAND
+    SoCDK.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 2ecbfd859381f2e0b15c9a7e5f8b3e07b099febd
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Sep 25 18:00:54 2019 +0800
+
+    ARM: socfpga: Synchronize the configuration for A10 NAND SoCDK
+    
+    Update the default configuration file to enable the necessary
+    functionality the get the NAND SoCDK working. That includes fitImage
+    loading in SPL, booting both U-Boot and Linux.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 65121244ece8443c086f351e30d99c82d778134b
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Sep 25 22:56:07 2019 +0800
+
+    ARM: socfpga: Include required functions for FIT implementation in NAND
+    
+    Those functions are required in NAND FIT implementation, so include them in
+    NAND build.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit e5a17b2510519a9d0aab2bf030ae88a048ec2c2f
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Sep 25 17:37:18 2019 +0800
+
+    misc: fs_loader: Add NAND RAW partition loading support
+    
+    Enhanced the generic firmware loader to support NAND RAW partition
+    loading. This would enable FPGA configuration bitstream loading
+    from NAND RAW partition to program FPGA.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 7a2f3429d840bc1a27ffd739e12ca57905c6389b
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Tue Sep 24 20:29:04 2019 +0800
+
+    ARM: dts: socfpga: Add dts support for NAND Arria 10 SoCDK
+    
+    Enable dtb build for NAND Arria 10 SoCDK.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 554c69b67e12384fd727d83a6f7e86f2d8e8cbd3
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Sun Sep 29 17:05:31 2019 +0800
+
+    mtd: nand: Add reset ctrl to driver
+    
+    Add code to reset all reset signals as in NAND DT node. A reset property
+    is an optional feature, so only print out a warning and do not fail if a
+    reset property is not present.
+    
+    If a reset property is discovered, then use it to deassert, thus
+    bringing the IP out of reset.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit e54c70f94ed8f2901c0b9c426b99205e94ace7ac
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Sat Sep 28 23:38:48 2019 +0800
+
+    mtd: nand: denali: Add SPL image loader
+    
+    Add image loader used by the NAND SPL into the full Denali NAND
+    driver. This allows usage of the full Denali NAND driver in SPL instead
+    of the reduced SPL-only version.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 4cbbcc374d14ae288190380240a45d1a5380b99f
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Sat Sep 28 22:57:54 2019 +0800
+
+    mtd: nand: Allow full NAND framework in SPL
+    
+    Add configuration option to compile the entire NAND framework into
+    U-Boot SPL. This is required by some drivers, like the Denali NAND,
+    which use a lot of functionality from the NAND core.
+    
+    Signed-off-by: Marek Vasut <marex@denx.de>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 2610d42dca95ee5ae44b390679f17f5f4ddd7809
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Sep 25 22:46:35 2019 +0800
+
+    ARM: socfpga: Add NAND register address and data register
+    
+    These are required by NAND init in SPL.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 6e17c29ddb87e138fdb40903a465a145878caba8
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Oct 7 17:46:45 2019 +0800
+
+    configs: remove "socfpga_arria10 #" prompt
+    
+    Using default prompt "=>" instead of "socfpga_arria10 #" across all the
+    platforms for consistency.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2019.06-yocto2.7
+
+commit e0bd3ff00b5a059f13ea2a744bce63b1afe8a9a5
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Wed Oct 16 10:24:00 2019 +0800
+
+    add jffs2 for socfpga_armv8a.inc
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+commit 90ecd11ff0a34762da3490bec47fff72ca213793
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Wed Oct 16 10:20:42 2019 +0800
+
+    add JFFS2 build option to sstratix10 and agilex
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+commit 2b1e26f25c90353f7109c4ba0209996a98fa45ea
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Wed Oct 16 10:19:19 2019 +0800
+
+    Add QSPI JFFS2 option to agilex and stratix10
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of arm-trusted-firmware branch socfpga_v2.1
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of uefi-socfpga branch socfpga_udk201905
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of edk2-platforms-socfpga branch socfpga_udk201905
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+

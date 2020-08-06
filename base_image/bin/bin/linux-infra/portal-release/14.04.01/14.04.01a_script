@@ -1,0 +1,46 @@
+#/bin/bash -ex
+
+# ------------------- linux-socfpga -------------------------
+cd /home/atull/repos/internal/linux-socfpga
+
+git push origin rel_socfpga-3.13_14.04.01:refs/tags/rel_socfpga-3.13_14.04.01
+git push portal rel_socfpga-3.13_14.04.01:refs/tags/rel_socfpga-3.13_14.04.01
+git push portal rel_socfpga-3.13_14.04.01:refs/heads/socfpga-3.13
+
+git push origin rel_socfpga-3.10-ltsi_14.04.01:refs/tags/rel_socfpga-3.10-ltsi_14.04.01
+git push portal rel_socfpga-3.10-ltsi_14.04.01:refs/tags/rel_socfpga-3.10-ltsi_14.04.01
+git push portal rel_socfpga-3.10-ltsi_14.04.01:refs/heads/socfpga-3.10-ltsi
+
+git push origin rel_socfpga-3.9-rel-amp_14.04.01:refs/tags/rel_socfpga-3.9-rel-amp_14.04.01
+git push portal rel_socfpga-3.9-rel-amp_14.04.01:refs/tags/rel_socfpga-3.9-rel-amp_14.04.01
+git push portal rel_socfpga-3.9-rel-amp_14.04.01:refs/heads/socfpga-3.9-rel-amp
+
+
+# ------------------- uboot-socfpga -------------------------
+cd /home/atull/repos/internal/uboot-socfpga
+
+git push origin rel_socfpga_v2013.01.01_14.04.01:refs/tags/rel_socfpga_v2013.01.01_14.04.01
+git push portal rel_socfpga_v2013.01.01_14.04.01:refs/tags/rel_socfpga_v2013.01.01_14.04.01
+git push portal rel_socfpga_v2013.01.01_14.04.01:refs/heads/socfpga_v2013.01.01
+
+git push origin rel_socfpga_v2013.01.01-rel-amp_14.04.01:refs/tags/rel_socfpga_v2013.01.01-rel-amp_14.04.01
+git push portal rel_socfpga_v2013.01.01-rel-amp_14.04.01:refs/tags/rel_socfpga_v2013.01.01-rel-amp_14.04.01
+git push portal rel_socfpga_v2013.01.01-rel-amp_14.04.01:refs/heads/socfpga_v2013.01.01-rel-amp
+
+
+# ------------------- poky -------------------------
+cd /home/atull/repos/internal/poky
+
+git push origin rel_danny-altera-rel-amp_14.04.01:refs/tags/rel_danny-altera-rel-amp_14.04.01
+git push portal rel_danny-altera-rel-amp_14.04.01:refs/tags/rel_danny-altera-rel-amp_14.04.01
+git push portal rel_danny-altera-rel-amp_14.04.01:refs/heads/danny-altera-rel-amp
+
+
+# ------------------- openmcapi -------------------------
+cd /home/atull/repos/internal/openmcapi
+
+git push origin rel_socfpga-1.0_14.04.01:refs/tags/rel_socfpga-1.0_14.04.01
+git push portal rel_socfpga-1.0_14.04.01:refs/tags/rel_socfpga-1.0_14.04.01
+git push portal rel_socfpga-1.0_14.04.01:refs/heads/socfpga-1.0
+
+

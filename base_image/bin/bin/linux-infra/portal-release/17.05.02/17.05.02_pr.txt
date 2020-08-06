@@ -1,0 +1,175 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.9
+branch tag  : rel_socfpga-4.9_17.05.02_pr
+new commits : 4
+e4c2b71 Alan Tull FogBugz #458420-2: ARM: dts: add lcd character panel
+188c10f Alan Tull FogBugz #458420-1: dts: arria10 socdk: add max1619
+0301b76 Dinh Nguyen ARM: dts: socfpga: set the i2c frequency
+3aa7a6d Dinh Nguyen ARM: dts: socfpga: set desired i2c clock on Cyclone5 and Arria5 devkits
+
+
+++wiki:
+*Branch name*: socfpga-4.9, *Tag name:* rel_socfpga-4.9_17.05.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 458420-2 | ARM: dts: add lcd character panel | [[ https://github.com/altera-opensource/linux-socfpga/commit/e4c2b71c147dc27da7dc1d5595f2f47c99d17b2f ][ e4c2b71c147dc27da7dc1d5595f2f47c99d17b2f ]] |
+| 458420-1 | dts: arria10 socdk: add max1619 | [[ https://github.com/altera-opensource/linux-socfpga/commit/188c10fb718cf1bdd4d1968fe11c2d5e72bb7a3a ][ 188c10fb718cf1bdd4d1968fe11c2d5e72bb7a3a ]] |
+| community | ARM: dts: socfpga: set the i2c frequency | [[ https://github.com/altera-opensource/linux-socfpga/commit/0301b76715fcbc6ceef2d60cb224a5c967c639da ][ 0301b76715fcbc6ceef2d60cb224a5c967c639da ]] |
+| community | ARM: dts: socfpga: set desired i2c clock on Cyclone5 and Arria5 devkits | [[ https://github.com/altera-opensource/linux-socfpga/commit/3aa7a6d3491dd8618c75bdcd8b8a32075c2157b1 ][ 3aa7a6d3491dd8618c75bdcd8b8a32075c2157b1 ]] |
+--wiki:
+
+
+branch      : socfpga-4.10
+branch tag  : rel_socfpga-4.10_17.05.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.05.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.05.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.9_17.05.02_pr
+commit: e4c2b71 Alan Tull FogBugz #458420-2: ARM: dts: add lcd character panel
+
+tag:    rel_socfpga-4.10_17.05.02_pr
+commit: f092d4a Alan Tull FogBugz #458420-2: ARM: dts: add lcd character panel
+
+tag:    rel_socfpga-4.1.33-ltsi_17.05.02_pr
+commit: 7656aaf Jia Jie Ho ARM: socfpga: updates for socfpga_defconfig
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.05.02_pr
+commit: 3b605d2 Dan Carpenter ARM: socfpga: checking the wrong variable
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.05.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.05.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.05.02_pr
+commit: 95ab599 Chin Liang See FogBugz #385884: Configuring SDRAM extra cycles on timing parameters
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.05.02_pr
+commit: 077e579 Tien Fong Chee FogBugz #452575: Restore s2f warm reset mask bit to user setting
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.05.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.05.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.05.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.05.02_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.05.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.05.02_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9
+
+commit e4c2b71c147dc27da7dc1d5595f2f47c99d17b2f
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue May 2 10:38:18 2017 -0500
+
+    FogBugz #458420-2: ARM: dts: add lcd character panel
+    
+    Add Newhaven 2x16 character lcd panel for cyclone5, arria5, and
+    arria10 socdk.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 188c10fb718cf1bdd4d1968fe11c2d5e72bb7a3a
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue May 2 11:14:14 2017 -0500
+
+    FogBugz #458420-1: dts: arria10 socdk: add max1619
+    
+    Add max1619
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 0301b76715fcbc6ceef2d60cb224a5c967c639da
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue May 9 09:21:08 2017 -0500
+
+    ARM: dts: socfpga: set the i2c frequency
+    
+    Use 'clock-frequency' binding for the i2c node that will put the I2C driver
+    into the standard operating mode. 'speed-mode' was not a valid binding for
+    the I2C driver, remove it.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 3aa7a6d3491dd8618c75bdcd8b8a32075c2157b1
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Dec 13 16:52:11 2016 -0600
+
+    ARM: dts: socfpga: set desired i2c clock on Cyclone5 and Arria5 devkits
+    
+    The I2C LCD display on the Cyclone5 and Arria5 devkits is only capable of
+    the standard 100 kHz clock. Set the "clock-frequency" of the I2C node
+    to be 100000.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+

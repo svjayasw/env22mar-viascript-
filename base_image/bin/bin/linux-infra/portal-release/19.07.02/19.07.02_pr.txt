@@ -1,0 +1,471 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Richard
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-5.0
+branch tag  : rel_socfpga-5.0_19.07.02_pr
+new commits : 0
+
+
+branch      : socfpga-5.1
+branch tag  : rel_socfpga-5.1_19.07.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.14.73-ltsi
+branch tag  : rel_socfpga-4.14.73-ltsi_19.07.02_pr
+new commits : 3
+d6b8a5d Dinh Nguyen reset: socfpga: add an early reset driver for SoCFPGA
+403d6b41 Philipp Zabel reset: socfpga: use the reset-simple driver
+157fc5d Philipp Zabel reset: add reset-simple to unify socfpga, stm32, sunxi, and zx2967
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.14.73-ltsi *Tag name:* rel_socfpga-4.14.73-ltsi_19.07.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | reset: socfpga: add an early reset driver for SoCFPGA | [[ https://github.com/altera-opensource/linux-socfpga/commit/d6b8a5d4b162e7b67f73fc1cd69d8c69c895d787 ][ d6b8a5d4b162e7b67f73fc1cd69d8c69c895d787 ]] |
+| community | reset: socfpga: use the reset-simple driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/403d6b41c77f4958594e6cfde934f1c9006d7642 ][ 403d6b41c77f4958594e6cfde934f1c9006d7642 ]] |
+| community | reset: add reset-simple to unify socfpga, stm32, sunxi, and zx2967 | [[ https://github.com/altera-opensource/linux-socfpga/commit/157fc5d3433275d933468e285897a56a6c89be80 ][ 157fc5d3433275d933468e285897a56a6c89be80 ]] |
+--wiki:
+
+
+branch      : socfpga-4.14.73-ltsi-rt
+branch tag  : rel_socfpga-4.14.73-ltsi-rt_19.07.02_pr
+new commits : 3
+d28435f Dinh Nguyen reset: socfpga: add an early reset driver for SoCFPGA
+343c939 Philipp Zabel reset: socfpga: use the reset-simple driver
+39afcb6 Philipp Zabel reset: add reset-simple to unify socfpga, stm32, sunxi, and zx2967
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.14.73-ltsi-rt *Tag name:* rel_socfpga-4.14.73-ltsi-rt_19.07.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | reset: socfpga: add an early reset driver for SoCFPGA | [[ https://github.com/altera-opensource/linux-socfpga/commit/d28435f2010b6fa334bd6abe709f7cd890ccc22c ][ d28435f2010b6fa334bd6abe709f7cd890ccc22c ]] |
+| community | reset: socfpga: use the reset-simple driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/343c93981e5d494cbe3a10666c325e13525e3650 ][ 343c93981e5d494cbe3a10666c325e13525e3650 ]] |
+| community | reset: add reset-simple to unify socfpga, stm32, sunxi, and zx2967 | [[ https://github.com/altera-opensource/linux-socfpga/commit/39afcb61e30a9e9dc992a5f4404fd30f81b3cda9 ][ 39afcb61e30a9e9dc992a5f4404fd30f81b3cda9 ]] |
+--wiki:
+
+
+Tags pushed out to external git:
+tag:    rel_socfpga-5.0_19.07.02_pr
+commit: bc95527 Dinh Nguyen net: stmmac: socfpga: add RMII phy mode
+
+tag:    rel_socfpga-5.1_19.07.02_pr
+commit: 603903e Ley Foon Tan PCI: altera: Fix configuration type based on secondary number
+
+tag:    rel_socfpga-4.14.73-ltsi_19.07.02_pr
+commit: d6b8a5d Dinh Nguyen reset: socfpga: add an early reset driver for SoCFPGA
+
+tag:    rel_socfpga-4.14.73-ltsi-rt_19.07.02_pr
+commit: d28435f Dinh Nguyen reset: socfpga: add an early reset driver for SoCFPGA
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.07.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.07.02_pr
+new commits : 1
+f7a7e26 Tien Fong Chee net: A10: Use packed structures for networking
+
+
+++wiki:
+*Repo name*: u-boot-socfpga *Branch name*: socfpga_v2014.10_arria10_bringup *Tag name:* rel_socfpga_v2014.10_arria10_bringup_19.07.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | net: A10: Use packed structures for networking | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/f7a7e26db7a0653bdd607cb8f38cc731efe347f1 ][ f7a7e26db7a0653bdd607cb8f38cc731efe347f1 ]] |
+--wiki:
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.07.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_socfpga_v2013.01.01_19.07.02_pr
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.07.02_pr
+commit: f7a7e26 Tien Fong Chee net: A10: Use packed structures for networking
+
+tag:    rel_socfpga_v2017.09_19.07.02_pr
+commit: 18ae54b radu bacrau HSD #1408910499: Additional support for RSU_NOTIFY
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.07.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_19.07.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.07.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.07.02_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.07.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_19.07.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.07.02_pr
+new commits : 3
+1542337 Ong, Hean Loong change socfpga_cyclone5_de0_sockit.dtb for cyclone5
+637accd Ong, Hean Loong update 4.14.73-ltsi commit 57d7c2d9
+c7054d8 Ong, Hean Loong update build to kraj/meta-altera latest
+
+
+++wiki:
+*Repo name*: meta-altera *Branch name*: angstrom-v2018.06-yocto2.5 *Tag name:* rel_angstrom-v2018.06-yocto2.5_19.07.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | change socfpga_cyclone5_de0_sockit.dtb for cyclone5 | [[ https://github.com/altera-opensource/meta-altera/commit/15423377fd93d3642b9be44b64cfd56c84e84635 ][ 15423377fd93d3642b9be44b64cfd56c84e84635 ]] |
+| community | update 4.14.73-ltsi commit 57d7c2d9 | [[ https://github.com/altera-opensource/meta-altera/commit/637accd328a8d55a840768c728178a369f3c86ce ][ 637accd328a8d55a840768c728178a369f3c86ce ]] |
+| community | update build to kraj/meta-altera latest | [[ https://github.com/altera-opensource/meta-altera/commit/c7054d84e64d717bd0642fe9273ba2ad33124bbd ][ c7054d84e64d717bd0642fe9273ba2ad33124bbd ]] |
+--wiki:
+
+
+Tags pushed out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.07.02_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_19.07.02_pr
+commit: 3a47b14 Ong, Hean Loong update 4.9.78-ltsi to commit ID 5704788
+
+tag:    rel_angstrom-v2018.06-yocto2.5_19.07.02_pr
+commit: 1542337 Ong, Hean Loong change socfpga_cyclone5_de0_sockit.dtb for cyclone5
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.07.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_master_19.07.02_pr
+commit: 0a0715f David Koltak FogBugz #592404-4: Add raw slot data commands to example
+
+
+-----------------------------------------------------------------------
+
+repository: arm-trusted-firmware
+
+branch      : socfpga_v1.4
+branch tag  : rel_socfpga_v1.4_19.07.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_socfpga_v1.4_19.07.02_pr
+commit: fd4f92c Loh Tien Hock libc: armclang: Implement compiler printf symbols
+
+
+-----------------------------------------------------------------------
+
+repository: uefi-socfpga
+
+branch      : socvp_socfpga_udk2015
+branch tag  : rel_socvp_socfpga_udk2015_19.07.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_socvp_socfpga_udk2015_19.07.02_pr
+commit: 475bea4 Loh Tien Hock AlteraPlatformPkg: Change memory base due for Linux's reserved space
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera-refdes
+
+branch      : master
+branch tag  : rel_master_19.07.02_pr
+new commits : 2
+b6f38b8 Ong, Hean Loong Address webserver issues for images
+beb060a Ong, Hean Loong add devmem2 into rootfs
+
+
+++wiki:
+*Repo name*: meta-altera-refdes *Branch name*: master *Tag name:* rel_master_19.07.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Address webserver issues for images | [[ https://github.com/altera-opensource/meta-altera-refdes/commit/b6f38b87fec34302245de4a9b409bda7841b8328 ][ b6f38b87fec34302245de4a9b409bda7841b8328 ]] |
+| community | add devmem2 into rootfs | [[ https://github.com/altera-opensource/meta-altera-refdes/commit/beb060aa8e089da0bffee205ff2a54207f4e546e ][ beb060aa8e089da0bffee205ff2a54207f4e546e ]] |
+--wiki:
+
+
+Tags pushed out to external git:
+tag:    rel_master_19.07.02_pr
+commit: b6f38b8 Ong, Hean Loong Address webserver issues for images
+
+
+-----------------------------------------------------------------------
+
+repository: linux-refdesigns
+
+branch      : master
+branch tag  : rel_master_19.07.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_master_19.07.02_pr
+commit: 769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi
+
+commit d6b8a5d4b162e7b67f73fc1cd69d8c69c895d787
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Nov 13 12:50:48 2018 -0600
+
+    reset: socfpga: add an early reset driver for SoCFPGA
+    
+    [Upstream commit b3ca9888f35fa6919569cf27c929dc0ac49e9716]
+    
+    Create a separate reset driver that uses the reset operations in
+    reset-simple. The reset driver for the SoCFPGA platform needs to
+    register early in order to be able bring online timers that needed
+    early in the kernel bootup.
+    
+    We do not need this early reset driver for Stratix10, because on
+    arm64, Linux does not need the timers are that in reset. Linux is
+    able to run just fine with the internal armv8 timer. Thus, we use
+    a new binding "altr,stratix10-rst-mgr" for the Stratix10 platform.
+    The Stratix10 platform will continue to use the reset-simple platform
+    driver, while the 32-bit platforms(Cyclone5/Arria5/Arria10) will use
+    the early reset driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    [p.zabel@pengutronix.de: fixed socfpga of_device_id in reset-simple]
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+
+commit 403d6b41c77f4958594e6cfde934f1c9006d7642
+Author: Philipp Zabel <p.zabel@pengutronix.de>
+Date:   Fri Aug 11 13:02:19 2017 +0200
+
+    reset: socfpga: use the reset-simple driver
+    
+    [Upstream commit adf20d7ce7c3591e049910c7760edd9c7da4a246]
+    
+    Add reset line status readback, inverted status support, and socfpga
+    device tree quirks to the simple reset driver, and use it to replace
+    the socfpga driver.
+    
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+
+commit 157fc5d3433275d933468e285897a56a6c89be80
+Author: Philipp Zabel <p.zabel@pengutronix.de>
+Date:   Fri Aug 11 12:58:43 2017 +0200
+
+    reset: add reset-simple to unify socfpga, stm32, sunxi, and zx2967
+    
+    [Upstream commit 81c22ad0cc7db056408d6089c9303b2f6e486518]
+    
+    Copy reusable parts from the sunxi driver, to add a driver for simple
+    reset controllers with reset lines that can be controlled by toggling
+    bits in exclusive, contiguous register ranges using read-modify-write
+    cycles under a spinlock.
+    
+    The following patches will replace compatible reset drivers with
+    reset-simple, extending it where necessary.
+    
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+    Reviewed-by: Alexandru Gagniuc <alex.g@adaptrum.com>
+    Reviewed-by: Chen-Yu Tsai <wens@csie.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi-rt
+
+commit d28435f2010b6fa334bd6abe709f7cd890ccc22c
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Nov 13 12:50:48 2018 -0600
+
+    reset: socfpga: add an early reset driver for SoCFPGA
+    
+    [Upstream commit b3ca9888f35fa6919569cf27c929dc0ac49e9716]
+    
+    Create a separate reset driver that uses the reset operations in
+    reset-simple. The reset driver for the SoCFPGA platform needs to
+    register early in order to be able bring online timers that needed
+    early in the kernel bootup.
+    
+    We do not need this early reset driver for Stratix10, because on
+    arm64, Linux does not need the timers are that in reset. Linux is
+    able to run just fine with the internal armv8 timer. Thus, we use
+    a new binding "altr,stratix10-rst-mgr" for the Stratix10 platform.
+    The Stratix10 platform will continue to use the reset-simple platform
+    driver, while the 32-bit platforms(Cyclone5/Arria5/Arria10) will use
+    the early reset driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    [p.zabel@pengutronix.de: fixed socfpga of_device_id in reset-simple]
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+
+commit 343c93981e5d494cbe3a10666c325e13525e3650
+Author: Philipp Zabel <p.zabel@pengutronix.de>
+Date:   Fri Aug 11 13:02:19 2017 +0200
+
+    reset: socfpga: use the reset-simple driver
+    
+    [Upstream commit adf20d7ce7c3591e049910c7760edd9c7da4a246]
+    
+    Add reset line status readback, inverted status support, and socfpga
+    device tree quirks to the simple reset driver, and use it to replace
+    the socfpga driver.
+    
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+
+commit 39afcb61e30a9e9dc992a5f4404fd30f81b3cda9
+Author: Philipp Zabel <p.zabel@pengutronix.de>
+Date:   Fri Aug 11 12:58:43 2017 +0200
+
+    reset: add reset-simple to unify socfpga, stm32, sunxi, and zx2967
+    
+    [Upstream commit 81c22ad0cc7db056408d6089c9303b2f6e486518]
+    
+    Copy reusable parts from the sunxi driver, to add a driver for simple
+    reset controllers with reset lines that can be controlled by toggling
+    bits in exclusive, contiguous register ranges using read-modify-write
+    cycles under a spinlock.
+    
+    The following patches will replace compatible reset drivers with
+    reset-simple, extending it where necessary.
+    
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+    Reviewed-by: Alexandru Gagniuc <alex.g@adaptrum.com>
+    Reviewed-by: Chen-Yu Tsai <wens@csie.org>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit f7a7e26db7a0653bdd607cb8f38cc731efe347f1
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Fri Jun 28 12:46:01 2019 +0800
+
+    net: A10: Use packed structures for networking
+    
+    commit 704f3acfcf55343043bbed01c5fb0a0094a68e8a upstream
+    
+    U-Boot is broken with GCC version 7.3.1 20180612
+    (Sourcery CodeBench Lite 2018.05-12) due option '-fstore-merging'
+    enabled by default for '-O2':
+    
+    SOCFPGA_ARRIA10 # dhcp
+    dwmac.ff800000 Waiting for PHY auto negotiation to complete...... done
+    Speed: 1000, full duplex
+    BOOTP broadcast 1
+    data abort
+    pc : [<ffe13170>]	   lr : [<ffe13ccd>]
+    sp : 3fefee28  ip : 00000000	 fp : ffe23dec
+    r10: ffe25c44  r9 : ffe3aee8	 r8 : ffe23c9c
+    r7 : 0000000e  r6 : ffe23e18	 r5 : 00000000  r4 : ffe23e2e
+    r3 : 00060101  r2 : 00000008	 r1 : ffe23d5a  r0 : 00000000
+    Flags: nzCv  IRQs on  FIQs off  Mode SVC_32
+    Resetting CPU ...
+    
+    resetting ...
+    
+    Core reason is usage of structures for network headers without packed
+    attribute so compiler generates code that results in an unaligned access
+    to the field of the structure.
+    
+    Signed-off-by: Denis Pynkin <denis.pynkin@collabora.com>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2018.06-yocto2.5
+
+commit 15423377fd93d3642b9be44b64cfd56c84e84635
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Mon Jul 1 13:36:24 2019 +0800
+
+    change socfpga_cyclone5_de0_sockit.dtb for cyclone5
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+commit 637accd328a8d55a840768c728178a369f3c86ce
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Fri Jun 28 09:30:24 2019 +0800
+
+    update 4.14.73-ltsi commit 57d7c2d9
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+commit c7054d84e64d717bd0642fe9273ba2ad33124bbd
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Tue Jun 25 13:04:28 2019 +0800
+
+    update build to kraj/meta-altera latest
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera-refdes branch master
+
+commit b6f38b87fec34302245de4a9b409bda7841b8328
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Thu Jul 4 14:06:21 2019 +0800
+
+    Address webserver issues for images
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+commit beb060aa8e089da0bffee205ff2a54207f4e546e
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Fri Jun 28 09:11:29 2019 +0800
+
+    add devmem2 into rootfs
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+

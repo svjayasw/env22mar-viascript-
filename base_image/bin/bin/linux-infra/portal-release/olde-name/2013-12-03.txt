@@ -1,0 +1,371 @@
+This is a script-generated report of what will be pushed to the portal today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch socfpga-3.12 :
+Pushing new branch to rocketboards.org
+
+branch socfpga-3.11 :
+  new commits: 13
+a946a64 Thor Thayer FogBugz #165181: D_CAN stability improvement with 32b accesses
+9d2b7ee Matthew Gerlach FogBugz #168803: support to configure initial state of bridges
+23ccd05 Dinh Nguyen FogBugz #169263: Correct the parent clock for l3_sp_clk and dbg_clk
+09a3df6 Graham Moore FogBugz #166244: Compilation error in spi-dw-pl330.c
+afe4fbd Graham Moore FogBugz #166487: Support QSPI device DMA on SoCFPGA
+a1a817d Dinh Nguyen FogBugz #169068: Enable generic PHY and configfs in socfpga_defconfig
+0029427 Dinh Nguyen FogBugz #167813-2: Update the USB DTS entry to use the s3c-hsotg driver
+ab012fb Dinh Nguyen FogBugz #167813-1: Switch to use the s3c-hsotg USB driver for peripheral mode
+395a08b Kishon Vijay Abraham I drivers: phy: add generic PHY framework
+20ee571 Matt Porter usb: gadget: s3c-hsotg: enable generic phy support
+6ad7d38 Matt Porter usb: gadget: s3c-hsotg: add snps,dwc2 compatible string
+8c4bc03 Matt Porter usb: gadget: s3c-hsotg: enable build for other platforms
+aaeeb51 Tomasz Figa usb: gadget: s3c-hsotg: Allow driver instantiation using device tree
+
+
+branch socfpga-3.4-ltsi :
+  new commits: 0
+
+
+branch socfpga-3.9-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: uboot-socfpga
+
+branch socfpga_v2013.01.01 :
+  new commits: 4
+c62bd7d Chin Liang See FogBugz #158322: Adding Spansion flash support
+b8ec00a Chin Liang See FogBugz #161845: Fix build error when SDRAM ECC disabled and FAT enabled
+718318e Chin Liang See FogBugz #163901: Display message when watchdog is enabled
+976f078 Chin Liang See FogBugz #161193: Enhancing "bridge_enable_handoff" command
+
+
+branch socfpga_v2013.01.01-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: poky
+
+branch danny-altera :
+  new commits: 0
+
+
+branch danny-altera-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.12
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.11
+
+commit a946a643ef20e8d416a3824bd4379e21c6b6ac80
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Tue Nov 19 18:14:01 2013 -0600
+
+    FogBugz #165181: D_CAN stability improvement with 32b accesses
+    
+    This builds upon the D_CAN patch submitted by Benedikt Spranger
+    that suggested that D_CAN stability can be improved by using
+    32 bit accesses. The initial C_CAN driver uses 16 bit accesses
+    to match the C_CAN hardware. D_CAN has many of the same registers
+    and bits but the registers are 32 bit to support additional
+    functionality.
+    See initial patch and discussion at:
+    <http://thread.gmane.org/gmane.linux.network/282993/focus=3893>
+    
+    Improvements in performance include the following:
+    1) TX and RX statistics are now working.
+    2) Stability improvements at higher rates.
+    
+    V2:
+    - Include the link to the discussion.
+    - Change double 16b ARB register write to 32 bit write.
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit 9d2b7eef98df6023964ee64c5aca60afa03df55b
+Author: Matthew Gerlach <mgerlach@altera.com>
+Date:   Mon Nov 18 13:21:13 2013 -0800
+
+    FogBugz #168803: support to configure initial state of bridges
+    
+    This change adds support to the Altera fpga2sdram and hps2fgpa bridge
+    drivers for a new optional device tree property, init-val. This property
+    configures the driver to enable or disable the bridge when instantiated.
+    If the property does not exist, the driver will leave the bridge in
+    its current state.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@altera.com>
+
+commit 23ccd05c93cc0081ba47c75e860a1ebee91765cc
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Nov 20 09:39:17 2013 -0600
+
+    FogBugz #169263: Correct the parent clock for l3_sp_clk and dbg_clk
+    
+    The l3_sp_clk's parent should be the l3_mp_clk. This will account for
+    the extra divider that is present for the l3_mp_clk.
+    
+    The dbg_clk's parent should be the dbg_at_clk. This will account for
+    the extra divider that is present for the dbg_at_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 09a3df6664d97a815b125834fb62436851791e39
+Author: Graham Moore <grmoore@altera.com>
+Date:   Wed Nov 6 15:53:49 2013 -0600
+
+    FogBugz #166244: Compilation error in spi-dw-pl330.c
+    
+    Updated calls to device_prep_slave_sg() because the parameter list
+    had changed since the last time spi-dw-pl330.c was compiled.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit afe4fbdd973eb8095fe63a0e374423990d7e5b9e
+Author: Graham Moore <grmoore@altera.com>
+Date:   Thu Nov 7 11:32:07 2013 -0600
+
+    FogBugz #166487: Support QSPI device DMA on SoCFPGA
+    
+    Support for DMA transfers was added to the Cadence QSPI driver.
+    There is a fair amount of new code, but the flow of the driver
+    was minimally changed.
+    If the code is unable to initialize DMA channels, it falls
+    back to non-DMA operation.
+    Enabling of the DMA transfers is done through the device tree.
+    Peripheral Request IDs for the QSPI are specified in the device tree.
+    Device tree documentation was updated.
+    
+    V2:
+    Check error return from device_prep_slave_sg
+    Use #defines for request byte counts
+    Replaced pr_debug/pr_err with dev_dbg/dev_err
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit a1a817dec2b736ea4157e4004aa14d72184a75f7
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Nov 19 15:00:57 2013 -0600
+
+    FogBugz #169068: Enable generic PHY and configfs in socfpga_defconfig
+    
+    The USB peripheral driver requires the following defconfig turned on:
+    
+    CONFIG_USB_PHY=y
+    CONFIG_NOP_USB_XCEIV=y
+    CONFIG_GENERIC_PHY=y
+    CONFIG_CONFIGFS_FS=y
+    
+    Turn on all of the above in socfpga_defconfig, so when the user needs
+    USB peripheral mode, only CONFIG_USB_S3C_HSOTG needs to get turned on.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 00294275381d321418d69295f0355b2cb8550359
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Nov 12 14:47:59 2013 -0600
+
+    FogBugz #167813-2: Update the USB DTS entry to use the s3c-hsotg driver
+    
+    Add a "usb-nop-xceiv" PHY node that is needed to be used with the new
+    generic PHY driver that is from:
+    
+    [1790d80: drivers: phy: add generic PHY framework]
+    
+    Add a clock node for dwc2 usb dts entry, as the s3c-hsotg driver will need
+    to properly initialize. Remove dts bindings that were used by the old
+    dwc2 driver.
+    
+    To enable USB peripheral mode on SOCFPGA, build the kernel with the following
+    defconfig:
+    
+    CONFIG_USB_S3C_HSOTG=y
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit ab012fb2e3f5dffe4c9ef21594663aa06ec43b1a
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Nov 13 13:17:04 2013 -0600
+
+    FogBugz #167813-1: Switch to use the s3c-hsotg USB driver for peripheral mode
+    
+    The s3c-hsotg driver is compatible with the Designware dwc2 USB OTG core
+    that is on SOCFPGA. Switch over to use this driver as it is the mainline
+    kerne. The s3c-hsotg driver is much more robust and better supported than
+    the current version.
+    
+    This patch removes the old dwc2 driver from the repo.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    
+    Conflicts:
+    
+    	drivers/staging/dwc2/Kconfig
+
+commit 395a08bb8dd26a56ab9a7f1f10ecc80c1baca1ed
+Author: Kishon Vijay Abraham I <kishon@ti.com>
+Date:   Fri Sep 27 11:53:25 2013 +0530
+
+    drivers: phy: add generic PHY framework
+    
+    The PHY framework provides a set of APIs for the PHY drivers to
+    create/destroy a PHY and APIs for the PHY users to obtain a reference to the
+    PHY with or without using phandle. For dt-boot, the PHY drivers should
+    also register *PHY provider* with the framework.
+    
+    PHY drivers should create the PHY by passing id and ops like init, exit,
+    power_on and power_off. This framework is also pm runtime enabled.
+    
+    The documentation for the generic PHY framework is added in
+    Documentation/phy.txt and the documentation for dt binding can be found at
+    Documentation/devicetree/bindings/phy/phy-bindings.txt
+    
+    Cc: Tomasz Figa <t.figa@samsung.com>
+    Cc: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+    Signed-off-by: Kishon Vijay Abraham I <kishon@ti.com>
+    Acked-by: Felipe Balbi <balbi@ti.com>
+    Tested-by: Sylwester Nawrocki <s.nawrocki@samsung.com>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 20ee57122baae634da3adc6b8e29150416572fe5
+Author: Matt Porter <matt.porter@linaro.org>
+Date:   Tue Nov 12 14:44:10 2013 -0600
+
+    usb: gadget: s3c-hsotg: enable generic phy support
+    
+    Adds support for the generic PHY subsystem. Generic PHY
+    support is probed and then the driver falls back to checking
+    for an old style USB PHY and pdata if not found.
+    
+    Signed-off-by: Matt Porter <matt.porter@linaro.org>
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    
+    Conflicts:
+    
+    	drivers/usb/gadget/s3c-hsotg.c
+
+commit 6ad7d3883af84abd8d68263a7175ff634b632daf
+Author: Matt Porter <matt.porter@linaro.org>
+Date:   Tue Nov 12 14:43:00 2013 -0600
+
+    usb: gadget: s3c-hsotg: add snps,dwc2 compatible string
+    
+    Enable support for the dwc2 binding.
+    
+    Signed-off-by: Matt Porter <matt.porter@linaro.org>
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 8c4bc0325ea5137f8d515cc66188dd6ef0da2363
+Author: Matt Porter <matt.porter@linaro.org>
+Date:   Tue Nov 12 14:42:01 2013 -0600
+
+    usb: gadget: s3c-hsotg: enable build for other platforms
+    
+    Remove unused Samsung-specific machine include and Kconfig
+    dependency on S3C.
+    
+    Signed-off-by: Matt Porter <matt.porter@linaro.org>
+    Reviewed-by: Markus Mayer <markus.mayer@linaro.org>
+    Reviewed-by: Tim Kryger <tim.kryger@linaro.org>
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit aaeeb518c8b60334b740fd5336ddb2b0f72091bc
+Author: Tomasz Figa <t.figa@samsung.com>
+Date:   Tue Jun 25 17:38:23 2013 +0200
+
+    usb: gadget: s3c-hsotg: Allow driver instantiation using device tree
+    
+    This patch adds OF match table to the driver to allow instantiating it
+    using device tree.
+    
+    Signed-off-by: Tomasz Figa <t.figa@samsung.com>
+    Signed-off-by: Kyungmin Park <kyungmin.park@samsung.com>
+    Signed-off-by: Felipe Balbi <balbi@ti.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit c62bd7dea69f3193e471f66bbc2f1a06ce91186b
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Dec 2 13:46:37 2013 -0800
+
+    FogBugz #158322: Adding Spansion flash support
+    
+    This is to enable the Spansion flash support for QSPI boot. The MTD
+    SPI driver will auto call the Spansion flash driver when the detected
+    flash is Spansion flash. It is part of default configuration now as
+    some customers are using Spansion flash.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit b8ec00a0613b0b861469ac026bb868a450a66cc0
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Dec 2 12:47:55 2013 -0800
+
+    FogBugz #161845: Fix build error when SDRAM ECC disabled and FAT enabled
+    
+    To fix the build error during the comhination where SDRAM ECC is
+    disabled and Preloader FAT support is enabled. The SDRAM ECC padding
+    is not required when the SDRAM ECC is disabled.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 718318e466ff4f5e4d2b475cd389c76f83537f6c
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Dec 2 12:45:02 2013 -0800
+
+    FogBugz #163901: Display message when watchdog is enabled
+    
+    This is to display a message at UART terminal when the watchdog
+    is enabled. It will remind user the possibility of system reset
+    caused by watchdog timeout.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 976f078cc81f23ff5d4d99e58dbc1a7b96a73770
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Nov 27 06:40:33 2013 -0800
+
+    FogBugz #161193: Enhancing "bridge_enable_handoff" command
+    
+    Bridge_enable_handoff command is used to enable all the bridges
+    based on handoff values. It took place after the FPGA programming.
+    This enhancement will remove all memory display commands as
+    they will trigger data abort if user press enter many times
+    after run bridge_enable_handoff.
+    
+    The data abort is caused by U-Boot memory display features which
+    will auto increment the address after user press enter later on.
+    When this happen, the memory display command will display next
+    address which are not a valid address and causing data abort.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+

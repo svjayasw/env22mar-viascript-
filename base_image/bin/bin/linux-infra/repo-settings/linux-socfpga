@@ -1,0 +1,13 @@
+repo_path: /usr/local/git/repositories/linux-socfpga.git
+update_tests: nomerge header checkpatch copyright_year license_linux_kernel_gplv2
+email: thor.thayer@intel.com dinh.nguyen@intel.com
+sync-job: linux
+local_upstream:
+crucible_project: linux-socfpga
+internal_git: gitolite@at-git:linux-socfpga.git
+external_git: gitolite@silentsoc.org:linux-socfpga.git
+upstream_branches: master linux-[3-9]\.[0-9]{1,2}\.y
+release_branch: socfpga-3.9
+upstream_tag_regex: v3.6$
+review_addrs: dinh.nguyen@intel.com ley.foon.tan@intel.com chin.liang.see@intel.com christopher.chun.yee.tan@intel.com tien.hock.loh@intel.com thor.thayer@intel.com richard.gong@intel.com
+

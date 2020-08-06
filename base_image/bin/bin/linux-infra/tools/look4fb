@@ -1,0 +1,76 @@
+#!/bin/bash
+
+# Small script to look for fogbugz numbers on linux-socfpga git repo's origin/socfpga-* branches
+
+usage()
+{
+    cat <<EOF
+usage:
+  $(basename $0) [123456|lala.patch]
+     where
+      * 123456     = a FogBugz number or
+      * lala.patch = a patch.  Script will get FogBugz # from patch if it has one.
+
+  $(basename $0) will look for a FogBugz number on all the origin/socfpga-* branches
+  of the linux-socfpga repository.
+EOF
+    exit
+}
+
+git_base_branches()
+{
+    git branch -r | grep $REMOTE_SJ_GIT/socfpga-
+}
+
+look_from_base()
+{
+    base_br=$1
+    fb=$2
+
+    base_ver="$(git describe $base_br | cut -d- -f1 2>/dev/null)"
+    if [ -z "$base_ver" ]; then
+	echo "Could not determine base kernel version of branch $base_br"
+	echo "Are you in a kernel git repository?"
+	exit
+    fi
+
+     git log --pretty=format:'%h  %s' ${base_ver}..${base_br} | grep $fb
+}
+
+#=====================================================================================
+
+if [ -z "$1" ] || [ "$1" = '-h' ] || [ "$1" = '--help' ]; then
+    usage
+fi
+
+if [ -f "$1" ]; then
+    fb="$(grep FogBugz $1 | sed -r 's/.*FogBugz #([0-9]*):.*/\1/')"
+    if [ -z "$1" ]; then
+	echo "Could not find FogBugz number in file $1"
+	exit
+    fi
+else
+    fb=$1
+fi
+
+REMOTE_SJ_GIT="$(git remote -v | grep 'gitolite@at-git:linux-socfpga ' | head -1 | cut -f1 )"
+if [ -z "$REMOTE_SJ_GIT" ]; then
+    echo "could not determine which of your remotes is at-git"
+    git remote -v
+    exit
+fi
+
+if [ -z "$fb" ]; then
+    echo "need to specify FB number"
+    exit
+fi
+
+#echo "looking for FogBugz #$fb in $REMOTE_SJ_GIT"
+
+for base in $(git_base_branches); do
+    commit="$(look_from_base $base $fb)"
+    if [ -n "$commit" ]; then
+	printf "%-25s %s\n" "$base" "$commit"
+    fi
+done
+

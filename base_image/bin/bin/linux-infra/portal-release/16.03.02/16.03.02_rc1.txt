@@ -1,0 +1,160 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.4
+branch tag  : rel_socfpga-4.4_16.03.02_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_16.03.02_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_16.03.02_rc1
+new commits : 0
+
+
+branch      : socfpga-4.1-ltsi
+branch tag  : rel_socfpga-4.1-ltsi_16.03.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.4_16.03.02_rc1
+commit: fec26ca Alan Tull socfpga_defconfig: enable fpga overlay support
+
+tag:    rel_socfpga-3.10-ltsi_16.03.02_rc1
+commit: 28bac3e Thor Thayer FogBugz #350137: Fix A10SyCon Button Export Crash
+
+tag:    rel_socfpga-3.10-ltsi-rt_16.03.02_rc1
+commit: 5d6c0ba Ley Foon Tan FogBugz #349590: arm:socfpga: fix memory leak in socfpga_cti
+
+tag:    rel_socfpga-4.1-ltsi_16.03.02_rc1
+commit: 1224831 Graham Moore FogBugz #358986: qspi stack trace with 4.1-ltsi Linux kernel
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.03.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.03.02_rc1
+new commits : 2
+e230d2d Chin Liang See FogBugz #358687: Disable NOC timeout in A10 SoC
+8642258 Chin Liang See FogBugz #299034: Configure Clock Manager to use intosc
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.03.02_rc1
+commit: d141e21 Chin Liang See arm: Switch to -mno-unaligned-access when supported by the compiler
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.03.02_rc1
+commit: e230d2d Chin Liang See FogBugz #358687: Disable NOC timeout in A10 SoC
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.03.02_rc1
+new commits : 1
+0a2c33d Tien Hock Loh FogBugz #338393: PCIe: Update meta-altera-refdes commit ID
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.03.02_rc1
+commit: 0a2c33d Tien Hock Loh FogBugz #338393: PCIe: Update meta-altera-refdes commit ID
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.03.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.03.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.03.02_rc1
+commit: 8d6e9b4 Yves Vandervennet Support for the kernel v4.3
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.03.02_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit e230d2d5beca1255754d3096929f50df2dc423a4
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Feb 23 23:14:45 2016 +0800
+
+    FogBugz #358687: Disable NOC timeout in A10 SoC
+    
+    Disable NOC timeout that was left enabled by the function
+    reset_assert_all_bridges. The timeout is needed within that
+    function to shorten amount of time for idleack polling.
+    
+    After the initialization, NOC timeout needs to be disabled.
+    This is to cater the scenario of long response time needed
+    by slow peripherals that reside in FPGA fabric.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 8642258ac3920c6951ee3fa5a018b0b44fc3cf30
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Feb 18 23:59:00 2016 +0800
+
+    FogBugz #299034: Configure Clock Manager to use intosc
+    
+    Configure the Clock Manager to use internal oscillator
+    instead external oscillator. This to enable reliable
+    watchdog reset operation.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+log of angstrom-socfpga branch angstrom-v2014.12-socfpga
+
+commit 0a2c33dbc636dc02049cfb77f73132d70b36c183
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Fri Dec 18 18:15:49 2015 +0800
+
+    FogBugz #338393: PCIe: Update meta-altera-refdes commit ID
+    
+    This is to update the commit ID of meta-altera-refdes to add fio
+    to pcie-console-image
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+    
+    Conflicts:
+    	sources/layers.txt
+
+-----------------------------------------------------------------------
+

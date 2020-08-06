@@ -1,0 +1,24 @@
+/home/atull/repos/internal/meta-altera
+ba26fa3 Tien Hock Loh : FogBugz #: Remove all GSRD contents from meta-alteraTo git@github.com:altera-opensource/meta-altera
+ * [new tag]         ACDS15.0.1_REL_GSRD_PR -> ACDS15.0.1_REL_GSRD_PR
+Everything up-to-date
+
+/home/atull/repos/internal/linux-socfpga
+c8b20a4 VIET NGA DAO : FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree BindingTo git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         ACDS15.0.1_REL_GSRD_PR -> ACDS15.0.1_REL_GSRD_PR
+Everything up-to-date
+
+/home/atull/repos/internal/linux-refdesigns
+e06d1b3 Tien Hock Loh : FogBugz #295730: Add system checking applicationTo git@github.com:altera-opensource/linux-refdesigns.git
+ * [new tag]         ACDS15.0.1_REL_GSRD_PR -> ACDS15.0.1_REL_GSRD_PR
+Everything up-to-date
+
+/home/atull/repos/internal/angstrom-socfpga
+a3174a6 Tien Hock Loh : FogBugz #298120: Update GSRD's branch to 15.0.1To git@github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         ACDS15.0.1_REL_GSRD_PR -> ACDS15.0.1_REL_GSRD_PR
+Everything up-to-date
+
+/home/atull/repos/internal/meta-altera-refdes
+e076db1 Tien Hock Loh : FogBugz #295954: Update GSRD to github and 15.0.1 branchTo git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         ACDS15.0.1_REL_GSRD_PR -> ACDS15.0.1_REL_GSRD_PR
+Everything up-to-date

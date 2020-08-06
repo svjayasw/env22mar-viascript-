@@ -1,0 +1,419 @@
+
+Script-generated report of what we tagged today in internal git.
+These rc tags/branches will retagged as pr and pushed to the portal in two weeks.
+
+
+Richard
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-5.1
+branch tag  : rel_socfpga-5.1_19.10.01_rc1
+new commits : 0
+
+
+branch      : socfpga-5.2
+branch tag  : rel_socfpga-5.2_19.10.01_rc1
+new commits : 8
+b8028ba Dinh Nguyen arm64: dts: agilex/stratix10: add reset property to the DMA node
+bca7e93 Dinh Nguyen arm64: dts: agilex: populate clock dts entries for Intel SoCFPGA Agilex
+758682c Dinh Nguyen clk: socfpga: agilex: add clock driver for the Agilex platform
+c5ffb3b Dinh Nguyen dt-bindings: documentation: add clock bindings information for Agilex
+0da6664 DINH L NGUYEN ARM: 8906/1: drivers/amba: add reset control to amba bus probe
+5b8f334 Dinh Nguyen Revert "drivers/amba: add reset control to amba bus probe"
+93e9339 Jayachandran C arm64: Improve parking of stopped CPUs
+588a283 Thor Thayer HSD #1806784746: EDAC/altera: Warm Reset option S10 DBE
+
+
+branch      : socfpga-4.14.130-ltsi
+branch tag  : rel_socfpga-4.14.130-ltsi_19.10.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.14.126-ltsi-rt
+branch tag  : rel_socfpga-4.14.126-ltsi-rt_19.10.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socfpga-5.1_19.10.01_rc1
+commit: 5c21be7 Dinh Nguyen clk: socfpga: stratix10: fix rate caclulationg for cnt_clks
+
+tag:    rel_socfpga-5.2_19.10.01_rc1
+commit: b8028ba Dinh Nguyen arm64: dts: agilex/stratix10: add reset property to the DMA node
+
+tag:    rel_socfpga-4.14.130-ltsi_19.10.01_rc1
+commit: 567dd6b Dinh Nguyen HSD #1707052006: Add initial support for Agilex devkit
+
+tag:    rel_socfpga-4.14.126-ltsi-rt_19.10.01_rc1
+commit: 12c13b0 Dinh Nguyen HSD #1707052006: Add initial support for Agilex devkit
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.10.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.10.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.10.01_rc1
+new commits : 4
+6378ede Thor Thayer HSD #1806784746-6: Add CONFIG for Double Bit ECC
+1982c20 Thor Thayer HSD #1806784746-5: Use RESET2 for DBE Warm Reset
+e8f4c39 Thor Thayer HSD #1806784746-4: S10: DBE handle non-DBE CPUs
+9e96088 radu bacrau HSD #1707046651: Add support for RSU Retry
+
+
+branch      : socfpga_v2019.04
+branch tag  : rel_socfpga_v2019.04_19.10.01_rc1
+new commits : 1
+52f13ed radu bacrau HSD #1707046651: Add support for RSU Retry
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v2013.01.01_19.10.01_rc1
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.10.01_rc1
+commit: f7a7e26 Tien Fong Chee net: A10: Use packed structures for networking
+
+tag:    rel_socfpga_v2017.09_19.10.01_rc1
+commit: 6378ede Thor Thayer HSD #1806784746-6: Add CONFIG for Double Bit ECC
+
+tag:    rel_socfpga_v2019.04_19.10.01_rc1
+commit: 52f13ed radu bacrau HSD #1707046651: Add support for RSU Retry
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.10.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2014.12-socfpga_19.10.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.10.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.10.01_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.10.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2019.06-yocto2.7
+branch tag  : rel_angstrom-v2019.06-yocto2.7_19.10.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2018.06-yocto2.5_19.10.01_rc1
+commit: 2a4cadc Ong, Hean Loong update to linux-altera-ltsi_4.14.130
+
+tag:    rel_angstrom-v2019.06-yocto2.7_19.10.01_rc1
+commit: a8a38ab Ong, Hean Loong Add Image kernel type to socfpga.inc
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.10.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.10.01_rc1
+commit: 18dea93 radu bacrau HSD #1707061410: Add support for max_retry
+
+
+-----------------------------------------------------------------------
+
+repository: arm-trusted-firmware
+
+branch      : socfpga_v1.4
+branch tag  : rel_socfpga_v1.4_19.10.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v1.4_19.10.01_rc1
+commit: fd4f92c Loh Tien Hock libc: armclang: Implement compiler printf symbols
+
+
+-----------------------------------------------------------------------
+
+repository: uefi-socfpga
+
+branch      : socvp_socfpga_udk2015
+branch tag  : rel_socvp_socfpga_udk2015_19.10.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socvp_socfpga_udk2015_19.10.01_rc1
+commit: 475bea4 Loh Tien Hock AlteraPlatformPkg: Change memory base due for Linux's reserved space
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera-refdes
+
+branch      : master
+branch tag  : rel_master_19.10.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.10.01_rc1
+commit: 97e7d7a Ong, Hean Loong fix issue of lighttpd for yocto-warrior
+
+
+-----------------------------------------------------------------------
+
+repository: linux-refdesigns
+
+branch      : master
+branch tag  : rel_master_19.10.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.10.01_rc1
+commit: 769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-5.2
+
+commit b8028baa766609b23e57ecd0c54d8f85e772c0c0
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Sep 17 21:59:58 2019 -0500
+
+    arm64: dts: agilex/stratix10: add reset property to the DMA node
+    
+    Add property to the DMA node on the Agilex and Stratix10 platforms.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit bca7e93d46c2324e30cc15837c824a4b01d2d364
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Fri Aug 9 12:28:06 2019 -0700
+
+    arm64: dts: agilex: populate clock dts entries for Intel SoCFPGA Agilex
+    
+    [upstream commit 357fc0f53e984d943ace9d25b4da1d10f1935f5c]
+    
+    Add clock dts entries to the Intel SoCFPGA Agilex platform.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 758682c15a5a8cf201858d82dab69b51ecfd7ee6
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Apr 3 09:54:58 2019 -0500
+
+    clk: socfpga: agilex: add clock driver for the Agilex platform
+    
+    [upstream commit c46d40563183f0045378258b93e2ca8a1a8471aa]
+    
+    For the most part the Agilex clock structure is very similar to
+    Stratix10, so we re-use most of the Stratix10 clock driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit c5ffb3b502b9d7baf9432ed04271e486a5536aac
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Aug 20 20:37:50 2019 -0500
+
+    dt-bindings: documentation: add clock bindings information for Agilex
+    
+    [upstream commit cd2e1ad122471fcd475077531047b1c8ab8317e9]
+    
+    Document the Agilex clock bindings, and add the clock header file. The
+    clock header is an enumeration of all the different clocks on the Agilex
+    platform.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 0da66644cc7f059f25ccde5b1aea90db12eb9030
+Author: DINH L NGUYEN <dinguyen@kernel.org>
+Date:   Wed Sep 4 02:13:08 2019 +0100
+
+    ARM: 8906/1: drivers/amba: add reset control to amba bus probe
+    
+    [upstream commit 79bdcb202a35bf2701779afafa0db07e2852d46b]
+    
+    The primecell controller on some SoCs, i.e. SoCFPGA, is held in reset
+    by default. Until recently, the DMA controller was brought out of reset by the bootloader(i.e. U-Boot). But a recent change in U-Boot, the peripherals that are not used are held in reset and are left to Linux to bring them out of reset.
+    
+    Add a mechanism for getting the reset property and de-assert the primecell module from reset if found. This is a not a hard fail if the reset property is not present in the device tree node, so the driver will continue to probe.
+    
+    Because there are different variants of the controller that may have
+    multiple reset signals, the code will find all reset(s) specified and
+    de-assert them.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Reviewed-by: Rob Herring <robh@kernel.org>
+    Reviewed-by: Philipp Zabel <p.zabel@pengutronix.de>
+    Reviewed-by: Linus Walleij <linus.walleij@linaro.org>
+    Signed-off-by: Russell King <rmk+kernel@armlinux.org.uk>
+
+commit 5b8f334494f52f1091c3a15b40d07cebef112e93
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Sep 17 22:18:15 2019 -0500
+
+    Revert "drivers/amba: add reset control to amba bus probe"
+    
+    The upstream version of this patch is a better implementation, thus we
+    revert the original commit and backport the accepted upstream version.
+    
+    This reverts commit b3a97654bcf6d05fd8a75bcf09b5528bb2b98ec9.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 93e93396ac7074557184f98384a54dd1798676b2
+Author: Jayachandran C <jnair@caviumnetworks.com>
+Date:   Mon Jun 17 23:35:18 2019 +0300
+
+    arm64: Improve parking of stopped CPUs
+    
+    [upstream commit dccc9da22dedad203acea355b0e4d946b71172e5]
+    
+    The current code puts the stopped cpus in an 'yield' instruction loop.
+    Using a busy loop here is unnecessary, we can use the cpu_park_loop()
+    function here to do a wfi/wfe.
+    
+    Signed-off-by: Jayachandran C <jnair@caviumnetworks.com>
+    Signed-off-by: Aaro Koskinen <aaro.koskinen@nokia.com>
+    Acked-by: Will Deacon <will.deacon@arm.com>
+    Signed-off-by: Catalin Marinas <catalin.marinas@arm.com>
+
+commit 588a283b952a8c6f9ab64df056f5f5b7c36657d9
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Wed Jun 26 15:59:29 2019 -0500
+
+    HSD #1806784746: EDAC/altera: Warm Reset option S10 DBE
+    
+    The Stratix10 peripheral FIFO memories can recover from double
+    bit errors with a warm reset instead of a cold reset.
+    Add the option of a warm reset for peripheral (USB, Ethernet)
+    memories.
+    
+    CPU memories such as SDRAM and OCRAM require a cold reset for
+    DBEs.
+    Filter on whether the error is a SDRAM/OCRAM or a peripheral
+    FIFO memory to determine which reset to use when the warm
+    reset option is configured.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2 Add a cpu_park_loop() to catch if falls through.
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 6378ede3d80f53035bcfe31b18bd631f8dcb5845
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Sep 9 14:25:57 2019 -0500
+
+    HSD #1806784746-6: Add CONFIG for Double Bit ECC
+    
+    Add CONFIG to enable Double Bit Error Handling. Part
+    of this is alerting Linux to handle DBE as panic that
+    calls Warm Reset (RESET2).
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 1982c202951d48580e183d1aef7a805d2be35cc7
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Sep 9 14:23:37 2019 -0500
+
+    HSD #1806784746-5: Use RESET2 for DBE Warm Reset
+    
+    Add the DBE handling code to the RESET2 handler. DDR and
+    OCRAM need a cold reset but others should be warm reset.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2 Add while(1) after cold reset call to catch if fall-through
+    v3 Remove used #define
+
+commit e8f4c39cc39ee27db63a9cb523073db63146c087
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Thu Sep 5 14:21:25 2019 -0500
+
+    HSD #1806784746-4: S10: DBE handle non-DBE CPUs
+    
+    In the case of a DB ECC error, the non-interrupted CPUs
+    are sent to EL3. Capture them in a WFI loop.
+    Non-Interrupted CPUs are indicated with a flag.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2 Simplify conditional check
+    v3 Remove unused clobbered registers
+
+commit 9e96088feb650b1e84447725002ae146468d1f0c
+Author: radu bacrau <radu.bacrau@intel.com>
+Date:   Sun Sep 8 18:01:06 2019 +0000
+
+    HSD #1707046651: Add support for RSU Retry
+    
+    Updated the RSU retry support functions to match the LIBRSU implementation
+    and behavior: have an API in rsu.h/rsu.c for each function, and
+    error out when the API is not supported by current firmware version.
+    
+    Signed-off-by: Radu Bacrau <radu.bacrau@intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2019.04
+
+commit 52f13edf52574087bd9832b66c7c200631123ff3
+Author: radu bacrau <radu.bacrau@intel.com>
+Date:   Sun Sep 8 18:01:06 2019 +0000
+
+    HSD #1707046651: Add support for RSU Retry
+    
+    Updated the RSU retry support functions to match the LIBRSU implementation
+    and behavior: have an API in rsu.h/rsu.c for each function, and
+    error out when the API is not supported by current firmware version.
+    
+    Signed-off-by: Radu Bacrau <radu.bacrau@intel.com>
+
+-----------------------------------------------------------------------
+

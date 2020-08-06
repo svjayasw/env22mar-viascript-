@@ -1,0 +1,96 @@
+From atull@altera.com Tue Nov 11 10:03:42 2014
+Date: Tue, 11 Nov 2014 16:03:37 +0000
+From: Alan Tull <atull@altera.com>
+To: "atull@opensource.altera.com" <atull@opensource.altera.com>
+Subject: FW: GSRD 14.0.2 PR tags
+
+
+ 
+
+ 
+
+From: Chung Weng Gooi
+Sent: Tuesday, November 11, 2014 9:59 AM
+To: Alan Tull
+Cc: Yves Vandervennet; Tien Hock Loh
+Subject: RE: GSRD 14.0.2 PR tags
+
+ 
+
+Yes Alan. Let's push them as we expect tag to be pointing at items that are
+already out in the AT Git tree except for meta altera. Thanks.
+
+
+
+Sent with Good (www.good.com)
+
+
+-----Original Message-----
+From: Alan Tull
+Sent: Tuesday, November 11, 2014 11:05 PM Malay Peninsula Standard Time
+To: Chung Weng Gooi
+Cc: Yves Vandervennet; Tien Hock Loh
+Subject: RE: GSRD 14.0.2 PR tags
+
+
+Hi Gooi,
+
+ 
+
+Is it OK to push these tags?
+
+ 
+
+Alan
+
+ 
+
+From: Tien Hock Loh
+Sent: Tuesday, November 11, 2014 5:34 AM
+To: Alan Tull
+Cc: Yves Vandervennet; Chung Weng Gooi
+Subject: GSRD 14.0.2 PR tags
+
+ 
+
+Hi Alan,
+
+ 
+
+Need your help to push ACDS14.0.2_REL_GSRD_PR tags to the rocketboards GIT for
+the following GIT trees:
+
+1.       meta-altera, angstrom-v2013.12-yocto1.5_gsrd14.0.2,
+ACDS14.0.2_REL_GSRD_PR
+
+2.       linux-socfpga, socfpga-3.10-ltsi, ACDS14.0.2_REL_GSRD_PR
+
+3.       uboot-socfpga, socfpga_v2013.01.01, ACDS14.0.2_REL_GSRD_PR
+
+4.       linux-refdesigns , socfpga-14.0.2 , ACDS14.0.2_REL_GSRD_PR
+
+5.       angstrom-socfpga , angstrom-v2013.12-socfpga_gsrd14.0.2 ,
+ACDS14.0.2_REL_GSRD_PR
+
+ 
+
+The checklist can be found at
+https://sw-wiki.altera.com/twiki/bin/view/Software/GSRD_GIT_checklist
+
+ 
+
+Thanks
+
+ 
+
+
+________________________________________________________________________________
+
+Confidentiality Notice.
+This message may contain information that is confidential or otherwise protected
+from disclosure. If you are not the intended recipient, you are hereby notified
+that any use, disclosure, dissemination, distribution, or copying of this
+message, or any attachments, is strictly prohibited. If you have received this
+message in error, please advise the sender by reply e-mail, and delete the
+message and any attachments. Thank you.
+

@@ -1,0 +1,215 @@
+#!/bin/bash
+
+#  This script is our front-end to Virtual Machine Management.
+#! We currently rely on Virtual Box, but that may change in the future.
+#! Here are the requirements:
+#!  - start a VM
+#!   + by default, it clones the VM in some way (rsync or built-in clone of VB)
+#!  - poweoff a VM
+#!   + the VM will have to be put offline first
+#!  - check the running VM's
+#!
+#! Our system relies on ssh to communicate with servers. IT is assumed
+#! that the authorized key file has been updated.
+#! 
+
+# Internals
+SELF=$(basename $0)
+SELF_DIR=$(dirname $0)
+
+# Constants
+CONST_VM_CLONE_SUFFIX="_clone_nb"
+
+# Defaults
+DEF_VM_USER=${USER}
+DEF_CONF_FILE=${SELF_DIR}/vmm.conf
+
+# Functions
+function usage() {
+
+    echo "Usage: ${SELF} -m <mode> [-v vm] [-c conf] [-u user]"
+    echo "  -m <mode>: valid modes are:"
+    echo "     start : clone a VM from the server and start it. Must use -v."
+    echo "     stop  : stop/poweroff a local VM and deletes the files. Must use -v."
+    echo "     list  : list the local VM's."
+    echo "     help  : this message"
+    echo "  -v <VM>  : specifies the VM to use, as shown by the list mode.:"
+    echo "  -c file  : alternate configuration file. Default is ${DEF_VM_CONF}."
+    echo "  -u user  : user name to use to start/stop VM's."
+    echo "  -h       : this message."
+
+    return
+}
+
+
+# Script Starts here
+
+#  this function checks if a VM exists.
+#! Input:
+#!  $1 = VM name
+#!  $2 = Conf file
+function check_vm() {
+
+	local vm=$1
+	local conf=$2
+
+	if grep ${vm} ${conf} >/dev/null 2>&1 ; then
+		return 0
+	fi
+
+	return 1
+}
+
+function get_server_of() {
+
+	local vm=$1
+	local conf=$2
+	local server
+
+# TODO: handle multiple entries for one VM...
+	grep ${vm} ${conf} | awk ' { print $2 } ' | awk -F, ' { print $1 } '
+	
+	return $?
+}
+
+function get_servers() {
+
+# TODO make it robust
+	local conf_file=$1
+	cat ${conf_file} | egrep -v -e '^#' | awk ' { print $2 } ' | awk -F, ' { print $1 } ' | egrep -v -e '^$' | sort | uniq | awk ' { printf $1" " } '
+
+	return
+}
+
+function start_vm() {
+    
+    local vm=$1
+    local conf=$2
+
+#  steps:
+#!  1) clone the VM from the server
+#!    
+set -x
+    server=$(get_server_of ${vm} ${conf})
+    if [ $? -ne 0 ] ; then
+	echo "${SELF}: ${FUNC}: error: could not find vm ${vm}"
+	exit -1
+    fi
+
+    clone_name=${vm}${CONST_VM_CLONE_SUFFIX}
+    ssh ${VM_USER}@${server} VBoxManage clonevm --name ${clone_name} --register ${vm}
+    if [ $? -ne 0 ] ; then
+	echo "${SELF}: ${FUNC}: error: could not clone VM ${vm} as ${clone_name} on server ${server}."
+	exit -10
+    fi
+
+    # now we'll start the VM in the backgroud on the server...
+    ssh ${VM_USER}@${server} 'echo VBoxHeadless --startvm '${clone_name}' | at now' 
+    if [ $? -ne 0 ] ; then
+	echo "${SELF}: ${FUNC}: error: could not start VM ${clone_name} on server ${server}."
+	exit -10
+    fi
+set +x    
+    return 0
+}
+
+function stop_vm() {
+
+    local vm=$1
+    local conf=$2
+    local clone_name=${vm}${CONST_VM_CLONE_SUFFIX}
+    local server
+
+set -x
+    server=$(get_server_of ${vm} ${conf})
+    if [ $? -ne 0 ] ; then
+	echo "${SELF}: ${FUNC}: error: could not find vm ${vm}"
+	exit -1
+    fi
+    
+    ssh ${VM_USER}@${server} VBoxManage controlvm ${clone_name} poweroff
+    if [ $? -ne 0 ] ; then
+	echo "${SELF}: ${FUNC}: error: could not poweroff VM ${vm} on server ${server}."
+	exit -10
+    fi
+
+    ssh ${VM_USER}@${server} VBoxManage unregistervm ${clone_name} --delete
+    if [ $? -ne 0 ] ; then
+	echo "${SELF}: ${FUNC}: error: could not delete VM ${clone_name} on server ${server}."
+	exit -10
+    fi
+set +x
+    return 0
+}
+
+function list_vms() {
+
+    local servers
+
+    servers=$(get_servers ${CONF_FILE})
+
+    for server in ${servers} ; do
+	echo "${SELF}: VM's on server ${server}:"
+	ssh ${VM_USER}@${server} VBoxManage list vms | awk ' { print $1 } ' | sed -e 's/"//g'
+    done
+}
+
+# Vars
+MODE=
+VM_USER=${DEF_VM_USER}
+VM=
+CONF_FILE=${DEF_CONF_FILE}
+
+while [ $# -gt 0 ] ; do
+    case $1 in
+      	-m) MODE=$2 ; shift ;;
+	-u) VM_USER=$2 ; shift ;;
+        -v) VM=$2 ; shift ;;
+	-c) CONF_FILE=$2 ; shift ;;
+        -h) usage ; exit 0 ;;
+        *)  echo "${SELF}: error: unknown option $1" ; usage ; exit ;;
+   esac
+   shift
+done
+
+# checks
+if [ -z ${MODE} ] ; then
+    echo "${SELF}: error: you must specify the mode"
+    usage
+    exit -1
+fi
+
+case ${MODE} in 
+    start)
+        if [ -z ${VM} ] ; then
+            echo "${SELF}: error: VM is not specified"
+            usage
+            exit -2
+        fi
+        start_vm ${VM} ${CONF_FILE}
+        ;;
+
+    stop)
+        if [ -z ${VM} ] ; then
+            echo "${SELF}: error: VM is not specified"
+            usage
+            exit -2
+        fi
+        stop_vm ${VM} ${CONF_FILE}
+        ;;
+
+    list)
+        list_vms
+        ;;
+
+    help)
+        usage
+        ;;
+
+    *)
+        echo "${SELF}: error: invalid mode (${MODE})"
+        usage
+        exit -3
+esac
+
+exit 0

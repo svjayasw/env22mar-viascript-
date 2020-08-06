@@ -1,0 +1,105 @@
+#!/bin/bash
+
+usage()
+{
+	echo "$(basename $0) [--hard]"
+	echo "Usage:"
+	echo "   gg           : 'git fetch <remote>' && 'git rebase <remote tracking branch>'"
+	echo "   gg --hard    : 'git fetch <remote>' && 'git reset --hard <remote tracking branch>'"
+	echo "   ggnf         : 'git rebase <remote tracking branch>' without the fetch"
+	echo "   ggnf --hard  : 'git reset --hard <remote tracking branch>'"
+	echo "   gg -u <br>   : set upstream to specified branch and exit"
+	echo
+	echo "Note that the '--hard' will dump your local changes."
+	echo
+	echo "The rebase or reset operations only affect the currently checked-out branch."
+	echo
+	echo "Never use 'git pull' which is a fetch and a merge."
+	echo
+}
+
+RESET_HARD=0
+FETCH=0
+UPSTREAM=
+case $(basename $0) in
+	gg ) FETCH=1 ;;
+	ggnf )  ;;
+esac
+while [ -n "$1" ]; do
+	case $1 in
+		-h|--help ) usage ; exit ;;
+		--hard ) RESET_HARD=1 ;;
+	        -u )
+		UPSTREAM=$2
+		if [ -z "$UPSTREAM" ]; then
+		    echo "Must specify upstream branch"
+		    exit
+		fi
+		FETCH=0
+		;;
+#		-nf ) FETCH=0 ;;
+	esac
+	shift
+done
+
+branch=$(git branch|grep '*'|sed 's,* ,,')
+if [ "$branch" = '(no branch)' ]; then
+	echo "Error, not on a branch: * (no branch)"
+	exit 1
+fi
+
+if [ -n "$UPSTREAM" ]; then
+    echo "setting upstream to $UPSTREAM"
+    echo
+    echo "git branch --track --set-upstream-to=${UPSTREAM}"
+    echo
+    git branch --track --set-upstream-to=${UPSTREAM}
+    echo
+    git status
+    exit
+fi
+
+remote_branch=$(git config branch.$branch.merge|sed 's,refs/heads/,,')
+remote=$(git config branch.$branch.remote)
+
+if [ -z "$remote" ] || [ -z "$remote_branch" ]; then
+	echo "Error, this branch not set up with remote tracking branch."
+	echo " you can fix this with the following (change <>)"
+#	echo "   git branch --set-upstream $branch <remote>/<remote-branch-name>"
+	echo "   gg -u <remote>/<remote-branch-name>"
+	echo
+	exit 1
+fi
+
+if [ "$RESET_HARD" != 1 ]; then
+	if git status|grep -sq 'modified:'; then
+		echo "There are changed files.  Commit them or use 'do git reset --hard' to clean up"
+		exit 1
+	fi
+
+	if [ "$FETCH" != 0 ]; then
+		echo "git fetch $remote ; git rebase $remote/$remote_branch"
+		git fetch $remote || exit 1
+	else
+		echo "git rebase $remote/$remote_branch"
+	fi
+
+	echo
+	echo "status before rebase:"
+	git status
+	echo
+	git rebase $remote/$remote_branch
+else
+	if [ "$FETCH" != 0 ]; then
+		echo "git fetch $remote ; git reset --hard $remote/$remote_branch"
+		git fetch $remote || exit 1
+	else
+		echo "git reset --hard $remote/$remote_branch"
+	fi
+
+	echo
+	echo "status before reset:"
+	git status
+	echo
+	git reset --hard $remote/$remote_branch
+fi

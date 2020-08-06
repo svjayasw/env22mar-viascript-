@@ -1,0 +1,167 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.9
+branch tag  : rel_socfpga-4.9_17.04.01_pr
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.04.01_pr
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.04.01_pr
+new commits : 1
+f379824 Jia Jie Ho ARM: socfpga: updates for socfpga_defconfig
+
+
+++wiki:
+*Branch name*: socfpga-4.1.33-ltsi-rt, *Tag name:* rel_socfpga-4.1.33-ltsi-rt_17.04.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | ARM: socfpga: updates for socfpga_defconfig | [[ https://github.com/altera-opensource/linux-socfpga/commit/f379824ca888d1f34695e23e0f53cb90a71a3bb8 ][ f379824ca888d1f34695e23e0f53cb90a71a3bb8 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.9_17.04.01_pr
+commit: 84d4f8a Dinh Nguyen FogBugz #427770: Update socfpga_defconfig
+
+tag:    rel_socfpga-4.1.33-ltsi_17.04.01_pr
+commit: 7656aaf Jia Jie Ho ARM: socfpga: updates for socfpga_defconfig
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.04.01_pr
+commit: f379824 Jia Jie Ho ARM: socfpga: updates for socfpga_defconfig
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.04.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.04.01_pr
+new commits : 2
+0d2e032 Tien Fong Chee FogBugz #405365-2: Enforce configuration on L2 even dcache is disabled
+99cd549 Tien Fong Chee FogBugz #405365-1:Enable L2 cache shared attribute override
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_17.04.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 405365-2 | Enforce configuration on L2 even dcache is disabled | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/0d2e032873b6a7a4a8a848bfb62f95acb453b636 ][ 0d2e032873b6a7a4a8a848bfb62f95acb453b636 ]] |
+| community | FogBugz #405365-1:Enable L2 cache shared attribute override | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/99cd54995f6463c9feded631cad93ab1e0ebcb13 ][ 99cd54995f6463c9feded631cad93ab1e0ebcb13 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.04.01_pr
+commit: 95ab599 Chin Liang See FogBugz #385884: Configuring SDRAM extra cycles on timing parameters
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.04.01_pr
+commit: 0d2e032 Tien Fong Chee FogBugz #405365-2: Enforce configuration on L2 even dcache is disabled
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.04.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.04.01_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_17.04.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_17.04.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.04.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_17.04.01_pr
+commit: d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_17.04.01_pr
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+tag:    rel_angstrom-v2015.12-yocto2.0_17.04.01_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.33-ltsi-rt
+
+commit f379824ca888d1f34695e23e0f53cb90a71a3bb8
+Author: Jia Jie Ho <ho.jia.jie@intel.com>
+Date:   Thu Mar 16 08:05:46 2017 -0500
+
+    ARM: socfpga: updates for socfpga_defconfig
+    
+    This patch enables Altera TSE support in socfpga_defconfig
+    
+    Signed-off-by: Jia Jie Ho <ho.jia.jie@intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 0d2e032873b6a7a4a8a848bfb62f95acb453b636
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Mar 13 13:06:39 2017 +0800
+
+    FogBugz #405365-2: Enforce configuration on L2 even dcache is disabled
+    
+    The L2 configuration is forced to happen even the data cache is disabled.
+    This change for DMA transactions in the Ethernet to work correctly in an
+    OS that uses L2 Cache.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 99cd54995f6463c9feded631cad93ab1e0ebcb13
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Mar 13 16:40:12 2017 +0800
+
+    FogBugz #405365-1:Enable L2 cache shared attribute override
+    
+    To ensure correct L2 cache setting for Arria10 SOCFPGA to
+    avoid intermittent kernel panic issue.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+-----------------------------------------------------------------------
+

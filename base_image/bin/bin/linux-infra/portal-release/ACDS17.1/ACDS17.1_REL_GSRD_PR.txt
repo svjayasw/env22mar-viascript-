@@ -1,0 +1,62 @@
+
+Tags found:
+ACDS17.1_REL_GSRD_PR
+ACDS17.1_REL_M10_GSRD_PR
+
+   repo                 branch                            commit        tag name
+linux-socfpga        socfpga-4.1.33-ltsi                  0175aa1  ACDS17.1_REL_GSRD_PR
+uboot-socfpga        socfpga_v2013.01.01                  239ae4d  ACDS17.1_REL_GSRD_PR
+meta-altera          angstrom-v2015.12-yocto2.0           3cfd56b  ACDS17.1_REL_GSRD_PR
+meta-altera-refdes   master                               220e47a  ACDS17.1_REL_GSRD_PR
+linux-refdesigns     master                               504ab64  ACDS17.1_REL_GSRD_PR
+linux-socfpga        socfpga-3.10-ltsi                    28bac3e  ACDS17.1_REL_M10_GSRD_PR
+
+-----------------------------------------------------------------------
+repo:   linux-socfpga
+-----------------------------------------------------------------------
+0175aa1 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS17.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.1.33-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/0175aa1f569efc9105a00b411a51f82c61f600e8
+-----------------------------------------------------------------------
+28bac3e Thor Thayer FogBugz #350137: Fix A10SyCon Button Export Crash
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS17.1_REL_M10_GSRD_PR
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-3.10-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/28bac3edbcdc74f98b865986be5d340381896192
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   uboot-socfpga
+-----------------------------------------------------------------------
+239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS17.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2013.01.01
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/239ae4dbaab424881fe9f4a11dc354abdd53cb1e
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera
+-----------------------------------------------------------------------
+3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/ACDS17.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2015.12-yocto2.0
+commit : https://github.com/altera-opensource/meta-altera/commit/3cfd56bb15673795435cf7684ef9c723283a6bce
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera-refdes
+-----------------------------------------------------------------------
+220e47a Loh, Tien Hock FogBugz #472501: Enable passwordless root login in GSRD Angstrom image
+tag    : https://github.com/altera-opensource/meta-altera-refdes/releases/tag/ACDS17.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/meta-altera-refdes/tree/master
+commit : https://github.com/altera-opensource/meta-altera-refdes/commit/220e47a5a1d4656a3dd375606f2cbeb100630efb
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   linux-refdesigns
+-----------------------------------------------------------------------
+504ab64 Tien Hock Loh FogBugz #369619: Remove the use of IRQF_DISABLED in GSRD pio-interrupt
+tag    : https://github.com/altera-opensource/linux-refdesigns/releases/tag/ACDS17.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/linux-refdesigns/tree/master
+commit : https://github.com/altera-opensource/linux-refdesigns/commit/504ab64ac09b332ad9af4d46e65be4e93d4d74c3
+-----------------------------------------------------------------------

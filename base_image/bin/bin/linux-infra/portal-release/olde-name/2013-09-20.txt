@@ -1,0 +1,301 @@
+=======================================================================
+
+repository: linux-socfpga
+
+branch socfpga-3.10:
+  new commits: 7
+d4db2a9 Ley Foon Tan FogBugz #155744: arch/nios2: Backup SP before SAVE_SWITCH_STACK
+6e7f4d8 Thor Thayer FogBugz #138919: Fixes for Linux CAN Support
+0a69612 Graham Moore FogBugz #152777: Fix out-of-order QSPI chip select configuration.
+0d88e4a Graham Moore FogBugz #128180: Fix emac reset and phy-select sequence.
+077e9cf Dinh Nguyen FogBugz #153767: Update baudrate in DTS for SOCFPGA
+2efeefa Graham Moore FogBugz #131467: Software COLD QSPI reset
+e220be5 Graham Moore FogBugz #140538: Fix multiple interrupt implementation in pl330
+
+
+branch socfpga-3.4-ltsi:
+  new commits: 0
+
+
+Tags to push out to rocketboards.git:
+New tag : rel_13.07_RC4 (414aecbcb4e4e76a24daa8ca3d02a08a15c53498)
+New tag : rel_13.07_RC5 (414aecbcb4e4e76a24daa8ca3d02a08a15c53498)
+
+-----------------------------------------------------------------------
+
+repository: uboot-socfpga
+
+branch socfpga_v2013.01.01:
+  new commits: 5
+0c8cb3a Chin Liang See FogBugz #155100: Enhance FPGA programming time within U-Boot
+4b4cb3d Chin Liang See FogBugz #154755: Enhance QSPI driver addressing mode
+da423e2 Chin Liang See FogBugz #155447: Using byte mask for FPGA2SDRAM handoff
+b5335c4 Chin Liang See FogBugz #150299: Enable all devices within CV and AV Preloader
+7ece1a1 Chin Liang See FogBugz #148376: Enable U-Boot to execute script if available
+
+
+Tags to push out to rocketboards.git:
+New tag : rel_13.07_RC5 (10758a9c7b9ba9ee7bc776e2cc6c3e2d39b35fb0)
+New tag : rel_13.07_RC4 (89894d5493f2e46d5a8d5b78ccc9620514b4992f)
+
+-----------------------------------------------------------------------
+
+repository: poky
+
+branch danny-altera:
+  new commits: 5
+2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+57b3253 Jim Rucker FogBugz #154641: Fixing gator.ko's stripping issue
+8525d16 Jim Rucker FogBugz #154518: Fixed altera-image
+60bad42 Jim Rucker Fogbugz #137929: updated serial port speed to 115200
+4d02014 Jim Rucker FogBugz #123456: Moved PREFERED vals 2 local.conf
+
+
+Tags to push out to rocketboards.git:
+New tag : rel_13.07_RC4 (cb22538284a07e6ea757461396fc8f4e398362ab)
+New tag : rel_13.07_RC5 (6121f61f518070b4647ac955bc42e0e65e15a11a)
+
+-----------------------------------------------------------------------
+
+repository: sopc-tools
+
+branch master:
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10
+
+commit d4db2a9db66b30129f3d654f854d0a70cd7e4c7d
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Sep 20 10:32:32 2013 +0800
+
+    FogBugz #155744: arch/nios2: Backup SP before SAVE_SWITCH_STACK
+    
+    We should backup SP register before SAVE_SWITCH_STACK macro in
+    sys_rt_sigreturn() because SP register is being modified in
+    SAVE_SWITCH_STACK macro.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 6e7f4d8bd012d0948caed19a2693ab832d9edd15
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Tue Sep 17 11:23:20 2013 -0500
+
+    FogBugz #138919: Fixes for Linux CAN Support
+    
+    The community C_CAN/D_CAN driver works with the SoCFPGA CycloneV board
+    but requires a few changes to the Altera SoCFPGA device tree.
+    Add changes to socfpga.dtsi :
+    - Update of IRQs (needed to add the CAN Message Object IRQ.
+    - Define the CAN clocks
+    - Leave CAN0 and CAN1 disabled.
+    Add changes to socfpga_cyclone5.dts
+    - Turn on CAN0 on Cyclone5 boards.
+    CAN should be compiled into kernel for Altera SoCFPGA.
+    - Configure CAN by default in socfpga_defconfig
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit 0a69612da0fb00248d396775ba29704a430f43cc
+Author: Graham Moore <grmoore@altera.com>
+Date:   Mon Sep 9 10:02:43 2013 -0500
+
+    FogBugz #152777: Fix out-of-order QSPI chip select configuration.
+    
+    Set chip select value before using it as index into array.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit 0d88e4a698adaf9b6dfbdfe34b09ff8007ba8c1d
+Author: Graham Moore <grmoore@altera.com>
+Date:   Thu Sep 5 14:14:14 2013 -0500
+
+    FogBugz #128180: Fix emac reset and phy-select sequence.
+    
+    Change platform code so that emacs are left in reset until initialized.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit 077e9cfd4ce769f9cabcd6ca46c7ca5a3fcf1bb3
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Sep 11 09:51:32 2013 -0500
+
+    FogBugz #153767: Update baudrate in DTS for SOCFPGA
+    
+    Update the baudrate in the bootargs of the chosen node in the DTS entry.
+    Also modify the default bootargs to use SD for the rootfs.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    ---
+    v2:
+    - Add change for socfpga_arria5.dts
+
+commit 2efeefa5e2f02179131053ff6b13c417537db3cc
+Author: Graham Moore <grmoore@altera.com>
+Date:   Wed Aug 28 12:43:54 2013 -0500
+
+    FogBugz #131467: Software COLD QSPI reset
+    
+    Set 3-byte addressing mode upon shutdown.
+    Devicetree changes for n25q512 device.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit e220be52a1671a6de8016925ccafdb3680aab847
+Author: Graham Moore <grmoore@altera.com>
+Date:   Thu Aug 15 13:15:05 2013 -0500
+
+    FogBugz #140538: Fix multiple interrupt implementation in pl330
+    
+    Modify device tree for multiple interrupt parameters.
+    Add DMA files which combine multiple DMA irqs into one.
+    Add platform data structure.
+    Modify pl330 driver, less intrusive modifications for multiple IRQs.
+    Remove AMBA_NR_IRQS modification.
+    Document devicetree bindings.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 0c8cb3a8a7b12fdbec3431bca47be75ff340466f
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Sep 20 09:26:50 2013 -0700
+
+    FogBugz #155100: Enhance FPGA programming time within U-Boot
+    
+    To enhance FPGA programming by speeding up the cfg_clk, removing
+    debug code and getting the data transfer to FPGA Manager in burst
+    mode. It is improves around 77% based on MSEL passive parallel
+    x32 fast mode and using compressed RBF file size 2.27MB
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Return void for function fpgamgr_axi_write
+
+commit 4b4cb3d141c5e89e3c39335aa802ae5dde270bba
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Sep 18 09:06:12 2013 -0700
+
+    FogBugz #154755: Enhance QSPI driver addressing mode
+    
+    To enhance QSPI driver for normal and extended addressing mode. It
+    will eliminate the need to edit the macro CONFIG_CQSPI_4BYTE_ADDR
+    within include/configs/socfpga_common.h according to user flash
+    device size. Instead QSPI controller driver will configure based
+    on info passed by spi_flash.c
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Fixed coding standard and comments
+
+commit da423e2c70a8b626cb16b4ae3a652a4cf9e03ff3
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Sep 17 08:10:14 2013 -0700
+
+    FogBugz #155447: Using byte mask for FPGA2SDRAM handoff
+    
+    To fix the Qsys FPGA2SDRAM port allocation issue. There is a
+    possibility that Qsys might create holes during the port allocation.
+    With that, Preloader will use the new byte mask info instead the
+    number of ports being used from handoff.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit b5335c464a4b6cbe96ec3fabfb71a331b2b682b4
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Sep 11 14:25:15 2013 -0700
+
+    FogBugz #150299: Enable all devices within CV and AV Preloader
+    
+    To enable all devices that connected to HPS and available on
+    existing Cyclone V and Arria V dev kit. This is to enable the OSes
+    that require access to these devices (such as SPIM0 and UART1).
+    These changes are only applicable to static handoff file only.
+    No changes to SOCEDS as it will always generate based on Qsys design.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Updated the commit message
+
+commit 7ece1a175df5c88cdabcabde29d5f6e8bdf54d08
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Sep 5 18:21:57 2013 -0700
+
+    FogBugz #148376: Enable U-Boot to execute script if available
+    
+    Enhancement to enable SOCFPGA's U-Boot to execute script if
+    its available. User can do any customization through the script
+    without modifying the code. Some sample of customization such
+    as programming the FPGA. This script is optional and not required
+    for normal booting.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - updated the echo statement if script not found
+
+-----------------------------------------------------------------------
+
+log of poky branch danny-altera
+
+commit 2ea11347bbdbdab3b5d9bb7a4157f9b7b5607a23
+Author: Jim Rucker <jrucker@altera.com>
+Date:   Mon Sep 16 09:13:55 2013 -0500
+
+    FogBugz #147479: Changing dtbs to include arria
+    
+    The dtbs being created include _vt but not arria. This should fix that
+    
+    Signed-off-by: Jim Rucker <jrucker@altera.com>
+
+commit 57b32535224f06c254ba0f7d2357b69e92fd374d
+Author: Jim Rucker <jrucker@altera.com>
+Date:   Fri Sep 13 14:47:10 2013 -0500
+
+    FogBugz #154641: Fixing gator.ko's stripping issue
+    
+    Found the Yocto variable required to tell Yocto to stop stripping gator.ko. This was causing gator.ko to not load
+    
+    Signed-off-by: Jim Rucker <jrucker@altera.com>
+
+commit 8525d16185302b56327bd3644d1306ff7d749927
+Author: Jim Rucker <jrucker@altera.com>
+Date:   Fri Sep 13 11:43:27 2013 -0500
+
+    FogBugz #154518: Fixed altera-image
+    
+    Removed all the lttng- code from altera-image so that it would build
+    
+    Signed-off-by: Jim Rucker <jrucker@altera.com>
+
+commit 60bad42488fdc32246102c1b69c79462c6303122
+Author: Jim Rucker <jrucker@altera.com>
+Date:   Wed Jul 17 11:59:32 2013 -0500
+
+    Fogbugz #137929: updated serial port speed to 115200
+
+commit 4d020143c697a864bcfbd5fc1675560f2f6bd744
+Author: Jim Rucker <jrucker@altera.com>
+Date:   Thu Sep 5 16:35:28 2013 -0500
+
+    FogBugz #123456: Moved PREFERED vals 2 local.conf
+    
+    Moving the values for PREFED_PROVIDER from machine conf files to the local.conf
+    
+    Signed-off-by: Jim Rucker <jrucker@altera.com>
+
+-----------------------------------------------------------------------
+
+

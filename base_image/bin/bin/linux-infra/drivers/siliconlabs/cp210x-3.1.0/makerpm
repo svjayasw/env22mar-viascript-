@@ -1,0 +1,128 @@
+#!/bin/sh
+
+# Build cp210x RPM set
+# Uses temp space here, does not touch the source.
+# Runnable as user, does not use root permission at all.
+
+set -x
+
+# Relies on ~/.rpmmacros setting _topdir, _kernel_release, _current_dir
+
+kernel_release=`uname -r`
+current_dir=`pwd`
+export current_dir
+
+KVER=`uname -r`
+KVER1=`echo $KVER | awk -F . -- '{ print $1 }'`
+KVER2=`echo $KVER | awk -F . -- '{ print $2 }'`
+KVER3=`echo $KVER | sed -e "s/$KVER1\\.$KVER2\\.//g"`
+
+if [ -f $HOME/.rpmmacros ] ; then
+	mv -f $HOME/.rpmmacros $HOME/.rpmmacros.cp210x
+fi
+
+echo $KVER2
+if [ $KVER2 == 4 ] ; then
+	cp $current_dir/cp210x/rpmmacros24 $HOME/.rpmmacros
+else
+	echo $KVER3
+	if [ $KVER3 -gt 15 ] ; then
+		cp $current_dir/cp210x/rpmmacros26 $HOME/.rpmmacros
+	else
+		cp $current_dir/cp210x/rpmmacros24 $HOME/.rpmmacros
+	fi
+fi
+
+d=/var/tmp/silabs
+
+if [ ! -d $d ]
+then
+	mkdir $d
+fi
+
+# clean out /var/tmp/rpmbuild and create rpmbuid directories
+cd $d
+r=$d/rpmbuild
+o=cp210x-3.1.0
+s=$r/SOURCES
+spec=${o}.spec
+rm -rf $r
+mkdir rpmbuild
+mkdir rpmbuild/SOURCES
+mkdir rpmbuild/SRPMS
+mkdir rpmbuild/SPECS
+mkdir rpmbuild/BUILD
+mkdir rpmbuild/RPMS
+
+# Setup and copy the source
+cd $s
+rm -rf $o
+mkdir $o
+cp -r $current_dir/cp210x/* $o
+
+echo $KVER2
+if [ $KVER2 == 4 ] ; then
+	cp $current_dir/cp210x/.rpmmacros24 $o/.rpmmacros
+else
+	echo $KVER3
+	if [ $KVER3 -gt 15 ] ; then
+		cp $current_dir/cp210x/.rpmmacros26 $o/.rpmmacros
+	else
+		cp $current_dir/cp210x/.rpmmacros24 $o/.rpmmacros
+	fi
+fi
+
+
+MyCopy=0
+case $KVER2 in
+	4)
+		echo "2.4 Kernel"
+		echo "Checking /usr/lib/rpm"
+		if [ ! -f "/usr/lib/rpm/brp-java-repack-jars" ] ; then
+			echo "Missing /usr/lib/rpm/brp-java-repack-jars"
+			MyCopy=1
+		fi
+		if [ ! -f "/usr/lib/rpm/brp-python-bytecompile" ] ; then
+			echo "Missing /usr/lib/rpm/brp-python-bytecompile"
+			MyCopy=1
+		fi
+		if [ ! -f "/usr/lib/rpm/check-rpaths" ] ; then
+			echo "Missing /usr/lib/rpm/check-rpaths"
+			MyCopy=1
+		fi
+		if [ ! -f "/usr/lib/rpm/check-rpaths-worker" ] ; then
+			echo "Missing /usr/lib/rpm/check-rpaths-worker"
+			MyCopy=1
+		fi
+		
+		if [ $MyCopy == 1 ] ; then
+			echo
+			echo "Enter Root Password to copy file(s) to /usr/lib/rpm"
+			su -c 'cp -r -u ${current_dir}/rpm/* /usr/lib/rpm; chown rpm:rpm /usr/lib/rpm/brp-java-repack-jars; chown rpm:rpm /usr/lib/rpm/brp-python-bytecompile; chown rpm:rpm /usr/lib/rpm/check-r*'
+		fi
+		;;
+	6)
+		echo "2.6 Kernel"
+		;;
+esac
+
+
+# Ensure that there is nothing old present
+rm -f $o.tar
+rm -f $o.tar.gz
+
+tar -cf $o.tar $o
+gzip $o.tar
+
+cp $current_dir/$spec $r/SPECS
+
+
+#Now build the binaries and the rpms
+	rpmbuild -ba $r/SPECS/$spec
+
+
+#Cleanup and restore .rpmmacros
+if [ -f $HOME/.rpmmacros.cp210x ] ; then
+	rm $HOME/.rpmmacros
+	mv -f $HOME/.rpmmacros.cp210x $HOME/.rpmmacros
+fi

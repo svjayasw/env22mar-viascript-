@@ -1,0 +1,53 @@
+package                                 version   license                            URL                                               Feature
+acl                                     2.2.51    LGPLv2.1; GPLv2                    http://savannah.nongnu.org/projects/acl           Access Control Lists
+attr                                    2.4.46    GPLv2                              http://savannah.nongnu.org/projects/attr          management of extended attributes on file systems
+autoconf                                2.68      GPLv2;GPLv3                        www.gnu.org/software/autoconf/                    GNU autoconf is a package for generating configure scripts.
+automake                                1.11.1    GPLv2; GPLv3                       www.gnu.org/software/automake/                    "Generates makefile.in files from makefile.am input files
+base-passwd                             3.5.22    GPLv2                              http://packages.debian.org/search?keywords=base-pass   Master copies of the password and group files
+bash                                    4.1       GPLv3                              www.gnu.org/software/bash/                        Bourne Again Shell
+binutils                                2.21.1    GPLV3; GPLv2;LGPLv2.1;LGPLv2       http://www.gnu.org/software/bfd/                  Management of Linux executables
+bison                                   2.5       GPLv3                              www.gnu.org/s/bison/                              Bison is a general-purpose parser generator
+busybox                                 1.18.5    GPLv2;BSD                          http://www.busybox.net/                           Lightweight version of common Linux utilities
+bzip2                                   1.0.6     BSD                                http://www.bzip.org/                              "the high-quality
+curl                                    7.21.7    BSD                                http://curl.haxx.se/                              curl is a command line tool for transferring data with URL syntax
+db                                      5.1.19    BSD                                http://www.oracle.com/technology/products/berkeley-dberkeley data base
+dbus                                    1.4.12    GPL                                dbus.freedesktop.org/                             "D-Bus is a message bus system
+desktop-file-utils                      0.15      GPLv2                              http://freedesktop.org/wiki/Software/desktop-file-utils/desktop-file-utils contains a few command line utilities
+eglibc                                  2.13      LGPL;GPLv2                         www.eglibc.org/                                   Embedded GLIBC (EGLIBC) is a variant of the GNU C Library (GLIBC) that is designed to work well on embedded systems
+elfutils                                0.148     GPLv2                              https://fedorahosted.org/elfutils/                management of elf files
+expat                                   2.0.1     BSD                                expat.sourceforge.net/                            A XML parser library written in C
+file                                    5.04      BSD                                ftp://ftp.astron.com/pub/file/                    Determines the type of files
+flex                                    2.5.35    BSD                                www.gnu.org/software/flex/                        A fast lexical analyser generator
+gcc                                     4.6       GPLv3; GPLV2;LGPL;LGPLv2.1         http://gcc.gnu.org                                the GNU C Compiler
+genext2fs                               1.4.1     GPLv2                              http://genext2fs.sourceforge.net                  Creation of ext2/3 file system images
+gettext                                 0.18.1.1  GPLv3;LGPLv2;LGPLv2.1              www.gnu.org/software/gettext/                     "This package offers to programmers
+git                                     1.7.5.1   GPLv2                              git-scm.com/                                      Source code configuration management
+glib                                    2.28.8    LGPLv2                             developer.gnome.org/glib/                         GLib provides the core application building blocks for libraries and applications written in C
+gmp                                     5.0.2     GPLv3;LGPL                         gmplib.org/                                       "GMP is a free library for arbitrary precision arithmetic
+gperf                                   3.0.4     GPLv3                              www.gnu.org/software/gperf/                       GNU gperf is a perfect hash function generator.
+gzip                                    1.4       GPLv3                              www.gnu.org/software/gzip/                        GNU Gzip is a popular data compression program
+libtool                                 2.4       GPLv2;LGPLv2.1                     www.gnu.org/software/libtool/                     libtool is a generic library support script
+libxml2                                 2.7.8     MIT                                www.xmlsoft.org/                                  Libxml2 is the XML C parser and toolkit developed for the Gnome project
+linux-altera                            3.4       GPLv2                              http://www.kernel.org                             the core of the Linux kernel
+m4                                      1.4.16    GPLv3                              www.gnu.org/software/m4/                          Unix macro-expansion program
+module-init-tools                       3.16      GPLv2                              https://modules.wiki.kernel.org/                  Management of loadbable modules for the Linux kernel
+mpc                                     0.8.2     LGPLv2.1                           http://www.multiprecision.org/index.php?prog=mpc  Multiprecision floating point library
+mpfr                                    3.0.1     LGPL;GPLv3                         www.mpfr.org/                                     The MPFR library is a C library for multiple-precision floating-point computations with correct rounding
+openssl                                 0.9.8     BSD                                www.openssl.org/                                  A toolkit implementing SSL v2/v3 and TLS protocols with full-strength cryptography world-wide
+pax-utils                               0.2.2     GPLv2                              www.gnu.org/software/paxutils/                    GNU paxutils is a suite of archive utilities
+pcre                                    8.12      BSD                                www.pcre.org/                                     The PCRE library is a set of functions that implement regular expression pattern matching
+perl                                    5.12.3    GPLv1                              www.perl.org                                      The Perl Programming Language
+pkg-config                              0.25      LGPLv2;LGPLv2.1                    www.freedesktop.org/wiki/Software/pkg-config/     pkg-config is a helper tool used when compiling applications and libraries
+popt                                    1.16      BSD                                http://directory.fsf.org/wiki/Popt                The popt library exists essentially for parsing command-line options
+pseudo                                  1.1.1     LGPLv2.1                           librenix.com/?inode=653                           sudo
+Python                                  2.6.6     PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2www.python.org/                                   the Python Programming language
+quilt                                   0.48      GPLv2                              quilt.sourceforge.net/                            tool for patch management
+readline                                6.2       GPLv3                              www.gnu.org/software/readline/                    The GNU Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in
+sysvinit                                2.88      GPLv2                              freecode.com/projects/sysvinit                    Tools to initialize a Linux computer
+tar                                     1.26      GPLv3                              www.gnu.org/software/tar/                         software to create tar archives
+tinylogin                               1.4       GPlv2                              tinylogin.busybox.net/                            TinyLogin is a suite of tiny Unix utilities for handling users
+opkg                                    625       GPLv2                              http://code.google.com/p/opkg/                    Opkg is a lightweight package management system intended to use one embedded devices
+u-boot-altera                           2012.04   GPLv2                              www.denx.de/wiki/U-Boot/                          The boot loader
+zlib                                    1.2.5     BSD                                zlib.net/                                         A massively spiffy yet delicately unobtrusive compression library.
+                                                                                                                                       
+poky                                    6.0.1     GPLv2/MIT                          http://www.pokylinux.org/getit/                   The build system for our Linux BSP

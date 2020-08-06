@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# TODO clipboard doesn't work.
+
+#RESOLUTION='1280x1024'
+RESOLUTION='1400x1050'
+
+#
+# Add the host name for your Windows PC here, including '.altera.priv.altera.com'
+#
+#MYPCNAME=tx-atull-520.altera.priv.altera.com
+MYPCNAME=
+
+if [ -z "$1" ]; then
+    if [ -z "$MYPCNAME" ]; then
+	echo "Please edit this script and set MYPCNAME to name of your windows host"
+	exit
+    fi
+
+    IP="$(dig +short $MYPCNAME)"
+
+    if [ -z "$IP" ]; then
+	echo "Could not find $MYPCNAME in dns lookup"
+	exit
+    fi
+else
+    IP=$1
+fi
+
+echo "Connecting to $IP"
+
+rdesktop -u $USER -p- -g $RESOLUTION \
+	-r disk:home=/home/$USER \
+	$IP 2>/dev/null &
+
+# maybe the clipboard line should be:
+#	-5 -K -r clipboard:PRIMARYCLIPBOARD \
+#	-r clipboard:CLIPBOARD \

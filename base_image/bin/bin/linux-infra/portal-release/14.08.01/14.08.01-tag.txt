@@ -1,0 +1,59 @@
+atull@atx-linux-37:~/bin/atull-infra/NOTES/PORTAL$ portal-report.py --rel 14.08.01 --tag
+Tagging your local clone with portal update tags.
+
+repo:   linux-socfpga
+branch: socfpga-3.15
+tag:    rel_socfpga-3.15_14.08.01
+25deacd Ley Foon Tan Wed Aug 6 10:25:18 2014 +0800 FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+
+repo:   linux-socfpga
+branch: socfpga-3.10-ltsi
+tag:    rel_socfpga-3.10-ltsi_14.08.01
+3c9c2ba Ley Foon Tan Wed Aug 6 11:14:46 2014 +0800 FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+
+repo:   linux-socfpga
+branch: socfpga-3.10-ltsi-rt
+tag:    rel_socfpga-3.10-ltsi-rt_14.08.01
+dfe62c0 Ley Foon Tan Wed Aug 6 14:05:37 2014 +0800 FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+
+repo:   uboot-socfpga
+branch: socfpga_v2013.01.01
+tag:    rel_socfpga_v2013.01.01_14.08.01
+c2aa20d Chin Liang See Tue Jun 17 16:14:50 2014 +0800 FogBugz #210587: Fixing PLL HW configuration issue
+
+repo:   poky
+branch: danny-altera
+tag:    rel_danny-altera_14.08.01
+2ea1134 Jim Rucker Mon Sep 16 09:13:55 2013 -0500 FogBugz #147479: Changing dtbs to include arria
+
+repo:   angstrom-socfpga
+branch: angstrom-v2012.12-socfpga
+tag:    rel_angstrom-v2012.12-socfpga_14.08.01
+a741101 Yves Vandervennet Sat Apr 19 16:49:44 2014 -0500 changed clone of layer from http to git
+
+repo:   angstrom-socfpga
+branch: angstrom-v2013.12-socfpga
+tag:    rel_angstrom-v2013.12-socfpga_14.08.01
+86e1731 Yves Vandervennet Sat Apr 19 16:48:46 2014 -0500 changed clone of layer from http to git
+
+repo:   angstrom-socfpga
+branch: angstrom-v2014.06-socfpga
+tag:    rel_angstrom-v2014.06-socfpga_14.08.01
+4460560 Yves Vandervennet Wed May 21 21:38:37 2014 -0500 removed the usual blank line left at the end off layers.txt
+
+repo:   meta-altera
+branch: angstrom-v2012.12-yocto1.3
+tag:    rel_angstrom-v2012.12-yocto1.3_14.08.01
+b16478f Yves Vandervennet Wed Jul 16 19:27:32 2014 -0500 removed duplicate line with AUTOREV
+
+repo:   meta-altera
+branch: angstrom-v2013.12-yocto1.5
+tag:    rel_angstrom-v2013.12-yocto1.5_14.08.01
+4f25637 Graham Moore Mon Jul 28 15:43:48 2014 -0500 The new version of LAVA needs more options in meta-altera busybox utilities. A full-option busybox config file and bbappend Yocto recipe are added.
+
+repo:   meta-altera
+branch: angstrom-v2014.06-yocto1.6
+tag:    rel_angstrom-v2014.06-yocto1.6_14.08.01
+9fe0657 Yves Vandervennet Wed Jul 16 19:24:04 2014 -0500 removed duplicate line with AUTOREV
+
+atull@atx-linux-37:~/bin/atull-infra/NOTES/PORTAL$

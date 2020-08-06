@@ -1,0 +1,389 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.17
+branch tag  : rel_socfpga-4.17_18.08.02_pr
+new commits : 1
+bcf5e91 Alan Tull arm64: dts: stratix10: i2c clock running out of spec
+
+
+++wiki:
+*Branch name*: socfpga-4.17, *Tag name:* rel_socfpga-4.17_18.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | arm64: dts: stratix10: i2c clock running out of spec | [[ https://github.com/altera-opensource/linux-socfpga/commit/bcf5e914794992b7cf8e0759c02432fc4db227ef ][ bcf5e914794992b7cf8e0759c02432fc4db227ef ]] |
+--wiki:
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.08.02_pr
+new commits : 1
+0fbca3a Alan Tull arm64: dts: stratix10: i2c clock running out of spec
+
+
+++wiki:
+*Branch name*: socfpga-4.9.78-ltsi, *Tag name:* rel_socfpga-4.9.78-ltsi_18.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | arm64: dts: stratix10: i2c clock running out of spec | [[ https://github.com/altera-opensource/linux-socfpga/commit/0fbca3a530cb95d8ff81681865771a2c7762ed90 ][ 0fbca3a530cb95d8ff81681865771a2c7762ed90 ]] |
+--wiki:
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.08.02_pr
+new commits : 1
+2052f61 Alan Tull arm64: dts: stratix10: i2c clock running out of spec
+
+
+++wiki:
+*Branch name*: socfpga-4.9.76-ltsi-rt, *Tag name:* rel_socfpga-4.9.76-ltsi-rt_18.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | arm64: dts: stratix10: i2c clock running out of spec | [[ https://github.com/altera-opensource/linux-socfpga/commit/2052f6194660002548cfc76eff0f8422e87ed7c9 ][ 2052f6194660002548cfc76eff0f8422e87ed7c9 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.17_18.08.02_pr
+commit: bcf5e91 Alan Tull arm64: dts: stratix10: i2c clock running out of spec
+
+tag:    rel_socfpga-4.9.78-ltsi_18.08.02_pr
+commit: 0fbca3a Alan Tull arm64: dts: stratix10: i2c clock running out of spec
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.08.02_pr
+commit: 2052f61 Alan Tull arm64: dts: stratix10: i2c clock running out of spec
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.08.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.08.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.08.02_pr
+new commits : 11
+14f8ac7 Chee Hong Ang FogBugz #586097: Print proper error message for S10 mailbox's error code
+26c8c97c Chin Liang See FogBugz #575673: arm: socfpga: stratix10: Handling RSU error gracefully
+8579926 Chee Hong Ang FogBugz #583064: Relocate S10 FPGA reconfiguration bit stream buffer
+ba659ce Chee Hong Ang FogBugz #583062: Relocate S10 U-boot's secure section to SDRAM
+af2a1cf Chee Hong Ang FogBugz #583060-3: Reload S10 SPL state after warm reset
+2bc8a08 Chee Hong Ang FogBugz #583060-2: Specify new linker script specific to S10 SPL
+bec8655 Chee Hong Ang FogBugz #583060-1: Add a backup copy of .data section for S10 SPL
+228ae45 Chee Hong Ang FogBugz #583705: Skip S10 SDRAM ECC bits initialization after warm reset
+03547fe Chee Hong Ang FogBugz #583059-3: Add a function for checking S10 warm reset status
+a993d04 Chee Hong Ang FogBugz #583059-2: Perform warm reset after L2 reset in SPL on S10
+71f1e18 Chee Hong Ang FogBugz #583059-1: Enable L2 reset on S10
+
+
+++wiki:
+*Branch name*: socfpga_v2017.09, *Tag name:* rel_socfpga_v2017.09_18.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 586097 | Print proper error message for S10 mailbox's error code | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/14f8ac7ee5554e7ce29c98133c9f71566dc2e912 ][ 14f8ac7ee5554e7ce29c98133c9f71566dc2e912 ]] |
+| 575673 | arm: socfpga: stratix10: Handling RSU error gracefully | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/26c8c97c2612d73d878f2fe2606ad067a7a9f330 ][ 26c8c97c2612d73d878f2fe2606ad067a7a9f330 ]] |
+| 583064 | Relocate S10 FPGA reconfiguration bit stream buffer | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/85799268bc186245aee3588473fd582e187bd577 ][ 85799268bc186245aee3588473fd582e187bd577 ]] |
+| 583062 | Relocate S10 U-boot's secure section to SDRAM | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/ba659ceff18d3ebf8065b1b8a33ec9bb92c2d836 ][ ba659ceff18d3ebf8065b1b8a33ec9bb92c2d836 ]] |
+| 583060-3 | Reload S10 SPL state after warm reset | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/af2a1cfdba730bdad5f50f605de5978fe3daa8b0 ][ af2a1cfdba730bdad5f50f605de5978fe3daa8b0 ]] |
+| 583060-2 | Specify new linker script specific to S10 SPL | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/2bc8a08e0ac596c4819f0a6350377ec119c67f19 ][ 2bc8a08e0ac596c4819f0a6350377ec119c67f19 ]] |
+| 583060-1 | Add a backup copy of .data section for S10 SPL | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/bec8655c31ff8f3e9de822d164ef9f3f8f8a970c ][ bec8655c31ff8f3e9de822d164ef9f3f8f8a970c ]] |
+| 583705 | Skip S10 SDRAM ECC bits initialization after warm reset | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/228ae453cecd09bebdd3f4e8d8967478d38096d3 ][ 228ae453cecd09bebdd3f4e8d8967478d38096d3 ]] |
+| 583059-3 | Add a function for checking S10 warm reset status | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/03547fe2d0168023fc583ea345b3fadc23597fee ][ 03547fe2d0168023fc583ea345b3fadc23597fee ]] |
+| 583059-2 | Perform warm reset after L2 reset in SPL on S10 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/a993d04aad5539bac1da758ab55f44ce643375dc ][ a993d04aad5539bac1da758ab55f44ce643375dc ]] |
+| 583059-1 | Enable L2 reset on S10 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/71f1e18fd0bf81e76961bbbad6164313ccbcbab1 ][ 71f1e18fd0bf81e76961bbbad6164313ccbcbab1 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.08.02_pr
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.08.02_pr
+commit: 3d79f8a Tien Fong Chee FogBugz #582382: Fix integer overflow for Arria 10
+
+tag:    rel_socfpga_v2017.09_18.08.02_pr
+commit: 14f8ac7 Chee Hong Ang FogBugz #586097: Print proper error message for S10 mailbox's error code
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.08.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.08.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.08.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.08.02_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.08.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.08.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.08.02_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.08.02_pr
+commit: ec7bfa2 Ong, Hean Loong update 4.9.78-ltsi to commit ID da71e4b
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.08.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_18.08.02_pr
+commit: a9e0753 David Koltak FogBugz #568818-2: Better command line arg checking in example client
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.17
+
+commit bcf5e914794992b7cf8e0759c02432fc4db227ef
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Jul 30 09:31:32 2018 -0500
+
+    arm64: dts: stratix10: i2c clock running out of spec
+    
+    DesignWare I2C controller was observed running at 105.93kHz rather
+    than the specified 100kHz.  Adjust device tree settings to bring it
+    within spec (a slightly conservative 98 MHz).
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+commit 0fbca3a530cb95d8ff81681865771a2c7762ed90
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Jul 30 09:31:32 2018 -0500
+
+    arm64: dts: stratix10: i2c clock running out of spec
+    
+    DesignWare I2C controller was observed running at 105.93kHz rather
+    than the specified 100kHz.  Adjust device tree settings to bring it
+    within spec (a slightly conservative 98 MHz).
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.76-ltsi-rt
+
+commit 2052f6194660002548cfc76eff0f8422e87ed7c9
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Jul 30 09:31:32 2018 -0500
+
+    arm64: dts: stratix10: i2c clock running out of spec
+    
+    DesignWare I2C controller was observed running at 105.93kHz rather
+    than the specified 100kHz.  Adjust device tree settings to bring it
+    within spec (a slightly conservative 98 MHz).
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 14f8ac7ee5554e7ce29c98133c9f71566dc2e912
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 15 15:35:56 2018 +0800
+
+    FogBugz #586097: Print proper error message for S10 mailbox's error code
+    
+    Print 'Mailbox general error' instead of 'Unknown error' for
+    mailbox error response code (0x3FF) returned by SDM firmware.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 26c8c97c2612d73d878f2fe2606ad067a7a9f330
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Tue Aug 14 13:50:10 2018 +0800
+
+    FogBugz #575673: arm: socfpga: stratix10: Handling RSU error gracefully
+    
+    To ensure U-Boot still can continue to boot in event Remote System
+    Update (RSU) error. U-Boot will not update Linux DTS that is related
+    to RSU so Linux aware there is no RSU support.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+    ---
+    Changes for v2
+    - To use int instead u32 for error return handling
+
+commit 85799268bc186245aee3588473fd582e187bd577
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 14:22:02 2018 +0800
+
+    FogBugz #583064: Relocate S10 FPGA reconfiguration bit stream buffer
+    
+    Since the secure section (PSCI/SMC code) has been relocated to
+    0x00001000 in SDRAM, FPGA reconfiguration bit stream buffer is
+    now relocated to 0x00400000 (4MB) to avoid any overlapping.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit ba659ceff18d3ebf8065b1b8a33ec9bb92c2d836
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 14:09:47 2018 +0800
+
+    FogBugz #583062: Relocate S10 U-boot's secure section to SDRAM
+    
+    SSBL always copy the PSCI code from secure section back to
+    OCRAM before booting Linux. This patch is to prevent the SPL
+    from being overwritten or corrupted by PSCI code by relocating
+    the secure section to 0x00001000 in SDRAM instead of OCRAM.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit af2a1cfdba730bdad5f50f605de5978fe3daa8b0
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 13:54:56 2018 +0800
+
+    FogBugz #583060-3: Reload S10 SPL state after warm reset
+    
+    When the system boot from cold reset, SPL will copy its .data section
+    into this backup section to keep an original copy of .data section.
+    When the system has been warm reset, SPL will reload the original .data
+    section from this backup section to restore the original state of SPL.
+    This is required to make sure SPL still run in fresh state after
+    warm reset.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 2bc8a08e0ac596c4819f0a6350377ec119c67f19
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 13:29:17 2018 +0800
+
+    FogBugz #583060-2: Specify new linker script specific to S10 SPL
+    
+    Specify new linker script for S10 SPL to ensure SPL is reentrant
+    after warm reset.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit bec8655c31ff8f3e9de822d164ef9f3f8f8a970c
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 13:22:48 2018 +0800
+
+    FogBugz #583060-1: Add a backup copy of .data section for S10 SPL
+    
+    Add a new .data section for preserving the original state of the
+    .data section of S10 SPL. This new .data section is required to
+    make SPL reentrant after warm reset.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    v2 Update commit message
+
+commit 228ae453cecd09bebdd3f4e8d8967478d38096d3
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 12:55:24 2018 +0800
+
+    FogBugz #583705: Skip S10 SDRAM ECC bits initialization after warm reset
+    
+    SDRAM's content is preserved after warm reset. SPL should skip the SDRAM
+    ECC bits initialization to avoid any content loss in SDRAM.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 03547fe2d0168023fc583ea345b3fadc23597fee
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 12:49:03 2018 +0800
+
+    FogBugz #583059-3: Add a function for checking S10 warm reset status
+    
+    Check reset manager's status register to find out whether the system
+    has been warm reset. It is mainly used to determine whether the system
+    should perform specific operations only after warm reset.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit a993d04aad5539bac1da758ab55f44ce643375dc
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 12:34:02 2018 +0800
+
+    FogBugz #583059-2: Perform warm reset after L2 reset in SPL on S10
+    
+    SPL checks for magic word in system manager's scratch register
+    to find out whether the system has performed L2 reset. If L2
+    reset was performed, SPL put all slave CPUs (CPU1-3) into WFI
+    mode. Master CPU (CPU0) requests warm reset via RMR_EL3 system
+    register and put itself into WFI mode. Firmware will get the
+    warm reset request from HPS and perform the warm reset sequence
+    to reboot all the HPS cores.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 71f1e18fd0bf81e76961bbbad6164313ccbcbab1
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Aug 8 12:18:33 2018 +0800
+
+    FogBugz #583059-1: Enable L2 reset on S10
+    
+    Put all slave CPUs (CPU1-3) into WFI mode. Master CPU (CPU0) writes
+    the magic word into system manager's scratch register to indicate
+    the system has performed L2 reset and request reset manager to
+    perform hardware handshake and then trigger L2 reset. CPU0 put
+    itself into WFI mode. L2 reset will reboot all HPS CPU cores after
+    which all HPS cores are in WFI mode. L2 reset is followed by warm
+    reset request by SPL via RMR_EL3 system register.
+    To trigger L2 + warm reset under u-boot, set 'reset=warm' in the
+    u-boot environment then input 'reset' command in the u-boot command
+    prompt.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+    ---
+    v2 - Update commit message
+       - Fixed camel case in function name
+
+-----------------------------------------------------------------------
+

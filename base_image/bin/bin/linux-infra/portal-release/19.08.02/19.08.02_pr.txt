@@ -1,0 +1,338 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Thor
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-5.0
+branch tag  : rel_socfpga-5.0_19.08.02_pr
+new commits : 0
+
+
+branch      : socfpga-5.1
+branch tag  : rel_socfpga-5.1_19.08.02_pr
+new commits : 4
+3797a1f Dinh Nguyen arm64: defconfig: include the Agilex platform to the arm64 defconfig
+26236d8 Dinh Nguyen arm64: dts: agilex: Add initial support for Intel's Agilex SoCFPGA
+4db61db Dinh Nguyen clk: socfpga: stratix10: add additional clocks needed for the NAND IP
+80c0568 Dinh Nguyen clk: socfpga: stratix10: fix divider entry for the emac clocks
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-5.1 *Tag name:* rel_socfpga-5.1_19.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | arm64: defconfig: include the Agilex platform to the arm64 defconfig | [[ https://github.com/altera-opensource/linux-socfpga/commit/3797a1f72e544aac68aee48618518f73bfe5f83f ][ 3797a1f72e544aac68aee48618518f73bfe5f83f ]] |
+| community | arm64: dts: agilex: Add initial support for Intel's Agilex SoCFPGA | [[ https://github.com/altera-opensource/linux-socfpga/commit/26236d8e6c7ac4ee324d7b11522e418ddb8f6c99 ][ 26236d8e6c7ac4ee324d7b11522e418ddb8f6c99 ]] |
+| community | clk: socfpga: stratix10: add additional clocks needed for the NAND IP | [[ https://github.com/altera-opensource/linux-socfpga/commit/4db61dbdfe75a26a268da59e7fe456993c8848e4 ][ 4db61dbdfe75a26a268da59e7fe456993c8848e4 ]] |
+| community | clk: socfpga: stratix10: fix divider entry for the emac clocks | [[ https://github.com/altera-opensource/linux-socfpga/commit/80c0568a54d486e2ae8d92a5748170657733524c ][ 80c0568a54d486e2ae8d92a5748170657733524c ]] |
+--wiki:
+
+
+branch      : socfpga-4.14.130-ltsi
+branch tag  : rel_socfpga-4.14.130-ltsi_19.08.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.14.126-ltsi-rt
+branch tag  : rel_socfpga-4.14.126-ltsi-rt_19.08.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_socfpga-5.0_19.08.02_pr
+commit: bc95527 Dinh Nguyen net: stmmac: socfpga: add RMII phy mode
+
+tag:    rel_socfpga-5.1_19.08.02_pr
+commit: 3797a1f Dinh Nguyen arm64: defconfig: include the Agilex platform to the arm64 defconfig
+
+tag:    rel_socfpga-4.14.130-ltsi_19.08.02_pr
+commit: d05b2e5 Ong, Hean Loong arm64: defconfig: Add LEDS_TRIGGERS_TIMER for blinking leds
+
+tag:    rel_socfpga-4.14.126-ltsi-rt_19.08.02_pr
+commit: 6cecf60 Ong, Hean Loong arm64: defconfig: Add LEDS_TRIGGERS_TIMER for blinking leds
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.08.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.08.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.08.02_pr
+new commits : 3
+a2cf064 Thor Thayer HSD #1806784746-3: S10: Add kernel parameter for immediate reboot
+fec8032 Thor Thayer HSD #1806784746-2: S10: Add support for RESET2 to PSCI
+77b964f Thor Thayer HSD #1806784746-1: S10: Warm Reset Improvement
+
+
+++wiki:
+*Repo name*: u-boot-socfpga *Branch name*: socfpga_v2017.09 *Tag name:* rel_socfpga_v2017.09_19.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| HSD #1806784746-3 | S10: Add kernel parameter for immediate reboot | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/a2cf064e6c87683173aebda9399f6bd9a5ea3a8c ][ a2cf064e6c87683173aebda9399f6bd9a5ea3a8c ]] |
+| HSD #1806784746-2 | S10: Add support for RESET2 to PSCI | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/fec8032ba038f8116d6ab8c5695752f7f226c661 ][ fec8032ba038f8116d6ab8c5695752f7f226c661 ]] |
+| HSD #1806784746-1 | S10: Warm Reset Improvement | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/77b964ffbba575e5e8848916d6d12c4a743460fa ][ 77b964ffbba575e5e8848916d6d12c4a743460fa ]] |
+--wiki:
+
+
+Tags pushed out to external git:
+tag:    rel_socfpga_v2013.01.01_19.08.02_pr
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.08.02_pr
+commit: f7a7e26 Tien Fong Chee net: A10: Use packed structures for networking
+
+tag:    rel_socfpga_v2017.09_19.08.02_pr
+commit: a2cf064 Thor Thayer HSD #1806784746-3: S10: Add kernel parameter for immediate reboot
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.08.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_19.08.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.08.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.08.02_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.08.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_19.08.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.08.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.08.02_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_19.08.02_pr
+commit: 3a47b14 Ong, Hean Loong update 4.9.78-ltsi to commit ID 5704788
+
+tag:    rel_angstrom-v2018.06-yocto2.5_19.08.02_pr
+commit: 2a4cadc Ong, Hean Loong update to linux-altera-ltsi_4.14.130
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.08.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_master_19.08.02_pr
+commit: 25e1b32 radu bacrau HSD #1707008516: Add support for updating factory image
+
+
+-----------------------------------------------------------------------
+
+repository: arm-trusted-firmware
+
+branch      : socfpga_v1.4
+branch tag  : rel_socfpga_v1.4_19.08.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_socfpga_v1.4_19.08.02_pr
+commit: fd4f92c Loh Tien Hock libc: armclang: Implement compiler printf symbols
+
+
+-----------------------------------------------------------------------
+
+repository: uefi-socfpga
+
+branch      : socvp_socfpga_udk2015
+branch tag  : rel_socvp_socfpga_udk2015_19.08.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_socvp_socfpga_udk2015_19.08.02_pr
+commit: 475bea4 Loh Tien Hock AlteraPlatformPkg: Change memory base due for Linux's reserved space
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera-refdes
+
+branch      : master
+branch tag  : rel_master_19.08.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_master_19.08.02_pr
+commit: b98e2e2 Ong, Hean Loong Adding git into recipe
+
+
+-----------------------------------------------------------------------
+
+repository: linux-refdesigns
+
+branch      : master
+branch tag  : rel_master_19.08.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_master_19.08.02_pr
+commit: 769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-5.1
+
+commit 3797a1f72e544aac68aee48618518f73bfe5f83f
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Apr 3 16:50:10 2019 -0500
+
+    arm64: defconfig: include the Agilex platform to the arm64 defconfig
+    
+    [upstream commit 09d7d3e5291b3a531e36a5b6ef6d6088bb541aad]
+    
+    Build the Agilex platform in the standard arm64 defconfig.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 26236d8e6c7ac4ee324d7b11522e418ddb8f6c99
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Apr 3 16:43:51 2019 -0500
+
+    arm64: dts: agilex: Add initial support for Intel's Agilex SoCFPGA
+    
+    [upstream commit 4b36daf9ada30a66c93f8701e8c6f23bc3ce94e2]
+    
+    Add the initial device tree files for Intel's Agilex SoCFPGA platform.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 4db61dbdfe75a26a268da59e7fe456993c8848e4
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Mon Jun 24 16:47:10 2019 -0500
+
+    clk: socfpga: stratix10: add additional clocks needed for the NAND IP
+    
+    [upstream commit 3b5015c4d834a70233c4419b07375254e4675e0b]
+    
+    The nand_clk is actually called the nand_x_clk and the parent is the
+    l4_mp_clk, not the l4_main_clk. The nand_clk is a child of the
+    nand_x_clk and has a fixed divider of 4. The same is true for the
+    nand_ecc_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Stephen Boyd <sboyd@kernel.org>
+
+commit 80c0568a54d486e2ae8d92a5748170657733524c
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Fri Jun 7 10:12:46 2019 -0500
+
+    clk: socfpga: stratix10: fix divider entry for the emac clocks
+    
+    The fixed dividers for the emac clocks should be 2 not 4.
+    
+    Cc: stable@vger.kernel.org
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Stephen Boyd <sboyd@kernel.org>
+    (cherry picked from commit 74684cce5ebd567b01e9bc0e9a1945c70a32f32f)
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit a2cf064e6c87683173aebda9399f6bd9a5ea3a8c
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Tue Jul 30 16:54:33 2019 -0500
+
+    HSD #1806784746-3: S10: Add kernel parameter for immediate reboot
+    
+    Add Linux kernel line parameters for Stratix10 U-Boot.
+    The "panic=-1" indicates the reset should occur immediately
+    (without a delay)
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2,3 No change
+
+commit fec8032ba038f8116d6ab8c5695752f7f226c661
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Tue Jul 30 16:51:49 2019 -0500
+
+    HSD #1806784746-2: S10: Add support for RESET2 to PSCI
+    
+    Add Warm Reset support using RESET2 for PSCI to support warm
+    reboot. Linux uses the RESET2 mechanism for warm reset
+    and panic.
+    
+    Add a new secure l2_reset_cpu_psci() for PSCI. The original
+    l2_reset can't be called from SMC context which is what Linux uses.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2 Cleanup
+    v3 Move l2_reset_cpu_psci() into this patch for bisectability
+
+commit 77b964ffbba575e5e8848916d6d12c4a743460fa
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Tue Jul 30 16:48:13 2019 -0500
+
+    HSD #1806784746-1: S10: Warm Reset Improvement
+    
+    To ensure a more reliable Stratix10 warm reset, disable all
+    the IRQs by disabling the GIC Distributor in l2_reset_cpu().
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2 Remove unused DBE function
+    v3 Move l2_reset_cpu_psci() to 2nd patch.
+
+-----------------------------------------------------------------------
+

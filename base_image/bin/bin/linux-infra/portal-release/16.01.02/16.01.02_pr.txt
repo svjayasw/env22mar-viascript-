@@ -1,0 +1,340 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.3
+branch tag  : rel_socfpga-4.3_16.01.02_pr
+new commits : 3
+36cbe30 Tien Hock Loh FogBugz #338696: Update socfpga_defconfig for PCI-E reference design
+9ab96c8 Thor Thayer FogBugz #348907-2: Update socfpga_defconfig to include A10 SyCon
+ab44f16 Thor Thayer FogBugz #348907-1: Fix A10 SyCon build error - remove child->parent select
+
+
+++wiki:
+*Branch name*: socfpga-4.3, *Tag name:* rel_socfpga-4.3_16.01.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 338696 | Update socfpga_defconfig for PCI-E reference design | [[ https://github.com/altera-opensource/linux-socfpga/commit/36cbe30c34b0736af66d3d7f2c19279e84560dbe ][ 36cbe30c34b0736af66d3d7f2c19279e84560dbe ]] |
+| 348907-2 | Update socfpga_defconfig to include A10 SyCon | [[ https://github.com/altera-opensource/linux-socfpga/commit/9ab96c87a359b701d13fd6279d71b381dee8818a ][ 9ab96c87a359b701d13fd6279d71b381dee8818a ]] |
+| 348907-1 | Fix A10 SyCon build error - remove child->parent select | [[ https://github.com/altera-opensource/linux-socfpga/commit/ab44f1695d60451bc40d1ebebd15aa32c3255d06 ][ ab44f1695d60451bc40d1ebebd15aa32c3255d06 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_16.01.02_pr
+new commits : 1
+22e8856 Matthew Gerlach FogBugz #340555: Fix A10 failure to receieve 1Gb ethernet traffic
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_16.01.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 340555 | Fix A10 failure to receieve 1Gb ethernet traffic | [[ https://github.com/altera-opensource/linux-socfpga/commit/22e8856f546423a4f45613c9fb0428ff9e395c7e ][ 22e8856f546423a4f45613c9fb0428ff9e395c7e ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_16.01.02_pr
+new commits : 1
+0de1eb3 Matthew Gerlach FogBugz #340555: Fix A10 failure to receieve 1Gb ethernet traffic
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_16.01.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 340555 | Fix A10 failure to receieve 1Gb ethernet traffic | [[ https://github.com/altera-opensource/linux-socfpga/commit/0de1eb3661f943e3ddf54cdac9f6ade0fcb9a8ad ][ 0de1eb3661f943e3ddf54cdac9f6ade0fcb9a8ad ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.3_16.01.02_pr
+commit: 36cbe30 Tien Hock Loh FogBugz #338696: Update socfpga_defconfig for PCI-E reference design
+
+tag:    rel_socfpga-3.10-ltsi_16.01.02_pr
+commit: 22e8856 Matthew Gerlach FogBugz #340555: Fix A10 failure to receieve 1Gb ethernet traffic
+
+tag:    rel_socfpga-3.10-ltsi-rt_16.01.02_pr
+commit: 0de1eb3 Matthew Gerlach FogBugz #340555: Fix A10 failure to receieve 1Gb ethernet traffic
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.01.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.01.02_pr
+new commits : 7
+570a0b5 Tien Fong Chee FogBugz #346622-5: Extend Early I/O release support to QSPI boot flow.
+6fb069c Tien Fong Chee FogBugz #346622-4: Add support for Early I/O Release during the SDMMC boot flow for Arria10 SOC Production silicon.
+99cc361 Tien Fong Chee FogBugz #346622-3: Adding reset support to both shared and FPGA connected peripherals.
+8de1d9fb Tien Fong Chee FogBugz #346622-2: Removed unneeded functions
+7e52f8c Tien Fong Chee FogBugz #346622-1: Fixed the license header
+853ae8c Tien Fong Chee FogBugz #342152: Fixed the incorrect method on checking all bridges in idle status
+63eeca1 Matthew Gerlach FogBugz #340555: Fix A10 intermittent failure to receieve 1Gb ethernet traffic
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_16.01.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 346622-5 | Extend Early I/O release support to QSPI boot flow. | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/570a0b52a7aa40514dc4a6ffc26400b84448992c ][ 570a0b52a7aa40514dc4a6ffc26400b84448992c ]] |
+| 346622-4 | Add support for Early I/O Release during the SDMMC boot flow for Arria10 SOC Production silicon. | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/6fb069c706267f181ebd974ba9a359ad6905649a ][ 6fb069c706267f181ebd974ba9a359ad6905649a ]] |
+| 346622-3 | Adding reset support to both shared and FPGA connected peripherals. | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/99cc36135f7a2a28ab244bcd503c73e1e013f932 ][ 99cc36135f7a2a28ab244bcd503c73e1e013f932 ]] |
+| 346622-2 | Removed unneeded functions | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/8de1d9fbbb11cc6960d0fa761eb151be4cfb030b ][ 8de1d9fbbb11cc6960d0fa761eb151be4cfb030b ]] |
+| 346622-1 | Fixed the license header | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/7e52f8c416811a6ce3a6124ab94bbeee7a9e844f ][ 7e52f8c416811a6ce3a6124ab94bbeee7a9e844f ]] |
+| 342152 | Fixed the incorrect method on checking all bridges in idle status | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/853ae8c2d16afa4466b4791d8f05ba4a81a2920c ][ 853ae8c2d16afa4466b4791d8f05ba4a81a2920c ]] |
+| 340555 | Fix A10 intermittent failure to receieve 1Gb ethernet traffic | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/63eeca1ef4ab761d9c195b0b8ca2e3a201eeb014 ][ 63eeca1ef4ab761d9c195b0b8ca2e3a201eeb014 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.01.02_pr
+commit: d141e21 Chin Liang See arm: Switch to -mno-unaligned-access when supported by the compiler
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.01.02_pr
+commit: 570a0b5 Tien Fong Chee FogBugz #346622-5: Extend Early I/O release support to QSPI boot flow.
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.01.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.01.02_pr
+commit: bc6ea8d Tien Hock Loh FogBugz #327063: Update commit ID to include fix for syschk refresh rate issue
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.01.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.01.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.01.02_pr
+commit: 8d6e9b4 Yves Vandervennet Support for the kernel v4.3
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.01.02_pr
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.3
+
+commit 36cbe30c34b0736af66d3d7f2c19279e84560dbe
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Thu Dec 3 15:11:53 2015 +0800
+
+    FogBugz #338696: Update socfpga_defconfig for PCI-E reference design
+    
+    This is to add PCI-E drivers and tested peripherals to
+    socfpga_defconfig
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+commit 9ab96c87a359b701d13fd6279d71b381dee8818a
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Tue Jan 19 10:52:41 2016 -0600
+
+    FogBugz #348907-2: Update socfpga_defconfig to include A10 SyCon
+    
+    In this patch, MFD_A10SYCON is defined in the default config so that
+    the children dependency is satisfied for the System Controller.
+    
+    A zero day test script discovered a bug when building with allyesconfig.
+    The dependency tree needed to be cleaned up because the children (Reset
+    controller, GPIO, HWMON) would select the MFD_A10SYCON config. The fix
+    is to make the children dependent upon MFD_A10SYCON config and change
+    the default config to enable MFD_A10SYCON.
+    
+    Error message was:
+     warning: (A10SYCON_RESET && GPIO_A10SYCON && SENSORS_A10_SYCON) selects
+      MFD_A10SYSCON which has unmet direct dependencies (HAS_IOMEM &&
+      ARCH_SOCFPGA && SPI_MASTER)
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+    ---
+    v3: Move specific change to top. Fix commit header.
+    v2: Split into 2 commits. 1 commit with the Kconfigs and 1 with
+        socfpga_defconfig.
+
+commit ab44f1695d60451bc40d1ebebd15aa32c3255d06
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Tue Jan 19 10:44:41 2016 -0600
+
+    FogBugz #348907-1: Fix A10 SyCon build error - remove child->parent select
+    
+    In this patch, make the children dependent upon MFD_A10SYCON and
+    remove the selection of MFD_A10SYCON by the children.
+    
+    A zero day test script discovered a bug when building with allyesconfig.
+    The dependency tree needed to be cleaned up because the children (Reset
+    controller, GPIO, HWMON) would select the MFD_A10SYCON config.  The fix
+    is to make the children dependent upon MFD_A10SYCON config and change
+    the default config to enable MFD_A10SYCON.
+    
+    Error message was:
+    warning: (A10SYCON_RESET && GPIO_A10SYCON && SENSORS_A10_SYCON) selects
+     MFD_A10SYSCON which has unmet direct dependencies (HAS_IOMEM &&
+     ARCH_SOCFPGA && SPI_MASTER)
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+    ---
+    v3: Move patch specifics to top. Adjust header commit messages.
+    v2: Split into 2 commits. 1 commit with the Kconfigs and 1 with
+        socfpga_defconfig.
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 22e8856f546423a4f45613c9fb0428ff9e395c7e
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Tue Jan 12 07:58:39 2016 -0800
+
+    FogBugz #340555: Fix A10 failure to receieve 1Gb ethernet traffic
+    
+    This change sets the KSZ9031RNX Fast Link Pulse timing for Auto-Negotiation
+    to be centered on the IEEE 802.3 specified 16ms +/- 8ms which avoids
+    intermittent link failures and long link-up times.  See page 72 of
+    http://ww1.microchip.com/downloads/en/DeviceDoc/KSZ9031RNX.pdf
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 0de1eb3661f943e3ddf54cdac9f6ade0fcb9a8ad
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Thu Jan 21 10:04:48 2016 -0800
+
+    FogBugz #340555: Fix A10 failure to receieve 1Gb ethernet traffic
+    
+    This change sets the KSZ9031RNX Fast Link Pulse timing for Auto-Negotiation
+    to be centered on the IEEE 802.3 specified 16ms +/- 8ms which avoids
+    intermittent link failures and long link-up times.  See page 72 of
+    http://ww1.microchip.com/downloads/en/DeviceDoc/KSZ9031RNX.pdf
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 570a0b52a7aa40514dc4a6ffc26400b84448992c
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Thu Jan 21 10:50:39 2016 +0800
+
+    FogBugz #346622-5: Extend Early I/O release support to QSPI boot flow.
+    
+    Enhancing "fpga loadfs" to Support Early IO release functionality
+    in Arria10 SOC production silicon. Early release allows DDR calibration
+    and pin configuration after a small rbf to be quickly loaded. The rest
+    of the core fpga image can be loaded at a later time.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 6fb069c706267f181ebd974ba9a359ad6905649a
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Wed Jan 20 11:05:18 2016 +0800
+
+    FogBugz #346622-4: Add support for Early I/O Release during the SDMMC boot flow for Arria10 SOC Production silicon.
+    
+    Enhancing "fpga loadfs" to Support Early IO release functionality
+    in Arria10 SOC production silicon. Early release allows DDR calibration
+    and pin configuration after a small rbf to be quickly loaded. The rest
+    of the core fpga image can be loaded at a later time.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 99cc36135f7a2a28ab244bcd503c73e1e013f932
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Mon Jan 18 14:06:04 2016 +0800
+
+    FogBugz #346622-3: Adding reset support to both shared and FPGA connected peripherals.
+    
+    Adding new reset functions to reset FPGA connected peripherals and
+    shared connected peripherals. These functions are called when both
+    FPGA and shared connected peripheral are configured, this can prevent
+    noise and false signal propagated to those connected peripherals.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 8de1d9fbbb11cc6960d0fa761eb151be4cfb030b
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Mon Jan 18 14:37:45 2016 +0800
+
+    FogBugz #346622-2: Removed unneeded functions
+    
+    To remove and cleaning up all unneeded functions.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 7e52f8c416811a6ce3a6124ab94bbeee7a9e844f
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Mon Jan 18 11:21:58 2016 +0800
+
+    FogBugz #346622-1: Fixed the license header
+    
+    License GPL-2.0+ is considered am ambiguous and a loss of rights,
+    so this is not being accepted in our patches.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 853ae8c2d16afa4466b4791d8f05ba4a81a2920c
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Thu Jan 14 14:02:51 2016 +0800
+
+    FogBugz #342152: Fixed the incorrect method on checking all bridges in idle status
+    
+    This implementation rectified the method of checking to make sure all
+    bridges are in idle status by polling both noc_idleack and noc_idlestatus
+    registers are set to 1. The implementation of former method was not making
+    sure all bridges are in idle status. Using XOR instead of AND logic because
+    this is cleanest solution and shortest in coding.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 63eeca1ef4ab761d9c195b0b8ca2e3a201eeb014
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Tue Jan 12 07:46:26 2016 -0800
+
+    FogBugz #340555: Fix A10 intermittent failure to receieve 1Gb ethernet traffic
+    
+    This change sets the KSZ9031RNX Fast Link Pulse timing for Auto-Negotiation
+    to be centered on the IEEE 802.3 specified 16ms +/- 8ms which avoids
+    intermittent link failures and long link-up times.  See page 72 of
+    http://ww1.microchip.com/downloads/en/DeviceDoc/KSZ9031RNX.pdf
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

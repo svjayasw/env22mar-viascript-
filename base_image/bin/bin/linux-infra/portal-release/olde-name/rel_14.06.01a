@@ -1,0 +1,807 @@
+The portal update had happened a day early as I am out on vacation.
+
+This is a script-generated report of what we just pushed out to the portal.
+
+Enjoy,
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.14
+branch tag  : rel_socfpga-3.14_14.06.01
+new commits : 8
+587081e Graham Moore FogBugz #208682: Denali NAND driver misidentifies Hynix chips
+b876a2d Alan Tull FogBugz #209258: hotplug: put cpu1 in wfi
+1224857 Dinh Nguyen FogBugz #208834: Add SD/MMC card detect
+f52746f Vince Bridgers Altera TSE: Disable Multicast filtering to workaround problem
+10db9d5 Dinh Nguyen FogBugz #206007: Fix gpio dts entry for the correct clock
+b943877 Dinh Nguyen FogBugz #198256: Fix unnecessary USB overcurrent condition
+2f8fa7d Dinh Nguyen FogBugz #205930: Add a second parent option for the dbg_base_clk
+ffa51e0 Ley Foon Tan FogBugz #205636: nios2: check exception handler address
+
+
+++wiki:
+*Branch name*: socfpga-3.14, *Tag name:* rel_socfpga-3.14_14.06.01
+| *ID* | *Comment* | *GIT Commit* |
+| 208682 | Denali NAND driver misidentifies Hynix chips | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=587081ea9186bc6b3a38bc927e26eb6dee93df6b ][ 587081ea9186bc6b3a38bc927e26eb6dee93df6b ]] |
+| 209258 | hotplug: put cpu1 in wfi | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=b876a2de8846ca3e1ec16203360c2664226b74ce ][ b876a2de8846ca3e1ec16203360c2664226b74ce ]] |
+| 208834 | Add SD/MMC card detect | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=12248579f63e8ac482a54681a1667a57be73ef07 ][ 12248579f63e8ac482a54681a1667a57be73ef07 ]] |
+| community | Altera TSE: Disable Multicast filtering to workaround problem | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=f52746f0c4e8cbf96bfb8bad3a578bd228c800e6 ][ f52746f0c4e8cbf96bfb8bad3a578bd228c800e6 ]] |
+| 206007 | Fix gpio dts entry for the correct clock | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=10db9d5098a707f724c1648fd89ca2dd05b84983 ][ 10db9d5098a707f724c1648fd89ca2dd05b84983 ]] |
+| 198256 | Fix unnecessary USB overcurrent condition | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=b9438775cac88d15dfdc53fd9e64cb95c958d8de ][ b9438775cac88d15dfdc53fd9e64cb95c958d8de ]] |
+| 205930 | Add a second parent option for the dbg_base_clk | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=2f8fa7d3a9225bffc5271bf06afa9777cf84afda ][ 2f8fa7d3a9225bffc5271bf06afa9777cf84afda ]] |
+| 205636 | nios2: check exception handler address | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=ffa51e09f6ea677f8bfffe55bd95021dc073fa90 ][ ffa51e09f6ea677f8bfffe55bd95021dc073fa90 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.06.01
+new commits : 6
+339abcb Graham Moore FogBugz #208682: Denali NAND driver misidentifies Hynix chips
+ac90320 Alan Tull FogBugz #209258: hotplug: put cpu1 in wfi
+11fadae Dinh Nguyen FogBugz #206007: Fix gpio dts entry for the correct clock
+d1396f8 Dinh Nguyen FogBugz #198256: Fix unnecessary USB overcurrent condition
+90e8e0b Dinh Nguyen FogBugz #205930: Add a second parent option for the dbg_base_clk
+8524ced Ley Foon Tan FogBugz #205636: nios2: check exception handler address
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.06.01
+| *ID* | *Comment* | *GIT Commit* |
+| 208682 | Denali NAND driver misidentifies Hynix chips | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=339abcbf65f3c76e4db58e645011a3f87f946e14 ][ 339abcbf65f3c76e4db58e645011a3f87f946e14 ]] |
+| 209258 | hotplug: put cpu1 in wfi | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=ac903200245e805c9be16f1e317b3f0d05c0bed4 ][ ac903200245e805c9be16f1e317b3f0d05c0bed4 ]] |
+| 206007 | Fix gpio dts entry for the correct clock | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=11fadae4521515d2fb642165f31fa5a3f9a5c4c9 ][ 11fadae4521515d2fb642165f31fa5a3f9a5c4c9 ]] |
+| 198256 | Fix unnecessary USB overcurrent condition | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=d1396f8552524ea2a2d66ae8da818f6a296b616d ][ d1396f8552524ea2a2d66ae8da818f6a296b616d ]] |
+| 205930 | Add a second parent option for the dbg_base_clk | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=90e8e0b2b390cd381d0770025c3bd35e973470ce ][ 90e8e0b2b390cd381d0770025c3bd35e973470ce ]] |
+| 205636 | nios2: check exception handler address | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=8524cedea004d976ddd401dcd638b2414f88e230 ][ 8524cedea004d976ddd401dcd638b2414f88e230 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_14.06.01
+new commits : 13
+5fcafcc Graham Moore FogBugz #208682: Denali NAND driver misidentifies Hynix chips
+4c256aaa Alan Tull FogBugz #209258: hotplug: put cpu1 in wfi
+d267de9 Ley Foon Tan FogBugz #205636: nios2: check exception handler address
+cf6b296 Ley Foon Tan FogBugz #205319: nios2: Use initi and initd to initialize caches
+3feafc7 Ley Foon Tan FogBugz #205359: nios2: flushp after write instruction to memory
+a0cb627 Ley Foon Tan FogBugz #199159: nios2: fix parentheses warning
+6a9d2bb Ley Foon Tan FogBugz #193936: nios2: Fix nios2 compilation warnings
+50e25dd Ley Foon Tan FogBugz #195995: nios2: Change default NIOS2_DCACHE_LINE_SIZE
+eec68f7 Giuseppe CAVALLARO stmmac: disable at run-time the EEE if not supported
+f1754c7 Dinh Nguyen net: stmmac: set phy to use polling by default
+15e8683 Dinh Nguyen FogBugz #206007: Fix gpio dts entry for the correct clock
+64c8f5b Dinh Nguyen FogBugz #198256: Fix unnecessary USB overcurrent condition
+7714e50 Dinh Nguyen FogBugz #205930: Add a second parent option for the dbg_base_clk
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_14.06.01
+| *ID* | *Comment* | *GIT Commit* |
+| 208682 | Denali NAND driver misidentifies Hynix chips | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=5fcafcc64f62b28d3c23bb46dace2c51ce68286f ][ 5fcafcc64f62b28d3c23bb46dace2c51ce68286f ]] |
+| 209258 | hotplug: put cpu1 in wfi | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=4c256aaa9a0089226b54b004f95e75cff551f3a9 ][ 4c256aaa9a0089226b54b004f95e75cff551f3a9 ]] |
+| 205636 | nios2: check exception handler address | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=d267de94f9c766f888d879860682cbad28033504 ][ d267de94f9c766f888d879860682cbad28033504 ]] |
+| 205319 | nios2: Use initi and initd to initialize caches | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=cf6b296c70c8897ad33fe5f467e7a7d987ab4092 ][ cf6b296c70c8897ad33fe5f467e7a7d987ab4092 ]] |
+| 205359 | nios2: flushp after write instruction to memory | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=3feafc766679ec5ffff5ea72c689f11bc93e0efd ][ 3feafc766679ec5ffff5ea72c689f11bc93e0efd ]] |
+| 199159 | nios2: fix parentheses warning | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a0cb6278eb5bb3db261b0bfb59358f7fb6d18143 ][ a0cb6278eb5bb3db261b0bfb59358f7fb6d18143 ]] |
+| 193936 | nios2: Fix nios2 compilation warnings | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6a9d2bbecc84d9a5fa0574470cc56e909298709b ][ 6a9d2bbecc84d9a5fa0574470cc56e909298709b ]] |
+| 195995 | nios2: Change default NIOS2_DCACHE_LINE_SIZE | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=50e25dd751a33c710cf213432aeacd7c9353fc5a ][ 50e25dd751a33c710cf213432aeacd7c9353fc5a ]] |
+| community | stmmac: disable at run-time the EEE if not supported | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=eec68f78e3195d1d625ba258c620e6e301b1c631 ][ eec68f78e3195d1d625ba258c620e6e301b1c631 ]] |
+| community | net: stmmac: set phy to use polling by default | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=f1754c729f3132087750d7695442c2dbeefd1461 ][ f1754c729f3132087750d7695442c2dbeefd1461 ]] |
+| 206007 | Fix gpio dts entry for the correct clock | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=15e868362c1109854682bab7d98bb32b991d3087 ][ 15e868362c1109854682bab7d98bb32b991d3087 ]] |
+| 198256 | Fix unnecessary USB overcurrent condition | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=64c8f5b364a3e6cda32df85dc3217056dfbabf80 ][ 64c8f5b364a3e6cda32df85dc3217056dfbabf80 ]] |
+| 205930 | Add a second parent option for the dbg_base_clk | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=7714e5082487bc234f816ff850939c67a10886fc ][ 7714e5082487bc234f816ff850939c67a10886fc ]] |
+--wiki:
+
+
+branch      : socfpga-3.13-rel14.0
+branch tag  : rel_socfpga-3.13-rel14.0_14.06.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.10-ltsi-rt_14.06.01
+commit: 5fcafcc Graham Moore FogBugz #208682: Denali NAND driver misidentifies Hynix chips
+
+tag:    rel_socfpga-3.10-ltsi_14.06.01
+commit: 339abcb Graham Moore FogBugz #208682: Denali NAND driver misidentifies Hynix chips
+
+tag:    rel_socfpga-3.13-rel14.0_14.06.01
+commit: 3c7cbb9 Dinh Nguyen FogBugz #205930: Add a second parent option for the dbg_base_clk
+
+tag:    rel_socfpga-3.14_14.06.01
+commit: 587081e Graham Moore FogBugz #208682: Denali NAND driver misidentifies Hynix chips
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.06.01
+new commits : 8
+08ad1a1 Chin Liang See FogBugz #208554: RAM boot to reset Clock Manager during CSEL  0
+1c0168b Chin Liang See FogBugz #208110: Fix the L4 clock calculation algorithm
+9c3ced7 Chin Liang See FogBugz #206924: Fix Preloader build error when program FPGA from QSPI
+9198be8 Chin Liang See FogBugz #205356: Increase DTB size for U-Boot QSPI boot
+396a0c1 Chin Liang See FogBugz #207596: Fix LWH2F bridge issue when boot from FPGA
+7da99e4 Dinh Nguyen FogBugz #206562-3: Add DWC2 OTG driver to socfpga_common
+1f5757b Dinh Nguyen FogBugz #206562-2: Enable the DWC2 USB driver on SOCFPGA
+c471869 Dinh Nguyen FogBugz #206562-1: Removes the dwc usb driver
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_14.06.01
+| *ID* | *Comment* | *GIT Commit* |
+| 208554 | RAM boot to reset Clock Manager during CSEL  0 | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=08ad1a1f6221b0657d2ca97f95b04f676a829619 ][ 08ad1a1f6221b0657d2ca97f95b04f676a829619 ]] |
+| 208110 | Fix the L4 clock calculation algorithm | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=1c0168bcc067cd9941becef3671884361abd9922 ][ 1c0168bcc067cd9941becef3671884361abd9922 ]] |
+| 206924 | Fix Preloader build error when program FPGA from QSPI | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=9c3ced745ef48786355516bcf8d5b945a558f492 ][ 9c3ced745ef48786355516bcf8d5b945a558f492 ]] |
+| 205356 | Increase DTB size for U-Boot QSPI boot | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=9198be8b4390e14952a7da6a7c87534217524ad0 ][ 9198be8b4390e14952a7da6a7c87534217524ad0 ]] |
+| 207596 | Fix LWH2F bridge issue when boot from FPGA | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=396a0c125437a38a5b0b139efd5238a7c7bd032e ][ 396a0c125437a38a5b0b139efd5238a7c7bd032e ]] |
+| 206562-3 | Add DWC2 OTG driver to socfpga_common | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=7da99e43cb05a4e8dc3482c28cb3e8ba1d010f92 ][ 7da99e43cb05a4e8dc3482c28cb3e8ba1d010f92 ]] |
+| 206562-2 | Enable the DWC2 USB driver on SOCFPGA | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=1f5757b48e3e869ca63469698b3f00bdb482ba0b ][ 1f5757b48e3e869ca63469698b3f00bdb482ba0b ]] |
+| 206562-1 | Removes the dwc usb driver | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=c4718697c4038b07331d909ff23cbd3993a60403 ][ c4718697c4038b07331d909ff23cbd3993a60403 ]] |
+--wiki:
+
+
+branch      : socfpga_v2013.01.01-rel14.0
+branch tag  : rel_socfpga_v2013.01.01-rel14.0_14.06.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01-rel14.0_14.06.01
+commit: ff98d41 Chin Liang See FogBugz #208554: RAM boot to reset Clock Manager during CSEL  0
+
+tag:    rel_socfpga_v2013.01.01_14.06.01
+commit: 08ad1a1 Chin Liang See FogBugz #208554: RAM boot to reset Clock Manager during CSEL  0
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_14.06.01
+new commits : 0
+
+
+branch      : danny-altera-rel14.0
+branch tag  : rel_danny-altera-rel14.0_14.06.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_14.06.01
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+tag:    rel_danny-altera-rel14.0_14.06.01
+commit: 83a01c4 Tien Hock Loh FogBugz #203635: Update arria5's kernel to use zImage instead of uImage
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_14.06.01
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_14.06.01
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_14.06.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2014.06-socfpga_14.06.01
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+tag:    rel_angstrom-v2013.12-socfpga_14.06.01
+commit: 86e1731 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2012.12-socfpga_14.06.01
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_14.06.01
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_14.06.01
+new commits : 0
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_14.06.01
+new commits : 2
+191b7fb Yves Vandervennet recipe for the LTSi Linux kernel with RT patches
+40cd512 Yves Vandervennet new file system image for a better out of the box experience for developers
+
+
+++wiki:
+*Branch name*: angstrom-v2014.06-yocto1.6, *Tag name:* rel_angstrom-v2014.06-yocto1.6_14.06.01
+| *ID* | *Comment* | *GIT Commit* |
+| community | recipe for the LTSi Linux kernel with RT patches | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=191b7fb4425ece88a8720c64a1d50288cedbda78 ][ 191b7fb4425ece88a8720c64a1d50288cedbda78 ]] |
+| community | new file system image for a better out of the box experience for developers | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=40cd5122c36e20ee2c4988cce5345898109c3a6f ][ 40cd5122c36e20ee2c4988cce5345898109c3a6f ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2013.12-yocto1.5_14.06.01
+commit: f53e9a9 Yves Vandervennet added kernel 3.14
+
+tag:    rel_angstrom-v2012.12-yocto1.3_14.06.01
+commit: 19604c0 Yves Vandervennet added kernel 3.14
+
+tag:    rel_angstrom-v2014.06-yocto1.6_14.06.01
+commit: 191b7fb Yves Vandervennet recipe for the LTSi Linux kernel with RT patches
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.14
+
+commit 587081ea9186bc6b3a38bc927e26eb6dee93df6b
+Author: Graham Moore <grmoore@altera.com>
+Date:   Tue Jun 3 11:52:39 2014 -0500
+
+    FogBugz #208682: Denali NAND driver misidentifies Hynix chips
+    
+    The denali driver was not reading enough id bytes to determine the
+    parameters for a Hynix chip.  The chip was therefore not identified
+    properly, and the page size and oob size were calculated incorrectly.
+    
+    This resulted in a message stating the OOB area was not big enough
+    for 8-bit ECC.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit b876a2de8846ca3e1ec16203360c2664226b74ce
+Author: Alan Tull <atull@altera.com>
+Date:   Wed Jun 4 16:25:33 2014 -0500
+
+    FogBugz #209258: hotplug: put cpu1 in wfi
+    
+    Use WFI when putting CPU1 to sleep.  Don't hold CPU1 in reset
+    since that results in increased power consumption.
+    
+    Reset CPU1 briefly during CPU1 bootup.
+    
+    This has been tested for hotplug and suspend/resume and results
+    in no increased power consumption.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    
+    v2: remove panic after cpu_do_idle loop.
+
+commit 12248579f63e8ac482a54681a1667a57be73ef07
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Jun 3 15:21:10 2014 -0500
+
+    FogBugz #208834: Add SD/MMC card detect
+    
+    Revision D of the Cyclone5 devkit adds support for a GPIO card detect for
+    the SD/MMC.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit f52746f0c4e8cbf96bfb8bad3a578bd228c800e6
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Wed May 14 14:38:37 2014 -0500
+
+    Altera TSE: Disable Multicast filtering to workaround problem
+    
+    This patch disables multicast hash filtering if present in the hardware
+    and uses promiscuous mode instead until the problem with multicast
+    filtering has been debugged, integrated and tested.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 10db9d5098a707f724c1648fd89ca2dd05b84983
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed May 28 22:40:13 2014 -0500
+
+    FogBugz #206007: Fix gpio dts entry for the correct clock
+    
+    The correct clock for the HPS gpio(s) should be the l4_mp_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit b9438775cac88d15dfdc53fd9e64cb95c958d8de
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Thu May 22 09:55:13 2014 -0500
+
+    FogBugz #198256: Fix unnecessary USB overcurrent condition
+    
+    The CycloneV and ArriaV devkit has a small C_VBUS capacitor on the devkit.
+    Because of this, the USB driver sometimes detects an unnecessary
+    overcurrent error condition.
+    
+    This patch uses the external VbusValid signal instead.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 2f8fa7d3a9225bffc5271bf06afa9777cf84afda
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed May 28 09:09:34 2014 -0500
+
+    FogBugz #205930: Add a second parent option for the dbg_base_clk
+    
+    The debug base clock can be bypassed from the main PLL to the OSC1 clock.
+    The bypass register is the staysoc1(0x10) register that is in the clock
+    manager.
+    
+    This patch adds the option to get the correct parent for the debug base
+    clock.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit ffa51e09f6ea677f8bfffe55bd95021dc073fa90
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri May 16 16:26:18 2014 +0800
+
+    FogBugz #205636: nios2: check exception handler address
+    
+    Don't copy exception handler if it is already at the exception address.
+    The CPU may be configured with the exception address already pointing
+    to the kernel's exception handler. Don't unnecessarily copy the handler
+    in this case, although the code appears harmless. But, this can optimize
+    boot up time.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 339abcbf65f3c76e4db58e645011a3f87f946e14
+Author: Graham Moore <grmoore@altera.com>
+Date:   Tue Jun 3 11:52:39 2014 -0500
+
+    FogBugz #208682: Denali NAND driver misidentifies Hynix chips
+    
+    The denali driver was not reading enough id bytes to determine the
+    parameters for a Hynix chip.  The chip was therefore not identified
+    properly, and the page size and oob size were calculated incorrectly.
+    
+    This resulted in a message stating the OOB area was not big enough
+    for 8-bit ECC.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit ac903200245e805c9be16f1e317b3f0d05c0bed4
+Author: Alan Tull <atull@altera.com>
+Date:   Wed Jun 4 16:25:33 2014 -0500
+
+    FogBugz #209258: hotplug: put cpu1 in wfi
+    
+    Use WFI when putting CPU1 to sleep.  Don't hold CPU1 in reset
+    since that results in increased power consumption.
+    
+    Reset CPU1 briefly during CPU1 bootup.
+    
+    This has been tested for hotplug and suspend/resume and results
+    in no increased power consumption.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    
+    v2: remove panic after cpu_do_idle loop.
+
+commit 11fadae4521515d2fb642165f31fa5a3f9a5c4c9
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed May 28 22:40:13 2014 -0500
+
+    FogBugz #206007: Fix gpio dts entry for the correct clock
+    
+    The correct clock for the HPS gpio(s) should be the l4_mp_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    
+    Conflicts:
+    
+    	arch/arm/boot/dts/socfpga.dtsi
+
+commit d1396f8552524ea2a2d66ae8da818f6a296b616d
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Thu May 22 09:55:13 2014 -0500
+
+    FogBugz #198256: Fix unnecessary USB overcurrent condition
+    
+    The CycloneV and ArriaV devkit has a small C_VBUS capacitor on the devkit.
+    Because of this, the USB driver sometimes detects an unnecessary
+    overcurrent error condition.
+    
+    This patch uses the external VbusValid signal instead.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 90e8e0b2b390cd381d0770025c3bd35e973470ce
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed May 28 09:09:34 2014 -0500
+
+    FogBugz #205930: Add a second parent option for the dbg_base_clk
+    
+    The debug base clock can be bypassed from the main PLL to the OSC1 clock.
+    The bypass register is the staysoc1(0x10) register that is in the clock
+    manager.
+    
+    This patch adds the option to get the correct parent for the debug base
+    clock.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 8524cedea004d976ddd401dcd638b2414f88e230
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri May 16 16:26:18 2014 +0800
+
+    FogBugz #205636: nios2: check exception handler address
+    
+    Don't copy exception handler if it is already at the exception address.
+    The CPU may be configured with the exception address already pointing
+    to the kernel's exception handler. Don't unnecessarily copy the handler
+    in this case, although the code appears harmless. But, this can optimize
+    boot up time.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 5fcafcc64f62b28d3c23bb46dace2c51ce68286f
+Author: Graham Moore <grmoore@altera.com>
+Date:   Tue Jun 3 11:52:39 2014 -0500
+
+    FogBugz #208682: Denali NAND driver misidentifies Hynix chips
+    
+    The denali driver was not reading enough id bytes to determine the
+    parameters for a Hynix chip.  The chip was therefore not identified
+    properly, and the page size and oob size were calculated incorrectly.
+    
+    This resulted in a message stating the OOB area was not big enough
+    for 8-bit ECC.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit 4c256aaa9a0089226b54b004f95e75cff551f3a9
+Author: Alan Tull <atull@altera.com>
+Date:   Wed Jun 4 16:25:33 2014 -0500
+
+    FogBugz #209258: hotplug: put cpu1 in wfi
+    
+    Use WFI when putting CPU1 to sleep.  Don't hold CPU1 in reset
+    since that results in increased power consumption.
+    
+    Reset CPU1 briefly during CPU1 bootup.
+    
+    This has been tested for hotplug and suspend/resume and results
+    in no increased power consumption.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    
+    v2: remove panic after cpu_do_idle loop.
+
+commit d267de94f9c766f888d879860682cbad28033504
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri May 16 16:26:18 2014 +0800
+
+    FogBugz #205636: nios2: check exception handler address
+    
+    Don't copy exception handler if it is already at the exception address.
+    The CPU may be configured with the exception address already pointing
+    to the kernel's exception handler. Don't unnecessarily copy the handler
+    in this case, although the code appears harmless. But, this can optimize
+    boot up time.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit cf6b296c70c8897ad33fe5f467e7a7d987ab4092
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri May 16 15:30:57 2014 +0800
+
+    FogBugz #205319: nios2: Use initi and initd to initialize caches
+    
+    Change flushi to initi and flushd to initd instructions.
+    
+    According to nios2 handbook:
+    - Use initi instruction initializes a single
+    instruction cache line. Do not use the flushi instruction because
+    it might cause undesired effects when used to initialize the
+    instruction cache in future Nios II implementations.
+    - Use initd instruction initializes a single data cache line. Do not
+    use the flushd instruction for this purpose, because it writes dirty
+    lines back to memory.
+    
+    [1]http://www.altera.com/literature/hb/nios2/n2sw_nii52007.pdf
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 3feafc766679ec5ffff5ea72c689f11bc93e0efd
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri May 16 15:29:01 2014 +0800
+
+    FogBugz #205359: nios2: flushp after write instruction to memory
+    
+    According to nios2 handbook [1], software needs to execute flushd,
+    flushi and flushp instructions after write instruction to memory.
+    This patch add the flushp instruction after flushd and flushi.
+    
+    [1]http://www.altera.com/literature/hb/nios2/n2sw_nii52007.pdf
+       (page 9-5)
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit a0cb6278eb5bb3db261b0bfb59358f7fb6d18143
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Apr 28 17:59:25 2014 +0800
+
+    FogBugz #199159: nios2: fix parentheses warning
+    
+    Add parentheses for 'vaddr' variable.
+    Example warning:
+    mm/bootmem.c:585:3: warning: suggest parentheses around arithmetic
+    in operand of '|' [-Wparentheses]
+    mm/bootmem.c:585:3:
+                    region = phys_to_virt(PFN_PHYS(bdata->node_min_pfn) +
+                                    start_off);
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 6a9d2bbecc84d9a5fa0574470cc56e909298709b
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Apr 25 11:13:00 2014 +0800
+
+    FogBugz #193936: nios2: Fix nios2 compilation warnings
+    
+    The warnings is caused by PAGE_SIZE macro. This is one of the change
+    request by kernel community when nios2 usptreaming. Recommended way is
+    using AC() macro for PAGE_SIZE calculation.
+    
+    Discussion:
+    https://lkml.org/lkml/2014/4/22/577
+    
+    Example warning:
+    fs/select.c:901:9: warning: comparison of distinct pointer types
+    lacks a cast [enabled by default]
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 50e25dd751a33c710cf213432aeacd7c9353fc5a
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Apr 25 11:45:29 2014 +0800
+
+    FogBugz #195995: nios2: Change default NIOS2_DCACHE_LINE_SIZE
+    
+    FogBugz 190747 added initda instruction support and this instruction
+    requires more than 4-byte data cache line. So, default
+    NIOS2_DCACHE_LINE_SIZE needs change to more than 4 and
+    in range 0x10 and 0x20. Also add checking for
+    CONFIG_NIOS2_DCACHE_LINE_SIZE vs device tree dcache-line-size to make
+    sure they are matched.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit eec68f78e3195d1d625ba258c620e6e301b1c631
+Author: Giuseppe CAVALLARO <peppe.cavallaro@st.com>
+Date:   Mon Mar 10 13:40:31 2014 +0100
+
+    stmmac: disable at run-time the EEE if not supported
+    
+    This patch is to disable the EEE (so HW and timers)
+    for example when the phy communicates that the EEE
+    can be supported anymore.
+    
+    Signed-off-by: Giuseppe Cavallaro <peppe.cavallaro@st.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit f1754c729f3132087750d7695442c2dbeefd1461
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 29 12:56:21 2014 -0500
+
+    net: stmmac: set phy to use polling by default
+    
+    mii_irq[] array is never initialized anywhere in the driver, thus mii_irq[]
+    will always equate to zero. So, for the case where the PHY does not have an
+    irq, we should use PHY_POLL for that situation.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    Tested-by: Vince Bridgers <vbridger@altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 15e868362c1109854682bab7d98bb32b991d3087
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed May 28 22:40:13 2014 -0500
+
+    FogBugz #206007: Fix gpio dts entry for the correct clock
+    
+    The correct clock for the HPS gpio(s) should be the l4_mp_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    
+    Conflicts:
+    
+    	arch/arm/boot/dts/socfpga.dtsi
+
+commit 64c8f5b364a3e6cda32df85dc3217056dfbabf80
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Thu May 22 09:55:13 2014 -0500
+
+    FogBugz #198256: Fix unnecessary USB overcurrent condition
+    
+    The CycloneV and ArriaV devkit has a small C_VBUS capacitor on the devkit.
+    Because of this, the USB driver sometimes detects an unnecessary
+    overcurrent error condition.
+    
+    This patch uses the external VbusValid signal instead.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 7714e5082487bc234f816ff850939c67a10886fc
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed May 28 09:09:34 2014 -0500
+
+    FogBugz #205930: Add a second parent option for the dbg_base_clk
+    
+    The debug base clock can be bypassed from the main PLL to the OSC1 clock.
+    The bypass register is the staysoc1(0x10) register that is in the clock
+    manager.
+    
+    This patch adds the option to get the correct parent for the debug base
+    clock.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 08ad1a1f6221b0657d2ca97f95b04f676a829619
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Jun 3 10:20:35 2014 +0800
+
+    FogBugz #208554: RAM boot to reset Clock Manager during CSEL  0
+    
+    To enable RAM boot when CSEL = 0. The RAM boot code will put
+    Main PLL and Peripheral to bypass mode. It will set the QSPI
+    and NANDSDMMC clock dividers for both PLLs to default value.
+    Later, the code will disable the RAM boot before triggering
+    warm reset. The RAM boot code is located at the last 4kB of
+    on-chip RAM. The purpose of this RAM boot is to overcome boot
+    up hang issue which due to faulty PLL.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Auto calculate the function size when copying the function
+
+commit 1c0168bcc067cd9941becef3671884361abd9922
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Jun 2 16:52:35 2014 +0800
+
+    FogBugz #208110: Fix the L4 clock calculation algorithm
+    
+    To fix the L4 clock calculation algorithm as the L4 divider
+    in value of power of 2 instead divisor itself.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 9c3ced745ef48786355516bcf8d5b945a558f492
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu May 29 09:50:17 2014 +0800
+
+    FogBugz #206924: Fix Preloader build error when program FPGA from QSPI
+    
+    To fix Preloader build error when Preloader boot from QSPI and
+    FPGA programming enabled.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 9198be8b4390e14952a7da6a7c87534217524ad0
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu May 29 09:49:22 2014 +0800
+
+    FogBugz #205356: Increase DTB size for U-Boot QSPI boot
+    
+    To increase fdtimagesize from 20kB to 28kB. Its to accommodate
+    the increasing size of GSRD DTB which is slightly beyond 20kB.
+    This is applicable for QSPI boot within U-Boot.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 396a0c125437a38a5b0b139efd5238a7c7bd032e
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu May 29 09:48:47 2014 +0800
+
+    FogBugz #207596: Fix LWH2F bridge issue when boot from FPGA
+    
+    To fix the issue where the LWH2F bridge is not enabled per
+    handoff when boot from FPGA. This will ensure Preloader pass
+    the bridge handoff info to U-Boot correctly.At same time, this
+    patch also fixed the label duplication within lowlevel_init.S.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 7da99e43cb05a4e8dc3482c28cb3e8ba1d010f92
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Thu May 15 10:18:58 2014 -0500
+
+    FogBugz #206562-3: Add DWC2 OTG driver to socfpga_common
+    
+    Edit the socfpga config file to include the dwc2 USB driver along with
+    support for ethernet and mass storage.
+    
+    Tested on Cyclone5 and Arria5 devkits.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 1f5757b48e3e869ca63469698b3f00bdb482ba0b
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Mon May 19 14:49:15 2014 -0500
+
+    FogBugz #206562-2: Enable the DWC2 USB driver on SOCFPGA
+    
+    Get the DWC2 USB driver to work on the SOCFPGA platforms.
+    
+    - Replaced udelay to an mdelay of 50 msecs as recommended by the spec.
+    - Correct the data toggling code to do proper data toggling for bulk
+      transfers.
+    - Use INCR4 DMA burst that is also used in the Linux driver.
+    - Changed host fifo sizes to match was is recommended by the spec.
+    - Use CONFIG_SYS_USB_ADDRESS as the base address for the driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit c4718697c4038b07331d909ff23cbd3993a60403
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed May 21 14:07:26 2014 -0500
+
+    FogBugz #206562-1: Removes the dwc usb driver
+    
+    This commit removes the dwc usb driver in place of the community dwc2 USB
+    driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.06-yocto1.6
+
+commit 191b7fb4425ece88a8720c64a1d50288cedbda78
+Author: Yves Vandervennet <yvanderv@altera.com>
+Date:   Tue Jun 10 22:03:31 2014 -0500
+
+    recipe for the LTSi Linux kernel with RT patches
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@altera.com>
+
+commit 40cd5122c36e20ee2c4988cce5345898109c3a6f
+Author: Yves Vandervennet <yvanderv@altera.com>
+Date:   Mon Jun 9 13:07:20 2014 -0500
+
+    new file system image for a better out of the box experience for developers
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@altera.com>
+
+-----------------------------------------------------------------------
+
+

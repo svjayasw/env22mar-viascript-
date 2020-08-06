@@ -1,0 +1,19 @@
+15.0:
+Repository		Tag							branch
+-------------		---------------------					-------
+linux-socfpga		ACDS15.0_REL_GSRD_RC1					socfpga-3.10-ltsi
+uboot-socfpga		ACDS15.0_REL_GSRD_RC1					socfpga_v2014.10_arria10_bringup
+angstrom-socfpga	ACDS15.0_REL_GSRD_RC1					angstrom-v2014.12-socfpga
+meta-altera		ACDS15.0_REL_GSRD_RC1					angstrom-v2014.12-yocto1.7_a10
+
+Today I created a new set of tags for a 'gsrd_ies' release which gets all the latest patches:
+
+Repository		Tag							branch
+-------------		---------------------					-------
+linux-socfpga		rel_socfpga-3.10-ltsi_arria10_bringup_gsrd_ies		socfpga-3.10-ltsi
+linux-socfpga		rel_socfpga-3.10-ltsi-rt_arria10_bringup_gsrd_ies	socfpga-3.10-ltsi-rt
+linux-socfpga		rel_socfpga-3.18_arria10_bringup_gsrd_ies		socfpga-3.18
+uboot-socfpga		rel_socfpga_v2014.10_arria10_bringup_gsrd_ies		socfpga_v2014.10_arria10_bringup
+angstrom-socfpga	rel_angstrom-v2014.12-socfpga_bringup_gsrd_ies		angstrom-v2014.12-socfpga
+meta-altera		rel_angstrom-v2014.12-yocto1.7_a10_bringup_gsrd_ies	angstrom-v2014.12-yocto1.7_a10
+

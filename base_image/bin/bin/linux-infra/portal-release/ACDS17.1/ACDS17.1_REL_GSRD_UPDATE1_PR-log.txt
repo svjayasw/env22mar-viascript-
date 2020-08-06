@@ -1,0 +1,185 @@
+rel_type                : GSRD
+rel_target              : GSRD
+release                 : ACDS17.1_REL_GSRD_UPDATE1_PR
+rel_num                 : ACDS17.1
+rel_stage               : PR
+branch_config_file_name : /home/atull/repos/internal/linux-tags/acds-release-branch-config.sh
+report_file_name_full   : /home/atull/bin/linux-infra/tools/../portal-release/ACDS17.1/ACDS17.1_REL_GSRD_UPDATE1_PR.txt
+repo_list               : ['linux-socfpga', 'uboot-socfpga', 'meta-altera', 'meta-altera-refdes', 'linux-refdesigns']
+num of repos            : 5
+platform                : None
+update_num              : 1
+
+Gathering info from git this tag:
+ * ACDS17.1_REL_GSRD_UPDATE1_PR
+
+repo: linux-socfpga         br: socfpga-4.9.78-ltsi
+
+repo: uboot-socfpga         br: socfpga_v2013.01.01
+
+repo: meta-altera           br: angstrom-v2016.12-yocto2.2
+
+repo: meta-altera-refdes    br: master
+
+repo: linux-refdesigns      br: master
+
+
+Tags found:
+ACDS17.1_REL_GSRD_UPDATE1_PR
+
+   repo                 branch                            commit        tag name
+linux-socfpga        socfpga-4.9.78-ltsi                  bdf910b  ACDS17.1_REL_GSRD_UPDATE1_PR
+uboot-socfpga        socfpga_v2013.01.01                  239ae4d  ACDS17.1_REL_GSRD_UPDATE1_PR
+meta-altera          angstrom-v2016.12-yocto2.2           22e6c92  ACDS17.1_REL_GSRD_UPDATE1_PR
+meta-altera-refdes   master                               1e64619  ACDS17.1_REL_GSRD_UPDATE1_PR
+linux-refdesigns     master                               0266338  ACDS17.1_REL_GSRD_UPDATE1_PR
+
+-----------------------------------------------------------------------
+repo:   linux-socfpga
+-----------------------------------------------------------------------
+bdf910b Yang Shunyong dmaengine: dmatest: fix container_of member in dmatest_callback
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS17.1_REL_GSRD_UPDATE1_PR
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.9.78-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/bdf910b1939e45beef022239bda381a2b11a6337
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   uboot-socfpga
+-----------------------------------------------------------------------
+239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS17.1_REL_GSRD_UPDATE1_PR
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2013.01.01
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/239ae4dbaab424881fe9f4a11dc354abdd53cb1e
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera
+-----------------------------------------------------------------------
+22e6c92 Ong, Hean Loong move linux-altera-ltsi_4.9.78.bb to latest linux commit
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/ACDS17.1_REL_GSRD_UPDATE1_PR
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2016.12-yocto2.2
+commit : https://github.com/altera-opensource/meta-altera/commit/22e6c92ca45741efe2763ceb06e0e98a529bf96b
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera-refdes
+-----------------------------------------------------------------------
+1e64619 Ong, Hean Loong FogBugz #410864: Timed out waiting for device dev-ttyS0.device
+tag    : https://github.com/altera-opensource/meta-altera-refdes/releases/tag/ACDS17.1_REL_GSRD_UPDATE1_PR
+branch : https://github.com/altera-opensource/meta-altera-refdes/tree/master
+commit : https://github.com/altera-opensource/meta-altera-refdes/commit/1e64619f42589d43207d5c4926ba4268d90459c2
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   linux-refdesigns
+-----------------------------------------------------------------------
+0266338 Ong, Hean Loong 520514-4 Fix Coverity Warnings and Existing Bugs
+tag    : https://github.com/altera-opensource/linux-refdesigns/releases/tag/ACDS17.1_REL_GSRD_UPDATE1_PR
+branch : https://github.com/altera-opensource/linux-refdesigns/tree/master
+commit : https://github.com/altera-opensource/linux-refdesigns/commit/02663381bc0acbc940cb454db7a648a07bc4a75c
+-----------------------------------------------------------------------
+
+Saved report : /home/atull/bin/linux-infra/tools/../portal-release/ACDS17.1/ACDS17.1_REL_GSRD_UPDATE1_PR.txt
+========================================================================
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.9.78-ltsi            tag    : ACDS17.1_REL_GSRD_UPDATE1_PR
+ $ git push --dry-run portal bdf910b1939e45beef022239bda381a2b11a6337:refs/tags/ACDS17.1_REL_GSRD_UPDATE1_PR
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         bdf910b1939e45beef022239bda381a2b11a6337 -> ACDS17.1_REL_GSRD_UPDATE1_PR
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2013.01.01            tag    : ACDS17.1_REL_GSRD_UPDATE1_PR
+ $ git push --dry-run portal 239ae4dbaab424881fe9f4a11dc354abdd53cb1e:refs/tags/ACDS17.1_REL_GSRD_UPDATE1_PR
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         239ae4dbaab424881fe9f4a11dc354abdd53cb1e -> ACDS17.1_REL_GSRD_UPDATE1_PR
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : portal
+branch : angstrom-v2016.12-yocto2.2     tag    : ACDS17.1_REL_GSRD_UPDATE1_PR
+ $ git push --dry-run portal 22e6c92ca45741efe2763ceb06e0e98a529bf96b:refs/tags/ACDS17.1_REL_GSRD_UPDATE1_PR
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         22e6c92ca45741efe2763ceb06e0e98a529bf96b -> ACDS17.1_REL_GSRD_UPDATE1_PR
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera-refdes             remote : portal
+branch : master                         tag    : ACDS17.1_REL_GSRD_UPDATE1_PR
+ $ git push --dry-run portal 1e64619f42589d43207d5c4926ba4268d90459c2:refs/tags/ACDS17.1_REL_GSRD_UPDATE1_PR
+To git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         1e64619f42589d43207d5c4926ba4268d90459c2 -> ACDS17.1_REL_GSRD_UPDATE1_PR
+
+ $ git push --dry-run portal 1e64619f42589d43207d5c4926ba4268d90459c2:refs/heads/master
+To git@github.com:altera-opensource/meta-altera-refdes
+   41e6a7a..1e64619  1e64619f42589d43207d5c4926ba4268d90459c2 -> master
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-refdesigns               remote : portal
+branch : master                         tag    : ACDS17.1_REL_GSRD_UPDATE1_PR
+ $ git push --dry-run portal 02663381bc0acbc940cb454db7a648a07bc4a75c:refs/tags/ACDS17.1_REL_GSRD_UPDATE1_PR
+To git@github.com:altera-opensource/linux-refdesigns
+ * [new tag]         02663381bc0acbc940cb454db7a648a07bc4a75c -> ACDS17.1_REL_GSRD_UPDATE1_PR
+
+ $ git push --dry-run portal 02663381bc0acbc940cb454db7a648a07bc4a75c:refs/heads/master
+To git@github.com:altera-opensource/linux-refdesigns
+   1c74871..0266338  02663381bc0acbc940cb454db7a648a07bc4a75c -> master
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.9.78-ltsi            tag    : ACDS17.1_REL_GSRD_UPDATE1_PR
+ $ git push portal bdf910b1939e45beef022239bda381a2b11a6337:refs/tags/ACDS17.1_REL_GSRD_UPDATE1_PR
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         bdf910b1939e45beef022239bda381a2b11a6337 -> ACDS17.1_REL_GSRD_UPDATE1_PR
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2013.01.01            tag    : ACDS17.1_REL_GSRD_UPDATE1_PR
+ $ git push portal 239ae4dbaab424881fe9f4a11dc354abdd53cb1e:refs/tags/ACDS17.1_REL_GSRD_UPDATE1_PR
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         239ae4dbaab424881fe9f4a11dc354abdd53cb1e -> ACDS17.1_REL_GSRD_UPDATE1_PR
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : portal
+branch : angstrom-v2016.12-yocto2.2     tag    : ACDS17.1_REL_GSRD_UPDATE1_PR
+ $ git push portal 22e6c92ca45741efe2763ceb06e0e98a529bf96b:refs/tags/ACDS17.1_REL_GSRD_UPDATE1_PR
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         22e6c92ca45741efe2763ceb06e0e98a529bf96b -> ACDS17.1_REL_GSRD_UPDATE1_PR
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera-refdes             remote : portal
+branch : master                         tag    : ACDS17.1_REL_GSRD_UPDATE1_PR
+ $ git push portal 1e64619f42589d43207d5c4926ba4268d90459c2:refs/tags/ACDS17.1_REL_GSRD_UPDATE1_PR
+To git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         1e64619f42589d43207d5c4926ba4268d90459c2 -> ACDS17.1_REL_GSRD_UPDATE1_PR
+
+ $ git push portal 1e64619f42589d43207d5c4926ba4268d90459c2:refs/heads/master
+To git@github.com:altera-opensource/meta-altera-refdes
+   41e6a7a..1e64619  1e64619f42589d43207d5c4926ba4268d90459c2 -> master
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-refdesigns               remote : portal
+branch : master                         tag    : ACDS17.1_REL_GSRD_UPDATE1_PR
+ $ git push portal 02663381bc0acbc940cb454db7a648a07bc4a75c:refs/tags/ACDS17.1_REL_GSRD_UPDATE1_PR
+To git@github.com:altera-opensource/linux-refdesigns
+ * [new tag]         02663381bc0acbc940cb454db7a648a07bc4a75c -> ACDS17.1_REL_GSRD_UPDATE1_PR
+
+ $ git push portal 02663381bc0acbc940cb454db7a648a07bc4a75c:refs/heads/master
+To git@github.com:altera-opensource/linux-refdesigns
+   1c74871..0266338  02663381bc0acbc940cb454db7a648a07bc4a75c -> master
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+

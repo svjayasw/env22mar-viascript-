@@ -1,0 +1,944 @@
+rel_type                : Linux
+release                 : 16.09.03_pr
+rel_num                 : 16.09.03
+rel_stage               : pr
+prev_release            : 16.09.02_pr
+branch_config_file_name : /home/atull/repos/internal/linux-tags/release-branch-config.sh
+report_file_name_full   : /home/atull/bin/linux-infra/tools/../portal-release/16.09.03/16.09.03_pr.txt
+repo_list               : ['linux-socfpga', 'uboot-socfpga', 'angstrom-socfpga', 'meta-altera']
+num of repos            : 4
+platform                : None
+update_num              : None
+
+Gathering info from git on commits between these two sets of tags:
+ * 16.09.03_pr
+ * 16.09.02_pr
+
+repo: linux-socfpga         br: socfpga-4.6
+
+repo: linux-socfpga         br: socfpga-4.7
+
+repo: linux-socfpga         br: socfpga-4.1.22-ltsi
+
+repo: linux-socfpga         br: socfpga-4.1.22-ltsi-rt
+
+repo: uboot-socfpga         br: socfpga_v2013.01.01
+
+repo: uboot-socfpga         br: socfpga_v2014.10_arria10_bringup
+
+repo: angstrom-socfpga      br: angstrom-v2014.12-socfpga
+
+repo: meta-altera           br: angstrom-v2014.12-yocto1.7
+
+repo: meta-altera           br: angstrom-v2014.12-yocto1.7_a10
+
+Saved report : /home/atull/bin/linux-infra/tools/../portal-release/16.09.03/16.09.03_pr.txt
+========================================================================
+* Not doing actual push, doing dry run. *
+
+repo   : linux-socfpga                  remote : origin
+branch : socfpga-4.6                    tag    : rel_socfpga-4.6_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.6_16.09.03_rc1)
+  *  982c902 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+ $ git push --dry-run origin 982c9027d1bd07d990bc8f9b2acda1409273dae3:refs/tags/rel_socfpga-4.6_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+To at-git:linux-socfpga
+ * [new tag]         982c9027d1bd07d990bc8f9b2acda1409273dae3 -> rel_socfpga-4.6_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : origin
+branch : socfpga-4.7                    tag    : rel_socfpga-4.7_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.7_16.09.03_rc1)
+  *  923ea28 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+ $ git push --dry-run origin 923ea28a7879008c6e394978269a5ca8617383e3:refs/tags/rel_socfpga-4.7_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+To at-git:linux-socfpga
+ * [new tag]         923ea28a7879008c6e394978269a5ca8617383e3 -> rel_socfpga-4.7_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : origin
+branch : socfpga-4.1.22-ltsi            tag    : rel_socfpga-4.1.22-ltsi_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.1.22-ltsi_16.09.03_rc1)
+  *  47fdd11 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+  *  tag adjusted to be == portal branch head
+  *  fa6814f Alan Tull FogBugz #405628-2: fpga: add config complete timeout
+
+ $ git push --dry-run origin fa6814fa3d8ff6590086171fa01b61fb90e8e6b8:refs/tags/rel_socfpga-4.1.22-ltsi_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+To at-git:linux-socfpga
+ * [new tag]         fa6814fa3d8ff6590086171fa01b61fb90e8e6b8 -> rel_socfpga-4.1.22-ltsi_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : origin
+branch : socfpga-4.1.22-ltsi-rt         tag    : rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.1.22-ltsi-rt_16.09.03_rc1)
+  *  fb0d380 Alan Tull FogBugz #398879-2: fpga mgr debugfs
+
+ $ git push --dry-run origin fb0d3800abcfcd1bdf326b012d0593692e9d19dd:refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+To at-git:linux-socfpga
+ * [new tag]         fb0d3800abcfcd1bdf326b012d0593692e9d19dd -> rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : origin
+branch : socfpga_v2013.01.01            tag    : rel_socfpga_v2013.01.01_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga_v2013.01.01_16.09.03_rc1)
+  *  f5cd6b9 Chin Liang See spi: cadence_qspi_apb: Ensure baudrate doesn't exceed max value
+
+ $ git push --dry-run origin f5cd6b9becaee79161edda315cde6ffe67b9677e:refs/tags/rel_socfpga_v2013.01.01_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+To at-git:uboot-socfpga
+ * [new tag]         f5cd6b9becaee79161edda315cde6ffe67b9677e -> rel_socfpga_v2013.01.01_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : origin
+branch : socfpga_v2014.10_arria10_bringup tag    : rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga_v2014.10_arria10_bringup_16.09.03_rc1)
+  *  ab2181d Tien Fong Chee FogBugz #398001: Enable UART for console when FPGA is external configured
+
+ $ git push --dry-run origin ab2181dd766157a74b309d12e0b61c4f3cdc8564:refs/tags/rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+To at-git:uboot-socfpga
+ * [new tag]         ab2181dd766157a74b309d12e0b61c4f3cdc8564 -> rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : angstrom-socfpga               remote : origin
+branch : angstrom-v2014.12-socfpga      tag    : rel_angstrom-v2014.12-socfpga_16.09.03_pr
+
+  * tag will be == previous release tag (rel_angstrom-v2014.12-socfpga_16.09.03_rc1)
+  *  9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+ $ git push --dry-run origin 9a77a4b560faebc54f2ef124e16e422adb4ac21d:refs/tags/rel_angstrom-v2014.12-socfpga_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+To at-git:angstrom-socfpga
+ * [new tag]         9a77a4b560faebc54f2ef124e16e422adb4ac21d -> rel_angstrom-v2014.12-socfpga_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : origin
+branch : angstrom-v2014.12-yocto1.7     tag    : rel_angstrom-v2014.12-yocto1.7_16.09.03_pr
+
+  * tag will be == previous release tag (rel_angstrom-v2014.12-yocto1.7_16.09.03_rc1)
+  *  d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+ $ git push --dry-run origin d6f1376455ff9341a67e44bbcb0253d5e78883a4:refs/tags/rel_angstrom-v2014.12-yocto1.7_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+To at-git:meta-altera
+ * [new tag]         d6f1376455ff9341a67e44bbcb0253d5e78883a4 -> rel_angstrom-v2014.12-yocto1.7_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : origin
+branch : angstrom-v2014.12-yocto1.7_a10 tag    : rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr
+
+  * tag will be == previous release tag (rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_rc1)
+  *  67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+ $ git push --dry-run origin 67523b0f770d46a4e363f47b19d3a6a453c66b3f:refs/tags/rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+To at-git:meta-altera
+ * [new tag]         67523b0f770d46a4e363f47b19d3a6a453c66b3f -> rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.6                    tag    : rel_socfpga-4.6_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.6_16.09.03_rc1)
+  *  982c902 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+ $ git push --dry-run portal 982c9027d1bd07d990bc8f9b2acda1409273dae3:refs/tags/rel_socfpga-4.6_16.09.03_pr
+To github.com:altera-opensource/linux-socfpga
+ * [new tag]         982c9027d1bd07d990bc8f9b2acda1409273dae3 -> rel_socfpga-4.6_16.09.03_pr
+
+ $ git push --dry-run portal 982c9027d1bd07d990bc8f9b2acda1409273dae3:refs/heads/socfpga-4.6
+To github.com:altera-opensource/linux-socfpga
+   c0028fa..982c902  982c9027d1bd07d990bc8f9b2acda1409273dae3 -> socfpga-4.6
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.7                    tag    : rel_socfpga-4.7_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.7_16.09.03_rc1)
+  *  923ea28 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+ $ git push --dry-run portal 923ea28a7879008c6e394978269a5ca8617383e3:refs/tags/rel_socfpga-4.7_16.09.03_pr
+To github.com:altera-opensource/linux-socfpga
+ * [new tag]         923ea28a7879008c6e394978269a5ca8617383e3 -> rel_socfpga-4.7_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.1.22-ltsi            tag    : rel_socfpga-4.1.22-ltsi_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.1.22-ltsi_16.09.03_rc1)
+  *  47fdd11 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+  *  tag adjusted to be == portal branch head
+  *  fa6814f Alan Tull FogBugz #405628-2: fpga: add config complete timeout
+
+ $ git push --dry-run portal fa6814fa3d8ff6590086171fa01b61fb90e8e6b8:refs/tags/rel_socfpga-4.1.22-ltsi_16.09.03_pr
+To github.com:altera-opensource/linux-socfpga
+ * [new tag]         fa6814fa3d8ff6590086171fa01b61fb90e8e6b8 -> rel_socfpga-4.1.22-ltsi_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.1.22-ltsi-rt         tag    : rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.1.22-ltsi-rt_16.09.03_rc1)
+  *  fb0d380 Alan Tull FogBugz #398879-2: fpga mgr debugfs
+
+ $ git push --dry-run portal fb0d3800abcfcd1bdf326b012d0593692e9d19dd:refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+To github.com:altera-opensource/linux-socfpga
+ * [new tag]         fb0d3800abcfcd1bdf326b012d0593692e9d19dd -> rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+
+ $ git push --dry-run portal fb0d3800abcfcd1bdf326b012d0593692e9d19dd:refs/heads/socfpga-4.1.22-ltsi-rt
+To github.com:altera-opensource/linux-socfpga
+   f7f45ec..fb0d380  fb0d3800abcfcd1bdf326b012d0593692e9d19dd -> socfpga-4.1.22-ltsi-rt
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2013.01.01            tag    : rel_socfpga_v2013.01.01_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga_v2013.01.01_16.09.03_rc1)
+  *  f5cd6b9 Chin Liang See spi: cadence_qspi_apb: Ensure baudrate doesn't exceed max value
+
+ $ git push --dry-run portal f5cd6b9becaee79161edda315cde6ffe67b9677e:refs/tags/rel_socfpga_v2013.01.01_16.09.03_pr
+To github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         f5cd6b9becaee79161edda315cde6ffe67b9677e -> rel_socfpga_v2013.01.01_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2014.10_arria10_bringup tag    : rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga_v2014.10_arria10_bringup_16.09.03_rc1)
+  *  ab2181d Tien Fong Chee FogBugz #398001: Enable UART for console when FPGA is external configured
+
+ $ git push --dry-run portal ab2181dd766157a74b309d12e0b61c4f3cdc8564:refs/tags/rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr
+To github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         ab2181dd766157a74b309d12e0b61c4f3cdc8564 -> rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : angstrom-socfpga               remote : portal
+branch : angstrom-v2014.12-socfpga      tag    : rel_angstrom-v2014.12-socfpga_16.09.03_pr
+
+  * tag will be == previous release tag (rel_angstrom-v2014.12-socfpga_16.09.03_rc1)
+  *  9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+ $ git push --dry-run portal 9a77a4b560faebc54f2ef124e16e422adb4ac21d:refs/tags/rel_angstrom-v2014.12-socfpga_16.09.03_pr
+To github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         9a77a4b560faebc54f2ef124e16e422adb4ac21d -> rel_angstrom-v2014.12-socfpga_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : portal
+branch : angstrom-v2014.12-yocto1.7     tag    : rel_angstrom-v2014.12-yocto1.7_16.09.03_pr
+
+  * tag will be == previous release tag (rel_angstrom-v2014.12-yocto1.7_16.09.03_rc1)
+  *  d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+ $ git push --dry-run portal d6f1376455ff9341a67e44bbcb0253d5e78883a4:refs/tags/rel_angstrom-v2014.12-yocto1.7_16.09.03_pr
+To github.com:altera-opensource/meta-altera
+ * [new tag]         d6f1376455ff9341a67e44bbcb0253d5e78883a4 -> rel_angstrom-v2014.12-yocto1.7_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : portal
+branch : angstrom-v2014.12-yocto1.7_a10 tag    : rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr
+
+  * tag will be == previous release tag (rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_rc1)
+  *  67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+ $ git push --dry-run portal 67523b0f770d46a4e363f47b19d3a6a453c66b3f:refs/tags/rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr
+To github.com:altera-opensource/meta-altera
+ * [new tag]         67523b0f770d46a4e363f47b19d3a6a453c66b3f -> rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+* Doing actual push. *
+
+repo   : linux-socfpga                  remote : origin
+branch : socfpga-4.6                    tag    : rel_socfpga-4.6_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.6_16.09.03_rc1)
+  *  982c902 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+ $ git push origin 982c9027d1bd07d990bc8f9b2acda1409273dae3:refs/tags/rel_socfpga-4.6_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+remote: testing        
+remote: /usr/local/git/repositories/linux-socfpga.git        
+remote: update_safe refs/tags/rel_socfpga-4.6_16.09.03_pr 0000000000000000000000000000000000000000 982c9027d1bd07d990bc8f9b2acda1409273dae3        
+remote: 
+remote:  ***********************************************************************************************        
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***        
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***        
+remote:  ***                                                                                         ***        
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***        
+remote:  *** updating (git fetch origin && git rebase)                                               ***        
+remote:  ***                                                                                         ***        
+remote:  *** see also:                                                                               ***        
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***        
+remote:  ***********************************************************************************************        
+remote: 
+remote: update type    : tags-create        
+remote: refname       : refs/tags/rel_socfpga-4.6_16.09.03_pr        
+remote: oldrev        : 0000000000000000000000000000000000000000        
+remote: newrev        : 982c9027d1bd07d990bc8f9b2acda1409273dae3        
+remote: 
+remote: repo          : linux-socfpga        
+remote: # of commits  : 0        
+remote: refs path     : tags        
+remote: newrev_type   : create        
+remote: 
+remote: create tag    : rel_socfpga-4.6_16.09.03_pr        
+remote: allowed        
+remote: kickoff, repo=linux-socfpga        
+remote: http://jenkins-vm:8080/git/notifyCommit?url=gitolite@at-git:linux-socfpga&sha1=982c9027d1bd07d990bc8f9b2acda1409273dae3        
+To at-git:linux-socfpga
+ * [new tag]         982c9027d1bd07d990bc8f9b2acda1409273dae3 -> rel_socfpga-4.6_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : origin
+branch : socfpga-4.7                    tag    : rel_socfpga-4.7_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.7_16.09.03_rc1)
+  *  923ea28 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+ $ git push origin 923ea28a7879008c6e394978269a5ca8617383e3:refs/tags/rel_socfpga-4.7_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+remote: testing        
+remote: /usr/local/git/repositories/linux-socfpga.git        
+remote: update_safe refs/tags/rel_socfpga-4.7_16.09.03_pr 0000000000000000000000000000000000000000 923ea28a7879008c6e394978269a5ca8617383e3        
+remote: 
+remote:  ***********************************************************************************************        
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***        
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***        
+remote:  ***                                                                                         ***        
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***        
+remote:  *** updating (git fetch origin && git rebase)                                               ***        
+remote:  ***                                                                                         ***        
+remote:  *** see also:                                                                               ***        
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***        
+remote:  ***********************************************************************************************        
+remote: 
+remote: update type    : tags-create        
+remote: refname       : refs/tags/rel_socfpga-4.7_16.09.03_pr        
+remote: oldrev        : 0000000000000000000000000000000000000000        
+remote: newrev        : 923ea28a7879008c6e394978269a5ca8617383e3        
+remote: 
+remote: repo          : linux-socfpga        
+remote: # of commits  : 0        
+remote: refs path     : tags        
+remote: newrev_type   : create        
+remote: 
+remote: create tag    : rel_socfpga-4.7_16.09.03_pr        
+remote: allowed        
+remote: kickoff, repo=linux-socfpga        
+remote: http://jenkins-vm:8080/git/notifyCommit?url=gitolite@at-git:linux-socfpga&sha1=923ea28a7879008c6e394978269a5ca8617383e3        
+To at-git:linux-socfpga
+ * [new tag]         923ea28a7879008c6e394978269a5ca8617383e3 -> rel_socfpga-4.7_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : origin
+branch : socfpga-4.1.22-ltsi            tag    : rel_socfpga-4.1.22-ltsi_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.1.22-ltsi_16.09.03_rc1)
+  *  47fdd11 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+  *  tag adjusted to be == portal branch head
+  *  fa6814f Alan Tull FogBugz #405628-2: fpga: add config complete timeout
+
+ $ git push origin fa6814fa3d8ff6590086171fa01b61fb90e8e6b8:refs/tags/rel_socfpga-4.1.22-ltsi_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+remote: testing        
+remote: /usr/local/git/repositories/linux-socfpga.git        
+remote: update_safe refs/tags/rel_socfpga-4.1.22-ltsi_16.09.03_pr 0000000000000000000000000000000000000000 fa6814fa3d8ff6590086171fa01b61fb90e8e6b8        
+remote: 
+remote:  ***********************************************************************************************        
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***        
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***        
+remote:  ***                                                                                         ***        
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***        
+remote:  *** updating (git fetch origin && git rebase)                                               ***        
+remote:  ***                                                                                         ***        
+remote:  *** see also:                                                                               ***        
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***        
+remote:  ***********************************************************************************************        
+remote: 
+remote: update type    : tags-create        
+remote: refname       : refs/tags/rel_socfpga-4.1.22-ltsi_16.09.03_pr        
+remote: oldrev        : 0000000000000000000000000000000000000000        
+remote: newrev        : fa6814fa3d8ff6590086171fa01b61fb90e8e6b8        
+remote: 
+remote: repo          : linux-socfpga        
+remote: # of commits  : 0        
+remote: refs path     : tags        
+remote: newrev_type   : create        
+remote: 
+remote: create tag    : rel_socfpga-4.1.22-ltsi_16.09.03_pr        
+remote: allowed        
+remote: kickoff, repo=linux-socfpga        
+remote: http://jenkins-vm:8080/git/notifyCommit?url=gitolite@at-git:linux-socfpga&sha1=fa6814fa3d8ff6590086171fa01b61fb90e8e6b8        
+To at-git:linux-socfpga
+ * [new tag]         fa6814fa3d8ff6590086171fa01b61fb90e8e6b8 -> rel_socfpga-4.1.22-ltsi_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : origin
+branch : socfpga-4.1.22-ltsi-rt         tag    : rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.1.22-ltsi-rt_16.09.03_rc1)
+  *  fb0d380 Alan Tull FogBugz #398879-2: fpga mgr debugfs
+
+ $ git push origin fb0d3800abcfcd1bdf326b012d0593692e9d19dd:refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+remote: testing        
+remote: /usr/local/git/repositories/linux-socfpga.git        
+remote: update_safe refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr 0000000000000000000000000000000000000000 fb0d3800abcfcd1bdf326b012d0593692e9d19dd        
+remote: 
+remote:  ***********************************************************************************************        
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***        
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***        
+remote:  ***                                                                                         ***        
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***        
+remote:  *** updating (git fetch origin && git rebase)                                               ***        
+remote:  ***                                                                                         ***        
+remote:  *** see also:                                                                               ***        
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***        
+remote:  ***********************************************************************************************        
+remote: 
+remote: update type    : tags-create        
+remote: refname       : refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr        
+remote: oldrev        : 0000000000000000000000000000000000000000        
+remote: newrev        : fb0d3800abcfcd1bdf326b012d0593692e9d19dd        
+remote: 
+remote: repo          : linux-socfpga        
+remote: # of commits  : 0
+remote: refs path     : tags        
+remote: newrev_type   : create        
+remote: 
+remote: create tag    : rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr        
+remote: allowed        
+remote: kickoff, repo=linux-socfpga        
+remote: http://jenkins-vm:8080/git/notifyCommit?url=gitolite@at-git:linux-socfpga&sha1=fb0d3800abcfcd1bdf326b012d0593692e9d19dd        
+To at-git:linux-socfpga
+ * [new tag]         fb0d3800abcfcd1bdf326b012d0593692e9d19dd -> rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : origin
+branch : socfpga_v2013.01.01            tag    : rel_socfpga_v2013.01.01_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga_v2013.01.01_16.09.03_rc1)
+  *  f5cd6b9 Chin Liang See spi: cadence_qspi_apb: Ensure baudrate doesn't exceed max value
+
+ $ git push origin f5cd6b9becaee79161edda315cde6ffe67b9677e:refs/tags/rel_socfpga_v2013.01.01_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+remote: testing        
+remote: /usr/local/git/repositories/uboot-socfpga.git        
+remote: update_safe refs/tags/rel_socfpga_v2013.01.01_16.09.03_pr 0000000000000000000000000000000000000000 f5cd6b9becaee79161edda315cde6ffe67b9677e        
+remote: 
+remote:  ***********************************************************************************************        
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***        
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***        
+remote:  ***                                                                                         ***        
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***        
+remote:  *** updating (git fetch origin && git rebase)                                               ***        
+remote:  ***                                                                                         ***        
+remote:  *** see also:                                                                               ***        
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***        
+remote:  ***********************************************************************************************        
+remote: 
+remote: update type    : tags-create        
+remote: refname       : refs/tags/rel_socfpga_v2013.01.01_16.09.03_pr        
+remote: oldrev        : 0000000000000000000000000000000000000000        
+remote: newrev        : f5cd6b9becaee79161edda315cde6ffe67b9677e        
+remote: 
+remote: repo          : uboot-socfpga        
+remote: # of commits  : 0        
+remote: refs path     : tags        
+remote: newrev_type   : create        
+remote: 
+remote: create tag    : rel_socfpga_v2013.01.01_16.09.03_pr        
+remote: allowed        
+remote: kickoff, repo=uboot-socfpga        
+remote: http://jenkins-vm:8080/git/notifyCommit?url=gitolite@at-git:uboot-socfpga&sha1=f5cd6b9becaee79161edda315cde6ffe67b9677e        
+To at-git:uboot-socfpga
+ * [new tag]         f5cd6b9becaee79161edda315cde6ffe67b9677e -> rel_socfpga_v2013.01.01_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : origin
+branch : socfpga_v2014.10_arria10_bringup tag    : rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga_v2014.10_arria10_bringup_16.09.03_rc1)
+  *  ab2181d Tien Fong Chee FogBugz #398001: Enable UART for console when FPGA is external configured
+
+ $ git push origin ab2181dd766157a74b309d12e0b61c4f3cdc8564:refs/tags/rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+remote: testing        
+remote: /usr/local/git/repositories/uboot-socfpga.git        
+remote: update_safe refs/tags/rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr 0000000000000000000000000000000000000000 ab2181dd766157a74b309d12e0b61c4f3cdc8564        
+remote: 
+remote:  ***********************************************************************************************        
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***        
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***        
+remote:  ***                                                                                         ***        
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***        
+remote:  *** updating (git fetch origin && git rebase)                                               ***        
+remote:  ***                                                                                         ***        
+remote:  *** see also:                                                                               ***        
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***        
+remote:  ***********************************************************************************************        
+remote: 
+remote: update type    : tags-create        
+remote: refname       : refs/tags/rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr        
+remote: oldrev        : 0000000000000000000000000000000000000000        
+remote: newrev        : ab2181dd766157a74b309d12e0b61c4f3cdc8564        
+remote: 
+remote: repo          : uboot-socfpga        
+remote: # of commits  : 0        
+remote: refs path     : tags        
+remote: newrev_type   : create        
+remote: 
+remote: create tag    : rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr        
+remote: allowed
+remote: kickoff, repo=uboot-socfpga        
+remote: http://jenkins-vm:8080/git/notifyCommit?url=gitolite@at-git:uboot-socfpga&sha1=ab2181dd766157a74b309d12e0b61c4f3cdc8564        
+To at-git:uboot-socfpga
+ * [new tag]         ab2181dd766157a74b309d12e0b61c4f3cdc8564 -> rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : angstrom-socfpga               remote : origin
+branch : angstrom-v2014.12-socfpga      tag    : rel_angstrom-v2014.12-socfpga_16.09.03_pr
+
+  * tag will be == previous release tag (rel_angstrom-v2014.12-socfpga_16.09.03_rc1)
+  *  9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+ $ git push origin 9a77a4b560faebc54f2ef124e16e422adb4ac21d:refs/tags/rel_angstrom-v2014.12-socfpga_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+remote: testing        
+remote: /usr/local/git/repositories/angstrom-socfpga.git        
+remote: update_safe refs/tags/rel_angstrom-v2014.12-socfpga_16.09.03_pr 0000000000000000000000000000000000000000 9a77a4b560faebc54f2ef124e16e422adb4ac21d        
+remote: 
+remote:  ***********************************************************************************************        
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***        
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***        
+remote:  ***                                                                                         ***        
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***        
+remote:  *** updating (git fetch origin && git rebase)                                               ***        
+remote:  ***                                                                                         ***        
+remote:  *** see also:                                                                               ***        
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***        
+remote:  ***********************************************************************************************        
+remote: 
+remote: update type    : tags-create        
+remote: refname       : refs/tags/rel_angstrom-v2014.12-socfpga_16.09.03_pr        
+remote: oldrev        : 0000000000000000000000000000000000000000        
+remote: newrev        : 9a77a4b560faebc54f2ef124e16e422adb4ac21d        
+remote: 
+remote: repo          : angstrom-socfpga        
+remote: # of commits  : 0        
+remote: refs path     : tags        
+remote: newrev_type   : create        
+remote: 
+remote: create tag    : rel_angstrom-v2014.12-socfpga_16.09.03_pr        
+remote: allowed        
+remote: kickoff, repo=angstrom-socfpga        
+remote: http://jenkins-vm:8080/git/notifyCommit?url=gitolite@at-git:angstrom-socfpga&sha1=9a77a4b560faebc54f2ef124e16e422adb4ac21d        
+remote: *** BIG FAT WARNING: there is no /usr/local/git/linux-infra/repo-settings/angstrom-socfpga file        
+remote: *** email in linux-infra/repo-settings is not set so no email will be sent        
+remote: *** for refs/tags/rel_angstrom-v2014.12-socfpga_16.09.03_pr update 0000000000000000000000000000000000000000->9a77a4b560faebc54f2ef124e16e422adb4ac21d        
+remote: No recipient addresses found in header        
+To at-git:angstrom-socfpga
+ * [new tag]         9a77a4b560faebc54f2ef124e16e422adb4ac21d -> rel_angstrom-v2014.12-socfpga_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : origin
+branch : angstrom-v2014.12-yocto1.7     tag    : rel_angstrom-v2014.12-yocto1.7_16.09.03_pr
+
+  * tag will be == previous release tag (rel_angstrom-v2014.12-yocto1.7_16.09.03_rc1)
+  *  d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+ $ git push origin d6f1376455ff9341a67e44bbcb0253d5e78883a4:refs/tags/rel_angstrom-v2014.12-yocto1.7_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+remote: testing        
+remote: /usr/local/git/repositories/meta-altera.git        
+remote: update_safe refs/tags/rel_angstrom-v2014.12-yocto1.7_16.09.03_pr 0000000000000000000000000000000000000000 d6f1376455ff9341a67e44bbcb0253d5e78883a4        
+remote: 
+remote:  ***********************************************************************************************        
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***        
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***        
+remote:  ***                                                                                         ***        
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***        
+remote:  *** updating (git fetch origin && git rebase)                                               ***        
+remote:  ***                                                                                         ***        
+remote:  *** see also:                                                                               ***        
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***        
+remote:  ***********************************************************************************************        
+remote: 
+remote: update type    : tags-create        
+remote: refname       : refs/tags/rel_angstrom-v2014.12-yocto1.7_16.09.03_pr        
+remote: oldrev        : 0000000000000000000000000000000000000000        
+remote: newrev        : d6f1376455ff9341a67e44bbcb0253d5e78883a4        
+remote: 
+remote: repo          : meta-altera        
+remote: # of commits  : 0        
+remote: refs path     : tags        
+remote: newrev_type   : create        
+remote: 
+remote: create tag    : rel_angstrom-v2014.12-yocto1.7_16.09.03_pr        
+remote: allowed        
+remote: kickoff, repo=meta-altera        
+remote: http://jenkins-vm:8080/git/notifyCommit?url=gitolite@at-git:meta-altera&sha1=d6f1376455ff9341a67e44bbcb0253d5e78883a4        
+To at-git:meta-altera
+ * [new tag]         d6f1376455ff9341a67e44bbcb0253d5e78883a4 -> rel_angstrom-v2014.12-yocto1.7_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : origin
+branch : angstrom-v2014.12-yocto1.7_a10 tag    : rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr
+
+  * tag will be == previous release tag (rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_rc1)
+  *  67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+ $ git push origin 67523b0f770d46a4e363f47b19d3a6a453c66b3f:refs/tags/rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+remote: testing        
+remote: /usr/local/git/repositories/meta-altera.git        
+remote: update_safe refs/tags/rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr 0000000000000000000000000000000000000000 67523b0f770d46a4e363f47b19d3a6a453c66b3f        
+remote: 
+remote:  ***********************************************************************************************        
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***        
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***        
+remote:  ***                                                                                         ***        
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***        
+remote:  *** updating (git fetch origin && git rebase)                                               ***        
+remote:  ***                                                                                         ***        
+remote:  *** see also:                                                                               ***        
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***        
+remote:  ***********************************************************************************************        
+remote: 
+remote: update type    : tags-create        
+remote: refname       : refs/tags/rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr        
+remote: oldrev        : 0000000000000000000000000000000000000000        
+remote: newrev        : 67523b0f770d46a4e363f47b19d3a6a453c66b3f        
+remote: 
+remote: repo          : meta-altera        
+remote: # of commits  : 0        
+remote: refs path     : tags        
+remote: newrev_type   : create        
+remote: 
+remote: create tag    : rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr        
+remote: allowed        
+remote: kickoff, repo=meta-altera        
+remote: http://jenkins-vm:8080/git/notifyCommit?url=gitolite@at-git:meta-altera&sha1=67523b0f770d46a4e363f47b19d3a6a453c66b3f        
+To at-git:meta-altera
+ * [new tag]         67523b0f770d46a4e363f47b19d3a6a453c66b3f -> rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.6                    tag    : rel_socfpga-4.6_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.6_16.09.03_rc1)
+  *  982c902 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+ $ git push portal 982c9027d1bd07d990bc8f9b2acda1409273dae3:refs/tags/rel_socfpga-4.6_16.09.03_pr
+To github.com:altera-opensource/linux-socfpga
+ * [new tag]         982c9027d1bd07d990bc8f9b2acda1409273dae3 -> rel_socfpga-4.6_16.09.03_pr
+
+ $ git push portal 982c9027d1bd07d990bc8f9b2acda1409273dae3:refs/heads/socfpga-4.6
+To github.com:altera-opensource/linux-socfpga
+   c0028fa..982c902  982c9027d1bd07d990bc8f9b2acda1409273dae3 -> socfpga-4.6
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.7                    tag    : rel_socfpga-4.7_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.7_16.09.03_rc1)
+  *  923ea28 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+ $ git push portal 923ea28a7879008c6e394978269a5ca8617383e3:refs/tags/rel_socfpga-4.7_16.09.03_pr
+To github.com:altera-opensource/linux-socfpga
+ * [new tag]         923ea28a7879008c6e394978269a5ca8617383e3 -> rel_socfpga-4.7_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.1.22-ltsi            tag    : rel_socfpga-4.1.22-ltsi_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.1.22-ltsi_16.09.03_rc1)
+  *  47fdd11 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+  *  tag adjusted to be == portal branch head
+  *  fa6814f Alan Tull FogBugz #405628-2: fpga: add config complete timeout
+
+ $ git push portal fa6814fa3d8ff6590086171fa01b61fb90e8e6b8:refs/tags/rel_socfpga-4.1.22-ltsi_16.09.03_pr
+To github.com:altera-opensource/linux-socfpga
+ * [new tag]         fa6814fa3d8ff6590086171fa01b61fb90e8e6b8 -> rel_socfpga-4.1.22-ltsi_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.1.22-ltsi-rt         tag    : rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga-4.1.22-ltsi-rt_16.09.03_rc1)
+  *  fb0d380 Alan Tull FogBugz #398879-2: fpga mgr debugfs
+
+ $ git push portal fb0d3800abcfcd1bdf326b012d0593692e9d19dd:refs/tags/rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+To github.com:altera-opensource/linux-socfpga
+ * [new tag]         fb0d3800abcfcd1bdf326b012d0593692e9d19dd -> rel_socfpga-4.1.22-ltsi-rt_16.09.03_pr
+
+ $ git push portal fb0d3800abcfcd1bdf326b012d0593692e9d19dd:refs/heads/socfpga-4.1.22-ltsi-rt
+To github.com:altera-opensource/linux-socfpga
+   f7f45ec..fb0d380  fb0d3800abcfcd1bdf326b012d0593692e9d19dd -> socfpga-4.1.22-ltsi-rt
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2013.01.01            tag    : rel_socfpga_v2013.01.01_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga_v2013.01.01_16.09.03_rc1)
+  *  f5cd6b9 Chin Liang See spi: cadence_qspi_apb: Ensure baudrate doesn't exceed max value
+
+ $ git push portal f5cd6b9becaee79161edda315cde6ffe67b9677e:refs/tags/rel_socfpga_v2013.01.01_16.09.03_pr
+To github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         f5cd6b9becaee79161edda315cde6ffe67b9677e -> rel_socfpga_v2013.01.01_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2014.10_arria10_bringup tag    : rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr
+
+  * tag will be == previous release tag (rel_socfpga_v2014.10_arria10_bringup_16.09.03_rc1)
+  *  ab2181d Tien Fong Chee FogBugz #398001: Enable UART for console when FPGA is external configured
+
+ $ git push portal ab2181dd766157a74b309d12e0b61c4f3cdc8564:refs/tags/rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr
+To github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         ab2181dd766157a74b309d12e0b61c4f3cdc8564 -> rel_socfpga_v2014.10_arria10_bringup_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : angstrom-socfpga               remote : portal
+branch : angstrom-v2014.12-socfpga      tag    : rel_angstrom-v2014.12-socfpga_16.09.03_pr
+
+  * tag will be == previous release tag (rel_angstrom-v2014.12-socfpga_16.09.03_rc1)
+  *  9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+ $ git push portal 9a77a4b560faebc54f2ef124e16e422adb4ac21d:refs/tags/rel_angstrom-v2014.12-socfpga_16.09.03_pr
+To github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         9a77a4b560faebc54f2ef124e16e422adb4ac21d -> rel_angstrom-v2014.12-socfpga_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : portal
+branch : angstrom-v2014.12-yocto1.7     tag    : rel_angstrom-v2014.12-yocto1.7_16.09.03_pr
+
+  * tag will be == previous release tag (rel_angstrom-v2014.12-yocto1.7_16.09.03_rc1)
+  *  d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+ $ git push portal d6f1376455ff9341a67e44bbcb0253d5e78883a4:refs/tags/rel_angstrom-v2014.12-yocto1.7_16.09.03_pr
+To github.com:altera-opensource/meta-altera
+ * [new tag]         d6f1376455ff9341a67e44bbcb0253d5e78883a4 -> rel_angstrom-v2014.12-yocto1.7_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : portal
+branch : angstrom-v2014.12-yocto1.7_a10 tag    : rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr
+
+  * tag will be == previous release tag (rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_rc1)
+  *  67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+ $ git push portal 67523b0f770d46a4e363f47b19d3a6a453c66b3f:refs/tags/rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr
+To github.com:altera-opensource/meta-altera
+ * [new tag]         67523b0f770d46a4e363f47b19d3a6a453c66b3f -> rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_pr
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+Saved report : /home/atull/repos/internal/linux-tags/linux-altera-tags
+ $ git push origin ee9f690e225b51e5f9629482872345f116622c52:refs/tags/rel_master_16.09.03_pr
+
+ [server responded with usual security boilerplate]
+
+remote: testing        
+remote: /usr/local/git/repositories/linux-tags.git        
+remote: update_safe refs/tags/rel_master_16.09.03_pr 0000000000000000000000000000000000000000 ee9f690e225b51e5f9629482872345f116622c52        
+remote: 
+remote:  ***********************************************************************************************        
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***        
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***        
+remote:  ***                                                                                         ***        
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***        
+remote:  *** updating (git fetch origin && git rebase)                                               ***        
+remote:  ***                                                                                         ***        
+remote:  *** see also:                                                                               ***        
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***        
+remote:  ***********************************************************************************************        
+remote: 
+remote: update type    : tags-create        
+remote: refname       : refs/tags/rel_master_16.09.03_pr        
+remote: oldrev        : 0000000000000000000000000000000000000000        
+remote: newrev        : ee9f690e225b51e5f9629482872345f116622c52        
+remote: 
+remote: repo          : linux-tags        
+remote: # of commits  : 0        
+remote: refs path     : tags        
+remote: newrev_type   : create        
+remote: 
+remote: create tag    : rel_master_16.09.03_pr        
+remote: allowed        
+remote: kickoff, repo=linux-tags        
+remote: http://jenkins-vm:8080/git/notifyCommit?url=gitolite@at-git:linux-tags&sha1=ee9f690e225b51e5f9629482872345f116622c52        
+remote: kickoff: triggering builds (jenkins) tag: refs/tags/rel_master_16.09.03_pr, commit: ee9f690e225b51e5f9629482872345f116622c52.        
+remote:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+remote:                                  Dload  Upload   Total   Spent    Left  Speed
+remote: 
+remote:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+remote:   0    70    0    70    0     0   6293      0 --:--:-- --:--:-- --:--:-- 10000
+remote: No Git consumers using SCM API plugin for: gitolite@at-git:linux-tags        
+remote: *** BIG FAT WARNING: there is no /usr/local/git/linux-infra/repo-settings/linux-tags file        
+remote: *** email in linux-infra/repo-settings is not set so no email will be sent        
+remote: *** for refs/tags/rel_master_16.09.03_pr update 0000000000000000000000000000000000000000->ee9f690e225b51e5f9629482872345f116622c52        
+remote: No recipient addresses found in header        
+To at-git:linux-tags
+ * [new tag]         ee9f690e225b51e5f9629482872345f116622c52 -> rel_master_16.09.03_pr
+
+ $ git push origin ee9f690e225b51e5f9629482872345f116622c52:refs/heads/master
+
+ [server responded with usual security boilerplate]
+
+remote: testing        
+remote: /usr/local/git/repositories/linux-tags.git        
+remote: update_safe refs/heads/master a8398bf84eccd5aa51750bb4e544f395c30449cc ee9f690e225b51e5f9629482872345f116622c52        
+remote: 
+remote:  ***********************************************************************************************        
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***        
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***        
+remote:  ***                                                                                         ***        
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***        
+remote:  *** updating (git fetch origin && git rebase)                                               ***        
+remote:  ***                                                                                         ***        
+remote:  *** see also:                                                                               ***        
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***        
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***        
+remote:  ***********************************************************************************************        
+remote: 
+remote: update type    : heads-commit        
+remote: refname       : refs/heads/master        
+remote: oldrev        : a8398bf84eccd5aa51750bb4e544f395c30449cc        
+remote: newrev        : ee9f690e225b51e5f9629482872345f116622c52        
+remote: 
+remote: repo          : linux-tags        
+remote: # of commits  : 1        
+remote: refs path     : heads        
+remote: newrev_type   : commit        
+remote: 
+remote: branch        : master        
+remote: 
+remote: branch name   : master        
+remote: describe      :         
+remote: branch_base   :         
+remote: Running update_tests:         
+remote: update_tests setting does not exist        
+remote: 
+remote: allowed        
+remote: *** BIG FAT WARNING: there is no /usr/local/git/linux-infra/repo-settings/linux-tags file        
+remote: *** email in linux-infra/repo-settings is not set so no email will be sent        
+remote: *** for refs/heads/master update a8398bf84eccd5aa51750bb4e544f395c30449cc->ee9f690e225b51e5f9629482872345f116622c52        
+remote: No recipient addresses found in header        
+To at-git:linux-tags
+   a8398bf..ee9f690  ee9f690e225b51e5f9629482872345f116622c52 -> master
+

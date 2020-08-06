@@ -1,0 +1,14 @@
+atull@linuxheads98:~/repos/internal/uboot-socfpga$ glo -1 ACDS18.0_REL_A10_GSRD_PR
+2a2102e 2017-09-20 12:23:35 +0800 : Tien Fong Chee : libfdt: Initialize the stack variable
+atull@linuxheads98:~/repos/internal/uboot-socfpga$ glo -1 ACDS18.1_REL_A10_GSRD_PR
+3d79f8a 2018-08-07 20:23:37 +0800 : Tien Fong Chee : FogBugz #582382: Fix integer overflow for Arria 10
+atull@linuxheads98:~/repos/internal/uboot-socfpga$ git push portal ACDS18.1_REL_A10_GSRD_PR
+Total 0 (delta 0), reused 0 (delta 0)
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         ACDS18.1_REL_A10_GSRD_PR -> ACDS18.1_REL_A10_GSRD_PR
+atull@linuxheads98:~/repos/internal/uboot-socfpga$ git push portal ACDS18.0_REL_A10_GSRD_PR
+Total 0 (delta 0), reused 0 (delta 0)
+To git@github.com:altera-opensource/u-boot-socfpga
+  * [new tag]         ACDS18.0_REL_A10_GSRD_PR -> ACDS18.0_REL_A10_GSRD_PR
+atull@linuxheads98:~/repos/internal/uboot-socfpga$
+

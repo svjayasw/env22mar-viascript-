@@ -1,0 +1,107 @@
+#!/usr/bin/env python
+
+import os
+import sys
+import re
+import glob
+import argparse
+
+from subprocess import Popen, PIPE, CalledProcessError
+
+# Run a command line command.
+def check_output(*popenargs, **kwargs):
+    if 'stdout' in kwargs:
+        raise ValueError('stdout argument not allowed, it will be overridden.')
+    proc = Popen(stdout=PIPE, stderr=PIPE, *popenargs, **kwargs)
+    out_value, err_value = proc.communicate()
+    rc = proc.poll()
+    proc.stdout.close()
+    proc.stderr.close()
+    return (out_value, rc)
+
+# Given a list of parameters, run a git command
+def git_cmd(args):
+    (git_msg, rc) = check_output(['git'] + args)
+    return git_msg
+            
+def get_current_br():
+    branches = git_cmd(["branch"]).splitlines()
+    for br in branches:
+        if br[0] == '*':
+            return br[2:]
+    return None
+
+#=======================================================================
+
+parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
+                                 description="git log info for a patchsest")
+
+parser.add_argument("--ver", dest="ver", default=None, help="version info for each commit")
+parser.add_argument(dest="git", nargs='*', action='append', help="git params: [num] [commit]")
+args = parser.parse_args()
+
+#-----------------------------------------------------------------------
+
+current_br = get_current_br()
+print current_br
+
+# parse out the git-like args of [-N][ref][-- file list] where -N is required.
+num_patches = None
+branch = 'HEAD'
+file_list = []
+for cnt in range(1, len(sys.argv)):
+    sys_arg = sys.argv[cnt]
+    if num_patches == None:
+        if re.match("-?[1-9]*[0-9]", sys_arg):
+            num_patches = abs(int(sys_arg))
+    else:
+        if sys_arg == '--':
+            file_list = sys.argv[cnt+1:]
+            break
+        else:
+            branch = sys_arg
+
+if num_patches == None:
+    print "must specify # of patches like -15"
+    exit(0)
+
+#---------------------------------------------------------------------------------------
+
+patchset = {}
+
+patch_num = num_patches
+sha1s = git_cmd(['log', '--pretty=%H', '-' + str(num_patches), branch])
+for sha in sha1s.splitlines():
+    log = git_cmd(['log', '-1', sha])
+    short_sha = git_cmd(['log', '-1', '--pretty=%h', sha]).strip('\n')
+    short_log = git_cmd(['log', '-1', '--pretty=%an : %s', sha]).strip('\n')
+    patchset[patch_num] = {
+        'num' : patch_num,
+        'long_sha' : sha,
+        'short_sha' : short_sha,
+        'log' : log,
+        'short_log' : short_log,
+        }
+
+    # get all info after the '---' as v_info (version info)
+    log_split = log.splitlines()
+    for count in range(0, len(log_split)):
+        log_line = log_split[count]
+        if log_line == '    ---':
+            break
+    patchset[patch_num]['v_info'] = '\n'.join(log_split[count+1:])
+    patch_num -= 1
+
+if file_list != []:
+    sha1s = git_cmd(['log', '--pretty=%H', '-' + str(num_patches), branch, '--', ' '.join(file_list)])
+    
+for num in range(num_patches, 0, -1):
+    if num not in patchset:
+        continue
+    if patchset[num]['long_sha'] not in sha1s:
+        continue
+    print "%02d/%02d : %s : %s" % (num, num_patches, patchset[num]['short_sha'], patchset[num]['short_log'])
+    if args.ver != None:
+        print patchset[num]['v_info']
+                    
+exit(0)

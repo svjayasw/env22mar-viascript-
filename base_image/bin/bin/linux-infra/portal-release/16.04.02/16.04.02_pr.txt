@@ -1,0 +1,211 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.4
+branch tag  : rel_socfpga-4.4_16.04.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.1-ltsi
+branch tag  : rel_socfpga-4.1-ltsi_16.04.02_pr
+new commits : 1
+451753c Dinh Nguyen stmmac: socfpga: remove extra call to socfpga_dwmac_setup
+
+
+++wiki:
+*Branch name*: socfpga-4.1-ltsi, *Tag name:* rel_socfpga-4.1-ltsi_16.04.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | stmmac: socfpga: remove extra call to socfpga_dwmac_setup | [[ https://github.com/altera-opensource/linux-socfpga/commit/451753c4c96a111696cc6d8154ad58a079dadb5a ][ 451753c4c96a111696cc6d8154ad58a079dadb5a ]] |
+--wiki:
+
+
+branch      : socfpga-4.1-ltsi-rt
+branch tag  : rel_socfpga-4.1-ltsi-rt_16.04.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.4_16.04.02_pr
+commit: 4885028 Ley Foon Tan PCI: altera: Fix altera_pcie_link_is_up()
+
+tag:    rel_socfpga-4.1-ltsi_16.04.02_pr
+commit: 451753c Dinh Nguyen stmmac: socfpga: remove extra call to socfpga_dwmac_setup
+
+tag:    rel_socfpga-4.1-ltsi-rt_16.04.02_pr
+commit: 3367642 Dinh Nguyen FogBugz #361542: Add PREEMPT_RT to socfpga_defconfig
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.04.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.04.02_pr
+new commits : 5
+d693856 Chin Liang See Revert "FogBugz #299119: Enable U-Boot environment in QSPI"
+5c57bf2 Chin Liang See FogBugz #364318: Enhance FPGA programming for early release
+7762778 Chin Liang See FogBugz #355845: Disable the security and firewall
+8b1883c Chin Liang See FogBugz #299119: Enable U-Boot environment in QSPI
+80511d1 Matthew Gerlach FogBugz #367318: fix incorrect timer frequency
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_16.04.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Revert "FogBugz #299119: Enable U-Boot environment in QSPI" | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/d693856695347f01ed4fde53534aaf21be7ffb69 ][ d693856695347f01ed4fde53534aaf21be7ffb69 ]] |
+| 364318 | Enhance FPGA programming for early release | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/5c57bf2d5e4bf14a0bbbba5709303ecb269de4e9 ][ 5c57bf2d5e4bf14a0bbbba5709303ecb269de4e9 ]] |
+| 355845 | Disable the security and firewall | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/77627782e1460976dcceb7351e0712b1878db3ab ][ 77627782e1460976dcceb7351e0712b1878db3ab ]] |
+| 299119 | Enable U-Boot environment in QSPI | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/8b1883c8f66f6531b6d04c7ef003427c8653a9c6 ][ 8b1883c8f66f6531b6d04c7ef003427c8653a9c6 ]] |
+| 367318 | fix incorrect timer frequency | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/80511d1f6a6c46aa6593a6cfb7b124e85573dbd0 ][ 80511d1f6a6c46aa6593a6cfb7b124e85573dbd0 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.04.02_pr
+commit: 7dd0473 Chin Liang See FogBugz #353914: Fix SDRAM self refresh failure
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.04.02_pr
+commit: d693856 Chin Liang See Revert "FogBugz #299119: Enable U-Boot environment in QSPI"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.04.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.04.02_pr
+commit: 0a2c33d Tien Hock Loh FogBugz #338393: PCIe: Update meta-altera-refdes commit ID
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.04.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.04.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.04.02_pr
+commit: 8d6e9b4 Yves Vandervennet Support for the kernel v4.3
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.04.02_pr
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1-ltsi
+
+commit 451753c4c96a111696cc6d8154ad58a079dadb5a
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Apr 14 14:21:28 2016 -0500
+
+    stmmac: socfpga: remove extra call to socfpga_dwmac_setup
+    
+    In the socfpga_dwmac_probe function, we have a call to socfpga_dwmac_setup,
+    which is already called from socfpga_dwmac_init later in the probe function.
+    Remove this extra call to socfpga_dwmac_setup.
+    
+    Also we should not be calling socfpga_dwmac_setup() directly without wrapping
+    it around the proper reset assert/deasserts. That is because the
+    socfpga_dwmac_setup() is setting up PHY modes in the system manager, and it
+    is requires the EMAC's to be in reset during the PHY setup.
+    
+    Reported-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit d693856695347f01ed4fde53534aaf21be7ffb69
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Apr 8 13:54:37 2016 +0800
+
+    Revert "FogBugz #299119: Enable U-Boot environment in QSPI"
+    
+    This reverts commit 8b1883c8f66f6531b6d04c7ef003427c8653a9c6.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 5c57bf2d5e4bf14a0bbbba5709303ecb269de4e9
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Mar 29 21:57:23 2016 +0800
+
+    FogBugz #364318: Enhance FPGA programming for early release
+    
+    Enhance FPGA programming for early release where sync word
+    will be sent after the periph.rbf data. There is 1ms delay
+    between each send and stop once early user mode is entered.
+    This is to ensure early release works for various scenarios
+    such as compressed and uncompressed RBF.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 77627782e1460976dcceb7351e0712b1878db3ab
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Mar 30 10:08:32 2016 +0800
+
+    FogBugz #355845: Disable the security and firewall
+    
+    Enable full access by by all Arria10 SoC masters.
+    This is to avoid bringup issue for user who
+    doesn't need any security or firewall protection.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 8b1883c8f66f6531b6d04c7ef003427c8653a9c6
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Mar 28 11:07:58 2016 +0800
+
+    FogBugz #299119: Enable U-Boot environment in QSPI
+    
+    Enable U-Boot environment in SPI flash.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 80511d1f6a6c46aa6593a6cfb7b124e85573dbd0
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Fri Mar 25 13:51:45 2016 -0700
+
+    FogBugz #367318: fix incorrect timer frequency
+    
+    The 5 second count down timer was actually taking 10
+    seconds. The frequency of the input clock to
+    the timer had changed, but the u-boot configuration
+    did not track the change.  The clock frequency
+    is now calculated at run time to automatically
+    track any future change in the clock frequency.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    Changes for v2
+    - Fix formatting
+
+-----------------------------------------------------------------------
+

@@ -1,0 +1,26 @@
+
+/home/atull/repos/inter
+/home/atull/repos/ine178d8e Tien Hock Loh : e178d8e Tien Hock Loh : FogBugz #327063: Update commit ID to include fix for sTo git@github.com:alteraTo git@github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         ACDS15.1.1_REL_GSRD_RC6 -> not pushing branch
+
+/home/atull/repos/inter
+/home/atull/repos/in4065da1 Chee Nouk Phoon 4065da1 Chee Nouk Phoon : FogBugz #324265 MTo git@github.com:alteraTo git@github.com:altera-opensource/linux-refdesigns.git
+ * [new tag]         ACDS15.1.1_REL_GSRD_RC6 -> not pushing branch
+
+/home/atull/repos/inter
+/home/atull/repos6b67245 Paul Zimmerman :6b67245 Paul Zimmerman : usb: dwc2: fix thinko in dwc2To git@github.com:alteraTo git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         ACDS15.1.1_REL_GSRD_RC6 -> not pushing branch
+
+/home/atull/repos/inter
+/home/atull/rep2477f90 Tien Hock Loh : 2477f90 Tien Hock Loh : FogBugz #329135: Add iperf andTo git@github.com:alteraTo git@github.com:altera-opensource/meta-altera
+ * [new tag]         ACDS15.1.1_REL_GSRD_RC6 -> not pushing branch
+
+/home/atull/repos/inter
+/home/atull/repos/intec48ec1a Tien Hock Loh : c48ec1a Tien Hock Loh : FogBugz #327063: Update commit ID of meta-altera-refdes To git@github.com:alteraTo git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         ACDS15.1.1_REL_GSRD_RC6 -> not pushing branch
+
+/home/atull/repos/inter
+/home/atull/repos4003f38 Chin Liang See :4003f38 Chin Liang See : FogBugz #297183: Enabling ECC overwrite wTo git@github.com:alteraTo git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         ACDS15.1.1_REL_GSRD_RC6 -> not pushing branch
+Succenot pushing branch
+Success

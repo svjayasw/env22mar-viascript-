@@ -1,0 +1,102 @@
+Hi Alan,
+
+Approved, thanks!
+
+Regards
+Ying Cheh Tan
+Embedded Release Manager
+Intel Programmable Solutions Group
+
+From: Tull, Alan
+Sent: Thursday, March 14, 2019 1:18 AM
+To: Tan, Ying Cheh <ying.cheh.tan@intel.com>; Ong, Hean Loong <hean.loong.ong@intel.com>; See, Chin Liang <chin.liang.see@intel.com>
+Cc: Chee, Tien Fong <tien.fong.chee@intel.com>
+Subject: RE: Push Arria10 u-boot ACDS18.1_REL_A10_GSRD_PR into github
+
+OK, just waiting on approval of the tags by Ying Cheh
+
+Thanks!
+Alan
+
+From: See, Chin Liang
+Sent: Monday, March 4, 2019 8:42 AM
+To: Tull, Alan <alan.tull@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>; Ong, Hean Loong <hean.loong.ong@intel.com>
+Cc: Chee, Tien Fong <tien.fong.chee@intel.com>
+Subject: RE: Push Arria10 u-boot ACDS18.1_REL_A10_GSRD_PR into github
+
+Hi Ying Cheh and Alan,
+
+Those commit ID is already approved as part of SOCEDS release.
+
+https://sj-arc.altera.com/tools/soceds/18.1/222/linux64/host_tools/altera/bootloaders/u-boot/git_clone.sh
+https://sj-arc.altera.com/tools/soceds/18.0/219/linux64/host_tools/altera/bootloaders/u-boot/git_clone.sh
+
+Thanks and have a nice day!
+
+Chin Liang
+Internal Global Dial: 2 701 8776
+Direct Line: +60 4 636 8776
+
+From: Tull, Alan
+Sent: Wednesday, February 27, 2019 11:52 PM
+To: Tan, Ying Cheh <ying.cheh.tan@intel.com>; See, Chin Liang <chin.liang.see@intel.com>; Ong, Hean Loong <hean.loong.ong@intel.com>
+Cc: Chee, Tien Fong <tien.fong.chee@intel.com>
+Subject: RE: Push Arria10 u-boot ACDS18.1_REL_A10_GSRD_PR into github
+
+Hi Ying Cheh,
+
+Do these tags have your approval?
+
+Thanks,
+Alan
+
+From: See, Chin Liang
+Sent: Wednesday, February 27, 2019 12:24 AM
+To: Ong, Hean Loong <hean.loong.ong@intel.com>; Tull, Alan <alan.tull@intel.com>
+Cc: Chee, Tien Fong <tien.fong.chee@intel.com>
+Subject: RE: Push Arria10 u-boot ACDS18.1_REL_A10_GSRD_PR into github
+
+Hi Alan,
+
+The background is that we tag stuff built by Angstrom.
+In A10, U-Boot is built part of SOCEDS and that why its not tagged.
+
+But that might create confusion since customer cannot find correspoding A10 U-Boot tag in github.
+Thanks and have a nice day!
+
+Chin Liang
+Internal Global Dial: 2 701 8776
+Direct Line: +60 4 636 8776
+
+From: Ong, Hean Loong
+Sent: Wednesday, February 27, 2019 2:11 PM
+To: Tull, Alan <alan.tull@intel.com>
+Cc: Chee, Tien Fong <tien.fong.chee@intel.com>; See, Chin Liang <chin.liang.see@intel.com>
+Subject: Push Arria10 u-boot ACDS18.1_REL_A10_GSRD_PR into github
+
+Hi Alan,
+
+Recently we were requested to push A10 u-boot tags into github that correspond with the ACDS version release
+
+Below are the tags and commit that Tien Fong and Chin Liang requested:
+
+uboot-socfpga socfpga_v2014.10_arria10_bringup	 2a2102e92e470beec51d8b2dea8323cfc92f92b1	ACDS18.0_REL_A10_GSRD_PR	    libfdt: Initialize the stack variable
+
+    Report Coverity log:
+        The code uses a variable that has not
+	    been initialized, leading to unpredictable
+	        or unintended results.
+
+uboot-socfpga socfpga_v2014.10_arria10_bringup	3d79f8aaf8930da2c118a52ef831739e6d855295	ACDS18.1_REL_A10_GSRD_PR	    FogBugz #582382: Fix integer overflow for Arria 10
+
+    dramaddrw data structure are defined as u32. Compiler assume 32-bit
+        arithmetic on expression and the shifting operation to be done on a
+	    32-bit value. So, the expression would overflow if the shifting
+	        is more than 32-bit.
+
+
+BR
+
+Hean Loong
+Internal Global Dial: 2 701 6773
+Direct Line: +60 4 636 6773

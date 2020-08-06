@@ -1,0 +1,35 @@
+ACDS15.1_REL_GSRD_RC4
+
+/home/atull/repos/internal/angstrom-socfpga
+2a346da Tien Hock Loh : FogBugz #327063: Update commit ID to include fix for syschk refresh rate issueTo git@github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         ACDS15.1_REL_GSRD_RC4 -> ACDS15.1_REL_GSRD_RC4
+To git@github.com:altera-opensource/angstrom-socfpga
+   db71095..2a346da  ACDS15.1_REL_GSRD_RC4 -> angstrom-v2014.12-socfpga_gsrd15.1
+
+/home/atull/repos/internal/linux-refdesigns
+e06d1b3 Tien Hock Loh : FogBugz #295730: Add system checking applicationTo git@github.com:altera-opensource/linux-refdesigns.git
+ * [new tag]         ACDS15.1_REL_GSRD_RC4 -> ACDS15.1_REL_GSRD_RC4
+Everything up-to-date
+
+/home/atull/repos/internal/linux-socfpga
+6b67245 Paul Zimmerman : usb: dwc2: fix thinko in dwc2_hc_set_even_odd_frame()To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         ACDS15.1_REL_GSRD_RC4 -> ACDS15.1_REL_GSRD_RC4
+To git@github.com:altera-opensource/linux-socfpga
+   09232c8..6b67245  ACDS15.1_REL_GSRD_RC4 -> socfpga-3.10-ltsi
+
+/home/atull/repos/internal/meta-altera
+95a0cf6 Tien Hock Loh : FogBugz #308077: Add tiny sized RFS generation for QSPI bootTo git@github.com:altera-opensource/meta-altera
+ * [new tag]         ACDS15.1_REL_GSRD_RC4 -> ACDS15.1_REL_GSRD_RC4
+To git@github.com:altera-opensource/meta-altera
+   2cccf8e..95a0cf6  ACDS15.1_REL_GSRD_RC4 -> angstrom-v2014.12-yocto1.7
+
+/home/atull/repos/internal/meta-altera-refdes
+c48ec1a Tien Hock Loh : FogBugz #327063: Update commit ID of meta-altera-refdes for syschk refresh issueTo git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         ACDS15.1_REL_GSRD_RC4 -> ACDS15.1_REL_GSRD_RC4
+To git@github.com:altera-opensource/meta-altera-refdes
+   ebae0b1..c48ec1a  ACDS15.1_REL_GSRD_RC4 -> gsrd-15.1
+
+/home/atull/repos/internal/uboot-socfpga
+353283b Tien Fong Chee : FogBugz #241114: Fixed the compilation issue when BOOT_FROM_NAND is checked on preloader.To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         ACDS15.1_REL_GSRD_RC4 -> ACDS15.1_REL_GSRD_RC4
+not pushing branch

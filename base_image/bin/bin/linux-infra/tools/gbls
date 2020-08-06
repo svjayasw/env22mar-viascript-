@@ -1,0 +1,91 @@
+#!/bin/bash
+
+function usage()
+{
+    echo "$(basename $0) [-r remote][-f filter][-d]"
+    echo "  Lists git branches in reverse order of top commit date"
+    echo "  -r [remote] = show branches on remote"
+    echo "  -o          = show branches on origin"
+    echo "  -f [filter] = only show branches matching filter pattern"
+    echo "  -b          = show branch names only"
+    echo "  -d          = do 'git describe' on each branch (slow)"
+}
+
+#================================================================
+
+bare=
+describe=
+filter=
+remote=
+use_remote=
+while [ -n "$1" ]; do
+    case "$1" in
+	-d ) describe=1;;
+	-b ) bare=1;;
+	-r ) use_remote=1; remote=$2; shift;;
+	-o ) use_remote=1; remote='origin';;
+	-f ) filter=$2; shift;;
+	* ) usage; exit;;
+    esac
+    shift
+done
+
+#--------------------------------------------------------------------------
+
+if [ -z "$use_remote" ]; then
+    pattern=refs/heads
+elif [ -z "$remote" ]; then
+    pattern=refs/remotes
+else
+    pattern=refs/remotes/$remote
+fi
+
+if [ -n "$filter" ]; then
+    pattern=${pattern}/*${filter}*
+fi
+
+# get terminal size using tput
+# tput cols
+# tput lines
+
+if [ -n "$bare" ]; then
+    fmt='
+	ref=%(refname:short)
+
+	echo "${ref}"
+    '
+elif [ -z "$describe" ]; then
+    fmt='
+	date=%(committerdate:short)
+	sha=%(objectname:short)
+	ref=%(refname:short)
+
+	echo "${date}  ${sha}  ${ref}"
+    '
+else
+    fmt='
+	date=%(committerdate:short)
+	ref=%(refname:short)
+	descr=$(git describe $ref)
+
+	echo "${date}  ${descr}  ${ref}"
+    '
+fi
+
+eval=`git for-each-ref --sort=committerdate --format="$fmt" ${pattern}`
+eval "$eval" |tee /tmp/gbls.txt
+if [ -n "$bare" ]; then
+    exit 0
+fi
+
+br_count=$(cat /tmp/gbls.txt | wc -l)
+rm -f /tmp/gbls.txt
+echo " --- $br_count branches ---"
+
+branch="$(git branch | grep '^*' | cut -c3-)"
+if [ "$branch" == '(no branch)' ]; then
+    echo " * not on a branch *  $(git describe)"
+else
+    echo " --- Current branch ------> $branch"
+fi
+git log -1 --pretty=format:'%h %an : %s'

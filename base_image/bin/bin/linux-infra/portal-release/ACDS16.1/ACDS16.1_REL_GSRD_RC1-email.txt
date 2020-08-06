@@ -1,0 +1,114 @@
+From atull@altera.com Tue Sep 13 10:06:35 2016
+Date: Tue, 13 Sep 2016 15:06:30 +0000
+From: Alan Tull <atull@altera.com>
+To: atull <atull@opensource.altera.com>
+Subject: FW: github.com pushes heads up
+
+
+ 
+
+ 
+
+From: Tien Hock Loh
+Sent: Tuesday, September 13, 2016 3:48 AM
+To: Alan Tull; Ying Cheh Tan
+Cc: Yves Vandervennet; Graham Moore; Chin Liang See; Chung Weng Gooi; Kai Lin Ng
+Subject: RE: github.com pushes heads up
+
+
+Missed out M10 tags, added M10 tags.
+
+
+Thanks
+
+Tien Hock
+
+
+From: Tien Hock Loh
+Sent: Tuesday, September 13, 2016 4:40 PM
+To: Alan Tull; Ying Cheh Tan
+Cc: Yves Vandervennet; Graham Moore; Chin Liang See; Chung Weng Gooi; Kai Lin Ng
+Subject: RE: github.com pushes heads up
+
+
+Alan,
+
+Need your help with GSRD tag push, table as below
+
+
+Chin Liang, Graham, Ying Cheh, Yves,
+
+I’ve checked the commit id of each component, but extra pairs of eyes wouldn’t
+hurt J.
+
+A quick note on the meta-altera side, Graham hasn’t pushed the squashed commits
+up at at-git yet, so the current commit id is with the changes that Graham
+previously committed. If anyone has concerns over this please raise it.
+Otherwise, we’ll need approval from Ying Cheh for the pushes.
+
+Note: u-boot for CV/AV’s commit ID is one commit ahead of SoCEDS’s preloader.
+
+Repo			Branch		Commit id	Tag
+
+linux-socfpga		socfpga-4.1.22-ltsi	742f555df70361ec80ae48df461f279487fd9959	ACDS16.1_REL_GSRD_RC1
+uboot-socfpga		socfpga_v2013.01.01	f5cd6b9becaee79161edda315cde6ffe67b9677e	ACDS16.1_REL_GSRD_RC1
+meta-altera		angstrom-v2015.12-yocto2.0 1a74c6a88970105dcae23c8047bcaa95d48fa1f5	ACDS16.1_REL_GSRD_RC1
+meta-altera-refdes	gsrd-16.1		7ac789598c9044681f2e737de54eca0641a97348	ACDS16.1_REL_GSRD_RC1
+linux-refdesigns	socfpga-16.1		a3d4e657087dbf535401b18cdd810591857b6961	ACDS16.1_REL_GSRD_RC1
+
+uboot-socfpga		socfpga_v2014.10_arria10_bringup ab2181dd766157a74b309d12e0b61c4f3cdc8564 ACDS16.1_REL_A10_GSRD_RC1
+
+linux-socfpga		socfpga-3.10-ltsi	28bac3edbcdc74f98b865986be5d340381896192	ACDS16.1_REL_M10_GSRD_RC1
+
+
+Regtest is at 100% passing rate:
+http://sj-regtest/pert/pert.php?test_run_id=1315896&v=1&fs=2&ffas=-1
+
+Build binaries can be obtained at /tools/socfpga_refdes/16.1/189/4 (SJ may have
+some delay due to sync)
+
+Checking on the tags - http://pg-eswnode-l:8080/job/check_gsrd_tags/2/console
+
+
+Thanks
+
+Tien Hock
+
+From: Tien Hock Loh
+Sent: Monday, September 05, 2016 3:36 PM
+To: Alan Tull
+Cc: Yves Vandervennet; Ying Cheh Tan
+Subject: github.com pushes heads up
+
+ 
+
+Hi Alan,
+
+ 
+
+A quick heads up, we’re closing to RC builds, and will need to be pushing tags
+up from at-git to github.com/altera-opensource.
+
+I’ll ping you once we have the tags ready to be pushed.
+
+ 
+
+Let me know if there’re concerns on this.
+
+ 
+
+Thanks
+
+Tien Hock
+
+
+________________________________________________________________________________
+
+Confidentiality Notice.
+This message may contain information that is confidential or otherwise protected
+from disclosure. If you are not the intended recipient, you are hereby notified
+that any use, disclosure, dissemination, distribution, or copying of this
+message, or any attachments, is strictly prohibited. If you have received this
+message in error, please advise the sender by reply e-mail, and delete the
+message and any attachments. Thank you.
+

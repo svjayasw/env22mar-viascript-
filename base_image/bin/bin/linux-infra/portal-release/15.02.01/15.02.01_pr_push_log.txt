@@ -1,0 +1,978 @@
++ cd /home/atull/repos/internal/linux-socfpga
++ git tag rel_socfpga-3.17_15.02.01_pr rel_socfpga-3.17_15.02.01_rc1
++ git push origin rel_socfpga-3.17_15.02.01_pr:refs/tags/rel_socfpga-3.17_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/linux-socfpga.git[K
+remote: update_safe refs/tags/rel_socfpga-3.17_15.02.01_pr 0000000000000000000000000000000000000000 9d0309531462b73f670d41a78d6a93ae5775a721[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_socfpga-3.17_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : 9d0309531462b73f670d41a78d6a93ae5775a721[K
+remote: 
+remote: repo          : linux-socfpga[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_socfpga-3.17_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=linux-socfpga[K
+To gitolite@at-git:linux-socfpga
+ * [new tag]         rel_socfpga-3.17_15.02.01_pr -> rel_socfpga-3.17_15.02.01_pr
++ echo
+
++ git push portal rel_socfpga-3.17_15.02.01_pr:refs/tags/rel_socfpga-3.17_15.02.01_pr
+To gitolite@git.rocketboards.org:linux-socfpga
+ * [new tag]         rel_socfpga-3.17_15.02.01_pr -> rel_socfpga-3.17_15.02.01_pr
++ git push portal rel_socfpga-3.17_15.02.01_pr:refs/heads/socfpga-3.17
+To gitolite@git.rocketboards.org:linux-socfpga
+   1cd4171..9d03095  rel_socfpga-3.17_15.02.01_pr -> socfpga-3.17
++ echo
+
++ git tag rel_socfpga-3.18_15.02.01_pr rel_socfpga-3.18_15.02.01_rc1
+fatal: Failed to resolve 'rel_socfpga-3.18_15.02.01_rc1' as a valid ref.
++ cd /home/atull/repos/internal/linux-socfpga
++ echo
+
++ git tag rel_socfpga-3.18_15.02.01_pr ab3f83e671d7a37e1db20d8a90fe0699b3424e76
++ git push origin rel_socfpga-3.18_15.02.01_pr:refs/tags/rel_socfpga-3.18_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/linux-socfpga.git[K
+remote: update_safe refs/tags/rel_socfpga-3.18_15.02.01_pr 0000000000000000000000000000000000000000 ab3f83e671d7a37e1db20d8a90fe0699b3424e76[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_socfpga-3.18_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : ab3f83e671d7a37e1db20d8a90fe0699b3424e76[K
+remote: 
+remote: repo          : linux-socfpga[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_socfpga-3.18_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=linux-socfpga[K
+To gitolite@at-git:linux-socfpga
+ * [new tag]         rel_socfpga-3.18_15.02.01_pr -> rel_socfpga-3.18_15.02.01_pr
++ echo
+
++ git push portal rel_socfpga-3.18_15.02.01_pr:refs/tags/rel_socfpga-3.18_15.02.01_pr
+To gitolite@git.rocketboards.org:linux-socfpga
+ * [new tag]         rel_socfpga-3.18_15.02.01_pr -> rel_socfpga-3.18_15.02.01_pr
++ git push portal rel_socfpga-3.18_15.02.01_pr:refs/heads/socfpga-3.18
+To gitolite@git.rocketboards.org:linux-socfpga
+ * [new branch]      rel_socfpga-3.18_15.02.01_pr -> socfpga-3.18
++ echo
+
++ git tag rel_socfpga-3.10-ltsi_15.02.01_pr rel_socfpga-3.10-ltsi_15.02.01_rc1
++ git push origin rel_socfpga-3.10-ltsi_15.02.01_pr:refs/tags/rel_socfpga-3.10-ltsi_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/linux-socfpga.git[K
+remote: update_safe refs/tags/rel_socfpga-3.10-ltsi_15.02.01_pr 0000000000000000000000000000000000000000 3bffc0d0f49e1136ab31448c4e48c2a9980921ac[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_socfpga-3.10-ltsi_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : 3bffc0d0f49e1136ab31448c4e48c2a9980921ac[K
+remote: 
+remote: repo          : linux-socfpga[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_socfpga-3.10-ltsi_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=linux-socfpga[K
+To gitolite@at-git:linux-socfpga
+ * [new tag]         rel_socfpga-3.10-ltsi_15.02.01_pr -> rel_socfpga-3.10-ltsi_15.02.01_pr
++ echo
+
++ git push portal rel_socfpga-3.10-ltsi_15.02.01_pr:refs/tags/rel_socfpga-3.10-ltsi_15.02.01_pr
+To gitolite@git.rocketboards.org:linux-socfpga
+ * [new tag]         rel_socfpga-3.10-ltsi_15.02.01_pr -> rel_socfpga-3.10-ltsi_15.02.01_pr
++ git push portal rel_socfpga-3.10-ltsi_15.02.01_pr:refs/heads/socfpga-3.10-ltsi
+To gitolite@git.rocketboards.org:linux-socfpga
+   95ac4d3..3bffc0d  rel_socfpga-3.10-ltsi_15.02.01_pr -> socfpga-3.10-ltsi
++ echo
+
++ git tag rel_socfpga-3.10-ltsi-rt_15.02.01_pr rel_socfpga-3.10-ltsi-rt_15.02.01_rc1
++ git push origin rel_socfpga-3.10-ltsi-rt_15.02.01_pr:refs/tags/rel_socfpga-3.10-ltsi-rt_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/linux-socfpga.git[K
+remote: update_safe refs/tags/rel_socfpga-3.10-ltsi-rt_15.02.01_pr 0000000000000000000000000000000000000000 7ea94617cfae6a62ee963adc1ae340196dbe2b34[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_socfpga-3.10-ltsi-rt_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : 7ea94617cfae6a62ee963adc1ae340196dbe2b34[K
+remote: 
+remote: repo          : linux-socfpga[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_socfpga-3.10-ltsi-rt_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=linux-socfpga[K
+To gitolite@at-git:linux-socfpga
+ * [new tag]         rel_socfpga-3.10-ltsi-rt_15.02.01_pr -> rel_socfpga-3.10-ltsi-rt_15.02.01_pr
++ echo
+
++ git push portal rel_socfpga-3.10-ltsi-rt_15.02.01_pr:refs/tags/rel_socfpga-3.10-ltsi-rt_15.02.01_pr
+To gitolite@git.rocketboards.org:linux-socfpga
+ * [new tag]         rel_socfpga-3.10-ltsi-rt_15.02.01_pr -> rel_socfpga-3.10-ltsi-rt_15.02.01_pr
++ git push portal rel_socfpga-3.10-ltsi-rt_15.02.01_pr:refs/heads/socfpga-3.10-ltsi-rt
+Everything up-to-date
++ echo
+
++ cd /home/atull/repos/internal/uboot-socfpga
++ git tag rel_socfpga_v2013.01.01_15.02.01_pr rel_socfpga_v2013.01.01_15.02.01_rc1
++ git push origin rel_socfpga_v2013.01.01_15.02.01_pr:refs/tags/rel_socfpga_v2013.01.01_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/uboot-socfpga.git[K
+remote: update_safe refs/tags/rel_socfpga_v2013.01.01_15.02.01_pr 0000000000000000000000000000000000000000 32c1d91bc0d10beca54c2dfc5b475d4ffeffc15a[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_socfpga_v2013.01.01_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : 32c1d91bc0d10beca54c2dfc5b475d4ffeffc15a[K
+remote: 
+remote: repo          : uboot-socfpga[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_socfpga_v2013.01.01_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=uboot-socfpga[K
+To gitolite@at-git:uboot-socfpga
+ * [new tag]         rel_socfpga_v2013.01.01_15.02.01_pr -> rel_socfpga_v2013.01.01_15.02.01_pr
++ echo
+
++ git push portal rel_socfpga_v2013.01.01_15.02.01_pr:refs/tags/rel_socfpga_v2013.01.01_15.02.01_pr
+To gitolite@git.rocketboards.org:u-boot-socfpga
+ * [new tag]         rel_socfpga_v2013.01.01_15.02.01_pr -> rel_socfpga_v2013.01.01_15.02.01_pr
++ git push portal rel_socfpga_v2013.01.01_15.02.01_pr:refs/heads/socfpga_v2013.01.01
+Everything up-to-date
++ echo
+
++ cd /home/atull/repos/internal/poky
++ git tag rel_danny-altera_15.02.01_pr rel_danny-altera_15.02.01_rc1
++ git push origin rel_danny-altera_15.02.01_pr:refs/tags/rel_danny-altera_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/poky.git[K
+remote: update_safe refs/tags/rel_danny-altera_15.02.01_pr 0000000000000000000000000000000000000000 2ea11347bbdbdab3b5d9bb7a4157f9b7b5607a23[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_danny-altera_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : 2ea11347bbdbdab3b5d9bb7a4157f9b7b5607a23[K
+remote: 
+remote: repo          : poky[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_danny-altera_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=poky[K
+To gitolite@at-git:poky
+ * [new tag]         rel_danny-altera_15.02.01_pr -> rel_danny-altera_15.02.01_pr
++ echo
+
++ git push portal rel_danny-altera_15.02.01_pr:refs/tags/rel_danny-altera_15.02.01_pr
+To gitolite@git.rocketboards.org:poky-socfpga
+ * [new tag]         rel_danny-altera_15.02.01_pr -> rel_danny-altera_15.02.01_pr
++ git push portal rel_danny-altera_15.02.01_pr:refs/heads/danny-altera
+Everything up-to-date
++ echo
+
++ cd /home/atull/repos/internal/angstrom-socfpga
++ git tag rel_angstrom-v2012.12-socfpga_15.02.01_pr rel_angstrom-v2012.12-socfpga_15.02.01_rc1
++ git push origin rel_angstrom-v2012.12-socfpga_15.02.01_pr:refs/tags/rel_angstrom-v2012.12-socfpga_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/angstrom-socfpga.git[K
+remote: update_safe refs/tags/rel_angstrom-v2012.12-socfpga_15.02.01_pr 0000000000000000000000000000000000000000 a7411013b0d87ac0a4596b09a0c19f868e21b667[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_angstrom-v2012.12-socfpga_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : a7411013b0d87ac0a4596b09a0c19f868e21b667[K
+remote: 
+remote: repo          : angstrom-socfpga[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_angstrom-v2012.12-socfpga_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=angstrom-socfpga[K
+remote: *** BIG FAT WARNING: there is no /usr/local/git/linux-infra/repo-settings/angstrom-socfpga file[K
+remote: *** email in linux-infra/repo-settings is not set so no email will be sent[K
+remote: *** for refs/tags/rel_angstrom-v2012.12-socfpga_15.02.01_pr update 0000000000000000000000000000000000000000->a7411013b0d87ac0a4596b09a0c19f868e21b667[K
+remote: No recipient addresses found in header[K
+To gitolite@at-git:angstrom-socfpga
+ * [new tag]         rel_angstrom-v2012.12-socfpga_15.02.01_pr -> rel_angstrom-v2012.12-socfpga_15.02.01_pr
++ echo
+
++ git push portal rel_angstrom-v2012.12-socfpga_15.02.01_pr:refs/tags/rel_angstrom-v2012.12-socfpga_15.02.01_pr
+To gitolite@git.rocketboards.org:angstrom-socfpga
+ * [new tag]         rel_angstrom-v2012.12-socfpga_15.02.01_pr -> rel_angstrom-v2012.12-socfpga_15.02.01_pr
++ git push portal rel_angstrom-v2012.12-socfpga_15.02.01_pr:refs/heads/angstrom-v2012.12-socfpga
+Everything up-to-date
++ echo
+
++ git tag rel_angstrom-v2013.12-socfpga_15.02.01_pr rel_angstrom-v2013.12-socfpga_15.02.01_rc1
++ git push origin rel_angstrom-v2013.12-socfpga_15.02.01_pr:refs/tags/rel_angstrom-v2013.12-socfpga_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/angstrom-socfpga.git[K
+remote: update_safe refs/tags/rel_angstrom-v2013.12-socfpga_15.02.01_pr 0000000000000000000000000000000000000000 65417bcfd8d2859fd74ce5d5358fc26152db9991[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_angstrom-v2013.12-socfpga_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : 65417bcfd8d2859fd74ce5d5358fc26152db9991[K
+remote: 
+remote: repo          : angstrom-socfpga[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_angstrom-v2013.12-socfpga_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=angstrom-socfpga[K
+remote: *** BIG FAT WARNING: there is no /usr/local/git/linux-infra/repo-settings/angstrom-socfpga file[K
+remote: *** email in linux-infra/repo-settings is not set so no email will be sent[K
+remote: *** for refs/tags/rel_angstrom-v2013.12-socfpga_15.02.01_pr update 0000000000000000000000000000000000000000->65417bcfd8d2859fd74ce5d5358fc26152db9991[K
+remote: No recipient addresses found in header[K
+To gitolite@at-git:angstrom-socfpga
+ * [new tag]         rel_angstrom-v2013.12-socfpga_15.02.01_pr -> rel_angstrom-v2013.12-socfpga_15.02.01_pr
++ echo
+
++ git push portal rel_angstrom-v2013.12-socfpga_15.02.01_pr:refs/tags/rel_angstrom-v2013.12-socfpga_15.02.01_pr
+To gitolite@git.rocketboards.org:angstrom-socfpga
+ * [new tag]         rel_angstrom-v2013.12-socfpga_15.02.01_pr -> rel_angstrom-v2013.12-socfpga_15.02.01_pr
++ git push portal rel_angstrom-v2013.12-socfpga_15.02.01_pr:refs/heads/angstrom-v2013.12-socfpga
+Everything up-to-date
++ echo
+
++ git tag rel_angstrom-v2014.06-socfpga_15.02.01_pr rel_angstrom-v2014.06-socfpga_15.02.01_rc1
++ git push origin rel_angstrom-v2014.06-socfpga_15.02.01_pr:refs/tags/rel_angstrom-v2014.06-socfpga_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/angstrom-socfpga.git[K
+remote: update_safe refs/tags/rel_angstrom-v2014.06-socfpga_15.02.01_pr 0000000000000000000000000000000000000000 4460560c5cada124a6da2ae9306305abcf5f2040[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_angstrom-v2014.06-socfpga_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : 4460560c5cada124a6da2ae9306305abcf5f2040[K
+remote: 
+remote: repo          : angstrom-socfpga[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_angstrom-v2014.06-socfpga_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=angstrom-socfpga[K
+remote: *** BIG FAT WARNING: there is no /usr/local/git/linux-infra/repo-settings/angstrom-socfpga file[K
+remote: *** email in linux-infra/repo-settings is not set so no email will be sent[K
+remote: *** for refs/tags/rel_angstrom-v2014.06-socfpga_15.02.01_pr update 0000000000000000000000000000000000000000->4460560c5cada124a6da2ae9306305abcf5f2040[K
+remote: No recipient addresses found in header[K
+To gitolite@at-git:angstrom-socfpga
+ * [new tag]         rel_angstrom-v2014.06-socfpga_15.02.01_pr -> rel_angstrom-v2014.06-socfpga_15.02.01_pr
++ echo
+
++ git push portal rel_angstrom-v2014.06-socfpga_15.02.01_pr:refs/tags/rel_angstrom-v2014.06-socfpga_15.02.01_pr
+To gitolite@git.rocketboards.org:angstrom-socfpga
+ * [new tag]         rel_angstrom-v2014.06-socfpga_15.02.01_pr -> rel_angstrom-v2014.06-socfpga_15.02.01_pr
++ git push portal rel_angstrom-v2014.06-socfpga_15.02.01_pr:refs/heads/angstrom-v2014.06-socfpga
+Everything up-to-date
++ echo
+
++ cd /home/atull/repos/internal/meta-altera
++ git tag rel_angstrom-v2012.12-yocto1.3_15.02.01_pr rel_angstrom-v2012.12-yocto1.3_15.02.01_rc1
++ git push origin rel_angstrom-v2012.12-yocto1.3_15.02.01_pr:refs/tags/rel_angstrom-v2012.12-yocto1.3_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/meta-altera.git[K
+remote: update_safe refs/tags/rel_angstrom-v2012.12-yocto1.3_15.02.01_pr 0000000000000000000000000000000000000000 b16478f2ddd65afa7821b1937885dfb96eff266f[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_angstrom-v2012.12-yocto1.3_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : b16478f2ddd65afa7821b1937885dfb96eff266f[K
+remote: 
+remote: repo          : meta-altera[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_angstrom-v2012.12-yocto1.3_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=meta-altera[K
+To gitolite@at-git:meta-altera
+ * [new tag]         rel_angstrom-v2012.12-yocto1.3_15.02.01_pr -> rel_angstrom-v2012.12-yocto1.3_15.02.01_pr
++ echo
+
++ git push portal rel_angstrom-v2012.12-yocto1.3_15.02.01_pr:refs/tags/rel_angstrom-v2012.12-yocto1.3_15.02.01_pr
+To gitolite@git.rocketboards.org:meta-altera
+ * [new tag]         rel_angstrom-v2012.12-yocto1.3_15.02.01_pr -> rel_angstrom-v2012.12-yocto1.3_15.02.01_pr
++ git push portal rel_angstrom-v2012.12-yocto1.3_15.02.01_pr:refs/heads/angstrom-v2012.12-yocto1.3
+Everything up-to-date
++ echo
+
++ git tag rel_angstrom-v2013.12-yocto1.5_15.02.01_pr rel_angstrom-v2013.12-yocto1.5_15.02.01_rc1
++ git push origin rel_angstrom-v2013.12-yocto1.5_15.02.01_pr:refs/tags/rel_angstrom-v2013.12-yocto1.5_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/meta-altera.git[K
+remote: update_safe refs/tags/rel_angstrom-v2013.12-yocto1.5_15.02.01_pr 0000000000000000000000000000000000000000 fe61959bc970fc393e6cab020fda0fbabe807222[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_angstrom-v2013.12-yocto1.5_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : fe61959bc970fc393e6cab020fda0fbabe807222[K
+remote: 
+remote: repo          : meta-altera[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_angstrom-v2013.12-yocto1.5_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=meta-altera[K
+To gitolite@at-git:meta-altera
+ * [new tag]         rel_angstrom-v2013.12-yocto1.5_15.02.01_pr -> rel_angstrom-v2013.12-yocto1.5_15.02.01_pr
++ echo
+
++ git push portal rel_angstrom-v2013.12-yocto1.5_15.02.01_pr:refs/tags/rel_angstrom-v2013.12-yocto1.5_15.02.01_pr
+To gitolite@git.rocketboards.org:meta-altera
+ * [new tag]         rel_angstrom-v2013.12-yocto1.5_15.02.01_pr -> rel_angstrom-v2013.12-yocto1.5_15.02.01_pr
++ git push portal rel_angstrom-v2013.12-yocto1.5_15.02.01_pr:refs/heads/angstrom-v2013.12-yocto1.5
+Everything up-to-date
++ echo
+
++ git tag rel_angstrom-v2014.06-yocto1.6_15.02.01_pr rel_angstrom-v2014.06-yocto1.6_15.02.01_rc1
++ git push origin rel_angstrom-v2014.06-yocto1.6_15.02.01_pr:refs/tags/rel_angstrom-v2014.06-yocto1.6_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/meta-altera.git[K
+remote: update_safe refs/tags/rel_angstrom-v2014.06-yocto1.6_15.02.01_pr 0000000000000000000000000000000000000000 9fe06573ef9f9a3b284edc66d590cb32b67a2f00[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_angstrom-v2014.06-yocto1.6_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : 9fe06573ef9f9a3b284edc66d590cb32b67a2f00[K
+remote: 
+remote: repo          : meta-altera[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_angstrom-v2014.06-yocto1.6_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=meta-altera[K
+To gitolite@at-git:meta-altera
+ * [new tag]         rel_angstrom-v2014.06-yocto1.6_15.02.01_pr -> rel_angstrom-v2014.06-yocto1.6_15.02.01_pr
++ echo
+
++ git push portal rel_angstrom-v2014.06-yocto1.6_15.02.01_pr:refs/tags/rel_angstrom-v2014.06-yocto1.6_15.02.01_pr
+To gitolite@git.rocketboards.org:meta-altera
+ * [new tag]         rel_angstrom-v2014.06-yocto1.6_15.02.01_pr -> rel_angstrom-v2014.06-yocto1.6_15.02.01_pr
++ git push portal rel_angstrom-v2014.06-yocto1.6_15.02.01_pr:refs/heads/angstrom-v2014.06-yocto1.6
+Everything up-to-date
++ echo
+
++ cd /home/atull/repos/internal/linux-test
++ git tag rel_master_15.02.01_pr rel_master_15.02.01_rc1
++ git push origin rel_master_15.02.01_pr:refs/tags/rel_master_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/linux-test.git[K
+remote: update_safe refs/tags/rel_master_15.02.01_pr 0000000000000000000000000000000000000000 853b5b2609ba5a0f3ee1bcf656b75c6f7d633c80[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_master_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : 853b5b2609ba5a0f3ee1bcf656b75c6f7d633c80[K
+remote: 
+remote: repo          : linux-test[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_master_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=linux-test[K
+To gitolite@at-git:linux-test
+ * [new tag]         rel_master_15.02.01_pr -> rel_master_15.02.01_pr
++ echo
+
++ echo
+
++ cd /home/atull/repos/internal/linux-infra
++ git tag rel_tags_v1_15.02.01_pr rel_tags_v1_15.02.01_rc1
++ git push origin rel_tags_v1_15.02.01_pr:refs/tags/rel_tags_v1_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/linux-infra.git[K
+remote: update_safe refs/tags/rel_tags_v1_15.02.01_pr 0000000000000000000000000000000000000000 c6207f411e7aea045d089058893ea9f7e3b4689c[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_tags_v1_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : c6207f411e7aea045d089058893ea9f7e3b4689c[K
+remote: 
+remote: repo          : linux-infra[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_tags_v1_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=linux-infra[K
+To gitolite@at-git:linux-infra
+ * [new tag]         rel_tags_v1_15.02.01_pr -> rel_tags_v1_15.02.01_pr
++ echo
+
++ echo
+
++ cd /home/atull/repos/internal/linux-tags
++ git tag rel_master_15.02.01_pr a96424ab8b7e81d644b4821b9f8a6cb1f6702024
++ git push origin rel_master_15.02.01_pr:refs/tags/rel_master_15.02.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/linux-tags.git[K
+remote: update_safe refs/tags/rel_master_15.02.01_pr 0000000000000000000000000000000000000000 a96424ab8b7e81d644b4821b9f8a6cb1f6702024[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_master_15.02.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : a96424ab8b7e81d644b4821b9f8a6cb1f6702024[K
+remote: 
+remote: repo          : linux-tags[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_master_15.02.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=linux-tags[K
+remote: kickoff: triggering builds (jenkins) tag: refs/tags/rel_master_15.02.01_pr, commit: a96424ab8b7e81d644b4821b9f8a6cb1f6702024.[K
+remote:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current[K
+remote:                                  Dload  Upload   Total   Spent    Left  Speed[K
+remote: 
+remote:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K
+remote: 107   965  107   965    0     0  53282      0 --:--:-- --:--:-- --:--:-- 64333[K
+remote: Scheduled Git Hook Test[K
+remote: Scheduled Socfpga-Angstrom[K
+remote: Scheduled Socfpga-Angstrom » arria5,angstrom-v2013.12,Build-Server-2[K
+remote: Scheduled Socfpga-Angstrom » arria5,angstrom-v2013.12,master[K
+remote: Scheduled Socfpga-Angstrom » arria5,angstrom-v2013.12-ltsi,Build-Server-2[K
+remote: Scheduled Socfpga-Angstrom » arria5,angstrom-v2013.12-ltsi,master[K
+remote: Scheduled Socfpga-Angstrom » arria5,angstrom-v2013.12-ltsi-rt,Build-Server-2[K
+remote: Scheduled Socfpga-Angstrom » arria5,angstrom-v2013.12-ltsi-rt,master[K
+remote: Scheduled Socfpga-Angstrom » cyclone5,angstrom-v2013.12,Build-Server-2[K
+remote: Scheduled Socfpga-Angstrom » cyclone5,angstrom-v2013.12,master[K
+remote: Scheduled Socfpga-Angstrom » cyclone5,angstrom-v2013.12-ltsi,Build-Server-2[K
+remote: Scheduled Socfpga-Angstrom » cyclone5,angstrom-v2013.12-ltsi,master[K
+remote: Scheduled Socfpga-Angstrom » cyclone5,angstrom-v2013.12-ltsi-rt,Build-Server-2[K
+remote: Scheduled Socfpga-Angstrom » cyclone5,angstrom-v2013.12-ltsi-rt,master[K
+remote: No Git consumers using SCM API plugin for: gitolite@at-git:linux-tags[K
+remote: *** BIG FAT WARNING: there is no /usr/local/git/linux-infra/repo-settings/linux-tags file[K
+remote: *** email in linux-infra/repo-settings is not set so no email will be sent[K
+remote: *** for refs/tags/rel_master_15.02.01_pr update 0000000000000000000000000000000000000000->a96424ab8b7e81d644b4821b9f8a6cb1f6702024[K
+remote: No recipient addresses found in header[K
+To gitolite@at-git:linux-tags
+ * [new tag]         rel_master_15.02.01_pr -> rel_master_15.02.01_pr
++ git push origin rel_master_15.02.01_pr:refs/heads/master
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/linux-tags.git[K
+remote: update_safe refs/heads/master 914978e4de562b4b7f15fa456ac30d68628b331f a96424ab8b7e81d644b4821b9f8a6cb1f6702024[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : heads-commit[K
+remote: refname       : refs/heads/master[K
+remote: oldrev        : 914978e4de562b4b7f15fa456ac30d68628b331f[K
+remote: newrev        : a96424ab8b7e81d644b4821b9f8a6cb1f6702024[K
+remote: 
+remote: repo          : linux-tags[K
+remote: # of commits  : 1[K
+remote: refs path     : heads[K
+remote: newrev_type   : commit[K
+remote: 
+remote: branch        : master[K
+remote: 
+remote: branch name   : master[K
+remote: describe      : [K
+remote: branch_base   : [K
+remote: Running update_tests: [K
+remote: update_tests setting does not exist[K
+remote: 
+remote: allowed[K
+remote: *** BIG FAT WARNING: there is no /usr/local/git/linux-infra/repo-settings/linux-tags file[K
+remote: *** email in linux-infra/repo-settings is not set so no email will be sent[K
+remote: *** for refs/heads/master update 914978e4de562b4b7f15fa456ac30d68628b331f->a96424ab8b7e81d644b4821b9f8a6cb1f6702024[K
+remote: No recipient addresses found in header[K
+To gitolite@at-git:linux-tags
+   914978e..a96424a  rel_master_15.02.01_pr -> master

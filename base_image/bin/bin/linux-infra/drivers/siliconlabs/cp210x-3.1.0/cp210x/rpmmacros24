@@ -1,0 +1,4 @@
+%_topdir      /var/tmp/silabs/rpmbuild
+%_smp_mflags  -j3
+%_kernel_release %(uname -r)
+%_current_dir %(pwd)

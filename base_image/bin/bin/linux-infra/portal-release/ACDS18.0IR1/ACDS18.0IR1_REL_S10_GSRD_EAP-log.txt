@@ -1,0 +1,185 @@
+rel_type                : GSRD
+rel_target              : GSRD
+release                 : ACDS18.0IR1_REL_S10_GSRD_EAP
+rel_num                 : ACDS18.0IR1
+rel_stage               : EAP
+branch_config_file_name : /home/atull/repos/internal/linux-tags/acds-release-branch-config.sh
+report_file_name_full   : /home/atull/bin/linux-infra/tools/../portal-release/ACDS18.0IR1/ACDS18.0IR1_REL_S10_GSRD_EAP.txt
+repo_list               : ['linux-socfpga', 'uboot-socfpga', 'meta-altera', 'meta-altera-refdes', 'linux-refdesigns']
+num of repos            : 5
+platform                : S10
+update_num              : None
+
+Gathering info from git this tag:
+ * ACDS18.0IR1_REL_S10_GSRD_EAP
+
+repo: linux-socfpga         br: socfpga-4.9.78-ltsi
+
+repo: uboot-socfpga         br: socfpga_v2017.09
+
+repo: meta-altera           br: angstrom-v2016.12-yocto2.2
+
+repo: meta-altera-refdes    br: master
+
+repo: linux-refdesigns      br: master
+
+
+Tags found:
+ACDS18.0IR1_REL_S10_GSRD_EAP
+
+   repo                 branch                            commit        tag name
+linux-socfpga        socfpga-4.9.78-ltsi                  e681fba  ACDS18.0IR1_REL_S10_GSRD_EAP
+uboot-socfpga        socfpga_v2017.09                     4a634e3  ACDS18.0IR1_REL_S10_GSRD_EAP
+meta-altera          angstrom-v2016.12-yocto2.2           7c4b4b9  ACDS18.0IR1_REL_S10_GSRD_EAP
+meta-altera-refdes   master                               41e6a7a  ACDS18.0IR1_REL_S10_GSRD_EAP
+linux-refdesigns     master                               1c74871  ACDS18.0IR1_REL_S10_GSRD_EAP
+
+-----------------------------------------------------------------------
+repo:   linux-socfpga
+-----------------------------------------------------------------------
+e681fba Thor Thayer FogBugz #532777: ARM: socfpga_defconfig: Remove QSPI Sector 4K size force
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS18.0IR1_REL_S10_GSRD_EAP
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.9.78-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/e681fba61a85fa13e546bba277083c49c091e361
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   uboot-socfpga
+-----------------------------------------------------------------------
+4a634e3 Thor Thayer FogBugz #520012: mailbox: stratix10: Mailbox Initialization
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS18.0IR1_REL_S10_GSRD_EAP
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2017.09
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/4a634e3b1583a267ca39838f68ad26ed080012d0
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera
+-----------------------------------------------------------------------
+7c4b4b9 Yves Vandervennet removed old kernels, no longer supported
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/ACDS18.0IR1_REL_S10_GSRD_EAP
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2016.12-yocto2.2
+commit : https://github.com/altera-opensource/meta-altera/commit/7c4b4b9294201cf37a6fd18a63c1c35b7ff5877b
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera-refdes
+-----------------------------------------------------------------------
+41e6a7a Ong, Hean Loong FogBugz #533535: Migrate to Angstrom 2017.06
+tag    : https://github.com/altera-opensource/meta-altera-refdes/releases/tag/ACDS18.0IR1_REL_S10_GSRD_EAP
+branch : https://github.com/altera-opensource/meta-altera-refdes/tree/master
+commit : https://github.com/altera-opensource/meta-altera-refdes/commit/41e6a7a6f782a0bd7fc92b230fbb6d4f39562816
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   linux-refdesigns
+-----------------------------------------------------------------------
+1c74871 Ong, Hean Loong FogBugz #520514-2 Add Safe C libraries
+tag    : https://github.com/altera-opensource/linux-refdesigns/releases/tag/ACDS18.0IR1_REL_S10_GSRD_EAP
+branch : https://github.com/altera-opensource/linux-refdesigns/tree/master
+commit : https://github.com/altera-opensource/linux-refdesigns/commit/1c74871faca35bb1299b0892b83665512c7d7deb
+-----------------------------------------------------------------------
+
+Saved report : /home/atull/bin/linux-infra/tools/../portal-release/ACDS18.0IR1/ACDS18.0IR1_REL_S10_GSRD_EAP.txt
+========================================================================
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.9.78-ltsi            tag    : ACDS18.0IR1_REL_S10_GSRD_EAP
+ $ git push --dry-run portal e681fba61a85fa13e546bba277083c49c091e361:refs/tags/ACDS18.0IR1_REL_S10_GSRD_EAP
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         e681fba61a85fa13e546bba277083c49c091e361 -> ACDS18.0IR1_REL_S10_GSRD_EAP
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2017.09               tag    : ACDS18.0IR1_REL_S10_GSRD_EAP
+ $ git push --dry-run portal 4a634e3b1583a267ca39838f68ad26ed080012d0:refs/tags/ACDS18.0IR1_REL_S10_GSRD_EAP
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         4a634e3b1583a267ca39838f68ad26ed080012d0 -> ACDS18.0IR1_REL_S10_GSRD_EAP
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : portal
+branch : angstrom-v2016.12-yocto2.2     tag    : ACDS18.0IR1_REL_S10_GSRD_EAP
+ $ git push --dry-run portal 7c4b4b9294201cf37a6fd18a63c1c35b7ff5877b:refs/tags/ACDS18.0IR1_REL_S10_GSRD_EAP
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         7c4b4b9294201cf37a6fd18a63c1c35b7ff5877b -> ACDS18.0IR1_REL_S10_GSRD_EAP
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera-refdes             remote : portal
+branch : master                         tag    : ACDS18.0IR1_REL_S10_GSRD_EAP
+ $ git push --dry-run portal 41e6a7a6f782a0bd7fc92b230fbb6d4f39562816:refs/tags/ACDS18.0IR1_REL_S10_GSRD_EAP
+To git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         41e6a7a6f782a0bd7fc92b230fbb6d4f39562816 -> ACDS18.0IR1_REL_S10_GSRD_EAP
+
+ $ git push --dry-run portal 41e6a7a6f782a0bd7fc92b230fbb6d4f39562816:refs/heads/master
+To git@github.com:altera-opensource/meta-altera-refdes
+   220e47a..41e6a7a  41e6a7a6f782a0bd7fc92b230fbb6d4f39562816 -> master
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-refdesigns               remote : portal
+branch : master                         tag    : ACDS18.0IR1_REL_S10_GSRD_EAP
+ $ git push --dry-run portal 1c74871faca35bb1299b0892b83665512c7d7deb:refs/tags/ACDS18.0IR1_REL_S10_GSRD_EAP
+To git@github.com:altera-opensource/linux-refdesigns
+ * [new tag]         1c74871faca35bb1299b0892b83665512c7d7deb -> ACDS18.0IR1_REL_S10_GSRD_EAP
+
+ $ git push --dry-run portal 1c74871faca35bb1299b0892b83665512c7d7deb:refs/heads/master
+To git@github.com:altera-opensource/linux-refdesigns
+   504ab64..1c74871  1c74871faca35bb1299b0892b83665512c7d7deb -> master
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.9.78-ltsi            tag    : ACDS18.0IR1_REL_S10_GSRD_EAP
+ $ git push portal e681fba61a85fa13e546bba277083c49c091e361:refs/tags/ACDS18.0IR1_REL_S10_GSRD_EAP
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         e681fba61a85fa13e546bba277083c49c091e361 -> ACDS18.0IR1_REL_S10_GSRD_EAP
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2017.09               tag    : ACDS18.0IR1_REL_S10_GSRD_EAP
+ $ git push portal 4a634e3b1583a267ca39838f68ad26ed080012d0:refs/tags/ACDS18.0IR1_REL_S10_GSRD_EAP
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         4a634e3b1583a267ca39838f68ad26ed080012d0 -> ACDS18.0IR1_REL_S10_GSRD_EAP
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : portal
+branch : angstrom-v2016.12-yocto2.2     tag    : ACDS18.0IR1_REL_S10_GSRD_EAP
+ $ git push portal 7c4b4b9294201cf37a6fd18a63c1c35b7ff5877b:refs/tags/ACDS18.0IR1_REL_S10_GSRD_EAP
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         7c4b4b9294201cf37a6fd18a63c1c35b7ff5877b -> ACDS18.0IR1_REL_S10_GSRD_EAP
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera-refdes             remote : portal
+branch : master                         tag    : ACDS18.0IR1_REL_S10_GSRD_EAP
+ $ git push portal 41e6a7a6f782a0bd7fc92b230fbb6d4f39562816:refs/tags/ACDS18.0IR1_REL_S10_GSRD_EAP
+To git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         41e6a7a6f782a0bd7fc92b230fbb6d4f39562816 -> ACDS18.0IR1_REL_S10_GSRD_EAP
+
+ $ git push portal 41e6a7a6f782a0bd7fc92b230fbb6d4f39562816:refs/heads/master
+To git@github.com:altera-opensource/meta-altera-refdes
+   220e47a..41e6a7a  41e6a7a6f782a0bd7fc92b230fbb6d4f39562816 -> master
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-refdesigns               remote : portal
+branch : master                         tag    : ACDS18.0IR1_REL_S10_GSRD_EAP
+ $ git push portal 1c74871faca35bb1299b0892b83665512c7d7deb:refs/tags/ACDS18.0IR1_REL_S10_GSRD_EAP
+To git@github.com:altera-opensource/linux-refdesigns
+ * [new tag]         1c74871faca35bb1299b0892b83665512c7d7deb -> ACDS18.0IR1_REL_S10_GSRD_EAP
+
+ $ git push portal 1c74871faca35bb1299b0892b83665512c7d7deb:refs/heads/master
+To git@github.com:altera-opensource/linux-refdesigns
+   504ab64..1c74871  1c74871faca35bb1299b0892b83665512c7d7deb -> master
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+

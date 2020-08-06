@@ -1,0 +1,262 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.19
+branch tag  : rel_socfpga-4.19_19.02.01_pr
+new commits : 0
+
+
+branch      : socfpga-4.20
+branch tag  : rel_socfpga-4.20_19.02.01_pr
+new commits : 0
+
+
+branch      : socfpga-4.14.73-ltsi
+branch tag  : rel_socfpga-4.14.73-ltsi_19.02.01_pr
+new commits : 1
+63f4378 Jose Abreu net: stmmac: Rework and fix TX Timeout code
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.14.73-ltsi *Tag name:* rel_socfpga-4.14.73-ltsi_19.02.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | net: stmmac: Rework and fix TX Timeout code | [[ https://github.com/altera-opensource/linux-socfpga/commit/63f43787163efe4f034e5d2ad704f1748c9bd32b ][ 63f43787163efe4f034e5d2ad704f1748c9bd32b ]] |
+--wiki:
+
+
+branch      : socfpga-4.14.73-ltsi-rt
+branch tag  : rel_socfpga-4.14.73-ltsi-rt_19.02.01_pr
+new commits : 1
+6b55792 Jose Abreu net: stmmac: Rework and fix TX Timeout code
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.14.73-ltsi-rt *Tag name:* rel_socfpga-4.14.73-ltsi-rt_19.02.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | net: stmmac: Rework and fix TX Timeout code | [[ https://github.com/altera-opensource/linux-socfpga/commit/6b5579264f15285b8190ceda292e8e8844d53986 ][ 6b5579264f15285b8190ceda292e8e8844d53986 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.19_19.02.01_pr
+commit: e3b47dd Dinh Nguyen ARM: socfpga_defconfig: enable BLK_DEV_LOOP config option
+
+tag:    rel_socfpga-4.20_19.02.01_pr
+commit: 6b99cca Dinh Nguyen clk: socfpga: stratix10: fix naming convention for the fixed-clocks
+
+tag:    rel_socfpga-4.14.73-ltsi_19.02.01_pr
+commit: 63f4378 Jose Abreu net: stmmac: Rework and fix TX Timeout code
+
+tag:    rel_socfpga-4.14.73-ltsi-rt_19.02.01_pr
+commit: 6b55792 Jose Abreu net: stmmac: Rework and fix TX Timeout code
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.02.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.02.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.02.01_pr
+new commits : 2
+ecab3e9 Chee Hong Ang HSD #2007757702: Move l2_reset_cpu() to Stratix 10
+c9eedde Chee Hong Ang HSD #1806848239: Fix PSCI 'CPU_ON' race condition in slave CPUs
+
+
+++wiki:
+*Repo name*: u-boot-socfpga *Branch name*: socfpga_v2017.09 *Tag name:* rel_socfpga_v2017.09_19.02.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| HSD #2007757702 | Move l2_reset_cpu() to Stratix 10 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/ecab3e9091676588a2ab3178329cf91316073730 ][ ecab3e9091676588a2ab3178329cf91316073730 ]] |
+| HSD #1806848239 | Fix PSCI 'CPU_ON' race condition in slave CPUs | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/c9eedde48a61cc5b796666b42247a73727343b94 ][ c9eedde48a61cc5b796666b42247a73727343b94 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_19.02.01_pr
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.02.01_pr
+commit: af568f3 Tien Fong Chee FogBugz #604090-2: Enable FPGA manager HPS JTAG driver implementation
+
+tag:    rel_socfpga_v2017.09_19.02.01_pr
+commit: ecab3e9 Chee Hong Ang HSD #2007757702: Move l2_reset_cpu() to Stratix 10
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.02.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_19.02.01_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.02.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.02.01_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.02.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_19.02.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.02.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.02.01_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_19.02.01_pr
+commit: 3a47b14 Ong, Hean Loong update 4.9.78-ltsi to commit ID 5704788
+
+tag:    rel_angstrom-v2018.06-yocto2.5_19.02.01_pr
+commit: 6038d69 Ong, Hean Loong Update 4.14.73 commit to b67570c
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.02.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_19.02.01_pr
+commit: 0a0715f David Koltak FogBugz #592404-4: Add raw slot data commands to example
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi
+
+commit 63f43787163efe4f034e5d2ad704f1748c9bd32b
+Author: Jose Abreu <Jose.Abreu@synopsys.com>
+Date:   Thu Mar 29 10:40:18 2018 +0100
+
+    net: stmmac: Rework and fix TX Timeout code
+    
+    upstream commit 34877a15f787b594649ed375943ecc65f4342e30
+    
+    Currently TX Timeout handler does not behaves as expected and leads to
+    an unrecoverable state. Rework current implementation of TX Timeout
+    handling to actually perform a complete reset of the driver state and IP.
+    
+    We use deferred work to init a task which will be responsible for
+    resetting the system.
+    
+    Signed-off-by: Jose Abreu <joabreu@synopsys.com>
+    Cc: David S. Miller <davem@davemloft.net>
+    Cc: Joao Pinto <jpinto@synopsys.com>
+    Cc: Giuseppe Cavallaro <peppe.cavallaro@st.com>
+    Cc: Alexandre Torgue <alexandre.torgue@st.com>
+    Cc: Andrew Lunn <andrew@lunn.ch>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi-rt
+
+commit 6b5579264f15285b8190ceda292e8e8844d53986
+Author: Jose Abreu <Jose.Abreu@synopsys.com>
+Date:   Thu Mar 29 10:40:18 2018 +0100
+
+    net: stmmac: Rework and fix TX Timeout code
+    
+    upstream commit 34877a15f787b594649ed375943ecc65f4342e30
+    
+    Currently TX Timeout handler does not behaves as expected and leads to
+    an unrecoverable state. Rework current implementation of TX Timeout
+    handling to actually perform a complete reset of the driver state and IP.
+    
+    We use deferred work to init a task which will be responsible for
+    resetting the system.
+    
+    Signed-off-by: Jose Abreu <joabreu@synopsys.com>
+    Cc: David S. Miller <davem@davemloft.net>
+    Cc: Joao Pinto <jpinto@synopsys.com>
+    Cc: Giuseppe Cavallaro <peppe.cavallaro@st.com>
+    Cc: Alexandre Torgue <alexandre.torgue@st.com>
+    Cc: Andrew Lunn <andrew@lunn.ch>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit ecab3e9091676588a2ab3178329cf91316073730
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Jan 23 18:22:56 2019 +0800
+
+    HSD #2007757702: Move l2_reset_cpu() to Stratix 10
+    
+    On Stratix 10, L2 reset is required before performing warm reset.
+    Therefore, L2 reset is only applicable to Stratix 10.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit c9eedde48a61cc5b796666b42247a73727343b94
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Tue Jan 22 05:11:58 2019 -0800
+
+    HSD #1806848239: Fix PSCI 'CPU_ON' race condition in slave CPUs
+    
+    In rare situation, unexpected events received by slave CPUs (CPU1/2/3)
+    cause a race condition where master CPU (CPU0) is in the middle of
+    updating the 2 shared variables ('psci_cpu_on_64_cpuid' and
+    'psci_cpu_on_64_entry_point') and the slave CPUs in 'wfe' mode happen
+    to be unblocked by unexpected events and also accessing those 2 shared
+    variables. When this race condition occurs, it causes the slave CPU to
+    incorrectly jump to '0' address as entry point, trigger an unhandled
+    exception and eventually cause the slave CPU fail to activate in SMP
+    Linux.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+-----------------------------------------------------------------------
+

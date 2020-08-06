@@ -1,0 +1,453 @@
+
+Script-generated report of what we tagged today in internal git.
+These rc tags/branches will retagged as pr and pushed to the portal in two weeks.
+
+
+Thor
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-5.1
+branch tag  : rel_socfpga-5.1_19.10.02_rc1
+new commits : 0
+
+
+branch      : socfpga-5.2
+branch tag  : rel_socfpga-5.2_19.10.02_rc1
+new commits : 2
+8cfde63 Russell King - ARM Linux admin drivers/amba: fix reset control error handling
+f8c1653 Dinh Nguyen arm64: dts: agilex/stratix10: Add reset properties for DMA
+
+
+branch      : socfpga-4.14.130-ltsi
+branch tag  : rel_socfpga-4.14.130-ltsi_19.10.02_rc1
+new commits : 0
+
+
+branch      : socfpga-4.14.126-ltsi-rt
+branch tag  : rel_socfpga-4.14.126-ltsi-rt_19.10.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socfpga-5.1_19.10.02_rc1
+commit: 5c21be7 Dinh Nguyen clk: socfpga: stratix10: fix rate caclulationg for cnt_clks
+
+tag:    rel_socfpga-5.2_19.10.02_rc1
+commit: 8cfde63 Russell King - ARM Linux admin drivers/amba: fix reset control error handling
+
+tag:    rel_socfpga-4.14.130-ltsi_19.10.02_rc1
+commit: 567dd6b Dinh Nguyen HSD #1707052006: Add initial support for Agilex devkit
+
+tag:    rel_socfpga-4.14.126-ltsi-rt_19.10.02_rc1
+commit: 12c13b0 Dinh Nguyen HSD #1707052006: Add initial support for Agilex devkit
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.10.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.10.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.10.02_rc1
+new commits : 1
+8c74272 radu bacrau HSD #1707046651: Add support for RSU Retry
+
+
+branch      : socfpga_v2019.04
+branch tag  : rel_socfpga_v2019.04_19.10.02_rc1
+new commits : 8
+82d3e01 radu bacrau HSD #1707046651: Add support for RSU Retry
+21c7c29 radu bacrau HSD #1707045086: Add support for updating factory image
+a08fa76 radu bacrau HSD #1707046651: Add support for RSU Retry
+ec06af8 Chee Hong Ang arm: socfpga: Fix syntax error in 'linux_qspi_enable'
+8d740bf Thor Thayer HSD #1806784746-6: Add CONFIG for Double Bit ECC
+8c652bc Thor Thayer HSD #1806784746-5: Use RESET2 for DBE Warm Reset
+b8b3af9 Thor Thayer HSD #1806784746-4: S10: DBE handle non-DBE CPUs
+4ec25b2 Thor Thayer HSD #180678746: Handle ECC Double Bit Errors in Linux
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v2013.01.01_19.10.02_rc1
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.10.02_rc1
+commit: f7a7e26 Tien Fong Chee net: A10: Use packed structures for networking
+
+tag:    rel_socfpga_v2017.09_19.10.02_rc1
+commit: 8c74272 radu bacrau HSD #1707046651: Add support for RSU Retry
+
+tag:    rel_socfpga_v2019.04_19.10.02_rc1
+commit: 82d3e01 radu bacrau HSD #1707046651: Add support for RSU Retry
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.10.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2014.12-socfpga_19.10.02_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.10.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.10.02_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.10.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2019.06-yocto2.7
+branch tag  : rel_angstrom-v2019.06-yocto2.7_19.10.02_rc1
+new commits : 2
+ebbcf92 Ong, Hean Loong update and clean up branch for angstrom-v2019.06-yocto2.7
+bd28214 Ong, Hean Loong Fix conf/machine/include/socfpga.inc build error
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2018.06-yocto2.5_19.10.02_rc1
+commit: 2a4cadc Ong, Hean Loong update to linux-altera-ltsi_4.14.130
+
+tag:    rel_angstrom-v2019.06-yocto2.7_19.10.02_rc1
+commit: ebbcf92 Ong, Hean Loong update and clean up branch for angstrom-v2019.06-yocto2.7
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.10.02_rc1
+new commits : 2
+e6e29b8 radu bacrau HSD #1707061410: Add support for RSU Retry
+a6810ac radu bacrau HSD #1707061410: Add support for RSU Retry
+
+
+Tags added to internal git:
+tag:    rel_master_19.10.02_rc1
+commit: e6e29b8 radu bacrau HSD #1707061410: Add support for RSU Retry
+
+
+-----------------------------------------------------------------------
+
+repository: arm-trusted-firmware
+
+branch      : socfpga_v1.4
+branch tag  : rel_socfpga_v1.4_19.10.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v1.4_19.10.02_rc1
+commit: fd4f92c Loh Tien Hock libc: armclang: Implement compiler printf symbols
+
+
+-----------------------------------------------------------------------
+
+repository: uefi-socfpga
+
+branch      : socvp_socfpga_udk2015
+branch tag  : rel_socvp_socfpga_udk2015_19.10.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socvp_socfpga_udk2015_19.10.02_rc1
+commit: 475bea4 Loh Tien Hock AlteraPlatformPkg: Change memory base due for Linux's reserved space
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera-refdes
+
+branch      : master
+branch tag  : rel_master_19.10.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.10.02_rc1
+commit: 97e7d7a Ong, Hean Loong fix issue of lighttpd for yocto-warrior
+
+
+-----------------------------------------------------------------------
+
+repository: linux-refdesigns
+
+branch      : master
+branch tag  : rel_master_19.10.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.10.02_rc1
+commit: 769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-5.2
+
+commit 8cfde6307ae1921692ea42000afc510f773e0c36
+Author: Russell King - ARM Linux admin <linux@armlinux.org.uk>
+Date:   Wed Oct 2 15:39:16 2019 -0500
+
+    drivers/amba: fix reset control error handling
+    
+    With commit 79bdcb202a35 ("ARM: 8906/1: drivers/amba: add reset control
+    to amba bus probe") it is possible for the the amba bus driver to defer
+    probing the device for its IDs because the reset driver may be probed
+    later.
+    
+    However when a subsequent probe occurs, the call to request_resource()
+    in the driver returns -EBUSY as the driver has not released the resource
+    from the initial probe attempt - or cleaned up any of the preceding
+    actions.
+    
+    Fix this both for the deferred probe case as well as a failure to get
+    the reset.
+    
+    Fixes: 79bdcb202a35 ("ARM: 8906/1: drivers/amba: add reset control to amba bus probe")
+    Signed-off-by: Russell King <rmk+kernel@armlinux.org.uk>
+
+commit f8c16538ad4c2d29e44aceb576ff20f7e9f51111
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Thu Jun 20 10:25:07 2019 -0500
+
+    arm64: dts: agilex/stratix10: Add reset properties for DMA
+    
+    [upstream commit e10c18484b66afa830f9a36348e12143f0ec2267]
+    
+    Add both the reset and reset-ocp properties for the DMA node on the
+    Stratix10 and Agilex platforms.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 8c742720dd7aeb99dce2f0715621a1e7cf025195
+Author: radu bacrau <radu.bacrau@intel.com>
+Date:   Fri Sep 20 14:20:17 2019 +0000
+
+    HSD #1707046651: Add support for RSU Retry
+    
+    [backport 'commit a08fa7646122 ("HSD #1707046651: Add support for RSU Retry")']
+    Backport from uboot-socfpga/socfpga_v2019.04
+    
+    Updated to match the planned 19.4 behavior, of returning both
+    ACMF and DCMF versions in the version field of RSU_STATUS.
+    
+    Signed-off-by: Radu Bacrau <radu.bacrau@intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2019.04
+
+commit 82d3e01ae3df71b6aad9d91aa4b2031f43d166c8
+Author: radu bacrau <radu.bacrau@intel.com>
+Date:   Wed Oct 2 19:52:39 2019 +0000
+
+    HSD #1707046651: Add support for RSU Retry
+    
+    Harmonized RSU functions with LIBRSU, for consistency.
+    Reworked to use standard U-Boot bit manipulation macros.
+    
+    Signed-off-by: Radu Bacrau <radu.bacrau@intel.com>
+
+commit 21c7c29b8222cbe8ddc8ecef4227f1a8a5201923
+Author: radu bacrau <radu.bacrau@intel.com>
+Date:   Fri Jul 19 15:43:42 2019 +0000
+
+    HSD #1707045086: Add support for updating factory image
+    
+    Added API for updating the factory image. Changed the algorithm for
+    updating the image pointers. Added command for calling the new API
+    from CLI.
+    
+    Signed-off-by: Radu Bacrau <radu.bacrau@intel.com>
+
+commit a08fa7646122c986a319ee4eb1168c9134e37c01
+Author: radu bacrau <radu.bacrau@intel.com>
+Date:   Fri Sep 20 14:20:17 2019 +0000
+
+    HSD #1707046651: Add support for RSU Retry
+    
+    Updated to match the planned 19.4 behavior, of returning both
+    ACMF and DCMF versions in the version field of RSU_STATUS.
+    
+    Signed-off-by: Radu Bacrau <radu.bacrau@intel.com>
+
+commit ec06af83134672ddec4e50cc815fa46dedb0e8b5
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Thu Sep 19 16:47:21 2019 +0800
+
+    arm: socfpga: Fix syntax error in 'linux_qspi_enable'
+    
+    Fix missing 'then' and 'fi' for 'linux_qspi_enable'
+    command in u-boot environment.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 8d740bf9456dd97cba7c9426ccd782d491ef3939
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Sep 9 14:25:57 2019 -0500
+
+    HSD #1806784746-6: Add CONFIG for Double Bit ECC
+    
+    [backport 'commit 7c52bc4cd024 ("HSD #1806784746-6: Add CONFIG
+                                     for Double Bit ECC")']
+    Backport from uboot-socfpga/socfpga_v2017.09
+    
+    Add CONFIG to enable Double Bit Error Handling. Part
+    of this is alerting Linux to handle DBE as panic that
+    calls Warm Reset (RESET2).
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 8c652bc9d253f6f6f0d2234b078984b765d229d3
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Sep 9 14:23:37 2019 -0500
+
+    HSD #1806784746-5: Use RESET2 for DBE Warm Reset
+    
+    [backport 'commit 0d3289753d13 ("HSD #1806784746-5: Use RESET2
+                                     for DBE Warm Reset")']
+    Backport from uboot-socfpga/socfpga_v2017.09
+    
+    Add the DBE handling code to the RESET2 handler. DDR and
+    OCRAM need a cold reset but others should be warm reset.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2 Add while(1) after cold reset call to catch if fall-through
+    v3 Remove used #define
+
+commit b8b3af94f36b87df9c09885cf36ef87b9ab267a7
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Thu Sep 5 14:21:25 2019 -0500
+
+    HSD #1806784746-4: S10: DBE handle non-DBE CPUs
+    
+    [backport 'commit 8a52d5c97f6d ("HSD #1806784746-4: S10: DBE
+                                     handle non-DBE CPUs")']
+    Backport from uboot-socfpga/socfpga_v2017.09
+    
+    In the case of a DB ECC error, the non-interrupted CPUs
+    are sent to EL3. Capture them in a WFI loop.
+    Non-Interrupted CPUs are indicated with a flag.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2 Simplify conditional check
+    v3 Remove unused clobbered registers
+
+commit 4ec25b20c77c3631e083f3ec3e7a5019d0cb7823
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Tue Mar 12 09:03:09 2019 -0500
+
+    HSD #180678746: Handle ECC Double Bit Errors in Linux
+    
+    [backport 'commit b89651e5ffa2 ("HSD #180678746: Handle ECC
+    				 Double Bit Errors in Linux")']
+    Backport from uboot-socfpga/socfpga_v2017.09
+    
+    An unintended consequence of escalating SErrors to EL3 for handling
+    in U-Boot is that Aborts are also escalated to EL3.
+    Aborts such as Decode Errors and Slave Errors were hanging Linux
+    when writing to unassigned FPGA addresses because U-Boot isn't
+    setup to handle Aborts nicely.
+    
+    Since Aborts are properly handled in Linux, change SError and
+    Abort handling to EL1 (Linux) instead of EL3.
+    Remove ARMV8_HANDLE_EA_EL3_FIRST U-Boot config so that Linux
+    handles SErrors and Aborts.
+    
+    SErrors related to ECC Double Bit Errors should notify U-Boot
+    though an SMC DBE notification and then request a reboot.
+    Add the SMC DBE notification function. The notification
+    function is unimplemented but provides a placeholder for advance
+    warning to U-Boot in case the subsequent reboot needs to be
+    delayed.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2019.06-yocto2.7
+
+commit ebbcf9291f896991a213f33e9fa875d269d41c72
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Mon Sep 23 14:28:09 2019 +0800
+
+    update and clean up branch for angstrom-v2019.06-yocto2.7
+
+commit bd28214c56fdca318098050f378f286ebd94e034
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Mon Sep 23 14:03:49 2019 +0800
+
+    Fix conf/machine/include/socfpga.inc build error
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of intel-rsu branch master
+
+commit e6e29b8d316281bed5359bfc9bb92e9e61424770
+Author: radu bacrau <radu.bacrau@intel.com>
+Date:   Thu Sep 26 10:11:49 2019 +0000
+
+    HSD #1707061410: Add support for RSU Retry
+    
+    Added macros for extracting the RSU version bitfields.
+    
+    Signed-off-by: Radu Bacrau <radu.bacrau@intel.com>
+
+commit a6810ac6c6032866f6eb872fa8ff5dd4ffb7a449
+Author: radu bacrau <radu.bacrau@intel.com>
+Date:   Fri Sep 20 12:56:25 2019 +0000
+
+    HSD #1707061410: Add support for RSU Retry
+    
+    Updated to match the planned 19.4 behavior, of returning both
+    ACMF and DCMF versions in the version field of RSU_STATUS.
+    
+    Signed-off-by: Radu Bacrau <radu.bacrau@intel.com>
+
+-----------------------------------------------------------------------
+

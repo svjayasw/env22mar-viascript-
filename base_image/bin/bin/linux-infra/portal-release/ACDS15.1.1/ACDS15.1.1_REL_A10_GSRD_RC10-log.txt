@@ -1,0 +1,13 @@
+
+/home/atull/repos/internal/uboot-socfpga
+63eeca1 Matthew Gerlach : FogBugz #340555: Fix A10 intermittent failure to receieve 1Gb ethernet trafficTo git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         ACDS15.1.1_REL_A10_GSRD_RC10 -> ACDS15.1.1_REL_A10_GSRD_RC10
+not pushing branch
+Success
+
+./ACDS15.1.1_REL_A10_GSRD_RC10.sh: line 15: cd: /home/atull/repos/internal/socfpga_v2014.10_arria10_bringup: No such file or directory
+
+/home/atull/repos/internal/uboot-socfpga
+63eeca1 Matthew Gerlach : FogBugz #340555: Fix A10 intermittent failure to receieve 1Gb ethernet trafficTo git@github.com:altera-opensource/u-boot-socfpga
+   4d0bff7..63eeca1  ACDS15.1.1_REL_A10_GSRD_RC10 -> socfpga_v2014.10_arria10_bringup
+Success

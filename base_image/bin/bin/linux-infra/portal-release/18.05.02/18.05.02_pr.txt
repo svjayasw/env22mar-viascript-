@@ -1,0 +1,351 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.16
+branch tag  : rel_socfpga-4.16_18.05.02_pr
+new commits : 3
+9c13562 Dinh Nguyen FogBugz #559443: add the l3_main_free_clk
+ac3826a Dinh Nguyen FogBugz #559437: fix order of bypass clocks
+860caa6 Richard Gong FogBugz #559720: remove dummy client from service layer
+
+
+++wiki:
+*Branch name*: socfpga-4.16, *Tag name:* rel_socfpga-4.16_18.05.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 559443 | add the l3_main_free_clk | [[ https://github.com/altera-opensource/linux-socfpga/commit/9c13562ded39c7a11f6b5b6652f62290a478a413 ][ 9c13562ded39c7a11f6b5b6652f62290a478a413 ]] |
+| 559437 | fix order of bypass clocks | [[ https://github.com/altera-opensource/linux-socfpga/commit/ac3826aa5aeecca10a06279486944f876baaa097 ][ ac3826aa5aeecca10a06279486944f876baaa097 ]] |
+| 559720 | remove dummy client from service layer | [[ https://github.com/altera-opensource/linux-socfpga/commit/860caa69481963943679e460405c936255de86a7 ][ 860caa69481963943679e460405c936255de86a7 ]] |
+--wiki:
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.05.02_pr
+new commits : 3
+896360c Dinh Nguyen FogBugz #559443: add the l3_main_free_clk
+75187ab Dinh Nguyen FogBugz #559437: fix order of bypass clocks
+ca01a08 Richard Gong FogBugz #559720: remove dummy client from service layer
+
+
+++wiki:
+*Branch name*: socfpga-4.9.78-ltsi, *Tag name:* rel_socfpga-4.9.78-ltsi_18.05.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 559443 | add the l3_main_free_clk | [[ https://github.com/altera-opensource/linux-socfpga/commit/896360c8529cacabb07a2b6d126bf30c434daaab ][ 896360c8529cacabb07a2b6d126bf30c434daaab ]] |
+| 559437 | fix order of bypass clocks | [[ https://github.com/altera-opensource/linux-socfpga/commit/75187ab246e6948a24420968aa9cb94efcc8154f ][ 75187ab246e6948a24420968aa9cb94efcc8154f ]] |
+| 559720 | remove dummy client from service layer | [[ https://github.com/altera-opensource/linux-socfpga/commit/ca01a08bb474399229999480fec7fa91e86cffef ][ ca01a08bb474399229999480fec7fa91e86cffef ]] |
+--wiki:
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.05.02_pr
+new commits : 3
+07dfa20 Dinh Nguyen FogBugz #559443: add the l3_main_free_clk
+e279bcf Dinh Nguyen FogBugz #559437: fix order of bypass clocks
+c0f8018 Richard Gong FogBugz #559720: remove dummy client from service layer
+
+
+++wiki:
+*Branch name*: socfpga-4.9.76-ltsi-rt, *Tag name:* rel_socfpga-4.9.76-ltsi-rt_18.05.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 559443 | add the l3_main_free_clk | [[ https://github.com/altera-opensource/linux-socfpga/commit/07dfa20e01f088cf31d2793be89facde3a97ca3e ][ 07dfa20e01f088cf31d2793be89facde3a97ca3e ]] |
+| 559437 | fix order of bypass clocks | [[ https://github.com/altera-opensource/linux-socfpga/commit/e279bcfb4d648e1889bdba759da2fc3948dbea2a ][ e279bcfb4d648e1889bdba759da2fc3948dbea2a ]] |
+| 559720 | remove dummy client from service layer | [[ https://github.com/altera-opensource/linux-socfpga/commit/c0f80180cadc55baf330ba99ba968e54bb2fb6f2 ][ c0f80180cadc55baf330ba99ba968e54bb2fb6f2 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.16_18.05.02_pr
+commit: 9c13562 Dinh Nguyen FogBugz #559443: add the l3_main_free_clk
+
+tag:    rel_socfpga-4.9.78-ltsi_18.05.02_pr
+commit: 896360c Dinh Nguyen FogBugz #559443: add the l3_main_free_clk
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.05.02_pr
+commit: 07dfa20 Dinh Nguyen FogBugz #559443: add the l3_main_free_clk
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.05.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.05.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.05.02_pr
+new commits : 3
+500386f Thor Thayer FogBugz #548210-6: Use SysMan Sticky Regs for ECC UE
+6bbeb5d Chin Liang See FogBugz #558815: Document down boot_scratch_cold register usage
+ec77edb Chee Hong Ang FogBugz #557757: Fixed S10 FPGA reconfig dependency issue
+
+
+++wiki:
+*Branch name*: socfpga_v2017.09, *Tag name:* rel_socfpga_v2017.09_18.05.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 548210-6 | Use SysMan Sticky Regs for ECC UE | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/500386f6124025f46445325f719662161c868054 ][ 500386f6124025f46445325f719662161c868054 ]] |
+| 558815 | Document down boot_scratch_cold register usage | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/6bbeb5d7e194a8c9699f53e530296528b76b2cb0 ][ 6bbeb5d7e194a8c9699f53e530296528b76b2cb0 ]] |
+| 557757 | Fixed S10 FPGA reconfig dependency issue | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/ec77edb7b5b9b7ea35bfed67fcb1724da24541a1 ][ ec77edb7b5b9b7ea35bfed67fcb1724da24541a1 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.05.02_pr
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.05.02_pr
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_18.05.02_pr
+commit: 500386f Thor Thayer FogBugz #548210-6: Use SysMan Sticky Regs for ECC UE
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.05.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.05.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.05.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.05.02_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.05.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.05.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.05.02_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.05.02_pr
+commit: 69c4320 Ong, Hean Loong Backport systemd change e266c06 from systemd v234-stable
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.05.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_18.05.02_pr
+commit: 79b1ebd David Koltak FogBugz #547564: Initial Source Code Commit
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.16
+
+commit 9c13562ded39c7a11f6b5b6652f62290a478a413
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Mon May 14 14:47:53 2018 -0500
+
+    FogBugz #559443: add the l3_main_free_clk
+    
+    Add the l3_main_free_clk that is derived from the noc_free_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit ac3826aa5aeecca10a06279486944f876baaa097
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu May 10 13:34:28 2018 -0500
+
+    FogBugz #559437: fix order of bypass clocks
+    
+    When the bypass register is set, the clock's parent is bypassed to
+    boot_clk. Thus, the boot_clk should be the 2nd parent.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 860caa69481963943679e460405c936255de86a7
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue May 15 12:42:49 2018 -0500
+
+    FogBugz #559720: remove dummy client from service layer
+    
+    Dummy client is not real service layer provider. It was created and used
+    to validate the communications among service provider, service layer
+    driver and secure monitor SW while we initially developed service layer
+    driver.
+    
+    Dummy client is no longer need, and it should be removed from service
+    layer, since we have real service providers now (FPGA manager, RSU).
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+commit 896360c8529cacabb07a2b6d126bf30c434daaab
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Mon May 14 14:47:53 2018 -0500
+
+    FogBugz #559443: add the l3_main_free_clk
+    
+    Add the l3_main_free_clk that is derived from the noc_free_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 75187ab246e6948a24420968aa9cb94efcc8154f
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu May 10 13:34:28 2018 -0500
+
+    FogBugz #559437: fix order of bypass clocks
+    
+    When the bypass register is set, the clock's parent is bypassed to
+    boot_clk. Thus, the boot_clk should be the 2nd parent.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit ca01a08bb474399229999480fec7fa91e86cffef
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue May 15 12:42:49 2018 -0500
+
+    FogBugz #559720: remove dummy client from service layer
+    
+    Dummy client is not real service layer provider. It was created and used
+    to validate the communications among service provider, service layer
+    driver and secure monitor SW while we initially developed service layer
+    driver.
+    
+    Dummy client is no longer need, and it should be removed from service
+    layer, since we have real service providers now (FPGA manager, RSU).
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.76-ltsi-rt
+
+commit 07dfa20e01f088cf31d2793be89facde3a97ca3e
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Mon May 14 14:47:53 2018 -0500
+
+    FogBugz #559443: add the l3_main_free_clk
+    
+    Add the l3_main_free_clk that is derived from the noc_free_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit e279bcfb4d648e1889bdba759da2fc3948dbea2a
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu May 10 13:34:28 2018 -0500
+
+    FogBugz #559437: fix order of bypass clocks
+    
+    When the bypass register is set, the clock's parent is bypassed to
+    boot_clk. Thus, the boot_clk should be the 2nd parent.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit c0f80180cadc55baf330ba99ba968e54bb2fb6f2
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue May 15 12:42:49 2018 -0500
+
+    FogBugz #559720: remove dummy client from service layer
+    
+    Dummy client is not real service layer provider. It was created and used
+    to validate the communications among service provider, service layer
+    driver and secure monitor SW while we initially developed service layer
+    driver.
+    
+    Dummy client is no longer need, and it should be removed from service
+    layer, since we have real service providers now (FPGA manager, RSU).
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 500386f6124025f46445325f719662161c868054
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Thu May 10 17:48:00 2018 -0500
+
+    FogBugz #548210-6: Use SysMan Sticky Regs for ECC UE
+    
+    Reserve the boot_scratch_cold8 and boot_scratch_cold9
+    sticky registers for capturing the Uncorrected Errors
+    (UE) and UE Address.
+    Allow access from EL1 through SMC register functions.
+    Since these sticky registers retain their contents
+    between warm resets, check the value on Linux boot and
+    printout a message if there is information here.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2 Move to boot_scratch_cold8 and boot_scratch_cold9
+
+commit 6bbeb5d7e194a8c9699f53e530296528b76b2cb0
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Fri May 11 10:53:35 2018 +0800
+
+    FogBugz #558815: Document down boot_scratch_cold register usage
+    
+    Document down the usage of boot_scratch_cold register to avoid
+    overlapping of usage in the code. The boot_scratch_cold register
+    is generally used for passing critical system info between SPL,
+    U-Boot and Linux.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit ec77edb7b5b9b7ea35bfed67fcb1724da24541a1
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Mon May 7 17:12:19 2018 +0800
+
+    FogBugz #557757: Fixed S10 FPGA reconfig dependency issue
+    
+    FPGA reconfig for S10 (STRATIX10_FPGA_RECONFIG) in Kconfig should
+    be platform dependent (TARGET_SOCFPGA_STRATIX10) instead of
+    board-specific dependent (TARGET_SOCFPGA_STRATIX10_SOCDK).
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+-----------------------------------------------------------------------
+

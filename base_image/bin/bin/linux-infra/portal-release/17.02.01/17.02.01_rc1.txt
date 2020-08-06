@@ -1,0 +1,371 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+The following new branches were tagged:
+repo : meta-altera            branch : angstrom-v2015.12-yocto2.0
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.8
+branch tag  : rel_socfpga-4.8_17.02.01_rc1
+Pushing new branch to external git
+
+branch      : socfpga-4.1.22-ltsi
+branch tag  : rel_socfpga-4.1.22-ltsi_17.02.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.1.22-ltsi-rt
+branch tag  : rel_socfpga-4.1.22-ltsi-rt_17.02.01_rc1
+new commits : 2
+fa465b2 Alan Tull FogBugz #384750: altera-hps2fpga: don't look up l3regs for f2h
+7c2f989 Alan Tull FogBugz #384748: altera-hps2fpga: leak due to not releasing clocks
+
+
+branch      : socfpga-4.7
+branch tag  : rel_socfpga-4.7_17.02.01_rc1
+new commits : 5
+f130b91 Matthew Gerlach FogBugz #374571: Fix Sysid driver hotplug support.
+36152f3 Alan Tull fpga: add method to get fpga manager from device
+675a057 Dan Carpenter ARM: socfpga: checking the wrong variable
+7918c5b Alan Tull FogBugz #384750: altera-hps2fpga: don't look up l3regs for f2h
+4b6cd7c Alan Tull FogBugz #384748: altera-hps2fpga: leak due to not releasing clocks
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.02.01_rc1
+Pushing new branch to external git
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.02.01_rc1
+Pushing new branch to external git
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.8_17.02.01_rc1
+commit: 560ef2c Matthew Gerlach FogBugz #374571: Fix Sysid driver hotplug support.
+
+tag:    rel_socfpga-4.1.22-ltsi_17.02.01_rc1
+commit: 9689ce4 Alan Tull FogBugz #384750: altera-hps2fpga: don't look up l3regs for f2h
+
+tag:    rel_socfpga-4.1.22-ltsi-rt_17.02.01_rc1
+commit: fa465b2 Alan Tull FogBugz #384750: altera-hps2fpga: don't look up l3regs for f2h
+
+tag:    rel_socfpga-4.7_17.02.01_rc1
+commit: f130b91 Matthew Gerlach FogBugz #374571: Fix Sysid driver hotplug support.
+
+tag:    rel_socfpga-4.1.33-ltsi_17.02.01_rc1
+commit: b84195c Graham Moore FogBugz #284482-2: A10 cache coherency is different than A5/C5.
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.02.01_rc1
+commit: 560f4d8 Thor Thayer ARM: dts: Add EMAC AXI settings for Arria10
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.02.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.02.01_rc1
+new commits : 8
+a5c10b5 Tom Rini compiler*.h: sync include/linux/compiler*.h with Linux 4.5-rc6
+7e4c871 Tien Fong Chee FogBugz #361117-5: Enabled MMC reinitialization, and external configuration..
+f59124d Tien Fong Chee FogBugz #361117-4: Relocated data segment, init HPS OCRAM and clearing bss
+eef0425 Tien Fong Chee FogBugz #361117-3: Added environments and linker script for FPGA boot
+66db3b1 Tien Fong Chee FogBugz #361117-2: Removed macro TEST_AT_ASIMOV
+76a670f Tien Fong Chee FogBugz #361117-1: Added config for FPGA boot
+c3704af Tien Fong Chee FogBugz #400281-2: Enabled MAC address retrieved from EEPROM
+801e255 Tien Fong Chee FogBugz #400281-1: Enabled I2C driver
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.02.01_rc1
+commit: 95ab599 Chin Liang See FogBugz #385884: Configuring SDRAM extra cycles on timing parameters
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.02.01_rc1
+commit: a5c10b5 Tom Rini compiler*.h: sync include/linux/compiler*.h with Linux 4.5-rc6
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.02.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.02.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_17.02.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_17.02.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.02.01_rc1
+Pushing new branch to external git
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_17.02.01_rc1
+commit: d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_17.02.01_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+tag:    rel_angstrom-v2015.12-yocto2.0_17.02.01_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.8
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi-rt
+
+commit fa465b29a35e11830f79796ab0db115dd8d64fb8
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Jun 13 14:17:04 2016 -0500
+
+    FogBugz #384750: altera-hps2fpga: don't look up l3regs for f2h
+    
+    The fpga2hps bridge support doesn't write the l3regs, so don't
+    look up the l3regs syscon in the probe function for that one
+    bridge.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 7c2f989f3682fb5df82637146e1f494e035f7ba4
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Jun 20 15:41:48 2016 -0500
+
+    FogBugz #384748: altera-hps2fpga: leak due to not releasing clocks
+    
+    Was getting clocks and never letting them go.  Use devm_clk_get
+    to remedy this.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v2: remove clk_put()
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.7
+
+commit f130b916c63d3b8d306e14957742c4c98650e73f
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Tue May 3 08:48:27 2016 -0700
+
+    FogBugz #374571: Fix Sysid driver hotplug support.
+    
+    The Altera Sysid component is generally part of
+    of an FPGA design.  The component can be hotplugged
+    when the FPGA is reconfigured.  This patch fixes the
+    driver to support the component being hotplugged.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 36152f35e67544401ed606bf604653d28dc38a97
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue Nov 1 14:14:23 2016 -0500
+
+    fpga: add method to get fpga manager from device
+    
+    The intent is to provide a non-DT method of getting
+    ahold of a FPGA manager to do some FPGA programming.
+    
+    This patch refactors of_fpga_mgr_get() to reuse most of it
+    while adding a new method fpga_mgr_get() for getting a
+    pointer to a fpga manager struct, given the device.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 675a057add605d04160ffb5d4bc395cf90752e16
+Author: Dan Carpenter <dan.carpenter@oracle.com>
+Date:   Wed Nov 16 19:54:40 2016 -0600
+
+    ARM: socfpga: checking the wrong variable
+    
+    This is a cut and paste bug.  We had intended to check "sysmgr".
+    
+    Fixes: e5f8efa5c8bf ("ARM: socfpga: fpga bridge driver support")
+    Signed-off-by: Dan Carpenter <dan.carpenter@oracle.com>
+    Acked-by: Moritz Fischer <moritz.fischer@ettus.com>
+    Acked-by: Alan Tull <atull@opensource.altera.com>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 7918c5b8db1aaf3a5f0204d8b3f3a3e18cb16d73
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Jun 13 14:17:04 2016 -0500
+
+    FogBugz #384750: altera-hps2fpga: don't look up l3regs for f2h
+    
+    The fpga2hps bridge support doesn't write the l3regs, so don't
+    look up the l3regs syscon in the probe function for that one
+    bridge.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 4b6cd7c976274c905e1b740d9c1d31706d5617f2
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Jun 20 15:41:48 2016 -0500
+
+    FogBugz #384748: altera-hps2fpga: leak due to not releasing clocks
+    
+    Was getting clocks and never letting them go.  Use devm_clk_get
+    to remedy this.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v2: remove clk_put()
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.33-ltsi
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.33-ltsi-rt
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit a5c10b565aa6f1ae65301523ebdedbe73d015f23
+Author: Tom Rini <trini@konsulko.com>
+Date:   Mon Feb 29 11:34:15 2016 -0500
+
+    compiler*.h: sync include/linux/compiler*.h with Linux 4.5-rc6
+    
+    Copy these from Linux v4.5-rc6 tag.
+    
+    This is needed so that we can keep up with newer gcc versions.  Note
+    that we don't have the uapi/ hierarchy from the kernel so continue to
+    use <linux/types.h>
+    
+    Signed-off-by: Tom Rini <trini@konsulko.com>
+
+commit 7e4c871835b2d422ceb4c9e8964f2706f361fd29
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Mon Sep 19 15:51:20 2016 +0800
+
+    FogBugz #361117-5: Enabled MMC reinitialization, and external configuration..
+    
+    This patch enables the MMC reinitialized when warm reset is triggered and
+    FPGA is allowed external configured. MMC would go to busy state without
+    being initialized after warm reset.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit f59124d1d77deb3e8ca8ce6ae048e8ae32a35050
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Mon Sep 19 15:50:56 2016 +0800
+
+    FogBugz #361117-4: Relocated data segment, init HPS OCRAM and clearing bss
+    
+    This patch copies data segment from FPGA OCRAM to HPS OCRAM, initializing
+    HPS OCRAM to prevent false single bit error in case ECC is enabled by Linux,
+    and clearing BSS section.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit eef0425abeb05dc5f851a48e092a26b5b8ad4b93
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Wed Nov 9 14:56:59 2016 +0800
+
+    FogBugz #361117-3: Added environments and linker script for FPGA boot
+    
+    Added text segment, data segment, and linker script environment.
+    Added linker script which enables data segment relocated to
+    HPS OCRAM, and some additional variables which referred by source
+    codes.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 66db3b12e231dcc942eed577ad11a4ece1733161
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Mon Sep 19 15:15:02 2016 +0800
+
+    FogBugz #361117-2: Removed macro TEST_AT_ASIMOV
+    
+    This macro is no longer required because it was created for testing
+    U-boot at cyclone V board during bring up.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 76a670fa8cc17aee10adbeb03a8536064fe4561d
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Fri Sep 2 10:55:02 2016 +0800
+
+    FogBugz #361117-1: Added config for FPGA boot
+    
+    Add socfpga_arria10_fpga_defconfig for building on a system
+    that enables the U-boot boot from FPGA OCRAM.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit c3704af227c08e72c282d02c03f9dfb29a66a1ce
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Wed Sep 14 13:19:19 2016 +0800
+
+    FogBugz #400281-2: Enabled MAC address retrieved from EEPROM
+    
+    This patch allows the U-boot to retrieve the stored MAC address from
+    EEPROM, and setting to environment ethaddr. If ethaddr environment is
+    exist, the retrieving MAC address from EEPROM would be skipped.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 801e255b3da2c7e08dd6ec8058cc27cb37b04188
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Thu Sep 8 13:02:34 2016 +0800
+
+    FogBugz #400281-1: Enabled I2C driver
+    
+    This patch enables the I2C driver build though Macro CONFIG_I2C.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2015.12-yocto2.0
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+

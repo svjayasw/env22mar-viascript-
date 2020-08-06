@@ -1,0 +1,12 @@
+#!/bin/sh
+
+board=$(echo $(basename $0) | cut -d- -f2)
+
+if [ -n "$1" ]; then
+    case "$1" in
+	on|off|cycle|status ) ips800-powerstrip.py -a ${board} "$1" ;;
+	* ) echo "what?"; exit ;;
+    esac
+else
+    ips800-powerstrip.py -a ${board} cycle
+fi

@@ -1,0 +1,75 @@
+#!/bin/sh
+
+set -x
+
+CONFIG_FILE="defaults.mk"
+
+PWD=`pwd`
+
+KVER="`uname -r`"
+KVER1=`echo $KVER | awk -F . -- '{ print $1 }'`
+KVER2=`echo $KVER | awk -F . -- '{ print $2 }'`
+KVER3=`echo $KVER | sed -e "s/$KVER1\\.$KVER2\\.//g"`
+
+case $KVER2 in
+    4)
+			makefile="Makefile24"
+			EXT=".o"
+			KOFILE="cp210x.o"
+			MODFILE="cp2101.o"
+			RULESFILE="./Rules.make"
+			;;
+    6)
+			makefile="Makefile26"
+			EXT=".ko"
+			KOFILE="cp210x.ko"
+			MODFILE="cp2101.ko"
+			RULESFILE=
+			;;
+esac
+
+KDIR="/lib/modules/`uname -r`/build"
+MODDIR="/lib/modules/`uname -r`"
+
+echo
+echo "Kernel version		: $KVER1.$KVER2.$KVER3"
+echo "Module extension        : $EXT"
+echo "KO File			: $KOFILE"
+echo "Kernel Dir		: $KDIR"
+echo "Module File		: $MODFILE"
+echo "Module Dir		: $MODDIR"
+echo "Current Dir		: $PWD"
+case $KVER2 in
+    4)
+			echo "Rules File    : $RULESFILE"
+			;;
+    6)
+			;;
+esac
+echo
+
+
+rm -f $CONFIG_FILE
+echo "# Makefile.config" >> $CONFIG_FILE
+echo "# Automatically generated" >> $CONFIG_FILE
+
+echo "KVER=$KVER" >> $CONFIG_FILE
+echo "KVER1=$KVER1" >> $CONFIG_FILE
+echo "KVER2=$KVER2" >> $CONFIG_FILE
+echo "KVER3=$KVER3" >> $CONFIG_FILE
+echo "EXT=$EXT" >> $CONFIG_FILE
+echo "KOFILE=$KOFILE" >> $CONFIG_FILE
+echo "KDIR=$KDIR" >> $CONFIG_FILE
+echo "MODFILE=$MODFILE" >> $CONFIG_FILE
+echo "MODDIR=$MODDIR" >> $CONFIG_FILE
+echo "PWD=$PWD" >> $CONFIG_FILE
+case $KVER2 in
+    4)
+			echo "include $RULESFILE" >> $CONFIG_FILE
+			;;
+    6)
+			;;
+esac
+
+#export makefile
+#export

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+case "$1" in
+    -h|--help ) echo "List commits that touch linux kernel fpga stuff"
+		echo "assumes your kernel is at '~/repos/linux-socfpga'"
+		exit 0
+		;;	       
+esac
+
+# Look for commits that touch the fpga stuff
+cd ~/repos/linux-socfpga
+fpga_dirs=
+for foo in drivers/fpga include/linux/fpga Documentation/fpga Documentation/driver-api/fpga Documentation/devicetree/bindings/fpga; do
+    if [ -d $foo ]; then
+	fpga_dirs="$fpga_dirs $foo"
+    fi
+done
+
+#git log --pretty=format:'%h %ci : %an : %s' $@
+glo $@ $fpga_dirs Documentation/ABI/testing/*fpga*

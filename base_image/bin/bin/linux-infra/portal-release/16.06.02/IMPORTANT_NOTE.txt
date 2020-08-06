@@ -1,0 +1,9 @@
+rc1 tag is bad, need to retag for rc2 for uboot A10 branch, Tien Fong needed
+me to back out the top 3 commits.
+
+gone 2685f10 2016-06-16 10:49:58 +0800 : Tien Fong Chee : FogBugz #361813-2: Allows SDMMC FAT32 partition and device 
+gone 157d299 2016-06-16 10:49:16 +0800 : Tien Fong Chee : FogBugz #361813-1: Removed the space between \0 and " of e
+gone 1efb8a3 2016-06-10 14:26:50 +0800 : Tien Fong Chee : FogBugz #365958: QSPI flash(Dual-stacked, S70FL01GS) drive
+     ff7a80a 2016-06-10 14:25:02 +0800 : Tien Fong Chee : FogBugz #371156-3: Enable pre-console buffer
+
+The QSPI one is tagged.

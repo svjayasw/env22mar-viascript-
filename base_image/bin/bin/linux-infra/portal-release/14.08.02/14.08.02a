@@ -1,0 +1,334 @@
+
+
+If this is Wednesday, this is a script-generated report of what we will push to the portal on Friday.
+
+However if this is Friday, this is a script-generated report of what we just pushed out to the portal.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.15
+branch tag  : rel_socfpga-3.15_14.08.02
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.08.02
+new commits : 2
+a3a81b0 Dinh Nguyen FogBugz #177545: Remove the need to force the USB IP into Host mode
+c67fd3b Dinh Nguyen usb: dwc2: Disable descriptor dma mode by default
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.08.02
+| *ID* | *Comment* | *GIT Commit* |
+| 177545 | Remove the need to force the USB IP into Host mode | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a3a81b05580dd2342768cc05899e590114ba8f37 ][ a3a81b05580dd2342768cc05899e590114ba8f37 ]] |
+| community | usb: dwc2: Disable descriptor dma mode by default | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=c67fd3b19b2c14f8bf9bc775a42f511d2f4bd85e ][ c67fd3b19b2c14f8bf9bc775a42f511d2f4bd85e ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_14.08.02
+new commits : 2
+6cd4f82 Dinh Nguyen FogBugz #177545: Remove the need to force the USB IP into Host mode
+86cf2c2 Dinh Nguyen usb: dwc2: Disable descriptor dma mode by default
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_14.08.02
+| *ID* | *Comment* | *GIT Commit* |
+| 177545 | Remove the need to force the USB IP into Host mode | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6cd4f82d805176e7f117276c0f26fc717c566d95 ][ 6cd4f82d805176e7f117276c0f26fc717c566d95 ]] |
+| community | usb: dwc2: Disable descriptor dma mode by default | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=86cf2c2d2b613fdc4f696c506154cf1ae15ccac1 ][ 86cf2c2d2b613fdc4f696c506154cf1ae15ccac1 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.15_14.08.02
+commit: 25deacd Ley Foon Tan FogBugz #216208: nios2: fix warning from get_fb_unmapped_area
+
+tag:    rel_socfpga-3.10-ltsi-rt_14.08.02
+commit: 6cd4f82 Dinh Nguyen FogBugz #177545: Remove the need to force the USB IP into Host mode
+
+tag:    rel_socfpga-3.10-ltsi_14.08.02
+commit: a3a81b0 Dinh Nguyen FogBugz #177545: Remove the need to force the USB IP into Host mode
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.08.02
+new commits : 3
+fe01049 Alan Tull FogBugz #213213: self refresh settings
+cec58f7 Chin Liang See mmc/dw_mmc: Fix clock divider calculation error for bypass mode
+7b34d22 Chin Liang See FogBugz #204713: Disable MAC reset when ethernet operation failed
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_14.08.02
+| *ID* | *Comment* | *GIT Commit* |
+| 213213 | self refresh settings | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=fe010493a1754e761f77ba19243ba93a9d038443 ][ fe010493a1754e761f77ba19243ba93a9d038443 ]] |
+| community | mmc/dw_mmc: Fix clock divider calculation error for bypass mode | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=cec58f7c8b8d54799348ffac0c1baf30b0c94bce ][ cec58f7c8b8d54799348ffac0c1baf30b0c94bce ]] |
+| 204713 | Disable MAC reset when ethernet operation failed | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=7b34d22af9506ab69dcf03bbfb96a78dcf2f5071 ][ 7b34d22af9506ab69dcf03bbfb96a78dcf2f5071 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.08.02
+commit: fe01049 Alan Tull FogBugz #213213: self refresh settings
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_14.08.02
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_14.08.02
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_14.08.02
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_14.08.02
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_14.08.02
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2013.12-socfpga_14.08.02
+commit: 86e1731 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2014.06-socfpga_14.08.02
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+tag:    rel_angstrom-v2012.12-socfpga_14.08.02
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_14.08.02
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_14.08.02
+new commits : 2
+a7724b6 Tien Hock Loh FogBugz #223818 - Port GSRD customization from Poky to Angstrom
+60e67ae Graham Moore Add NFS mount to see if it fixes the issue of applet not found
+
+
+++wiki:
+*Branch name*: angstrom-v2013.12-yocto1.5, *Tag name:* rel_angstrom-v2013.12-yocto1.5_14.08.02
+| *ID* | *Comment* | *GIT Commit* |
+| community | FogBugz #223818 - Port GSRD customization from Poky to Angstrom | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=a7724b697d730a5c640069f875f0d0d5e1ae24d9 ][ a7724b697d730a5c640069f875f0d0d5e1ae24d9 ]] |
+| community | Add NFS mount to see if it fixes the issue of applet not found | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=60e67ae388656fb62963733c07e666b38dfc0581 ][ 60e67ae388656fb62963733c07e666b38dfc0581 ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_14.08.02
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_14.08.02
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2014.06-yocto1.6_14.08.02
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_14.08.02
+commit: a7724b6 Tien Hock Loh FogBugz #223818 - Port GSRD customization from Poky to Angstrom
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit a3a81b05580dd2342768cc05899e590114ba8f37
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Mon Jan 13 10:18:17 2014 -0600
+
+    FogBugz #177545: Remove the need to force the USB IP into Host mode
+    
+    Users must correctly use a USB OTG A-mini to A Male cable adapter and
+    the USB IP will correctly transition into HOST mode.
+    
+    Re-align the DWC2 USB driver with kernel.org.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit c67fd3b19b2c14f8bf9bc775a42f511d2f4bd85e
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Mon May 5 10:26:49 2014 -0500
+
+    usb: dwc2: Disable descriptor dma mode by default
+    
+    Even though the IP supports Descriptor DMA mode, it does not support SPLIT
+    transactions in this mode. So the driver, in its currently form, will not
+    support LS/FS devices when connected to a HS Hub if Descriptor DMA mode is
+    enabled.
+    
+    So we should just default to disable descriptor dma mode.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    Acked-by: Paul Zimmerman <paulz@synopsys.com>
+    ---
+    v3:
+    - remove option for a device tree to turn on descriptor dma
+    
+    v2:
+    - Reworked patch to disable descriptor dma by default
+    - Removed unneeded helper variable
+    - Reword patch commit header
+    
+    Conflicts:
+    
+    	drivers/usb/dwc2/platform.c
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 6cd4f82d805176e7f117276c0f26fc717c566d95
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Mon Jan 13 10:18:17 2014 -0600
+
+    FogBugz #177545: Remove the need to force the USB IP into Host mode
+    
+    Users must correctly use a USB OTG A-mini to A Male cable adapter and
+    the USB IP will correctly transition into HOST mode.
+    
+    Re-align the DWC2 USB driver with kernel.org.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 86cf2c2d2b613fdc4f696c506154cf1ae15ccac1
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Mon May 5 10:26:49 2014 -0500
+
+    usb: dwc2: Disable descriptor dma mode by default
+    
+    Even though the IP supports Descriptor DMA mode, it does not support SPLIT
+    transactions in this mode. So the driver, in its currently form, will not
+    support LS/FS devices when connected to a HS Hub if Descriptor DMA mode is
+    enabled.
+    
+    So we should just default to disable descriptor dma mode.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    Acked-by: Paul Zimmerman <paulz@synopsys.com>
+    ---
+    v3:
+    - remove option for a device tree to turn on descriptor dma
+    
+    v2:
+    - Reworked patch to disable descriptor dma by default
+    - Removed unneeded helper variable
+    - Reword patch commit header
+    
+    Conflicts:
+    
+    	drivers/usb/dwc2/platform.c
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit fe010493a1754e761f77ba19243ba93a9d038443
+Author: Alan Tull <atull@altera.com>
+Date:   Fri Jun 27 14:40:39 2014 -0500
+
+    FogBugz #213213: self refresh settings
+    
+    Settings to configure the sdram controller for
+    when we want to enable ddr self-refresh.
+    
+    sdr.ctrlcfg.lowpwreq.selfrfshmask = 3
+    sdr.ctrlcfg.lowpwrtiming.clkdisablecycles = 8
+    sdr.ctrlcfg.dramtiming4.selfrfshexit = 512
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    
+    v2: selfrfshmask = 3 instead of 1 to chose all ddr
+
+commit cec58f7c8b8d54799348ffac0c1baf30b0c94bce
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Aug 8 15:01:45 2014 +0800
+
+    mmc/dw_mmc: Fix clock divider calculation error for bypass mode
+    
+    To fix the clock divider calculation error when the controller
+    clock same as the operating frequency. This is known as bypass
+    mode. In this mode, the divider should be 0.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    Cc: Pantelis Antoniou <panto@antoniou-consulting.com>
+    Cc: Rajeshwari Shinde <rajeshwari.s@samsung.com>
+    Cc: Jaehoon Chung <jh80.chung@samsung.com>
+    Cc: Mischa Jonker <mjonker@synopsys.com>
+
+commit 7b34d22af9506ab69dcf03bbfb96a78dcf2f5071
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Aug 5 13:21:17 2014 +0800
+
+    FogBugz #204713: Disable MAC reset when ethernet operation failed
+    
+    To disable the MAC reset to retain the configuration setting when
+    any ethernet operation failed. This is to enable debugging work.
+    It will not break any existing operation as MAC reset will be
+    invoked during start of each ethernet operation.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2013.12-yocto1.5
+
+commit a7724b697d730a5c640069f875f0d0d5e1ae24d9
+Author: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+Date:   Wed Aug 20 10:09:06 2014 +0800
+
+    FogBugz #223818 - Port GSRD customization from Poky to Angstrom
+    
+    This change is to port all the GSRD customization from Poky to Angstrom.
+    This includes GSRD applications, customizing lighttpd (adding cgi-bin),
+    webcontent of lighttpd for GSRD.
+    
+    Signed-off-by: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+
+commit 60e67ae388656fb62963733c07e666b38dfc0581
+Author: Graham Moore <grmoore@altera.com>
+Date:   Wed Aug 6 09:26:28 2014 -0500
+
+    Add NFS mount to see if it fixes the issue of applet not found
+
+-----------------------------------------------------------------------
+

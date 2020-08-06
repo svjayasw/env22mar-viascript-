@@ -1,0 +1,406 @@
+UPDATED Portal Report:
+
+The only difference from the report sent out yesterday (7/9/2014) is that the gpio-dwapb
+driver will not be added to the ltsi/ltsi-rt branches yet.  To join that discussion,
+please see the FB (http://fogbugz/default.asp?215381).
+
+-----------------------------------------------------------------------
+
+If this is Wednesday, this is a script-generated report of what we will push to the portal on Friday.
+
+However if this is Friday, this is a script-generated report of what we just pushed out to the portal.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.15
+branch tag  : rel_socfpga-3.15_14.07.01
+Pushing new branch to rocketboards.org
+
+branch      : socfpga-3.14
+branch tag  : rel_socfpga-3.14_14.07.01
+new commits : 4
+d9114981 Alan Tull FogBugz #215085: gpio-dw: remove old bindings
+deeaf26 Ley Foon Tan FogBugz #212188: nios2: Flush page regardless of if there is a mapping
+60ede0e Ley Foon Tan FogBugz #212187: nios2: Avoid flush_dcache_page() for zero page
+79ed665 Ley Foon Tan FogBugz #212185: nios2: define "PG_arch_1" as PG_dcache_clean
+
+
+++wiki:
+*Branch name*: socfpga-3.14, *Tag name:* rel_socfpga-3.14_14.07.01
+| *ID* | *Comment* | *GIT Commit* |
+| 215085 | gpio-dw: remove old bindings | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=d911498161dda005312d3a89bc7b033fa5463638 ][ d911498161dda005312d3a89bc7b033fa5463638 ]] |
+| 212188 | nios2: Flush page regardless of if there is a mapping | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=deeaf26b8e01472e64774b9487c09c94f4848920 ][ deeaf26b8e01472e64774b9487c09c94f4848920 ]] |
+| 212187 | nios2: Avoid flush_dcache_page() for zero page | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=60ede0e9d259e0f5d49008f020846f602d884216 ][ 60ede0e9d259e0f5d49008f020846f602d884216 ]] |
+| 212185 | nios2: define "PG_arch_1" as PG_dcache_clean | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=79ed6656a033d0f4680b6bb5de72fca66acee285 ][ 79ed6656a033d0f4680b6bb5de72fca66acee285 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.07.01
+new commits : 3
+56295c1 Ley Foon Tan FogBugz #212188: nios2: Flush page regardless of if there is a mapping
+d91af76 Ley Foon Tan FogBugz #212187: nios2: Avoid flush_dcache_page() for zero page
+09b6c6d Ley Foon Tan FogBugz #212185: nios2: define "PG_arch_1" as PG_dcache_clean
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.07.01
+| *ID* | *Comment* | *GIT Commit* |
+| 212188 | nios2: Flush page regardless of if there is a mapping | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=56295c197e082c6b7420dfc3c109c3757eca5601 ][ 56295c197e082c6b7420dfc3c109c3757eca5601 ]] |
+| 212187 | nios2: Avoid flush_dcache_page() for zero page | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=d91af76a06ad8cbc391133f08356827b6d2c3027 ][ d91af76a06ad8cbc391133f08356827b6d2c3027 ]] |
+| 212185 | nios2: define "PG_arch_1" as PG_dcache_clean | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=09b6c6df82fbb28109cb6d1a2303b297de282fcb ][ 09b6c6df82fbb28109cb6d1a2303b297de282fcb ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_14.07.01
+new commits : 3
+63e74b9 Ley Foon Tan FogBugz #212188: nios2: Flush page regardless of if there is a mapping
+fec0aa5 Ley Foon Tan FogBugz #212187: nios2: Avoid flush_dcache_page() for zero page
+bbf955b Ley Foon Tan FogBugz #212185: nios2: define "PG_arch_1" as PG_dcache_clean
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_14.07.01
+| *ID* | *Comment* | *GIT Commit* |
+| 212188 | nios2: Flush page regardless of if there is a mapping | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=63e74b91b3a17cbc77a042b558d85b093df3907c ][ 63e74b91b3a17cbc77a042b558d85b093df3907c ]] |
+| 212187 | nios2: Avoid flush_dcache_page() for zero page | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=fec0aa572adb903f3b31e92a658e78c44d16571e ][ fec0aa572adb903f3b31e92a658e78c44d16571e ]] |
+| 212185 | nios2: define "PG_arch_1" as PG_dcache_clean | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=bbf955b7fbd43af07d20e6a076ef46668064bf70 ][ bbf955b7fbd43af07d20e6a076ef46668064bf70 ]] |
+--wiki:
+
+
+branch      : socfpga-3.13-rel14.0
+branch tag  : rel_socfpga-3.13-rel14.0_14.07.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.10-ltsi-rt_14.07.01
+commit: 63e74b9 Ley Foon Tan FogBugz #212188: nios2: Flush page regardless of if there is a mapping
+
+tag:    rel_socfpga-3.13-rel14.0_14.07.01
+commit: 3c7cbb9 Dinh Nguyen FogBugz #205930: Add a second parent option for the dbg_base_clk
+
+tag:    rel_socfpga-3.14_14.07.01
+commit: d9114981 Alan Tull FogBugz #215085: gpio-dw: remove old bindings
+
+tag:    rel_socfpga-3.15_14.07.01
+commit: 54b77c4 Graham Moore Reassign bit-flags in m25p80 flash driver so that they are mutually exclusive.
+
+tag:    rel_socfpga-3.10-ltsi_14.07.01
+commit: 56295c1 Ley Foon Tan FogBugz #212188: nios2: Flush page regardless of if there is a mapping
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.07.01
+new commits : 0
+
+
+branch      : socfpga_v2013.01.01-rel14.0
+branch tag  : rel_socfpga_v2013.01.01-rel14.0_14.07.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.07.01
+commit: c2aa20d Chin Liang See FogBugz #210587: Fixing PLL HW configuration issue
+
+tag:    rel_socfpga_v2013.01.01-rel14.0_14.07.01
+commit: ff98d41 Chin Liang See FogBugz #208554: RAM boot to reset Clock Manager during CSEL  0
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_14.07.01
+new commits : 0
+
+
+branch      : danny-altera-rel14.0
+branch tag  : rel_danny-altera-rel14.0_14.07.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_14.07.01
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+tag:    rel_danny-altera-rel14.0_14.07.01
+commit: 83a01c4 Tien Hock Loh FogBugz #203635: Update arria5's kernel to use zImage instead of uImage
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_14.07.01
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_14.07.01
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_14.07.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_14.07.01
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_14.07.01
+commit: 86e1731 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2014.06-socfpga_14.07.01
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_14.07.01
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_14.07.01
+new commits : 1
+88ccd0f Yves Vandervennet kernel 3.15
+
+
+++wiki:
+*Branch name*: angstrom-v2013.12-yocto1.5, *Tag name:* rel_angstrom-v2013.12-yocto1.5_14.07.01
+| *ID* | *Comment* | *GIT Commit* |
+| community | kernel 3.15 | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=88ccd0fbd3516adf131b8c0e92d3cabbfab2abfb ][ 88ccd0fbd3516adf131b8c0e92d3cabbfab2abfb ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_14.07.01
+new commits : 2
+cbf58fc Yves Vandervennet kernel 3.15
+c6bf749 Yves Vandervennet added support for tags
+
+
+++wiki:
+*Branch name*: angstrom-v2014.06-yocto1.6, *Tag name:* rel_angstrom-v2014.06-yocto1.6_14.07.01
+| *ID* | *Comment* | *GIT Commit* |
+| community | kernel 3.15 | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=cbf58fc9d7df88fcb6ec6db9aa109533bf180d5e ][ cbf58fc9d7df88fcb6ec6db9aa109533bf180d5e ]] |
+| community | added support for tags | [[ http://git.rocketboards.org/?p=meta-altera.git;a=commit;h=c6bf749602ae1693d325ad7ce5ec173f96256f17 ][ c6bf749602ae1693d325ad7ce5ec173f96256f17 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_14.07.01
+commit: 19604c0 Yves Vandervennet added kernel 3.14
+
+tag:    rel_angstrom-v2014.06-yocto1.6_14.07.01
+commit: cbf58fc Yves Vandervennet kernel 3.15
+
+tag:    rel_angstrom-v2013.12-yocto1.5_14.07.01
+commit: 88ccd0f Yves Vandervennet kernel 3.15
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.15
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.14
+
+commit d911498161dda005312d3a89bc7b033fa5463638
+Author: Alan Tull <atull@altera.com>
+Date:   Wed Jul 9 09:22:39 2014 -0500
+
+    FogBugz #215085: gpio-dw: remove old bindings
+    
+    Replaced gpio-dw with upstreamed gpio-dwapb.  Need to clean up
+    by removing the bindings for the old driver.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+
+commit deeaf26b8e01472e64774b9487c09c94f4848920
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Jun 23 14:09:33 2014 +0800
+
+    FogBugz #212188: nios2: Flush page regardless of if there is a mapping
+    
+    This is how ARM does it.
+    
+    This fixes a problem with applications such as libpcap reading stale
+    data from mmapped buffers.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 60ede0e9d259e0f5d49008f020846f602d884216
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Jun 23 14:06:21 2014 +0800
+
+    FogBugz #212187: nios2: Avoid flush_dcache_page() for zero page
+    
+    The zero page is read-only, and has its cache state cleared during
+    boot.  No further maintenance for this page is required.
+    
+    Follow commit 421fe93cc4b06b2f5e875cbe0f692800d4862ee5 for ARM.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 79ed6656a033d0f4680b6bb5de72fca66acee285
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 2 17:05:45 2014 +0800
+
+    FogBugz #212185: nios2: define "PG_arch_1" as PG_dcache_clean
+    
+    Define PG_arch_1 as PG_dcache_clean and set it when a page is flushed.
+    Follow commit c01778001a4f5ad9c62d882776235f3f31922fdd for ARM.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 56295c197e082c6b7420dfc3c109c3757eca5601
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Jun 23 14:09:33 2014 +0800
+
+    FogBugz #212188: nios2: Flush page regardless of if there is a mapping
+    
+    This is how ARM does it.
+    
+    This fixes a problem with applications such as libpcap reading stale
+    data from mmapped buffers.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit d91af76a06ad8cbc391133f08356827b6d2c3027
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Jun 23 14:06:21 2014 +0800
+
+    FogBugz #212187: nios2: Avoid flush_dcache_page() for zero page
+    
+    The zero page is read-only, and has its cache state cleared during
+    boot.  No further maintenance for this page is required.
+    
+    Follow commit 421fe93cc4b06b2f5e875cbe0f692800d4862ee5 for ARM.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 09b6c6df82fbb28109cb6d1a2303b297de282fcb
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 2 17:05:45 2014 +0800
+
+    FogBugz #212185: nios2: define "PG_arch_1" as PG_dcache_clean
+    
+    Define PG_arch_1 as PG_dcache_clean and set it when a page is flushed.
+    Follow commit c01778001a4f5ad9c62d882776235f3f31922fdd for ARM.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 63e74b91b3a17cbc77a042b558d85b093df3907c
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Jun 23 14:09:33 2014 +0800
+
+    FogBugz #212188: nios2: Flush page regardless of if there is a mapping
+    
+    This is how ARM does it.
+    
+    This fixes a problem with applications such as libpcap reading stale
+    data from mmapped buffers.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit fec0aa572adb903f3b31e92a658e78c44d16571e
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Jun 23 14:06:21 2014 +0800
+
+    FogBugz #212187: nios2: Avoid flush_dcache_page() for zero page
+    
+    The zero page is read-only, and has its cache state cleared during
+    boot.  No further maintenance for this page is required.
+    
+    Follow commit 421fe93cc4b06b2f5e875cbe0f692800d4862ee5 for ARM.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit bbf955b7fbd43af07d20e6a076ef46668064bf70
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jul 2 17:05:45 2014 +0800
+
+    FogBugz #212185: nios2: define "PG_arch_1" as PG_dcache_clean
+    
+    Define PG_arch_1 as PG_dcache_clean and set it when a page is flushed.
+    Follow commit c01778001a4f5ad9c62d882776235f3f31922fdd for ARM.
+    
+    Signed-off-by: Yuriy Kozlov <ykozlov@ptcusa.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2013.12-yocto1.5
+
+commit 88ccd0fbd3516adf131b8c0e92d3cabbfab2abfb
+Author: Yves Vandervennet <yvanderv@altera.com>
+Date:   Tue Jul 8 19:02:28 2014 -0500
+
+    kernel 3.15
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.06-yocto1.6
+
+commit cbf58fc9d7df88fcb6ec6db9aa109533bf180d5e
+Author: Yves Vandervennet <yvanderv@altera.com>
+Date:   Tue Jul 8 19:01:26 2014 -0500
+
+    kernel 3.15
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@altera.com>
+
+commit c6bf749602ae1693d325ad7ce5ec173f96256f17
+Author: Yves Vandervennet <yvanderv@altera.com>
+Date:   Fri Jun 27 18:16:01 2014 -0500
+
+    added support for tags
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@altera.com>
+
+-----------------------------------------------------------------------
+
+

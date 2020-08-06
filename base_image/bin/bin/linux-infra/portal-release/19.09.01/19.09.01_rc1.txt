@@ -1,0 +1,1531 @@
+
+Script-generated report of what we tagged today in internal git.
+These rc tags/branches will retagged as pr and pushed to the portal in two weeks.
+
+The following new branches were tagged:
+repo : linux-socfpga          branch : socfpga-5.2
+repo : uboot-socfpga          branch : socfpga_v2019.04
+
+Thor
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-5.1
+branch tag  : rel_socfpga-5.1_19.09.01_rc1
+new commits : 2
+5c21be7 Dinh Nguyen clk: socfpga: stratix10: fix rate caclulationg for cnt_clks
+439335c Dinh Nguyen HSD #1707052006: Add initial support for Agilex devkit
+
+
+branch      : socfpga-5.2
+branch tag  : rel_socfpga-5.2_19.09.01_rc1
+Pushing new branch to external git
+
+
+
+branch      : socfpga-4.14.130-ltsi
+branch tag  : rel_socfpga-4.14.130-ltsi_19.09.01_rc1
+new commits : 20
+567dd6b Dinh Nguyen HSD #1707052006: Add initial support for Agilex devkit
+ab00863f Dinh Nguyen arm64: defconfig: include the Agilex platform to the arm64 defconfig
+3b8aa9c Dinh Nguyen arm64: dts: agilex: Add initial support for Intel's Agilex SoCFPGA
+9b97ac6 Richard Gong HSD #1409882336: firmware: update RSU driver for retry_counter and status
+7392bc2 Dinh Nguyen drivers/amba: add reset control to amba bus probe
+4988a5f Simon Goldschmidt ARM: dts: socfpga: update more missing reset properties
+88ea02a Bartosz Golaszewski reset: add support for non-DT systems
+24fdb00 Geert Uytterhoeven reset: Add reset_control_get_count()
+cd1fbe8 Thor Thayer EDAC/altera: Initialize peripheral FIFOs in probe()
+5342e75 Richard Gong arm64: defconfig: enable rsu driver
+ff5bf8b Richard Gong firmware: add Intel Stratix10 remote system update driver
+8697d50 Richard Gong firmware: stratix10-svc: extend svc to support new RSU features
+3281a10 Dmitry Torokhov driver core: add dev_groups to all drivers
+6c476f1 Dinh Nguyen arm64: defconfig: enable fpga and service layer
+0a450db Richard Gong EDAC/altera, firmware/intel: Add Stratix10 ECC DBE SMC call
+35c99cb Nicolas Saenz Julienne firmware: stratix10-svc: fix wrong of_node_put() in init function
+e359612 Richard Gong firmware: add remote status update client support
+02f3f8c Alan Tull fpga: add intel stratix10 soc fpga manager driver
+bb25ae7 Richard Gong firmware: add Intel Stratix10 service layer driver
+1ed3a9c Richard Gong remove early versions of service layer and RSU drivers
+
+
+branch      : socfpga-4.14.126-ltsi-rt
+branch tag  : rel_socfpga-4.14.126-ltsi-rt_19.09.01_rc1
+new commits : 20
+12c13b0 Dinh Nguyen HSD #1707052006: Add initial support for Agilex devkit
+7d1a54b Dinh Nguyen arm64: defconfig: include the Agilex platform to the arm64 defconfig
+7aaaf87 Dinh Nguyen arm64: dts: agilex: Add initial support for Intel's Agilex SoCFPGA
+c8eb4ef Richard Gong HSD #1409882336: firmware: update RSU driver for retry_counter and status
+66d5f54 Dinh Nguyen drivers/amba: add reset control to amba bus probe
+4840e63 Simon Goldschmidt ARM: dts: socfpga: update more missing reset properties
+95a8d3b Bartosz Golaszewski reset: add support for non-DT systems
+f360c25 Geert Uytterhoeven reset: Add reset_control_get_count()
+ee18705 Thor Thayer EDAC/altera: Initialize peripheral FIFOs in probe()
+39609d5 Richard Gong arm64: defconfig: enable rsu driver
+78d6079 Richard Gong firmware: add Intel Stratix10 remote system update driver
+9ee0462 Richard Gong firmware: stratix10-svc: extend svc to support new RSU features
+91290a8 Dmitry Torokhov driver core: add dev_groups to all drivers
+1620e29 Dinh Nguyen arm64: defconfig: enable fpga and service layer
+4679a7f Richard Gong EDAC/altera, firmware/intel: Add Stratix10 ECC DBE SMC call
+66c0982 Nicolas Saenz Julienne firmware: stratix10-svc: fix wrong of_node_put() in init function
+65ac13c Richard Gong firmware: add remote status update client support
+c2fc144 Alan Tull fpga: add intel stratix10 soc fpga manager driver
+d19ad32 Richard Gong firmware: add Intel Stratix10 service layer driver
+95549a3 Richard Gong remove early versions of service layer and RSU drivers
+
+
+Tags added to internal git:
+tag:    rel_socfpga-5.1_19.09.01_rc1
+commit: 5c21be7 Dinh Nguyen clk: socfpga: stratix10: fix rate caclulationg for cnt_clks
+
+tag:    rel_socfpga-5.2_19.09.01_rc1
+commit: ab400c6 Richard Gong HSD #1409882336: firmware: update RSU driver for retry_counter and status
+
+tag:    rel_socfpga-4.14.130-ltsi_19.09.01_rc1
+commit: 567dd6b Dinh Nguyen HSD #1707052006: Add initial support for Agilex devkit
+
+tag:    rel_socfpga-4.14.126-ltsi-rt_19.09.01_rc1
+commit: 12c13b0 Dinh Nguyen HSD #1707052006: Add initial support for Agilex devkit
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.09.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.09.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.09.01_rc1
+new commits : 14
+568b829 radu bacrau HSD #1707046651: Add support for RSU Retry
+e74bcdf Chin Liang See HSD #2205761323: Avoid SPL enter infinite loop during exception
+9576a8c Tien Fong Chee HSD #1409755457-12: Hang it when the DRAM size mismatch between DTS and HW
+ab35b51 Tien Fong Chee HSD #1409755457-11: arm: socfpga: Move Stratix 10 SDRAM driver to DM
+41650f7 Tien Fong Chee HSD #1409755457-10: arm: dts: Stratix10: Add SDRAM node
+b36ddf1 Tien Fong Chee HSD #1409755457-9: ddr: altera: Compile ALTERA SDRAM in SPL only
+0de778f Ley Foon Tan HSD #1409755457-8: ddr: altera: Stratix10: Add ECC memory scrubbing
+56d35b7 Ley Foon Tan HSD #1409755457-7: arm: stratix10: Include cpu_has_been_warmreset() in header
+dc261cb Ley Foon Tan HSD #1409755457-6: arm: dts: Stratix10: Modify stratix10 socdk memory node
+8f8deb1 Ley Foon Tan HSD #1409755457-5: configs: stratix10: Change CONFIG_NR_DRAM_BANKS to 2
+33118de Ley Foon Tan HSD #1409755457-4: ddr: altera: Stratix10: Add multi-banks DRAM size check
+1e187e9 Ley Foon Tan HSD #1409755457-3: ddr: stratix10: Move SDRAM size check to SDRAM driver
+7e03c5e Michael Pratt HSD #1409755457-2: fdt: Add device tree memory bindings
+588c0d0 Marek Vasut HSD #1409755457-1: ARM: socfpga: Pull DRAM size from DT
+
+
+branch      : socfpga_v2019.04
+branch tag  : rel_socfpga_v2019.04_19.09.01_rc1
+Pushing new branch to external git
+
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v2013.01.01_19.09.01_rc1
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.09.01_rc1
+commit: f7a7e26 Tien Fong Chee net: A10: Use packed structures for networking
+
+tag:    rel_socfpga_v2017.09_19.09.01_rc1
+commit: 568b829 radu bacrau HSD #1707046651: Add support for RSU Retry
+
+tag:    rel_socfpga_v2019.04_19.09.01_rc1
+commit: bc38a09 Tien Fong Chee arm: socfpga: Revert HW watchdog changes for S10
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.09.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2014.12-socfpga_19.09.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.09.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.09.01_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.09.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_19.09.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.09.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.09.01_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_19.09.01_rc1
+commit: 3a47b14 Ong, Hean Loong update 4.9.78-ltsi to commit ID 5704788
+
+tag:    rel_angstrom-v2018.06-yocto2.5_19.09.01_rc1
+commit: 2a4cadc Ong, Hean Loong update to linux-altera-ltsi_4.14.130
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.09.01_rc1
+new commits : 1
+18dea93 radu bacrau HSD #1707061410: Add support for max_retry
+
+
+Tags added to internal git:
+tag:    rel_master_19.09.01_rc1
+commit: 18dea93 radu bacrau HSD #1707061410: Add support for max_retry
+
+
+-----------------------------------------------------------------------
+
+repository: arm-trusted-firmware
+
+branch      : socfpga_v1.4
+branch tag  : rel_socfpga_v1.4_19.09.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v1.4_19.09.01_rc1
+commit: fd4f92c Loh Tien Hock libc: armclang: Implement compiler printf symbols
+
+
+-----------------------------------------------------------------------
+
+repository: uefi-socfpga
+
+branch      : socvp_socfpga_udk2015
+branch tag  : rel_socvp_socfpga_udk2015_19.09.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socvp_socfpga_udk2015_19.09.01_rc1
+commit: 475bea4 Loh Tien Hock AlteraPlatformPkg: Change memory base due for Linux's reserved space
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera-refdes
+
+branch      : master
+branch tag  : rel_master_19.09.01_rc1
+new commits : 2
+97e7d7a Ong, Hean Loong fix issue of lighttpd for yocto-warrior
+9c8dd94 Ong, Hean Loong upgrade to yocto-warrior
+
+
+Tags added to internal git:
+tag:    rel_master_19.09.01_rc1
+commit: 97e7d7a Ong, Hean Loong fix issue of lighttpd for yocto-warrior
+
+
+-----------------------------------------------------------------------
+
+repository: linux-refdesigns
+
+branch      : master
+branch tag  : rel_master_19.09.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.09.01_rc1
+commit: 769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-5.1
+
+commit 5c21be71d13b64bc4cce9b1bd8411d41d15b1a6a
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Aug 14 10:30:14 2019 -0500
+
+    clk: socfpga: stratix10: fix rate caclulationg for cnt_clks
+    
+    [upstream commit c7ec75ea4d5316518adc87224e3cff47192579e7]
+    
+    Checking bypass_reg is incorrect for calculating the cnt_clk rates.
+    Instead we should be checking that there is a proper hardware register
+    that holds the clock divider.
+    
+    Cc: stable@vger.kernel.org
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Link: https://lkml.kernel.org/r/20190814153014.12962-1-dinguyen@kernel.org
+    Signed-off-by: Stephen Boyd <sboyd@kernel.org>
+
+commit 439335c9d8c55f1a3b13536fe4a9836ae94f885f
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Jun 11 16:57:52 2019 -0500
+
+    HSD #1707052006: Add initial support for Agilex devkit
+    
+    Before the clock driver can be finished on Agilex, we hack up the clock
+    frequencies for the uart/timer/sdmmc/gmacs, i.e. hard code them the
+    frequencies.
+    
+    We add a agilex_minimal_defconfig, that will be deleted in 1 or 2
+    kernel versions.
+    
+    We add the reset driver support for Agilex, and add dma-ranges to limit
+    of 2GB.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+    ---
+    FYI: This commit will be removed within 1 or 2 kernel versions as upstream
+         full support for the Agilex platform will be completed.
+    v2: Add frequencies for sdmmc and gmacs
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-5.2
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.130-ltsi
+
+commit 567dd6b26fcf739a1220afa7d96bb296de1136b4
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Jun 11 16:57:52 2019 -0500
+
+    HSD #1707052006: Add initial support for Agilex devkit
+    
+    Before the clock driver can be finished on Agilex, we hack up the clock
+    frequencies for the uart/timer/sdmmc/gmacs, i.e. hard code them the
+    frequencies.
+    
+    We add a agilex_minimal_defconfig, that will be deleted in 1 or 2
+    kernel versions.
+    
+    We add the reset driver support for Agilex, and add dma-ranges to limit
+    of 2GB.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+    ---
+    FYI: This commit will be removed within 1 or 2 kernel versions as upstream
+         full support for the Agilex platform will be completed.
+    v2: Add frequencies for sdmmc and gmacs
+
+commit ab00863f4abed3f86fb5eb03f21e6f64ba9836be
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Apr 3 16:50:10 2019 -0500
+
+    arm64: defconfig: include the Agilex platform to the arm64 defconfig
+    
+    [upstream commit 09d7d3e5291b3a531e36a5b6ef6d6088bb541aad]
+    
+    Build the Agilex platform in the standard arm64 defconfig.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 3b8aa9c413347a862b935155bd5fa2ed5457ab21
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Apr 3 16:43:51 2019 -0500
+
+    arm64: dts: agilex: Add initial support for Intel's Agilex SoCFPGA
+    
+    [upstream commit 4b36daf9ada30a66c93f8701e8c6f23bc3ce94e2]
+    
+    Add the initial device tree files for Intel's Agilex SoCFPGA platform.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 9b97ac6dc34cd9e99eda29170afacd671642aa12
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Mon Aug 26 11:04:57 2019 -0500
+
+    HSD #1409882336: firmware: update RSU driver for retry_counter and status
+    
+    There is an error at RSU driver which RSU driver only queries SDM at
+    boot time or when the driver is loaded. This is not good since the
+    "reset_retry_counter" and "reset_error_status" can modify the data
+    that SDM returns.
+    
+    Make additional changes to fix the error.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 7392bc2dd76443c3f7750c90726f041da33099ed
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Fri Aug 2 10:07:57 2019 -0500
+
+    drivers/amba: add reset control to amba bus probe
+    
+    The primecell controller on some SoCs, i.e. SoCFPGA, is held in reset by
+    default. Until recently, the DMA controller was brought out of reset by the
+    bootloader(i.e. U-Boot). But a recent change in U-Boot, the peripherals
+    that are not used are held in reset and are left to Linux to bring them
+    out of reset.
+    
+    Add a mechanism for getting the reset property and de-assert the primecell
+    module from reset if found. This is a not a hard fail if the reset properti
+    is not present in the device tree node, so the driver will continue to
+    probe.
+    
+    Because there are different variants of the controller that may have
+    multiple reset signals, the code will find all reset(s) specified and
+    de-assert them.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Reviewed-by: Rob Herring <robh@kernel.org>
+    ---
+    v4: cleaned up indentation in loop
+        fix up a few checkpatch warnings
+        add Reviewed-by:
+    v3: add a reset_control_put()
+        add error handling
+    v2: move reset control to bus code
+        find all reset properties and de-assert them
+
+commit 4988a5f27844c03a3f0b79746416dfc92ee53b6f
+Author: Simon Goldschmidt <simon.k.r.goldschmidt@gmail.com>
+Date:   Tue Jan 29 20:46:25 2019 +0100
+
+    ARM: dts: socfpga: update more missing reset properties
+    
+    [upstream commit 1c909b2dfe6a21de2c24dc1c1405593e40e3a88c]
+    Add reset property for dma, can and sdram on socfpga gen5.
+    
+    Signed-off-by: Simon Goldschmidt <simon.k.r.goldschmidt@gmail.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 88ea02ac01bb233c139e44a08f00f848a9cbaba3
+Author: Bartosz Golaszewski <bgolaszewski@baylibre.com>
+Date:   Wed Feb 28 14:08:57 2018 +0100
+
+    reset: add support for non-DT systems
+    
+    [upstream commit 6691dffab0ab6301bb7b489b1dcf9f5efdef202f]
+    
+    The reset framework only supports device-tree. There are some platforms
+    however, which need to use it even in legacy, board-file based mode.
+    
+    An example of such architecture is the DaVinci family of SoCs which
+    supports both device tree and legacy boot modes and we don't want to
+    introduce any regressions.
+    
+    We're currently working on converting the platform from its hand-crafted
+    clock API to using the common clock framework. Part of the overhaul will
+    be representing the chip's power sleep controller's reset lines using
+    the reset framework.
+    
+    This changeset extends the core reset code with a new reset lookup
+    entry structure. It contains data allowing the reset core to associate
+    reset lines with devices by comparing the dev_id and con_id strings.
+    
+    It also provides a function allowing drivers to register lookup entries
+    with the framework.
+    
+    The new lookup function is only called as a fallback in case the
+    of_node field is NULL and doesn't change anything for current users.
+    
+    Tested with a dummy reset driver with several lookup entries.
+    
+    An example lookup table registration from a driver can be found below:
+    
+    static struct reset_control_lookup foobar_reset_lookup[] = {
+    	RESET_LOOKUP("foo.0", "foo", 15),
+    	RESET_LOOKUP("bar.0", NULL,   5),
+    };
+    
+    foobar_probe()
+    {
+    ...
+    
+            reset_controller_add_lookup(&rcdev, foobar_reset_lookup,
+                                        ARRAY_SIZE(foobar_reset_lookup));
+    
+    ...
+    }
+    
+    Cc: Sekhar Nori <nsekhar@ti.com>
+    Cc: Kevin Hilman <khilman@baylibre.com>
+    Cc: David Lechner <david@lechnology.com>
+    Signed-off-by: Bartosz Golaszewski <bgolaszewski@baylibre.com>
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+
+commit 24fdb009f7b9b65f157945133c11865f3714245e
+Author: Geert Uytterhoeven <geert+renesas@glider.be>
+Date:   Tue Nov 13 13:47:44 2018 +0100
+
+    reset: Add reset_control_get_count()
+    
+    [upstream commit eaf91db0ab22dc2c664a9782f2f31dcbc410f3b5]
+    
+    Currently the reset core has internal support for counting the number of
+    resets for a device described in DT.  Generalize this to devices using
+    lookup resets, and export it for public use.
+    
+    This will be used by generic drivers that need to be sure a device is
+    controlled by a single, dedicated reset line (e.g. vfio-platform).
+    
+    Signed-off-by: Geert Uytterhoeven <geert+renesas@glider.be>
+    [p.zabel@pengutronix.de: fixed a typo in reset_control_get_count comment]
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+
+commit cd1fbe829b658e6e35bdc442dcb606f12d8d6508
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Tue Mar 26 16:29:31 2019 -0500
+
+    EDAC/altera: Initialize peripheral FIFOs in probe()
+    
+    [backport 'commit 788586efd116 ("EDAC/altera: Initialize peripheral
+                                     FIFOs in probe()")']
+    
+    Backported from linux-edac-next
+    
+    This patch fixes:
+    [    1.171156] EDAC Altera: emac0-rx-ecc: No ECC present or ECC disabled.
+    [    1.177684] EDAC Altera: emac0-rx-ecc:Error setting up EDAC device: -19
+    [    1.184316] EDAC Altera: emac0-tx-ecc: No ECC present or ECC disabled.
+    [    1.190841] EDAC Altera: emac0-tx-ecc:Error setting up EDAC device: -19
+    
+    The FIFO memory and ECC initialization doesn't need to be
+    done as a separate operation early in the startup.
+    
+    Improve the Arria10 and Stratix10 peripheral FIFO init
+    by initializing memory and enabling ECC as part of the
+    device driver initialization.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Signed-off-by: Borislav Petkov <bp@suse.de>
+    Cc: James Morse <james.morse@arm.com>
+    Cc: Mauro Carvalho Chehab <mchehab@kernel.org>
+    Cc: linux-edac <linux-edac@vger.kernel.org>
+    Link: https://lkml.kernel.org/r/1553635771-32693-2-git-send-email-thor.thayer@linux.intel.com
+
+commit 5342e7557c9e8eb2c2762d8f4864b2ce4a24314f
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Mon Aug 12 10:46:57 2019 -0500
+
+    arm64: defconfig: enable rsu driver
+    
+    Enable Intel Stratix10 Remote System Update (RSU) driver
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit ff5bf8be2be982593cacb16fa7233a97c3b5d34c
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Wed Apr 3 10:25:51 2019 -0500
+
+    firmware: add Intel Stratix10 remote system update driver
+    
+    The Intel Remote System Update (RSU) driver exposes interfaces access
+    through the Intel Service Layer to user space via sysfs interface.
+    The RSU interfaces report and control some of the optional RSU features
+    on Intel Stratix 10 SoC.
+    
+    The RSU feature provides a way for customers to update the boot
+    configuration of a Intel Stratix 10 SoC device with significantly reduced
+    risk of corrupting the bitstream storage and bricking the system.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Reviewed-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: s/SysFS/sysfs, s/scnprintf/sprintf,
+        s/attr_group/ATTRIBUTE_GROUPS, use devm_device_add_groups() and
+        devm_device_remove_groups()
+        added check the return value from rsu_send_msg()
+        removed a pr_info in stratix10_rsu_probe()
+        removed compatible = "intel,stratix10-rsu"
+    v3: no change
+    v4: removed devm_device_add_groups() & devm_device_remove_groups(),
+        utilized groups at struct device_driver
+    v5: changed to use dev_group pointer from driver core
+        added max_retry with watchdog event
+
+commit 8697d508a3cf46123e435b7a114b95ba27fc0690
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Mon Apr 8 12:51:24 2019 -0500
+
+    firmware: stratix10-svc: extend svc to support new RSU features
+    
+    Extend Intel Stratix10 service layer driver to support new RSU notify and
+    MAX_RETRY with watchdog event.
+    
+    RSU is used to provide our customers with protection against loading bad
+    bitstream onto their devices when those devices are booting from flash
+    
+    RSU notifies provides users with an API to notify the firmware of the
+    state of hard processor system.
+    
+    To deal with watchdog event, RSU provides a way for user to retry the
+    current running image several times before giving up and starting normal
+    RSU failover flow.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Reviewed-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: changed to add intel stratix10 RSU device
+        changed to support RSU in handling a watchdog timeout
+    v3: no change
+    v4: no change
+    v5: changed to support max_retry with watchdog event
+
+commit 3281a10ae253184ba223d6c771b8ccb752472a21
+Author: Dmitry Torokhov <dmitry.torokhov@gmail.com>
+Date:   Wed Jul 31 14:43:40 2019 +0200
+
+    driver core: add dev_groups to all drivers
+    
+    Commit 23b6904442d0 ("driver core: add dev_groups to all drivers")'
+    
+    Add the ability for the driver core to create and remove a list of
+    attribute groups automatically when the device is bound/unbound from a
+    specific driver.
+    
+    Signed-off-by: Dmitry Torokhov <dmitry.torokhov@gmail.com>
+    Tested-by: Richard Gong <richard.gong@linux.intel.com>
+    Link: https://lore.kernel.org/r/20190731124349.4474-2-gregkh@linuxfoundation.org
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 6c476f124f612854b95bfaafbbdd2f239999760b
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Thu Mar 28 11:18:42 2019 -0500
+
+    arm64: defconfig: enable fpga and service layer
+    
+    'Commit f94c0c386896 ("arm64: defconfig: enable fpga and service layer")'
+    
+    Enable FPGA framework, Intel Stratix10 SoC FPGA manager, Stratix10
+    service layer, and Altera Freeze Bridge drivers.
+    
+    Intel Stratix10 service layer driver was added with commit 7ca5ce896524
+    ("firmware: add Intel Stratix10 service layer driver").
+    
+    Intel Stratix10 service layer provides kernel APIs for drivers to request
+    access to the secure features. Such features include FPGA programming,
+    remote status update, and read and write secure registers.
+    
+    While clients of the service layer can be built as modules, the service
+    layer itself has to be configured as built-in.  The service layer is
+    dependent on ARCH_STRATIX10.
+    
+    Enabling Altera Freeze Bridge depends on commit 38cd7ad5bd25
+    ("fpga: altera_freeze_bridge: remove restriction to socfpga").
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 0a450db1529a47bf595b6b0eed53fc4b23187665
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Mon Aug 12 10:29:41 2019 -0500
+
+    EDAC/altera, firmware/intel: Add Stratix10 ECC DBE SMC call
+    
+    [Upstream fad9fab975cb9fae651854c811cb07a30bc2b98a]
+    
+    Reserve ECC Double Bit Error SMC call to alert U-Boot that a DBE has
+    occurred. Move the call from local EDAC header file to a common header.
+    
+     [ bp: Merge the two patches. ]
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Signed-off-by: Borislav Petkov <bp@suse.de>
+    Reviewed-by: Richard Gong <richard.gong@intel.com>
+    Reviewed-by: Alan Tull <atull@kernel.org> # firmware
+    Cc: Greg KH <greg@kroah.com>
+    Cc: James Morse <james.morse@arm.com>
+    Cc: linux-edac <linux-edac@vger.kernel.org>
+    Cc: mchehab@kernel.org
+    Link: https://lkml.kernel.org/r/1553870639-23895-1-git-send-email-thor.thayer@linux.intel.com
+
+commit 35c99cb25fcf610c9a08ad40dd671a3b739dad52
+Author: Nicolas Saenz Julienne <nsaenzjulienne@suse.de>
+Date:   Mon Dec 3 18:27:21 2018 +0100
+
+    firmware: stratix10-svc: fix wrong of_node_put() in init function
+    
+    'commit b50584832b4c ("firmware: stratix10-svc: fix wrong of_node_put()
+    in init function")'
+    
+    After finding a "firmware" dt node stratix10 tries to match it's
+    compatible string with it. To do so it's calling of_find_matching_node()
+    which already takes care of decreasing the refcount on the "firmware"
+    node. We are then incorrectly decreasing the refcount on that node
+    again.
+    
+    This patch removes the unwarranted call to of_node_put().
+    
+    Fixes: 7ca5ce896524 ("firmware: add Intel Stratix10 service layer driver")
+    Signed-off-by: Nicolas Saenz Julienne <nsaenzjulienne@suse.de>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit e359612bcc8d7348365c1faaf041fdbb6c7f520d
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue Nov 13 12:14:06 2018 -0600
+
+    firmware: add remote status update client support
+    
+    'commit 6b50d882d38d ("firmware: add remote status update client support")'
+    
+    Extend Intel Stratix10 service layer to support the second service layer
+    client, Remote Status Update (RSU).
+    
+    RSU is used to provide our customers with protection against loading bad
+    bitstreams onto their devices when those devices are booting from flash.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 02f3f8cdbda0c4d4f632e70e12951b328aac23cf
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Nov 13 12:14:04 2018 -0600
+
+    fpga: add intel stratix10 soc fpga manager driver
+    
+    'Commit e7eef1d7633a ("fpga: add intel stratix10 soc fpga manager driver")'
+    
+    Add driver for reconfiguring Intel Stratix10 SoC FPGA devices.
+    This driver communicates through the Intel service layer driver
+    which does communication with privileged hardware (that does the
+    FPGA programming) through a secure mailbox.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Acked-by: Moritz Fischer <mdf@kernel.org>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit bb25ae74cf131422ce380ca6d79b2f07b4ee6bc3
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue Nov 13 12:14:01 2018 -0600
+
+    firmware: add Intel Stratix10 service layer driver
+    
+    'commit 7ca5ce896524 ("firmware: add Intel Stratix10 service layer
+    driver")'
+    
+    Some features of the Intel Stratix10 SoC require a level of privilege
+    higher than the kernel is granted. Such secure features include
+    FPGA programming. In terms of the ARMv8 architecture, the kernel runs
+    at Exception Level 1 (EL1), access to the features requires
+    Exception Level 3 (EL3).
+    
+    The Intel Stratix10 SoC service layer provides an in kernel API for
+    drivers to request access to the secure features. The requests are queued
+    and processed one by one. ARM’s SMCCC is used to pass the execution
+    of the requests on to a secure monitor (EL3).
+    
+    The header file stratix10-sve-client.h defines the interface between
+    service providers (FPGA manager is one of them) and service layer.
+    
+    The header file stratix10-smc.h defines the secure monitor call (SMC)
+    message protocols used for service layer driver in normal world
+    (EL1) to communicate with secure monitor SW in secure monitor exception
+    level 3 (EL3).
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 1ed3a9c2e8eaf09cb473620a00f471e5e5d3efbb
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Mon Aug 12 08:47:04 2019 -0500
+
+    remove early versions of service layer and RSU drivers
+    
+    Service layer and RSU drivers will be replaced by upstream patches
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.126-ltsi-rt
+
+commit 12c13b097fcd474176c9b99a2efbeadbaf5fc9db
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Jun 11 16:57:52 2019 -0500
+
+    HSD #1707052006: Add initial support for Agilex devkit
+    
+    Before the clock driver can be finished on Agilex, we hack up the clock
+    frequencies for the uart/timer/sdmmc/gmacs, i.e. hard code them the
+    frequencies.
+    
+    We add a agilex_minimal_defconfig, that will be deleted in 1 or 2
+    kernel versions.
+    
+    We add the reset driver support for Agilex, and add dma-ranges to limit
+    of 2GB.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+    ---
+    FYI: This commit will be removed within 1 or 2 kernel versions as upstream
+         full support for the Agilex platform will be completed.
+    v2: Add frequencies for sdmmc and gmacs
+
+commit 7d1a54b1fc9bf44ca6b1027fc51dae7b684ad161
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Apr 3 16:50:10 2019 -0500
+
+    arm64: defconfig: include the Agilex platform to the arm64 defconfig
+    
+    [upstream commit 09d7d3e5291b3a531e36a5b6ef6d6088bb541aad]
+    
+    Build the Agilex platform in the standard arm64 defconfig.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 7aaaf87c19a5c4dca3e454f88838f27a73037fea
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Apr 3 16:43:51 2019 -0500
+
+    arm64: dts: agilex: Add initial support for Intel's Agilex SoCFPGA
+    
+    [upstream commit 4b36daf9ada30a66c93f8701e8c6f23bc3ce94e2]
+    
+    Add the initial device tree files for Intel's Agilex SoCFPGA platform.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit c8eb4ef5dca97061dab9c18971b35808111efbf8
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Mon Aug 26 11:04:57 2019 -0500
+
+    HSD #1409882336: firmware: update RSU driver for retry_counter and status
+    
+    There is an error at RSU driver which RSU driver only queries SDM at
+    boot time or when the driver is loaded. This is not good since the
+    "reset_retry_counter" and "reset_error_status" can modify the data
+    that SDM returns.
+    
+    Make additional changes to fix the error.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 66d5f5464c89235fb34e3bcd8a1e3756fdb22359
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Fri Aug 2 10:07:57 2019 -0500
+
+    drivers/amba: add reset control to amba bus probe
+    
+    The primecell controller on some SoCs, i.e. SoCFPGA, is held in reset by
+    default. Until recently, the DMA controller was brought out of reset by the
+    bootloader(i.e. U-Boot). But a recent change in U-Boot, the peripherals
+    that are not used are held in reset and are left to Linux to bring them
+    out of reset.
+    
+    Add a mechanism for getting the reset property and de-assert the primecell
+    module from reset if found. This is a not a hard fail if the reset properti
+    is not present in the device tree node, so the driver will continue to
+    probe.
+    
+    Because there are different variants of the controller that may have
+    multiple reset signals, the code will find all reset(s) specified and
+    de-assert them.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Reviewed-by: Rob Herring <robh@kernel.org>
+    ---
+    v4: cleaned up indentation in loop
+        fix up a few checkpatch warnings
+        add Reviewed-by:
+    v3: add a reset_control_put()
+        add error handling
+    v2: move reset control to bus code
+        find all reset properties and de-assert them
+
+commit 4840e63e6115bd4955e794ee787ee5cc7ba7847f
+Author: Simon Goldschmidt <simon.k.r.goldschmidt@gmail.com>
+Date:   Tue Jan 29 20:46:25 2019 +0100
+
+    ARM: dts: socfpga: update more missing reset properties
+    
+    [upstream commit 1c909b2dfe6a21de2c24dc1c1405593e40e3a88c]
+    Add reset property for dma, can and sdram on socfpga gen5.
+    
+    Signed-off-by: Simon Goldschmidt <simon.k.r.goldschmidt@gmail.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 95a8d3bdea2dd911c55ef3c47942c812e31f736f
+Author: Bartosz Golaszewski <bgolaszewski@baylibre.com>
+Date:   Wed Feb 28 14:08:57 2018 +0100
+
+    reset: add support for non-DT systems
+    
+    [upstream commit 6691dffab0ab6301bb7b489b1dcf9f5efdef202f]
+    
+    The reset framework only supports device-tree. There are some platforms
+    however, which need to use it even in legacy, board-file based mode.
+    
+    An example of such architecture is the DaVinci family of SoCs which
+    supports both device tree and legacy boot modes and we don't want to
+    introduce any regressions.
+    
+    We're currently working on converting the platform from its hand-crafted
+    clock API to using the common clock framework. Part of the overhaul will
+    be representing the chip's power sleep controller's reset lines using
+    the reset framework.
+    
+    This changeset extends the core reset code with a new reset lookup
+    entry structure. It contains data allowing the reset core to associate
+    reset lines with devices by comparing the dev_id and con_id strings.
+    
+    It also provides a function allowing drivers to register lookup entries
+    with the framework.
+    
+    The new lookup function is only called as a fallback in case the
+    of_node field is NULL and doesn't change anything for current users.
+    
+    Tested with a dummy reset driver with several lookup entries.
+    
+    An example lookup table registration from a driver can be found below:
+    
+    static struct reset_control_lookup foobar_reset_lookup[] = {
+    	RESET_LOOKUP("foo.0", "foo", 15),
+    	RESET_LOOKUP("bar.0", NULL,   5),
+    };
+    
+    foobar_probe()
+    {
+    ...
+    
+            reset_controller_add_lookup(&rcdev, foobar_reset_lookup,
+                                        ARRAY_SIZE(foobar_reset_lookup));
+    
+    ...
+    }
+    
+    Cc: Sekhar Nori <nsekhar@ti.com>
+    Cc: Kevin Hilman <khilman@baylibre.com>
+    Cc: David Lechner <david@lechnology.com>
+    Signed-off-by: Bartosz Golaszewski <bgolaszewski@baylibre.com>
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+
+commit f360c2557cbeb006ab79d44bd1127cf438b0d69b
+Author: Geert Uytterhoeven <geert+renesas@glider.be>
+Date:   Tue Nov 13 13:47:44 2018 +0100
+
+    reset: Add reset_control_get_count()
+    
+    [upstream commit eaf91db0ab22dc2c664a9782f2f31dcbc410f3b5]
+    
+    Currently the reset core has internal support for counting the number of
+    resets for a device described in DT.  Generalize this to devices using
+    lookup resets, and export it for public use.
+    
+    This will be used by generic drivers that need to be sure a device is
+    controlled by a single, dedicated reset line (e.g. vfio-platform).
+    
+    Signed-off-by: Geert Uytterhoeven <geert+renesas@glider.be>
+    [p.zabel@pengutronix.de: fixed a typo in reset_control_get_count comment]
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+
+commit ee18705f40bf7fe7fa2fc4e87346da65495dc027
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Tue Mar 26 16:29:31 2019 -0500
+
+    EDAC/altera: Initialize peripheral FIFOs in probe()
+    
+    [backport 'commit 788586efd116 ("EDAC/altera: Initialize peripheral
+                                     FIFOs in probe()")']
+    
+    Backported from linux-edac-next
+    
+    This patch fixes:
+    [    1.171156] EDAC Altera: emac0-rx-ecc: No ECC present or ECC disabled.
+    [    1.177684] EDAC Altera: emac0-rx-ecc:Error setting up EDAC device: -19
+    [    1.184316] EDAC Altera: emac0-tx-ecc: No ECC present or ECC disabled.
+    [    1.190841] EDAC Altera: emac0-tx-ecc:Error setting up EDAC device: -19
+    
+    The FIFO memory and ECC initialization doesn't need to be
+    done as a separate operation early in the startup.
+    
+    Improve the Arria10 and Stratix10 peripheral FIFO init
+    by initializing memory and enabling ECC as part of the
+    device driver initialization.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Signed-off-by: Borislav Petkov <bp@suse.de>
+    Cc: James Morse <james.morse@arm.com>
+    Cc: Mauro Carvalho Chehab <mchehab@kernel.org>
+    Cc: linux-edac <linux-edac@vger.kernel.org>
+    Link: https://lkml.kernel.org/r/1553635771-32693-2-git-send-email-thor.thayer@linux.intel.com
+
+commit 39609d506cbbc6e61431a0cdf5a480607242b1a9
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Mon Aug 12 10:46:57 2019 -0500
+
+    arm64: defconfig: enable rsu driver
+    
+    Enable Intel Stratix10 Remote System Update (RSU) driver
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 78d6079bbf132c0889e3a95409faf4427df61ba5
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Wed Apr 3 10:25:51 2019 -0500
+
+    firmware: add Intel Stratix10 remote system update driver
+    
+    The Intel Remote System Update (RSU) driver exposes interfaces access
+    through the Intel Service Layer to user space via sysfs interface.
+    The RSU interfaces report and control some of the optional RSU features
+    on Intel Stratix 10 SoC.
+    
+    The RSU feature provides a way for customers to update the boot
+    configuration of a Intel Stratix 10 SoC device with significantly reduced
+    risk of corrupting the bitstream storage and bricking the system.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Reviewed-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: s/SysFS/sysfs, s/scnprintf/sprintf,
+        s/attr_group/ATTRIBUTE_GROUPS, use devm_device_add_groups() and
+        devm_device_remove_groups()
+        added check the return value from rsu_send_msg()
+        removed a pr_info in stratix10_rsu_probe()
+        removed compatible = "intel,stratix10-rsu"
+    v3: no change
+    v4: removed devm_device_add_groups() & devm_device_remove_groups(),
+        utilized groups at struct device_driver
+    v5: changed to use dev_group pointer from driver core
+        added max_retry with watchdog event
+
+commit 9ee0462e6cb60bff54d38e4770e3f788911058b3
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Mon Apr 8 12:51:24 2019 -0500
+
+    firmware: stratix10-svc: extend svc to support new RSU features
+    
+    Extend Intel Stratix10 service layer driver to support new RSU notify and
+    MAX_RETRY with watchdog event.
+    
+    RSU is used to provide our customers with protection against loading bad
+    bitstream onto their devices when those devices are booting from flash
+    
+    RSU notifies provides users with an API to notify the firmware of the
+    state of hard processor system.
+    
+    To deal with watchdog event, RSU provides a way for user to retry the
+    current running image several times before giving up and starting normal
+    RSU failover flow.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Reviewed-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: changed to add intel stratix10 RSU device
+        changed to support RSU in handling a watchdog timeout
+    v3: no change
+    v4: no change
+    v5: changed to support max_retry with watchdog event
+
+commit 91290a8d0bb8a484b98c63209a9f64f457f1dc40
+Author: Dmitry Torokhov <dmitry.torokhov@gmail.com>
+Date:   Wed Jul 31 14:43:40 2019 +0200
+
+    driver core: add dev_groups to all drivers
+    
+    Commit 23b6904442d0 ("driver core: add dev_groups to all drivers")'
+    
+    Add the ability for the driver core to create and remove a list of
+    attribute groups automatically when the device is bound/unbound from a
+    specific driver.
+    
+    Signed-off-by: Dmitry Torokhov <dmitry.torokhov@gmail.com>
+    Tested-by: Richard Gong <richard.gong@linux.intel.com>
+    Link: https://lore.kernel.org/r/20190731124349.4474-2-gregkh@linuxfoundation.org
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 1620e29f164e25ff1f8b15478f97cd2774ddd6d9
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Thu Mar 28 11:18:42 2019 -0500
+
+    arm64: defconfig: enable fpga and service layer
+    
+    'Commit f94c0c386896 ("arm64: defconfig: enable fpga and service layer")'
+    
+    Enable FPGA framework, Intel Stratix10 SoC FPGA manager, Stratix10
+    service layer, and Altera Freeze Bridge drivers.
+    
+    Intel Stratix10 service layer driver was added with commit 7ca5ce896524
+    ("firmware: add Intel Stratix10 service layer driver").
+    
+    Intel Stratix10 service layer provides kernel APIs for drivers to request
+    access to the secure features. Such features include FPGA programming,
+    remote status update, and read and write secure registers.
+    
+    While clients of the service layer can be built as modules, the service
+    layer itself has to be configured as built-in.  The service layer is
+    dependent on ARCH_STRATIX10.
+    
+    Enabling Altera Freeze Bridge depends on commit 38cd7ad5bd25
+    ("fpga: altera_freeze_bridge: remove restriction to socfpga").
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 4679a7fe095bb85e225e9f0995bb078efba66db3
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Mon Aug 12 10:29:41 2019 -0500
+
+    EDAC/altera, firmware/intel: Add Stratix10 ECC DBE SMC call
+    
+    [Upstream fad9fab975cb9fae651854c811cb07a30bc2b98a]
+    
+    Reserve ECC Double Bit Error SMC call to alert U-Boot that a DBE has
+    occurred. Move the call from local EDAC header file to a common header.
+    
+     [ bp: Merge the two patches. ]
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Signed-off-by: Borislav Petkov <bp@suse.de>
+    Reviewed-by: Richard Gong <richard.gong@intel.com>
+    Reviewed-by: Alan Tull <atull@kernel.org> # firmware
+    Cc: Greg KH <greg@kroah.com>
+    Cc: James Morse <james.morse@arm.com>
+    Cc: linux-edac <linux-edac@vger.kernel.org>
+    Cc: mchehab@kernel.org
+    Link: https://lkml.kernel.org/r/1553870639-23895-1-git-send-email-thor.thayer@linux.intel.com
+
+commit 66c0982ab025fbdef9ec6b1eb11f40b5646ea44c
+Author: Nicolas Saenz Julienne <nsaenzjulienne@suse.de>
+Date:   Mon Dec 3 18:27:21 2018 +0100
+
+    firmware: stratix10-svc: fix wrong of_node_put() in init function
+    
+    'commit b50584832b4c ("firmware: stratix10-svc: fix wrong of_node_put()
+    in init function")'
+    
+    After finding a "firmware" dt node stratix10 tries to match it's
+    compatible string with it. To do so it's calling of_find_matching_node()
+    which already takes care of decreasing the refcount on the "firmware"
+    node. We are then incorrectly decreasing the refcount on that node
+    again.
+    
+    This patch removes the unwarranted call to of_node_put().
+    
+    Fixes: 7ca5ce896524 ("firmware: add Intel Stratix10 service layer driver")
+    Signed-off-by: Nicolas Saenz Julienne <nsaenzjulienne@suse.de>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 65ac13c783724e770ed87801d5d4135febedfe85
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue Nov 13 12:14:06 2018 -0600
+
+    firmware: add remote status update client support
+    
+    'commit 6b50d882d38d ("firmware: add remote status update client support")'
+    
+    Extend Intel Stratix10 service layer to support the second service layer
+    client, Remote Status Update (RSU).
+    
+    RSU is used to provide our customers with protection against loading bad
+    bitstreams onto their devices when those devices are booting from flash.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit c2fc144d7af8e2e53f0a868760628d6924be4218
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Nov 13 12:14:04 2018 -0600
+
+    fpga: add intel stratix10 soc fpga manager driver
+    
+    'Commit e7eef1d7633a ("fpga: add intel stratix10 soc fpga manager driver")'
+    
+    Add driver for reconfiguring Intel Stratix10 SoC FPGA devices.
+    This driver communicates through the Intel service layer driver
+    which does communication with privileged hardware (that does the
+    FPGA programming) through a secure mailbox.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Acked-by: Moritz Fischer <mdf@kernel.org>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit d19ad327f0e8a2772ead21cb448f3437c6715790
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue Nov 13 12:14:01 2018 -0600
+
+    firmware: add Intel Stratix10 service layer driver
+    
+    'commit 7ca5ce896524 ("firmware: add Intel Stratix10 service layer
+    driver")'
+    
+    Some features of the Intel Stratix10 SoC require a level of privilege
+    higher than the kernel is granted. Such secure features include
+    FPGA programming. In terms of the ARMv8 architecture, the kernel runs
+    at Exception Level 1 (EL1), access to the features requires
+    Exception Level 3 (EL3).
+    
+    The Intel Stratix10 SoC service layer provides an in kernel API for
+    drivers to request access to the secure features. The requests are queued
+    and processed one by one. ARM’s SMCCC is used to pass the execution
+    of the requests on to a secure monitor (EL3).
+    
+    The header file stratix10-sve-client.h defines the interface between
+    service providers (FPGA manager is one of them) and service layer.
+    
+    The header file stratix10-smc.h defines the secure monitor call (SMC)
+    message protocols used for service layer driver in normal world
+    (EL1) to communicate with secure monitor SW in secure monitor exception
+    level 3 (EL3).
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 95549a3f0224fc1e3721ba2b41bddbbc0bc785d6
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Mon Aug 12 08:47:04 2019 -0500
+
+    remove early versions of service layer and RSU drivers
+    
+    Service layer and RSU drivers will be replaced by upstream patches
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 568b829f87a84900dd9bb09d95a26113a4a78690
+Author: radu bacrau <radu.bacrau@intel.com>
+Date:   Mon Aug 19 14:16:28 2019 -0500
+
+    HSD #1707046651: Add support for RSU Retry
+    
+    Added retry counter field to rsu_status, new RSU command options
+    to support clearing the log and resetting the retry counter.
+    Added new PSCI call to support querying the retry counter, as the
+    rsu_status structure became too large for PSCI to handle it all at once.
+    
+    Signed-off-by: Radu Bacrau <radu.bacrau@intel.com>
+
+commit e74bcdf51fb3ef8beb3dc6a9f42b87ead898b930
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Tue May 28 16:19:18 2019 +0800
+
+    HSD #2205761323: Avoid SPL enter infinite loop during exception
+    
+    In current implementation, any exception would trigger a CPU reset.
+    But a bad written SPL would cause infinite loop where the system
+    will reload the same SPL instead of loading factory safe image.
+    
+    Hence this patch is to ensure any exception will cause a hang. At this
+    moment, watchdog shall be triggered and Remote System Update mechanism
+    shall load the next production image or factory safe image.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 9576a8cbabeba5b0f66340ef46971162b031cd78
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Fri Aug 9 21:32:16 2019 +0800
+
+    HSD #1409755457-12: Hang it when the DRAM size mismatch between DTS and HW
+    
+    Repetitive abort would be triggered when the DRAM size specified in DTS is
+    larger than HW. This should be immediately hung to prevent system
+    in unexpected behavior.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+    
+    ---
+    
+    v1 -> v2
+    - Hang only when the DDR size specified in DTS is larger than HW
+
+commit ab35b5178a8399a4b5ce22a18483e1008fa075e2
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Fri Aug 2 11:45:55 2019 +0800
+
+    HSD #1409755457-11: arm: socfpga: Move Stratix 10 SDRAM driver to DM
+    
+    commit ID: 6bf238a46192bf9164da4548178d657dde4e1c96
+    
+    Convert Stratix 10 SDRAM driver to device model.
+    
+    Get rid of call to socfpga_per_reset() and use reset
+    framework.
+    
+    SPL is changed from calling function in SDRAM driver
+    directly to just probing UCLASS_RAM.
+    
+    Move sdram_s10.h from arch to driver/ddr/altera directory.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 41650f763438ae700dd4ac0d3c4ae076239854d6
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Thu Aug 1 19:50:11 2019 +0800
+
+    HSD #1409755457-10: arm: dts: Stratix10: Add SDRAM node
+    
+    commit ID: bc179908769637cb800ad8c111290e7cae6ead79
+    
+    Add SDRAM device tree node.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit b36ddf179d2f3be662e47df1ad2153bca3c2eacc
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Thu Aug 1 18:13:20 2019 +0800
+
+    HSD #1409755457-9: ddr: altera: Compile ALTERA SDRAM in SPL only
+    
+    commit ID: 5918afda9d43106dd540c04bb05b7718e5f82171
+    
+    Compile ALTERA_SDRAM driver in SPL only.
+    Rename ALTERA_SDRAM to SPL_ALTERA_SDRAM.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 0de778f3dc6c198363874027b29f3c419085ba9c
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Fri Mar 22 01:24:05 2019 +0800
+
+    HSD #1409755457-8: ddr: altera: Stratix10: Add ECC memory scrubbing
+    
+    commit ID: 456d45261bc6abee1ffedd0f9cbd35aada5c0ff3
+    
+    Scrub memory content if ECC is enabled and it is not
+    from warm reset boot.
+    
+    Enable icache and dcache before scrub memory
+    and use "DC ZVA" instruction to clear memory
+    to zeros. This instruction writes a cache line
+    at a time and it can prevent false ECC error
+    trigger if write cache line partially.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 56d35b7b5ecbac0dab6e9d11b4af505dc22c2929
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Fri Mar 22 01:24:04 2019 +0800
+
+    HSD #1409755457-7: arm: stratix10: Include cpu_has_been_warmreset() in header
+    
+    Include function cpu_has_been_warmreset() in header so it can used/referred
+    by other file.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit dc261cb5ed123dd88c978704a080ef25301541dc
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Fri Mar 22 01:24:03 2019 +0800
+
+    HSD #1409755457-6: arm: dts: Stratix10: Modify stratix10 socdk memory node
+    
+    The stratix10 socdk ships with 4GB of memory.  Modify the
+    device tree to represent this.  Note that to access 4GB of
+    memory in Stratix 10, due to the IO space from 2GB to 4GB,
+    we use the fact that the DDR controller ignores upper address
+    bits outside of the configured DRAM's size.  This means that
+    , the 4GB DRAM is mapped to memory every 4GB.
+    
+    For an 8GB memory, you can either live with the 2GB IO space,
+    and loose access to that memory from the processor, or use
+    the same trick:
+    
+    Loose 2GB of memory:
+            memory {
+    		#address-cells = <2>;
+    		#size-cells = <1>;
+    
+                    device_type = "memory";
+                    /* 8GB */
+    		/* first 2GB */
+                    reg = <0 0x00000000 0x80000000>,
+    		/* last 4GB */
+                          <1 0x00000000 0x00000000>;
+                    u-boot,dm-pre-reloc;
+            };
+    
+    or to map it all:
+            memory {
+    		#address-cells = <2>;
+    		#size-cells = <1>;
+    
+                    device_type = "memory";
+                    /* 8GB */
+    		/* first 2GB */
+                    reg = <0 0x00000000 0x80000000>,
+    		/* next 6GB */
+                          <2 0x80000000 0x80000000>;
+                    u-boot,dm-pre-reloc;
+            };
+    
+    Signed-off-by: Dalon Westergreen <dalon.westergreen@intel.com>
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 8f8deb1a1a60a47adb55e038232245b0eb917f93
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Fri Mar 22 01:24:02 2019 +0800
+
+    HSD #1409755457-5: configs: stratix10: Change CONFIG_NR_DRAM_BANKS to 2
+    
+    
+    commit ID: a32f7d3cd8b2a32f982b82f787baab6016200982
+    
+    Stratix10 maps dram in 2 address spans, from 0-2GB and from
+    2GB up to 128GB.
+    
+    Signed-off-by: Dalon Westergreen <dalon.westergreen@intel.com>
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 33118de29432be3ce38b45f937987f2cae2c0b19
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Fri Mar 22 01:24:01 2019 +0800
+
+    HSD #1409755457-4: ddr: altera: Stratix10: Add multi-banks DRAM size check
+    
+    commit ID: 6cd7134e7309a53f015a402e52e5863f29e366fd
+    
+    Stratix 10 maps dram from 0 to 128GB.  There is a 2GB hole
+    in the memory for peripherals and other IO from 2GB to 4GB.
+    However the dram controller ignores upper address bits for
+    smaller dram configurations.  Example: a 4GB dram
+    maps to multiple locations, every 4GB on the address.
+    
+    Signed-off-by: Dalon Westergreen <dalon.westergreen@intel.com>
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 1e187e9b674e68efbf132405df17861a796a49e5
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Fri Mar 22 01:24:00 2019 +0800
+
+    HSD #1409755457-3: ddr: stratix10: Move SDRAM size check to SDRAM driver
+    
+    commit ID: 3f99d68621aad719fbc8251526bdc9f422fc9500
+    
+    Move SDRAM size check to SDRAM driver. sdram_calculate_size()
+    is called in SDRAM initialization already, avoid calling
+    twice in size check function.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 7e03c5e5781cb54839721ed06b2172cae23a0584
+Author: Michael Pratt <mpratt@chromium.org>
+Date:   Mon Jun 11 13:07:09 2018 -0600
+
+    HSD #1409755457-2: fdt: Add device tree memory bindings
+    
+    commit ID: 90c08fa038451d6d7b7d8711bfd829b61d64c490
+    
+    Support a default memory bank, specified in reg, as well as
+    board-specific memory banks in subtree board-id nodes.
+    
+    This allows memory information to be provided in the device tree,
+    rather than hard-coded in, which will make it simpler to handle
+    similar devices with different memory banks, as the board-id values
+    or masks can be used to match devices.
+    
+    Signed-off-by: Michael Pratt <mpratt@chromium.org>
+    Signed-off-by: Simon Glass <sjg@chromium.org>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+    Reviewed-by: Vadim Bendebury <vbendeb@chromium.org>
+
+commit 588c0d00b75c3485c11e5a69199700e2bad64ea3
+Author: Marek Vasut <marex@denx.de>
+Date:   Mon May 28 17:09:45 2018 +0200
+
+    HSD #1409755457-1: ARM: socfpga: Pull DRAM size from DT
+    
+    Pull the DRAM size from DT instead of hardcoding it into U-Boot.
+    
+    Signed-off-by: Marek Vasut <marex@denx.de>
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+    Cc: Chin Liang See <chin.liang.see@intel.com>
+    Cc: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2019.04
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of intel-rsu branch master
+
+commit 18dea9347ca9f0edfa09a9e7593555041db6d7e9
+Author: radu bacrau <radu.bacrau@intel.com>
+Date:   Wed Sep 4 16:05:22 2019 +0000
+
+    HSD #1707061410: Add support for max_retry
+    
+    Added support for querying and resetting the retry counter,
+    clearing the error status, and notifying SDM about the HPS
+    software execution stage.
+    
+    Signed-off-by: Radu Bacrau <radu.bacrau@intel.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera-refdes branch master
+
+commit 97e7d7addd1e083a8aa4b7ada2d67af259061df6
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Thu Aug 29 16:01:15 2019 +0800
+
+    fix issue of lighttpd for yocto-warrior
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+commit 9c8dd945083ecb93f598e90da58b5cc75efb0cd1
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Fri Aug 16 09:57:41 2019 +0800
+
+    upgrade to yocto-warrior
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+

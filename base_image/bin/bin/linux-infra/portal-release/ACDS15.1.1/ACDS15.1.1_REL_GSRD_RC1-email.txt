@@ -1,0 +1,187 @@
+From atull@altera.com Wed Nov 18 09:22:48 2015
+Date: Wed, 18 Nov 2015 15:22:39 +0000
+From: Alan Tull <atull@altera.com>
+To: "atull@opensource.altera.com" <atull@opensource.altera.com>
+Subject: FW: GSRD 15.1.1 RC tag push request
+
+
+ 
+
+ 
+
+From: Chin Liang See
+Sent: Wednesday, November 18, 2015 8:36 AM
+To: Tien Hock Loh; Alan Tull; Yves Vandervennet
+Cc: Chung Weng Gooi; Chee Nouk Phoon
+Subject: RE: GSRD 15.1.1 RC tag push request
+
+ 
+
+Hi TH,
+
+ 
+
+Commit c36552783c728 is on A10 branch (socfpga_v2014.10_arria10_bringup), not CV
+branch (socfpga_v2013.01.01)
+
+You might want to confirm this.
+
+Thanks and have a nice day!
+
+ 
+
+Chin Liang
+
+Internal Global Dial: 2 701 8776
+
+Direct Line: +60 4 636 8776
+
+ 
+
+From: Tien Hock Loh
+Sent: Wednesday, November 18, 2015 10:25 PM
+To: Alan Tull; Yves Vandervennet; Chin Liang See
+Cc: Chung Weng Gooi; Chee Nouk Phoon
+Subject: GSRD 15.1.1 RC tag push request
+
+ 
+
+Alan,
+
+ 
+
+Need your help to push the tags (ACDS15.1.1_REL_GSRD_RC1) of these repositories
+up to github.
+
+Repository
+
+Branch
+
+Commit ID
+
+meta-altera
+
+angstrom-v2014.12-yocto1.7
+
+45c0f230fc35b809e32f848105fbcddb2ebfdd3d
+
+angstrom-socfpga
+
+angstrom-v2014.12-socfpga_gsrd15.1
+
+e178d8ea82eec643c2c44c6811977858e5ac79c7
+
+linux-socfpga
+
+socfpga-3.10-ltsi
+
+6b67245b33cc350ac8f1b27f4d44d27f8955b129
+
+meta-altera-refdes
+
+gsrd-15.1
+
+c48ec1a7ad05c56320e17faa9d600377741791fd
+
+uboot-socfpga
+
+socfpga_v2013.01.01
+
+c36552783c728e4fbc5bef70aaac868f9c9f7e6c
+
+linux-refdesigns
+
+socfpga-15.1
+
+4065da1b6d7cd0c3cc220b9f76dae7b25d00e17c
+
+ 
+
+Job to check that the tag exists:
+http://pg-eswbuild-lv/view/CI_DEV/job/GSRD_TAG_CHECK/28/console
+
+ 
+
+Gooi,
+
+Need your approval on this.
+
+ 
+
+Repository owners,
+
+Please let me know if you have concerns on using the commit ID / branches for
+GSRD 15.1.1 release.
+
+ 
+
+Thanks
+
+ 
+
+From: Tien Hock Loh
+Sent: Friday, November 13, 2015 1:17 PM
+To: Alan Tull
+Cc: Yves Vandervennet; Chung Weng Gooi; Chee Nouk Phoon
+Subject: GSRD 15.1.1 RC/PR tag push request heads up
+
+ 
+
+Alan,
+
+ 
+
+We have 15.1.1 release coming up as per email below, and will be needing your
+help to push tags to github.com.
+
+We currently expects 4 RCs for 15.1.1.
+
+ 
+
+I’ll send you the push information early next week once we have it.
+
+ 
+
+Thanks
+
+ 
+
+From: Chung Weng Gooi
+Sent: Friday, November 13, 2015 9:03 AM
+To: SW HPG E-TOOLS team; Penang Embedded HW Development Team; Penang Embedded SW
+Development Team; FV & eSV team; Jeff Stripling; James Rucker; Fred Hsueh
+Cc: Elizabeth Woodcock; Eng Fook Chin; Vicki Mitchell; Kamal Nehal; Nick Rally
+Subject: SoCEDS 15.1.1 code complete 5pm Friday 13th SJ time
+
+ 
+
+Hi All,
+
+Just to remind you all that SoCEDS 15.1.1 will be code complete and branch of
+current main line at 5pm Friday 13th SJ time. Please ensure that all your
+deliverables are checked in before then. Standard put approval flow applies
+after CC. I will be announcing the RC builds based on stability of the initial
+builds, then after that we should have weekly RCs on Wednesdays to match the
+ACDS 15.1.1 dependencies.
+
+ 
+
+Thanks.
+
+ 
+
+ 
+
+--Gooi
+
+
+________________________________________________________________________________
+
+Confidentiality Notice.
+This message may contain information that is confidential or otherwise protected
+from disclosure. If you are not the intended recipient, you are hereby notified
+that any use, disclosure, dissemination, distribution, or copying of this
+message, or any attachments, is strictly prohibited. If you have received this
+message in error, please advise the sender by reply e-mail, and delete the
+message and any attachments. Thank you.
+

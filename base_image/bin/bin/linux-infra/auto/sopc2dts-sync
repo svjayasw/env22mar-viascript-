@@ -1,0 +1,25 @@
+#!/bin/bash
+
+source $(dirname $0)/sync_repo_common.sh
+
+export lock_filename="$(basename $0 | sed 's/.sh//')"
+script_lock
+
+# Send email if there is an error exit
+trap 'error_exit ${LINENO}' ERR
+
+#====================================================================================
+
+LOCAL_REPOS="sopc2dts"
+UPSTREAM='https://github.com/wgoossens/sopc2dts.git'
+
+#====================================================================================
+
+echo "--- Sync Start --- $(date)"
+cd_or_clone $UPSTREAM
+push_tags_and_master_branch $LOCAL_REPOS
+push_tags_and_master_branch_portal $LOCAL_REPOS
+echo '--- Sync Finished ---'
+echo
+
+unlock_exit

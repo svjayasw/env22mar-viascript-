@@ -1,0 +1,12 @@
+repo_path: /usr/local/git/repositories/linux-demos
+update_tests:
+email:
+sync-job:
+local_upstream:
+crucible_project:
+release_branch:
+internal_git: gitolite@at-git:linux-demos.git
+external_git:
+upstream_branches:
+upstream_tag_regex:
+review_addrs:

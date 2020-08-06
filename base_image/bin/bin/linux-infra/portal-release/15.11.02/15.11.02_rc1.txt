@@ -1,0 +1,261 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.2
+branch tag  : rel_socfpga-4.2_15.11.02_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.11.02_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.11.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.2_15.11.02_rc1
+commit: e7c2065 Matthew Gerlach FogBugz #334036: Fix qspi partitioning
+
+tag:    rel_socfpga-3.10-ltsi_15.11.02_rc1
+commit: bcf9c64 Matthew Gerlach FogBugz #334036: Fix qspi partitioning
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.11.02_rc1
+commit: ef8b7fe Vince Bridgers FogBugz #200285: Add Preempt-RT Config options by default
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.11.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.11.02_rc1
+new commits : 9
+f6d86c3 Matthew Gerlach FogBugz #335361: clean up duplicate code
+c365527 Tien Fong Chee FogBugz #327979-2: A10 SPI driver configuration support
+d9da7ed Tien Fong Chee FogBugz #327979-1: SPI driver support in U-boot for Arria10 SOC
+e3a3aba Axel Lin spi: designware_spi: revisit FIFO size detection again
+39118f6 Axel Lin spi: designware_spi: Fix detecting FIFO depth
+3230742 Stefan Roese spi: designware_spi: Some fixes / changes
+c7e534b Stefan Roese spi: Add designware master SPI DM driver used on SoCFPGA
+79290b8 Matthew Gerlach FogBugz #325417: implement handshake to reset A10 RevB1 EMIF
+bed6740 Matthew Gerlach FogBugz #331587: Arria10 NAND patches broke the SDMMC build.
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.11.02_rc1
+commit: 4003f38 Chin Liang See FogBugz #297183: Enabling ECC overwrite when SDRAM ECC is enabled
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.11.02_rc1
+commit: f6d86c3 Matthew Gerlach FogBugz #335361: clean up duplicate code
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.11.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.11.02_rc1
+commit: 28881bd Tien Hock Loh FogBugz #323201: Update branch of meta-altera
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.11.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.11.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.11.02_rc1
+commit: 45c0f23 Yves Vandervennet Code in the kernel build include file disabled support for INITRD when no INITRAMFS image is specified. This is an issue with the Stratix10 SWVP, since we do use INITRD images to boot
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.11.02_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit f6d86c31d18b0efc445982c7d79eeed72ae8151f
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Thu Nov 12 14:03:20 2015 -0800
+
+    FogBugz #335361: clean up duplicate code
+    
+    Create and use a single function to finish
+    fpga programming where duplicated code
+    previously existed.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit c36552783c728e4fbc5bef70aaac868f9c9f7e6c
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Tue Nov 3 10:59:53 2015 +0800
+
+    FogBugz #327979-2: A10 SPI driver configuration support
+    
+    This patch is for A10 SPI driver enabling/disabling configuration.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit d9da7ed4d0a97d5e9257474f0fd59de62fa9c6b4
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Tue Nov 3 10:57:24 2015 +0800
+
+    FogBugz #327979-1: SPI driver support in U-boot for Arria10 SOC
+    
+    SPI driver development for the DesignWare SPI core controller.
+    This driver is back-ported from the main branch, and some
+    modification on top of it to fit our A10 usage.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit e3a3abadcc710324b8f9981d10ef4ada416a8144
+Author: Axel Lin <axel.lin@ingics.com>
+Date:   Thu Feb 26 10:45:22 2015 +0800
+
+    spi: designware_spi: revisit FIFO size detection again
+    
+    By specification the FIFO size would be in a range 2-256 bytes. From TX Level
+    prospective it means we can set threshold in the range 0-(FIFO size - 1) bytes.
+    Hence there are currently two issues:
+      a) FIFO size 2 bytes is actually skipped since TX Level is 1 bit and could be
+         either 0 or 1 byte;
+      b) FIFO size is incorrectly decreased by 1 which already done by meaning of
+         TX Level register.
+    
+    Fixes: 501943696ea4 (spi: designware_spi: Fix detecting FIFO depth)
+    Signed-off-by: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+    Signed-off-by: Axel Lin <axel.lin@ingics.com>
+    Acked-by: Pavel Machek <pavel@denx.de>
+    Reviewed-by: Jagannadha Sutradharudu Teki <jagannadh.teki@gmail.com>
+
+commit 39118f6aef621f05385dd06e72f21c8040f0f0c9
+Author: Axel Lin <axel.lin@ingics.com>
+Date:   Tue Jan 6 08:08:25 2015 +0800
+
+    spi: designware_spi: Fix detecting FIFO depth
+    
+    Current code tries to find the highest valid fifo depth by checking the value
+    it wrote to DW_SPI_TXFLTR. There are a few problems in current code:
+    1) There is an off-by-one in dws->fifo_len setting because it assumes the latest
+       register write fails so the latest valid value should be fifo - 1.
+    2) We know the depth could be from 2 to 256 from HW spec, so it is not necessary
+       to test fifo == 257. In the case fifo is 257, it means the latest valid
+       setting is fifo = 256. So after the for loop iteration, we should check
+       fifo == 2 case instead of fifo == 257 if detecting the FIFO depth fails.
+    This patch fixes above issues.
+    
+    Signed-off-by: Axel Lin <axel.lin@ingics.com>
+    Acked-by: Stefan Roese <sr@denx.de>
+    Reviewed-by: Jagannadha Sutradharudu Teki <jagannadh.teki@gmail.com>
+
+commit 3230742527ab6073f4ce89949eb023bdf406720e
+Author: Stefan Roese <sr@denx.de>
+Date:   Sun Nov 16 12:47:01 2014 +0100
+
+    spi: designware_spi: Some fixes / changes
+    
+    As suggested by Pavel, here some fixes to the designware SPI driver:
+    
+    - Spelling fixes
+    - Comment for timeout added
+    - Removed n_bytes completely (bits_per_word is enough for this)
+    - Unput clock now not defined via macro. The function to
+      get the clock value is now called directly from within the driver
+    
+    Signed-off-by: Stefan Roese <sr@denx.de>
+    Cc: Chin Liang See <clsee@altera.com>
+    Cc: Dinh Nguyen <dinguyen@altera.com>
+    Cc: Vince Bridgers <vbridger@altera.com>
+    Cc: Marek Vasut <marex@denx.de>
+    Acked-by: Pavel Machek <pavel@denx.de>
+    Cc: Jagannadha Sutradharudu Teki <jagannadh.teki@gmail.com>
+
+commit c7e534b2a6ee6f986726e49e7a35b83ece8fe812
+Author: Stefan Roese <sr@denx.de>
+Date:   Fri Nov 7 13:50:31 2014 +0100
+
+    spi: Add designware master SPI DM driver used on SoCFPGA
+    
+    This patch adds the driver for the Designware master SPI controller. This
+    IP core is integrated on the Altera SoCFPGA. This implementation is a
+    driver model (DM) implementation. So multiple SPI drivers can be used.
+    Thats necessary, since SoCFPGA also integrates the Cadence QSPI controller
+    used to connect the SPI NOR flashes. Without DM, using multiple SPI
+    drivers is not possible.
+    
+    This driver is very loosely based on the Linux driver. Most of the Linux
+    driver is removed. Only the polling loop for the transfer is really used
+    from this driver, as we don't support interrupts and DMA right now.
+    
+    This is tested on the SoCrates SoCFPGA board using the SPI pins on the
+    P14 header.
+    
+    Signed-off-by: Stefan Roese <sr@denx.de>
+    Cc: Chin Liang See <clsee@altera.com>
+    Cc: Dinh Nguyen <dinguyen@altera.com>
+    Cc: Vince Bridgers <vbridger@altera.com>
+    Cc: Marek Vasut <marex@denx.de>
+    Cc: Pavel Machek <pavel@denx.de>
+    Reviewed-by: Simon Glass <sjg@chromium.org>
+    Cc: Jagannadha Sutradharudu Teki <jagannadh.teki@gmail.com>
+
+commit 79290b8d72bf3401ee657b1b1ce129f0e30d75c4
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Mon Oct 19 12:55:50 2015 -0700
+
+    FogBugz #325417: implement handshake to reset A10 RevB1 EMIF
+    
+    RevB1 and newer versions of the Arria10 have a different
+    handshake to reset the External Memory Interface.  This patch
+    implements the new handshake
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit bed6740984b1009e68e4fff2643fbaf67335617e
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Fri Oct 30 16:19:13 2015 -0700
+
+    FogBugz #331587: Arria10 NAND patches broke the SDMMC build.
+    
+    Fixed overlooked dedicated uart configuration that was
+    broken as part of the NAND patches that broke the
+    SDMMC builds.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

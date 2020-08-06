@@ -1,0 +1,11 @@
+repo: angstrom-socfpga
+br:   angstrom-v2014.12-socfpga
+
+From at-git:angstrom-socfpga
+   993831b..9a77a4b  angstrom-v2014.12-socfpga -> origin/angstrom-v2014.12-socfpga
+
+9a77a4b 2016-07-12 09:17:13 +0800 : Tien Hock Loh : Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+993831b 2016-04-25 16:41:51 +0800 : Tien Hock Loh : FogBugz #369619: Update meta-altera-refdes commit id
+
+Need to make rc2 be 9a77a4b
+

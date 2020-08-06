@@ -1,0 +1,334 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.6
+branch tag  : rel_socfpga-4.6_16.09.03_rc2
+new commits : 1
+982c902 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+
+branch      : socfpga-4.7
+branch tag  : rel_socfpga-4.7_16.09.03_rc2
+new commits : 0
+
+
+branch      : socfpga-4.1.22-ltsi
+branch tag  : rel_socfpga-4.1.22-ltsi_16.09.03_rc2
+new commits : 9
+fa6814f Alan Tull FogBugz #405628-2: fpga: add config complete timeout
+bfc5096 Alan Tull FogBugz #405628-1: fpga: doc: add config complete timeout
+7104448 Ley Foon Tan PCI: altera: Move retrain from fixup to altera_pcie_host_init()
+861c53a Ley Foon Tan PCI: altera: Rework config accessors for use without a struct pci_bus
+a8aef28 Ley Foon Tan PCI: altera: Poll for link training status after retraining the link
+77ee964 Matthew Gerlach FogBugz #405016: prevent kernel crash in tse_pcs_init()
+f812ba3 Dinh Nguyen FogBugz #403733: Update cache settings for A10
+f4ad7d0 Matthew Gerlach FogBugz #404467: add missing binding documentation
+47fdd11 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+
+branch      : socfpga-4.1.22-ltsi-rt
+branch tag  : rel_socfpga-4.1.22-ltsi-rt_16.09.03_rc2
+new commits : 3
+fb0d380 Alan Tull FogBugz #398879-2: fpga mgr debugfs
+d2fdb9a Alan Tull FogBugz #398879-1: fpga: doc: documentation for FPGA debugfs
+044b3e8 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.6_16.09.03_rc2
+commit: 982c902 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+tag:    rel_socfpga-4.7_16.09.03_rc2
+commit: 923ea28 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+tag:    rel_socfpga-4.1.22-ltsi_16.09.03_rc2
+commit: fa6814f Alan Tull FogBugz #405628-2: fpga: add config complete timeout
+
+tag:    rel_socfpga-4.1.22-ltsi-rt_16.09.03_rc2
+commit: fb0d380 Alan Tull FogBugz #398879-2: fpga mgr debugfs
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.09.03_rc2
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.09.03_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.09.03_rc2
+commit: f5cd6b9 Chin Liang See spi: cadence_qspi_apb: Ensure baudrate doesn't exceed max value
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.09.03_rc2
+commit: ab2181d Tien Fong Chee FogBugz #398001: Enable UART for console when FPGA is external configured
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.09.03_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.09.03_rc2
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.09.03_rc2
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.09.03_rc2
+commit: d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_rc2
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.6
+
+commit 982c9027d1bd07d990bc8f9b2acda1409273dae3
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Sep 12 12:46:06 2016 -0500
+
+    FogBugz #403603: fpga: remove message about not finding region
+    
+    This commit removes a message from the DT overlay code in
+    fpga-region.c:
+    
+      fpga_region_find did not find FPGA Region in class: /soc
+    
+    This message can happen for every DT overlay notification if
+    there are no FPGA regions in the device tree.  It's not
+    really needed even for debug.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi
+
+commit fa6814fa3d8ff6590086171fa01b61fb90e8e6b8
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Sep 21 14:04:08 2016 -0500
+
+    FogBugz #405628-2: fpga: add config complete timeout
+    
+    Adding timeout for maximum allowed time for FPGA to go to
+    operating mode after a FPGA region has been programmed.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit bfc509625b05bd59319f128ba70f6504b83d2be6
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Sep 21 14:04:08 2016 -0500
+
+    FogBugz #405628-1: fpga: doc: add config complete timeout
+    
+    Adding timeout for maximum allowed time for FPGA to go to
+    operating mode after a FPGA region has been programmed.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 7104448694d309d5807aa8c2478e1b020bb1c450
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Aug 26 09:47:25 2016 +0800
+
+    PCI: altera: Move retrain from fixup to altera_pcie_host_init()
+    
+    Previously we used a PCI early fixup to initiate a link retrain on Altera
+    devices.  But Altera PCIe IP can be configured as either a Root Port or an
+    Endpoint, and they might have same vendor ID, so the fixup would be run for
+    both.
+    
+    We only want to initiate a link retrain for Altera Root Port devices, not
+    for Endpoints, so move the link retrain functionality from the fixup to
+    altera_pcie_host_init().
+    
+    [bhelgaas: changelog]
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+
+commit 861c53a57ff6f758fd37bc13b8ec510ae6308b0b
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Aug 26 09:47:24 2016 +0800
+
+    PCI: altera: Rework config accessors for use without a struct pci_bus
+    
+    Rework configs accessors so a future patch can use them in _probe() with
+    struct altera_pcie instead of struct pci_bus.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+
+commit a8aef280ada84d49beaea6e1d3d8a19106141403
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Aug 15 14:06:02 2016 +0800
+
+    PCI: altera: Poll for link training status after retraining the link
+    
+    Poll for link training status is cleared before poll for link up status.
+    This can help to get the reliable link up status, especially when PCIe is
+    in Gen 3 speed.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+
+commit 77ee964625485ea8e62305d1f042456d6d092e86
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Mon Sep 19 11:24:18 2016 -0700
+
+    FogBugz #405016: prevent kernel crash in tse_pcs_init()
+    
+    The function, tse_pcs_init(), used the passed in
+    pointers without validating them.  The patch ensures
+    the pointers are non-NULL, which can happen when
+    the device tree is incomplete.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    ---
+    v2:
+        reduced patch size and indentation
+        fixed commit message
+
+commit f812ba37f28edfec362f2d327b25d33af3330eed
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Sep 19 13:59:04 2016 -0500
+
+    FogBugz #403733: Update cache settings for A10
+    
+    The L2 Cache settings for Arria10 need to have the
+    L2C_AUX_CTRL_SHARED_OVERRIDE bit set to prevent an ethernet crash.
+    
+    This commit should only be applicable to a downstream LTSI branch, as
+    the upstream kernels, this bit should get set by the bootloader.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit f4ad7d0efd22e7597e14ead110fb21c32559a9fb
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Thu Sep 15 12:46:22 2016 -0700
+
+    FogBugz #404467: add missing binding documentation
+    
+    Add missing device tree binding documentation for
+    timeouts to enable and disable bridges to a
+    fpga-region during region (re)programming.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    ---
+    v2: s/successful/successfully/g
+
+commit 47fdd11c2ba13e7c5412a1ad70d1f666fab3fa8c
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Sep 12 12:46:06 2016 -0500
+
+    FogBugz #403603: fpga: remove message about not finding region
+    
+    This commit removes a message from the DT overlay code in
+    fpga-region.c:
+    
+      fpga_region_find did not find FPGA Region in class: /soc
+    
+    This message can happen for every DT overlay notification if
+    there are no FPGA regions in the device tree.  It's not
+    really needed even for debug.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi-rt
+
+commit fb0d3800abcfcd1bdf326b012d0593692e9d19dd
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Aug 17 16:25:59 2016 -0500
+
+    FogBugz #398879-2: fpga mgr debugfs
+    
+    Implement DebugFS for the FPGA Manager Framework.
+    
+    Each FPGA gets its own directory such as
+     <debugfs>/fpga_manager/fpga0 and three files:
+    
+     * [RW] flags          = flags as defined in fpga-mgr.h
+     * [RW] firmware_name  = write/read back name of FPGA image
+                             firmware file to program
+     * [WO] image          = write-only file for directly writing
+                             fpga image w/o firmware layer
+    
+    Enabled by CONFIG_FPGA_MGR_DEBUG_FS
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v2: s/Altera/Intel/
+        s/parital/partial/
+        Use dev_err instead of pr_err
+        Clean up print: remove "count="
+        Kconfig: depends on FPGA && DEBUGFS_FS
+        Move documentation out of code
+
+commit d2fdb9aeca85aea14d6042e8e1916c5b03884784
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue Aug 23 11:57:49 2016 -0500
+
+    FogBugz #398879-1: fpga: doc: documentation for FPGA debugfs
+    
+    Document the DebugFS interface for the core FPGA Manager
+    framework.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v2: Move documentation out of source to Documentation folder
+
+commit 044b3e8cd531283093f1ab31380371f751ca9fcd
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Sep 12 12:46:06 2016 -0500
+
+    FogBugz #403603: fpga: remove message about not finding region
+    
+    This commit removes a message from the DT overlay code in
+    fpga-region.c:
+    
+      fpga_region_find did not find FPGA Region in class: /soc
+    
+    This message can happen for every DT overlay notification if
+    there are no FPGA regions in the device tree.  It's not
+    really needed even for debug.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

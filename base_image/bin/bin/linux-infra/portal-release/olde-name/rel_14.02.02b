@@ -1,0 +1,430 @@
+
+The portal git has now been refreshed with the updates that I sent out in
+Wednesday's portal report.
+
+New portal update procedure.  Every other week we will:
+  On Wednesday, tag the trees and send this report out.
+  On Friday, update the portal git using the tags.
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.13
+branch tag  : rel_socfpga-3.13_14.02.02
+new commits : 12
+bb0bb0a Thor Thayer FogBugz #173188: Add OCRAM ECC Error Injection for testing.
+560b652 Chris Rauer FogBugz #177284: add Altera VIP framebuffer driver
+fe80c85 Ley Foon Tan FogBugz #183586: nios2: Use checking for ALTR,pid-num-ways
+8280d97 Alexander Duyck checkpatch: only flag FSF address, not gnu.org URL
+c03d027 Dinh Nguyen FogBugz #183175: Fix clock driver to support multiple parents for PLLs
+a4bc439 Tien Hock Loh FogBugz #128579: Altera GPIO upstream updates
+5a39b4f Ley Foon Tan FogBugz #180381: nios2: timer: Use CLOCKSOURCE_OF to setup the timer
+34e51a4 Ley Foon Tan FogBugz #180363: nios2: timer: Fix interrupt mapping error check
+d9c5966 Ley Foon Tan FogBugz #180349: nios2: timer: Use panic() as error condition
+e225500 Dinh Nguyen usb: dwc2: handle the Host Port Interrupt when it occurs in device mode
+67a6a4b Thor Thayer FogBugz #179457: Abstract EDAC module triggers
+a456b57 damuzi000 net: stmmac: fix NULL pointer dereference in stmmac_get_tx_hwtstamp
+
+
+++wiki:
+*Branch name*: socfpga-3.13, *Tag name:* rel_socfpga-3.13_14.02.02
+| *ID* | *Comment* | *GIT Commit* |
+| 173188 | Add OCRAM ECC Error Injection for testing. | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=bb0bb0a2a05443edef7af9f7de9fc8c3f36f01cb ][ bb0bb0a2a05443edef7af9f7de9fc8c3f36f01cb ]] |
+| 177284 | add Altera VIP framebuffer driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=560b6525b96633bfdc8014070ac24ef2a4bad65f ][ 560b6525b96633bfdc8014070ac24ef2a4bad65f ]] |
+| 183586 | nios2: Use checking for ALTR,pid-num-ways | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=fe80c85cfb14fb715e7eea02bcdf8771b078e6ed ][ fe80c85cfb14fb715e7eea02bcdf8771b078e6ed ]] |
+| community | checkpatch: only flag FSF address, not gnu.org URL | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=8280d97775ab58cec7e0c20a970f7cce84c81691 ][ 8280d97775ab58cec7e0c20a970f7cce84c81691 ]] |
+| 183175 | Fix clock driver to support multiple parents for PLLs | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=c03d02713b6a433789ff0ed7989415003ef105b7 ][ c03d02713b6a433789ff0ed7989415003ef105b7 ]] |
+| 128579 | Altera GPIO upstream updates | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a4bc439b2e837b593df8091b2b1de0ffdd1b832b ][ a4bc439b2e837b593df8091b2b1de0ffdd1b832b ]] |
+| 180381 | nios2: timer: Use CLOCKSOURCE_OF to setup the timer | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=5a39b4f8f4c0e1f125e455b4894e60811af7810f ][ 5a39b4f8f4c0e1f125e455b4894e60811af7810f ]] |
+| 180363 | nios2: timer: Fix interrupt mapping error check | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=34e51a42c60a50c204e0f68d637b793e03eaaad1 ][ 34e51a42c60a50c204e0f68d637b793e03eaaad1 ]] |
+| 180349 | nios2: timer: Use panic() as error condition | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=d9c596657c36af90d621f852cde65ab82b04938c ][ d9c596657c36af90d621f852cde65ab82b04938c ]] |
+| community | usb: dwc2: handle the Host Port Interrupt when it occurs in device mode | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=e22550064ff2bf20d067468edbc1684f0caf3d11 ][ e22550064ff2bf20d067468edbc1684f0caf3d11 ]] |
+| 179457 | Abstract EDAC module triggers | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=67a6a4bc28d681484779089892480467e5b69ba2 ][ 67a6a4bc28d681484779089892480467e5b69ba2 ]] |
+| community | net: stmmac: fix NULL pointer dereference in stmmac_get_tx_hwtstamp | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a456b57f57eb543f8d18323be7b883a06def6696 ][ a456b57f57eb543f8d18323be7b883a06def6696 ]] |
+--wiki:
+
+
+branch      : socfpga-3.9-rel
+branch tag  : rel_socfpga-3.9-rel_14.02.02
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.13_14.02.02
+commit: bb0bb0a Thor Thayer FogBugz #173188: Add OCRAM ECC Error Injection for testing.
+
+tag:    rel_socfpga-3.9-rel_14.02.02
+commit: ed01b8c Graham Moore FogBugz #152777: Fix out-of-order QSPI chip select configuration.
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.02.02
+new commits : 5
+e0d19aa Tien Hock Loh FogBugz #121124:Fix DW USB driver failing to run on board.
+2cc77a4 Chin Liang See FogBugz #182048: Fix sdram_applycfg_ocram function
+64a298b Chin Liang See FogBugz #182047: Fix main_nand_sdmmc_clk clock configuration
+762746f Chin Liang See FogBugz #180220: Preloader load bootloader from FAT by default
+dae3f31 Chin Liang See FogBugz #180220: Ensure license header on all handoff files
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_14.02.02
+| *ID* | *Comment* | *GIT Commit* |
+| community | FogBugz #121124:Fix DW USB driver failing to run on board. | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=e0d19aa80086b99a1dacb320eb12cb20e577aebc ][ e0d19aa80086b99a1dacb320eb12cb20e577aebc ]] |
+| 182048 | Fix sdram_applycfg_ocram function | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=2cc77a4c026ed29625163063381f1e2e6b266e45 ][ 2cc77a4c026ed29625163063381f1e2e6b266e45 ]] |
+| 182047 | Fix main_nand_sdmmc_clk clock configuration | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=64a298b086298f4bbaab6a15575ffb1cb20c3ec5 ][ 64a298b086298f4bbaab6a15575ffb1cb20c3ec5 ]] |
+| 180220 | Preloader load bootloader from FAT by default | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=762746f44ea7a46e5ffd901731399bd851db0102 ][ 762746f44ea7a46e5ffd901731399bd851db0102 ]] |
+| 180220 | Ensure license header on all handoff files | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=dae3f31bd3aa102a546f2826c79633be6fc3c8a7 ][ dae3f31bd3aa102a546f2826c79633be6fc3c8a7 ]] |
+--wiki:
+
+
+branch      : socfpga_v2013.01.01-rel
+branch tag  : rel_socfpga_v2013.01.01-rel_14.02.02
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01-rel_14.02.02
+commit: 1740999 Chin Liang See FogBugz #158537: Updating U-Boot FPGA2SDRAM driver
+
+tag:    rel_socfpga_v2013.01.01_14.02.02
+commit: e0d19aa Tien Hock Loh FogBugz #121124:Fix DW USB driver failing to run on board.
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.13
+
+commit bb0bb0a2a05443edef7af9f7de9fc8c3f36f01cb
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Mon Feb 10 10:00:44 2014 -0600
+
+    FogBugz #173188: Add OCRAM ECC Error Injection for testing.
+    
+    OCRAM ECC error injection was added for testing the OCRAM EDAC
+    functionality. The OCRAM testing function allocates memory from
+    the general purpose allocation pool, sets the error injection
+    bits, writes data out (corrupted by error injection logic),
+    then reads the data back out (which triggers the EDAC handler)
+    before releasing the gen_pool.
+    The gen_pool free function differs from the standard
+    memory free prototype(requires a size parameter) which necessitated
+    changing the generic free function pointer in altera_edac.h and
+    the prototypes for the memory free function in altera_ecc_l2.c.
+    
+    V2:
+    Fix warnings when debugging is disabled.
+    
+    V3:
+    Remove stray newlines in altera_ecc_mgr_edac.c & altera_ecc_ocram.c
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit 560b6525b96633bfdc8014070ac24ef2a4bad65f
+Author: Chris Rauer <crauer@altera.com>
+Date:   Fri May 10 09:15:45 2013 -0700
+
+    FogBugz #177284: add Altera VIP framebuffer driver
+    
+    This adds support for the Altera framebuffer that uses the Altera VIP
+    Frame Reader hardware.
+    
+    V2:
+    -Removed old SGDMA code
+    -Fixed more styling and formatting issues
+    -Changed module author
+    -Fixed license header
+    -Added device tree bindings documentation
+    -Fixed bug with altfb_remove
+    -Fixed bug in altfb_probe with error path
+    
+    V3:
+    -updated dev tree bindings doc
+    -replaced of_get_property with of_property_read_u32
+    -fixed module license
+    -replaced kzalloc with devm_kzalloc
+    -replaced ioremap/request_mem_region with devm_ioremap_resource
+    -added disable hardware function during unprobe
+    -removed more remnants of SGDMA
+    -renamed altfb to altvipfb
+    
+    V4:
+    -changed "Altera framebuffer" to "Altera VIP framebuffer"
+    
+    V5:
+    -removed static data structures
+    -cleaned up error path
+    -removed 16bit pixel code
+    
+    V6:
+    -expanded "VIP" to "Video and Image Processing" in some descriptions
+    -removed dependency on EMBEDDED in Kconfig
+    
+    V7:
+    -changed altvipfb_start_hw and altvipfb_disable_hw to return void
+    
+    V8:
+    -fixed comment in altvipfb_disable_hw
+    
+    V9:
+    -added "altr,vip-frame-reader-1.0" compatible string
+    
+    Signed-off-by: Chris Rauer <crauer@altera.com>
+
+commit fe80c85cfb14fb715e7eea02bcdf8771b078e6ed
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Feb 13 11:23:03 2014 +0800
+
+    FogBugz #183586: nios2: Use checking for ALTR,pid-num-ways
+    
+    Remove checking for ALTR,has-mmu and use ALTR,pid-num-ways instead for
+    backward compatibility. pid-num-ways shouldn't be 0 if MMU is enabled.
+    This also can prevent division by zero exception when divide with
+    cpuinfo.tlb_num_ways later.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 8280d97775ab58cec7e0c20a970f7cce84c81691
+Author: Alexander Duyck <alexander.h.duyck@intel.com>
+Date:   Thu Jan 23 15:54:50 2014 -0800
+
+    checkpatch: only flag FSF address, not gnu.org URL
+    
+    This change restricts the check for the for the FSF address in the GPL
+    copyright statement so that it only flags the address, not the
+    references to the gnu.org/licenses URL which appears to be used in
+    numerous drivers.  The idea is to still allow some reference to an
+    external copy of the GPL in the event that files are copied out of the
+    kernel tree without the COPYING file.
+    
+    So for example this statement will still return an error:
+      You should have received a copy of the GNU General Public License
+      along with this program; if not, write to the Free Software
+      Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+    
+    However, this statement will not return an error after this patch:
+      You should have received a copy of the GNU General Public License
+      along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    
+    Signed-off-by: Alexander Duyck <alexander.h.duyck@intel.com>
+    Cc: Joe Perches <joe@perches.com>
+    Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
+    Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
+    
+    Conflicts:
+    
+    	scripts/checkpatch.pl
+
+commit c03d02713b6a433789ff0ed7989415003ef105b7
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Feb 12 11:16:56 2014 -0600
+
+    FogBugz #183175: Fix clock driver to support multiple parents for PLLs
+    
+    The clock driver was incorrectly setting the num_parents=1 for all the
+    PLL clocks. The sdram_pll and periph_pll can have 1 of 3 different parents.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    Tested-by: Matthew Gerlach <mgerlach@altera.com>
+
+commit a4bc439b2e837b593df8091b2b1de0ffdd1b832b
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Thu Jan 30 12:18:13 2014 +0800
+
+    FogBugz #128579: Altera GPIO upstream updates
+    
+    This change is to address feedbacks from the Linux community on upstreaming
+    the Altera GPIO driver. This includes updating the device tree binding
+    naming convensions, coding style, etc.
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+commit 5a39b4f8f4c0e1f125e455b4894e60811af7810f
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Jan 28 18:54:47 2014 +0800
+
+    FogBugz #180381: nios2: timer: Use CLOCKSOURCE_OF to setup the timer
+    
+    This allows to clean-up the code a bit, making it more readable
+    and consistent architecture-wide.
+    
+    Signed-off-by: Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 34e51a42c60a50c204e0f68d637b793e03eaaad1
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Jan 28 16:25:28 2014 +0800
+
+    FogBugz #180363: nios2: timer: Fix interrupt mapping error check
+    
+    The 'irq' type must be signed in order to check for negative values.
+    
+    Signed-off-by: Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit d9c596657c36af90d621f852cde65ab82b04938c
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Jan 28 15:14:04 2014 +0800
+
+    FogBugz #180349: nios2: timer: Use panic() as error condition
+    
+    There's not much to do if we don't have timer as clocksource.
+    Use panic() and show a meaningful error.
+    
+    Signed-off-by: Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit e22550064ff2bf20d067468edbc1684f0caf3d11
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Feb 4 15:19:40 2014 -0800
+
+    usb: dwc2: handle the Host Port Interrupt when it occurs in device mode
+    
+    According to the spec for the DWC2 controller, when the PRTINT interrupt fires,
+    the application must clear the appropriate status bit in the Host Port Control
+    and Status register to clear this bit.
+    
+    When disconnecting an A-cable when the dwc2 host driver, the PRTINT fires, but
+    only the GINTSTS_PRTINT status is cleared, no action is done with the HPRT0
+    register. The HPRT0_ENACHG bit in the HPRT0 must also be poked to correctly
+    clear the GINTSTS_PRTINT interrupt.
+    
+    I am seeing this behavoir on v2.93 of the DWC2 IP. When I disconnect an OTG
+    A-cable adapter, the PRTINT interrupt fires when the DWC2 is in device mode
+    and is never cleared.
+    
+    This patch adds the function to read the HPRT0 register when the PRTINT fires
+    and the dwc2 IP has already transitioned to device mode. This function is only
+    clearing the HPRT0_ENACHG bit for now, but can be modified to handle more.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    [ paulz: modified patch to preserve HPRT0_ENA bit ]
+    Signed-off-by: Paul Zimmerman <paulz@synopsys.com>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 67a6a4bc28d681484779089892480467e5b69ba2
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Wed Jan 22 18:12:28 2014 -0600
+
+    FogBugz #179457: Abstract EDAC module triggers
+    
+    The EDAC module only has 1 trigger at this time(L2). Additional
+    triggers will be added for testing the ECC functionality of
+    future modules.
+    The EDAC triggers can be abstracted becaue each trigger needs
+    the 1)allocate memory, 2)perform the trigger, and then 3)free
+    memory.
+    
+    V2:
+    Breaking the modules out into separate files makes the EDAC
+    device manager code cleaner and more modular for possible future
+    ECC additions.
+    
+    V3:
+    Cleanup of code including the following:
+    - Fix order of header files.
+    - Add linefeed to end of makefile.
+    - Use devm_kzalloc() to free memory automatically.
+    - Use new structure pointer for cleaner code.
+    
+    V4:
+    - Fix free() test.
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit a456b57f57eb543f8d18323be7b883a06def6696
+Author: damuzi000 <damuzi000@gmail.com>
+Date:   Fri Jan 17 23:47:59 2014 +0800
+
+    net: stmmac: fix NULL pointer dereference in stmmac_get_tx_hwtstamp
+    
+    When timestamping is enabled, stmmac_tx_clean will call
+    stmmac_get_tx_hwtstamp to get tx TS.
+    But the skb can be NULL because the last of its tx_skbuff is NULL
+    if this packet frame is filled in more than one descriptors.
+    
+    To fix the issue, change the code:
+    - Store TX skb to the tx_skbuff[] of frame's last segment.
+    - Check skb is not NULL in stmmac_get_tx_hwtstamp.
+    
+    Signed-off-by: Bruce Liu <damuzi000@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit e0d19aa80086b99a1dacb320eb12cb20e577aebc
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Mon Feb 17 14:23:32 2014 +0800
+
+    FogBugz #121124:Fix DW USB driver failing to run on board.
+    
+    This change fixes PID toggling so that USB transaction works correctly,
+    updating the codes so that it conforms to the u-boot standard better, ie.
+    replacing dwc_write32 with __raw_write. Also replaces infinite loop with
+    time outs.
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+commit 2cc77a4c026ed29625163063381f1e2e6b266e45
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Feb 11 17:12:24 2014 -0800
+
+    FogBugz #182048: Fix sdram_applycfg_ocram function
+    
+    To ensure the function always return 0 upon completion. This is
+    to avoid the user impression that the function is hitting error
+    due to non zero return. At same time, fix the code to enable
+    back the i-cache and branch predictor after applycfg is applied.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 64a298b086298f4bbaab6a15575ffb1cb20c3ec5
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Feb 11 17:11:47 2014 -0800
+
+    FogBugz #182047: Fix main_nand_sdmmc_clk clock configuration
+    
+    To fix the Clock Manager driver which currently not configuring
+    the main_nand_sdmmc_clk as its not used. This patch will enable
+    user to have both NAND and SDMMC clock from different PLL sources.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 762746f44ea7a46e5ffd901731399bd851db0102
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Feb 11 14:26:54 2014 -0800
+
+    FogBugz #180220: Preloader load bootloader from FAT by default
+    
+    To change the default switch where Preloader will load bootloader
+    image (U-Boot) from FAT partition instead of custom A2 partition.
+    User still can revert back to use A2 partition through handoff file
+    build.h by setting CONFIG_PRELOADER_FAT_SUPPORT to 0.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit dae3f31bd3aa102a546f2826c79633be6fc3c8a7
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Feb 11 13:16:15 2014 -0800
+
+    FogBugz #180220: Ensure license header on all handoff files
+    
+    This patch is to ensure all handoff files have the license
+    header even they are generated by tools. At same time,
+    removed handoff file timstamp_config.h as its unused.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+

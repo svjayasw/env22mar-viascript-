@@ -1,0 +1,12 @@
+repo_path: /usr/local/git/repositories/linux-socfpga-amp.git
+update_tests: license_linux_kernel_gplv2
+email: dinh.nguyen@intel.com
+sync-job: linux
+local_upstream: linux-socfpga
+crucible_project:
+release_branch:
+internal_git: gitolite@at-git:linux-socfpga-amp.git
+external_git:
+upstream_branches:
+upstream_tag_regex:
+review_addrs:

@@ -1,0 +1,37 @@
+release tag : ACDS14.0.2_REL_GSRD_PR
+
+-----------------------------------------------------------------------
+
+repository: linux-socfpga
+
+already pushed
+4cadc1d Dinh Nguyen FogBugz #237341: fix fetching cpu1start_addr for SMP
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+already pushed
+9381569 Vince Bridgers FogBugz #227886: Setup SDRAM Protection Rule to prevent access beyond max mem
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+not pushed
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+already pushed
+33fbbaa Yves Vandervennet kde repo moved, it's now meta-kde4
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+already pushed
+4a1af62 Tien Hock Loh FogBugz #241576: Fix intermittent build issue for GSRD 14.0.2
+
+=======================================================================

@@ -1,0 +1,6 @@
+I did a rc1 as normal.
+
+Did an out of cycle release to linux 3.10-ltsi branch only for a10
+
+Forgot to do a rc2.
+Did the pr, backed those tags out, did rc2 and then pr.

@@ -1,0 +1,199 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Note that 3.18 will go out to the portal in the next update in 2 weeks (1/23/2015).
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.17
+branch tag  : rel_socfpga-3.17_15.01.01_pr
+new commits : 1
+1cd4171 Ley Foon Tan FogBugz #246108: nios2: initialize one timer only
+
+
+++wiki:
+*Branch name*: socfpga-3.17, *Tag name:* rel_socfpga-3.17_15.01.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 246108 | nios2: initialize one timer only | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1cd4171e4b895b6d1c8edfecef41863712b91673 ][ 1cd4171e4b895b6d1c8edfecef41863712b91673 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.01.01_pr
+new commits : 1
+95ac4d3 Ley Foon Tan FogBugz #246108: nios2: initialize one timer only
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_15.01.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 246108 | nios2: initialize one timer only | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=95ac4d3f1098a12e94c95bc432fed81227084042 ][ 95ac4d3f1098a12e94c95bc432fed81227084042 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.01.01_pr
+new commits : 1
+7ea94617 Ley Foon Tan FogBugz #246108: nios2: initialize one timer only
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_15.01.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 246108 | nios2: initialize one timer only | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=7ea94617cfae6a62ee963adc1ae340196dbe2b34 ][ 7ea94617cfae6a62ee963adc1ae340196dbe2b34 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.17_15.01.01_pr
+commit: 1cd4171 Ley Foon Tan FogBugz #246108: nios2: initialize one timer only
+
+tag:    rel_socfpga-3.10-ltsi_15.01.01_pr
+commit: 95ac4d3 Ley Foon Tan FogBugz #246108: nios2: initialize one timer only
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.01.01_pr
+commit: 7ea94617 Ley Foon Tan FogBugz #246108: nios2: initialize one timer only
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.01.01_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_15.01.01_pr
+commit: 32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_15.01.01_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_15.01.01_pr
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_15.01.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_15.01.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_15.01.01_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_15.01.01_pr
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_15.01.01_pr
+commit: 65417bc Yves Vandervennet kde repo moved, it's now meta-kde4
+
+tag:    rel_angstrom-v2014.06-socfpga_15.01.01_pr
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_15.01.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_15.01.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_15.01.01_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_15.01.01_pr
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_15.01.01_pr
+commit: fe61959 Yves Vandervennet Recipe for 3.17
+
+tag:    rel_angstrom-v2014.06-yocto1.6_15.01.01_pr
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.17
+
+commit 1cd4171e4b895b6d1c8edfecef41863712b91673
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Dec 5 14:40:59 2014 +0800
+
+    FogBugz #246108: nios2: initialize one timer only
+    
+    The first timer instance will use as clocksource and all others are
+    unused. This is to fix the boot issue when system have more than 1 timer.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 95ac4d3f1098a12e94c95bc432fed81227084042
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Dec 5 14:40:59 2014 +0800
+
+    FogBugz #246108: nios2: initialize one timer only
+    
+    The first timer instance will use as clocksource and all others are
+    unused. This is to fix the boot issue when system have more than 1 timer.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 7ea94617cfae6a62ee963adc1ae340196dbe2b34
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Dec 5 14:40:59 2014 +0800
+
+    FogBugz #246108: nios2: initialize one timer only
+    
+    The first timer instance will use as clocksource and all others are
+    unused. This is to fix the boot issue when system have more than 1 timer.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+

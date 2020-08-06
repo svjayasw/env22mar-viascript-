@@ -1,0 +1,244 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.9
+branch tag  : rel_socfpga-4.9_17.04.02_pr
+new commits : 4
+bed10ef Matthew Gerlach FogBugz #439132: fix warning for unexpected version number
+4dbe59c Ong Hean Loong FogBugz #421702-3: socfpga_defconfig for Frame Buffer II Driver
+e0f7fac Ong Hean Loong FogBugz #421702-2: implement Frame Buffer II for Display Port IP
+5cfee48 Ong Hean Loong FogBugz #421702-1: Device tree bindings Frame Buffer II for Display Port IP
+
+
+++wiki:
+*Branch name*: socfpga-4.9, *Tag name:* rel_socfpga-4.9_17.04.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 439132 | fix warning for unexpected version number | [[ https://github.com/altera-opensource/linux-socfpga/commit/bed10ef01d8bfbc883a6bc4400aecc79709b45f1 ][ bed10ef01d8bfbc883a6bc4400aecc79709b45f1 ]] |
+| 421702-3 | socfpga_defconfig for Frame Buffer II Driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/4dbe59c1ef8014e3446406ffba562d55a91e884c ][ 4dbe59c1ef8014e3446406ffba562d55a91e884c ]] |
+| 421702-2 | implement Frame Buffer II for Display Port IP | [[ https://github.com/altera-opensource/linux-socfpga/commit/e0f7fac9eb2697e3cbe1f4ee1ccf84e1bc1055a6 ][ e0f7fac9eb2697e3cbe1f4ee1ccf84e1bc1055a6 ]] |
+| 421702-1 | Device tree bindings Frame Buffer II for Display Port IP | [[ https://github.com/altera-opensource/linux-socfpga/commit/5cfee485319632901f17b8194dc948a8813cc33c ][ 5cfee485319632901f17b8194dc948a8813cc33c ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.04.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.04.02_pr
+new commits : 1
+3b605d2 Dan Carpenter ARM: socfpga: checking the wrong variable
+
+
+++wiki:
+*Branch name*: socfpga-4.1.33-ltsi-rt, *Tag name:* rel_socfpga-4.1.33-ltsi-rt_17.04.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | ARM: socfpga: checking the wrong variable | [[ https://github.com/altera-opensource/linux-socfpga/commit/3b605d2a2e12d08c3cbedbb0b98176abccb33efc ][ 3b605d2a2e12d08c3cbedbb0b98176abccb33efc ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.9_17.04.02_pr
+commit: bed10ef Matthew Gerlach FogBugz #439132: fix warning for unexpected version number
+
+tag:    rel_socfpga-4.1.33-ltsi_17.04.02_pr
+commit: 7656aaf Jia Jie Ho ARM: socfpga: updates for socfpga_defconfig
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.04.02_pr
+commit: 3b605d2 Dan Carpenter ARM: socfpga: checking the wrong variable
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.04.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.04.02_pr
+new commits : 2
+077e579 Tien Fong Chee FogBugz #452575: Restore s2f warm reset mask bit to user setting
+d5d5f74 Tien Fong Chee FogBugz #450126: Fix DMA transfer failed when L2 cache is enabled
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_17.04.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 452575 | Restore s2f warm reset mask bit to user setting | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/077e579b1d6a213768dd2bab0daa7615a33fd53c ][ 077e579b1d6a213768dd2bab0daa7615a33fd53c ]] |
+| 450126 | Fix DMA transfer failed when L2 cache is enabled | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/d5d5f74301d7abbd9fbf15a03690319b954284dd ][ d5d5f74301d7abbd9fbf15a03690319b954284dd ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.04.02_pr
+commit: 95ab599 Chin Liang See FogBugz #385884: Configuring SDRAM extra cycles on timing parameters
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.04.02_pr
+commit: 077e579 Tien Fong Chee FogBugz #452575: Restore s2f warm reset mask bit to user setting
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.04.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.04.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_17.04.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_17.04.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.04.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_17.04.02_pr
+commit: d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_17.04.02_pr
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+tag:    rel_angstrom-v2015.12-yocto2.0_17.04.02_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9
+
+commit bed10ef01d8bfbc883a6bc4400aecc79709b45f1
+Author: Matthew Gerlach <matthew.gerlach@linux.intel.com>
+Date:   Wed Feb 22 11:19:32 2017 -0800
+
+    FogBugz #439132: fix warning for unexpected version number
+    
+    The value in the version register of the altera freeze bridge
+    controller changed from the beta value of 2 to the
+    value of 0xad000003 in the official release of the IP.
+    This patch supports the old and new version numbers
+    without printing an warning.
+    
+    Signed-off-by: Matthew Gerlach <matthew.gerlach@linux.intel.com>
+
+commit 4dbe59c1ef8014e3446406ffba562d55a91e884c
+Author: Ong Hean Loong <hean.loong.ong@intel.com>
+Date:   Tue Apr 4 13:57:13 2017 +0800
+
+    FogBugz #421702-3: socfpga_defconfig for Frame Buffer II Driver
+    
+    	Add build options to support Frame Buffer II Driver
+    
+    Signed-off-by: Ong Hean Loong <hean.loong.ong@intel.com>
+
+commit e0f7fac9eb2697e3cbe1f4ee1ccf84e1bc1055a6
+Author: Ong Hean Loong <hean.loong.ong@intel.com>
+Date:   Mon Dec 19 17:04:48 2016 +0800
+
+    FogBugz #421702-2: implement Frame Buffer II for Display Port IP
+    
+    Frame Buffer II implemntation for Display Port IP. The Intel PSG
+    (Altera) Video Image Processing Suite requires the Frame Reader
+    to be updated to Frame Buffer II. A new driver is required to
+    support the CSR for Frame Buffer II.
+    
+    Signed-off-by: Ong Hean Loong <hean.loong.ong@intel.com>
+
+commit 5cfee485319632901f17b8194dc948a8813cc33c
+Author: Ong Hean Loong <hean.loong.ong@intel.com>
+Date:   Mon Dec 19 17:03:35 2016 +0800
+
+    FogBugz #421702-1: Device tree bindings Frame Buffer II for Display Port IP
+    
+    Device tree bindings required for the Intel PSG (Altera) Frame Buffer II.
+    
+    Signed-off-by: Ong Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.33-ltsi-rt
+
+commit 3b605d2a2e12d08c3cbedbb0b98176abccb33efc
+Author: Dan Carpenter <dan.carpenter@oracle.com>
+Date:   Tue Nov 15 09:54:34 2016 +0000
+
+    ARM: socfpga: checking the wrong variable
+    
+    This is a cut and paste bug.  We had intended to check "sysmgr".
+    
+    Fixes: e5f8efa5c8bf ("ARM: socfpga: fpga bridge driver support")
+    Signed-off-by: Dan Carpenter <dan.carpenter@oracle.com>
+    Acked-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 077e579b1d6a213768dd2bab0daa7615a33fd53c
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Thu Apr 13 13:17:55 2017 +0800
+
+    FogBugz #452575: Restore s2f warm reset mask bit to user setting
+    
+    After completion of the multiport front end (MPFE) reset recovery loop,
+    we want to restore the s2f mask bit to user setting. This patch is
+    needed so that the user setting stays valid.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+    ---
+    Changes for V5
+    - Changed commit messages, moving the s2f magic define to header,
+    and changing appropriate parameter name 'flag' to 'set'.
+    Changes for v4
+    - Changed the function parameter name declaration
+    Changes for v3
+    - Rewrite commit message clearly.
+    Changes for v2
+    - Added new #define for const number, changed the programming style, and
+    changing to better #define name for s2f warm reset restore.
+
+commit d5d5f74301d7abbd9fbf15a03690319b954284dd
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Apr 5 14:41:25 2017 +0800
+
+    FogBugz #450126: Fix DMA transfer failed when L2 cache is enabled
+    
+    Fix DMA transfer issue where data transfer to a cacheable memory failed.
+    This is due to L2 cache is accidentally left enabled when configuring the
+    L2 cache controller. This patch will ensure the L2 cache is disabled
+    since the MMU is disabled.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+-----------------------------------------------------------------------
+

@@ -1,0 +1,256 @@
+
+If this is Wednesday, this is a script-generated report of what we will push to the portal on Friday.
+
+However if this is Friday, this is a script-generated report of what we just pushed out to the portal.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.14
+branch tag  : rel_socfpga-3.14_14.05.02
+new commits : 6
+b996b2a Graham Moore FogBugz #201449: Fix bug found by sparse tool.
+bf54e79 Dinh Nguyen usb: dwc2: Disable descriptor dma mode by default
+d3b7128 Ley Foon Tan FogBugz #193936: nios2: Fix nios2 compilation warnings
+d5f7c06 Ley Foon Tan FogBugz #199159: nios2: fix parentheses warning
+6f1a05b Dinh Nguyen net: stmmac: set phy to use polling by default
+8c40d03 Ley Foon Tan FogBugz #195995: nios2: Change default NIOS2_DCACHE_LINE_SIZE
+
+
+++wiki:
+*Branch name*: socfpga-3.14, *Tag name:* rel_socfpga-3.14_14.05.02
+| *ID* | *Comment* | *GIT Commit* |
+| 201449 | Fix bug found by sparse tool. | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=b996b2af0322cc551519ce2f75873108b46229da ][ b996b2af0322cc551519ce2f75873108b46229da ]] |
+| community | usb: dwc2: Disable descriptor dma mode by default | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=bf54e79eef55863764d5793b4a0b363d845dc97f ][ bf54e79eef55863764d5793b4a0b363d845dc97f ]] |
+| 193936 | nios2: Fix nios2 compilation warnings | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=d3b7128c1dd2162eccda1fba82365f5749c28271 ][ d3b7128c1dd2162eccda1fba82365f5749c28271 ]] |
+| 199159 | nios2: fix parentheses warning | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=d5f7c06411b85e2d8eed05f4492dd1e7051966fc ][ d5f7c06411b85e2d8eed05f4492dd1e7051966fc ]] |
+| community | net: stmmac: set phy to use polling by default | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6f1a05b3482a4006ab32ef1f3f7d31c0f896183b ][ 6f1a05b3482a4006ab32ef1f3f7d31c0f896183b ]] |
+| 195995 | nios2: Change default NIOS2_DCACHE_LINE_SIZE | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=8c40d03d35ceb86274fff034606372ba443a82e2 ][ 8c40d03d35ceb86274fff034606372ba443a82e2 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.05.02
+new commits : 4
+459ea22 Giuseppe CAVALLARO stmmac: disable at run-time the EEE if not supported
+d89bc87 Ley Foon Tan FogBugz #199159: nios2: fix parentheses warning
+e67a2b9 Ley Foon Tan FogBugz #193936: nios2: Fix nios2 compilation warnings
+c6aa243 Dinh Nguyen net: stmmac: set phy to use polling by default
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.05.02
+| *ID* | *Comment* | *GIT Commit* |
+| community | stmmac: disable at run-time the EEE if not supported | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=459ea22ba9ba86361f91777af1c4405f4ebfd87d ][ 459ea22ba9ba86361f91777af1c4405f4ebfd87d ]] |
+| 199159 | nios2: fix parentheses warning | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=d89bc872cb81b80cb6c7ff1d2e2cd05a0d12b315 ][ d89bc872cb81b80cb6c7ff1d2e2cd05a0d12b315 ]] |
+| 193936 | nios2: Fix nios2 compilation warnings | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=e67a2b9c3f5b3374f3094e70c5d199f0b2daf4a4 ][ e67a2b9c3f5b3374f3094e70c5d199f0b2daf4a4 ]] |
+| community | net: stmmac: set phy to use polling by default | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=c6aa243c458455ca7de14b410f1bb72deafffe5f ][ c6aa243c458455ca7de14b410f1bb72deafffe5f ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.14_14.05.02
+commit: b996b2a Graham Moore FogBugz #201449: Fix bug found by sparse tool.
+
+tag:    rel_socfpga-3.10-ltsi_14.05.02
+commit: 459ea22 Giuseppe CAVALLARO stmmac: disable at run-time the EEE if not supported
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.05.02
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.05.02
+commit: 82ff5be Chin Liang See FogBugz #191882: Move away handoff path from common config
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.14
+
+commit b996b2af0322cc551519ce2f75873108b46229da
+Author: Graham Moore <grmoore@altera.com>
+Date:   Thu May 1 14:11:21 2014 -0500
+
+    FogBugz #201449: Fix bug found by sparse tool.
+    
+    The sparse code analysis tools identified a locking problem
+    in the Cadence QSPI driver.  This patch is the fix.
+    
+    In the process, I removed a continue, renamed a variable, and
+    reversed the logic of an if-block.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit bf54e79eef55863764d5793b4a0b363d845dc97f
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Mon May 5 10:26:49 2014 -0500
+
+    usb: dwc2: Disable descriptor dma mode by default
+    
+    Even though the IP supports Descriptor DMA mode, it does not support SPLIT
+    transactions in this mode. So the driver, in its currently form, will not
+    support LS/FS devices when connected to a HS Hub if Descriptor DMA mode is
+    enabled.
+    
+    So we should just default to disable descriptor dma mode.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    Acked-by: Paul Zimmerman <paulz@synopsys.com>
+    ---
+    v3:
+    - remove option for a device tree to turn on descriptor dma
+    
+    v2:
+    - Reworked patch to disable descriptor dma by default
+    - Removed unneeded helper variable
+    - Reword patch commit header
+    
+    Conflicts:
+    
+    	drivers/usb/dwc2/platform.c
+
+commit d3b7128c1dd2162eccda1fba82365f5749c28271
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Apr 25 11:13:00 2014 +0800
+
+    FogBugz #193936: nios2: Fix nios2 compilation warnings
+    
+    The warnings is caused by PAGE_SIZE macro. This is one of the change
+    request by kernel community when nios2 usptreaming. Recommended way is
+    using AC() macro for PAGE_SIZE calculation.
+    
+    Discussion:
+    https://lkml.org/lkml/2014/4/22/577
+    
+    Example warning:
+    fs/select.c:901:9: warning: comparison of distinct pointer types
+    lacks a cast [enabled by default]
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit d5f7c06411b85e2d8eed05f4492dd1e7051966fc
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Apr 28 17:59:25 2014 +0800
+
+    FogBugz #199159: nios2: fix parentheses warning
+    
+    Add parentheses for 'vaddr' variable.
+    Example warning:
+    mm/bootmem.c:585:3: warning: suggest parentheses around arithmetic
+    in operand of '|' [-Wparentheses]
+    mm/bootmem.c:585:3:
+                    region = phys_to_virt(PFN_PHYS(bdata->node_min_pfn) +
+                                    start_off);
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 6f1a05b3482a4006ab32ef1f3f7d31c0f896183b
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 29 12:56:21 2014 -0500
+
+    net: stmmac: set phy to use polling by default
+    
+    mii_irq[] array is never initialized anywhere in the driver, thus mii_irq[]
+    will always equate to zero. So, for the case where the PHY does not have an
+    irq, we should use PHY_POLL for that situation.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    Tested-by: Vince Bridgers <vbridger@altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 8c40d03d35ceb86274fff034606372ba443a82e2
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Apr 25 11:45:29 2014 +0800
+
+    FogBugz #195995: nios2: Change default NIOS2_DCACHE_LINE_SIZE
+    
+    FogBugz 190747 added initda instruction support and this instruction
+    requires more than 4-byte data cache line. So, default
+    NIOS2_DCACHE_LINE_SIZE needs change to more than 4 and
+    in range 0x10 and 0x20. Also add checking for
+    CONFIG_NIOS2_DCACHE_LINE_SIZE vs device tree dcache-line-size to make
+    sure they are matched.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 459ea22ba9ba86361f91777af1c4405f4ebfd87d
+Author: Giuseppe CAVALLARO <peppe.cavallaro@st.com>
+Date:   Mon Mar 10 13:40:31 2014 +0100
+
+    stmmac: disable at run-time the EEE if not supported
+    
+    This patch is to disable the EEE (so HW and timers)
+    for example when the phy communicates that the EEE
+    can be supported anymore.
+    
+    Signed-off-by: Giuseppe Cavallaro <peppe.cavallaro@st.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit d89bc872cb81b80cb6c7ff1d2e2cd05a0d12b315
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Apr 28 17:59:25 2014 +0800
+
+    FogBugz #199159: nios2: fix parentheses warning
+    
+    Add parentheses for 'vaddr' variable.
+    Example warning:
+    mm/bootmem.c:585:3: warning: suggest parentheses around arithmetic
+    in operand of '|' [-Wparentheses]
+    mm/bootmem.c:585:3:
+                    region = phys_to_virt(PFN_PHYS(bdata->node_min_pfn) +
+                                    start_off);
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit e67a2b9c3f5b3374f3094e70c5d199f0b2daf4a4
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Apr 25 11:13:00 2014 +0800
+
+    FogBugz #193936: nios2: Fix nios2 compilation warnings
+    
+    The warnings is caused by PAGE_SIZE macro. This is one of the change
+    request by kernel community when nios2 usptreaming. Recommended way is
+    using AC() macro for PAGE_SIZE calculation.
+    
+    Discussion:
+    https://lkml.org/lkml/2014/4/22/577
+    
+    Example warning:
+    fs/select.c:901:9: warning: comparison of distinct pointer types
+    lacks a cast [enabled by default]
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit c6aa243c458455ca7de14b410f1bb72deafffe5f
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 29 12:56:21 2014 -0500
+
+    net: stmmac: set phy to use polling by default
+    
+    mii_irq[] array is never initialized anywhere in the driver, thus mii_irq[]
+    will always equate to zero. So, for the case where the PHY does not have an
+    irq, we should use PHY_POLL for that situation.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    Tested-by: Vince Bridgers <vbridger@altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+-----------------------------------------------------------------------
+
+

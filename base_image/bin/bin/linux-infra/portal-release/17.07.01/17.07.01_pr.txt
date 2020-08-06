@@ -1,0 +1,152 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.10
+branch tag  : rel_socfpga-4.10_17.07.01_pr
+new commits : 1
+80ee99f Richard Gong FogBugz #470512: Update stratix10_swvp.dts file for S10 SoC Simics/VP
+
+
+++wiki:
+*Branch name*: socfpga-4.10, *Tag name:* rel_socfpga-4.10_17.07.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 470512 | Update stratix10_swvp.dts file for S10 SoC Simics/VP | [[ https://github.com/altera-opensource/linux-socfpga/commit/80ee99f0303330cfaa380fbe01cea4d1ba5aae57 ][ 80ee99f0303330cfaa380fbe01cea4d1ba5aae57 ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.07.01_pr
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.07.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.10_17.07.01_pr
+commit: 80ee99f Richard Gong FogBugz #470512: Update stratix10_swvp.dts file for S10 SoC Simics/VP
+
+tag:    rel_socfpga-4.1.33-ltsi_17.07.01_pr
+commit: 9d8d594 Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.07.01_pr
+commit: a63d21c Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.07.01_pr
+new commits : 1
+239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_17.07.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 470924 | U-Boot: Changes for gcc6.2.0 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/239ae4dbaab424881fe9f4a11dc354abdd53cb1e ][ 239ae4dbaab424881fe9f4a11dc354abdd53cb1e ]] |
+--wiki:
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.07.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.07.01_pr
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.07.01_pr
+commit: 077e579 Tien Fong Chee FogBugz #452575: Restore s2f warm reset mask bit to user setting
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.07.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.07.01_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.07.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.07.01_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.07.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.07.01_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.10
+
+commit 80ee99f0303330cfaa380fbe01cea4d1ba5aae57
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue Jun 20 08:34:08 2017 -0500
+
+    FogBugz #470512: Update stratix10_swvp.dts file for S10 SoC Simics/VP
+    
+    Add DMA, SPI and NAND entries, enable I2C, SPI and GPIO.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 239ae4dbaab424881fe9f4a11dc354abdd53cb1e
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Wed Jun 21 10:29:15 2017 -0500
+
+    FogBugz #470924: U-Boot: Changes for gcc6.2.0
+    
+    Minor change needed to support the GCC 6.2.0 compiler with
+    our older socfpga_2013.01.01 U-Boot branch for Cyclone5.
+    Change is to add a header file that the older branch build expects.
+    This file is simply a modified copy of the compiler-gcc5.h file
+    as suggested on the embedded forums. Modified copy to change
+    the comment at the top from gcc5 to gcc6.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+-----------------------------------------------------------------------
+

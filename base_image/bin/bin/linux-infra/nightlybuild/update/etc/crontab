@@ -1,0 +1,38 @@
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+# remove old builds
+0  0 * * * sudo /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/tools/delete_old.sh
+# cyclone 5 console image
+30 0 * * * /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/linux-nightly.sh -c /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/angstrom/angstom.sh -f /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/angstrom/callbacks_angstrom.sh -w /media/big_storage/nightly_build -l build_log
+# arria 5 console image
+50 0 * * * /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/linux-nightly.sh -c /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/angstrom/angstom-arria5.sh -f /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/angstrom/callbacks_angstrom.sh -w /media/big_storage/nightly_build -l build_log
+# kernel 3.13 build off stable tree
+0  1 * * * /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/linux-nightly.sh -c /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/git/kernel_git_v3.13.sh -f /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/git/callbacks_git.sh -w /media/big_storage/nightly_build -l build_log
+# LTSI 3.10 build
+15 1 * * * /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/linux-nightly.sh -c /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/git/kernel_git_v3.10-ltsi.sh -f /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/git/callbacks_git.sh -w /media/big_storage/nightly_build -l build_log
+# cyclone 5 GNOME image
+0  5 * * * /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/linux-nightly.sh -c /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/angstrom/angstom-x.sh -f /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/angstrom/callbacks_angstrom.sh -w /media/big_storage/nightly_build -l build_log
+# QEMU
+0  6 * * * /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/linux-nightly.sh -c /u/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/nadder-qemu/nadder_qemu.sh -f /u/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/nadder-qemu/callbacks_nadder_qemu.sh -w /media/big_storage/nightly_build -l build_log
+# ARM64, default defconfig
+0  7 * * * /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/linux-nightly.sh -c /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/git/kernel_bup_git_arm64-generic.sh -f /home/build/nfs_night_build/bin/linux-infra/nightlybuild/update/configs/git/callbacks_git.sh -w /media/big_storage/nightly_build -l build_log

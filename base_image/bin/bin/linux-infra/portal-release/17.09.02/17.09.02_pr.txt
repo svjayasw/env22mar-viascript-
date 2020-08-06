@@ -1,0 +1,206 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+The following new branches were pushed for Stratix 10 support:
+repo : uboot-socfpga          branch : socfpga_v2017.09
+
+We will be back to the regular release schedule after this, with the next
+release being Thursday Sept 28.
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.11
+branch tag  : rel_socfpga-4.11_17.09.02_pr
+new commits : 2
+89bb49f Dinh Nguyen FogBugz #493310: dts: use the clocks for the timers and uarts
+d03af26 Dinh Nguyen FogBugz #493306: mark the l4_sp_clk as a critical clock
+
+
+++wiki:
+*Branch name*: socfpga-4.11, *Tag name:* rel_socfpga-4.11_17.09.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 493310 | dts: use the clocks for the timers and uarts | [[ https://github.com/altera-opensource/linux-socfpga/commit/89bb49f080764457569b906e84380085c7f1ad5a ][ 89bb49f080764457569b906e84380085c7f1ad5a ]] |
+| 493306 | mark the l4_sp_clk as a critical clock | [[ https://github.com/altera-opensource/linux-socfpga/commit/d03af261f49b0d2673e9eca75d8caf90f1e9744c ][ d03af261f49b0d2673e9eca75d8caf90f1e9744c ]] |
+--wiki:
+
+
+branch      : socfpga-4.12
+branch tag  : rel_socfpga-4.12_17.09.02_pr
+new commits : 2
+d85beeb Dinh Nguyen FogBugz #493310: dts: use the clocks for the timers and uarts
+f9580ce Dinh Nguyen FogBugz #493306: mark the l4_sp_clk as a critical clock
+
+
+++wiki:
+*Branch name*: socfpga-4.12, *Tag name:* rel_socfpga-4.12_17.09.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 493310 | dts: use the clocks for the timers and uarts | [[ https://github.com/altera-opensource/linux-socfpga/commit/d85beebbd9d9216c8704467cfbcb5607047af78e ][ d85beebbd9d9216c8704467cfbcb5607047af78e ]] |
+| 493306 | mark the l4_sp_clk as a critical clock | [[ https://github.com/altera-opensource/linux-socfpga/commit/f9580ce366ae8a2d9af19435074bd52b8d3e15e5 ][ f9580ce366ae8a2d9af19435074bd52b8d3e15e5 ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.09.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.09.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.11_17.09.02_pr
+commit: 89bb49f Dinh Nguyen FogBugz #493310: dts: use the clocks for the timers and uarts
+
+tag:    rel_socfpga-4.12_17.09.02_pr
+commit: d85beeb Dinh Nguyen FogBugz #493310: dts: use the clocks for the timers and uarts
+
+tag:    rel_socfpga-4.1.33-ltsi_17.09.02_pr
+commit: 9d8d594 Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.09.02_pr
+commit: a63d21c Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.09.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.09.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_17.09.02_pr
+Pushing new branch to external git
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.09.02_pr
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.09.02_pr
+commit: 673e854 Peng Fan common: env_flags: fix loop condition when using env_flags_varaccess_mask
+
+tag:    rel_socfpga_v2017.09_17.09.02_pr
+commit: d2f9c97 Chin Liang See spi: cadence_qspi: Fix the indirect trigger address
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.09.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.09.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.09.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.09.02_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.09.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.09.02_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.11
+
+commit 89bb49f080764457569b906e84380085c7f1ad5a
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu Sep 14 15:55:54 2017 -0500
+
+    FogBugz #493310: dts: use the clocks for the timers and uarts
+    
+    Remove the hard-coded frequencies from the timers/uarts and use the
+    clock property to let the driver get the correct clock frequencies.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit d03af261f49b0d2673e9eca75d8caf90f1e9744c
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Sep 14 15:47:04 2017 -0500
+
+    FogBugz #493306: mark the l4_sp_clk as a critical clock
+    
+    The l4_sp_clk feeds a 100 MHz clock to various peripherals, such as
+    SP timers, UARTs, and I2C. Most drivers disable the clock in order
+    to get the rate, which causes the system to hang. Thus we need to mark
+    this clock as a CRITICAL clock that cannot get gated.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.12
+
+commit d85beebbd9d9216c8704467cfbcb5607047af78e
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu Sep 14 15:55:54 2017 -0500
+
+    FogBugz #493310: dts: use the clocks for the timers and uarts
+    
+    Remove the hard-coded frequencies from the timers/uarts and use the
+    clock property to let the driver get the correct clock frequencies.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit f9580ce366ae8a2d9af19435074bd52b8d3e15e5
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Sep 14 15:47:04 2017 -0500
+
+    FogBugz #493306: mark the l4_sp_clk as a critical clock
+    
+    The l4_sp_clk feeds a 100 MHz clock to various peripherals, such as
+    SP timers, UARTs, and I2C. Most drivers disable the clock in order
+    to get the rate, which causes the system to hang. Thus we need to mark
+    this clock as a CRITICAL clock that cannot get gated.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+

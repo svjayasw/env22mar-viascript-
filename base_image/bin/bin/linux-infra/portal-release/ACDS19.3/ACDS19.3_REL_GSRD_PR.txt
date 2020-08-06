@@ -1,0 +1,55 @@
+
+Tags found:
+ACDS19.3_REL_GSRD_PR
+
+   repo                 branch                            commit   behind     tag name
+linux-socfpga        socfpga-4.14.130-ltsi                a032257     2   ACDS19.3_REL_GSRD_PR
+uboot-socfpga        socfpga_v2019.04                     8c4cd80     0   ACDS19.3_REL_GSRD_PR
+meta-altera          angstrom-v2019.06-yocto2.7           c2f4966     0   ACDS19.3_REL_GSRD_PR
+meta-altera-refdes   master                               97e7d7a     0   ACDS19.3_REL_GSRD_PR
+linux-refdesigns     master                               769f842     0   ACDS19.3_REL_GSRD_PR
+
+-----------------------------------------------------------------------
+repo:   linux-socfpga
+-----------------------------------------------------------------------
+a032257 Richard Gong arm64: dts: agilex: add service layer, fpga manager and fpga region
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS19.3_REL_GSRD_PR
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.14.130-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/a032257d7048b7d7246b32dc7fd65de291353c35
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   uboot-socfpga
+-----------------------------------------------------------------------
+8c4cd80 Ley Foon Tan HSD #1507500974: configs: arria10: Add bridge enable to CONFIG_BOOTCOMMAND
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS19.3_REL_GSRD_PR
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2019.04
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/8c4cd804d6d77fbc4d7201d19755b6e89d43ae65
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera
+-----------------------------------------------------------------------
+c2f4966 Ong, Hean Loong update commits for linux-altera-ltsi_4.14.130.bb
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/ACDS19.3_REL_GSRD_PR
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2019.06-yocto2.7
+commit : https://github.com/altera-opensource/meta-altera/commit/c2f4966867ebbfe9117025832183912e50756c5b
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera-refdes
+-----------------------------------------------------------------------
+97e7d7a Ong, Hean Loong fix issue of lighttpd for yocto-warrior
+tag    : https://github.com/altera-opensource/meta-altera-refdes/releases/tag/ACDS19.3_REL_GSRD_PR
+branch : https://github.com/altera-opensource/meta-altera-refdes/tree/master
+commit : https://github.com/altera-opensource/meta-altera-refdes/commit/97e7d7addd1e083a8aa4b7ada2d67af259061df6
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   linux-refdesigns
+-----------------------------------------------------------------------
+769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+tag    : https://github.com/altera-opensource/linux-refdesigns/releases/tag/ACDS19.3_REL_GSRD_PR
+branch : https://github.com/altera-opensource/linux-refdesigns/tree/master
+commit : https://github.com/altera-opensource/linux-refdesigns/commit/769f842433462efb96ba3dadb4047b194930adf7
+-----------------------------------------------------------------------

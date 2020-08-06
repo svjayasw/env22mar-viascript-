@@ -1,0 +1,26 @@
+#!/bin/bash
+
+remotes=$1
+
+if [ -z "$remotes" ]; then
+    branches="$(git branch -r | sed -r 's/^ *//' | cut -d' ' -f1 | tr ' ' '\n')"
+    remotes="$(git branch -r | sed -r 's/^ *//' | cut -d'/' -f1 | sort -u)"
+else
+    branches="$(git branch -r | sed -r 's/^ *//' | grep "^${remotes}/" | cut -d' ' -f1)"
+fi
+
+for remote in $remotes; do
+    echo "Branches on remote \"$remote\""
+    for foo in $branches; do
+	rem="$(echo $foo | cut -d'/' -f1)"
+	if [ "$rem" == "$remote" ]; then
+	    br="$(echo $foo | cut -d'/' -f2-)"
+	    descr="$(git log -1 --pretty=format:'%h %an : %s' $foo)"
+	    printf "%-28s %s\n" "$br" "$descr"
+	fi
+    done | sort
+    echo
+done
+
+
+

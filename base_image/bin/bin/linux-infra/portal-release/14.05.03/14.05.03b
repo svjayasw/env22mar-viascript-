@@ -1,0 +1,245 @@
+
+
+If this is Wednesday, this is a script-generated report of what we will push to the portal on Friday.
+
+However if this is Friday, this is a script-generated report of what we just pushed out to the portal.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.14
+branch tag  : rel_socfpga-3.14_14.05.03
+new commits : 2
+f0c23fe Ley Foon Tan FogBugz #205319: nios2: Use initi and initd to initialize caches
+2eae12e Ley Foon Tan FogBugz #205359: nios2: flushp after write instruction to memory
+
+
+++wiki:
+*Branch name*: socfpga-3.14, *Tag name:* rel_socfpga-3.14_14.05.03
+| *ID* | *Comment* | *GIT Commit* |
+| 205319 | nios2: Use initi and initd to initialize caches | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=f0c23fe90389fe49e03a87c0f2072c9d25844a9a ][ f0c23fe90389fe49e03a87c0f2072c9d25844a9a ]] |
+| 205359 | nios2: flushp after write instruction to memory | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=2eae12e4ac8f8eca4b33d3dc6c03ae7d56fd9447 ][ 2eae12e4ac8f8eca4b33d3dc6c03ae7d56fd9447 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.05.03
+new commits : 3
+35814ac Graham Moore FogBugz #201449: Fix bug found by sparse tool.
+a934d4c Ley Foon Tan FogBugz #205319: nios2: Use initi and initd to initialize caches
+60b640c Ley Foon Tan FogBugz #205359: nios2: flushp after write instruction to memory
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.05.03
+| *ID* | *Comment* | *GIT Commit* |
+| 201449 | Fix bug found by sparse tool. | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=35814acb4ecdc2a3a8b6381e9707fa770f44690f ][ 35814acb4ecdc2a3a8b6381e9707fa770f44690f ]] |
+| 205319 | nios2: Use initi and initd to initialize caches | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a934d4c6582064faeb526ffa12cb615cb0fba09b ][ a934d4c6582064faeb526ffa12cb615cb0fba09b ]] |
+| 205359 | nios2: flushp after write instruction to memory | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=60b640c40d6112a0a77ee66347cf85b5d581b3b6 ][ 60b640c40d6112a0a77ee66347cf85b5d581b3b6 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_14.05.03
+new commits : 1
+6aa14f6 Graham Moore FogBugz #201449: Fix bug found by sparse tool.
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_14.05.03
+| *ID* | *Comment* | *GIT Commit* |
+| 201449 | Fix bug found by sparse tool. | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6aa14f6845bbd992db29918d961eb4b3c3876983 ][ 6aa14f6845bbd992db29918d961eb4b3c3876983 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.14_14.05.03
+commit: f0c23fe Ley Foon Tan FogBugz #205319: nios2: Use initi and initd to initialize caches
+
+tag:    rel_socfpga-3.10-ltsi_14.05.03
+commit: 35814ac Graham Moore FogBugz #201449: Fix bug found by sparse tool.
+
+tag:    rel_socfpga-3.10-ltsi-rt_14.05.03
+commit: 6aa14f6 Graham Moore FogBugz #201449: Fix bug found by sparse tool.
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.05.03
+new commits : 2
+c5fd7ff Oleksandr Tymoshenko This is the USB host controller used on the Raspbery Pi.
+2160a9d Chin Liang See FogBugz #192038: Fix SDRAM PLL Phase Aligning
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_14.05.03
+| *ID* | *Comment* | *GIT Commit* |
+| community | This is the USB host controller used on the Raspbery Pi. | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=c5fd7ff385dca90b73c7ec9ded078a27ed8031ad ][ c5fd7ff385dca90b73c7ec9ded078a27ed8031ad ]] |
+| 192038 | Fix SDRAM PLL Phase Aligning | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=2160a9d4a6ef3d59bc6f6655a3b24e51a2ea4c61 ][ 2160a9d4a6ef3d59bc6f6655a3b24e51a2ea4c61 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.05.03
+commit: c5fd7ff Oleksandr Tymoshenko This is the USB host controller used on the Raspbery Pi.
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.14
+
+commit f0c23fe90389fe49e03a87c0f2072c9d25844a9a
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri May 16 15:30:57 2014 +0800
+
+    FogBugz #205319: nios2: Use initi and initd to initialize caches
+    
+    Change flushi to initi and flushd to initd instructions.
+    
+    According to nios2 handbook:
+    - Use initi instruction initializes a single
+    instruction cache line. Do not use the flushi instruction because
+    it might cause undesired effects when used to initialize the
+    instruction cache in future Nios II implementations.
+    - Use initd instruction initializes a single data cache line. Do not
+    use the flushd instruction for this purpose, because it writes dirty
+    lines back to memory.
+    
+    [1]http://www.altera.com/literature/hb/nios2/n2sw_nii52007.pdf
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 2eae12e4ac8f8eca4b33d3dc6c03ae7d56fd9447
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri May 16 15:29:01 2014 +0800
+
+    FogBugz #205359: nios2: flushp after write instruction to memory
+    
+    According to nios2 handbook [1], software needs to execute flushd,
+    flushi and flushp instructions after write instruction to memory.
+    This patch add the flushp instruction after flushd and flushi.
+    
+    [1]http://www.altera.com/literature/hb/nios2/n2sw_nii52007.pdf
+       (page 9-5)
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 35814acb4ecdc2a3a8b6381e9707fa770f44690f
+Author: Graham Moore <grmoore@altera.com>
+Date:   Thu May 1 14:11:21 2014 -0500
+
+    FogBugz #201449: Fix bug found by sparse tool.
+    
+    The sparse code analysis tools identified a locking problem
+    in the Cadence QSPI driver.  This patch is the fix.
+    
+    In the process, I removed a continue, renamed a variable, and
+    reversed the logic of an if-block.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit a934d4c6582064faeb526ffa12cb615cb0fba09b
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri May 16 15:30:57 2014 +0800
+
+    FogBugz #205319: nios2: Use initi and initd to initialize caches
+    
+    Change flushi to initi and flushd to initd instructions.
+    
+    According to nios2 handbook:
+    - Use initi instruction initializes a single
+    instruction cache line. Do not use the flushi instruction because
+    it might cause undesired effects when used to initialize the
+    instruction cache in future Nios II implementations.
+    - Use initd instruction initializes a single data cache line. Do not
+    use the flushd instruction for this purpose, because it writes dirty
+    lines back to memory.
+    
+    [1]http://www.altera.com/literature/hb/nios2/n2sw_nii52007.pdf
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 60b640c40d6112a0a77ee66347cf85b5d581b3b6
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri May 16 15:29:01 2014 +0800
+
+    FogBugz #205359: nios2: flushp after write instruction to memory
+    
+    According to nios2 handbook [1], software needs to execute flushd,
+    flushi and flushp instructions after write instruction to memory.
+    This patch add the flushp instruction after flushd and flushi.
+    
+    [1]http://www.altera.com/literature/hb/nios2/n2sw_nii52007.pdf
+       (page 9-5)
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 6aa14f6845bbd992db29918d961eb4b3c3876983
+Author: Graham Moore <grmoore@altera.com>
+Date:   Thu May 1 14:11:21 2014 -0500
+
+    FogBugz #201449: Fix bug found by sparse tool.
+    
+    The sparse code analysis tools identified a locking problem
+    in the Cadence QSPI driver.  This patch is the fix.
+    
+    In the process, I removed a continue, renamed a variable, and
+    reversed the logic of an if-block.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit c5fd7ff385dca90b73c7ec9ded078a27ed8031ad
+Author: Oleksandr Tymoshenko <gonzo@bluezbox.com>
+Date:   Thu May 15 10:17:54 2014 -0500
+
+    This is the USB host controller used on the Raspbery Pi.
+    
+    swarren changelog:
+    * Fixed prototype of usb_lowlevel_init() to match upstream change.
+    * Fixed a number of unused variable warnings.
+    * Replaced license headers with SPDX tags.
+    * Renamed files DWC -> DWC2 to make it clear which HW it's for.
+    * Many hundreds of checkpatch fixes.
+    
+    Signed-off-by: Oleksandr Tymoshenko <gonzo@bluezbox.com>
+    Signed-off-by: Stephen Warren <swarren@wwdotorg.org>
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 2160a9d4a6ef3d59bc6f6655a3b24e51a2ea4c61
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu May 15 17:10:21 2014 +0800
+
+    FogBugz #192038: Fix SDRAM PLL Phase Aligning
+    
+    To fix the SDRAM PLL phase aligning issue which cause SDRAM
+    calibration failed. This patch will reset the SDRAM VCO twice
+    and implemented software de-bouncing check for PLL lock status.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Using udelay instead for loop implementation
+
+-----------------------------------------------------------------------
+
+

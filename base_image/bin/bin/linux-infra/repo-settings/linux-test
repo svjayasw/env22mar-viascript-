@@ -1,0 +1,11 @@
+repo_path: /usr/local/git/repositories/linux-test.git
+update_tests: nomerge
+email: thor.thayer@intel.com dinh.nguyen@intel.com
+local_upstream:
+crucible_project: linux-test
+release_branch:
+internal_git: gitolite@at-git:linux-test.git
+external_git:
+upstream_branches:
+upstream_tag_regex:
+review_addrs: thor.thayer@intel.com dinh.nguyen@intel.com graham.moore@intel.com

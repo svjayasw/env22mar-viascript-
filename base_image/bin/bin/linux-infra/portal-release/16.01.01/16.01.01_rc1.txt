@@ -1,0 +1,272 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.3
+branch tag  : rel_socfpga-4.3_16.01.01_rc1
+new commits : 3
+5938523 Dinh Nguyen ARM: dts: socfpga: add cap-sd-highspeed for SD/MMC node
+f626601 Dinh Nguyen ARM: socfpga: dts: add clock fields for I2C, UART and USB on Arria10
+38a125b Dinh Nguyen FogBugz #341071: Remove commit 973e60ecef962 to fix SPI1 interrupt
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_16.01.01_rc1
+new commits : 2
+2f92cf4 Dinh Nguyen ARM: socfpga: dts: add clock fields for I2C, UART and USB on Arria10
+6951b70 Matthew Gerlach FogBugz #334036: Fix qspi partitioning
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_16.01.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.3_16.01.01_rc1
+commit: 5938523 Dinh Nguyen ARM: dts: socfpga: add cap-sd-highspeed for SD/MMC node
+
+tag:    rel_socfpga-3.10-ltsi_16.01.01_rc1
+commit: 2f92cf4 Dinh Nguyen ARM: socfpga: dts: add clock fields for I2C, UART and USB on Arria10
+
+tag:    rel_socfpga-3.10-ltsi-rt_16.01.01_rc1
+commit: 60a76aa Paul Zimmerman usb: dwc2: fix thinko in dwc2_hc_set_even_odd_frame()
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.01.01_rc1
+new commits : 3
+d141e21 Chin Liang See arm: Switch to -mno-unaligned-access when supported by the compiler
+8b4e29b Chin Liang See common: board_f: cosmetic use __weak for leds
+07b1888 Chin Liang See inline: use the gcc inline version instead of the c99 one
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.01.01_rc1
+new commits : 3
+4d0bff7 Tien Fong Chee FogBugz #336111: Fixed Arria10 handoff DTS syntax broken for QSPI boot
+48300dd Tien Fong Chee FogBugz #336111: Update Arria10 handoff DTS file for QSPI boot
+e3e985e Tien Fong Chee FogBugz #336111: Adding QSPI defconfig for A10 revA devkit
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.01.01_rc1
+commit: d141e21 Chin Liang See arm: Switch to -mno-unaligned-access when supported by the compiler
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.01.01_rc1
+commit: 4d0bff7 Tien Fong Chee FogBugz #336111: Fixed Arria10 handoff DTS syntax broken for QSPI boot
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.01.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.01.01_rc1
+commit: bc6ea8d Tien Hock Loh FogBugz #327063: Update commit ID to include fix for syschk refresh rate issue
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.01.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.01.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.01.01_rc1
+commit: 8d6e9b4 Yves Vandervennet Support for the kernel v4.3
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.01.01_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.3
+
+commit 5938523338cab45f68bc89e033e50d0a68d1772f
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Jan 5 14:18:16 2016 -0600
+
+    ARM: dts: socfpga: add cap-sd-highspeed for SD/MMC node
+    
+    Enable SD highspeed support for the SoCFPGA Arria10 devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit f626601599fd76d9704fb0b39f1efd2022344a60
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Sep 22 15:55:56 2015 -0500
+
+    ARM: socfpga: dts: add clock fields for I2C, UART and USB on Arria10
+    
+    Add the required clock fields for all the I2C nodes. Also add missing clock
+    fields for UART0 and USB1.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 38a125b1bf2f6c0a9d1a35ac92f7ba8b83cae75b
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Dec 14 11:02:18 2015 -0600
+
+    FogBugz #341071: Remove commit 973e60ecef962 to fix SPI1 interrupt
+    
+    commit 973e60ecef96 ("arm: socfpga: Enable spi and qspi driver for
+    socfpga") has been around during the initial bringup of C5/A5 devices. The
+    SPI interrupts were wrong for this commit and have been corrected by the
+    upstream community. But this commit is getting brought along during
+    an upgrade cycle, which basically undo's the community's fix.
+    
+    For v4.4, the commit 973e60ecef96 ("arm: socfpga: Enable spi and qspi
+    driver for socfpga") should be discarded, but for v4.3, we'll just do
+    a revert and fix.
+    
+    This reverts commit 973e60ecef96 ("arm: socfpga: Enable spi and qspi
+    driver for socfpga").
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 2f92cf4437acf506b48d02e2075288e4f6e249d2
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Sep 22 15:55:56 2015 -0500
+
+    ARM: socfpga: dts: add clock fields for I2C, UART and USB on Arria10
+    
+    Add the required clock fields for all the I2C nodes. Also add missing clock
+    fields for UART0 and USB1.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 6951b703026961a9e58963a73431f2681d1dc09d
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Wed Nov 4 14:02:04 2015 -0800
+
+    FogBugz #334036: Fix qspi partitioning
+    
+    The maximum size for an Arria10 uncompressed
+    RBF is 31 MB.  Increase the space reserved
+    for the RBF to 32 MB and reduce the space for the
+    root file system, accordingly.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit d141e218f3195e305c1521a0d67c81b7cb504b71
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Dec 28 13:36:59 2015 +0800
+
+    arm: Switch to -mno-unaligned-access when supported by the compiler
+    
+    When we tell the compiler to optimize for ARMv7 (and ARMv6 for that
+    matter) it assumes a default of SCTRL.A being cleared and unaligned
+    accesses being allowed and fast at the hardware level.  We set this bit
+    and must pass along -mno-unaligned-access so that the compiler will
+    still breakdown accesses and not trigger a data abort.
+    
+    Cc: Albert ARIBAUD <albert.u.boot@aribaud.net>
+    Cc: Mans Rullgard <mans@mansr.com>
+    Signed-off-by: Tom Rini <trini@ti.com>
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 8b4e29b77dc33c67671494dda73ffaac34770d69
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Dec 9 21:23:54 2015 +0800
+
+    common: board_f: cosmetic use __weak for leds
+    
+    First of all this looks a lot better, but it also
+    prevents a gcc warning (W=1), that the weak function
+    has no previous prototype.
+    
+    cc: Simon Glass <sjg@chromium.org>
+    Signed-off-by: Jeroen Hofstee <jeroen@myspectrum.nl>
+    Acked-by: Simon Glass <sjg@chromium.org>
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 07b18884633b2ceedc66dc85c3889be68b08c924
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Dec 9 21:32:21 2015 +0800
+
+    inline: use the gcc inline version instead of the c99 one
+    
+    To fix build error multiple definition of inline function
+    when using toolchain sourceryg++-2015.11
+    
+    Signed-off-by: Jeroen Hofstee <jeroen@myspectrum.nl>
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Source http://lists.denx.de/pipermail/u-boot/2014-May/180709.html
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 4d0bff7a1dc0bfe17a25ab8b233b4e53e4e7420f
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Fri Dec 4 17:56:58 2015 +0800
+
+    FogBugz #336111: Fixed Arria10 handoff DTS syntax broken for QSPI boot
+    
+    Fixed syntax broken in DTS which cause the DTS compilation
+    failed.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 48300dd17a5ac2a374a8bbb76773fb5401c18a01
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Thu Nov 26 19:35:30 2015 +0800
+
+    FogBugz #336111: Update Arria10 handoff DTS file for QSPI boot
+    
+    Update socfpga_arria10.dts file to the latest generated handoff
+    file from GHRD 15.1.1 B20. This handoff is supporting for Arria 10
+    SoC rev ES2 silicon / Altera Arria10 SoC rev B.1 devkit.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit e3e985e1ac6afff52124d4554c6b09ba356b73b6
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Thu Nov 26 19:34:40 2015 +0800
+
+    FogBugz #336111: Adding QSPI defconfig for A10 revA devkit
+    
+    Adding new defconfig and handoff for Altera
+    Arria 10 Rev A devkit QSPI boot.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+-----------------------------------------------------------------------
+

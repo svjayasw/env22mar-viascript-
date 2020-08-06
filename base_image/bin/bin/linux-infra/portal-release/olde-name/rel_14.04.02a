@@ -1,0 +1,1057 @@
+
+
+If this is Wednesday, this is a script-generated report of what we will push to the portal on Friday.
+
+However if this is Friday, this is a script-generated report of what we just pushed out to the portal.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.13
+branch tag  : rel_socfpga-3.13_14.04.02
+new commits : 31
+1664d72 Ley Foon Tan FogBugz #197544: nios2: update 3c120_defconfig to match hardware
+fa48827 Ley Foon Tan FogBugz #196210: nios2: remove unused __uClinux__
+026e720 Ley Foon Tan FogBugz #195229: nios2: Do not modify tlbmisc.PID while modifying TLB
+3398f34 Ley Foon Tan FogBugz #196811: nios2: Remove unused flat.h
+7285321 Ley Foon Tan FogBugz #196768: nios2: Update gpio node in 3c120_devboard.dts
+74e4e52 Ley Foon Tan FogBugz #196142: nios2: Update TSE in defconfig and dts for 3c120
+a6b4d9d Vince Bridgers FogBugz #192019: Work around unaligned address problems in SGDMA
+dec77bb Vince Bridgers FogBugz #196682: Change ether_addr_copy(a,b) to memcpy(a,b,6)
+a4774fe Dinh Nguyen FogBugz #196384: Fix main_pll clock outputs
+37e1321 Vince Bridgers net: ethernet: Change Ethernet Makefile and Kconfig for Altera TSE driver
+4ee213d Joe Perches altera: Remove casts of pointer to same type
+3e44513 Vince Bridgers Altera TSE: Correct two typos in original submission
+013e2e8 Vince Bridgers Altera TSE: Correct typecast issue detected by kbuild test robot
+0a6b9e3 Vince Bridgers Altera TSE: Set version number by driver's get regs
+71e7996 Vince Bridgers Altera TSE: Add Altera Ethernet Driver Makefile and Kconfig
+8d767f1 Vince Bridgers Altera TSE: Add main and header file for Altera Ethernet Driver
+c5aa43a Vince Bridgers Altera TSE: Add Miscellaneous Files for Altera Ethernet Driver
+862a70f Vince Bridgers Altera TSE: Add Altera Ethernet Driver SGDMA file components
+6385a7c Vince Bridgers Altera TSE: Add Altera Ethernet Driver MSGDMA File Components
+5caeab5 Vince Bridgers dts: Add bindings for the Altera Triple Speed Ethernet driver
+dee7380 Dinh Nguyen Revert "FogBugz #125125: driver/net: Add Altera TSE driver"
+567d58f Dinh Nguyen Revert "FogBugz #173677: TSE v2 Code Drop from GlobalLogic"
+6877280 Dinh Nguyen Revert "FogBugz #187411: Add TSE MSGDMA and SGMDA Hybrid Driver"
+079bba4 Dinh Nguyen Revert "FogBugz #189737: Check phy connect return codes when initializing phy"
+25cc33c Dinh Nguyen Revert "FogBugz #189738: Correct code to obtain mdio child node from devicetree"
+47296c2 Chris Rauer FogBugz #194611: Configure I2C SDA and SCL parameters
+05d95aa Dinh Nguyen FogBugz #193022: Fix warning for allmodconfig on socfpga_defconfig
+b20c905 Dinh Nguyen FogBugz #195004: Move board specific components to board dts files
+4ca0f86 Dinh Nguyen FogBugz #184030: mmc: dw_mmc: fix status error for Kingston brand SD cards
+9f8e1ea Ley Foon Tan FogBugz #194497: mailbox: Fixed compilation warning
+77b28d5 Ley Foon Tan FogBugz #194889: nios2: Export symbol __muldi3
+
+
+++wiki:
+*Branch name*: socfpga-3.13, *Tag name:* rel_socfpga-3.13_14.04.02
+| *ID* | *Comment* | *GIT Commit* |
+| 197544 | nios2: update 3c120_defconfig to match hardware | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=1664d725e27ad58a1e5334681a19fb756ddf9abb ][ 1664d725e27ad58a1e5334681a19fb756ddf9abb ]] |
+| 196210 | nios2: remove unused __uClinux__ | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=fa488271eeed2567139f9bcd974c67b7dbea17d1 ][ fa488271eeed2567139f9bcd974c67b7dbea17d1 ]] |
+| 195229 | nios2: Do not modify tlbmisc.PID while modifying TLB | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=026e7203b1b430a729a1b44a2266f0dc2e2594ee ][ 026e7203b1b430a729a1b44a2266f0dc2e2594ee ]] |
+| 196811 | nios2: Remove unused flat.h | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=3398f34d57f02032a9ed06d042e389f3b5382ab0 ][ 3398f34d57f02032a9ed06d042e389f3b5382ab0 ]] |
+| 196768 | nios2: Update gpio node in 3c120_devboard.dts | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=72853216a830151563f9c8509677f3812db56254 ][ 72853216a830151563f9c8509677f3812db56254 ]] |
+| 196142 | nios2: Update TSE in defconfig and dts for 3c120 | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=74e4e52e9d12945dffc0623cb9f1e41710134b7b ][ 74e4e52e9d12945dffc0623cb9f1e41710134b7b ]] |
+| 192019 | Work around unaligned address problems in SGDMA | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a6b4d9d441380fce6031cd1b2ac6c249fc549bf6 ][ a6b4d9d441380fce6031cd1b2ac6c249fc549bf6 ]] |
+| 196682 | Change ether_addr_copy(a,b) to memcpy(a,b,6) | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=dec77bb563cec166d867029c9dc1bd5a85f6f877 ][ dec77bb563cec166d867029c9dc1bd5a85f6f877 ]] |
+| 196384 | Fix main_pll clock outputs | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a4774feb87e9b01af473beaf24873569ff357313 ][ a4774feb87e9b01af473beaf24873569ff357313 ]] |
+| community | net: ethernet: Change Ethernet Makefile and Kconfig for Altera TSE driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=37e1321a66bab53ac6e17375e138601300e56220 ][ 37e1321a66bab53ac6e17375e138601300e56220 ]] |
+| community | altera: Remove casts of pointer to same type | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=4ee213df05c605fa84c84b59da1e329f11699439 ][ 4ee213df05c605fa84c84b59da1e329f11699439 ]] |
+| community | Altera TSE: Correct two typos in original submission | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=3e445139e8c06b34c56a7a199827e5b7af98d64d ][ 3e445139e8c06b34c56a7a199827e5b7af98d64d ]] |
+| community | Altera TSE: Correct typecast issue detected by kbuild test robot | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=013e2e82245ddb4eeec01693b92070ae6c105d4b ][ 013e2e82245ddb4eeec01693b92070ae6c105d4b ]] |
+| community | Altera TSE: Set version number by driver's get regs | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=0a6b9e3123cb2163fa680193cc7fd9cf726a2fa9 ][ 0a6b9e3123cb2163fa680193cc7fd9cf726a2fa9 ]] |
+| community | Altera TSE: Add Altera Ethernet Driver Makefile and Kconfig | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=71e7996fa399bed3ac9529fb3c2f85279e9b7b45 ][ 71e7996fa399bed3ac9529fb3c2f85279e9b7b45 ]] |
+| community | Altera TSE: Add main and header file for Altera Ethernet Driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=8d767f1e94b9c3fb7ad506e3af0c8eddfe42068f ][ 8d767f1e94b9c3fb7ad506e3af0c8eddfe42068f ]] |
+| community | Altera TSE: Add Miscellaneous Files for Altera Ethernet Driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=c5aa43a6140b61506b0308afd9046ae9108162b7 ][ c5aa43a6140b61506b0308afd9046ae9108162b7 ]] |
+| community | Altera TSE: Add Altera Ethernet Driver SGDMA file components | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=862a70f619d31bb34c0c243dd6c9f9ab675df1c4 ][ 862a70f619d31bb34c0c243dd6c9f9ab675df1c4 ]] |
+| community | Altera TSE: Add Altera Ethernet Driver MSGDMA File Components | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6385a7c7d8d73d47124c3e28a0368c511e22a590 ][ 6385a7c7d8d73d47124c3e28a0368c511e22a590 ]] |
+| community | dts: Add bindings for the Altera Triple Speed Ethernet driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=5caeab5560688b9dc0a0dbfba7f219dc918ac6a4 ][ 5caeab5560688b9dc0a0dbfba7f219dc918ac6a4 ]] |
+| community | Revert "FogBugz #125125: driver/net: Add Altera TSE driver" | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=dee7380608b31f932ad5d6bfb0a3d9c7420a5f60 ][ dee7380608b31f932ad5d6bfb0a3d9c7420a5f60 ]] |
+| community | Revert "FogBugz #173677: TSE v2 Code Drop from GlobalLogic" | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=567d58fce049a17ae0e69e50205cf1c2d13e8faa ][ 567d58fce049a17ae0e69e50205cf1c2d13e8faa ]] |
+| community | Revert "FogBugz #187411: Add TSE MSGDMA and SGMDA Hybrid Driver" | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=68772802ec3ba0dde7ac01c3cdba1d1dae836a2d ][ 68772802ec3ba0dde7ac01c3cdba1d1dae836a2d ]] |
+| community | Revert "FogBugz #189737: Check phy connect return codes when initializing phy" | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=079bba4e05f754a50c8dfc1600e09c5fa6e6b7e8 ][ 079bba4e05f754a50c8dfc1600e09c5fa6e6b7e8 ]] |
+| community | Revert "FogBugz #189738: Correct code to obtain mdio child node from devicetree" | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=25cc33c4e49d87206cd2d5dfab460f4ed1a1502e ][ 25cc33c4e49d87206cd2d5dfab460f4ed1a1502e ]] |
+| 194611 | Configure I2C SDA and SCL parameters | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=47296c2dd5ca850366bc4950cdda5fb57a975603 ][ 47296c2dd5ca850366bc4950cdda5fb57a975603 ]] |
+| 193022 | Fix warning for allmodconfig on socfpga_defconfig | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=05d95aaf23b6bb692ddb08dc67848152c91459b5 ][ 05d95aaf23b6bb692ddb08dc67848152c91459b5 ]] |
+| 195004 | Move board specific components to board dts files | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=b20c905a21f40d4daa0c854ac074e352a1ffb958 ][ b20c905a21f40d4daa0c854ac074e352a1ffb958 ]] |
+| 184030 | mmc: dw_mmc: fix status error for Kingston brand SD cards | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=4ca0f86a242f3205e2eab60448ba0d5a85d2b222 ][ 4ca0f86a242f3205e2eab60448ba0d5a85d2b222 ]] |
+| 194497 | mailbox: Fixed compilation warning | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=9f8e1eabc5054fddcef6ca4bcd7cea5088e9e00d ][ 9f8e1eabc5054fddcef6ca4bcd7cea5088e9e00d ]] |
+| 194889 | nios2: Export symbol __muldi3 | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=77b28d5145c2ac10cc100e5a713560a562b4d261 ][ 77b28d5145c2ac10cc100e5a713560a562b4d261 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.04.02
+new commits : 32
+3c9f82a Ley Foon Tan FogBugz #196210: nios2: remove unused __uClinux__
+6e9f7bd Ley Foon Tan FogBugz #195229: nios2: Do not modify tlbmisc.PID while modifying TLB
+6dec336 Ley Foon Tan FogBugz #196811: nios2: Remove unused flat.h
+6dce84c Ley Foon Tan FogBugz #196768: nios2: Update gpio node in 3c120_devboard.dts
+36ad9ab Ley Foon Tan FogBugz #196142: nios2: Update TSE in defconfig and dts for 3c120
+2dc1542 Vince Bridgers FogBugz #192019: Work around unaligned address problems in SGDMA
+6b0f64f Vince Bridgers FogBugz #196682: Change ether_addr_copy(a,b) to memcpy(a,b,6)
+5d5fb30 Dinh Nguyen FogBugz #196384: Fix main_pll clock outputs
+a7728d3 Tien Hock Loh FogBugz #183984: Do not use _relaxed() function for Altera PIO driver
+1ed6c60 Tien Hock Loh FogBugz #183948: Fix Nios II build failure
+7f2d392 Tien Hock Loh FogBugz #128579: Altera GPIO upstream updates
+201fb3d Vince Bridgers net: ethernet: Change Ethernet Makefile and Kconfig for Altera TSE driver
+a1984ec Joe Perches altera: Remove casts of pointer to same type
+1dd355a Vince Bridgers Altera TSE: Correct two typos in original submission
+174e31b Vince Bridgers Altera TSE: Correct typecast issue detected by kbuild test robot
+f0c4af4 Vince Bridgers Altera TSE: Set version number by driver's get regs
+faebb83 Vince Bridgers Altera TSE: Add Altera Ethernet Driver Makefile and Kconfig
+7a9e7d5 Vince Bridgers Altera TSE: Add main and header file for Altera Ethernet Driver
+54f9248 Vince Bridgers Altera TSE: Add Miscellaneous Files for Altera Ethernet Driver
+6528e90 Vince Bridgers Altera TSE: Add Altera Ethernet Driver SGDMA file components
+b53fa67 Vince Bridgers Altera TSE: Add Altera Ethernet Driver MSGDMA File Components
+6658bd1 Vince Bridgers dts: Add bindings for the Altera Triple Speed Ethernet driver
+8ccfd27 Dinh Nguyen Revert "FogBugz #125125: driver/net: Add Altera TSE driver"
+750d160 Dinh Nguyen Revert "FogBugz #173677: TSE v2 Code Drop from GlobalLogic"
+c352c7f Dinh Nguyen Revert "FogBugz #187411: Add TSE MSGDMA and SGMDA Hybrid Driver"
+aae2c63 Dinh Nguyen Revert "FogBugz #189737: Check phy connect return codes when initializing phy"
+c41202b Dinh Nguyen Revert "FogBugz #189738: Correct code to obtain mdio child node from devicetree"
+0a1e11f Chris Rauer FogBugz #194611: Configure I2C SDA and SCL parameters
+fb49fbf Ley Foon Tan FogBugz #194497: mailbox: Fixed compilation warning
+17b14c3 Ley Foon Tan FogBugz #194889: nios2: Export symbol __muldi3
+9796665 Ley Foon Tan FogBugz #194567: nios2: Remove duplicated setup.h
+5e9157d Ley Foon Tan FogBugz #193935: Fixed warnings during nios2 kernel compilation
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.04.02
+| *ID* | *Comment* | *GIT Commit* |
+| 196210 | nios2: remove unused __uClinux__ | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=3c9f82a743c9b67d1ac2737cbc13324feee2c8a2 ][ 3c9f82a743c9b67d1ac2737cbc13324feee2c8a2 ]] |
+| 195229 | nios2: Do not modify tlbmisc.PID while modifying TLB | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6e9f7bda2a47bcc6be024fe2151acebfb178c8c0 ][ 6e9f7bda2a47bcc6be024fe2151acebfb178c8c0 ]] |
+| 196811 | nios2: Remove unused flat.h | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6dec33680a3ec037b3135c586f1db75eef6f1b21 ][ 6dec33680a3ec037b3135c586f1db75eef6f1b21 ]] |
+| 196768 | nios2: Update gpio node in 3c120_devboard.dts | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6dce84c04c8c36b5a8154a83ce4246d2e48d2427 ][ 6dce84c04c8c36b5a8154a83ce4246d2e48d2427 ]] |
+| 196142 | nios2: Update TSE in defconfig and dts for 3c120 | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=36ad9abea4b41db27302263c3e1aff45d4e5ed01 ][ 36ad9abea4b41db27302263c3e1aff45d4e5ed01 ]] |
+| 192019 | Work around unaligned address problems in SGDMA | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=2dc1542c5e3131da80d4485d6c63be3d6ca33ad5 ][ 2dc1542c5e3131da80d4485d6c63be3d6ca33ad5 ]] |
+| 196682 | Change ether_addr_copy(a,b) to memcpy(a,b,6) | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6b0f64fd19faf2c7174e810cf913f1dd142d342f ][ 6b0f64fd19faf2c7174e810cf913f1dd142d342f ]] |
+| 196384 | Fix main_pll clock outputs | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=5d5fb301f082274519862aa103018dace60c6f81 ][ 5d5fb301f082274519862aa103018dace60c6f81 ]] |
+| 183984 | Do not use _relaxed() function for Altera PIO driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a7728d3c84f7e200c3651307d705117f99878d8a ][ a7728d3c84f7e200c3651307d705117f99878d8a ]] |
+| 183948 | Fix Nios II build failure | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=1ed6c60e39f0dcb89dc867262f013610e9a088b8 ][ 1ed6c60e39f0dcb89dc867262f013610e9a088b8 ]] |
+| 128579 | Altera GPIO upstream updates | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=7f2d392dd382d34b0c3fb78529419ac00e552c51 ][ 7f2d392dd382d34b0c3fb78529419ac00e552c51 ]] |
+| community | net: ethernet: Change Ethernet Makefile and Kconfig for Altera TSE driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=201fb3d308ce407c1c005ecc74523ae563406f90 ][ 201fb3d308ce407c1c005ecc74523ae563406f90 ]] |
+| community | altera: Remove casts of pointer to same type | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a1984ec68641a30fee0c27efd594bf40c5f7bf3a ][ a1984ec68641a30fee0c27efd594bf40c5f7bf3a ]] |
+| community | Altera TSE: Correct two typos in original submission | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=1dd355ab0666ab4d2f910baef2ce18403aab809c ][ 1dd355ab0666ab4d2f910baef2ce18403aab809c ]] |
+| community | Altera TSE: Correct typecast issue detected by kbuild test robot | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=174e31bc1e67133bce62612d7172b821672a93e5 ][ 174e31bc1e67133bce62612d7172b821672a93e5 ]] |
+| community | Altera TSE: Set version number by driver's get regs | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=f0c4af4899bf800849e04b7a0623034ffbec73e3 ][ f0c4af4899bf800849e04b7a0623034ffbec73e3 ]] |
+| community | Altera TSE: Add Altera Ethernet Driver Makefile and Kconfig | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=faebb835966baffe3010b11f316f418128d6577a ][ faebb835966baffe3010b11f316f418128d6577a ]] |
+| community | Altera TSE: Add main and header file for Altera Ethernet Driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=7a9e7d5ed8554393d535442319d35f096fc44c85 ][ 7a9e7d5ed8554393d535442319d35f096fc44c85 ]] |
+| community | Altera TSE: Add Miscellaneous Files for Altera Ethernet Driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=54f9248d65960ad627a4aa075057419f49fce139 ][ 54f9248d65960ad627a4aa075057419f49fce139 ]] |
+| community | Altera TSE: Add Altera Ethernet Driver SGDMA file components | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6528e9030b835de850aa3a330d82245da7833497 ][ 6528e9030b835de850aa3a330d82245da7833497 ]] |
+| community | Altera TSE: Add Altera Ethernet Driver MSGDMA File Components | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=b53fa67c5349bbb51387a35c793100103ebf9298 ][ b53fa67c5349bbb51387a35c793100103ebf9298 ]] |
+| community | dts: Add bindings for the Altera Triple Speed Ethernet driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=6658bd15bda17d4ab3df7e26cf38fda69557e751 ][ 6658bd15bda17d4ab3df7e26cf38fda69557e751 ]] |
+| community | Revert "FogBugz #125125: driver/net: Add Altera TSE driver" | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=8ccfd2783755ec834115ec92007a5694e667a95b ][ 8ccfd2783755ec834115ec92007a5694e667a95b ]] |
+| community | Revert "FogBugz #173677: TSE v2 Code Drop from GlobalLogic" | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=750d160dea59a83de55a7485a35718a385a49ef8 ][ 750d160dea59a83de55a7485a35718a385a49ef8 ]] |
+| community | Revert "FogBugz #187411: Add TSE MSGDMA and SGMDA Hybrid Driver" | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=c352c7ffa316b7051c772332930d8bc20dc44e12 ][ c352c7ffa316b7051c772332930d8bc20dc44e12 ]] |
+| community | Revert "FogBugz #189737: Check phy connect return codes when initializing phy" | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=aae2c631cfe3de28989a0635f94d22f16a6621fc ][ aae2c631cfe3de28989a0635f94d22f16a6621fc ]] |
+| community | Revert "FogBugz #189738: Correct code to obtain mdio child node from devicetree" | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=c41202b37b4e8825d07b3c878204e13ff07e9005 ][ c41202b37b4e8825d07b3c878204e13ff07e9005 ]] |
+| 194611 | Configure I2C SDA and SCL parameters | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=0a1e11faba1e09079f5648176c058e87e3270096 ][ 0a1e11faba1e09079f5648176c058e87e3270096 ]] |
+| 194497 | mailbox: Fixed compilation warning | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=fb49fbf7ef60ca0ffccbcd03cc6ae87b9258b603 ][ fb49fbf7ef60ca0ffccbcd03cc6ae87b9258b603 ]] |
+| 194889 | nios2: Export symbol __muldi3 | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=17b14c314f35bc7132d4c9e182151d576d3e70ac ][ 17b14c314f35bc7132d4c9e182151d576d3e70ac ]] |
+| 194567 | nios2: Remove duplicated setup.h | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=9796665bad86dc0979bb44dc4ba09c1f6dddbf6b ][ 9796665bad86dc0979bb44dc4ba09c1f6dddbf6b ]] |
+| 193935 | Fixed warnings during nios2 kernel compilation | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=5e9157de8459386cc2964d8ff2220e13726b624a ][ 5e9157de8459386cc2964d8ff2220e13726b624a ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.10-ltsi_14.04.02
+commit: 3c9f82a Ley Foon Tan FogBugz #196210: nios2: remove unused __uClinux__
+
+tag:    rel_socfpga-3.13_14.04.02
+commit: 1664d72 Ley Foon Tan FogBugz #197544: nios2: update 3c120_defconfig to match hardware
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.04.02
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.04.02
+commit: 82ff5be Chin Liang See FogBugz #191882: Move away handoff path from common config
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.13
+
+commit 1664d725e27ad58a1e5334681a19fb756ddf9abb
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Apr 15 16:02:23 2014 +0800
+
+    FogBugz #197544: nios2: update 3c120_defconfig to match hardware
+    
+    Hardware have 0x8000 bytes for dcache and icache sizes.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    
+    v2:
+    - fix fogbugz number.
+
+commit fa488271eeed2567139f9bcd974c67b7dbea17d1
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Apr 8 18:49:39 2014 +0800
+
+    FogBugz #196210: nios2: remove unused __uClinux__
+    
+    Define __uClinux__ is unused after NOMMU removal.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 026e7203b1b430a729a1b44a2266f0dc2e2594ee
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Apr 9 18:27:05 2014 +0800
+
+    FogBugz #195229: nios2: Do not modify tlbmisc.PID while modifying TLB
+    
+    Currently tlbmisc.PID register changes value, while TLB entries are
+    flushed. For a tracing the CPU this is not nice, because it will
+    indicate a context switch to the trace tool. This fix to keep the
+    tlbmisc.PID value unmodified, while flushing TLB entries, since this
+    means you always have got the correct PID value in tlbmisc
+    (the PID value of the current mmu context).
+    
+    v2:
+    - Move tlbmisc register defines to registers.h, we already have tlbmisc
+      defines in registers.h originally.
+    - Change to use tlbmisc register defines.
+    - New helper function to get misc and pid.
+    
+    Signed-off-by: Ingo Rohloff <Ingo.Rohloff@lauterbach.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 3398f34d57f02032a9ed06d042e389f3b5382ab0
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Apr 10 16:14:58 2014 +0800
+
+    FogBugz #196811: nios2: Remove unused flat.h
+    
+    Remove unused flat.h. It is for uClinux FLAT format binaries.
+    Nios II no longer support uClinux (NOMMU).
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 72853216a830151563f9c8509677f3812db56254
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Apr 10 11:24:43 2014 +0800
+
+    FogBugz #196768: nios2: Update gpio node in 3c120_devboard.dts
+    
+    New dts parameter (altr,interrupt_type) required by Altera GPIO driver.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 74e4e52e9d12945dffc0623cb9f1e41710134b7b
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Apr 10 11:04:40 2014 +0800
+
+    FogBugz #196142: nios2: Update TSE in defconfig and dts for 3c120
+    
+    - update TSE binding in dts
+    - update to use CONFIG_ALTERA_TSE
+    
+    v2:
+    - Remove gpio change in dts.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit a6b4d9d441380fce6031cd1b2ac6c249fc549bf6
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Tue Apr 8 20:16:13 2014 -0500
+
+    FogBugz #192019: Work around unaligned address problems in SGDMA
+    
+    This patch works around problems in the SGDMA (not MSGDMA) where
+    SGDMA would intermittently hang and fail to receive any more
+    packets after DMA'ing a packet to an unaligned address in the
+    Ethernet packet receive case. This requires the SGDMA to be
+    configured such that unaligned addresses are not supported and
+    the Triple Speed Ethernet to be configured such that packets
+    are always aligned to a 32-bit boundary in the internal TSE FIFO.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+    ---
+    v2:
+    - Remove extra line feed per review comments in
+      altera_sgdma.c
+    - change function prototype of rx_add_desc to return
+      void instead of int per review comments
+
+commit dec77bb563cec166d867029c9dc1bd5a85f6f877
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Tue Apr 8 20:04:48 2014 -0500
+
+    FogBugz #196682: Change ether_addr_copy(a,b) to memcpy(a,b,6)
+    
+    Upstreamed driver required use of ether_addr_copy(a,b) per
+    community comments, backporting requires reversion to
+    memcpy(a,b,6)
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit a4774feb87e9b01af473beaf24873569ff357313
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 8 16:35:07 2014 -0500
+
+    FogBugz #196384: Fix main_pll clock outputs
+    
+    The C0(mpu_clk), C1(main_clk), and C2(dbg_base_clk) outputs from the main
+    PLL go through a pre-divider before coming into the system. This patch
+    represents those dividers in the DTS and updates the clock driver to read
+    those pre-divider values.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 37e1321a66bab53ac6e17375e138601300e56220
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:41 2014 -0500
+
+    net: ethernet: Change Ethernet Makefile and Kconfig for Altera TSE driver
+    
+    This patch changes the Ethernet Makefile and Kconfig files to add the Altera
+    Ethernet driver component.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 4ee213df05c605fa84c84b59da1e329f11699439
+Author: Joe Perches <joe@perches.com>
+Date:   Mon Mar 24 13:15:34 2014 -0700
+
+    altera: Remove casts of pointer to same type
+    
+    Casting a pointer to a pointer of the same type is pointless,
+    so remove these unnecessary casts.
+    
+    Done via coccinelle script:
+    
+    $ cat typecast_2.cocci
+    @@
+    type T;
+    T *foo;
+    @@
+    
+    -	(T *)foo
+    +	foo
+    
+    Signed-off-by: Joe Perches <joe@perches.com>
+    Acked-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 3e445139e8c06b34c56a7a199827e5b7af98d64d
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Mar 20 20:43:17 2014 -0500
+
+    Altera TSE: Correct two typos in original submission
+    
+    This patch addresses two typos in the original driver submission. One derived
+    from a cut & paste error, and another is a misspelling.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 013e2e82245ddb4eeec01693b92070ae6c105d4b
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Mar 20 20:43:16 2014 -0500
+
+    Altera TSE: Correct typecast issue detected by kbuild test robot
+    
+    This patch addresses a portable pointer arithmetic issue in the
+    original submission found by the kbuild test robot.
+    
+    config: make ARCH=i386 allyesconfig
+    
+       altera_sgdma.c: In function 'sgdma_txphysaddr':
+    >> altera_sgdma.c:393:33: warning: cast from
+    >> pointer to integer of different size [-Wpointer-to-int-cast]
+         dma_addr_t offs = (dma_addr_t)((dma_addr_t)desc -
+                                        ^
+    >> altera_sgdma.c:394:5: warning: cast from
+    >> pointer to integer of different size [-Wpointer-to-int-cast]
+            (dma_addr_t)priv->tx_dma_desc);
+            ^
+       altera_sgdma.c: In function 'sgdma_rxphysaddr':
+    >> altera_sgdma.c:403:33: warning: cast from
+    >> pointer to integer of different size [-Wpointer-to-int-cast]
+         dma_addr_t offs = (dma_addr_t)((dma_addr_t)desc -
+                                        ^
+    >> altera_sgdma.c:404:5: warning: cast from
+    >> pointer to integer of different size [-Wpointer-to-int-cast]
+            (dma_addr_t)priv->rx_dma_desc);
+            ^
+    
+    Reported-by: kbuild test robot <fengguang.wu@intel.com>
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 0a6b9e3123cb2163fa680193cc7fd9cf726a2fa9
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Mar 20 20:43:15 2014 -0500
+
+    Altera TSE: Set version number by driver's get regs
+    
+    Set the version number returned by the driver's get regs routine
+    invoked by ethtool so formatting can be dependent on the version
+    number returned, and any interesting formatted output can check
+    the version number for specific types of register data returned.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 71e7996fa399bed3ac9529fb3c2f85279e9b7b45
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:39 2014 -0500
+
+    Altera TSE: Add Altera Ethernet Driver Makefile and Kconfig
+    
+    This patch adds the Altera Triple Speed Ethernet Makfile and
+    Kconfig file.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 8d767f1e94b9c3fb7ad506e3af0c8eddfe42068f
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:38 2014 -0500
+
+    Altera TSE: Add main and header file for Altera Ethernet Driver
+    
+    This patch adds the main driver and header file for the Altera Triple
+    Speed Ethernet driver.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit c5aa43a6140b61506b0308afd9046ae9108162b7
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:37 2014 -0500
+
+    Altera TSE: Add Miscellaneous Files for Altera Ethernet Driver
+    
+    This patch adds miscellaneous files for the Altera Ethernet Driver,
+    including ethtool support.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 862a70f619d31bb34c0c243dd6c9f9ab675df1c4
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:36 2014 -0500
+
+    Altera TSE: Add Altera Ethernet Driver SGDMA file components
+    
+    This patch adds the SGDMA soft IP support for the Altera Triple
+    Speed Ethernet driver.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 6385a7c7d8d73d47124c3e28a0368c511e22a590
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:35 2014 -0500
+
+    Altera TSE: Add Altera Ethernet Driver MSGDMA File Components
+    
+    This patch adds the MSGDMA soft IP support for the Altera Triple
+    Speed Ethernet driver.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 5caeab5560688b9dc0a0dbfba7f219dc918ac6a4
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:33 2014 -0500
+
+    dts: Add bindings for the Altera Triple Speed Ethernet driver
+    
+    This patch adds a bindings description for the Altera Triple Speed Ethernet
+    (TSE) driver. The bindings support the legacy SGDMA soft IP as well as the
+    preferred MSGDMA soft IP. The TSE can be configured and synthesized in soft
+    logic using Altera's Quartus toolchain. Please consult the bindings document
+    for supported options.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit dee7380608b31f932ad5d6bfb0a3d9c7420a5f60
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 1 21:16:13 2014 -0500
+
+    Revert "FogBugz #125125: driver/net: Add Altera TSE driver"
+    
+    This reverts commit 55cab89bd2f44639d8cba998122aa9c6b435af31.
+
+commit 567d58fce049a17ae0e69e50205cf1c2d13e8faa
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 1 21:16:01 2014 -0500
+
+    Revert "FogBugz #173677: TSE v2 Code Drop from GlobalLogic"
+    
+    This reverts commit 64cb6b3fec0270531d253757bf8deee3f4cd31d9.
+
+commit 68772802ec3ba0dde7ac01c3cdba1d1dae836a2d
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 1 21:15:37 2014 -0500
+
+    Revert "FogBugz #187411: Add TSE MSGDMA and SGMDA Hybrid Driver"
+    
+    This reverts commit 5453b8f5bf607bdd80c08d7dfd24a701f0a39f89.
+
+commit 079bba4e05f754a50c8dfc1600e09c5fa6e6b7e8
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 1 21:15:18 2014 -0500
+
+    Revert "FogBugz #189737: Check phy connect return codes when initializing phy"
+    
+    This reverts commit 8ffc8667ee41e3359cca57d1c1b523973705be41.
+
+commit 25cc33c4e49d87206cd2d5dfab460f4ed1a1502e
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 1 21:15:03 2014 -0500
+
+    Revert "FogBugz #189738: Correct code to obtain mdio child node from devicetree"
+    
+    This reverts commit bd9d1aae1d420f35775d7f38b5e6863169216274.
+
+commit 47296c2dd5ca850366bc4950cdda5fb57a975603
+Author: Chris Rauer <crauer@altera.com>
+Date:   Fri Apr 4 10:05:51 2014 -0700
+
+    FogBugz #194611: Configure I2C SDA and SCL parameters
+    
+    This patch slows down the i2c frequency from 100khz to 50khz to
+    make the LCD work
+    
+    v2:
+    rebased to new dts changes
+    fixed falling time values and verified with logical analyzer
+    
+    Signed-off-by: Chris Rauer <crauer@altera.com>
+
+commit 05d95aaf23b6bb692ddb08dc67848152c91459b5
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Mon Mar 24 17:10:13 2014 -0500
+
+    FogBugz #193022: Fix warning for allmodconfig on socfpga_defconfig
+    
+    warning: (ARCH_SOCFPGA) selects PL310_ERRATA_753970 which has unmet direct
+    dependencies (CACHE_PL310)
+    
+    Also remove VIRT_TO_BUS, because this ia no longer needed with the new USB
+    driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit b20c905a21f40d4daa0c854ac074e352a1ffb958
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Apr 2 15:18:00 2014 -0500
+
+    FogBugz #195004: Move board specific components to board dts files
+    
+    Move board components from socfpga_cyclone5.dtsi and socfpga_arria5.dtsi
+    into the boards specific files.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    ---
+    v2: Deeper cleaning
+
+commit 4ca0f86a242f3205e2eab60448ba0d5a85d2b222
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Mar 26 09:03:10 2014 -0500
+
+    FogBugz #184030: mmc: dw_mmc: fix status error for Kingston brand SD cards
+    
+    commits [90c2143a8f mmc: dw_mmc: guarantee stop-abort cmd in data errors]
+    and [e352c813110 mmc: dw_mmc: rework the code related to cmd/data
+    completion] caused the SD/MMC DMA interface to stop working on Kingston
+    brand SD cards.
+    
+    This patch fixes the issue where the SD/MMC driver would fail initializing
+    the Kingston branded SD card.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 9f8e1eabc5054fddcef6ca4bcd7cea5088e9e00d
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Apr 3 14:02:22 2014 +0800
+
+    FogBugz #194497: mailbox: Fixed compilation warning
+    
+    Compilation warning when compiling for x86_64.
+    config: make ARCH=x86_64 allmodconfig
+    drivers/mailbox/mailbox-altera.c:337:3: warning:
+    format '%d' expects argument of type 'int', but
+    argument 3 has type 'long unsigned int' [-Wformat=]
+    
+    v2:
+    - Change to use %zu
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 77b28d5145c2ac10cc100e5a713560a562b4d261
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Apr 2 17:26:27 2014 +0800
+
+    FogBugz #194889: nios2: Export symbol __muldi3
+    
+    make modules TSE drivers have this error:
+    ERROR: "__muldi3" [drivers/net/ethernet/altera/altera_tse.ko] undefined!
+    
+    __muldi3 is a function in libgcc.a. So, we need to export this symbol
+    for loadable module to use.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 3c9f82a743c9b67d1ac2737cbc13324feee2c8a2
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Apr 8 18:49:39 2014 +0800
+
+    FogBugz #196210: nios2: remove unused __uClinux__
+    
+    Define __uClinux__ is unused after NOMMU removal.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 6e9f7bda2a47bcc6be024fe2151acebfb178c8c0
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Apr 9 18:27:05 2014 +0800
+
+    FogBugz #195229: nios2: Do not modify tlbmisc.PID while modifying TLB
+    
+    Currently tlbmisc.PID register changes value, while TLB entries are
+    flushed. For a tracing the CPU this is not nice, because it will
+    indicate a context switch to the trace tool. This fix to keep the
+    tlbmisc.PID value unmodified, while flushing TLB entries, since this
+    means you always have got the correct PID value in tlbmisc
+    (the PID value of the current mmu context).
+    
+    v2:
+    - Move tlbmisc register defines to registers.h, we already have tlbmisc
+      defines in registers.h originally.
+    - Change to use tlbmisc register defines.
+    - New helper function to get misc and pid.
+    
+    Signed-off-by: Ingo Rohloff <Ingo.Rohloff@lauterbach.com>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 6dec33680a3ec037b3135c586f1db75eef6f1b21
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Apr 10 16:14:58 2014 +0800
+
+    FogBugz #196811: nios2: Remove unused flat.h
+    
+    Remove unused flat.h. It is for uClinux FLAT format binaries.
+    Nios II no longer support uClinux (NOMMU).
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 6dce84c04c8c36b5a8154a83ce4246d2e48d2427
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Apr 10 11:24:43 2014 +0800
+
+    FogBugz #196768: nios2: Update gpio node in 3c120_devboard.dts
+    
+    New dts parameter (altr,interrupt_type) required by Altera GPIO driver.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 36ad9abea4b41db27302263c3e1aff45d4e5ed01
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Apr 10 11:04:40 2014 +0800
+
+    FogBugz #196142: nios2: Update TSE in defconfig and dts for 3c120
+    
+    - update TSE binding in dts
+    - update to use CONFIG_ALTERA_TSE
+    
+    v2:
+    - Remove gpio change in dts.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 2dc1542c5e3131da80d4485d6c63be3d6ca33ad5
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Tue Apr 8 20:16:13 2014 -0500
+
+    FogBugz #192019: Work around unaligned address problems in SGDMA
+    
+    This patch works around problems in the SGDMA (not MSGDMA) where
+    SGDMA would intermittently hang and fail to receive any more
+    packets after DMA'ing a packet to an unaligned address in the
+    Ethernet packet receive case. This requires the SGDMA to be
+    configured such that unaligned addresses are not supported and
+    the Triple Speed Ethernet to be configured such that packets
+    are always aligned to a 32-bit boundary in the internal TSE FIFO.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+    ---
+    v2:
+    - Remove extra line feed per review comments in
+      altera_sgdma.c
+    - change function prototype of rx_add_desc to return
+      void instead of int per review comments
+
+commit 6b0f64fd19faf2c7174e810cf913f1dd142d342f
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Tue Apr 8 20:04:48 2014 -0500
+
+    FogBugz #196682: Change ether_addr_copy(a,b) to memcpy(a,b,6)
+    
+    Upstreamed driver required use of ether_addr_copy(a,b) per
+    community comments, backporting requires reversion to
+    memcpy(a,b,6)
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit 5d5fb301f082274519862aa103018dace60c6f81
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 8 16:35:07 2014 -0500
+
+    FogBugz #196384: Fix main_pll clock outputs
+    
+    The C0(mpu_clk), C1(main_clk), and C2(dbg_base_clk) outputs from the main
+    PLL go through a pre-divider before coming into the system. This patch
+    represents those dividers in the DTS and updates the clock driver to read
+    those pre-divider values.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit a7728d3c84f7e200c3651307d705117f99878d8a
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Tue Apr 1 10:35:18 2014 +0800
+
+    FogBugz #183984: Do not use _relaxed() function for Altera PIO driver
+    
+    This is to remove the use of _relaxed() function from Altera PIO driver.
+    The FPGA driver should be more generic and not use _relaxed() function
+    since not all architecture supports _relaxed() function
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+commit 1ed6c60e39f0dcb89dc867262f013610e9a088b8
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Fri Feb 28 16:58:12 2014 +0800
+
+    FogBugz #183948: Fix Nios II build failure
+    
+    GPIO Altera driver uses writel_relaxed, which doesn't exist in nios2 io.h.
+    This is to add the _relaxed function to io.h.
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+commit 7f2d392dd382d34b0c3fb78529419ac00e552c51
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Thu Jan 30 12:18:13 2014 +0800
+
+    FogBugz #128579: Altera GPIO upstream updates
+    
+    This change is to address feedbacks from the Linux community on upstreaming
+    the Altera GPIO driver. This includes updating the device tree binding
+    naming convensions, coding style, etc.
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+commit 201fb3d308ce407c1c005ecc74523ae563406f90
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:41 2014 -0500
+
+    net: ethernet: Change Ethernet Makefile and Kconfig for Altera TSE driver
+    
+    This patch changes the Ethernet Makefile and Kconfig files to add the Altera
+    Ethernet driver component.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit a1984ec68641a30fee0c27efd594bf40c5f7bf3a
+Author: Joe Perches <joe@perches.com>
+Date:   Mon Mar 24 13:15:34 2014 -0700
+
+    altera: Remove casts of pointer to same type
+    
+    Casting a pointer to a pointer of the same type is pointless,
+    so remove these unnecessary casts.
+    
+    Done via coccinelle script:
+    
+    $ cat typecast_2.cocci
+    @@
+    type T;
+    T *foo;
+    @@
+    
+    -	(T *)foo
+    +	foo
+    
+    Signed-off-by: Joe Perches <joe@perches.com>
+    Acked-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 1dd355ab0666ab4d2f910baef2ce18403aab809c
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Mar 20 20:43:17 2014 -0500
+
+    Altera TSE: Correct two typos in original submission
+    
+    This patch addresses two typos in the original driver submission. One derived
+    from a cut & paste error, and another is a misspelling.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 174e31bc1e67133bce62612d7172b821672a93e5
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Mar 20 20:43:16 2014 -0500
+
+    Altera TSE: Correct typecast issue detected by kbuild test robot
+    
+    This patch addresses a portable pointer arithmetic issue in the
+    original submission found by the kbuild test robot.
+    
+    config: make ARCH=i386 allyesconfig
+    
+       altera_sgdma.c: In function 'sgdma_txphysaddr':
+    >> altera_sgdma.c:393:33: warning: cast from
+    >> pointer to integer of different size [-Wpointer-to-int-cast]
+         dma_addr_t offs = (dma_addr_t)((dma_addr_t)desc -
+                                        ^
+    >> altera_sgdma.c:394:5: warning: cast from
+    >> pointer to integer of different size [-Wpointer-to-int-cast]
+            (dma_addr_t)priv->tx_dma_desc);
+            ^
+       altera_sgdma.c: In function 'sgdma_rxphysaddr':
+    >> altera_sgdma.c:403:33: warning: cast from
+    >> pointer to integer of different size [-Wpointer-to-int-cast]
+         dma_addr_t offs = (dma_addr_t)((dma_addr_t)desc -
+                                        ^
+    >> altera_sgdma.c:404:5: warning: cast from
+    >> pointer to integer of different size [-Wpointer-to-int-cast]
+            (dma_addr_t)priv->rx_dma_desc);
+            ^
+    
+    Reported-by: kbuild test robot <fengguang.wu@intel.com>
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit f0c4af4899bf800849e04b7a0623034ffbec73e3
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Mar 20 20:43:15 2014 -0500
+
+    Altera TSE: Set version number by driver's get regs
+    
+    Set the version number returned by the driver's get regs routine
+    invoked by ethtool so formatting can be dependent on the version
+    number returned, and any interesting formatted output can check
+    the version number for specific types of register data returned.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit faebb835966baffe3010b11f316f418128d6577a
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:39 2014 -0500
+
+    Altera TSE: Add Altera Ethernet Driver Makefile and Kconfig
+    
+    This patch adds the Altera Triple Speed Ethernet Makfile and
+    Kconfig file.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 7a9e7d5ed8554393d535442319d35f096fc44c85
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:38 2014 -0500
+
+    Altera TSE: Add main and header file for Altera Ethernet Driver
+    
+    This patch adds the main driver and header file for the Altera Triple
+    Speed Ethernet driver.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 54f9248d65960ad627a4aa075057419f49fce139
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:37 2014 -0500
+
+    Altera TSE: Add Miscellaneous Files for Altera Ethernet Driver
+    
+    This patch adds miscellaneous files for the Altera Ethernet Driver,
+    including ethtool support.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 6528e9030b835de850aa3a330d82245da7833497
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:36 2014 -0500
+
+    Altera TSE: Add Altera Ethernet Driver SGDMA file components
+    
+    This patch adds the SGDMA soft IP support for the Altera Triple
+    Speed Ethernet driver.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit b53fa67c5349bbb51387a35c793100103ebf9298
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:35 2014 -0500
+
+    Altera TSE: Add Altera Ethernet Driver MSGDMA File Components
+    
+    This patch adds the MSGDMA soft IP support for the Altera Triple
+    Speed Ethernet driver.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 6658bd15bda17d4ab3df7e26cf38fda69557e751
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Mon Mar 17 17:52:33 2014 -0500
+
+    dts: Add bindings for the Altera Triple Speed Ethernet driver
+    
+    This patch adds a bindings description for the Altera Triple Speed Ethernet
+    (TSE) driver. The bindings support the legacy SGDMA soft IP as well as the
+    preferred MSGDMA soft IP. The TSE can be configured and synthesized in soft
+    logic using Altera's Quartus toolchain. Please consult the bindings document
+    for supported options.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 8ccfd2783755ec834115ec92007a5694e667a95b
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 1 21:16:13 2014 -0500
+
+    Revert "FogBugz #125125: driver/net: Add Altera TSE driver"
+    
+    This reverts commit 55cab89bd2f44639d8cba998122aa9c6b435af31.
+
+commit 750d160dea59a83de55a7485a35718a385a49ef8
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 1 21:16:01 2014 -0500
+
+    Revert "FogBugz #173677: TSE v2 Code Drop from GlobalLogic"
+    
+    This reverts commit 64cb6b3fec0270531d253757bf8deee3f4cd31d9.
+
+commit c352c7ffa316b7051c772332930d8bc20dc44e12
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Apr 9 10:02:53 2014 -0500
+
+    Revert "FogBugz #187411: Add TSE MSGDMA and SGMDA Hybrid Driver"
+    
+    This reverts commit a02fb5c47924fadaf2c4be57eedae730db1a5279.
+
+commit aae2c631cfe3de28989a0635f94d22f16a6621fc
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Apr 9 10:01:28 2014 -0500
+
+    Revert "FogBugz #189737: Check phy connect return codes when initializing phy"
+    
+    This reverts commit 277780bc7bc427fdddb0145e9c44ce8b9ab38c76.
+
+commit c41202b37b4e8825d07b3c878204e13ff07e9005
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Apr 1 21:15:03 2014 -0500
+
+    Revert "FogBugz #189738: Correct code to obtain mdio child node from devicetree"
+    
+    This reverts commit bd9d1aae1d420f35775d7f38b5e6863169216274.
+
+commit 0a1e11faba1e09079f5648176c058e87e3270096
+Author: Chris Rauer <crauer@altera.com>
+Date:   Wed Apr 9 09:14:59 2014 -0700
+
+    FogBugz #194611: Configure I2C SDA and SCL parameters
+    
+    This patch slows down the i2c frequency from 100khz to 50khz to
+    make the LCD work
+    
+    v2:
+    rebased to new dts changes
+    fixed falling time values and verified with logical analyzer
+    
+    v3:
+    migrated to 3.10 ltsi branch
+    
+    Signed-off-by: Chris Rauer <crauer@altera.com>
+
+commit fb49fbf7ef60ca0ffccbcd03cc6ae87b9258b603
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Apr 3 14:02:22 2014 +0800
+
+    FogBugz #194497: mailbox: Fixed compilation warning
+    
+    Compilation warning when compiling for x86_64.
+    config: make ARCH=x86_64 allmodconfig
+    drivers/mailbox/mailbox-altera.c:337:3: warning:
+    format '%d' expects argument of type 'int', but
+    argument 3 has type 'long unsigned int' [-Wformat=]
+    
+    v2:
+    - Change to use %zu
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 17b14c314f35bc7132d4c9e182151d576d3e70ac
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Apr 2 17:26:27 2014 +0800
+
+    FogBugz #194889: nios2: Export symbol __muldi3
+    
+    make modules TSE drivers have this error:
+    ERROR: "__muldi3" [drivers/net/ethernet/altera/altera_tse.ko] undefined!
+    
+    __muldi3 is a function in libgcc.a. So, we need to export this symbol
+    for loadable module to use.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 9796665bad86dc0979bb44dc4ba09c1f6dddbf6b
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Apr 1 18:00:21 2014 +0800
+
+    FogBugz #194567: nios2: Remove duplicated setup.h
+    
+    Integrate change from socfpga-3.13 branch, commit 0cd401716fa25.
+    Duplicated with arch/nios2/include/asm/setup.h.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 5e9157de8459386cc2964d8ff2220e13726b624a
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Apr 1 14:04:37 2014 +0800
+
+    FogBugz #193935: Fixed warnings during nios2 kernel compilation
+    
+    Used generic posix_type.h. Integrated commit in 3.13 branch
+    (commit 0cd401716fa25)
+    
+    Example warnings:
+    fs/jffs2/read.c:47:3: warning: format '%zx' expects argument of type
+    'size_t', but argument 4 has type 'long unsigned int' [-Wformat]
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+

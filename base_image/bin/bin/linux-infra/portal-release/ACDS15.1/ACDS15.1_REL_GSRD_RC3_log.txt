@@ -1,0 +1,31 @@
+ACDS15.1_REL_GSRD_RC3
+
+/home/atull/repos/internal/angstrom-socfpga
+db71095 Tien Hock Loh : FogBugz #323201: Update branch of meta-alteraTo git@github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         ACDS15.1_REL_GSRD_RC3 -> ACDS15.1_REL_GSRD_RC3
+Everything up-to-date
+
+/home/atull/repos/internal/linux-refdesigns
+e06d1b3 Tien Hock Loh : FogBugz #295730: Add system checking applicationTo git@github.com:altera-opensource/linux-refdesigns.git
+ * [new tag]         ACDS15.1_REL_GSRD_RC3 -> ACDS15.1_REL_GSRD_RC3
+Everything up-to-date
+
+/home/atull/repos/internal/linux-socfpga
+09232c8 Chee Nouk Phoon : FogBugz #323787-2: Nios2: defconfig: Max10: Add ADC and 16550 UARTTo git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         ACDS15.1_REL_GSRD_RC3 -> ACDS15.1_REL_GSRD_RC3
+Everything up-to-date
+
+/home/atull/repos/internal/meta-altera
+2cccf8e Tien Hock Loh : FogBugz #323810: Update u-boot recipe to use githubTo git@github.com:altera-opensource/meta-altera
+ * [new tag]         ACDS15.1_REL_GSRD_RC3 -> ACDS15.1_REL_GSRD_RC3
+Everything up-to-date
+
+/home/atull/repos/internal/meta-altera-refdes
+ebae0b1 Tien Hock Loh : FogBugz #323201: Update GSRD branches to 15.1To git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         ACDS15.1_REL_GSRD_RC3 -> ACDS15.1_REL_GSRD_RC3
+Everything up-to-date
+
+/home/atull/repos/internal/uboot-socfpga
+353283b Tien Fong Chee : FogBugz #241114: Fixed the compilation issue when BOOT_FROM_NAND is checked on preloader.To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         ACDS15.1_REL_GSRD_RC3 -> ACDS15.1_REL_GSRD_RC3
+not pushing branch

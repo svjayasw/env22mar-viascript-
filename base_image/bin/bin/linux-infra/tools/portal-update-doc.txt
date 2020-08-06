@@ -1,0 +1,635 @@
+portal-update.py documentation
+
+updated 6/11/2019
+
+--------------
+ACDS Approvals
+--------------
+
+Currently ACDS releases are approved by:
+  Ying Cheh Tan
+  Embedded Release Manager/Intel Programmable Solutions Group
+
+Sometimes emails will come that request tags to be pushed (emails that
+do not include proper approval).  You will need to reply, cc Ying Cheh,
+and ask for approval before you can update github.
+
+------------------------------
+Portal script operating manual
+------------------------------
+
+Please read all this document and stay out of trouble or you will have
+lots of tags to fix.
+
+Note that portal-update.py is used for both GSRD and Linux releases.
+There are some differences in policy for the two releases but the
+script supports these differences.
+
+I am currently running Ubuntu 16.04.5 LTS.  The script will probably
+work on other Linux distros but YMMV.
+
+----------------------------------------
+--- portal update script environment ---
+----------------------------------------
+
+   **  ~/bin/linux-infra
+
+portal-update.py is part of the linux-infra suite and will not
+function separately from linux-infra.  The scripts should autodetect
+where linux-infra has been cloned, but really I recommend creating a
+~/bin and cloning linux-infra there.  Then edit your ~/.bashrc to add
+it to your path.
+
+   ** ~/bin/linux-infra/portal-release/
+
+The portal script saves logs and portal reports to subdirectories of
+this location, such as ~/bin/linux-infra/portal-release/18.09.03/ or
+~/bin/linux-infra/portal-release/ACDS18.1/  It is up to the person
+running the script to commit these logs and push them.  Do a git
+log of this directory and you'll see what these commits should look
+like.
+
+   ** ~/repos/internal and ~/repos/portal
+
+This is where portal-update.py clones some git repos.  These repos
+should not be used for development, keep them clean and don't touch
+them.  The first time you run portal-update.py, the cloning will take
+some time (maybe 45 minutes, maybe more) while subsequent runs will
+only take a minute or two.  I recommend that you chose a machine that
+you will be doing releases from and stick with it.
+
+   ** ~/repos/internal/linux-tag
+
+portal-update.py will clone the linux-tag repo to this location.
+portal-update.py will use two scripts in this repo to know what
+repos and which branch of those repos to release.  When you want
+to add a repo to the release or change what branch is released,
+this is where those settings are.  The two scripts are:
+
+ * release-branch-config.sh      = config for the biweekly update
+ * acds-release-branch-config.sh = config for the ACDS releases
+
+Note that if you make changes to linux-tag, you will need to push
+those changes to at-git.  This repo gets tagged for every release.
+
+-------------------------------------------------------
+--- Setting up to do releases with portal-update.py ---
+-------------------------------------------------------
+
+--- Clone linux-infra to ~/bin/linux-infra
+ $ mkdir ~/bin
+ $ cd ~/bin
+ $ git clone gitolite@at-git:linux-infra
+
+--- Add linux-infra/tools to your PATH in your ~/.bashrc:
+export PATH=$PATH:~/bin/linux-infra/tools
+
+--- Add the following aliases or similar to your ~/.bashrc
+alias cdp='cd ~/bin/linux-infra/portal-release/"$(grep ^rel= ~/.portal-update-Linux.conf |cut -d= -f2|cut -d_ -f1)"'
+alias cdpp='cd ~/bin/linux-infra/portal-release/"$(grep ^rel= ~/.portal-update-GSRD.conf |cut -d= -f2|cut -d_ -f1)"'
+
+'cdp' will figure out where your current linux release logs directory
+is and cd to it.  'cdpp' is the same for GSRD release logs directory.
+
+-------------------
+--- Terminology ---
+-------------------
+
+"internal git" == git repos on the at-git server internal to Intel network
+
+"external git" == "portal git" == world viewable github repos
+
+"the portal script" == portal-update.py
+
+"fast-forward git push" == See the "Note about fast-forwards" in the
+git push man page or on https://git-scm.com/docs/git-push
+Explaining this much about git is beyond the scope of this document,
+but it is important that you have a comfortable understanding of this
+basic git concept before proceeding.  Don't skip this.
+
+-------------------------------------------------------------------
+--- A few points of policy for all git releases (Linux or GSRD) ---
+-------------------------------------------------------------------
+
+These points of policy aren't arbitrary decisions.  Think about the
+consequences before breaking any of these.  Then...don't do it anyway
+because you probably didn't think of how you are messing yourself or
+your customers up and all the pain you are about to cause.
+
+All commits that are to be pushed to external git must first be pushed to
+internal git.
+
+There are specific internal git repos are designated as repos that we
+can release to github from, such as linux-socfpga.  Other repos are
+not, such as linux-bringup, which has lots of unfinished branches that
+are for internal collaboration only.
+
+We will never rebase a branch that is on the portal.  Any new commits have
+to go on top of the current branch as "fast-forward" pushes.  The reason
+for that is rebasing a branch changes the git history and the commit sha's
+for all commits after the point of the rebase.  That makes all previous
+tags unusable.  We do not want to break previous release tags.
+
+------------------------------------------
+--- Portal Policies for Linux Releases ---
+------------------------------------------
+
+We keep only 4 branches of Linux kernel on the portal at any one time:
+ * ltsi            - i.e. socfpga-4.9.78-ltsi
+ * rt              - i.e. socfpga-4.9.76-ltsi-rt
+ * Latest          - i.e. socfpga-4.18
+ * Latest minus 1  - i.e. socfpga-4.17
+We do not maintain 'latest minus 1'.  And it gets deleted as soon as
+a new 'latest' is pushed (i.e. socfpga-4.19).
+
+Tag format is rel_[branch]_[release #]_[stage]
+i.e. rel_socfpga-4.17_18.09.02_pr
+ * branch is branch name like 'socfpga-4.17'
+ * Release numbers are yy.mm.rr
+   * yy = year such as '18' for 2018
+   * mm = month such as '09'
+   * rr = release # such as '02' for 2nd release of the month
+ * Stage is one of 'rc1', 'rc2', 'pr'
+
+--------------------------------------
+--- Bi-weekly rc/pr tagging policy ---
+--------------------------------------
+
+Linux team updates are every other week.
+ * rc tags are pushed to internal git server, not pushed to external git.
+ * pr tags are pushed to both internal and external git.
+
+Every other Thursday we:
+ * Do PR release:
+   * tag and push pr tags based on previous rc1
+     * the tag name is the same but with 'rc1' changed to 'pr'
+     * pr tags are pushed to both at-git and github
+   * send out portal report for the pr
+ * Do RC1
+   * tag rc1 for next release
+   * send out portal report for rc1 tag
+i.e. today could involve 18.04.01_pr and 18.04.02_rc1
+That gives people 2 weeks to look at the rc1 portal report and possibly
+raise objections before it gets pushed out as a pr.
+
+For a while it was our policy is to do rc1 and pr same day to streamline
+code release to our big customer. Every other Thursday we:
+ * tag rc1 for immediate release
+ * tag/push pr based on today's rc1
+ * Send out only the pr report
+i.e. today could involve 18.04.01_rc1 and 18.04.01_pr
+
+----------------------------------------------------------
+--- How Linux release tags are set by portal-update.py ---
+----------------------------------------------------------
+
+During rc1, the tag is set at the current (internal git) branch head.
+
+Usually we don't have to do a rc2.  The usual reason to have rc2 is because some
+commits were pushed out to the portal (i.e. by a GSRD release).  The script will
+set the rc2 tag to be same as rc1 and then adjust it to be the same as the head
+of the branch on the portal.  Messages are like:
+
+    repo   : linux-socfpga                  remote : origin
+    branch : socfpga-4.1.22-ltsi            tag    : rel_socfpga-4.1.22-ltsi_16.08.01_rc2
+
+     * tag will be == previous release tag (rel_socfpga-4.1.22-ltsi_16.08.01_rc1)
+     *  81954e1 Dinh Nguyen ARM: socfpga: enable PL330 DMA in socfpga_defconfig
+     *  tag adjusted to be == portal branch head
+     *  9862a66 Anatolij Gustschin fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters
+
+-----------------------------------------
+--- Portal Policies for GSRD Releases ---
+-----------------------------------------
+
+Tag format is completely different from Linux team releases.  It has
+evolved a bit as documented below.
+
+Tag format is [rel_num]_REL_[platform_][target]__[update]_[stage]
+ i.e.
+  * ACDS15.1_REL_GSRD_UPDATE1_RC1 == update moved before stage
+  * ACDS14.0.2_REL_SGMII_PR
+
+ * [rel_num] =  ACDS<yy>.<rn>[IR#]
+   * yy  = year such as '18' for 2018
+   * rn  = release number for the year (0, 0.1, 1, 1.1, etc)
+   * IR# = Intermediate Release IR1 IR2, etc or not present
+ * [platform] = A10 or M10 or not present
+ * [target]   = GSRD, PCIE, SGMI
+ * [update]   = UPDATE1 UPDATE2, or not present
+ * [stage]    = RC1..RC8, PR, EAP
+   * 'RC'  = Release Candidates (do not go on public github)
+   * 'PR'  = releases go to public github
+   * 'EAP' = Early Access Program (may not go to public github)
+
+Note that the format evolved a bit, stage was sometimes before the update
+number, i.e.
+  * ACDS14.1_REL_GSRD_PR_UPDATE2  == old format, not supported any more
+
+----------------------------------------
+--- GSRD / Linux release differences ---
+----------------------------------------
+
+Differences between GSRD releases and Linux releases:
+Tagging:
+  * *Linux* tags are set by the portal-update.py script as part of the
+    "--push" command.
+  * *GSRD* tags are set in PNG on the internal git server (at-git).
+    For GSRD, the portal-update.py script checks that the tags are
+    there and pushes them out to the portal git.
+
+RC tags are no longer pushed to external git.
+  * Linux rc tags are only pushed to internal git.
+  * GSRD RC tags used to get pushed out to portal git, but not any more.
+  * Only pr tags are pushed to external git.
+
+For GSRD releases, the github admin waits for approval email as noted
+at the top of this document.  For Linux releases, we just release every
+other week, don't need to wait for approvals.
+
+For GSRD releases, don't need to run '--email all' and in fact the script
+doesn't support that option.  Just let the tagger (currently Hean Loong)
+know that you did the update when you are done.
+
+----------------------------
+--- Portal script basics ---
+----------------------------
+
+Basically portal-report.py is used to clone/fetch our git repos to
+a set of locally cloned repos, then do the tagging, then push the
+tags to at-git and/or portal (github) git.  Then portal-report.py is
+used to email out a report of what got tagged/pushed.
+
+portal-report.py uses scripts in the linux-tags repo to know what
+branches to update as noted above.
+
+There are four 'action' commands for portal-update.py:
+* update ("-u")
+  * fetch from internal git to locally cloned git repos
+  * generate reports
+  * test doing the push using 'git push --dry-run'
+  * exit if any git commands fail
+* dry-run ("--dry-run") is like '-u' without the 'fetch':
+  * generate reports
+  * test doing the push using 'git push --dry-run'
+  * exit if any git commands fail
+* push ("--push")
+  * generate reports
+  * test doing the push using 'git push --dry-run' again, then
+  * do the actual push
+  * exit if any git commands fail
+* email ("--email me" or "--email all")
+  * generate reports based on the locally cloned repos
+  * send the portal report email
+
+Note that during the portal update, a release document directory will
+be created such as ~/bin/linux-infra/portal-release/18.09.03/
+The portal report and the script run log will end up there.
+*** It us up to the person running the script to commit these docs
+to git and push to at-git to archive how the portal update went. ***
+
+portal-update.py uses a set of locally cloned git repos to work with.  These
+are cloned and managed by portal-update.py itself and are *not* intended for
+local development work (intended to be 'clean').  They are cloned to
+~/repos/internal/ and ~/repos/external/  The first time a user runs this
+script will take a while to clone the kernel especially; after that, it can
+just fetch.
+
+portal-update.py only knows about commits that are sitting in its
+locally cloned git repo.  This is updated when you run the script with '-u'
+(update) command.  So if you update one day and do a release the next day
+without updating, you can (intentionally or unintentionally) not push out
+the absolute latest.  Maybe that's what you want to do.
+
+---------------------------
+--- Doing Linux release ---
+---------------------------
+
+Quick summary first, then the more verbose explanation below
+
+-------------------------------------
+--- Linux Release Command Summary ---
+-------------------------------------
+
+Suppose the previous pr release was
+ * 19.05.03_pr
+and this week we are doing:
+ * 19.06.01_pr
+ * 19.06.02_rc1
+
+The command steps are:
+ portal-update.py --type Linux --rel [this rc1/pr] --prev [previous pr] -u
+ portal-update.py --type Linux --rel [this rc1/pr] --prev [previous pr] --push
+ portal-update.py --type Linux --rel [this rc1/pr] --prev [previous pr] --email me
+ portal-update.py --type Linux --rel [this rc1/pr] --prev [previous pr] --email all
+There are in-between steps to do some checking and commit the logs.  See below...
+
+Clean and update your linux-infra since the portal reports and logs will be committed
+to linux-infra.  These operations will delete anything not committed:
+ $ cd ~/repos/linux-infra
+ $ gg
+ $ git status
+ $ git clean -fdx
+ $ git status
+   * make sure it's clean and no uncommitted changes
+
+Do the pr:
+
+ $ portal-update.py --type Linux --rel 19.06.01_pr --prev 19.05.03_pr -u
+   * This does the fetch and dry-run.
+ $ cdp
+   * should end up in 19.06.01 directory
+ $ diff -urN 19.06.01_rc1.txt 19.06.01_pr | less
+   * make sure you only see rc tags renamed as pr tags, no change in # of commits tagged.
+ $ git add .
+ $ git status
+ $ git commit -m 19.06.01_pr
+   * this commits the portal report and log to linux-infra.
+
+ $ portal-update.py --type Linux --rel 19.06.01_pr --prev 19.05.03_pr --push
+   * This will push the pr tags for real to at-git and github.
+ $ git diff
+   * should just see all the git pushes happening w/o errors.
+ $ git add .
+ $ git status
+ $ git commit --amend
+
+ $ post-update-check.sh 2>&1 | tee post-update-check-log.txt
+   * does 'wget' on every url in the log.
+   * should say 'OK' a lot and finish w/o errors.
+ $ git add .
+ $ git commit --amend
+ $ portal-update.py --type Linux --rel 19.06.01_pr --prev 19.05.03_pr --email me
+   * look at the log email
+   * click on links to make sure tags are up on github OK and point to correct commits
+ $ portal-update.py --type Linux --rel 19.06.01_pr --prev 19.05.03_pr --email all
+ $ git push origin master
+ 
+Next there's the rc1:
+
+ $ portal-update.py --type Linux --rel 19.06.02_rc1 --prev 19.06.01_pr -u
+ $ cdp
+   * should end up in 19.06.02 directory
+ $ less 19.06.02_rc1.txt
+   * look over it, check that it looks reasonable
+ $ git add .
+ $ git status
+ $ git commit -m 19.06.02_rc1
+ 
+ $ portal-update.py --type Linux --rel 19.06.02_rc1 --prev 19.06.01_pr --push
+   * this will push the rc1 tags to at-git only (not github).
+ $ git diff
+   * should just see all the git pushes happening w/o errors.
+ $ git add .
+ $ git status
+ $ git commit --amend
+ # If there is any special message you want to add at the top of the email, you can
+   edit the 19.06.02_rc1.txt
+   *** Leave the first line blank so it won't be interpreted and cause the email to
+   *** be scrambled.
+   
+ $ portal-update.py --type Linux --rel 19.06.02_rc1 --prev 19.06.01_pr --email me
+   * look at the portal report, check it looks good
+   * click on links to make sure tags are up on github OK and point to correct commits
+ $ portal-update.py --type Linux --rel 19.06.02_rc1 --prev 19.06.01_pr --email all
+ $ git push origin master
+
+Done!
+
+-----------------------------------------
+--- Linux Release Verbose Explanation ---
+-----------------------------------------
+
+Every two weeks we do a pr and a rc1, such as:
+
+On 5/16/2019 : 19.05.02_pr and 19.05.03_rc1
+On 5/30/2019 : 19.05.03_pr and 19.06.01_rc1
+On 6/13/2019 : 19.06.01_pr and 19.06.02_rc1
+so on...
+
+Note that each rc1 is used to create the pr tags two weeks later, such as
+19.05.03_rc1 becomes 19.05.03_pr
+
+If a new branch has been added for the Linux kernel, you will need to update
+ ~/repos/internal/linux-tags/release-branch-config.sh and push it.
+
+Each release day (every other week) release person will:
+* Set pr tags and push them out to internal and portal git
+* Send out pr portal report
+* Set rc1 tags and push them out to internal git
+* Send out rc1 portal report
+
+The portal report tells us what all was pushed after the last release, so we
+have to specify the current release # and the previous release #.  Plus an
+'action' command.  portal-update.py commands for Linux releases are like this:
+
+  $ portal-update.py --type Linux --rel [RELEASE] --prev [PREVIOUS RELEASE] [ACTION]
+
+  * [RELEASE]          = is like '18.02.01_rc1'
+  * [PREVIOUS RELEASE] = must be the previous pr pushed out to github like '18.01.02_pr'
+  * [ACTION]           = an action command as documented above.
+    ('-u', '--dry-run', '--push', '--email me', '--email all')
+
+*** Do not just race through these commands.
+*** User should look at portal reports, make sure they are error free and sane after
+    each '-u' or '--push' command
+
+  $ portal-update.py --type Linux --rel 16.08.02_rc1 --prev 16.08.01_pr -u
+  $ portal-update.py --type Linux --rel 16.08.02_rc1 --prev 16.08.01_pr --push
+  $ portal-update.py --type Linux --rel 16.08.02_pr  --prev 16.08.01_pr -u
+  $ portal-update.py --type Linux --rel 16.08.02_pr  --prev 16.08.01_pr --push
+
+OK now you've done the release.  After pr, use another script to make sure all
+the commits/tags/branches pushed to github are reachable via gitweb.  This
+script only checks github, since at-git doesn't have gitweb access enabled:
+
+  $ post-update-check.sh
+
+Send the pr report email to yourself, check it over and then send it to
+everyone.  Hint: you can edit it, it is '16.08.02_pr.txt' in this case.
+
+  $ portal-update.py --type Linux --rel 16.08.02_pr  --prev 16.08.01_pr --email me
+  $ portal-update.py --type Linux --rel 16.08.02_pr  --prev 16.08.01_pr --email all
+
+--------------------------
+--- Doing GSRD release ---
+--------------------------
+
+If a new branch has been added for the Linux kernel, you will need to update
+ ~/repos/internal/linux-tags/acds-release-branch-config.sh and push it.
+
+You will be pushing the GSRD tags out when the release manager says
+the tags are good to go.  You will need to validate the tags a bit.
+
+First wait for permission to push the tags.  You'll get two emails.
+The first is the tagging report from the person who did the tagging.
+The second email should be the release manager saying the tags are
+good and ready to be pushed out to the portal.  Your role as release
+person is not the same as a release manager and you shouldn't be in
+the position of making the call of whether the release is ready to go
+out.
+
+After the release manager has blessed the tagging report, you, the
+release person will make sure the tags are consistent with what the
+email says.  The tagging email should include a table of what was
+tagged.  If it doesn't, write back and ask them to do it the way
+they've been doing it.  Then you should check that the tagging is
+consistent with what was approved.
+
+Run the portal script with '-u' as show below.  Make sure that:
+
+* Nobody rebased a branch that's already been pushed out.  That's not
+  allowed since it will break previous release tags.
+
+* The tags were set where the email says they were.  To check this,
+  look at the ...-log.txt file that was generated.  It should include
+  a table similar to the email.  If the tag commit id's don't match
+  up, don't push them.  Send a polite email explaining what's wrong
+  and asking for verification that it's what they intended (or they
+  can fix their tags if needed).
+
+GSRD example:
+
+  $ portal-update.py --type GSRD --rel ACDS18.0_REL_GSRD_PR -u
+
+    Reports will be created in ~/bin/linux-infra/portal-release/ACDS18.0/
+
+    If that succeeds, then do:
+
+  $ portal-update.py --type GSRD --rel ACDS18.0_REL_GSRD_PR --push
+
+    Parameters:
+     --type GSRD                : Release type is GSRD
+     --rel ACDS18.0_REL_GSRD_PR : Current release tag
+     -u                         : Update local git repos and do 'git push --dry-run'
+     --push                     : Push to portal git
+
+------------------------------
+--- Linux release with rc2 ---
+------------------------------
+
+If there's a rc2, need to set rc2 tag before doing pr, such as if some
+stuff got pushed out in a GSRD release between biweekly releases:
+
+* Set rc2 tags and push to internal git, but only if some stuff got pushed out
+  after rc1 that we want to include in the pr
+* Set pr tags and push them out to internal and portal git
+* Set rc1 tags and push them out to internal git = that's what will be pushed
+  out next pr (unless there's a rc2)
+
+Example commands:
+update:
+  $ portal-update.py --type Linux --rel 16.08.01_rc2 --prev 16.07.01_pr -u
+
+    Parameters are:
+     --type Linux        : Specify that this is a Linux release
+     --rel 16.08.01_rc2  : Specify what release action we are doing now
+     --prev 16.07.01_pr  : Specify the previous pr release
+     -u                  : update local working git repos
+
+    Creates the portal report in:
+      ~/bin/linux-infra/portal-release/16.08.01/16.08.01_rc2.txt
+
+    Creates a log file with 'git push --dry-run' testing in:
+     ~/bin/linux-infra/portal-release/16.08.01/16.08.01_rc2-log.txt
+
+    git will test that the git commands would actually succeed by doing
+    'git push --dry-run'.  This ensures there will be no failed pushes
+    due to missing refs or non-fast-forward pushes.
+
+push:
+  $ portal-update.py --type Linux --rel 16.08.01_rc2 --prev 16.07.01_pr --push
+
+test email just to me:
+  $ portal-update.py --type Linux --rel 16.08.01_rc2 --prev 16.07.01_pr --email me
+
+email report to everyone on the report list in the script:
+  $ portal-update.py --type Linux --rel 16.08.01_rc2 --prev 16.07.01_pr --email all
+
+---------------------------------
+--- Linux release rc2 example ---
+---------------------------------
+
+  $ portal-update.py --type Linux --rel 16.08.01_rc2 --prev 16.07.01_pr -u
+
+User should check over the reports generated to see that they look good and
+don't have error messages.  Reports in this case would be in
+~/bin/linux-infra/portal-release/16.08.01
+
+Then user should commit the logs to git in linux-infra.  Commit message should
+be '16.08.01_rc2' in this case.
+
+  $ portal-update.py --type Linux --rel 16.08.01_rc2 --prev 16.07.01_pr --push
+
+User should check over the reports generated to see that they look good and
+update git with the latest logs.
+
+  $ portal-update.py --type Linux --rel 16.08.01_rc2 --prev 16.07.01_pr --email me
+
+check over the email you received then:
+
+  $ portal-update.py --type Linux --rel 16.08.01_rc2 --prev 16.07.01_pr --email all
+
+Make sure you've updated all logs to linux-infra git and pushe them to archive them.
+
+--------------------------------
+--- Linux release pr example ---
+--------------------------------
+
+  $ portal-update.py --type Linux --rel 16.08.01_pr --prev 16.07.01_pr -u
+  $ portal-update.py --type Linux --rel 16.08.01_pr --prev 16.07.01_pr --push
+  $ portal-update.py --type Linux --rel 16.08.01_pr --prev 16.07.01_pr --email me
+  $ portal-update.py --type Linux --rel 16.08.01_pr --prev 16.07.01_pr --email all
+
+After pr, use another script to make sure all the commits/tags/branches pushed to
+github are reachable via gitweb.  This script is only for after updating github,
+since at-git doesn't have gitweb access enabled:
+
+  $ post-update-check.sh
+
+---------------------------------
+--- Linux release rc1 example ---
+---------------------------------
+
+  $ portal-update.py --type Linux --rel 16.08.02_rc1 --prev 16.08.01_pr -u
+  $ portal-update.py --type Linux --rel 16.08.02_rc1 --prev 16.08.01_pr --push
+  $ portal-update.py --type Linux --rel 16.08.02_rc1 --prev 16.08.01_pr --email me
+  $ portal-update.py --type Linux --rel 16.08.02_rc1 --prev 16.08.01_pr --email all
+
+---------------------------------
+Thor Thayer Setup Notes
+---------------------------------
+
+1. Copy the at-git ssh files from my machine to linuxheads98 (~/.ssh)
+2. Rename the at-git ssh files to id-rsa-atgit
+3. Add the following to the .ssh/config file
+	host !*.intel.com
+	ProxyCommand connect-proxy -s %h %p
+
+	Host at-git at-git.intel.com
+	  User git
+	  Hostname at-git
+	  IdentityFile ~/.ssh/id-rsa-atgit
+
+	Host github.com
+	  Hostname github.com
+	  ProxyCommand socat STDIO SOCKS4A:proxy-us.intel.com:%h:%p,socksport=1080
+	  IdentityFile ~/.ssh/id-rsa-github
+
+4. Update linux-infra
+    $ cd ~/bin/linux-infra
+    $ gg
+5. cd to home directory
+6. Run the script
+    # set your email address (fast):
+    $ portal-update.py --type Linux --rel 19.06.01_pr --prev 19.05.03_pr --set-email thor.thayer@intel.com
+
+    # clone the git repos (takes a long time):
+    portal-update.py --type Linux --rel 19.06.01_pr --prev 19.05.03_pr -u
+
+7. If permissions are required, (a git fetch fails while running the script), need to update gitolite-admin
+   (actually gitolite-admin/conf/gitolite.conf) as explained in psg-linux-admin/handoffs.txt and gitolite.txt.
+
+----------------------
+When promoting a new branch, the release-branch-config.sh file must be changed in ~/repos/internal/linux-tags.
+

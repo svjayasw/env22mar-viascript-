@@ -1,0 +1,364 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.0
+branch tag  : rel_socfpga-4.0_15.06.01_rc1
+new commits : 2
+61562cb Dinh Nguyen FogBugz #294131: Fix cpu hotplug on Arria10
+fef02d0 Alan Tull FogBugz #299928: arria10 swvp: add device tree
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.06.01_rc1
+new commits : 2
+6b87444 Dinh Nguyen FogBugz #294131: Fix cpu hotplug on Arria10
+26a3201 Alan Tull FogBugz #299928: arria10 swvp: add device tree
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.06.01_rc1
+new commits : 8
+1bc90b3 Dinh Nguyen FogBugz #294131: Fix cpu hotplug on Arria10
+91eb71c Alan Tull FogBugz #299928: arria10 swvp: add device tree
+c2d6d43 VIET NGA DAO FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+7a93710 VIET NGA DAO FogBugz #251539-1: Add Altera Quad SPI Driver
+c1a3396 Chee Nouk Phoon FogBugz #293982: Enable Max10 Linux support
+b43b26e Matthew Gerlach FogBugz #297773: Add missing binding documentation
+917547b Matthew Gerlach FogBugz #292777: Calibrate read_delay at runtime
+858fec3 Matthew Gerlach FogBugz #295680: Enable JFFS2 support with n25q00aa NOR flash
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.0_15.06.01_rc1
+commit: 61562cb Dinh Nguyen FogBugz #294131: Fix cpu hotplug on Arria10
+
+tag:    rel_socfpga-3.10-ltsi_15.06.01_rc1
+commit: 6b87444 Dinh Nguyen FogBugz #294131: Fix cpu hotplug on Arria10
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.06.01_rc1
+commit: 1bc90b3 Dinh Nguyen FogBugz #294131: Fix cpu hotplug on Arria10
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.06.01_rc1
+new commits : 2
+da11aba Tien Fong Chee FogBugz #297134: Fixed ID lookup for Spansion nor flash S25FL256S
+d158abf Tien Fong Chee FogBugz #260361: Fixed intermittent QSPI flash erase failures
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.06.01_rc1
+new commits : 3
+108bb2e Thor Thayer FogBugz #298843: UBoot: Arria10: Give Ethernet stack back.
+92621f3 Thor Thayer FogBugz #297527: UBoot: Arria10: Disable I2C to free up OCRAM space.
+0c350d8 Tien Fong Chee FogBugz #260361: Fixed intermittent QSPI flash erase failures
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.06.01_rc1
+commit: da11aba Tien Fong Chee FogBugz #297134: Fixed ID lookup for Spansion nor flash S25FL256S
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.06.01_rc1
+commit: 108bb2e Thor Thayer FogBugz #298843: UBoot: Arria10: Give Ethernet stack back.
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.06.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.06.01_rc1
+commit: 380baf4 Yves Vandervennet update for github
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.06.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.06.01_rc1
+new commits : 1
+1d88fd2 Yves Vandervennet Addition of the Arria10 SWVP
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.06.01_rc1
+commit: 8566386 Yves Vandervennet support for kernel 4.0
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.06.01_rc1
+commit: 1d88fd2 Yves Vandervennet Addition of the Arria10 SWVP
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.0
+
+commit 61562cb0553bfb1101e09cc6079480fc4d0435bd
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu May 28 14:37:29 2015 -0500
+
+    FogBugz #294131: Fix cpu hotplug on Arria10
+    
+    We were not putting the CPU1 into reset correctly on the Arria10. Also add
+    the define for the Arria10 MPU reset register offset.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit fef02d0cd09582531e513c45a9f60ed2adaaac97
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue May 19 10:46:48 2015 -0500
+
+    FogBugz #299928: arria10 swvp: add device tree
+    
+    Adding device tree for Altera SoCFPGA Arria10 Software Virtual
+    Platform.
+    
+    Ideally this tree would not be monolithic and would include
+    socfpga_arria10.dtsi.  However issues with the swvp clock module
+    require clock frequencies to be hardwired.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 6b87444d65d9070c0ed331af1e7fc865a7493d2b
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu May 28 14:37:29 2015 -0500
+
+    FogBugz #294131: Fix cpu hotplug on Arria10
+    
+    We were not putting the CPU1 into reset correctly on the Arria10. Also add
+    the define for the Arria10 MPU reset register offset.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 26a32010e8a848cb199a014373fbe975a2e94738
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue May 19 10:46:48 2015 -0500
+
+    FogBugz #299928: arria10 swvp: add device tree
+    
+    Adding device tree for Altera SoCFPGA Arria10 Software Virtual
+    Platform.
+    
+    Ideally this tree would not be monolithic and would include
+    socfpga_arria10.dtsi.  However issues with the swvp clock module
+    require clock frequencies to be hardwired.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 1bc90b32e7d1fe054d3b94af5885169abe307705
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu May 28 14:37:29 2015 -0500
+
+    FogBugz #294131: Fix cpu hotplug on Arria10
+    
+    We were not putting the CPU1 into reset correctly on the Arria10. Also add
+    the define for the Arria10 MPU reset register offset.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 91eb71c71adf71dcc096b3f1b55c818154c30466
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue May 19 10:46:48 2015 -0500
+
+    FogBugz #299928: arria10 swvp: add device tree
+    
+    Adding device tree for Altera SoCFPGA Arria10 Software Virtual
+    Platform.
+    
+    Ideally this tree would not be monolithic and would include
+    socfpga_arria10.dtsi.  However issues with the swvp clock module
+    require clock frequencies to be hardwired.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit c2d6d4368098668f71aa3d2a1ad6d51457950b46
+Author: VIET NGA DAO <vndao@altera.com>
+Date:   Tue May 12 10:08:55 2015 +0800
+
+    FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+    
+    This patch adds Device Tree Binding for Altera Quad SPI Driver.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+    Signed-off-by: Chee Nouk Phoon <cnphoon@altera.com>
+
+commit 7a937109aa5dd011f4c265c8ed4c1ffbf0cb07b9
+Author: VIET NGA DAO <vndao@altera.com>
+Date:   Tue May 12 10:00:30 2015 +0800
+
+    FogBugz #251539-1: Add Altera Quad SPI Driver
+    
+    This patch adds linux driver for Altera Quad SPI controller.
+    Quad SPI controller is a soft IP designed to access EPCS, EPCQ
+    and Micron flash chips. This patch should only be applied
+    for Altera SOCFPGA LTSI 3.10
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+    Signed-off-by: Chee Nouk Phoon <cnphoon@altera.com>
+
+commit c1a33968b511f42e21441c61f04fe4481a7ecaed
+Author: Chee Nouk Phoon <cnphoon@altera.com>
+Date:   Tue May 19 11:05:30 2015 +0800
+
+    FogBugz #293982: Enable Max10 Linux support
+    
+    This patch adds Linux supports for Max10 GSRD. This patch includes:
+    - Add device tree based on Max10 GHRD and Max10 devboard
+    - Add defconfig based on Max10 GHRD and Max10 devboard
+    
+    Signed-off-by: Chee Nouk Phoon <cnphoon@altera.com>
+
+commit b43b26e41d96ffe404ad39530baee801684743e8
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Fri May 8 09:26:59 2015 -0700
+
+    FogBugz #297773: Add missing binding documentation
+    
+    The binding documentation for the cadence qspi controller
+    is missing documentation for some key bindings. This change
+    adds the missing documentation.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 917547b526961c0273c23f83d89c7af766cdd101
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Fri May 8 09:15:48 2015 -0700
+
+    FogBugz #292777: Calibrate read_delay at runtime
+    
+    Instead of relying on a value in the device tree,
+    this changes the driver to calibrate the read_delay
+    value at run time.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 858fec35f86aa13d3cdb6dfed16aadd18912efb1
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Fri May 1 13:03:04 2015 -0700
+
+    FogBugz #295680: Enable JFFS2 support with n25q00aa NOR flash
+    
+    The minimum erase size for JFFS2 is 8KiB.  Like other flash
+    parts, change n25q00aa entry not to adverise the ability
+    to erase sizes less than 8KiB.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit da11abaa41a757ca164f147d0ef8ff3cfccf900c
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Thu May 14 11:08:51 2015 +0800
+
+    FogBugz #297134: Fixed ID lookup for Spansion nor flash S25FL256S
+    
+    This patch fixed the ID lookup for the Spansion nor flash model name S25FL256S.
+    
+    
+    Signed-off-by: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+
+commit d158abff7b29a20033c9debe615ca74697ea2237
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Fri May 8 17:02:33 2015 +0800
+
+    FogBugz #260361: Fixed intermittent QSPI flash erase failures
+    
+    This patch fixed the overflow formula in both get_timer_masked
+    and get_timer_count_masked. This bug can cause QSPI flash failed
+    to erase and time out intermittent during the process of
+    erasing.
+    
+    Signed-off-by: Tien Fong <tfchee@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 108bb2e7512e84bfb825d0cc60abefff59c6f905
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Wed May 13 16:26:21 2015 -0500
+
+    FogBugz #298843: UBoot: Arria10: Give Ethernet stack back.
+    
+    Return the 1K taken from Ethernet stack in FB:291234.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 92621f3115e6193d0aabbbd88523bf1c8101fcbf
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Thu May 7 15:23:11 2015 -0500
+
+    FogBugz #297527: UBoot: Arria10: Disable I2C to free up OCRAM space.
+    
+    Older compilers (linaro 4.7) have experienced build errors where the
+    build will not fit within the U-Boot allocated space (the entire OCRAM
+    is used up). The I2C module is not used during boot so disable it by
+    default to save OCRAM space.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+    ---
+    v2: Change from #if 0 to #ifdef CONFIG_I2C.
+
+commit 0c350d8a3d0516ccb7f50180b2afc5bb902e0a1a
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Thu May 21 12:41:37 2015 +0800
+
+    FogBugz #260361: Fixed intermittent QSPI flash erase failures
+    
+    This patch fixed the overflow formula in get_timer_count_masked.
+    This bug can cause QSPI flash failed to erase and time out
+    intermittent during the process of erasing.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7_a10
+
+commit 1d88fd24533505129b2c352fb1b66616e2aacc6a
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Mon May 18 10:27:06 2015 -0500
+
+    Addition of the Arria10 SWVP
+    
+     - new machine
+     - rework of device tree list (now done in linux-altera.inc)
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

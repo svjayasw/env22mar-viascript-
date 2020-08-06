@@ -1,0 +1,27 @@
+From c9fc020bb46bad41bac44278c0a57c597ff45cc7 Mon Sep 17 00:00:00 2001
+From: Graham Moore <grmoore@opensource.altera.com>
+Date: Mon, 19 Jan 2015 11:00:36 -0600
+Subject: [PATCH] Config changes for DMA modules in 3.18
+
+Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+---
+ arch/arm/configs/socfpga_defconfig |    6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/arch/arm/configs/socfpga_defconfig b/arch/arm/configs/socfpga_defconfig
+index 00c46d16..54018fc 100644
+--- a/arch/arm/configs/socfpga_defconfig
++++ b/arch/arm/configs/socfpga_defconfig
+@@ -142,3 +142,9 @@ CONFIG_DETECT_HUNG_TASK=y
+ CONFIG_FUNCTION_TRACER=y
+ CONFIG_DEBUG_USER=y
+ CONFIG_XZ_DEC=y
++CONFIG_SERIAL_8250_DMA=y
++CONFIG_DMADEVICES=y
++CONFIG_PL330_DMA=m
++CONFIG_DMA_ENGINE=y
++CONFIG_DMA_OF=y
++CONFIG_DMATEST=m
+-- 
+1.7.10.4
+

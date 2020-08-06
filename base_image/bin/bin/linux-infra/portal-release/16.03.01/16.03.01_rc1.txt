@@ -1,0 +1,116 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.3
+branch tag  : rel_socfpga-4.3_16.03.01_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_16.03.01_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_16.03.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.3_16.03.01_rc1
+commit: 5cfcedd Graham Moore FogBugz #355518: Stratix10 SWVP device tree needs updating.
+
+tag:    rel_socfpga-3.10-ltsi_16.03.01_rc1
+commit: 28bac3e Thor Thayer FogBugz #350137: Fix A10SyCon Button Export Crash
+
+tag:    rel_socfpga-3.10-ltsi-rt_16.03.01_rc1
+commit: 5d6c0ba Ley Foon Tan FogBugz #349590: arm:socfpga: fix memory leak in socfpga_cti
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.03.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.03.01_rc1
+new commits : 1
+554fc74 Matthew Gerlach FogBugz #348773: Fix for A10 initial DDR calibration failure.
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.03.01_rc1
+commit: d141e21 Chin Liang See arm: Switch to -mno-unaligned-access when supported by the compiler
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.03.01_rc1
+commit: 554fc74 Matthew Gerlach FogBugz #348773: Fix for A10 initial DDR calibration failure.
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.03.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.03.01_rc1
+commit: bc6ea8d Tien Hock Loh FogBugz #327063: Update commit ID to include fix for syschk refresh rate issue
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.03.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.03.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.03.01_rc1
+commit: 8d6e9b4 Yves Vandervennet Support for the kernel v4.3
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.03.01_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 554fc740bb71fa4325847af448c4c38ce41954e1
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Wed Feb 10 15:40:16 2016 -0800
+
+    FogBugz #348773: Fix for A10 initial DDR calibration failure.
+    
+    This patch fixes a bug with RevB A10 DevKits where
+    the HPS would request an EMIF reset even though
+    memory had a calibrated.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

@@ -1,0 +1,141 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.17
+branch tag  : rel_socfpga-4.17_18.10.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.18
+branch tag  : rel_socfpga-4.18_18.10.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.10.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.10.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.17_18.10.02_pr
+commit: b7a0b88 Thor Thayer EDAC, altera: Fix ARM64 build warning
+
+tag:    rel_socfpga-4.18_18.10.02_pr
+commit: 5acba7e Richard Gong FogBugz #593535: stmmac: resolve smc related boot crash for ARMv7
+
+tag:    rel_socfpga-4.9.78-ltsi_18.10.02_pr
+commit: 5704788 Dinh Nguyen net: stmmac: build the dwmac-socfpga platform driver for Stratix10
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.10.02_pr
+commit: 99b7c8b Richard Gong FogBugz #593535: stmmac: resolve smc related boot crash for ARMv7
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.10.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.10.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.10.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.10.02_pr
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.10.02_pr
+commit: 3d79f8a Tien Fong Chee FogBugz #582382: Fix integer overflow for Arria 10
+
+tag:    rel_socfpga_v2017.09_18.10.02_pr
+commit: a0e1071 Thor Thayer FogBugz #592949-3: Remove CPU firewall for SDRAM ECC block.
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.10.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.10.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.10.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.10.02_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.10.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.10.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.10.02_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.10.02_pr
+commit: ec7bfa2 Ong, Hean Loong update 4.9.78-ltsi to commit ID da71e4b
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.10.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_18.10.02_pr
+commit: a9e0753 David Koltak FogBugz #568818-2: Better command line arg checking in example client
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+

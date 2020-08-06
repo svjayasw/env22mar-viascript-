@@ -1,0 +1,61 @@
+FROM ubuntu:latest
+RUN LS_COLORS="ow=01;36;40" && export LS_COLORS
+RUN export http_proxy=http://proxy-chain.intel.com:911
+RUN export https_proxy=http://proxy-chain.intel.com:912
+RUN export ftp_proxy=http://proxy-chain.intel.com:911
+RUN export socks_proxy=http://proxy-chain.intel.com:1080
+RUN export no_proxy=intel.com,.intel.com,localhost,127.0.0.1
+RUN unset http_proxy
+RUN unset https_proxy
+RUN unset ftp_proxy
+RUN unset socks_proxy
+RUN unset no_proxy
+ 
+#update apt-get config
+RUN printf 'Acquire::http::Proxy "http://proxy-chain.intel.com:911";\n' | tee /etc/apt/apt.conf.d/proxy.conf 
+RUN echo 'Acquire::https::Proxy "http://proxy-chain.intel.com:912";' >> /etc/apt/apt.conf.d/proxy.conf 
+RUN echo 'Acquire::ftp::Proxy "ftp_proxy=http://proxy-chain.intel.com:911";' >> /etc/apt/apt.conf.d/proxy.conf
+RUN apt-get update
+ 
+#install wget and setup config
+RUN apt-get install wget -y
+RUN sed -i 's+#https_proxy = http://proxy.yoyodyne.com:18023/+https_proxy = http://proxy-chain.intel.com:912/+g' /etc/wgetrc
+RUN sed -i 's+#http_proxy = http://proxy.yoyodyne.com:18023/+http_proxy = http://proxy-chain.intel.com:911/+g' /etc/wgetrc
+RUN sed -i 's+#ftp_proxy = http://proxy.yoyodyne.com:18023/+ftp_proxy = http://proxy-chain.intel.com:911/+g' /etc/wgetrc
+RUN sed -i 's+#use_proxy = on+use_proxy = on+g' /etc/wgetrc
+ 
+#instal docker
+RUN apt-get install -y gnupg2
+RUN apt-get install curl -y
+RUN curl -x http://proxy-chain.intel.com:911 -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+RUN apt-key fingerprint 0EBFCD88
+RUN apt-get install lsb-release -y
+RUN lsb_release -cs
+RUN apt-get install software-properties-common -y
+RUN apt-get update
+RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+RUN apt-get install docker-ce docker-ce-cli containerd.io -y
+RUN apt-get remove golang-docker-credential-helpers
+ 
+#instal nginx and npm
+RUN apt-get install nginx -y
+RUN apt-get install nodejs -y
+RUN apt-get install npm -y
+RUN npm config set proxy http://proxy-chain.intel.com:911 \
+   && npm config set https-proxy http://proxy-chain.intel.com:912 
+#ADD https://cli.run.pivotal.io/stable?release=linux64-binary&version=6.42.0 /tmp/cf-cli.tgz
+   
+#install cf
+#RUN wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | apt-key add -
+#RUN echo "deb https://packages.cloudfoundry.org/debian stable main" |  tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+#RUN apt-get update
+#RUN apt-get install cf-cli
+ 
+#install kubernates related
+#RUN export http_proxy=http://proxy-chain.intel.com:911; export https_proxy=http://proxy-chain.intel.com:912; export no_proxy=intel.com
+#RUN apt-get update
+#RUN curl -L -o /usr/bin/kubectl http://storage.googleapis.com/kubernetes-release/release/$(curl -s http://storage.googleapis.com/kubernetes-release/release/latest.txt)/bin/linux/amd64/kubectl && chmod #+x /usr/bin/kubectl && kubectl version --client
+
+RUN wget https://storage.googleapis.com/kubernetes-release/release/v1.13.2/bin/linux/amd64/kubectl -O /usr/local/bin/kubectl \
+&& chmod a+x /usr/local/bin/kubectl && kubectl version --client
+ 

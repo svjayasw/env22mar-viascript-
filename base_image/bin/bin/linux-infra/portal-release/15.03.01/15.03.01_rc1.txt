@@ -1,0 +1,449 @@
+
+This is the regular biweekly release candidate, not related to
+the current bringup effort.
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.18
+branch tag  : rel_socfpga-3.18_15.03.01_rc1
+new commits : 2
+2093c64 Kostya Belezko Altera TSE: Add missing phydev
+dba9042 Wolfram Sang net: ethernet: altera: drop owner assignment from platform_drivers
+
+
+++wiki:
+*Branch name*: socfpga-3.18, *Tag name:* rel_socfpga-3.18_15.03.01_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | Altera TSE: Add missing phydev | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=2093c64c3a64acd20c76e903043a228c627193bd ][ 2093c64c3a64acd20c76e903043a228c627193bd ]] |
+| community | net: ethernet: altera: drop owner assignment from platform_drivers | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=dba9042f4855d6ed6d81ee7db01ea0afac04f799 ][ dba9042f4855d6ed6d81ee7db01ea0afac04f799 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.03.01_rc1
+new commits : 12
+aeb52dd Kostya Belezko Altera TSE: Add missing phydev
+42d7f06 Wolfram Sang net: ethernet: altera: drop owner assignment from platform_drivers
+648c971 Walter Lozano Altera TSE: Add support for no PHY
+5cb2d70 Walter Lozano Altera TSE: Move PHY get addr and MDIO create
+e9a4f23 Vince Bridgers Altera TSE: Disable Multicast filtering to workaround problem
+9e4c38a Vince Bridgers Altera TSE: Fix sparse errors and warnings
+320c7f3 Geert Uytterhoeven Altera TSE: ALTERA_TSE should depend on HAS_DMA
+dabf1b4 Tobias Klauser Altera TSE: Add missing include to silence sparse warnings
+d2513d8 Tobias Klauser Altera TSE: Fix DMA secriptor length initialization
+d80c687 Vince Bridgers Altera TSE: Change driver name used by Ethtool
+1fe9ce4 Vince Bridgers Altera TSE: Work around unaligned DMA receive packet issue with Altera SGDMA
+0b587e95 Tobias Klauser Altera TSE: Remove unnecessary cast of void pointers
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_15.03.01_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | Altera TSE: Add missing phydev | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=aeb52dd352e986a3e20490238729bfde9703f7c3 ][ aeb52dd352e986a3e20490238729bfde9703f7c3 ]] |
+| community | net: ethernet: altera: drop owner assignment from platform_drivers | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=42d7f06dae7ff6f48fce62092f57d78e0235e73b ][ 42d7f06dae7ff6f48fce62092f57d78e0235e73b ]] |
+| community | Altera TSE: Add support for no PHY | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=648c9711913d8bdf1a59a169c842225f67c563aa ][ 648c9711913d8bdf1a59a169c842225f67c563aa ]] |
+| community | Altera TSE: Move PHY get addr and MDIO create | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=5cb2d70d3bbb76bb056a1d1c76b66dca92f7c053 ][ 5cb2d70d3bbb76bb056a1d1c76b66dca92f7c053 ]] |
+| community | Altera TSE: Disable Multicast filtering to workaround problem | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=e9a4f23f47ec31bb63f1a01f83b816091bc27802 ][ e9a4f23f47ec31bb63f1a01f83b816091bc27802 ]] |
+| community | Altera TSE: Fix sparse errors and warnings | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=9e4c38a5e722e0faf6830ae87ec29e379d34c273 ][ 9e4c38a5e722e0faf6830ae87ec29e379d34c273 ]] |
+| community | Altera TSE: ALTERA_TSE should depend on HAS_DMA | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=320c7f3fe3b2f788abe8bd00a3cf62fbb07671ce ][ 320c7f3fe3b2f788abe8bd00a3cf62fbb07671ce ]] |
+| community | Altera TSE: Add missing include to silence sparse warnings | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=dabf1b4025d2257f2220f7c65f3909e8c4114e41 ][ dabf1b4025d2257f2220f7c65f3909e8c4114e41 ]] |
+| community | Altera TSE: Fix DMA secriptor length initialization | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d2513d82dd7e022bbba402cee48c708e149d5ffa ][ d2513d82dd7e022bbba402cee48c708e149d5ffa ]] |
+| community | Altera TSE: Change driver name used by Ethtool | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d80c6875765b58d97bdbe0c7dba6f3f2a8af43f5 ][ d80c6875765b58d97bdbe0c7dba6f3f2a8af43f5 ]] |
+| community | Altera TSE: Work around unaligned DMA receive packet issue with Altera SGDMA | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1fe9ce4a16fa271067ce49b1f5eacbf96b3faf5c ][ 1fe9ce4a16fa271067ce49b1f5eacbf96b3faf5c ]] |
+| community | Altera TSE: Remove unnecessary cast of void pointers | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=0b587e95232c5820ed8b6489647c1893937e48b4 ][ 0b587e95232c5820ed8b6489647c1893937e48b4 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.03.01_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.18_15.03.01_rc1
+commit: 2093c64 Kostya Belezko Altera TSE: Add missing phydev
+
+tag:    rel_socfpga-3.10-ltsi_15.03.01_rc1
+commit: aeb52dd Kostya Belezko Altera TSE: Add missing phydev
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.03.01_rc1
+commit: 7ea94617 Ley Foon Tan FogBugz #246108: nios2: initialize one timer only
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.03.01_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_15.03.01_rc1
+commit: 32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_15.03.01_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_15.03.01_rc1
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_15.03.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_15.03.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_15.03.01_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_15.03.01_rc1
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_15.03.01_rc1
+commit: 65417bc Yves Vandervennet kde repo moved, it's now meta-kde4
+
+tag:    rel_angstrom-v2014.06-socfpga_15.03.01_rc1
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_15.03.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_15.03.01_rc1
+new commits : 1
+1090ffb Yves Vandervennet recipe for kernel 3.18
+
+
+++wiki:
+*Branch name*: angstrom-v2013.12-yocto1.5, *Tag name:* rel_angstrom-v2013.12-yocto1.5_15.03.01_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | recipe for kernel 3.18 | [[ http://git.rocketboards.org/gitweb/?p=meta-altera.git;a=commit;h=1090ffbbee1f3b6e45647591d369423ef9b2e41e ][ 1090ffbbee1f3b6e45647591d369423ef9b2e41e ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_15.03.01_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_15.03.01_rc1
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_15.03.01_rc1
+commit: 1090ffb Yves Vandervennet recipe for kernel 3.18
+
+tag:    rel_angstrom-v2014.06-yocto1.6_15.03.01_rc1
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.18
+
+commit 2093c64c3a64acd20c76e903043a228c627193bd
+Author: Kostya Belezko <bkostya@hotmail.com>
+Date:   Tue Dec 30 12:27:09 2014 -0500
+
+    Altera TSE: Add missing phydev
+    
+    Altera network device doesn't come up after
+    
+    ifconfig eth0 down
+    ifconfig eth0 up
+    
+    The reason behind is clearing priv->phydev during tse_shutdown().
+    The phydev is not restored back at tse_open().
+    
+    Resubmiting as to follow Tobias Klauser suggestion.
+    phy_start/phy_stop are called on each ifup/ifdown and
+    phy_disconnect is called once during the module removal.
+    
+    Signed-off-by: Kostya Belezko <bkostya@hotmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit dba9042f4855d6ed6d81ee7db01ea0afac04f799
+Author: Wolfram Sang <wsa@the-dreams.de>
+Date:   Mon Oct 20 16:21:04 2014 +0200
+
+    net: ethernet: altera: drop owner assignment from platform_drivers
+    
+    A platform_driver does not need to set an owner, it will be populated by the
+    driver core.
+    
+    Signed-off-by: Wolfram Sang <wsa@the-dreams.de>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit aeb52dd352e986a3e20490238729bfde9703f7c3
+Author: Kostya Belezko <bkostya@hotmail.com>
+Date:   Tue Dec 30 12:27:09 2014 -0500
+
+    Altera TSE: Add missing phydev
+    
+    Altera network device doesn't come up after
+    
+    ifconfig eth0 down
+    ifconfig eth0 up
+    
+    The reason behind is clearing priv->phydev during tse_shutdown().
+    The phydev is not restored back at tse_open().
+    
+    Resubmiting as to follow Tobias Klauser suggestion.
+    phy_start/phy_stop are called on each ifup/ifdown and
+    phy_disconnect is called once during the module removal.
+    
+    Signed-off-by: Kostya Belezko <bkostya@hotmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 42d7f06dae7ff6f48fce62092f57d78e0235e73b
+Author: Wolfram Sang <wsa@the-dreams.de>
+Date:   Mon Oct 20 16:21:04 2014 +0200
+
+    net: ethernet: altera: drop owner assignment from platform_drivers
+    
+    A platform_driver does not need to set an owner, it will be populated by the
+    driver core.
+    
+    Signed-off-by: Wolfram Sang <wsa@the-dreams.de>
+
+commit 648c9711913d8bdf1a59a169c842225f67c563aa
+Author: Walter Lozano <walter@vanguardiasur.com.ar>
+Date:   Fri Oct 3 15:09:01 2014 -0300
+
+    Altera TSE: Add support for no PHY
+    
+    This patch avoids PHY and MDIO probing if no PHY chip is present.
+    This is the case mainly in optical links where there is no need for
+    PHY chip, and therefore no need of MDIO. In this scenario Ethernet
+    MAC is directly connected to an optical module through an external
+    SFP transceiver.
+    
+    Signed-off-by: Walter Lozano <walter@vanguardiasur.com.ar>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 5cb2d70d3bbb76bb056a1d1c76b66dca92f7c053
+Author: Walter Lozano <walter@vanguardiasur.com.ar>
+Date:   Fri Oct 3 15:09:00 2014 -0300
+
+    Altera TSE: Move PHY get addr and MDIO create
+    
+    Move PHY get addr and MDIO create to a new function to improve readability
+    and make it easier to avoid its usage. This will be useful for example in
+    the case where there is no PHY chip.
+    
+    Signed-off-by: Walter Lozano <walter@vanguardiasur.com.ar>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit e9a4f23f47ec31bb63f1a01f83b816091bc27802
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Wed May 14 14:38:37 2014 -0500
+
+    Altera TSE: Disable Multicast filtering to workaround problem
+    
+    This patch disables multicast hash filtering if present in the hardware
+    and uses promiscuous mode instead until the problem with multicast
+    filtering has been debugged, integrated and tested.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 9e4c38a5e722e0faf6830ae87ec29e379d34c273
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Wed May 14 14:38:36 2014 -0500
+
+    Altera TSE: Fix sparse errors and warnings
+    
+    This patch fixes the many sparse errors and warnings contained in the
+    initial submission of the Altera Triple Speed Ethernet driver, and a
+    few minor cppcheck warnings. Changes are tested on ARM and NIOS2
+    example designs, and compile tested against multiple architectures.
+    Typical issues addressed were as follows:
+    
+    altera_tse_ethtool.c:136:19: warning: incorrect type in argument
+        1 (different address spaces)
+    altera_tse_ethtool.c:136:19:    expected void const volatile
+        [noderef] <asn:2>*addr
+    altera_tse_ethtool.c:136:19:    got unsigned int *<noident>
+    ...
+    altera_sgdma.c:129:31: warning: cast removes address space of
+        expression
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 320c7f3fe3b2f788abe8bd00a3cf62fbb07671ce
+Author: Geert Uytterhoeven <geert@linux-m68k.org>
+Date:   Fri May 2 06:29:21 2014 +0200
+
+    Altera TSE: ALTERA_TSE should depend on HAS_DMA
+    
+    If NO_DMA=y:
+    
+    drivers/built-in.o: In function `altera_tse_probe':
+    altera_tse_main.c:(.text+0x25ec2e): undefined reference to `dma_set_mask'
+    altera_tse_main.c:(.text+0x25ec78): undefined reference to `dma_supported'
+    altera_tse_main.c:(.text+0x25ecb6): undefined reference to `dma_supported'
+    drivers/built-in.o: In function `sgdma_async_read':
+    altera_sgdma.c:(.text+0x25f620): undefined reference to `dma_sync_single_for_cpu'
+    drivers/built-in.o: In function `sgdma_uninitialize':
+    (.text+0x25f678): undefined reference to `dma_unmap_single'
+    drivers/built-in.o: In function `sgdma_uninitialize':
+    (.text+0x25f696): undefined reference to `dma_unmap_single'
+    drivers/built-in.o: In function `sgdma_initialize':
+    (.text+0x25f6f0): undefined reference to `dma_map_single'
+    drivers/built-in.o: In function `sgdma_initialize':
+    (.text+0x25f702): undefined reference to `dma_mapping_error'
+    drivers/built-in.o: In function `sgdma_tx_buffer':
+    (.text+0x25f92a): undefined reference to `dma_sync_single_for_cpu'
+    drivers/built-in.o: In function `sgdma_rx_status':
+    (.text+0x25fa24): undefined reference to `dma_sync_single_for_cpu'
+    make[3]: *** [vmlinux] Error 1
+    
+    Signed-off-by: Geert Uytterhoeven <geert@linux-m68k.org>
+    Acked-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit dabf1b4025d2257f2220f7c65f3909e8c4114e41
+Author: Tobias Klauser <tobias.klauser@gmail.com>
+Date:   Mon Apr 28 23:23:13 2014 +0200
+
+    Altera TSE: Add missing include to silence sparse warnings
+    
+    This fixes the following sparse warnings:
+    
+    drivers/net/ethernet/altera/altera_msgdma.c:23:5: warning: symbol 'msgdma_initialize' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:28:6: warning: symbol 'msgdma_uninitialize' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:32:6: warning: symbol 'msgdma_reset' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:77:6: warning: symbol 'msgdma_disable_rxirq' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:83:6: warning: symbol 'msgdma_enable_rxirq' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:89:6: warning: symbol 'msgdma_disable_txirq' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:95:6: warning: symbol 'msgdma_enable_txirq' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:101:6: warning: symbol 'msgdma_clear_rxirq' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:107:6: warning: symbol 'msgdma_clear_txirq' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:114:5: warning: symbol 'msgdma_tx_buffer' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:129:5: warning: symbol 'msgdma_tx_completions' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:154:5: warning: symbol 'msgdma_add_rx_desc' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:181:5: warning: symbol 'msgdma_rx_status' was not declared. Should it be static?
+    
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Acked-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit d2513d82dd7e022bbba402cee48c708e149d5ffa
+Author: Tobias Klauser <tobias.klauser@gmail.com>
+Date:   Mon Apr 28 23:23:01 2014 +0200
+
+    Altera TSE: Fix DMA secriptor length initialization
+    
+    sgdma_descrip is a function name as well as the name of a struct. In
+    sgdma_initialize(), we should initialize the descriptor length field
+    with the actual length of a descriptor not with the size of the
+    function. In order to prevent such things from happening in the future,
+    rename the function to sgdma_setup_descrip().
+    
+    Found by sparse which yields the following warning:
+    
+    drivers/net/ethernet/altera/altera_sgdma.c:74:30: warning: expression using sizeof on a function
+    
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit d80c6875765b58d97bdbe0c7dba6f3f2a8af43f5
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Thu Apr 24 16:58:11 2014 -0500
+
+    Altera TSE: Change driver name used by Ethtool
+    
+    This patch changes the name used by Ethtool to something more
+    conventional in preparation for TSE Ethtool register dump
+    support to be added in the near future.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 1fe9ce4a16fa271067ce49b1f5eacbf96b3faf5c
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Thu Apr 24 16:58:08 2014 -0500
+
+    Altera TSE: Work around unaligned DMA receive packet issue with Altera SGDMA
+    
+    This patch works around a recently discovered unaligned receive dma problem
+    with the Altera SGMDA. The Altera SGDMA component cannot be configured to
+    DMA data to unaligned addresses for receive packet operations from the
+    Triple Speed Ethernet component because of a potential data transfer
+    corruption that can occur. This patch addresses this issue by
+    utilizing the shift 16 bits feature of the Altera Triple Speed Ethernet
+    component and modifying the receive buffer physical addresses accordingly
+    such that the target receive DMA address is always aligned on a 32-bit
+    boundary.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Tested-by: Matthew Gerlach <mgerlach@altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 0b587e95232c5820ed8b6489647c1893937e48b4
+Author: Tobias Klauser <tklauser@distanz.ch>
+Date:   Thu Apr 24 13:50:09 2014 +0200
+
+    Altera TSE: Remove unnecessary cast of void pointers
+    
+    No need to cast void pointers.
+    
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2013.12-yocto1.5
+
+commit 1090ffbbee1f3b6e45647591d369423ef9b2e41e
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Fri Feb 20 05:10:11 2015 -0600
+
+    recipe for kernel 3.18
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

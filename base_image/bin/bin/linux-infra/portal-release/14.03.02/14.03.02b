@@ -1,0 +1,275 @@
+
+This is a script-generated report of what was pushed today.
+
+The portal push of the -rel-amp release branches will be delayed until
+after the release meeting.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.13
+branch tag  : rel_socfpga-3.13_14.03.02
+new commits : 8
+bd9d1aa Vince Bridgers FogBugz #189738: Correct code to obtain mdio child node from devicetree
+8ffc866 Vince Bridgers FogBugz #189737: Check phy connect return codes when initializing phy
+1cf8597 Vince Bridgers FogBugz #188963: Remove unused function stmmac_hw_setup
+bff185f Dinh Nguyen FogBugz #189696: Remove socfpga_arria5.dts file
+d1e5585 Dinh Nguyen FogBugz #189684-2: dts part: clean up QSPI entries
+ccf2533 Dinh Nguyen FogBugz #189684-1: Enhance QSPI driver to use common clock framework
+01af930 Dinh Nguyen FogBugz #188457: Fix DTS entries for SOCFPGA Arria V
+cc377d7 Dinh Nguyen FogBugz #186724: Add backwards compatible binding for dw_apb_timer
+
+
+++wiki:
+*Branch name*: socfpga-3.13, *Tag name:* rel_socfpga-3.13_14.03.02
+| *ID* | *Comment* | *GIT Commit* |
+| 189738 | Correct code to obtain mdio child node from devicetree | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=bd9d1aae1d420f35775d7f38b5e6863169216274 ][ bd9d1aae1d420f35775d7f38b5e6863169216274 ]] |
+| 189737 | Check phy connect return codes when initializing phy | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=8ffc8667ee41e3359cca57d1c1b523973705be41 ][ 8ffc8667ee41e3359cca57d1c1b523973705be41 ]] |
+| 188963 | Remove unused function stmmac_hw_setup | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=1cf85971fc4b63d2163544a851858e90a6a1e2e2 ][ 1cf85971fc4b63d2163544a851858e90a6a1e2e2 ]] |
+| 189696 | Remove socfpga_arria5.dts file | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=bff185f06f1154e1b99aa3dc278b6f90aedc16b4 ][ bff185f06f1154e1b99aa3dc278b6f90aedc16b4 ]] |
+| 189684-2 | dts part: clean up QSPI entries | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=d1e55851b6b552a91b73c69fefdd6ad9140b2dd3 ][ d1e55851b6b552a91b73c69fefdd6ad9140b2dd3 ]] |
+| 189684-1 | Enhance QSPI driver to use common clock framework | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=ccf2533d4ebbe9baa9d1f773660a80acf4ca89ae ][ ccf2533d4ebbe9baa9d1f773660a80acf4ca89ae ]] |
+| 188457 | Fix DTS entries for SOCFPGA Arria V | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=01af930694c5a4406681850451660bf9496b608a ][ 01af930694c5a4406681850451660bf9496b608a ]] |
+| 186724 | Add backwards compatible binding for dw_apb_timer | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=cc377d7e65081ad17b29877f1c8049d40cc06e96 ][ cc377d7e65081ad17b29877f1c8049d40cc06e96 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.03.02
+Pushing new branch to rocketboards.org
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.10-ltsi_14.03.02
+commit: 3f200ad Rob Herring of: set dma_mask to point to coherent_dma_mask
+
+tag:    rel_socfpga-3.13_14.03.02
+commit: bd9d1aa Vince Bridgers FogBugz #189738: Correct code to obtain mdio child node from devicetree
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.03.02
+new commits : 3
+7d2eb72 Chin Liang See FogBugz #188622: Ensure BootROM works if SDMMC PWREN is used
+5c8d037 Chin Liang See FogBugz #189084: Enhance U-Boot to configure L2 address filter
+09353b4 Chin Liang See FogBugz #188704: Fix QSPI read flag status sequence
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_14.03.02
+| *ID* | *Comment* | *GIT Commit* |
+| 188622 | Ensure BootROM works if SDMMC PWREN is used | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=7d2eb72762278fc9f06af2eac22f0c481e044b72 ][ 7d2eb72762278fc9f06af2eac22f0c481e044b72 ]] |
+| 189084 | Enhance U-Boot to configure L2 address filter | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=5c8d037b139ecc62234aab98c93f7aa5da5a3ddb ][ 5c8d037b139ecc62234aab98c93f7aa5da5a3ddb ]] |
+| 188704 | Fix QSPI read flag status sequence | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=09353b4af6d6c72b03a437db4a94680674877d45 ][ 09353b4af6d6c72b03a437db4a94680674877d45 ]] |
+--wiki:
+
+
+branch      : socfpga_v2013.01.01-rel-amp
+branch tag  : rel_socfpga_v2013.01.01-rel-amp_14.03.02
+Pushing new branch to rocketboards.org
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01-rel-amp_14.03.02
+commit: 3a69a56 Tien Hock Loh FogBugz #121124:Update DW USB driver in uboot so that it works on board
+
+tag:    rel_socfpga_v2013.01.01_14.03.02
+commit: 7d2eb72 Chin Liang See FogBugz #188622: Ensure BootROM works if SDMMC PWREN is used
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera-rel-amp
+branch tag  : rel_danny-altera-rel-amp_14.03.02
+Pushing new branch to rocketboards.org
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera-rel-amp_14.03.02
+commit: 1473032 Tien Hock Loh FogBugz #185256: Move files from refdes-files to poky v2
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.13
+
+commit bd9d1aae1d420f35775d7f38b5e6863169216274
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Tue Mar 11 19:17:57 2014 -0500
+
+    FogBugz #189738: Correct code to obtain mdio child node from devicetree
+    
+    The code to obtain the mdio child node accidentally worked for the
+    devicetree used for testing, and was incorrect for arbitrary devicetrees.
+    This patch corrects that problem found during community review.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit 8ffc8667ee41e3359cca57d1c1b523973705be41
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Tue Mar 11 18:42:30 2014 -0500
+
+    FogBugz #189737: Check phy connect return codes when initializing phy
+    
+    The phy initialization code should check the results of of_phy_connect
+    and connect_local_phy in the init_phy routine. This was caught during
+    community review.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit 1cf85971fc4b63d2163544a851858e90a6a1e2e2
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Fri Mar 7 09:33:49 2014 -0600
+
+    FogBugz #188963: Remove unused function stmmac_hw_setup
+    
+    Looks like a recent modification modified the initialization sequence
+    and introduced a kernel build warning as a result. This patch removes
+    the unused function to avoid the kernel build warning.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit bff185f06f1154e1b99aa3dc278b6f90aedc16b4
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Mar 11 16:01:28 2014 -0500
+
+    FogBugz #189696: Remove socfpga_arria5.dts file
+    
+    For the SOCFPGA Arria V devkit, the DTS flow would be:
+    socfpga_arria5.dtsi -> socfpga_arria5_socdk.dts.
+    
+    The socfpga_arria.dts file is not used anymore.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit d1e55851b6b552a91b73c69fefdd6ad9140b2dd3
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Mar 11 15:39:50 2014 -0500
+
+    FogBugz #189684-2: dts part: clean up QSPI entries
+    
+    Moves the base QSPI dts entry into socfpga.dtsi and add board specific QSPI
+    entry to the appropriate board file DTS files.
+    
+    Removes the hard-coded clock frequency.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit ccf2533d4ebbe9baa9d1f773660a80acf4ca89ae
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Mar 11 15:35:03 2014 -0500
+
+    FogBugz #189684-1: Enhance QSPI driver to use common clock framework
+    
+    Modify the QSPI driver so that it can get the clock from the DTS entry and
+    use the clock driver to get the correct clock rate.
+    
+    Also update the GPLv2 license.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 01af930694c5a4406681850451660bf9496b608a
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Mar 5 15:12:14 2014 -0600
+
+    FogBugz #188457: Fix DTS entries for SOCFPGA Arria V
+    
+    The Arria V devkit has not been able to boot since v3.12 kernel. Turns out
+    that the device tree entries for arria5 has not been updated.
+    
+    Update the socfpga_arria5.dtsi and socfpga_arria5_socdk.dts to have all the
+    correct onboard peripherals.
+    
+    Also update the copyrights.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    ---
+    v2:
+    - Update rxc-skew-ps to be 3000
+    - Update master-ref-clk to be 370MHz
+
+commit cc377d7e65081ad17b29877f1c8049d40cc06e96
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Feb 26 10:36:41 2014 -0600
+
+    FogBugz #186724: Add backwards compatible binding for dw_apb_timer
+    
+    In order to have the 3.10-ltsi kernel use the same DTS as the 3.13
+    kernel, we need to add the old compatibility string for the dw_apb_timer.
+    The 3.10 kernel was using the ""snps,dw-apb-timer-sp" and
+    "snps,dw-apb-timer-osc" compatible strings for the timers.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 7d2eb72762278fc9f06af2eac22f0c481e044b72
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Mar 18 20:03:32 2014 -0700
+
+    FogBugz #188622: Ensure BootROM works if SDMMC PWREN is used
+    
+    If SDMMC PWREN is used, we need to ensure BootROM always
+    reconfigure IOCSR and pinmux after warm reset. This is to cater
+    the use case of board design which is using SDMMC PWREN pins.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 5c8d037b139ecc62234aab98c93f7aa5da5a3ddb
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Mar 13 09:28:29 2014 -0700
+
+    FogBugz #189084: Enhance U-Boot to configure L2 address filter
+    
+    Enhance the U-Boot to configure the L2 address filter. This
+    is to avoid the dependency of getting Preloader to configure it.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 09353b4af6d6c72b03a437db4a94680674877d45
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Mar 6 11:21:11 2014 -0800
+
+    FogBugz #188704: Fix QSPI read flag status sequence
+    
+    Fixed the QSPI read status and read flag status register sequence.
+    To ensure reliable flash programming and erase, we would need
+    to read status register then follow by read flag status register.
+    While its not documented, its advised by Micron technical support.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01-rel-amp
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of poky branch danny-altera-rel-amp
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+

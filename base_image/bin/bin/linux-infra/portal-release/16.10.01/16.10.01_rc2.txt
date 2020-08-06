@@ -1,0 +1,372 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal on the next
+
+scheduled update day.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.7
+branch tag  : rel_socfpga-4.7_16.10.01_rc2
+new commits : 3
+8d5a001 Alan Tull FogBugz #405628-2: fpga: add config complete timeout
+9e95403 Alan Tull FogBugz #405628-1: fpga: doc: add config complete timeout
+4d80815 Matthew Gerlach FogBugz #404467: add missing binding documentation
+
+
+branch      : socfpga-4.1.22-ltsi
+branch tag  : rel_socfpga-4.1.22-ltsi_16.10.01_rc2
+new commits : 6
+02e55d4 Matthew Gerlach FogBugz #403389-1: Altera Partial Reconfiguration IP Core
+5edf531 Alan Tull FogBugz #384748: socfpga: use devm_clk_get
+fde703f Alan Tull FogBugz #405861: socfpga: remove unneeded clk_put
+e5336d9 Matthew Gerlach FogBugz #403733-2: completely configure l2c_aux_val
+c19a0cf Matthew Gerlach FogBugz #408205: fix printf format error
+5855bc4 Tien Hock Loh FogBugz #371393: Fix SGMII unable to switch speed and autonego failure
+
+
+branch      : socfpga-4.1.22-ltsi-rt
+branch tag  : rel_socfpga-4.1.22-ltsi-rt_16.10.01_rc2
+new commits : 8
+5b904f5 Alan Tull FogBugz #405628-2: fpga: add config complete timeout
+2d5f042 Alan Tull FogBugz #405628-1: fpga: doc: add config complete timeout
+e7717ae Ley Foon Tan PCI: altera: Move retrain from fixup to altera_pcie_host_init()
+dc2a7d1 Ley Foon Tan PCI: altera: Rework config accessors for use without a struct pci_bus
+a8ff693f Ley Foon Tan PCI: altera: Poll for link training status after retraining the link
+5c2d85b Matthew Gerlach FogBugz #405016: prevent kernel crash in tse_pcs_init()
+fba7a13 Matthew Gerlach FogBugz #404467: add missing binding documentation
+40af892 Dinh Nguyen FogBugz #403733: Update cache settings for A10
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.7_16.10.01_rc2
+commit: 8d5a001 Alan Tull FogBugz #405628-2: fpga: add config complete timeout
+
+tag:    rel_socfpga-4.1.22-ltsi_16.10.01_rc2
+commit: 02e55d4 Matthew Gerlach FogBugz #403389-1: Altera Partial Reconfiguration IP Core
+
+tag:    rel_socfpga-4.1.22-ltsi-rt_16.10.01_rc2
+commit: 5b904f5 Alan Tull FogBugz #405628-2: fpga: add config complete timeout
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.10.01_rc2
+new commits : 1
+95ab599 Chin Liang See FogBugz #385884: Configuring SDRAM extra cycles on timing parameters
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.10.01_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.10.01_rc2
+commit: 95ab599 Chin Liang See FogBugz #385884: Configuring SDRAM extra cycles on timing parameters
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.10.01_rc2
+commit: ab2181d Tien Fong Chee FogBugz #398001: Enable UART for console when FPGA is external configured
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.10.01_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.10.01_rc2
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.10.01_rc2
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.10.01_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.10.01_rc2
+commit: d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.10.01_rc2
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.7
+
+commit 8d5a00125afe11ea3cb51a941274c1148e9088b7
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Sep 21 14:04:08 2016 -0500
+
+    FogBugz #405628-2: fpga: add config complete timeout
+    
+    Adding timeout for maximum allowed time for FPGA to go to
+    operating mode after a FPGA region has been programmed.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 9e95403a938a37439bda06b6c8580d8d5cc51b22
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Sep 21 14:04:08 2016 -0500
+
+    FogBugz #405628-1: fpga: doc: add config complete timeout
+    
+    Adding timeout for maximum allowed time for FPGA to go to
+    operating mode after a FPGA region has been programmed.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 4d80815f803923c7f8d6cbc6d9cd90b5a18dd1f4
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Thu Sep 15 12:46:22 2016 -0700
+
+    FogBugz #404467: add missing binding documentation
+    
+    Add missing device tree binding documentation for
+    timeouts to enable and disable bridges to a
+    fpga-region during region (re)programming.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    ---
+    v2: s/successful/successfully/g
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi
+
+commit 02e55d42fd5e6c53746371a5b3f374c271ccdb2b
+Author: Matthew Gerlach <matthew.gerlach@intel.com>
+Date:   Thu Sep 15 11:47:21 2016 -0700
+
+    FogBugz #403389-1: Altera Partial Reconfiguration IP Core
+    
+    Add device tree bindings documentation for the Altera
+    Partial Reconfiguration IP Core.
+    
+    Signed-off-by: Matthew Gerlach <matthew.gerlach@intel.com>
+    ---
+    v2: change name to match documentation
+
+commit 5edf531426040ef02e9bd67472036aa82b5aef0e
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Thu Sep 22 10:36:43 2016 -0500
+
+    FogBugz #384748: socfpga: use devm_clk_get
+    
+    Need to use devm_clk_get to eliminate need to do
+    clk_put's.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit fde703fb327c58583c4cf460d6cc84df42396d02
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Thu Sep 22 10:17:45 2016 -0500
+
+    FogBugz #405861: socfpga: remove unneeded clk_put
+    
+    Using devm_clk_get to get clocks, so clk_put's should
+    not be used.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit e5336d9753498dac9cef9d20adf1fed88deebc79
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Tue Oct 4 13:34:32 2016 -0700
+
+    FogBugz #403733-2: completely configure l2c_aux_val
+    
+    Depending on the execution path, the A10 boot rom may or
+    may not set some bits in the l2c aux ctrl register.  Due to this
+    abiguity, linux must explicitly set the register.  This patch
+    forces the configuration to match the full boot flow, which
+    also matches the setting used in the 3.10-ltsi version of the
+    kernel.
+    
+    Signed-off-by: Matthew Gerlach <matthew.gerlach@intel.com>
+    ---
+    v2:
+        removed redundant EARLY_BRESP and FULL_LINE_ZERO
+
+commit c19a0cfb3b778fb522b3a7ebc7ac2a7c5251cd05
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Fri Sep 30 14:25:10 2016 -0700
+
+    FogBugz #408205: fix printf format error
+    
+    The version 4.8.5 of gcc complains when %d is
+    used to printf a variable of size_t.  Using %zu
+    fixes the problem.
+    
+    Signed-off-by: Matthew Gerlach <matthew.gerlach@intel.com>
+
+commit 5855bc46d3f34685f0e57da352c6846539e45dd4
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Mon Sep 26 18:07:27 2016 +0800
+
+    FogBugz #371393: Fix SGMII unable to switch speed and autonego failure
+    
+    TSE PCS SGMII ethernet has an issue where switching speed doesn't work
+    caused by a faulty register macro offset. This fixes the issue.
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi-rt
+
+commit 5b904f50dcdac103ed1d0375205e613aafcd65d5
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Sep 21 14:04:08 2016 -0500
+
+    FogBugz #405628-2: fpga: add config complete timeout
+    
+    Adding timeout for maximum allowed time for FPGA to go to
+    operating mode after a FPGA region has been programmed.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 2d5f042c7000e8cc5615649a145c6fb04d5dddc4
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Sep 21 14:04:08 2016 -0500
+
+    FogBugz #405628-1: fpga: doc: add config complete timeout
+    
+    Adding timeout for maximum allowed time for FPGA to go to
+    operating mode after a FPGA region has been programmed.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit e7717ae33d43e6e2ac3b26693940b68713a82f7e
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Aug 26 09:47:25 2016 +0800
+
+    PCI: altera: Move retrain from fixup to altera_pcie_host_init()
+    
+    Previously we used a PCI early fixup to initiate a link retrain on Altera
+    devices.  But Altera PCIe IP can be configured as either a Root Port or an
+    Endpoint, and they might have same vendor ID, so the fixup would be run for
+    both.
+    
+    We only want to initiate a link retrain for Altera Root Port devices, not
+    for Endpoints, so move the link retrain functionality from the fixup to
+    altera_pcie_host_init().
+    
+    [bhelgaas: changelog]
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+
+commit dc2a7d1ea4cd6bcac7415848141b34828dc91fad
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Aug 26 09:47:24 2016 +0800
+
+    PCI: altera: Rework config accessors for use without a struct pci_bus
+    
+    Rework configs accessors so a future patch can use them in _probe() with
+    struct altera_pcie instead of struct pci_bus.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+
+commit a8ff693f046bd4137bce4c078a3dbfc86c76746b
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Aug 15 14:06:02 2016 +0800
+
+    PCI: altera: Poll for link training status after retraining the link
+    
+    Poll for link training status is cleared before poll for link up status.
+    This can help to get the reliable link up status, especially when PCIe is
+    in Gen 3 speed.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+
+commit 5c2d85b14794acef5a3b87ae31e25c1d8986d4db
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Mon Sep 19 11:24:18 2016 -0700
+
+    FogBugz #405016: prevent kernel crash in tse_pcs_init()
+    
+    The function, tse_pcs_init(), used the passed in
+    pointers without validating them.  The patch ensures
+    the pointers are non-NULL, which can happen when
+    the device tree is incomplete.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    ---
+    v2:
+        reduced patch size and indentation
+        fixed commit message
+
+commit fba7a13cfe06882b8e48ddd3598be205efa65afd
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Thu Sep 15 12:46:22 2016 -0700
+
+    FogBugz #404467: add missing binding documentation
+    
+    Add missing device tree binding documentation for
+    timeouts to enable and disable bridges to a
+    fpga-region during region (re)programming.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    ---
+    v2: s/successful/successfully/g
+
+commit 40af89207450ab2f90224a62d138b0f52b0fb90f
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Sep 19 13:59:04 2016 -0500
+
+    FogBugz #403733: Update cache settings for A10
+    
+    The L2 Cache settings for Arria10 need to have the
+    L2C_AUX_CTRL_SHARED_OVERRIDE bit set to prevent an ethernet crash.
+    
+    This commit should only be applicable to a downstream LTSI branch, as
+    the upstream kernels, this bit should get set by the bootloader.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 95ab599e1ad7840e08be0aa567eea3fca357572f
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Sep 26 17:50:10 2016 +0800
+
+    FogBugz #385884: Configuring SDRAM extra cycles on timing parameters
+    
+    To enable configuration of sdr.ctrlcfg.extratime1 register which enable
+    extra clocks for read to write command timing. This is critical to
+    ensure successful LPDDR2 interface
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes in v2
+    - Remove the change of handoff as our dev kit using DDR3
+
+-----------------------------------------------------------------------
+

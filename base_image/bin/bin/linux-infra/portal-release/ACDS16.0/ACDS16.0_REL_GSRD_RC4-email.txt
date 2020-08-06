@@ -1,0 +1,42 @@
+From: Chung Weng Gooi
+Sent: Friday, April 01, 2016 12:51 AM Pacific Standard Time
+To: Chin Liang See; Alan Tull; Tien Hock Loh; Ying Cheh Tan; Yves Vandervennet
+Cc: Lawrence Yee Lun Liew
+Subject: RE: 16.0 GSRD tag push
+
+Please proceed with the tag push. Thanks Alan.
+
+From: Chin Liang See
+Sent: Friday, April 01, 2016 12:43 PM
+To: Alan Tull; Tien Hock Loh; Chung Weng Gooi; Ying Cheh Tan; Yves Vandervennet
+Cc: Lawrence Yee Lun Liew
+Subject: RE: 16.0 GSRD tag push
+
+Hi Alan,
+
+Here are the commit ID for RC4 tag (ACDS16.0_REL_GSRD_RC4).
+
+There are the same as RC3 except U-Boot.
+
+Tien Hock is out of office for this whole week and we don’t have permission on
+certain git.
+
+To avoid confusion, we are seeking your help to tag them at at-git too.
+
+Repository		Branch				Commit ID
+
+meta-altera		angstrom-v2014.12-yocto1.7	8d6e9b468630aa4d9d4c946080f5023dea43d891
+
+angstrom-socfpga	angstrom-v2014.12-socfpga	0a2c33dbc636dc02049cfb77f73132d70b36c183
+
+linux-socfpga		socfpga-3.10-ltsi		28bac3edbcdc74f98b865986be5d340381896192
+
+meta-altera-refdes	gsrd-16.0			660224209baf74937656cc7d6be92fa7d2765acb
+
+uboot-socfpga		socfpga_v2013.01.01		7dd0473e47ede9fd240969846a42f5646f565ce9
+
+linux-refdesigns	socfpga-16.0			89acc83e9e3a66920e7bf949c60a9898419e946b      
+
+Thanks and have a nice day!
+
+Chin Liang

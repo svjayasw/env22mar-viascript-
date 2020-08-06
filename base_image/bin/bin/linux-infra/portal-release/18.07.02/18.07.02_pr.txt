@@ -1,0 +1,246 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.17
+branch tag  : rel_socfpga-4.17_18.07.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.07.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.07.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.17_18.07.02_pr
+commit: 103d053 Richard Gong FogBugz #574552: misc: intel-service: resolve a possible memory exception
+
+tag:    rel_socfpga-4.9.78-ltsi_18.07.02_pr
+commit: da71e4b Richard Gong FogBugz #574552: misc: intel-service: resolve a possible memory exception
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.07.02_pr
+commit: aaf2f73 Richard Gong FogBugz #574552: misc: intel-service: resolve a possible memory exception
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.07.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.07.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.07.02_pr
+new commits : 6
+ec233f9 Peng Fan armv8: mmu: fix page table mapping
+c035509 Ley Foon Tan FogBugz #576967: arm: socfpga: stratix10: Send mailbox urgent command with urgent register
+212d85e Ley Foon Tan FogBugz: #568281-2: arm: socfpga: stratix10: Enable EMAC to FPGA bridge based on handoff
+1b2f66c Ley Foon Tan FogBugz: #568281-1: arm: socfpga: Fix SYSMGR_FPGAINTF_EMACx bit mask
+3d8e241 Thor Thayer FogBugz #535183-2: Add SMMU initialization and setup
+5f2d2c8 Thor Thayer FogBugz #535183-1: Configure CCU for TCU access to DDR
+
+
+++wiki:
+*Branch name*: socfpga_v2017.09, *Tag name:* rel_socfpga_v2017.09_18.07.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | armv8: mmu: fix page table mapping | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/ec233f9d3e8c747effbe6508530979eb450c8e24 ][ ec233f9d3e8c747effbe6508530979eb450c8e24 ]] |
+| 576967 | arm: socfpga: stratix10: Send mailbox urgent command with urgent register | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/c0355097dc4ed61c65d4aeffedcb12582a2fc05a ][ c0355097dc4ed61c65d4aeffedcb12582a2fc05a ]] |
+| community | FogBugz: #568281-2: arm: socfpga: stratix10: Enable EMAC to FPGA bridge based on handoff | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/212d85ebe3fb6853e12229039da252f587d97d33 ][ 212d85ebe3fb6853e12229039da252f587d97d33 ]] |
+| community | FogBugz: #568281-1: arm: socfpga: Fix SYSMGR_FPGAINTF_EMACx bit mask | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/1b2f66c50ed07b0eada67a53815e1729cbd05c55 ][ 1b2f66c50ed07b0eada67a53815e1729cbd05c55 ]] |
+| 535183-2 | Add SMMU initialization and setup | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/3d8e24113f36c3c45265646f8f74dc6801918c69 ][ 3d8e24113f36c3c45265646f8f74dc6801918c69 ]] |
+| 535183-1 | Configure CCU for TCU access to DDR | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/5f2d2c852e34ca29bb0fcfbd8f54ecf35259ef60 ][ 5f2d2c852e34ca29bb0fcfbd8f54ecf35259ef60 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.07.02_pr
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.07.02_pr
+commit: 2791f93 Tien Fong Chee FogBugz #568246-2: Enable workaround to A10 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2017.09_18.07.02_pr
+commit: ec233f9 Peng Fan armv8: mmu: fix page table mapping
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.07.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.07.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.07.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.07.02_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.07.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.07.02_pr
+new commits : 1
+ec7bfa2 Ong, Hean Loong update 4.9.78-ltsi to commit ID da71e4b
+
+
+++wiki:
+*Branch name*: angstrom-v2016.12-yocto2.2, *Tag name:* rel_angstrom-v2016.12-yocto2.2_18.07.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | update 4.9.78-ltsi to commit ID da71e4b | [[ https://github.com/altera-opensource/meta-altera/commit/ec7bfa2a8ec23767272fb03100831cccb653b506 ][ ec7bfa2a8ec23767272fb03100831cccb653b506 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.07.02_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.07.02_pr
+commit: ec7bfa2 Ong, Hean Loong update 4.9.78-ltsi to commit ID da71e4b
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.07.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_18.07.02_pr
+commit: a9e0753 David Koltak FogBugz #568818-2: Better command line arg checking in example client
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit ec233f9d3e8c747effbe6508530979eb450c8e24
+Author: Peng Fan <peng.fan@nxp.com>
+Date:   Tue Nov 28 10:31:28 2017 +0800
+
+    armv8: mmu: fix page table mapping
+    
+    To page mapping the lowest 2 bits needs to be 0x3.
+    If not fix this, the final lowest 3 bits for page mapping is 0x1
+    which is marked as reserved.
+    
+    Signed-off-by: Peng Fan <peng.fan@nxp.com>
+    Reviewed-by: York Sun <york.sun@nxp.com>
+
+commit c0355097dc4ed61c65d4aeffedcb12582a2fc05a
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Thu Jul 19 16:38:26 2018 +0800
+
+    FogBugz #576967: arm: socfpga: stratix10: Send mailbox urgent command with urgent register
+    
+    According to mailbox spec, software should send urgent command with urgent register
+    instead of COUT location. This patch write urgent command index to urgent register.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+
+commit 212d85ebe3fb6853e12229039da252f587d97d33
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Fri Jul 20 10:48:31 2018 +0800
+
+    FogBugz: #568281-2: arm: socfpga: stratix10: Enable EMAC to FPGA bridge based on handoff
+    
+    Code checking and setting EMAC use fpga is in populate_sysmgr_fpgaintf_module().
+    So, call to sysmgr_pinmux_init() instead of populate_sysmgr_pinmux().
+    In sysmgr_pinmux_init(), it will call to both populate_sysmgr_pinmux() and
+    populate_sysmgr_fpgaintf_module().
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+
+commit 1b2f66c50ed07b0eada67a53815e1729cbd05c55
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Fri Jul 20 10:47:01 2018 +0800
+
+    FogBugz: #568281-1: arm: socfpga: Fix SYSMGR_FPGAINTF_EMACx bit mask
+    
+    Bitmask for EMAC should be bit-0, EMAC1 bit-8 and EMAC2 bit-16.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+
+commit 3d8e24113f36c3c45265646f8f74dc6801918c69
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Thu Jul 12 16:06:30 2018 -0700
+
+    FogBugz #535183-2: Add SMMU initialization and setup
+    
+    Add the SMMU initialization
+    - Allow non-secure accesses with SMMU peripherals
+    - Setup stream ID for SMMU peripheral matching
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 5f2d2c852e34ca29bb0fcfbd8f54ecf35259ef60
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Thu Jul 12 14:34:42 2018 -0700
+
+    FogBugz #535183-1: Configure CCU for TCU access to DDR
+    
+    The TCU needs access to the DDR for the SMMU to function
+    properly so add it to the SDRAM initialization where
+    the CCU is setup for other masters.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2016.12-yocto2.2
+
+commit ec7bfa2a8ec23767272fb03100831cccb653b506
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Wed Jul 18 11:02:14 2018 +0800
+
+    update 4.9.78-ltsi to commit ID da71e4b
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+

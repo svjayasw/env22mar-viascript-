@@ -1,0 +1,221 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+The following new branches were pushed:
+repo : meta-altera            branch : angstrom-v2019.06-yocto2.7
+
+Richard
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-5.1
+branch tag  : rel_socfpga-5.1_19.09.02_pr
+new commits : 0
+
+
+branch      : socfpga-5.2
+branch tag  : rel_socfpga-5.2_19.09.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.14.130-ltsi
+branch tag  : rel_socfpga-4.14.130-ltsi_19.09.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.14.126-ltsi-rt
+branch tag  : rel_socfpga-4.14.126-ltsi-rt_19.09.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_socfpga-5.1_19.09.02_pr
+commit: 5c21be7 Dinh Nguyen clk: socfpga: stratix10: fix rate caclulationg for cnt_clks
+
+tag:    rel_socfpga-5.2_19.09.02_pr
+commit: ab400c6 Richard Gong HSD #1409882336: firmware: update RSU driver for retry_counter and status
+
+tag:    rel_socfpga-4.14.130-ltsi_19.09.02_pr
+commit: 567dd6b Dinh Nguyen HSD #1707052006: Add initial support for Agilex devkit
+
+tag:    rel_socfpga-4.14.126-ltsi-rt_19.09.02_pr
+commit: 12c13b0 Dinh Nguyen HSD #1707052006: Add initial support for Agilex devkit
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.09.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.09.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.09.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2019.04
+branch tag  : rel_socfpga_v2019.04_19.09.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_socfpga_v2013.01.01_19.09.02_pr
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.09.02_pr
+commit: f7a7e26 Tien Fong Chee net: A10: Use packed structures for networking
+
+tag:    rel_socfpga_v2017.09_19.09.02_pr
+commit: 568b829 radu bacrau HSD #1707046651: Add support for RSU Retry
+
+tag:    rel_socfpga_v2019.04_19.09.02_pr
+commit: bc38a09 Tien Fong Chee arm: socfpga: Revert HW watchdog changes for S10
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.09.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_19.09.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.09.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.09.02_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.09.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2019.06-yocto2.7
+branch tag  : rel_angstrom-v2019.06-yocto2.7_19.09.02_pr
+Pushing new branch to external git
+
+
+
+++wiki:
+*New branch added:*
+*Repo name*: meta-altera *Branch name*: angstrom-v2019.06-yocto2.7 *Tag name:* rel_angstrom-v2019.06-yocto2.7_19.09.02_pr
+--wiki:
+
+
+Tags pushed out to external git:
+tag:    rel_angstrom-v2018.06-yocto2.5_19.09.02_pr
+commit: 2a4cadc Ong, Hean Loong update to linux-altera-ltsi_4.14.130
+
+tag:    rel_angstrom-v2019.06-yocto2.7_19.09.02_pr
+commit: a8a38ab Ong, Hean Loong Add Image kernel type to socfpga.inc
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.09.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_master_19.09.02_pr
+commit: 18dea93 radu bacrau HSD #1707061410: Add support for max_retry
+
+
+-----------------------------------------------------------------------
+
+repository: arm-trusted-firmware
+
+branch      : socfpga_v1.4
+branch tag  : rel_socfpga_v1.4_19.09.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_socfpga_v1.4_19.09.02_pr
+commit: fd4f92c Loh Tien Hock libc: armclang: Implement compiler printf symbols
+
+
+-----------------------------------------------------------------------
+
+repository: uefi-socfpga
+
+branch      : socvp_socfpga_udk2015
+branch tag  : rel_socvp_socfpga_udk2015_19.09.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_socvp_socfpga_udk2015_19.09.02_pr
+commit: 475bea4 Loh Tien Hock AlteraPlatformPkg: Change memory base due for Linux's reserved space
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera-refdes
+
+branch      : master
+branch tag  : rel_master_19.09.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_master_19.09.02_pr
+commit: 97e7d7a Ong, Hean Loong fix issue of lighttpd for yocto-warrior
+
+
+-----------------------------------------------------------------------
+
+repository: linux-refdesigns
+
+branch      : master
+branch tag  : rel_master_19.09.02_pr
+new commits : 0
+
+
+Tags pushed out to external git:
+tag:    rel_master_19.09.02_pr
+commit: 769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2019.06-yocto2.7
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+

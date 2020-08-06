@@ -1,0 +1,35 @@
+SHELL = /bin/sh
+
+include $(PWD)/defaults.mk
+
+obj-m	:= cp210x.o
+
+# Rules
+
+all:	modules
+
+clean:
+	rm -f *.o .*.o.flags
+	rm -f *.ko .*.o.cmd .*.ko.cmd *.mod.c
+	rm -rf .tmp_versions
+
+distclean: clean mrproper
+	rm -f Makefile.config
+
+install:
+	cp $(KOFILE) $(MODFILE)
+	./installmod $(MODFILE) $(MODDIR)
+
+mrproper:
+	rm -f *~
+	rm -f Makefile.bak
+
+modules:
+	make -C $(KDIR) -I $(PWD) M=$(PWD) modules
+
+default:
+#	$(MAKE) -C $(KDIR) -I $(PWD) M=$(PWD) modules
+	make -C $(KDIR) -I $(PWD) M=$(PWD) modules
+
+
+

@@ -1,0 +1,85 @@
++ cd /home/atull/repos/internal/linux-socfpga
++ git log --pretty=oneline -1 rel_socfpga-3.16_14.10.01_rc1
+73b8057eedd623269600b233f82d4378631dba8c spi: dw: fix kernel crash due to NULL pointer dereference
++ git log --pretty=oneline -1 rel_socfpga-3.16_14.10.01
+73b8057eedd623269600b233f82d4378631dba8c spi: dw: fix kernel crash due to NULL pointer dereference
++ echo
+
++ git log --pretty=oneline -1 rel_socfpga-3.10-ltsi_14.10.01_rc1
+8beef1b8853317a29df139ca4bb71c03c55227c1 FogBugz #208834: Add SD/MMC card detect
++ git log --pretty=oneline -1 rel_socfpga-3.10-ltsi_14.10.01
+8beef1b8853317a29df139ca4bb71c03c55227c1 FogBugz #208834: Add SD/MMC card detect
++ echo
+
++ git log --pretty=oneline -1 rel_socfpga-3.10-ltsi-rt_14.10.01_rc1
+37a12476091c71bfe7b023dae534424437116e64 FogBugz #208834: Add SD/MMC card detect
++ git log --pretty=oneline -1 rel_socfpga-3.10-ltsi-rt_14.10.01
+37a12476091c71bfe7b023dae534424437116e64 FogBugz #208834: Add SD/MMC card detect
++ echo
+
++ cd /home/atull/repos/internal/uboot-socfpga
++ git log --pretty=oneline -1 rel_socfpga_v2013.01.01_14.10.01_rc1
+890e22efc69956237fc19baa75962db11df6e10e Fogbugz #223877: Force globals into .data segment to compact memory footprint
++ git log --pretty=oneline -1 rel_socfpga_v2013.01.01_14.10.01
+890e22efc69956237fc19baa75962db11df6e10e Fogbugz #223877: Force globals into .data segment to compact memory footprint
++ echo
+
++ cd /home/atull/repos/internal/poky
++ git log --pretty=oneline -1 rel_danny-altera_14.10.01_rc1
+2ea11347bbdbdab3b5d9bb7a4157f9b7b5607a23 FogBugz #147479: Changing dtbs to include arria
++ git log --pretty=oneline -1 rel_danny-altera_14.10.01
+2ea11347bbdbdab3b5d9bb7a4157f9b7b5607a23 FogBugz #147479: Changing dtbs to include arria
++ echo
+
++ cd /home/atull/repos/internal/angstrom-socfpga
++ git log --pretty=oneline -1 rel_angstrom-v2012.12-socfpga_14.10.01_rc1
+a7411013b0d87ac0a4596b09a0c19f868e21b667 changed clone of layer from http to git
++ git log --pretty=oneline -1 rel_angstrom-v2012.12-socfpga_14.10.01
+a7411013b0d87ac0a4596b09a0c19f868e21b667 changed clone of layer from http to git
++ echo
+
++ git log --pretty=oneline -1 rel_angstrom-v2013.12-socfpga_14.10.01_rc1
+86e17311d05ed87f48f296061200e1b4b05a30b7 changed clone of layer from http to git
++ git log --pretty=oneline -1 rel_angstrom-v2013.12-socfpga_14.10.01
+86e17311d05ed87f48f296061200e1b4b05a30b7 changed clone of layer from http to git
++ echo
+
++ git log --pretty=oneline -1 rel_angstrom-v2014.06-socfpga_14.10.01_rc1
+4460560c5cada124a6da2ae9306305abcf5f2040 removed the usual blank line left at the end off layers.txt
++ git log --pretty=oneline -1 rel_angstrom-v2014.06-socfpga_14.10.01
+4460560c5cada124a6da2ae9306305abcf5f2040 removed the usual blank line left at the end off layers.txt
++ echo
+
++ cd /home/atull/repos/internal/meta-altera
++ git log --pretty=oneline -1 rel_angstrom-v2012.12-yocto1.3_14.10.01_rc1
+b16478f2ddd65afa7821b1937885dfb96eff266f removed duplicate line with AUTOREV
++ git log --pretty=oneline -1 rel_angstrom-v2012.12-yocto1.3_14.10.01
+b16478f2ddd65afa7821b1937885dfb96eff266f removed duplicate line with AUTOREV
++ echo
+
++ git log --pretty=oneline -1 rel_angstrom-v2013.12-yocto1.5_14.10.01_rc1
+d536811edb414cd85778eaf8fbec9ad0fc480ab1 Update uboot recipe so that it can be built from tags
++ git log --pretty=oneline -1 rel_angstrom-v2013.12-yocto1.5_14.10.01
+d536811edb414cd85778eaf8fbec9ad0fc480ab1 Update uboot recipe so that it can be built from tags
++ echo
+
++ git log --pretty=oneline -1 rel_angstrom-v2014.06-yocto1.6_14.10.01_rc1
+9fe06573ef9f9a3b284edc66d590cb32b67a2f00 removed duplicate line with AUTOREV
++ git log --pretty=oneline -1 rel_angstrom-v2014.06-yocto1.6_14.10.01
+9fe06573ef9f9a3b284edc66d590cb32b67a2f00 removed duplicate line with AUTOREV
++ echo
+
++ cd /home/atull/repos/internal/linux-test
++ git log --pretty=oneline -1 rel_master_14.10.01_rc1
+6752c00d38ea7cca61f178b9d4d2e5fd9c096b4c Add baseline tftp uboot script
++ git log --pretty=oneline -1 rel_master_14.10.01
+6752c00d38ea7cca61f178b9d4d2e5fd9c096b4c Add baseline tftp uboot script
++ echo
+
++ cd /home/atull/repos/internal/linux-infra
++ git log --pretty=oneline -1 rel_tags_v1_14.10.01_rc1
+0551b6170588be6d7281cf8cdd530295118c3435 updated location of ipk feed
++ git log --pretty=oneline -1 rel_tags_v1_14.10.01
+0551b6170588be6d7281cf8cdd530295118c3435 updated location of ipk feed
++ echo
+

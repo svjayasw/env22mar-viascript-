@@ -1,0 +1,359 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+The following new branches were tagged:
+repo : linux-socfpga          branch : socfpga-4.15
+repo : linux-socfpga          branch : socfpga-4.9.78-ltsi
+repo : linux-socfpga          branch : socfpga-4.9.76-ltsi-rt
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.15
+branch tag  : rel_socfpga-4.15_18.02.01_rc1
+Pushing new branch to external git
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.02.01_rc1
+Pushing new branch to external git
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.02.01_rc1
+Pushing new branch to external git
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.15_18.02.01_rc1
+commit: cec25d8 Thor Thayer FogBugz #411698-4: socfpga: dts: Add A10-SR Devkit power supply alarms
+
+tag:    rel_socfpga-4.9.78-ltsi_18.02.01_rc1
+commit: 6fdee61 Thor Thayer FogBugz #411698-4: socfpga: dts: Add A10-SR Devkit power supply alarms
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.02.01_rc1
+commit: 60fe1e58 Alan Tull FogBugz #196859: tty: newhaven_lcd: make local struct static
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.02.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.02.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.02.01_rc1
+new commits : 18
+661b505 Chin Liang See FogBugz #504066: arm: socfpga: stratix10: Fix SMP issue
+8c6cdeb Chin Liang See FogBugz #518452: arm: socfpga: stratix10: Enable spi support
+e0b5de7 Chin Liang See spi: designware_spi: Ensure all registers access are 32 bits
+bc07c6c Chin Liang See FogBugz #524216: arm: socfpga: stratix10: Fix DTS compilation warning
+a178b66 Chin Liang See FogBugz #524232: spi: cadence_qspi: Support various address cells size
+ab221d6 Thor Thayer FogBugz #514871: arm: socfpga: stratix10: Enable SPI1 support
+131cc3b Chin Liang See FogBugz #522409-2: gpio: dwapb: Enable get_function support
+8f1db31 Chin Liang See FogBugz #522409-1: arm: socfpga: stratix10: Enable GPIO support
+d65b13f Chin Liang See FogBugz #504067: arm: socfpga: stratix10: SMP through PSCI
+d17866b Chin Liang See FogBugz #504066: arm: socfpga: stratix10: Enable PSCI CPU_ON
+c12d30a Chin Liang See FogBugz #504009: arm: socfpga: stratix10: Enable PSCI system reset
+14bab09 Chin Liang See FogBugz #504008: arm: socfpga: stratix10: Ensure mailbox is PSCI compatible
+2956f21 Chin Liang See FogBugz #503969: arm: socfpga: stratix10: Enable PSCI support
+6c56930 Chin Liang See FogBugz #503967: arm: Disable fwcall when PSCI is enabled
+f066dd4 Chin Liang See FogBugz #513999-2: arm: socfpga: stratix10: Enable i2c support
+ba02f40 Chin Liang See FogBugz #513999-1: arm: dts: stratix10: Enable i2c support
+a2797d7 Chin Liang See FogBugz #511271: arm: socfpga: stratix10: Remove hard code of clock source frequency
+d48c53b Chin Liang See FogBugz #506764: arm: socfpga: stratix10: Fix VCO algorithm
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.02.01_rc1
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.02.01_rc1
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_18.02.01_rc1
+commit: 661b505 Chin Liang See FogBugz #504066: arm: socfpga: stratix10: Fix SMP issue
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.02.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.02.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.02.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.02.01_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.02.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.02.01_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.15
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.76-ltsi-rt
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 661b505ce8c9f6a7a12134743cd23a74cc54b475
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Thu Jan 18 13:37:37 2018 +0800
+
+    FogBugz #504066: arm: socfpga: stratix10: Fix SMP issue
+    
+    Fix the CPU1 fail to boot in SMP mod by ensuring there is sufficient
+    time for CPU1-CPU3 to enter psci_cpu_on_64_mpidr function before
+    sending event signal.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 8c6cdeba865890d5e4d269956276bb0e9ffb1b79
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed Jan 3 14:26:38 2018 +0800
+
+    FogBugz #518452: arm: socfpga: stratix10: Enable spi support
+    
+    Enable spi support for SOCFPGA Stratix10 SoC dev kit.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit e0b5de749528a39b228aca7b9977d1802ee71e01
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Fri Jan 5 23:53:34 2018 +0800
+
+    spi: designware_spi: Ensure all registers access are 32 bits
+    
+    To ensure all registers access are 32 bits since all arguments
+    used are u32. This will improves the driver compatibility as certain
+    SoC is designed where register access demands full 32 bits access.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit bc07c6cbcc4b87742ca99ea42ab1761980146972
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed Jan 3 15:45:46 2018 +0800
+
+    FogBugz #524216: arm: socfpga: stratix10: Fix DTS compilation warning
+    
+    Fix dts incorrect address cells size compilation warnings. We should be
+    using 64 bits addresses to ensure the drivers works with 64bits ARM
+    processors in Stratix10 SoC.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit a178b66739270fdc38ca5acc49352e763dbf7c6c
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Fri Jan 5 23:50:01 2018 +0800
+
+    FogBugz #524232: spi: cadence_qspi: Support various address cells size
+    
+    Enhance initialization code so it can extract the correct addresses
+    from reg field even with various address-cells value.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit ab221d6b0903645892fb19e3889cd990024ffabe
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Tue Dec 19 10:14:59 2017 -0600
+
+    FogBugz #514871: arm: socfpga: stratix10: Enable SPI1 support
+    
+    Enable SPIM1 support for SOCFPGA Stratix10 SoC Daughtercard or
+    SPI Loopback testing.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 131cc3b1e991613484b05c8db59d365c37ba415d
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed Dec 27 11:39:01 2017 +0800
+
+    FogBugz #522409-2: gpio: dwapb: Enable get_function support
+    
+    Enabled get_function support for dwapb where the function will
+    return the state of GPIO port
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 8f1db31d08faa9c70c201d684db6f6ca31cb58b4
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed Dec 27 11:38:14 2017 +0800
+
+    FogBugz #522409-1: arm: socfpga: stratix10: Enable GPIO support
+    
+    Enabled GPIO for SOCFPGA Stratix10 SoC dev kit.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit d65b13fffbbda4e347bff4bad3c5d4b558df25bd
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Fri Oct 20 22:10:40 2017 +0800
+
+    FogBugz #504067: arm: socfpga: stratix10: SMP through PSCI
+    
+    Disable the spin-table method as we shall use PSCI method
+    to enable CPU1-CPU3 to join the Linux's SMP cluster.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit d17866b70872ceab7116477329616aee159b4e61
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed Dec 27 17:54:28 2017 +0800
+
+    FogBugz #504066: arm: socfpga: stratix10: Enable PSCI CPU_ON
+    
+    Enable psci_cpu_on support for Stratix10. This PSCI function
+    will pass the cpu release address for CPU1-CPU3. Then send event
+    signal shall be triggered to get these CPUs running Linux code.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit c12d30a8daca29dc92baf3d4e46fe32e1374c643
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Thu Nov 16 17:59:04 2017 +0800
+
+    FogBugz #504009: arm: socfpga: stratix10: Enable PSCI system reset
+    
+    Enable psci_system_reset support for Stratix10. This PSCI function
+    will eventually trigger the mailbox HPS_REBOOT to SDM.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 14bab09fdf38b4b50e41acf161f3f1f82b07e2ba
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Mon Dec 11 16:20:08 2017 +0800
+
+    FogBugz #504008: arm: socfpga: stratix10: Ensure mailbox is PSCI compatible
+    
+    Re-factor the Stratix10 mailbox driver to be compatible with PSCI.
+    
+    Delay or printf will be removed since PSCI code today doesn't
+    support UART and timer. All mailbox function shall be inlined to
+    ensure it will stick together with PSCI functions which will be
+    located to OCRAM.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 2956f214c292aa4016c1e43a44ada95719ed1940
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Fri Oct 20 21:01:00 2017 +0800
+
+    FogBugz #503969: arm: socfpga: stratix10: Enable PSCI support
+    
+    Enable the PSCI support in Stratix10. The PSCI code will support
+    4 CPUs and reside at on-chip RAM.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 6c569303e1a15ac0f54410d8d73e4e69aabb2abe
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed Nov 15 17:29:48 2017 +0800
+
+    FogBugz #503967: arm: Disable fwcall when PSCI is enabled
+    
+    When PSCI is enabled, we are expecting U-Boot which now act
+    as EL3 software will handle all the PSCI calls. We won't need
+    fwcall as no further HVC or SMC are needed.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit f066dd4f66a16a61d6c2dda969d1cb7471da622d
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed Nov 22 20:39:03 2017 +0800
+
+    FogBugz #513999-2: arm: socfpga: stratix10: Enable i2c support
+    
+    Enable i2c support for SOCFPGA Stratix10 SoC dev kit.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit ba02f406cbe0157cbe3504cf7226643b7f34d08d
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Mon Dec 11 08:49:34 2017 +0800
+
+    FogBugz #513999-1: arm: dts: stratix10: Enable i2c support
+    
+    Added i2c node for SOCFPGA Stratix10 SoC dev kit.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit a2797d73a1eac332f9ed9a3e440b9cbae82e0156
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Mon Nov 20 09:10:06 2017 +0800
+
+    FogBugz #511271: arm: socfpga: stratix10: Remove hard code of clock source frequency
+    
+    To fix the clock driver to grab the clock source frequency from
+    handoff binary blob.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit d48c53b92a60c7a4f3dd85a84d8d16e880e85a3c
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Mon Dec 11 08:43:03 2017 +0800
+
+    FogBugz #506764: arm: socfpga: stratix10: Fix VCO algorithm
+    
+    Fix the algorithm which calculates the VCO mscnt value. When the
+    refclkdiv is not 1, the PLL is not able to lock without this fix.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+-----------------------------------------------------------------------
+

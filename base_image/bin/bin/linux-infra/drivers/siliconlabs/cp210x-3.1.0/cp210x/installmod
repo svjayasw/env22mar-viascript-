@@ -1,0 +1,32 @@
+#!/bin/sh
+
+if [ -f $1 ] ; then
+    	if [ -d $2/kernel/drivers ] ; then
+		installpath=$2/kernel/drivers/usb/serial/$1
+    	else
+		installpath=$2
+    	fi
+
+    	install -m 444 -D $1 $installpath
+
+    	if [ $? != 0 ] ; then
+		echo "ERR: Failed to install $1 in $installpath"
+		exit 1
+    	else
+echo ""
+echo ""
+echo ""
+		echo "Installed $1 in $installpath"
+echo ""
+echo ""
+echo ""
+		
+    	fi
+
+#		depmod    
+
+    	exit 0
+else
+    	echo "ERR: Module \"$1\" not present"
+    	exit 1
+fi

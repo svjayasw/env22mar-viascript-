@@ -1,0 +1,214 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.4
+branch tag  : rel_socfpga-4.4_16.04.01_rc1
+new commits : 1
+4885028 Ley Foon Tan PCI: altera: Fix altera_pcie_link_is_up()
+
+
+branch      : socfpga-4.1-ltsi
+branch tag  : rel_socfpga-4.1-ltsi_16.04.01_rc1
+new commits : 1
+c816eac Ley Foon Tan PCI: altera: Fix altera_pcie_link_is_up()
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.4_16.04.01_rc1
+commit: 4885028 Ley Foon Tan PCI: altera: Fix altera_pcie_link_is_up()
+
+tag:    rel_socfpga-4.1-ltsi_16.04.01_rc1
+commit: c816eac Ley Foon Tan PCI: altera: Fix altera_pcie_link_is_up()
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.04.01_rc1
+new commits : 1
+7dd0473 Chin Liang See FogBugz #353914: Fix SDRAM self refresh failure
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.04.01_rc1
+new commits : 5
+1528f6d Tien Fong Chee FogBugz #361051-5: Setting the OCRAM ECC counter into the U-boot env
+8efe20c Tien Fong Chee FogBugz #361051-4: Setting the SDRAM ECC counter into the U-boot env
+d10651d Tien Fong Chee FogBugz #361051-3: Enable error interrupt in Arria 10 SDRAM ECC
+dcdc601 Tien Fong Chee FogBugz #361051-2: Enable error interrupt in Arria 10 OCRAM ECC
+9a06234 Tien Fong Chee FogBugz #361051-1: Enforce OCRAM init all uninitialized region
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.04.01_rc1
+commit: 7dd0473 Chin Liang See FogBugz #353914: Fix SDRAM self refresh failure
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.04.01_rc1
+commit: 1528f6d Tien Fong Chee FogBugz #361051-5: Setting the OCRAM ECC counter into the U-boot env
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.04.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.04.01_rc1
+commit: 0a2c33d Tien Hock Loh FogBugz #338393: PCIe: Update meta-altera-refdes commit ID
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.04.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.04.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.04.01_rc1
+commit: 8d6e9b4 Yves Vandervennet Support for the kernel v4.3
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.04.01_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.4
+
+commit 4885028447552ea4794d3b70114cf7d617c41373
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Mar 2 17:43:07 2016 +0800
+
+    PCI: altera: Fix altera_pcie_link_is_up()
+    
+    Originally altera_pcie_link_is_up() decided the link was up if any of the
+    low four bits of the LTSSM register were set.  But the link is only up if
+    the LTSSM state is L0, so check for that exact value.
+    
+    [bhelgaas: changelog]
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1-ltsi
+
+commit c816eac2b585ced0418ae9d11565825b9489e0c6
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Mar 2 17:43:07 2016 +0800
+
+    PCI: altera: Fix altera_pcie_link_is_up()
+    
+    Originally altera_pcie_link_is_up() decided the link was up if any of the
+    low four bits of the LTSSM register were set.  But the link is only up if
+    the LTSSM state is L0, so check for that exact value.
+    
+    [bhelgaas: changelog]
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Bjorn Helgaas <bhelgaas@google.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 7dd0473e47ede9fd240969846a42f5646f565ce9
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Mar 24 17:22:27 2016 +0800
+
+    FogBugz #353914: Fix SDRAM self refresh failure
+    
+    To fix the broken SDRAM self refresh feature where the
+    SDRAM content is wiped off after warm reset. The SDRAM
+    ECC initialization should be skipped when SDRAM self
+    refresh is enabled and after a warm reset.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Update the comment to reflect the code change
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 1528f6dfb63956b25c7023cb0e374d8ca3f6b5e0
+Author: Tien Fong Chee <tfchee@pg-interactive1.altera.com>
+Date:   Mon Mar 7 19:24:07 2016 +0800
+
+    FogBugz #361051-5: Setting the OCRAM ECC counter into the U-boot env
+    
+    This patch enables the OCRAM ECC counter setting into the U-boot
+    environment.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 8efe20ce968f684c02ea6a167ea4642ea5c46b03
+Author: Tien Fong Chee <tfchee@pg-interactive1.altera.com>
+Date:   Fri Mar 4 17:53:19 2016 +0800
+
+    FogBugz #361051-4: Setting the SDRAM ECC counter into the U-boot env
+    
+    This patch enables the SDRAM ECC counter setting into the U-boot
+    environment.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit d10651d055c74257e6cffed998f303856c169388
+Author: Tien Fong Chee <tfchee@pg-interactive1.altera.com>
+Date:   Thu Mar 17 15:12:28 2016 +0800
+
+    FogBugz #361051-3: Enable error interrupt in Arria 10 SDRAM ECC
+    
+    This patch enables the single bit error, double bit error, address
+    mismatch error and address parity error interrupts in SDRAM ECC.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@.altera.com>
+
+commit dcdc60154bff8e0bef4077e612423239e195403e
+Author: Tien Fong Chee <tfchee@pg-interactive1.altera.com>
+Date:   Thu Mar 17 15:01:18 2016 +0800
+
+    FogBugz #361051-2: Enable error interrupt in Arria 10 OCRAM ECC
+    
+    This patch enables the single bit error interrupt in OCRAM ECC and
+    registering the common SBE handler and DBE handler to GIC.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@.altera.com>
+
+commit 9a062342d3cdcf3bd9a5edd4390e9d180610189a
+Author: Tien Fong Chee <tfchee@pg-interactive1.altera.com>
+Date:   Thu Mar 17 14:20:50 2016 +0800
+
+    FogBugz #361051-1: Enforce OCRAM init all uninitialized region
+    
+    This patch initializes all OCRAM memory that wasn't initialized
+    during the write of the U-Boot image.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@.altera.com>
+
+-----------------------------------------------------------------------
+

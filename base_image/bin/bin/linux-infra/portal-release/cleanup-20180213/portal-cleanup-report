@@ -1,0 +1,31 @@
+#!/bin/bash
+
+function usage()
+{
+    echo "$(basename $0)"
+}
+
+#===================================================================
+
+while [ -n "${1}" ]; do
+    case "${1}" in
+	-h ) usage; exit ;;
+	* ) echo what? ; usage ; exit ;;
+    esac
+    shift
+done
+
+#cd ~/repos/portal/linux-socfpga
+
+for tag in $(git tag | grep -v '^v'); do
+    descr="$(git describe ${tag})"
+    echo "tag:${descr}:${tag}"
+done
+echo
+for br in $(git branch -r | grep -v master); do
+    descr="$(git describe ${br})"
+    echo "branch:${descr}:${br}"
+done
+
+exit
+

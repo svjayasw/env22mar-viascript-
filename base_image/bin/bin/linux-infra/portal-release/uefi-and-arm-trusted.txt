@@ -1,0 +1,44 @@
+From:	Loh, Tien Hock
+Sent:	Wednesday, March 27, 2019 5:17 AM
+To:	Tull, Alan
+Cc:	See, Chin Liang; Tan, Ying Cheh; Li, Sen; Riffel, Todd
+Subject:	RE: Bi-weekly sync between github and at-git for arm-trusted-firmware 
+and uefi-socfpga
+
+Alan,
+
+Yup, every other week, same as uboot-socfpga and linux-socfpga. For now, it should be the master 
+branch, and socfpga_v1.4. 
+
+Thanks
+Tien Hock
+
+From: Tull, Alan  
+Sent: Wednesday, March 27, 2019 5:10 AM 
+To: Loh, Tien Hock <tien.hock.loh@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>; Li, Sen 
+<sen.li@intel.com>; Riffel, Todd <todd.riffel@intel.com> 
+Subject: RE: Bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-socfpga
+
+Hi Tien Hock,
+
+Yes, no problem.  So these will be updated to github every other week like uboot-socfpga and linux-
+socfpga.  Which branches will be currently releasing?
+
+Alan
+
+
+From: Loh, Tien Hock  
+Sent: Sunday, March 24, 2019 8:45 PM 
+To: Tull, Alan <alan.tull@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com> 
+Subject: Bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-socfpga
+
+Alan,
+
+Can you help setup a bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-
+socfpga, like in uboot-socfpga and linux-socfpga?
+
+Thanks
+Tien Hock
+

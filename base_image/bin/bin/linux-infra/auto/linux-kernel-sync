@@ -1,0 +1,32 @@
+#!/bin/bash
+
+source $(dirname $0)/sync_repo_common.sh
+
+export lock_filename="$(basename $0 | sed 's/.sh//')"
+script_lock
+
+# Send email if there is an error exit
+trap 'error_exit ${LINENO}' ERR
+
+#====================================================================================
+
+LOCAL_REPOS="linux-socfpga linux-devtree linux-sandbox linux-bringup linux-not-for-release linux-collab"
+PORTAL_REPOS="linux-socfpga"
+# switched to googlesource.com url on 7/23/2018 when we started having TLS errors
+#LINUS_KERNEL_UPSTREAM=https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+
+LINUS_KERNEL_UPSTREAM=https://kernel.googlesource.com/pub/scm/linux/kernel/git/torvalds/linux.git
+
+#====================================================================================
+
+echo "--- Sync Start --- $(date)"
+
+# echo "--- Sync Start --- $(date)" kernel from Linus's tree
+cd_or_clone $LINUS_KERNEL_UPSTREAM
+push_tags_and_master_branch $LOCAL_REPOS
+push_tags_and_master_branch_portal $PORTAL_REPOS
+
+echo '--- Sync Finished ---'
+echo
+
+unlock_exit

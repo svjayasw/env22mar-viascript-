@@ -1,0 +1,803 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+The following new branches were tagged:
+repo : linux-socfpga          branch : socfpga-4.16
+repo : intel-rsu              branch : master
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.15
+branch tag  : rel_socfpga-4.15_18.05.01_rc1
+new commits : 11
+800553e David Koltak FogBugz #554835-3: Intel RSU binding documentation
+562dc46 David Koltak FogBugz #554835-2: Stratix 10 SoC DevKit Defconfig for Intel RSU
+000af21 David Koltak FogBugz #554835-1: Add Stratix 10 SoC RSU Driver
+aa9b366 Thor Thayer FogBugz #549288-4: dts: add Stratix10 sdram ecc
+a2884ad Thor Thayer FogBugz #549288-3: edac: Add support for Stratix10 SDRAM EDAC
+97a3b73 Thor Thayer FogBugz #549288-2: Add Stratix10 ECC Manager binding
+da941c6 Thor Thayer FogBugz #549288-1: misc: Stratix10 Protected register access defines
+d798462 Thor Thayer mtd: spi-nor: Add Micron MT25QU02 support
+c1de85b Thor Thayer mtd: spi-nor: cadence-quadspi: Fix page fault kernel panic
+e85199e Alan Tull FogBugz #554812: fpga: stratix10: unitialized data
+bf0c54d Ooi, Joyce arm64: dts: stratix10: Change pad skew values for EMAC0 PHY driver
+
+
+branch      : socfpga-4.16
+branch tag  : rel_socfpga-4.16_18.05.01_rc1
+Pushing new branch to external git
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.05.01_rc1
+new commits : 9
+97ee5cb David Koltak FogBugz #554835-3: Intel RSU binding documentation
+3609a76 David Koltak FogBugz #554835-2: Stratix 10 SoC DevKit Defconfig for Intel RSU
+296fa01 David Koltak FogBugz #554835-1: Add Stratix 10 SoC RSU Driver
+c615dcc Thor Thayer FogBugz #549288-4: dts: add Stratix10 sdram ecc
+668293e Thor Thayer FogBugz #549288-3: edac: Add support for Stratix10 SDRAM EDAC
+1a72eb4 Thor Thayer FogBugz #549288-2: Add Stratix10 ECC Manager binding
+c8a7d06 Thor Thayer FogBugz #549288-1: misc: Stratix10 Protected register access defines
+520cde6 Alan Tull FogBugz #554812: fpga: stratix10: unitialized data
+26ee43d Ooi, Joyce arm64: dts: stratix10: Change pad skew values for EMAC0 PHY driver
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.05.01_rc1
+new commits : 9
+4d32600 David Koltak FogBugz #554835-3: Intel RSU binding documentation
+91f33f0 David Koltak FogBugz #554835-2: Stratix 10 SoC DevKit Defconfig for Intel RSU
+ef1719c David Koltak FogBugz #554835-1: Add Stratix 10 SoC RSU Driver
+21b653f Thor Thayer FogBugz #549288-4: dts: add Stratix10 sdram ecc
+bda5f06 Thor Thayer FogBugz #549288-3: edac: Add support for Stratix10 SDRAM EDAC
+3c1bf5f Thor Thayer FogBugz #549288-2: Add Stratix10 ECC Manager binding
+de64775 Thor Thayer FogBugz #549288-1: misc: Stratix10 Protected register access defines
+decbc05 Alan Tull FogBugz #554812: fpga: stratix10: unitialized data
+57f0a3b Ooi, Joyce arm64: dts: stratix10: Change pad skew values for EMAC0 PHY driver
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.15_18.05.01_rc1
+commit: 800553e David Koltak FogBugz #554835-3: Intel RSU binding documentation
+
+tag:    rel_socfpga-4.16_18.05.01_rc1
+commit: beaee5c David Koltak FogBugz #554835-3: Intel RSU binding documentation
+
+tag:    rel_socfpga-4.9.78-ltsi_18.05.01_rc1
+commit: 97ee5cb David Koltak FogBugz #554835-3: Intel RSU binding documentation
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.05.01_rc1
+commit: 4d32600 David Koltak FogBugz #554835-3: Intel RSU binding documentation
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.05.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.05.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.05.01_rc1
+new commits : 10
+475f14c Chin Liang See FogBugz #552620-3: arm: socfpga: stratix10: Enable RSU SMC support
+1ccf690 Chin Liang See FogBugz #552620-2: arm: socfpga: stratix10: Add RSU mailbox for SMC
+e252466 Chin Liang See FogBugz #552620-1: arm: socfpga: stratix10: Add RSU SMC declaration
+d1705d4 Chin Liang See FogBugz #551085-3: arm: socfpga: stratix10: Enable RSU support
+4d18ae1 Chin Liang See FogBugz #551085-2: arm: socfpga: stratix10: Add RSU mailbox support
+ccaefc4 Chin Liang See FogBugz #551085-1: arm: socfpga: stratix10: Add RSU header file
+f88b92c Tien Fong Chee FogBugz #554982: S10: SPL: Fix overflow local variable
+75db91c Ooi, Joyce FogBugz #540939: Change pad skew values for EMAC0 PHY driver
+5672ffc Chee Hong Ang FogBugz #554177: Enable SMC/PSCI calls from slave CPUs
+d4cebec Thor Thayer FogBugz #548210-5: Make SMC register functions generic
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.05.01_rc1
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.05.01_rc1
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_18.05.01_rc1
+commit: 475f14c Chin Liang See FogBugz #552620-3: arm: socfpga: stratix10: Enable RSU SMC support
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.05.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.05.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.05.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.05.01_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.05.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.05.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.05.01_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.05.01_rc1
+commit: 69c4320 Ong, Hean Loong Backport systemd change e266c06 from systemd v234-stable
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.05.01_rc1
+Pushing new branch to external git
+
+Tags to push out to external git:
+tag:    rel_master_18.05.01_rc1
+commit: 79b1ebd David Koltak FogBugz #547564: Initial Source Code Commit
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.15
+
+commit 800553eb887b2477bed3693e931c6aadf484eefb
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Thu May 3 08:31:29 2018 -0500
+
+    FogBugz #554835-3: Intel RSU binding documentation
+    
+    Documentation showing the proper device tree node
+    and binding for the Intel Remote System Update (RSU)
+    driver for Stratix 10 SoC FPGAs.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit 562dc467e8ff9589cbe5efb10fd62287b5510a38
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Thu May 3 08:31:01 2018 -0500
+
+    FogBugz #554835-2: Stratix 10 SoC DevKit Defconfig for Intel RSU
+    
+    Adding the intel-rsu driver to the Intel Stratix 10 SoC
+    devkit defconfig.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit 000af215119d8a7ccb469d49535a59a5dbb12ad7
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Thu May 3 08:30:39 2018 -0500
+
+    FogBugz #554835-1: Add Stratix 10 SoC RSU Driver
+    
+    Add a kernel driver to expose interfaces required to
+    support the Remote System Update (RSU) feature of Stratix
+    10 SoC FPGAs.  The driver uses SysFS device attribute nodes.
+    The accesses are performed through the intel-service layer.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit aa9b366a54171468663f221ae46baa6e34c35288
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Thu Apr 26 15:52:12 2018 -0500
+
+    FogBugz #549288-4: dts: add Stratix10 sdram ecc
+    
+    arm64: dts: stratix10: add sdram ecc
+    
+    Add the Stratix10 ECC Manager and SDRAM EDAC nodes to the
+    device tree.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Remove unused SysMan syscon
+        Remove unused SDRAM ECC register defines
+
+commit a2884ad40e8120fe44c268f48b162e4fcff68feb
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Apr 16 15:08:16 2018 -0500
+
+    FogBugz #549288-3: edac: Add support for Stratix10 SDRAM EDAC
+    
+    edac: altera: Add support for Stratix10 SDRAM EDAC
+    
+    Support for Stratix10 SDRAM ECC requires the use of SMC
+    calls to a higher priority exception level.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Use ARCH_STRATIX10 for Kconfig dependency.
+        Use SPDX license headers.
+        Remove unused SysMan syscon and regmap.
+        Remove unused SDRAM ECC register mapping.
+        Remove spinlock. Not needed until more ECC blocks.
+
+commit 97a3b7365253bc7757b2c885a23e4bd57be9d25b
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri Apr 20 16:15:59 2018 -0500
+
+    FogBugz #549288-2: Add Stratix10 ECC Manager binding
+    
+    Documentation: dt: socfpga: Add Stratix10 ECC Manager binding
+    
+    Add the device tree bindings needed to support the Stratix10
+    ECC Manager and SDRAM ECC.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Remove unused System Manager syscon.
+        Remove unused SDRAM ECC register defines.
+
+commit da941c6dc017d0eebf0d7c72d9a84231c5447c61
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Apr 9 16:33:23 2018 -0500
+
+    FogBugz #549288-1: misc: Stratix10 Protected register access defines
+    
+    Add the defines for the Stratix10 Protected register
+    accesses. This syncs with the U-Boot version of this
+    file.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit d798462c65d0677e6efdfd595907c35a61c526d0
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Thu Apr 5 14:12:49 2018 -0500
+
+    mtd: spi-nor: Add Micron MT25QU02 support
+    
+    [backport 'commit 56c6855c81c8 ("mtd: spi-nor:
+                                     Add Micron MT25QU02 support")']
+    
+    Backported from spi-nor-next/next
+    
+    Add support for a new Micron 2Gb Flash memory part.
+    Datasheet is available: mt25q_qlkt_l_02g_cbb_0.pdf
+    
+    Testing was done on a Stratix10 SoCFPGA Development Kit.
+    
+    Reported-by: Sujith Chidurala <sujith.chakra.chidurala@intel.com>
+    Tested-by: Paul Kim <paul.kim@intel.com>
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Acked-by: Marek Vasut <marek.vasut@gmail.com>
+    Signed-off-by: Boris Brezillon <boris.brezillon@bootlin.com>
+
+commit c1de85b2b1dd9dcad21a2514fca327d74d03b571
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Apr 23 12:45:11 2018 -0500
+
+    mtd: spi-nor: cadence-quadspi: Fix page fault kernel panic
+    
+    [backport 'commit 47016b341fc3 ("mtd: spi-nor: cadence-quadspi:
+                                 Fix page fault kernel panic")']
+    
+    Backported from spi-nor-next/master
+    
+    The current Cadence QSPI driver caused a kernel panic when loading
+    a Root Filesystem from QSPI. The problem was caused by reading more
+    bytes than needed because the QSPI operated on 4 bytes at a time.
+    <snip>
+    [    7.947754] spi_nor_read[1048]:from 0x037cad74, len 1 [bfe07fff]
+    [    7.956247] cqspi_read[910]:offset 0x58502516, buffer=bfe07fff
+    [    7.956247]
+    [    7.966046] Unable to handle kernel paging request at virtual
+    address bfe08002
+    [    7.973239] pgd = eebfc000
+    [    7.975931] [bfe08002] *pgd=2fffb811, *pte=00000000, *ppte=00000000
+    </snip>
+    Notice above how only 1 byte needed to be read but by reading 4 bytes
+    into the end of a mapped page, an unrecoverable page fault occurred.
+    
+    This patch uses a temporary buffer to hold the 4 bytes read and then
+    copies only the bytes required into the buffer. A min() function is
+    used to limit the length to prevent buffer overflows.
+    
+    Request testing of this patch on other platforms. This was tested
+    on the Intel Arria10 SoCFPGA DevKit.
+    
+    Fixes: 0cf1725676a97fc8 ("mtd: spi-nor: cqspi: Fix build on arches missing readsl/writesl")
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Cc: <stable@vger.kernel.org>
+    Reviewed-by: Marek Vasut <marek.vasut@gmail.com>
+    Signed-off-by: Boris Brezillon <boris.brezillon@bootlin.com>
+
+commit e85199e8db5bc5c8880f95b5e8fec05d52ddd5d0
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Apr 24 14:17:36 2018 -0500
+
+    FogBugz #554812: fpga: stratix10: unitialized data
+    
+    Address the following issue caught by static code analysis:
+    
+    drivers/fpga/stratix10-soc.c:206 --  -- UNINIT.STACK.MUST
+    (1:Critical) Analyze 'payload.flags' is used uninitialized
+    in this function.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit bf0c54db1dff12fbef7aedf7538a741e78328fc7
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Tue Apr 24 11:01:58 2018 +0800
+
+    arm64: dts: stratix10: Change pad skew values for EMAC0 PHY driver
+    
+    The HPS EMAC0 drive strength is changed to 4mA because the initial 8mA
+    drive strength has caused CE test to fail. This requires changes on the
+    pad skew for EMAC0 PHY driver. Based on several measurements done, Tx
+    clock does not require the extra 0.96ns delay.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.16
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+commit 97ee5cb2664b7068fe4804371f03e10fedacf905
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Thu May 3 08:31:29 2018 -0500
+
+    FogBugz #554835-3: Intel RSU binding documentation
+    
+    Documentation showing the proper device tree node
+    and binding for the Intel Remote System Update (RSU)
+    driver for Stratix 10 SoC FPGAs.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit 3609a763c756b16ffdebc728eea7ebb59442864b
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Thu May 3 08:31:01 2018 -0500
+
+    FogBugz #554835-2: Stratix 10 SoC DevKit Defconfig for Intel RSU
+    
+    Adding the intel-rsu driver to the Intel Stratix 10 SoC
+    devkit defconfig.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit 296fa01a54a4c1cb20cc813b40796540dd42cb5d
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Thu May 3 08:30:39 2018 -0500
+
+    FogBugz #554835-1: Add Stratix 10 SoC RSU Driver
+    
+    Add a kernel driver to expose interfaces required to
+    support the Remote System Update (RSU) feature of Stratix
+    10 SoC FPGAs.  The driver uses SysFS device attribute nodes.
+    The accesses are performed through the intel-service layer.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit c615dccc465cdd26368131673aa8b4d512c276f3
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Thu Apr 26 15:52:12 2018 -0500
+
+    FogBugz #549288-4: dts: add Stratix10 sdram ecc
+    
+    arm64: dts: stratix10: add sdram ecc
+    
+    Add the Stratix10 ECC Manager and SDRAM EDAC nodes to the
+    device tree.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Remove unused SysMan syscon
+        Remove unused SDRAM ECC register defines
+
+commit 668293e1cacf38c176ca3097db60dd3267cadccb
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Apr 16 15:08:16 2018 -0500
+
+    FogBugz #549288-3: edac: Add support for Stratix10 SDRAM EDAC
+    
+    edac: altera: Add support for Stratix10 SDRAM EDAC
+    
+    Support for Stratix10 SDRAM ECC requires the use of SMC
+    calls to a higher priority exception level.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Use ARCH_STRATIX10 for Kconfig dependency.
+        Use SPDX license headers.
+        Remove unused SysMan syscon and regmap.
+        Remove unused SDRAM ECC register mapping.
+        Remove spinlock. Not needed until more ECC blocks.
+
+commit 1a72eb4d6777c94cffcb4008dfd58b84cc37d8be
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri Apr 20 16:15:59 2018 -0500
+
+    FogBugz #549288-2: Add Stratix10 ECC Manager binding
+    
+    Documentation: dt: socfpga: Add Stratix10 ECC Manager binding
+    
+    Add the device tree bindings needed to support the Stratix10
+    ECC Manager and SDRAM ECC.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Remove unused System Manager syscon.
+        Remove unused SDRAM ECC register defines.
+
+commit c8a7d06f2b4a9951cbd936185f81b4b4cd099341
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Apr 9 16:33:23 2018 -0500
+
+    FogBugz #549288-1: misc: Stratix10 Protected register access defines
+    
+    Add the defines for the Stratix10 Protected register
+    accesses. This syncs with the U-Boot version of this
+    file.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 520cde6571a05bd51e82beb9fab96e5757eae12c
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Apr 24 14:17:36 2018 -0500
+
+    FogBugz #554812: fpga: stratix10: unitialized data
+    
+    Address the following issue caught by static code analysis:
+    
+    drivers/fpga/stratix10-soc.c:206 --  -- UNINIT.STACK.MUST
+    (1:Critical) Analyze 'payload.flags' is used uninitialized
+    in this function.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 26ee43d90e3f5f23c60029fb1f94b632fa0360ed
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Tue Apr 24 11:01:58 2018 +0800
+
+    arm64: dts: stratix10: Change pad skew values for EMAC0 PHY driver
+    
+    The HPS EMAC0 drive strength is changed to 4mA because the initial 8mA
+    drive strength has caused CE test to fail. This requires changes on the
+    pad skew for EMAC0 PHY driver. Based on several measurements done, Tx
+    clock does not require the extra 0.96ns delay.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    
+    Conflicts:
+    	arch/arm64/boot/dts/altera/socfpga_stratix10_socdk.dts
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.76-ltsi-rt
+
+commit 4d326009c03574a59867818125dea59dbb01ee0a
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Thu May 3 08:31:29 2018 -0500
+
+    FogBugz #554835-3: Intel RSU binding documentation
+    
+    Documentation showing the proper device tree node
+    and binding for the Intel Remote System Update (RSU)
+    driver for Stratix 10 SoC FPGAs.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit 91f33f04629a598f93e97fa883465be4668bd008
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Thu May 3 08:31:01 2018 -0500
+
+    FogBugz #554835-2: Stratix 10 SoC DevKit Defconfig for Intel RSU
+    
+    Adding the intel-rsu driver to the Intel Stratix 10 SoC
+    devkit defconfig.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit ef1719cea538fab3480d86a4e8168bd2d9a658ef
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Thu May 3 08:30:39 2018 -0500
+
+    FogBugz #554835-1: Add Stratix 10 SoC RSU Driver
+    
+    Add a kernel driver to expose interfaces required to
+    support the Remote System Update (RSU) feature of Stratix
+    10 SoC FPGAs.  The driver uses SysFS device attribute nodes.
+    The accesses are performed through the intel-service layer.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit 21b653f0b66fcbae70e13ccd1b959c345947cace
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Thu Apr 26 15:52:12 2018 -0500
+
+    FogBugz #549288-4: dts: add Stratix10 sdram ecc
+    
+    arm64: dts: stratix10: add sdram ecc
+    
+    Add the Stratix10 ECC Manager and SDRAM EDAC nodes to the
+    device tree.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Remove unused SysMan syscon
+        Remove unused SDRAM ECC register defines
+
+commit bda5f06912619b3a1d796777519d3e9116ba52a7
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Apr 16 15:08:16 2018 -0500
+
+    FogBugz #549288-3: edac: Add support for Stratix10 SDRAM EDAC
+    
+    edac: altera: Add support for Stratix10 SDRAM EDAC
+    
+    Support for Stratix10 SDRAM ECC requires the use of SMC
+    calls to a higher priority exception level.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Use ARCH_STRATIX10 for Kconfig dependency.
+        Use SPDX license headers.
+        Remove unused SysMan syscon and regmap.
+        Remove unused SDRAM ECC register mapping.
+        Remove spinlock. Not needed until more ECC blocks.
+
+commit 3c1bf5fc94af6c9c13d25e41dc88eba6391f661a
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri Apr 20 16:15:59 2018 -0500
+
+    FogBugz #549288-2: Add Stratix10 ECC Manager binding
+    
+    Documentation: dt: socfpga: Add Stratix10 ECC Manager binding
+    
+    Add the device tree bindings needed to support the Stratix10
+    ECC Manager and SDRAM ECC.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Remove unused System Manager syscon.
+        Remove unused SDRAM ECC register defines.
+
+commit de64775fb38c7d53f6f7e7d2d0898cc02d0cef73
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Apr 9 16:33:23 2018 -0500
+
+    FogBugz #549288-1: misc: Stratix10 Protected register access defines
+    
+    Add the defines for the Stratix10 Protected register
+    accesses. This syncs with the U-Boot version of this
+    file.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit decbc052a12852eda0bb94bf9db69b227eb69fb3
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Apr 24 14:17:36 2018 -0500
+
+    FogBugz #554812: fpga: stratix10: unitialized data
+    
+    Address the following issue caught by static code analysis:
+    
+    drivers/fpga/stratix10-soc.c:206 --  -- UNINIT.STACK.MUST
+    (1:Critical) Analyze 'payload.flags' is used uninitialized
+    in this function.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 57f0a3be53c4da967e8e4055461cba0ce40fe0fd
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Tue Apr 24 11:01:58 2018 +0800
+
+    arm64: dts: stratix10: Change pad skew values for EMAC0 PHY driver
+    
+    The HPS EMAC0 drive strength is changed to 4mA because the initial 8mA
+    drive strength has caused CE test to fail. This requires changes on the
+    pad skew for EMAC0 PHY driver. Based on several measurements done, Tx
+    clock does not require the extra 0.96ns delay.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    
+    Conflicts:
+    	arch/arm64/boot/dts/altera/socfpga_stratix10_socdk.dts
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 475f14cf687f8f122a25922b04d1c185a7c85d7d
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Thu Apr 26 13:54:12 2018 +0800
+
+    FogBugz #552620-3: arm: socfpga: stratix10: Enable RSU SMC support
+    
+    Enable Remote System Update (RSU)'s Secure Monitor Calls (SMC) support.
+    RSU_STATUS SMC will return the Secure Device Manager (SDM)'s status
+    on bitstream loading.
+    
+    RSU_UPDATE SMC will notify U-Boot that the next SYSTEM_RESET SMC will
+    trigger SDM to load the new bitstream as pointed by RSU_UPDATE SMC's
+    argument.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 1ccf6907e91a1ff0cf3c014c893c1f7c76f77409
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Mon Apr 16 20:49:52 2018 +0800
+
+    FogBugz #552620-2: arm: socfpga: stratix10: Add RSU mailbox for SMC
+    
+    Add Remote System Update (RSU) mailbox function to support Secure
+    Monitor Call (SMC). These functions will be located at __secure region
+    which act as Secure Monitor code EL3.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit e2524665c3db078dbc5e6063dfff13ea9e1b0c06
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Thu Apr 26 13:51:30 2018 +0800
+
+    FogBugz #552620-1: arm: socfpga: stratix10: Add RSU SMC declaration
+    
+    Add Secure Monitor Call (SMC) support for Remote System Update (RSU).
+    This enables lower EL software such as Linux to invoke RSU operation
+    such as RSU update and RSU status to Secure Device Manager (SDM)
+    through U-Boot.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit d1705d4321f362d183bbac23918bf291aaea63a7
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Mon Apr 30 17:24:12 2018 +0800
+
+    FogBugz #551085-3: arm: socfpga: stratix10: Enable RSU support
+    
+    Enable Remote System Update (RSU) support. User can use console command
+    "rsu list" and "rsu update" to invoke simple RSU operation. Together
+    with flash update command such as "sf write", user can update new
+    bitstream at flash before invoking "rsu update" to get Configuration
+    Management Firmware (CMF )to process the new bitstream.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 4d18ae142a9d7d78ccde0f4177e8c8ba40797007
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Tue Apr 10 22:40:44 2018 +0800
+
+    FogBugz #551085-2: arm: socfpga: stratix10: Add RSU mailbox support
+    
+    Add Remote System Update (RSU) related mailbox support. This including
+    RSU_STATUS which report status of bitstream loaded by Configuration
+    Management Firmware (CMF), RSU_UPDATE which will invoke CMF to load
+    new bitstream and GET_SUBPARTITION_TABLE which will query CMF on the
+    start address of sub-partition table.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit ccaefc43284bc4514d87dfbd5a3f562cf7040ca3
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Mon Apr 30 17:23:06 2018 +0800
+
+    FogBugz #551085-1: arm: socfpga: stratix10: Add RSU header file
+    
+    Add Remote System Update (RSU) related header file. This including RSU
+    content structure such as sub-partition table (SPT) which list down
+    content of the bitstream and CMF pointer block (CPB) which will tell
+    Configuration Management Firmware (CMF) the bitstream priorities.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit f88b92c94d403874f32833a0d2fa0dfb67fe9914
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Apr 25 14:26:54 2018 +0800
+
+    FogBugz #554982: S10: SPL: Fix overflow local variable
+    
+    Fix overflow local variable which is used to store SDRAM size. The 32 bits
+    declaration variable would hit overflow once the SDRAM size is larger than
+    4GB. Replace with phys_size_t for all memory size variables declaration for
+    better scalable. phys_size_t is defined in /arch/arm/include/asm/
+    types.h. A small snippet of codes are extracted to below:
+    
+    #ifdef CONFIG_PHYS_64BIT
+    typedef unsigned long long phys_addr_t;
+    typedef unsigned long long phys_size_t;
+    #else
+    /* DMA addresses are 32-bits wide */
+    typedef unsigned long phys_addr_t;
+    typedef unsigned long phys_size_t;
+    #endif
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 75db91c8b280447499acd6472f4b67b0530a3f0b
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Wed Apr 18 19:17:29 2018 +0800
+
+    FogBugz #540939: Change pad skew values for EMAC0 PHY driver
+    
+    The HPS EMAC0 drive strength is changed to 4mA because the initial 8mA
+    drive strength has caused CE test to fail. This requires changes on the
+    pad skew for EMAC0 PHY driver. Based on several measurements done, Tx
+    clock does not require the extra 0.96ns delay which was needed in
+    Arria10.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 5672ffc56d470111f81a8fcf045287f60c0a908a
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Fri Apr 20 18:28:07 2018 +0800
+
+    FogBugz #554177: Enable SMC/PSCI calls from slave CPUs
+    
+    Before this patch, only master CPU (CPU0) is able to
+    make SMC/PSCI calls to EL3 exception handler. This patch
+    allow SMC/PSCI calls from slave CPUs (CPU1/2/3) as well.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit d4cebec55680c46510de6df336524317b40296cc
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Fri Apr 20 08:24:05 2018 -0700
+
+    FogBugz #548210-5: Make SMC register functions generic
+    
+    Merge the System Manager and HMC Adapter register calls
+    into a generic register read and write since access to
+    the functions is protected through a switch/case statement.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+-----------------------------------------------------------------------
+
+log of intel-rsu branch master
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+

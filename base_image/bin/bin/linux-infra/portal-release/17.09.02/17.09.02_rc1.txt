@@ -1,0 +1,120 @@
+
+Script-generated report of what we tagged today in internal git.
+
+On Monday 9/18, we will tag the S10 uboot branch and do an early update
+of that to github as release 17.09.02.
+
+Kernel support for Stratix 10 bringup went out today on branches
+socfpga-4.11 and socfpga-4.12 as release 17.09.01
+
+Two weeks from today, we will resume our normal release schedule
+with release 17.09.03
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.11
+branch tag  : rel_socfpga-4.11_17.09.02_rc1
+new commits : 0
+
+
+branch      : socfpga-4.12
+branch tag  : rel_socfpga-4.12_17.09.02_rc1
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.09.02_rc1
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.09.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.11_17.09.02_rc1
+commit: cbacf34 Alan Tull FogBugz #492768: i2c: dw: temporary workaround for i2c clocks
+
+tag:    rel_socfpga-4.12_17.09.02_rc1
+commit: 84316f46 Alan Tull FogBugz #492768: i2c: dw: temporary workaround for i2c clocks
+
+tag:    rel_socfpga-4.1.33-ltsi_17.09.02_rc1
+commit: 9d8d594 Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.09.02_rc1
+commit: a63d21c Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.09.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.09.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.09.02_rc1
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.09.02_rc1
+commit: 673e854 Peng Fan common: env_flags: fix loop condition when using env_flags_varaccess_mask
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.09.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.09.02_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.09.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.09.02_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.09.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.09.02_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+

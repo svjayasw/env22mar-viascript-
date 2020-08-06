@@ -1,0 +1,304 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.2
+branch tag  : rel_socfpga-4.2_15.12.01_rc1
+new commits : 1
+be211eb Dalon Westergreen FogBugz #336543: fix compatible string for SPI1
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.12.01_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.12.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.2_15.12.01_rc1
+commit: be211eb Dalon Westergreen FogBugz #336543: fix compatible string for SPI1
+
+tag:    rel_socfpga-3.10-ltsi_15.12.01_rc1
+commit: bcf9c64 Matthew Gerlach FogBugz #334036: Fix qspi partitioning
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.12.01_rc1
+commit: ef8b7fe Vince Bridgers FogBugz #200285: Add Preempt-RT Config options by default
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.12.01_rc1
+new commits : 1
+d3c9a25 Hans de Goede Add linux/compiler-gcc5.h to fix builds with gcc5
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.12.01_rc1
+new commits : 7
+2c7fd1a Tien Fong Chee FogBugz #289516: Enhancement on U-BOOT driver to support QSPI/NAND RBF address loading from DTB.
+c189860 Chin Liang See FogBugz #336111: Remove unused defconfig from makefile
+2724a74 Chin Liang See FogBugz #336111: Remove used defconfig and dts
+1528200 Chin Liang See FogBugz #336111: Update Arria10 handoff DTS file for SDMMC boot
+86db7f0 Matthew Gerlach FogBugz #332833-1: first baby step to support early release
+126f79c Hans de Goede Add linux/compiler-gcc5.h to fix builds with gcc5
+4c95599 Matthew Gerlach FogBugz #303558: ensure RBF data gets through control block
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.12.01_rc1
+commit: d3c9a25 Hans de Goede Add linux/compiler-gcc5.h to fix builds with gcc5
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.12.01_rc1
+commit: 2c7fd1a Tien Fong Chee FogBugz #289516: Enhancement on U-BOOT driver to support QSPI/NAND RBF address loading from DTB.
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.12.01_rc1
+new commits : 4
+bc6ea8d Tien Hock Loh FogBugz #327063: Update commit ID to include fix for syschk refresh rate issue
+6eb8203 Tien Hock Loh FogBugz #282559: Move GSRD content out from meta-altera - bblayers.conf
+c5c20c6 Tien Hock Loh FogBugz #302937: Update commit ID to include fix for char overflow in syschk
+ded6567 Tien Hock Loh FogBugz #260278: Move GSRD sources out from meta-altera
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.12.01_rc1
+commit: bc6ea8d Tien Hock Loh FogBugz #327063: Update commit ID to include fix for syschk refresh rate issue
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.12.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.12.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.12.01_rc1
+commit: 2477f90 Tien Hock Loh FogBugz #329135: Add iperf and pciutils to GSRD rootfs
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.12.01_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.2
+
+commit be211eb308a6383da2042863ac070bc6e7d0add2
+Author: Dalon Westergreen <dwesterg@altera.com>
+Date:   Thu Nov 19 15:56:36 2015 -0600
+
+    FogBugz #336543: fix compatible string for SPI1
+    
+    commit "f1ed0f4c FogBugz #250531-2: DTS: Update SPI node to align with
+    kernel.org" accidently added "ssnps", and it should be "snps" for the
+    SPI1 node.
+    
+    Signed-off-by: Dalon Westergreen <dwesterg@altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit d3c9a256d6445129d01d1ea779d2587523190427
+Author: Hans de Goede <hdegoede@redhat.com>
+Date:   Sat Feb 7 22:52:40 2015 +0100
+
+    Add linux/compiler-gcc5.h to fix builds with gcc5
+    
+    Add linux/compiler-gcc5/h from the kernel sources at:
+    
+    commit 5631b8fba640a4ab2f8a954f63a603fa34eda96b
+    Author: Steven Noonan <steven@uplinklabs.net>
+    Date:   Sat Oct 25 15:09:42 2014 -0700
+    
+        compiler/gcc4+: Remove inaccurate comment about 'asm goto' miscompiles
+    
+    Signed-off-by: Hans de Goede <hdegoede@redhat.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 2c7fd1aac5f06ceea822c4d6a8af9ea2b11fdfd4
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Tue Nov 17 18:15:39 2015 +0800
+
+    FogBugz #289516: Enhancement on U-BOOT driver to support QSPI/NAND RBF address loading from DTB.
+    
+    This patch enhanced the driver capability to load both QSPI/NAND
+    RBF address from device tree.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit c1898602ed454140c29ce3205f0ff459c6bf1254
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Nov 23 15:31:28 2015 +0800
+
+    FogBugz #336111: Remove unused defconfig from makefile
+    
+    Removed defconfig for Arria 10 dedicated UART
+    configuration from dts/Makefile
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Fix the title error
+
+commit 2724a740b8dd8bd69a98d0ad06d1a8b258d859ec
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Nov 19 17:25:13 2015 +0800
+
+    FogBugz #336111: Remove used defconfig and dts
+    
+    Removed defconfig and dts for Arria 10 dedicated
+    UART configuration. Dedicated UART will be used
+    within default configuration as its supported by
+    Altera Arria10 SoC rev B1 dev kit.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 152820007cd2a64fabb3c2933a216e2229efb391
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Nov 19 13:07:12 2015 +0800
+
+    FogBugz #336111: Update Arria10 handoff DTS file for SDMMC boot
+    
+    Update socfpga_arria10.dts file to the latest generated handoff
+    file from GHRD 15.1.1 B20. This handoff is supporting for Arria 10
+    SoC rev ES2 silicon / Altera Arria10 SoC rev B.1 devkit.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 86db7f0d9ee6d7003243a68db2245e67b2d1d53d
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Mon Nov 16 12:15:46 2015 -0800
+
+    FogBugz #332833-1: first baby step to support early release
+    
+    This patch converts the function, is_external_fpga_config(),
+    into a more generic function, is_chosen_boolean_true().
+    The new generic function will be used to look for
+    the boolean property, "early-release-fpga-config".
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 126f79c8343aab75f7dc12eba70c07edfd464ed5
+Author: Hans de Goede <hdegoede@redhat.com>
+Date:   Sat Feb 7 22:52:40 2015 +0100
+
+    Add linux/compiler-gcc5.h to fix builds with gcc5
+    
+    Add linux/compiler-gcc5/h from the kernel sources at:
+    
+    commit 5631b8fba640a4ab2f8a954f63a603fa34eda96b
+    Author: Steven Noonan <steven@uplinklabs.net>
+    Date:   Sat Oct 25 15:09:42 2014 -0700
+    
+        compiler/gcc4+: Remove inaccurate comment about 'asm goto' miscompiles
+    
+    Signed-off-by: Hans de Goede <hdegoede@redhat.com>
+
+commit 4c95599521f7ec798871e22bf5695b6c9b425a91
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Fri Nov 13 13:08:58 2015 -0800
+
+    FogBugz #303558: ensure RBF data gets through control block
+    
+    There are cases where all the RBF data might
+    not get clocked through the control block.  To ensure
+    the RBF data gets clocked through, write 10 words
+    of sync data, all f's, to the fpga manager
+    after an rbf has been written.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of angstrom-socfpga branch angstrom-v2014.12-socfpga
+
+commit bc6ea8d92853abcd09632eb791a2f824f3031b53
+Author: Tien Hock Loh <thloh@pg-eswnode1-lv.altera.com>
+Date:   Mon Sep 28 14:36:41 2015 +0800
+
+    FogBugz #327063: Update commit ID to include fix for syschk refresh rate issue
+    
+    This is to update the commit ID of meta-altera-refdes to include the fix
+    for syschk application on syschk refresh rate issue caused by improper handling
+    of fd variable.
+    
+    Signed-off-by: Tien Hock Loh <thloh@pg-ice-nx17.altera.com>
+
+commit 6eb820360ee8fdc0c96b753ce00b7a49991a4e80
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Wed Mar 4 14:41:35 2015 +0800
+
+    FogBugz #282559: Move GSRD content out from meta-altera - bblayers.conf
+    
+    This is to add meta-altera-refdes to bblayers.conf so that it will pull the
+    layer when configuring and building.
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+commit c5c20c67b1864da3a2da1bec9eaadcff0c15901d
+Author: Tien Hock Loh <thloh@pg-ice-nx7.altera.com>
+Date:   Mon Nov 23 17:12:08 2015 +0800
+
+    FogBugz #302937: Update commit ID to include fix for char overflow in syschk
+    
+    This is to update the commit ID of meta-altera-refdes to include the fix
+    for syschk application on character overflow.
+    
+    Signed-off-by: Tien Hock Loh <thloh@pg-ice-nx17.altera.com>
+    
+    Conflicts:
+    	sources/layers.txt
+
+commit ded65674dde63e71c6774b72db8fa0025b50140d
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Thu Apr 23 15:08:15 2015 +0800
+
+    FogBugz #260278: Move GSRD sources out from meta-altera
+    
+    This is to update the angstrom sources/layers.txt to add meta-altera-refdes
+    so that recipes-gsrd can be moved to meta-altera-refdes.
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+    
+    Conflicts:
+    	sources/layers.txt
+    
+    Conflicts:
+    	sources/layers.txt
+
+-----------------------------------------------------------------------
+

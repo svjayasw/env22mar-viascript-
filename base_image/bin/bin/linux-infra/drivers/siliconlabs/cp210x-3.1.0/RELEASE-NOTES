@@ -1,0 +1,137 @@
+CP210x Linux VCP Driver v3.1 Release Notes
+Copyright (C) 2009 Silicon Laboratories, Inc.
+
+This release contains the following components:
+
+./cp210x-3.1.0.spec
+./install - build and installation notes
+./makerpm - script file to start the RPM Build
+./PACKAGE_LIST - this file
+./readme - general information
+./RELEASE-NOTES - notes specific for this release.  New features, fixes in this version, known defects in this version.
+./REPORTING-BUGS - how to report bugs
+./cp210x/.rpmmacros - required for RPM builds
+./cp210x/configure - driver build configuration file
+./cp210x/cp210x.c - driver source file
+./cp210x/cp210x.h - driver header file
+./cp210x/installmod - depreciated
+./cp210x/Makefile24 - 2.4 kernel specific make file
+./cp210x/Makefile26 - 2.6 kernel specific make file
+./cp210x/Rules.make - 2.4 kernel build rules
+
+./rpm/brp-java-repack-jars - file required by 2.4 rpm builds that might be
+	 installed in the wrong directory on certain systems.  If so, this
+	 will be copied to the correct location.
+
+./rpm/brp-python-bytecompile - file required by 2.4 rpm builds that might be
+	 installed in the wrong directory on certain systems.  If so, this
+	 will be copied to the correct location.
+
+./rpm/check-rpaths - file required by 2.4 rpm builds that might be
+	 installed in the wrong directory on certain systems.  If so, this
+	 will be copied to the correct location.
+
+./rpm/check-rpaths-worker - file required by 2.4 rpm builds that might be
+	 installed in the wrong directory on certain systems.  If so, this
+	 will be copied to the correct location.
+
+
+Driver Installation
+-------------------
+
+To Install the CP210x Drivers:
+
+Please review RELEASE-NOTES prior to installing for any known installation issues.
+
+**Do Not Log In as ROOT**
+
+Unzip cp210x-3.1.0 in your home directory.
+
+**Please note that in 2.4, the path to usb-serial.h is hard coded in the file ./cp210x/cp210x.h
+
+**Please note that in 2.4, the path to KERNELDIR is hard coded in the file ./cp210x/rules.mak
+
+To make install and source rpm packages, from a terminal prompt:
+
+run ./makerpm
+
+To install, run the rpm installation package which by default will be at:
+
+cd /var/temp/silabs/rpmbuild/RPMS/i386
+
+double click on cp210x-3.1.0.i386.rpm
+
+Follow onscreen instructions.
+
+
+Known Issues and Limitations
+----------------------------
+
+2.6 Kernel
+	- Built to support up to 2.6.29/30 (the last release of 2.6 at the time of
+	development).
+	- makerpm - only supports builds for the running kernel.
+	- .spec - dependencies are broken.
+
+2.4 Kernel
+	- Built to support only 2.4.36 (the last release of 2.4 at the time of
+	development).
+	- makerpm - may require a root password if the following files are not in the
+	/usr/lib/rpm directory:
+		brp-java-repack-jars
+		brp-python-bytecompile
+		check-rpaths
+		check-rpaths-worker
+	- .spec - dependencies are broken.
+	- makerpm - only supports builds for the kernel linked to by /usr/src/linux-2.4
+	is hard coded too. KERNELDIR is defined in Rules.make on line 17:
+		KERNELDIR = /home/user/linux-2.x.y
+	- cp210x.h - path to usb-serial.h is hardcoded.
+
+
+Release Dates
+-------------
+	CP210x Linux VCP Driver v3.1 - June 28, 2009
+
+
+CP210x Linux Driver Revision History
+--------------------------------------
+
+Version 3.1
+
+	Added support for 2.6.x through 2.6.29/30
+	Corrected bug in GPIO which returned an incorrect status value
+	
+Version 3.0
+
+	Supports 2.4 and 2.6 through a single release
+	
+	Merged 2.4 and 2.6 drivers into a single package that can build
+	and RPM for the target Kernel
+	
+Version 2.0
+
+	Supports 2.4 and 2.6 Kernels through separate releases
+	
+	Support for 2.6 Kernel added
+	
+Version 1.1
+
+	Supports 2.4 Kernel only
+	
+	Support added for higher baud-rates (460800baud and 921600baud)
+
+Version 0.81b
+
+	Supports 2.4 Kernel only
+	
+	This version fixes an issue which caused a machine crash when 
+	disconnecting from a modem.
+
+Version 0.81
+
+	Supports 2.4 Kernel only
+	
+	Initial Release
+
+

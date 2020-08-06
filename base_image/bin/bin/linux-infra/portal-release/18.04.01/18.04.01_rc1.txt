@@ -1,0 +1,140 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.15
+branch tag  : rel_socfpga-4.15_18.04.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.04.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.04.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.15_18.04.01_rc1
+commit: d9411d1 Ooi, Joyce FogBugz #538491: s10_devkit_defconfig: Add Altera SysID and Altera ILC
+
+tag:    rel_socfpga-4.9.78-ltsi_18.04.01_rc1
+commit: 33ecb3d Richard Gong FogBugz #545807: driver, misc: increase timeout value for claiming back buf
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.04.01_rc1
+commit: a1be37b Thor Thayer FogBugz #532777: Fix Cadence QSPI driver page fault kernel panic
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.04.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.04.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.04.01_rc1
+new commits : 1
+03db6f4 Chin Liang See FogBugz #544650: Ensure watchdog paused when debugging
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.04.01_rc1
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.04.01_rc1
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_18.04.01_rc1
+commit: 03db6f4 Chin Liang See FogBugz #544650: Ensure watchdog paused when debugging
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.04.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.04.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.04.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.04.01_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.04.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.04.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.04.01_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.04.01_rc1
+commit: e691a83 Ong, Hean Loong latest 4.9.78ltsi commit 33ecb3d
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 03db6f4894450a0a8b80478a8567a7353cb2ab99
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Tue Mar 27 23:24:29 2018 +0800
+
+    FogBugz #544650: Ensure watchdog paused when debugging
+    
+    Fix debugging timeout issue where watchdog is not paused when
+    debugging with debugger. This patch will ensure all watchdogs
+    are paused when one of the CPU is in debugging state.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+    ---
+    Changes for v3 & v2
+    - Updated the commit message
+
+-----------------------------------------------------------------------
+

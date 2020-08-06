@@ -1,0 +1,4 @@
++ cd /home/atull/repos/internal/meta-altera-refdes
++ git push portal ACDS19.1_REL_GSRD_PR_UPDATE1:refs/tags/ACDS19.1_REL_GSRD_PR_UPDATE1
+To git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         ACDS19.1_REL_GSRD_PR_UPDATE1 -> ACDS19.1_REL_GSRD_PR_UPDATE1

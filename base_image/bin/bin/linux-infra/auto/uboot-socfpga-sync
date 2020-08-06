@@ -1,0 +1,27 @@
+#!/bin/bash
+
+source $(dirname $0)/sync_repo_common.sh
+
+export lock_filename="$(basename $0 | sed 's/.sh//')"
+script_lock
+
+# Send email if there is an error exit
+trap 'error_exit ${LINENO}' ERR
+
+#====================================================================================
+
+LOCAL_REPOS="uboot-bringup"
+UPSTREAM=http://git.denx.de/u-boot-socfpga.git
+
+#====================================================================================
+
+echo "--- Sync Start --- $(date)"
+cd_or_clone $UPSTREAM
+push_branches_matching arria10 uboot-bringup
+
+# Push master branch of u-boot-socfpga.git to uboot-bringup's master-u-boot-socfpga branch
+push_master_branch_renamed_to master-u-boot-socfpga uboot-bringup
+echo '--- Sync Finished ---'
+echo
+
+unlock_exit

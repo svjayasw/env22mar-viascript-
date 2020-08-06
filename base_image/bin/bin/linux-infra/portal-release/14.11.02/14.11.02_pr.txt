@@ -1,0 +1,672 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.17
+branch tag  : rel_socfpga-3.17_14.11.02_pr
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.11.02_pr
+new commits : 10
+801a40f Viet Nga Dao FogBugz #243939: SGMII Design Example Intermittent Autonego Failure
+1ad5fad Viet Nga Dao FogBugz #243952: Missing Linefeed in SGMII Adapter Driver
+ba9c1a5 Viet Nga Dao FogBugz #236745: Add SGMII support to socfpga
+e0530fc Viet Nga Dao net: phy: Adding SGMII support for Marvell 88ee1145 driver
+53cd464 Vince Bridgers stmmac: correct mc_filter local variable in set_filter and set_mac_addr call
+971e7b8 Vince Bridgers net: stmmac: Support devicetree configs for mcast and ucast filter entries
+d4d9636 Vince Bridgers ARM: socfpga: Add socfpga Ethernet filter attributes entries
+0b16cec Vince Bridgers dts: Add bindings for multicast hash bins and perfect filter entries
+8c47254 Vince Bridgers net: stmmac: Correct set_filter for multicast and unicast cases
+ff0afd2 Vince Bridgers net: stmmac: Change MAC interface to support multiple filter configurations
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.11.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 243939 | SGMII Design Example Intermittent Autonego Failure | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=801a40f1332935a477df6a4788cf0b3089429ee8 ][ 801a40f1332935a477df6a4788cf0b3089429ee8 ]] |
+| 243952 | Missing Linefeed in SGMII Adapter Driver | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1ad5fad5d0e5c19bc6e760446ad20b39657ac88b ][ 1ad5fad5d0e5c19bc6e760446ad20b39657ac88b ]] |
+| 236745 | Add SGMII support to socfpga | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=ba9c1a5186b6a0bf9a09ff47250703d916456fc4 ][ ba9c1a5186b6a0bf9a09ff47250703d916456fc4 ]] |
+| community | net: phy: Adding SGMII support for Marvell 88ee1145 driver | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=e0530fc7b111c2ce170d64f7f264dd5b0d7c3c6f ][ e0530fc7b111c2ce170d64f7f264dd5b0d7c3c6f ]] |
+| community | stmmac: correct mc_filter local variable in set_filter and set_mac_addr call | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=53cd46404074b48aa8bbefd06cb5fe9c341c359c ][ 53cd46404074b48aa8bbefd06cb5fe9c341c359c ]] |
+| community | net: stmmac: Support devicetree configs for mcast and ucast filter entries | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=971e7b888d8480a80d132d7ee2d06ca8709d9aad ][ 971e7b888d8480a80d132d7ee2d06ca8709d9aad ]] |
+| community | ARM: socfpga: Add socfpga Ethernet filter attributes entries | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d4d96362d8b31168d9e7f6adc7314b6434b0bf53 ][ d4d96362d8b31168d9e7f6adc7314b6434b0bf53 ]] |
+| community | dts: Add bindings for multicast hash bins and perfect filter entries | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=0b16cecd3c98868066c9e63313913419c238cd47 ][ 0b16cecd3c98868066c9e63313913419c238cd47 ]] |
+| community | net: stmmac: Correct set_filter for multicast and unicast cases | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=8c47254be52df8811377e55f7e73b1eca0163d32 ][ 8c47254be52df8811377e55f7e73b1eca0163d32 ]] |
+| community | net: stmmac: Change MAC interface to support multiple filter configurations | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=ff0afd2d38d7682bead6d4cf94ce52287d74fb2a ][ ff0afd2d38d7682bead6d4cf94ce52287d74fb2a ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_14.11.02_pr
+new commits : 7
+0ff05c8 Viet Nga Dao net: phy: Adding SGMII support for Marvell 88ee1145 driver
+8d69d12 Vince Bridgers stmmac: correct mc_filter local variable in set_filter and set_mac_addr call
+3198860 Vince Bridgers net: stmmac: Support devicetree configs for mcast and ucast filter entries
+d15af0d Vince Bridgers ARM: socfpga: Add socfpga Ethernet filter attributes entries
+ca0cfae Vince Bridgers dts: Add bindings for multicast hash bins and perfect filter entries
+b1dffd0 Vince Bridgers net: stmmac: Correct set_filter for multicast and unicast cases
+a23bd42 Vince Bridgers net: stmmac: Change MAC interface to support multiple filter configurations
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_14.11.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | net: phy: Adding SGMII support for Marvell 88ee1145 driver | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=0ff05c828a312619e6806ff242f9717246f9cbf3 ][ 0ff05c828a312619e6806ff242f9717246f9cbf3 ]] |
+| community | stmmac: correct mc_filter local variable in set_filter and set_mac_addr call | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=8d69d1230d9f34f7598114c0754221872b3cb120 ][ 8d69d1230d9f34f7598114c0754221872b3cb120 ]] |
+| community | net: stmmac: Support devicetree configs for mcast and ucast filter entries | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=31988603a852a59edb1ef9a8ff165a00f3a0fa1b ][ 31988603a852a59edb1ef9a8ff165a00f3a0fa1b ]] |
+| community | ARM: socfpga: Add socfpga Ethernet filter attributes entries | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d15af0d8635848a610ebc5b3c013aa902ca37421 ][ d15af0d8635848a610ebc5b3c013aa902ca37421 ]] |
+| community | dts: Add bindings for multicast hash bins and perfect filter entries | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=ca0cfaea3573d50de0937c1fa1a8c0a378c3d0fa ][ ca0cfaea3573d50de0937c1fa1a8c0a378c3d0fa ]] |
+| community | net: stmmac: Correct set_filter for multicast and unicast cases | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=b1dffd0ee010924ca51f923f275d0def41066e14 ][ b1dffd0ee010924ca51f923f275d0def41066e14 ]] |
+| community | net: stmmac: Change MAC interface to support multiple filter configurations | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=a23bd42a178f20a1c5d176fc610320dcdd0cc870 ][ a23bd42a178f20a1c5d176fc610320dcdd0cc870 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.17_14.11.02_pr
+commit: c29c849 Viet Nga Dao net: phy: Adding SGMII support for Marvell 88ee1145 driver
+
+tag:    rel_socfpga-3.10-ltsi_14.11.02_pr
+commit: 801a40f Viet Nga Dao FogBugz #243939: SGMII Design Example Intermittent Autonego Failure
+
+tag:    rel_socfpga-3.10-ltsi-rt_14.11.02_pr
+commit: 0ff05c8 Viet Nga Dao net: phy: Adding SGMII support for Marvell 88ee1145 driver
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.11.02_pr
+new commits : 6
+32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+e6184eb Yves Vandervennet FogBugz #23744: Enable Maths operations
+008ab89 Vince Bridgers FogBugz #243370: Apply ARM Errata 761320
+f5551f8 Nitin Garg ARM: Add workaround for Cortex-A9 errata 761320
+71282e2 Nitin Garg ARM: Add workaround for Cortex-A9 errata 794072
+2fa7177 Stephen Warren ARM: implement erratum 716044 workaround
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_14.11.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 231136 | Skip pll workaround if booting from fpga | [[ http://git.rocketboards.org/gitweb/?p=u-boot-socfpga.git;a=commit;h=32c1d91bc0d10beca54c2dfc5b475d4ffeffc15a ][ 32c1d91bc0d10beca54c2dfc5b475d4ffeffc15a ]] |
+| 23744 | Enable Maths operations | [[ http://git.rocketboards.org/gitweb/?p=u-boot-socfpga.git;a=commit;h=e6184eb8dd3541862c01136f657f31d4dd2aed6b ][ e6184eb8dd3541862c01136f657f31d4dd2aed6b ]] |
+| 243370 | Apply ARM Errata 761320 | [[ http://git.rocketboards.org/gitweb/?p=u-boot-socfpga.git;a=commit;h=008ab89de26c255f4af4d70d08af34ca4b8a4013 ][ 008ab89de26c255f4af4d70d08af34ca4b8a4013 ]] |
+| community | ARM: Add workaround for Cortex-A9 errata 761320 | [[ http://git.rocketboards.org/gitweb/?p=u-boot-socfpga.git;a=commit;h=f5551f8994a93cbc8e13c6ff3986daeb289d7884 ][ f5551f8994a93cbc8e13c6ff3986daeb289d7884 ]] |
+| community | ARM: Add workaround for Cortex-A9 errata 794072 | [[ http://git.rocketboards.org/gitweb/?p=u-boot-socfpga.git;a=commit;h=71282e2806669bdaa640688fa69f30705091e453 ][ 71282e2806669bdaa640688fa69f30705091e453 ]] |
+| community | ARM: implement erratum 716044 workaround | [[ http://git.rocketboards.org/gitweb/?p=u-boot-socfpga.git;a=commit;h=2fa71773fa9efd95aa47e2a6d87a5cc79a0f7cb3 ][ 2fa71773fa9efd95aa47e2a6d87a5cc79a0f7cb3 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.11.02_pr
+commit: 32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_14.11.02_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_14.11.02_pr
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_14.11.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_14.11.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_14.11.02_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_14.11.02_pr
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_14.11.02_pr
+commit: 65417bc Yves Vandervennet kde repo moved, it's now meta-kde4
+
+tag:    rel_angstrom-v2014.06-socfpga_14.11.02_pr
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_14.11.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_14.11.02_pr
+new commits : 1
+fe61959 Yves Vandervennet Recipe for 3.17
+
+
+++wiki:
+*Branch name*: angstrom-v2013.12-yocto1.5, *Tag name:* rel_angstrom-v2013.12-yocto1.5_14.11.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Recipe for 3.17 | [[ http://git.rocketboards.org/gitweb/?p=meta-altera.git;a=commit;h=fe61959bc970fc393e6cab020fda0fbabe807222 ][ fe61959bc970fc393e6cab020fda0fbabe807222 ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_14.11.02_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_14.11.02_pr
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_14.11.02_pr
+commit: fe61959 Yves Vandervennet Recipe for 3.17
+
+tag:    rel_angstrom-v2014.06-yocto1.6_14.11.02_pr
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 801a40f1332935a477df6a4788cf0b3089429ee8
+Author: Viet Nga Dao <vndao@altera.com>
+Date:   Fri Nov 7 23:31:51 2014 +0800
+
+    FogBugz #243939: SGMII Design Example Intermittent Autonego Failure
+    
+    This patch fixes the intermittent issue that autonego between TSE
+    and PHY does not complete when switching speed. This is done by
+    fixing the wrong TSE_PCS_SW_RESET_MASK value and adding restart
+    autonego action plus software reset when autonego does not
+    complete after 20ms.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+
+commit 1ad5fad5d0e5c19bc6e760446ad20b39657ac88b
+Author: Viet Nga Dao <vndao@altera.com>
+Date:   Fri Nov 7 23:54:38 2014 +0800
+
+    FogBugz #243952: Missing Linefeed in SGMII Adapter Driver
+    
+    This patch adds missing linefeed character at some pr_debug and pr_err
+    functions in dwmac-socfpga.c file of SGMII adapter driver.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+
+commit ba9c1a5186b6a0bf9a09ff47250703d916456fc4
+Author: Viet Nga Dao <vndao@altera.com>
+Date:   Thu Nov 6 15:43:15 2014 +0800
+
+    FogBugz #236745: Add SGMII support to socfpga
+    
+    This patch adds SGMII support for  Altera socfpga Ethernet controller.
+    GMII to SGMII adapter is a soft IP core in FPGA system that converts
+    GMII interface from Synopsys MAC to SGMII interface. This adapter
+    consists of splitter, adapter buffer and TSE PCS. Software needs to
+    initialize the TSE PCS and adapter buffer at init state. Besides,
+    software also needs to configure tse pcs, splitter and enable/disable
+    adapter buffer properly when there is speed change.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+    
+    ---
+    V2:
+      - Fix syntax issues
+      - Add 2 files (dwmac-socfpga.c/h) to manage Altera specific additions
+        to the stmmac driver such as GMII to RGMII and GMII to SGMII adapter
+        as well as speed change management.
+    
+    V3:
+      - Remove the defined functions in header file (dwmac-socfpga.h)
+      - Rename the struct plat_bsp_priv to dwmac_plat_priv
+      - Add kfree(bsp_priv) before exit
+    
+    V4:
+      - Merge 2 functions sgmii_buffer_ena and sgmii_buffer_disable into
+        one function called config_tx_buffer
+      - Change function named config_adapter to adapter_config
+      - Add some parameters for speed, duplex in header file
+      - Rearrange includes in alphabet order
+    
+    V5:
+      - Add checking the return value of function adapter_init in socfpga.c
+    
+    V6:
+      - Change pr_info to pr_debug
+
+commit e0530fc7b111c2ce170d64f7f264dd5b0d7c3c6f
+Author: Viet Nga Dao <vndao@altera.com>
+Date:   Thu Oct 23 19:41:53 2014 -0700
+
+    net: phy: Adding SGMII support for Marvell 88ee1145 driver
+    
+    Additional code to m88e1145_config_init function to allow the driver to
+    support SGMII mode.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 53cd46404074b48aa8bbefd06cb5fe9c341c359c
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Thu Oct 9 10:10:36 2014 -0500
+
+    stmmac: correct mc_filter local variable in set_filter and set_mac_addr call
+    
+    FogBugz #239490-6: Backported from Dave Miller's Net-next tree at
+    git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git,
+    commit ID 3dab99e0b37e16525949757f46e33fb9612c73ec, git tag
+    v3.17-5527-g3dab99e.
+    
+    Testing revealed that the local variable mc_filter was dimensioned
+    incorrectly for all possible configurations and get_mac_addr should
+    have been set_mac_addr (a typo). Make sure mc_filter is dimensioned
+    to 8 32-bit unsigned longs - the largest size of the Synopsys
+    multicast filter register set.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Acked-by: Giuseppe Cavallaro <peppe.cavallaro@st.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 971e7b888d8480a80d132d7ee2d06ca8709d9aad
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Jul 31 15:49:17 2014 -0500
+
+    net: stmmac: Support devicetree configs for mcast and ucast filter entries
+    
+    FogBugz #239490-5: Backported from Dave Miller's Net-next tree at
+    git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git,
+    commit ID 3b57de958e2aa39abe020eb31bf19000d5899389, git tag
+    v3.16-rc7-1522-g3b57de9.
+    
+    This patch adds and modifies code to support multiple Multicast and Unicast
+    Synopsys MAC filter configurations. The default configuration is defined to
+    support legacy driver behavior, which is 64 Multicast bins. The Unicast
+    filter code previously assumed all controllers support 32 or 16 Unicast
+    addresses based on controller version number, but this has been corrected
+    to support a default of 1 Unicast address. The filter configuration may
+    be specified through the devicetree using a Synopsys specific device tree
+    entry. This information was verified with Synopsys through
+    Synopsys Support Case #8000684337 and shared with the maintainer.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit d4d96362d8b31168d9e7f6adc7314b6434b0bf53
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Jul 31 15:49:16 2014 -0500
+
+    ARM: socfpga: Add socfpga Ethernet filter attributes entries
+    
+    FogBugz #239490-4: Backported from Dave Miller's Net-next tree at
+    git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git,
+    commit ID ea6856e35240c5accf0936de920f2d8c9afee444, git tree tag
+    v3.16-rc7-1521-gea6856e.
+    
+    This patch adds socfpga Ethernet filter attributes for multicast
+    and unicast filters per Synopsys Ethernet IP configuration chosen
+    by Altera for the Cyclone 5 and Arria SOC FPGAs.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 0b16cecd3c98868066c9e63313913419c238cd47
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Jul 31 15:49:15 2014 -0500
+
+    dts: Add bindings for multicast hash bins and perfect filter entries
+    
+    FogBugz #239490-3: Backported from Dave Miller's Net-next tree at
+    git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git,
+    commit ID 94ceaa26320fc48c16ea299ee7b546a0203d95b5, git tree tag
+    v3.16-rc7-1520-g94ceaa2.
+    
+    This change adds bindings for the number of multicast hash bins and perfect
+    filter entries supported by the Synopsys EMAC. The Synopsys EMAC core is
+    configurable at device creation time, and can be configured for a different
+    number of multicast hash bins and a different number of perfect filter
+    entries. The device does not provide a way to query these parameters,
+    therefore parameters are required. The Altera Cyclone V SOC has support for
+    256 multicast hash bins and 128 perfect filter entries, and is different
+    than what's currently provided in the stmmac driver.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Acked-by: Rob Herring <robh@kernel.org>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 8c47254be52df8811377e55f7e73b1eca0163d32
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Jul 31 15:49:14 2014 -0500
+
+    net: stmmac: Correct set_filter for multicast and unicast cases
+    
+    FogBugz #239490-2: Backported from Dave Miller's Net-next tree at
+    git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git,
+    commit ID aefef4c15a1f696ed6c676698d26741024d98f36, git tree tag
+    v3.16-rc7-1519-gaefef4c.
+    
+    This patch removes the check for the number of mulitcast addresses
+    when using hash based filtering since it's not necessary. If the number
+    of multicast addresses in the list exceeds the number of multicast hash
+    bins, the bins will "fold" over into one of the bins configured and
+    enabled for the particular component instance.
+    
+    The default number of maximum unicast addresses was changed from 32 to 1
+    since this number is not dependent on the component revision. The maximum
+    number of multicast and unicast addresses is dependent on the configuration
+    of the Synopsys EMAC configured by the SOC architect at the time the
+    features were selected and configured for a particular component. Sadly,
+    Synopsys does not provide a way to query the precise number supported
+    by a particular component, so we must fall back on a devicetree entry.
+    This configuration could vary from vendor to vendor (such as STMicro,
+    Altera, etc).
+    
+    The multicast bins are set for every possible filtering case (including
+    no entries) - previously the bits were set only if multicast filter entries
+    were present.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit ff0afd2d38d7682bead6d4cf94ce52287d74fb2a
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Jul 31 15:49:13 2014 -0500
+
+    net: stmmac: Change MAC interface to support multiple filter configurations
+    
+    FogBugz #239490-1: Backported from Dave Miller's Net-next tree at
+    git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git,
+    commit ID 7ed24bbe188e9e910274969e65b91342e7642dbf, git tree tag
+    v3.16-rc7-1518-g7ed24bb.
+    
+    The synopsys EMAC can be configured for different numbers of multicast hash
+    bins and perfect filter entries at device creation time and there's no way
+    to query this configuration information at runtime. As a result, a devicetree
+    parameter is required in order for the driver to program these filters
+    correctly for a particular device instance. This patch modifies the
+    10/100/1000 MAC software interface such that these configuration parameters
+    can be set at initialization time.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 0ff05c828a312619e6806ff242f9717246f9cbf3
+Author: Viet Nga Dao <vndao@altera.com>
+Date:   Thu Oct 23 19:41:53 2014 -0700
+
+    net: phy: Adding SGMII support for Marvell 88ee1145 driver
+    
+    Additional code to m88e1145_config_init function to allow the driver to
+    support SGMII mode.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 8d69d1230d9f34f7598114c0754221872b3cb120
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Thu Oct 9 10:10:36 2014 -0500
+
+    stmmac: correct mc_filter local variable in set_filter and set_mac_addr call
+    
+    FogBugz #239490-6: Backported from Dave Miller's Net-next tree at
+    git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git,
+    commit ID 3dab99e0b37e16525949757f46e33fb9612c73ec, git tag
+    v3.17-5527-g3dab99e.
+    
+    Testing revealed that the local variable mc_filter was dimensioned
+    incorrectly for all possible configurations and get_mac_addr should
+    have been set_mac_addr (a typo). Make sure mc_filter is dimensioned
+    to 8 32-bit unsigned longs - the largest size of the Synopsys
+    multicast filter register set.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Acked-by: Giuseppe Cavallaro <peppe.cavallaro@st.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 31988603a852a59edb1ef9a8ff165a00f3a0fa1b
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Jul 31 15:49:17 2014 -0500
+
+    net: stmmac: Support devicetree configs for mcast and ucast filter entries
+    
+    FogBugz #239490-5: Backported from Dave Miller's Net-next tree at
+    git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git,
+    commit ID 3b57de958e2aa39abe020eb31bf19000d5899389, git tag
+    v3.16-rc7-1522-g3b57de9.
+    
+    This patch adds and modifies code to support multiple Multicast and Unicast
+    Synopsys MAC filter configurations. The default configuration is defined to
+    support legacy driver behavior, which is 64 Multicast bins. The Unicast
+    filter code previously assumed all controllers support 32 or 16 Unicast
+    addresses based on controller version number, but this has been corrected
+    to support a default of 1 Unicast address. The filter configuration may
+    be specified through the devicetree using a Synopsys specific device tree
+    entry. This information was verified with Synopsys through
+    Synopsys Support Case #8000684337 and shared with the maintainer.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit d15af0d8635848a610ebc5b3c013aa902ca37421
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Jul 31 15:49:16 2014 -0500
+
+    ARM: socfpga: Add socfpga Ethernet filter attributes entries
+    
+    FogBugz #239490-4: Backported from Dave Miller's Net-next tree at
+    git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git,
+    commit ID ea6856e35240c5accf0936de920f2d8c9afee444, git tree tag
+    v3.16-rc7-1521-gea6856e.
+    
+    This patch adds socfpga Ethernet filter attributes for multicast
+    and unicast filters per Synopsys Ethernet IP configuration chosen
+    by Altera for the Cyclone 5 and Arria SOC FPGAs.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit ca0cfaea3573d50de0937c1fa1a8c0a378c3d0fa
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Jul 31 15:49:15 2014 -0500
+
+    dts: Add bindings for multicast hash bins and perfect filter entries
+    
+    FogBugz #239490-3: Backported from Dave Miller's Net-next tree at
+    git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git,
+    commit ID 94ceaa26320fc48c16ea299ee7b546a0203d95b5, git tree tag
+    v3.16-rc7-1520-g94ceaa2.
+    
+    This change adds bindings for the number of multicast hash bins and perfect
+    filter entries supported by the Synopsys EMAC. The Synopsys EMAC core is
+    configurable at device creation time, and can be configured for a different
+    number of multicast hash bins and a different number of perfect filter
+    entries. The device does not provide a way to query these parameters,
+    therefore parameters are required. The Altera Cyclone V SOC has support for
+    256 multicast hash bins and 128 perfect filter entries, and is different
+    than what's currently provided in the stmmac driver.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Acked-by: Rob Herring <robh@kernel.org>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit b1dffd0ee010924ca51f923f275d0def41066e14
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Jul 31 15:49:14 2014 -0500
+
+    net: stmmac: Correct set_filter for multicast and unicast cases
+    
+    FogBugz #239490-2: Backported from Dave Miller's Net-next tree at
+    git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git,
+    commit ID aefef4c15a1f696ed6c676698d26741024d98f36, git tree tag
+    v3.16-rc7-1519-gaefef4c.
+    
+    This patch removes the check for the number of mulitcast addresses
+    when using hash based filtering since it's not necessary. If the number
+    of multicast addresses in the list exceeds the number of multicast hash
+    bins, the bins will "fold" over into one of the bins configured and
+    enabled for the particular component instance.
+    
+    The default number of maximum unicast addresses was changed from 32 to 1
+    since this number is not dependent on the component revision. The maximum
+    number of multicast and unicast addresses is dependent on the configuration
+    of the Synopsys EMAC configured by the SOC architect at the time the
+    features were selected and configured for a particular component. Sadly,
+    Synopsys does not provide a way to query the precise number supported
+    by a particular component, so we must fall back on a devicetree entry.
+    This configuration could vary from vendor to vendor (such as STMicro,
+    Altera, etc).
+    
+    The multicast bins are set for every possible filtering case (including
+    no entries) - previously the bits were set only if multicast filter entries
+    were present.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit a23bd42a178f20a1c5d176fc610320dcdd0cc870
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Thu Jul 31 15:49:13 2014 -0500
+
+    net: stmmac: Change MAC interface to support multiple filter configurations
+    
+    FogBugz #239490-1: Backported from Dave Miller's Net-next tree at
+    git://git.kernel.org/pub/scm/linux/kernel/git/davem/net-next.git,
+    commit ID 7ed24bbe188e9e910274969e65b91342e7642dbf, git tree tag
+    v3.16-rc7-1518-g7ed24bb.
+    
+    The synopsys EMAC can be configured for different numbers of multicast hash
+    bins and perfect filter entries at device creation time and there's no way
+    to query this configuration information at runtime. As a result, a devicetree
+    parameter is required in order for the driver to program these filters
+    correctly for a particular device instance. This patch modifies the
+    10/100/1000 MAC software interface such that these configuration parameters
+    can be set at initialization time.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 32c1d91bc0d10beca54c2dfc5b475d4ffeffc15a
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Tue Nov 11 05:06:55 2014 -0600
+
+    FogBugz #231136: Skip pll workaround if booting from fpga
+    
+    This patch skips the PLL workaround for ramboot if booting from FPGA, and
+    adds the preloader generator option CONFIG_PRELOADER_RAMBOOT_PLLRESET to
+    force the workaround from the preloader if requested by the user, or
+    configured by editing the configuration.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+commit e6184eb8dd3541862c01136f657f31d4dd2aed6b
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Thu Nov 6 01:42:02 2014 -0600
+
+    FogBugz #23744: Enable Maths operations
+    
+    Adds CONFIG_CMD_SETEXPR for all SoC's
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit 008ab89de26c255f4af4d70d08af34ca4b8a4013
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Wed Nov 5 05:28:05 2014 -0600
+
+    FogBugz #243370: Apply ARM Errata 761320
+    
+    This patch enables a workaround for an ARM errata. See the ARM errata
+    documentation for an explanation of 761320. The Cyclone 5 and Arria V
+    SOCs use an ARM R3P0 core.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+commit f5551f8994a93cbc8e13c6ff3986daeb289d7884
+Author: Nitin Garg <nitin.garg@freescale.com>
+Date:   Wed Apr 2 08:55:02 2014 -0500
+
+    ARM: Add workaround for Cortex-A9 errata 761320
+    
+    Full cache line writes to the same memory region from at least two
+    processors might deadlock the processor. Exists on r1, r2, r3
+    revisions.
+    
+    Signed-off-by: Nitin Garg <nitin.garg@freescale.com>
+    Acked-by: Fabio Estevam <fabio.estevam@freescale.com>
+
+commit 71282e2806669bdaa640688fa69f30705091e453
+Author: Nitin Garg <nitin.garg@freescale.com>
+Date:   Wed Apr 2 08:55:01 2014 -0500
+
+    ARM: Add workaround for Cortex-A9 errata 794072
+    
+    A short loop including a DMB instruction might cause a denial of
+    service on another processor which executes a CP15 broadcast operation.
+    Exists on r1, r2, r3, r4 revisions.
+    
+    Signed-off-by: Nitin Garg <nitin.garg@freescale.com>
+    Acked-by: Dirk Behme <dirk.behme@de.bosch.com>
+
+commit 2fa71773fa9efd95aa47e2a6d87a5cc79a0f7cb3
+Author: Stephen Warren <swarren@nvidia.com>
+Date:   Mon Mar 4 13:29:40 2013 +0000
+
+    ARM: implement erratum 716044 workaround
+    
+    Add common code to enable the workaround for ARM erratum 716044. This
+    will be enabled for Tegra.
+    
+    Signed-off-by: Stephen Warren <swarren@nvidia.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2013.12-yocto1.5
+
+commit fe61959bc970fc393e6cab020fda0fbabe807222
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Thu Nov 6 19:46:16 2014 -0600
+
+    Recipe for 3.17
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

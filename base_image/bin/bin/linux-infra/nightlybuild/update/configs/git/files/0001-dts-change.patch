@@ -1,0 +1,53 @@
+From 587592113f7f8c7cc04dbe56d9fd5fb47cafcee4 Mon Sep 17 00:00:00 2001
+From: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date: Mon, 27 Oct 2014 16:30:35 -0500
+Subject: [PATCH] dts change
+
+Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+---
+ arch/arm/boot/dts/socfpga_cyclone5_socdk.dts |   10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/arch/arm/boot/dts/socfpga_cyclone5_socdk.dts b/arch/arm/boot/dts/socfpga_cyclone5_socdk.dts
+index 42f71b9..f956e37 100644
+--- a/arch/arm/boot/dts/socfpga_cyclone5_socdk.dts
++++ b/arch/arm/boot/dts/socfpga_cyclone5_socdk.dts
+@@ -40,22 +40,22 @@
+ 	leds {
+ 		compatible = "gpio-leds";
+ 		hps0 {
+-			label = "hps_led0";
++			label = "hps_led8";
+ 			gpios = <&gpio1 15 1>;
+ 		};
+ 
+ 		hps1 {
+-			label = "hps_led1";
++			label = "hps_led9";
+ 			gpios = <&gpio1 14 1>;
+ 		};
+ 
+ 		hps2 {
+-			label = "hps_led2";
++			label = "hps_leda";
+ 			gpios = <&gpio1 13 1>;
+ 		};
+ 
+ 		hps3 {
+-			label = "hps_led3";
++			label = "hps_ledb";
+ 			gpios = <&gpio1 12 1>;
+ 		};
+ 	};
+@@ -76,7 +76,7 @@
+ };
+ 
+ &can0 {
+-	status = "okay";
++	status = "disabled";
+ };
+ 
+ &mmc {
+-- 
+1.7.9.5
+

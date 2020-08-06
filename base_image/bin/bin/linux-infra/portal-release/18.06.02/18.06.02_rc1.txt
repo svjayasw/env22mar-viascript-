@@ -1,0 +1,440 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+The following new branches were tagged:
+repo : linux-socfpga          branch : socfpga-4.17
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.16
+branch tag  : rel_socfpga-4.16_18.06.02_rc1
+new commits : 7
+ba73413 David Koltak FogBugz #571233: Remove sprintf in intel-rsu driver
+22d155c Alan Tull FogBugz #568760-2: fpga: stratix10-soc: remedy static code analysis error
+4bed3e0 Alan Tull FogBugz #568760-1: fpga: stratix10 soc: comparison of unsigned against zero
+98b9166 Alan Tull FogBugz #568392: fpga mgr debugfs: update to use current upstream api
+13d0d5a Dinh Nguyen arm64: dts: stratix10: add OCP reset property for ethernet
+a1e9824 Dinh Nguyen net: stmmac: socfpga: add additional ocp reset line for Stratix10
+6e9789b Dinh Nguyen FogBugz #559359: populate clocks property for gmac1 and gmac2
+
+
+branch      : socfpga-4.17
+branch tag  : rel_socfpga-4.17_18.06.02_rc1
+Pushing new branch to external git
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.06.02_rc1
+new commits : 4
+f93657e David Koltak FogBugz #571233: Remove sprintf in intel-rsu driver
+b45c501 Dinh Nguyen arm64: dts: stratix10: add OCP reset property for ethernet
+2fb0fec Dinh Nguyen net: stmmac: socfpga: add additional ocp reset line for Stratix10
+1450c29 Dinh Nguyen FogBugz #559359: populate clocks property for gmac1 and gmac2
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.06.02_rc1
+new commits : 4
+e7efaf18 David Koltak FogBugz #571233: Remove sprintf in intel-rsu driver
+9526349 Dinh Nguyen arm64: dts: stratix10: add OCP reset property for ethernet
+429e98b Dinh Nguyen net: stmmac: socfpga: add additional ocp reset line for Stratix10
+b03c09c Dinh Nguyen FogBugz #559359: populate clocks property for gmac1 and gmac2
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.16_18.06.02_rc1
+commit: ba73413 David Koltak FogBugz #571233: Remove sprintf in intel-rsu driver
+
+tag:    rel_socfpga-4.17_18.06.02_rc1
+commit: b4dd6ce David Koltak FogBugz #571233: Remove sprintf in intel-rsu driver
+
+tag:    rel_socfpga-4.9.78-ltsi_18.06.02_rc1
+commit: f93657e David Koltak FogBugz #571233: Remove sprintf in intel-rsu driver
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.06.02_rc1
+commit: e7efaf18 David Koltak FogBugz #571233: Remove sprintf in intel-rsu driver
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.06.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.06.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.06.02_rc1
+new commits : 1
+f373052 Tien Fong Chee FogBugz #565586: Fix integer overflow
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.06.02_rc1
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.06.02_rc1
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_18.06.02_rc1
+commit: f373052 Tien Fong Chee FogBugz #565586: Fix integer overflow
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.06.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.06.02_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.06.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.06.02_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.06.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.06.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.06.02_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.06.02_rc1
+commit: 69c4320 Ong, Hean Loong Backport systemd change e266c06 from systemd v234-stable
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.06.02_rc1
+new commits : 2
+a9e0753 David Koltak FogBugz #568818-2: Better command line arg checking in example client
+8e9c5f7 David Koltak FogBugz #568818-1: Add reboot to Factory API call
+
+
+Tags to push out to external git:
+tag:    rel_master_18.06.02_rc1
+commit: a9e0753 David Koltak FogBugz #568818-2: Better command line arg checking in example client
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.16
+
+commit ba7341332c7af5466f8653e09ce485621ba9a826
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Tue Jun 26 10:48:40 2018 -0500
+
+    FogBugz #571233: Remove sprintf in intel-rsu driver
+    
+    Fixing Klocwork code analysis violations for banned function
+    sprintf(). Replacing sprintf() with scnprintf(), which is
+    considered safer.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit 22d155c05052f2f3b14f09d8c801e4afea3996c2
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Jun 19 15:21:35 2018 -0500
+
+    FogBugz #568760-2: fpga: stratix10-soc: remedy static code analysis error
+    
+    Klocwork gave the following:
+     drivers/fpga/stratix10-soc.c:312
+     INFINITE_LOOP.LOCAL (2:Error) Analyze Infinite loop
+    
+    Add a conditional to the while().
+    
+    Clean up the loop to be shorter, clearer, and easier to maintain.
+    
+    Add a variable 'wait_status' for the return value from
+    wait_for_completion_interruptible_timeout instead of reusing 'ret'
+    because value is a long and is handled differently than the other ret
+    values in the loop.
+    
+    s10_free_buffers returns True if all buffers are freed, so no need to
+    call s10_free_buffer_count immediately afterwards.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: add S10_RECONFIG_TIMEOUT
+        rename s/S10_BUF_TIMEOUT/S10_BUFFER_TIMEOUT/
+
+commit 4bed3e046c5b895a388381fa9c4c17376b40d004
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Jun 19 10:13:46 2018 -0500
+
+    FogBugz #568760-1: fpga: stratix10 soc: comparison of unsigned against zero
+    
+    Remedy the following Klocwork complaint:
+    
+    drivers/fpga/stratix10-soc.c:330
+    CWARN.NOEFFECT.UCMP.LT (4:Review) Analyze Comparison of unsigned
+    value against 0 is always false
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 98b9166bd2e7531b1fcfd671f372ce61736b9ad2
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Jun 19 11:04:59 2018 -0500
+
+    FogBugz #568392: fpga mgr debugfs: update to use current upstream api
+    
+    Changes to align the FPGA manager debugfs implementation with the API
+    changes introduced in commits:
+     Commit ebf877a51ad7 ("fpga: mgr: separate getting/locking FPGA manager")
+     Commit 5cf0c7f6502f ("fpga: mgr: API change to replace fpga load functions
+     with single function")
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 13d0d5a8ecb3f2077dd8e5b697c5cb73ad5689ac
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Jun 6 14:55:54 2018 -0500
+
+    arm64: dts: stratix10: add OCP reset property for ethernet
+    
+    Add the additional OCP reset property for the ethernet nodes.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit a1e9824d70d660a28d242248fa8cb659e2a45215
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Jun 19 10:35:38 2018 -0500
+
+    net: stmmac: socfpga: add additional ocp reset line for Stratix10
+    
+    The Stratix10 platform has an additional reset line, OCP(Open Core Protocol),
+    that also needs to get deasserted for the stmmac ethernet controller to work.
+    Thus we need to update the Kconfig to include ARCH_STRATIX10 in order to build
+    dwmac-socfpga.
+    
+    Also, remove the redundant check for the reset controller pointer. The
+    reset driver already checks for the pointer and returns 0 if the pointer
+    is NULL.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 6e9789bad9d8165c36b9eb6c70978de4c692bd22
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Jun 19 11:35:11 2018 -0500
+
+    FogBugz #559359: populate clocks property for gmac1 and gmac2
+    
+    Add the missing clocks property for gmac1 and gmac2.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.17
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+commit f93657e80d5f462fe73a658ccd0d3fc736e56b96
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Tue Jun 26 10:48:40 2018 -0500
+
+    FogBugz #571233: Remove sprintf in intel-rsu driver
+    
+    Fixing Klocwork code analysis violations for banned function
+    sprintf(). Replacing sprintf() with scnprintf(), which is
+    considered safer.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit b45c501a1d753ade742759d56b253cbcfb999632
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Jun 6 14:55:54 2018 -0500
+
+    arm64: dts: stratix10: add OCP reset property for ethernet
+    
+    Add the additional OCP reset property for the ethernet nodes.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 2fb0fecec16ddb6e78542f21fe43948e53f12e8c
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Jun 19 10:35:38 2018 -0500
+
+    net: stmmac: socfpga: add additional ocp reset line for Stratix10
+    
+    The Stratix10 platform has an additional reset line, OCP(Open Core Protocol),
+    that also needs to get deasserted for the stmmac ethernet controller to work.
+    Thus we need to update the Kconfig to include ARCH_STRATIX10 in order to build
+    dwmac-socfpga.
+    
+    Also, remove the redundant check for the reset controller pointer. The
+    reset driver already checks for the pointer and returns 0 if the pointer
+    is NULL.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 1450c2961c74ff491edfaf2e2c5b5cc08f674ed2
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Jun 19 11:35:11 2018 -0500
+
+    FogBugz #559359: populate clocks property for gmac1 and gmac2
+    
+    Add the missing clocks property for gmac1 and gmac2.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.76-ltsi-rt
+
+commit e7efaf18c020b72b68ecb3e6cb9f2004ffafd214
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Tue Jun 26 10:48:40 2018 -0500
+
+    FogBugz #571233: Remove sprintf in intel-rsu driver
+    
+    Fixing Klocwork code analysis violations for banned function
+    sprintf(). Replacing sprintf() with scnprintf(), which is
+    considered safer.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit 9526349a4b0903fe389f398345bef77ea8de992b
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Jun 6 14:55:54 2018 -0500
+
+    arm64: dts: stratix10: add OCP reset property for ethernet
+    
+    Add the additional OCP reset property for the ethernet nodes.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 429e98baa2ebb3b19335f7fd53c6da8073184a90
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Jun 19 10:35:38 2018 -0500
+
+    net: stmmac: socfpga: add additional ocp reset line for Stratix10
+    
+    The Stratix10 platform has an additional reset line, OCP(Open Core Protocol),
+    that also needs to get deasserted for the stmmac ethernet controller to work.
+    Thus we need to update the Kconfig to include ARCH_STRATIX10 in order to build
+    dwmac-socfpga.
+    
+    Also, remove the redundant check for the reset controller pointer. The
+    reset driver already checks for the pointer and returns 0 if the pointer
+    is NULL.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit b03c09cc3d250bff719a4b0d0c2003edbefde69f
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Jun 19 11:35:11 2018 -0500
+
+    FogBugz #559359: populate clocks property for gmac1 and gmac2
+    
+    Add the missing clocks property for gmac1 and gmac2.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit f3730522ad1c231ead528add4b05bf46bb23dd6e
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Thu Jun 14 00:56:27 2018 +0800
+
+    FogBugz #565586: Fix integer overflow
+    
+    dramaddrw data structure are defined as u32. Compiler assume 32-bit
+    arithmetic on expression and the shifting operation to be done on a
+    32-bit value. So, the expression would overflow if the shifting
+    is more than 32-bit.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+-----------------------------------------------------------------------
+
+log of intel-rsu branch master
+
+commit a9e07539bb5cda0305e84e0d62654bfb0fb28f01
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Wed Jun 20 13:16:21 2018 -0500
+
+    FogBugz #568818-2: Better command line arg checking in example client
+    
+    Refactor the example client application to better detect invalid
+    or incomplete command line arguments.  The example now parses all of
+    the command line before performing the requested action.
+    
+    Add a new option for reboot to factory was also added.
+    
+    Re-order commands in usage message to be more logical.
+    
+    Renamed error_handle() to error_exit() and added a message argument.
+    
+    ---
+    v2: Separate function for load factory instead of -1 arg to load slot
+    v3: Renamed error_handle to error_exit. Cleaned up if/else statements.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit 8e9c5f7680a9700b5ce5f3b5b1e450bfb607e83c
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Wed Jun 20 13:15:58 2018 -0500
+
+    FogBugz #568818-1: Add reboot to Factory API call
+    
+    Adding a new API function call that requests the factory image
+    be loaded after a reboot. Previously, only application
+    image slots could be selected for loading after reboot.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+-----------------------------------------------------------------------
+

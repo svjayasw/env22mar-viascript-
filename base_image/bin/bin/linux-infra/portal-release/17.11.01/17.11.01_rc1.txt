@@ -1,0 +1,194 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.12
+branch tag  : rel_socfpga-4.12_17.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.11.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.12_17.11.01_rc1
+commit: 243edde Dinh Nguyen usb: dwc2: disable erroneous overcurrent condition
+
+tag:    rel_socfpga-4.1.33-ltsi_17.11.01_rc1
+commit: 0175aa1 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.11.01_rc1
+commit: 5b7a4c0 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_17.11.01_rc1
+new commits : 6
+fea4f96 Dinh Nguyen FogBugz #507927: nand_data bit is in peripheral firewall base
+d28ada7 Dinh Nguyen FogBugz #505813: remove unnecessary reset de-asserts
+a0144ff Dinh Nguyen FogBugz #505560: Enable non-secure access to all HPS peripherals
+4a3b3cb Graham Moore FogBugz #490494-3: enable non-secure PL330 peripherals
+274505f Graham Moore FogBugz #490494-2: take PL330 DMAC out of reset
+b7cd709 Graham Moore FogBugz #490494-1: enable non-secure PL330 interface
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.11.01_rc1
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.11.01_rc1
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_17.11.01_rc1
+commit: fea4f96 Dinh Nguyen FogBugz #507927: nand_data bit is in peripheral firewall base
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.11.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.11.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.11.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.11.01_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.11.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.11.01_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit fea4f96721d1b029159b531632352ebcb1b58d90
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu Nov 2 08:07:35 2017 -0500
+
+    FogBugz #507927: nand_data bit is in peripheral firewall base
+    
+    Fix up the firewall disable bit for the nand_data register. The bit lives
+    in the firewall peripheral base, not the firewall system base.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit d28ada70cde3d67ffa0abdf92e2b3ce49bbd8631
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu Oct 26 10:08:24 2017 -0500
+
+    FogBugz #505813: remove unnecessary reset de-asserts
+    
+    Now that the reset manager for Stratix 10 is working in Linux, we don't
+    need the bootloader to bring the peripherals out of reset.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+    ---
+    v2: need to bring out sdmmc for SPL
+
+commit a0144fffeecf9dc16bf2179b7d586654f1c86c5d
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Mon Oct 9 15:18:11 2017 -0500
+
+    FogBugz #505560: Enable non-secure access to all HPS peripherals
+    
+    Most OS are running in EL2 or lower, so by default an access to a HPS
+    peripheral is done with a non-secure method, which causes a system error
+    exception. Thus, the bootloader should enable non-secure access to all
+    peripherals, including clock/reset/system managers.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 4a3b3cb6a1ee8bac08e6b684081308870f4c2c36
+Author: Graham Moore <graham.moore@linux.intel.com>
+Date:   Tue Oct 24 09:52:59 2017 -0500
+
+    FogBugz #490494-3: enable non-secure PL330 peripherals
+    
+    This patch configures the PL330 DMAC peripheral request lines
+    in non-secure mode via the system manager registers.
+    
+    Signed-off-by: Graham Moore <graham.moore@linux.intel.com>
+
+commit 274505f11e1cd6c0957342196da3016491c9a3c1
+Author: Graham Moore <graham.moore@linux.intel.com>
+Date:   Fri Oct 13 14:39:51 2017 -0500
+
+    FogBugz #490494-2: take PL330 DMAC out of reset
+    
+    Normally, Linux would take the PL330 DMAC out of reset, but
+    because the PL330 is a "primecell" device, Linux tries to probe
+    its configuration space for a device id, which causes a hang if
+    the DMAC is still in reset.  This patch takes the PL330 out of reset.
+    
+    Signed-off-by: Graham Moore <graham.moore@linux.intel.com>
+
+commit b7cd70920af9f6d49d577eca725196d513d010b4
+Author: Graham Moore <graham.moore@linux.intel.com>
+Date:   Fri Oct 13 14:35:40 2017 -0500
+
+    FogBugz #490494-1: enable non-secure PL330 interface
+    
+    This patch configures the PL330 DMAC in non-secure mode
+    via the system manager registers.
+    
+    Signed-off-by: Graham Moore <graham.moore@linux.intel.com>
+
+-----------------------------------------------------------------------
+

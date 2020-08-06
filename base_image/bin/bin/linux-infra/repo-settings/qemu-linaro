@@ -1,0 +1,13 @@
+repo_path: /usr/local/git/repositories/qemu-linaro.git
+update_tests: nomerge header checkpatch copyright_year license_gplv2_approved
+email: dinh.nguyen@intel.com
+sync-job: qemu-linaro
+local_upstream:
+crucible_project:
+internal_git: gitolite@at-git:qemu-linaro.git
+external_git:
+upstream_branches: master
+release_branch:
+upstream_tag_regex:
+review_addrs: @intel.com dinh.nguyen@intel.com
+

@@ -1,0 +1,3 @@
+git push -f portal origin/master:refs/heads/master
+To git@github.com:altera-opensource/uefi-socfpga
+ + 443bf46...f8113e2 origin/master -> master (forced update)

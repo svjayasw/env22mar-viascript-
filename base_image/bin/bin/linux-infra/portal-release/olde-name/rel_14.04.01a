@@ -1,0 +1,435 @@
+Yves,
+
+Here is a preliminary portal report.  Note that this process does not fit what we need.
+The place where it is broken is pushing for releases, which probably should not be part
+of this portal report since it ends up being asynchronous and interrupt driven (meaning
+the -rel-amp branches).
+
+Alan
+
+-------------------------
+
+If this is Wednesday, this is a script-generated report of what we will push to the portal on Friday.
+
+However if this is Friday, this is a script-generated report of what we just pushed out to the portal.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.13
+branch tag  : rel_socfpga-3.13_14.04.01
+new commits : 7
+4d575d5 Dinh Nguyen FogBugz #194601: Fix I2C clock parent
+947e348 Romain Baeriswyl i2c: designware: make SCL and SDA falling time configurable
+779e154 Tien Hock Loh FogBugz #183984: Do not use _relaxed() function for Altera PIO driver
+701acb9 Dinh Nguyen Revert "FogBugz #192124: Fix SPI IRQ numbers in the DTS"
+ad25006 Graham Moore FogBugz #175246: SLD HUB Driver
+d475209 Dinh Nguyen FogBugz #192127: Fix CTI address length
+b3157ef Dinh Nguyen FogBugz #192124: Fix SPI IRQ numbers in the DTS
+
+
+++wiki:
+*Branch name*: socfpga-3.13, *Tag name:* rel_socfpga-3.13_14.04.01
+| *ID* | *Comment* | *GIT Commit* |
+| 194601 | Fix I2C clock parent | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=4d575d52831beda2160ff94bfd2817c56165f6a1 ][ 4d575d52831beda2160ff94bfd2817c56165f6a1 ]] |
+| community | i2c: designware: make SCL and SDA falling time configurable | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=947e348c586257be1b7cd3f6cfad7151df6e0705 ][ 947e348c586257be1b7cd3f6cfad7151df6e0705 ]] |
+| 183984 | Do not use _relaxed() function for Altera PIO driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=779e15439096a76b8ef4e9caf83c13c9d7fc777d ][ 779e15439096a76b8ef4e9caf83c13c9d7fc777d ]] |
+| community | Revert "FogBugz #192124: Fix SPI IRQ numbers in the DTS" | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=701acb9da51fffb846f0cd650e3ff2d17ef1f4c7 ][ 701acb9da51fffb846f0cd650e3ff2d17ef1f4c7 ]] |
+| 175246 | SLD HUB Driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=ad25006eb7ff2e024f1aced3eb5a6098441917b8 ][ ad25006eb7ff2e024f1aced3eb5a6098441917b8 ]] |
+| 192127 | Fix CTI address length | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=d475209f94f1c68ea4dee62b9d0a213a7d23c289 ][ d475209f94f1c68ea4dee62b9d0a213a7d23c289 ]] |
+| 192124 | Fix SPI IRQ numbers in the DTS | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=b3157ef96fc3b06b1e12cc5fb6253f179bbe022d ][ b3157ef96fc3b06b1e12cc5fb6253f179bbe022d ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.04.01
+new commits : 7
+371299b Dinh Nguyen FogBugz #194601: Fix I2C clock parent
+29d2ed0 Romain Baeriswyl i2c: designware: make SCL and SDA falling time configurable
+fae6552 cnphoon FogBugz #178225: Add Altera interrupt latency counter driver
+5c35517 Dinh Nguyen Revert "FogBugz #192124: Fix SPI IRQ numbers in the DTS"
+9cd0eed Graham Moore FogBugz #175246: SLD HUB Driver
+f4eeb0b Dinh Nguyen FogBugz #192127: Fix CTI address length
+361c516 Dinh Nguyen FogBugz #192124: Fix SPI IRQ numbers in the DTS
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.04.01
+| *ID* | *Comment* | *GIT Commit* |
+| 194601 | Fix I2C clock parent | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=371299bc74ca4bb21423887f29135b6ec6064bef ][ 371299bc74ca4bb21423887f29135b6ec6064bef ]] |
+| community | i2c: designware: make SCL and SDA falling time configurable | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=29d2ed0cc00fc622e840f5227112317af5b8df45 ][ 29d2ed0cc00fc622e840f5227112317af5b8df45 ]] |
+| 178225 | Add Altera interrupt latency counter driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=fae655269fb13094e8605f22b224a69fef997345 ][ fae655269fb13094e8605f22b224a69fef997345 ]] |
+| community | Revert "FogBugz #192124: Fix SPI IRQ numbers in the DTS" | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=5c3551792d04c331a82d8c3787c336b62178b29c ][ 5c3551792d04c331a82d8c3787c336b62178b29c ]] |
+| 175246 | SLD HUB Driver | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=9cd0eedaab9e9b5fc7b99ea447e659726163b01a ][ 9cd0eedaab9e9b5fc7b99ea447e659726163b01a ]] |
+| 192127 | Fix CTI address length | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=f4eeb0b4890868166bfe5f3fa4e1a3523022da61 ][ f4eeb0b4890868166bfe5f3fa4e1a3523022da61 ]] |
+| 192124 | Fix SPI IRQ numbers in the DTS | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=361c51610ba34ee04e83c49b13bf49efd06bb1ee ][ 361c51610ba34ee04e83c49b13bf49efd06bb1ee ]] |
+--wiki:
+
+
+branch      : socfpga-3.9-rel-amp
+branch tag  : rel_socfpga-3.9-rel-amp_14.04.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.10-ltsi_14.04.01
+commit: 371299b Dinh Nguyen FogBugz #194601: Fix I2C clock parent
+
+tag:    rel_socfpga-3.9-rel-amp_14.04.01
+commit: 83718f8 Tien Hock Loh FogBugz #169641: Add mailbox and mutex driver to AMP kernel config
+
+tag:    rel_socfpga-3.13_14.04.01
+commit: 4d575d5 Dinh Nguyen FogBugz #194601: Fix I2C clock parent
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.04.01
+new commits : 2
+82ff5be Chin Liang See FogBugz #191882: Move away handoff path from common config
+7a95bd9 Chin Liang See FogBugz #191875: Enable U-Boot command line editing
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_14.04.01
+| *ID* | *Comment* | *GIT Commit* |
+| 191882 | Move away handoff path from common config | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=82ff5be80c8d163f072e69a0bface9398331961a ][ 82ff5be80c8d163f072e69a0bface9398331961a ]] |
+| 191875 | Enable U-Boot command line editing | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=7a95bd9dd9ac6fd59ed7d8e4f8c9a5f4af898c0a ][ 7a95bd9dd9ac6fd59ed7d8e4f8c9a5f4af898c0a ]] |
+--wiki:
+
+
+branch      : socfpga_v2013.01.01-rel-amp
+branch tag  : rel_socfpga_v2013.01.01-rel-amp_14.04.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01-rel-amp_14.04.01
+commit: 3a69a56 Tien Hock Loh FogBugz #121124:Update DW USB driver in uboot so that it works on board
+
+tag:    rel_socfpga_v2013.01.01_14.04.01
+commit: 82ff5be Chin Liang See FogBugz #191882: Move away handoff path from common config
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera-rel-amp
+branch tag  : rel_danny-altera-rel-amp_14.04.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera-rel-amp_14.04.01
+commit: f3208dd Tien Hock Loh FogBugz #193640: Fix hardcoded GIT repository for OpenMCAPI
+
+
+-----------------------------------------------------------------------
+
+repository: openmcapi
+
+branch      : socfpga-1.0
+branch tag  : rel_socfpga-1.0_14.04.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-1.0_14.04.01
+commit: dc652b6 Tien Hock Loh Fix faulty return status that causes api suite test to fail
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.13
+
+commit 4d575d52831beda2160ff94bfd2817c56165f6a1
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Thu Sep 26 14:12:13 2013 -0500
+
+    FogBugz #194601: Fix I2C clock parent
+    
+    The correct parents for the I2C should be the l4_sp_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 947e348c586257be1b7cd3f6cfad7151df6e0705
+Author: Romain Baeriswyl <Romain.Baeriswyl@abilis.com>
+Date:   Mon Jan 20 17:43:43 2014 +0100
+
+    i2c: designware: make SCL and SDA falling time configurable
+    
+    This patch allows to set independantly SCL and SDA falling times.
+    The tLOW period is computed by taking into account the SCL falling time.
+    The tHIGH period is computed by taking into account the SDA falling time.
+    
+    For instance in case the margin on tLOW is considered too small, it can
+    be increased by increasing the SCL falling time which is by default set
+    at 300ns.
+    
+    The same applies for tHIGH period with the help of SDA falling time.
+    
+    Signed-off-by: Romain Baeriswyl <romainba@abilis.com>
+    Reviewed-by: Christian Ruppert <christian.ruppert@abilis.com>
+    Acked-by: Shinya Kuribayashi <skuribay@pobox.com>
+    Signed-off-by: Wolfram Sang <wsa@the-dreams.de>
+
+commit 779e15439096a76b8ef4e9caf83c13c9d7fc777d
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Tue Apr 1 10:35:18 2014 +0800
+
+    FogBugz #183984: Do not use _relaxed() function for Altera PIO driver
+    
+    This is to remove the use of _relaxed() function from Altera PIO driver.
+    The FPGA driver should be more generic and not use _relaxed() function
+    since not all architecture supports _relaxed() function
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+commit 701acb9da51fffb846f0cd650e3ff2d17ef1f4c7
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Fri Mar 21 15:29:16 2014 -0500
+
+    Revert "FogBugz #192124: Fix SPI IRQ numbers in the DTS"
+    
+    This reverts commit b3157ef96fc3b06b1e12cc5fb6253f179bbe022d.
+    The original SPI IRQ numbers are correct.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit ad25006eb7ff2e024f1aced3eb5a6098441917b8
+Author: Graham Moore <grmoore@altera.com>
+Date:   Thu Mar 13 12:20:10 2014 -0500
+
+    FogBugz #175246: SLD HUB Driver
+    
+    This patch is the GPL V2 driver for the SLD (System Level Debug)
+    Hub Controller IP.
+    
+    V2:
+    Incorporate review comments, clean up code, remove debug code.
+    Use kfifo instead of custom ring buffer.
+    Use simple_write_to_buffer(), copy_to_user(), and kfifo_to_user()
+    for copying data to/from user space.
+    Add header file for ioctl.
+    Move driver source to drivers/char.
+    
+    V3:
+    Remove blank line at end of sld-hub.txt.
+    
+    V4:
+    Elaborate V2 comments.
+    Remove more blank lines and divider lines.
+    Format multi-line comments properly.
+    Fix code error in sld_hub_release().
+    Use gotos for handling errors in probe function instead of calling
+    release function.
+    Replace conditional operator with if... in sld_hub_read_romid().
+    Remove request_and_map(), replace with devm_request_and_ioremap().
+    Remove unnecessary of_match_ptr().
+    Add "depends on OF" to Kconfig.
+    
+    V5:
+    Move sld-hub.h to include/linux for external use.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit d475209f94f1c68ea4dee62b9d0a213a7d23c289
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Mar 19 14:48:11 2014 -0500
+
+    FogBugz #192127: Fix CTI address length
+    
+    The register base length for the CTI module should be 0x1000, not 0x100.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit b3157ef96fc3b06b1e12cc5fb6253f179bbe022d
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Mar 19 14:41:13 2014 -0500
+
+    FogBugz #192124: Fix SPI IRQ numbers in the DTS
+    
+    The IRQ numbers for the SPI master entries was incorrectly using the SPI
+    slave IRQ numbers.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 371299bc74ca4bb21423887f29135b6ec6064bef
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Thu Sep 26 14:12:13 2013 -0500
+
+    FogBugz #194601: Fix I2C clock parent
+    
+    The correct parents for the I2C should be the l4_sp_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 29d2ed0cc00fc622e840f5227112317af5b8df45
+Author: Romain Baeriswyl <Romain.Baeriswyl@abilis.com>
+Date:   Mon Jan 20 17:43:43 2014 +0100
+
+    i2c: designware: make SCL and SDA falling time configurable
+    
+    This patch allows to set independantly SCL and SDA falling times.
+    The tLOW period is computed by taking into account the SCL falling time.
+    The tHIGH period is computed by taking into account the SDA falling time.
+    
+    For instance in case the margin on tLOW is considered too small, it can
+    be increased by increasing the SCL falling time which is by default set
+    at 300ns.
+    
+    The same applies for tHIGH period with the help of SDA falling time.
+    
+    Signed-off-by: Romain Baeriswyl <romainba@abilis.com>
+    Reviewed-by: Christian Ruppert <christian.ruppert@abilis.com>
+    Acked-by: Shinya Kuribayashi <skuribay@pobox.com>
+    Signed-off-by: Wolfram Sang <wsa@the-dreams.de>
+
+commit fae655269fb13094e8605f22b224a69fef997345
+Author: cnphoon <cnphoon@altera.com>
+Date:   Fri Feb 21 17:39:05 2014 +0800
+
+    FogBugz #178225: Add Altera interrupt latency counter driver
+    
+    Adding Altera interrupt latency counter driver support. This driver works
+    together with the Altera interrupt latency driver soft IP to measure the
+    time from the interrupt being asserted to the execution of the interrupt
+    service routine. This driver and soft ip supports for both edge and level
+    interrupt.
+    
+    V2:
+    - Update fifo-depth property name in device tree
+    - Update binding document to add sysfs path and use case
+    - Update includes header in alphabetical order
+    - Remove global variables
+    - Rename kfifo stucts naming to avoid confusion
+    - Validate offset return value
+    - Changing read and write register functions
+    - Update on misc coding styles and format
+    
+    V3:
+    - Update coding styles
+    - Update irq_request function
+    - Changing print out to dev_dbg() in ISR
+    - Fix ISR return values
+    
+    V4:
+    - Remove stray line
+    
+    Signed-off-by: Phoon Chee Nouk <cnphoon@altera.com>
+
+commit 5c3551792d04c331a82d8c3787c336b62178b29c
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Fri Mar 21 15:29:16 2014 -0500
+
+    Revert "FogBugz #192124: Fix SPI IRQ numbers in the DTS"
+    
+    This reverts commit b3157ef96fc3b06b1e12cc5fb6253f179bbe022d.
+    The original SPI IRQ numbers are correct.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 9cd0eedaab9e9b5fc7b99ea447e659726163b01a
+Author: Graham Moore <grmoore@altera.com>
+Date:   Thu Mar 13 12:20:10 2014 -0500
+
+    FogBugz #175246: SLD HUB Driver
+    
+    This patch is the GPL V2 driver for the SLD (System Level Debug)
+    Hub Controller IP.
+    
+    V2:
+    Incorporate review comments, clean up code, remove debug code.
+    Use kfifo instead of custom ring buffer.
+    Use simple_write_to_buffer(), copy_to_user(), and kfifo_to_user()
+    for copying data to/from user space.
+    Add header file for ioctl.
+    Move driver source to drivers/char.
+    
+    V3:
+    Remove blank line at end of sld-hub.txt.
+    
+    V4:
+    Elaborate V2 comments.
+    Remove more blank lines and divider lines.
+    Format multi-line comments properly.
+    Fix code error in sld_hub_release().
+    Use gotos for handling errors in probe function instead of calling
+    release function.
+    Replace conditional operator with if... in sld_hub_read_romid().
+    Remove request_and_map(), replace with devm_request_and_ioremap().
+    Remove unnecessary of_match_ptr().
+    Add "depends on OF" to Kconfig.
+    
+    V5:
+    Move sld-hub.h to include/linux for external use.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit f4eeb0b4890868166bfe5f3fa4e1a3523022da61
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Mar 19 14:48:11 2014 -0500
+
+    FogBugz #192127: Fix CTI address length
+    
+    The register base length for the CTI module should be 0x1000, not 0x100.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 361c51610ba34ee04e83c49b13bf49efd06bb1ee
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Mar 19 14:41:13 2014 -0500
+
+    FogBugz #192124: Fix SPI IRQ numbers in the DTS
+    
+    The IRQ numbers for the SPI master entries was incorrectly using the SPI
+    slave IRQ numbers.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 82ff5be80c8d163f072e69a0bface9398331961a
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Mar 24 11:41:49 2014 -0700
+
+    FogBugz #191882: Move away handoff path from common config
+    
+    Move away handoff file include paths from socfpga_common.h
+    to device specific configuration file (such as socfpga_cyclone5.h).
+    This will ensure other board configuration file can include
+    socfpga_common.h. This is to avoid code duplication among boards
+    who are using SOCFPGA device.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 7a95bd9dd9ac6fd59ed7d8e4f8c9a5f4af898c0a
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Mar 24 11:40:54 2014 -0700
+
+    FogBugz #191875: Enable U-Boot command line editing
+    
+    Enhance U-Boot command console experience by enabling
+    command line editing. User can use up arrow to retrieve
+    previous typed command and edit it later on.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+

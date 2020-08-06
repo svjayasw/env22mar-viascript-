@@ -1,0 +1,1914 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.15
+branch tag  : rel_socfpga-4.15_18.03.01_pr
+new commits : 13
+d9411d1 Ooi, Joyce FogBugz #538491: s10_devkit_defconfig: Add Altera SysID and Altera ILC
+f1835b2 Richard Gong FogBugz #545807: driver, misc: increase timeout value for claiming back buf
+2063d05 Dinh Nguyen FogBugz #541806: enable watchdog in the s10_devkit_defconfig
+1752cc0 Dinh Nguyen arm64: dts: stratix10: disable false USB overcurrent on devkit
+d2fcfbe Yang Shunyong dmaengine: dmatest: fix container_of member in dmatest_callback
+07ecc72 Dinh Nguyen arm64: dts: stratix10: enable watchdog timer on the S10 devkit
+ecc5919 Richard Gong driver, misc: enhance service layer for u-boot w/o SMC support
+b002bf5 Dinh Nguyen FogBugz #539974: set clocks for watchdog timer on Stratix10
+62b87db Alan Tull Revert "ARM: DT: Enable symbols when CONFIG_OF_OVERLAY is used"
+ed1eb10 Geert Uytterhoeven kbuild: Enable DT symbols when CONFIG_OF_OVERLAY is used
+3142399 Dinh Nguyen FogBugz #538499: klockwork: fix potential memory leaks
+f625bc5 Alan Tull FogBugz #536771: fpga: bridge: fix klocwork sprintf complaint
+b58ce56 Alan Tull FogBugz #536772: tty: newhaven_lcd: fix klocwork complaints
+
+
+++wiki:
+*Branch name*: socfpga-4.15, *Tag name:* rel_socfpga-4.15_18.03.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 538491 | s10_devkit_defconfig: Add Altera SysID and Altera ILC | [[ https://github.com/altera-opensource/linux-socfpga/commit/d9411d1662c32cad454ea36766cbac9c73b7fc4d ][ d9411d1662c32cad454ea36766cbac9c73b7fc4d ]] |
+| 545807 | driver, misc: increase timeout value for claiming back buf | [[ https://github.com/altera-opensource/linux-socfpga/commit/f1835b2b7aa23cc1b47c178a3eb414eaf58fde63 ][ f1835b2b7aa23cc1b47c178a3eb414eaf58fde63 ]] |
+| 541806 | enable watchdog in the s10_devkit_defconfig | [[ https://github.com/altera-opensource/linux-socfpga/commit/2063d05a7d377f45914847ea5f60b4461c9e2a1b ][ 2063d05a7d377f45914847ea5f60b4461c9e2a1b ]] |
+| community | arm64: dts: stratix10: disable false USB overcurrent on devkit | [[ https://github.com/altera-opensource/linux-socfpga/commit/1752cc0adb37e96e79a8ce8189dbd8d53016a224 ][ 1752cc0adb37e96e79a8ce8189dbd8d53016a224 ]] |
+| community | dmaengine: dmatest: fix container_of member in dmatest_callback | [[ https://github.com/altera-opensource/linux-socfpga/commit/d2fcfbe5a0bca43f29a1849ac68fa78fbe286370 ][ d2fcfbe5a0bca43f29a1849ac68fa78fbe286370 ]] |
+| community | arm64: dts: stratix10: enable watchdog timer on the S10 devkit | [[ https://github.com/altera-opensource/linux-socfpga/commit/07ecc72ce169d4a4e11259067a714e31d6acd400 ][ 07ecc72ce169d4a4e11259067a714e31d6acd400 ]] |
+| community | driver, misc: enhance service layer for u-boot w/o SMC support | [[ https://github.com/altera-opensource/linux-socfpga/commit/ecc5919628b706ecc57300c7dbea38e59f2bede1 ][ ecc5919628b706ecc57300c7dbea38e59f2bede1 ]] |
+| 539974 | set clocks for watchdog timer on Stratix10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/b002bf552cb779951ca843a058545dc146989270 ][ b002bf552cb779951ca843a058545dc146989270 ]] |
+| community | Revert "ARM: DT: Enable symbols when CONFIG_OF_OVERLAY is used" | [[ https://github.com/altera-opensource/linux-socfpga/commit/62b87db13758408968d1979be70e673873346415 ][ 62b87db13758408968d1979be70e673873346415 ]] |
+| community | kbuild: Enable DT symbols when CONFIG_OF_OVERLAY is used | [[ https://github.com/altera-opensource/linux-socfpga/commit/ed1eb10b8dd43ea1447e5adc47bcd52ddc3b5c25 ][ ed1eb10b8dd43ea1447e5adc47bcd52ddc3b5c25 ]] |
+| 538499 | klockwork: fix potential memory leaks | [[ https://github.com/altera-opensource/linux-socfpga/commit/31423994dd0df04b38022b47330146c8990891c8 ][ 31423994dd0df04b38022b47330146c8990891c8 ]] |
+| 536771 | fpga: bridge: fix klocwork sprintf complaint | [[ https://github.com/altera-opensource/linux-socfpga/commit/f625bc5635d156f683d95077267484ce7554b5b6 ][ f625bc5635d156f683d95077267484ce7554b5b6 ]] |
+| 536772 | tty: newhaven_lcd: fix klocwork complaints | [[ https://github.com/altera-opensource/linux-socfpga/commit/b58ce5668a694f24196614aad69c338967d9eb8b ][ b58ce5668a694f24196614aad69c338967d9eb8b ]] |
+--wiki:
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.03.01_pr
+new commits : 29
+33ecb3d Richard Gong FogBugz #545807: driver, misc: increase timeout value for claiming back buf
+0335883 Neill Whillans net: ethernet: altera_tse: add support for SGMII PCS
+8a0d118 Dinh Nguyen FogBugz #541806: enable watchdog in the s10_devkit_defconfig
+edb2315 Ooi, Joyce FogBugz #538491: s10_devkit_defconfig: Add Altera SysID and Altera ILC
+83de02b Thor Thayer FogBugz #366816-2: Fix up OCRAM and NAND initialization for 4.5
+3a347d9 Ley Foon Tan FogBugz #106327: Use framework in drivers/base/soc.c for system id
+0db33bd Dinh Nguyen FogBugz #288412: Add correct reset manager offsets for Arria10
+d7384a5 Alan Tull FogBugz #102675: do not touch fpga bridge resets by default
+4b431ce Dinh Nguyen arm64: dts: stratix10: disable false USB overcurrent on devkit
+871f293 Douglas Anderson usb: dwc2: host: Don't retry NAKed transactions right away
+bdf910b Yang Shunyong dmaengine: dmatest: fix container_of member in dmatest_callback
+adf5ed1 Dinh Nguyen arm64: dts: stratix10: enable watchdog timer on the S10 devkit
+f4af4cb Thor Thayer FogBugz #532777: Fix Cadence QSPI driver page fault kernel panic
+54c8b54 Richard Gong driver, misc: enhance service layer for u-boot w/o SMC support
+25094b6 Alan Tull Revert "ARM: DT: Enable symbols when CONFIG_OF_OVERLAY is used"
+5a9b258 Geert Uytterhoeven kbuild: Enable DT symbols when CONFIG_OF_OVERLAY is used
+62a46b0 Alan Tull defconfig: stratix10 socdk: enable overlays and configfs
+6240419 Alan Tull arm64: dts: stratix10: add fpga manager and region
+2ed6fd1 Alan Tull defconfig: stratix10 socdk: enable fpga and service layer
+4d49d58 Alan Tull fpga: add intel stratix10 soc fpga manager driver
+0e69772 Alan Tull dt-bindings: fpga: add Stratix10 SoC FPGA manager binding
+572ba2a Richard Gong driver, misc: add Intel Stratix10 service layer driver
+f5e8d77 Richard Gong arm64: dts: stratix10: add service driver binding to base dtsi
+f996589 Richard Gong dt-bindings, firmware: add Intel Stratix10 service layer binding
+3b64e25 Dinh Nguyen FogBugz #539974: set clocks for watchdog timer on Stratix10
+376dfba Gustavo A. R. Silva fpga: altera-hps2fpga: add NULL check on of_match_device() return value
+ff8705c Dinh Nguyen FogBugz #538499: klockwork: fix potential memory leaks
+a0264d3 Alan Tull FogBugz #536771: fpga: bridge: fix klocwork sprintf complaint
+596408e Alan Tull FogBugz #536772: tty: newhaven_lcd: fix klocwork complaints
+
+
+++wiki:
+*Branch name*: socfpga-4.9.78-ltsi, *Tag name:* rel_socfpga-4.9.78-ltsi_18.03.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 545807 | driver, misc: increase timeout value for claiming back buf | [[ https://github.com/altera-opensource/linux-socfpga/commit/33ecb3dca9f3d71fe6028725b77a452598610024 ][ 33ecb3dca9f3d71fe6028725b77a452598610024 ]] |
+| community | net: ethernet: altera_tse: add support for SGMII PCS | [[ https://github.com/altera-opensource/linux-socfpga/commit/033588343b3baa886ff9db4c8567362b5bec9bf1 ][ 033588343b3baa886ff9db4c8567362b5bec9bf1 ]] |
+| 541806 | enable watchdog in the s10_devkit_defconfig | [[ https://github.com/altera-opensource/linux-socfpga/commit/8a0d118bcfde546a81943d7b424f80d42e7137c8 ][ 8a0d118bcfde546a81943d7b424f80d42e7137c8 ]] |
+| 538491 | s10_devkit_defconfig: Add Altera SysID and Altera ILC | [[ https://github.com/altera-opensource/linux-socfpga/commit/edb23157c70e6094378eec24d405b28b9a413c70 ][ edb23157c70e6094378eec24d405b28b9a413c70 ]] |
+| 366816-2 | Fix up OCRAM and NAND initialization for 4.5 | [[ https://github.com/altera-opensource/linux-socfpga/commit/83de02bbecf911526e3d2d39341daf006c5136e0 ][ 83de02bbecf911526e3d2d39341daf006c5136e0 ]] |
+| 106327 | Use framework in drivers/base/soc.c for system id | [[ https://github.com/altera-opensource/linux-socfpga/commit/3a347d9d0388dd290e9e52dc6e6de2c8b792d6d6 ][ 3a347d9d0388dd290e9e52dc6e6de2c8b792d6d6 ]] |
+| 288412 | Add correct reset manager offsets for Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/0db33bd88e13368be816f5b7158182de8cb0cf4c ][ 0db33bd88e13368be816f5b7158182de8cb0cf4c ]] |
+| 102675 | do not touch fpga bridge resets by default | [[ https://github.com/altera-opensource/linux-socfpga/commit/d7384a522275f73893a6d9a9addff7e6c9cdc0c3 ][ d7384a522275f73893a6d9a9addff7e6c9cdc0c3 ]] |
+| community | arm64: dts: stratix10: disable false USB overcurrent on devkit | [[ https://github.com/altera-opensource/linux-socfpga/commit/4b431cebabd08f9d4862980bd06b864a9437fbe0 ][ 4b431cebabd08f9d4862980bd06b864a9437fbe0 ]] |
+| community | usb: dwc2: host: Don't retry NAKed transactions right away | [[ https://github.com/altera-opensource/linux-socfpga/commit/871f293f352661c55d84e2e41ebae4c9e7598b11 ][ 871f293f352661c55d84e2e41ebae4c9e7598b11 ]] |
+| community | dmaengine: dmatest: fix container_of member in dmatest_callback | [[ https://github.com/altera-opensource/linux-socfpga/commit/bdf910b1939e45beef022239bda381a2b11a6337 ][ bdf910b1939e45beef022239bda381a2b11a6337 ]] |
+| community | arm64: dts: stratix10: enable watchdog timer on the S10 devkit | [[ https://github.com/altera-opensource/linux-socfpga/commit/adf5ed169ace60110ae411db692b826f0515d0c8 ][ adf5ed169ace60110ae411db692b826f0515d0c8 ]] |
+| 532777 | Fix Cadence QSPI driver page fault kernel panic | [[ https://github.com/altera-opensource/linux-socfpga/commit/f4af4cbdb882f1b9cc8d87c08b869fffff5fe4bb ][ f4af4cbdb882f1b9cc8d87c08b869fffff5fe4bb ]] |
+| community | driver, misc: enhance service layer for u-boot w/o SMC support | [[ https://github.com/altera-opensource/linux-socfpga/commit/54c8b5432c14721a26c75774377b3ef2185f1764 ][ 54c8b5432c14721a26c75774377b3ef2185f1764 ]] |
+| community | Revert "ARM: DT: Enable symbols when CONFIG_OF_OVERLAY is used" | [[ https://github.com/altera-opensource/linux-socfpga/commit/25094b68dfb01a3c862bbb7c94d99bca5d3d99f5 ][ 25094b68dfb01a3c862bbb7c94d99bca5d3d99f5 ]] |
+| community | kbuild: Enable DT symbols when CONFIG_OF_OVERLAY is used | [[ https://github.com/altera-opensource/linux-socfpga/commit/5a9b258729636b50c351b1e44e9d90880cf3a4c9 ][ 5a9b258729636b50c351b1e44e9d90880cf3a4c9 ]] |
+| community | defconfig: stratix10 socdk: enable overlays and configfs | [[ https://github.com/altera-opensource/linux-socfpga/commit/62a46b07e9264d52fa054d977df859ebc9b4f59c ][ 62a46b07e9264d52fa054d977df859ebc9b4f59c ]] |
+| community | arm64: dts: stratix10: add fpga manager and region | [[ https://github.com/altera-opensource/linux-socfpga/commit/6240419e648847f0611094bd086fd5b89ae7acbd ][ 6240419e648847f0611094bd086fd5b89ae7acbd ]] |
+| community | defconfig: stratix10 socdk: enable fpga and service layer | [[ https://github.com/altera-opensource/linux-socfpga/commit/2ed6fd14266b6af7a20b856a192ac076190ab909 ][ 2ed6fd14266b6af7a20b856a192ac076190ab909 ]] |
+| community | fpga: add intel stratix10 soc fpga manager driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/4d49d58c099c2f99fa0b3a462f3cac40b32c9c49 ][ 4d49d58c099c2f99fa0b3a462f3cac40b32c9c49 ]] |
+| community | dt-bindings: fpga: add Stratix10 SoC FPGA manager binding | [[ https://github.com/altera-opensource/linux-socfpga/commit/0e697723eb6dae5c502968f24001e9ced4809427 ][ 0e697723eb6dae5c502968f24001e9ced4809427 ]] |
+| community | driver, misc: add Intel Stratix10 service layer driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/572ba2aaf77fb768bcaeb3426dac75ac5985cdca ][ 572ba2aaf77fb768bcaeb3426dac75ac5985cdca ]] |
+| community | arm64: dts: stratix10: add service driver binding to base dtsi | [[ https://github.com/altera-opensource/linux-socfpga/commit/f5e8d77c666a56c9a80f87a50c27a11484e82629 ][ f5e8d77c666a56c9a80f87a50c27a11484e82629 ]] |
+| community | dt-bindings, firmware: add Intel Stratix10 service layer binding | [[ https://github.com/altera-opensource/linux-socfpga/commit/f996589169cb336d19a09a18b624a2efdd9c28b2 ][ f996589169cb336d19a09a18b624a2efdd9c28b2 ]] |
+| 539974 | set clocks for watchdog timer on Stratix10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/3b64e25767810ebe3da7760fbfa8caa120b32e74 ][ 3b64e25767810ebe3da7760fbfa8caa120b32e74 ]] |
+| community | fpga: altera-hps2fpga: add NULL check on of_match_device() return value | [[ https://github.com/altera-opensource/linux-socfpga/commit/376dfba7dee64b0f436a35edb6524cc6d2a31d3e ][ 376dfba7dee64b0f436a35edb6524cc6d2a31d3e ]] |
+| 538499 | klockwork: fix potential memory leaks | [[ https://github.com/altera-opensource/linux-socfpga/commit/ff8705ca2635c39f16ef0eaf1ee2b4b49f603a5f ][ ff8705ca2635c39f16ef0eaf1ee2b4b49f603a5f ]] |
+| 536771 | fpga: bridge: fix klocwork sprintf complaint | [[ https://github.com/altera-opensource/linux-socfpga/commit/a0264d36993ba7555336683db77315f407b079a7 ][ a0264d36993ba7555336683db77315f407b079a7 ]] |
+| 536772 | tty: newhaven_lcd: fix klocwork complaints | [[ https://github.com/altera-opensource/linux-socfpga/commit/596408e4f1f179cfec8a4b2c0444a9f161b286b1 ][ 596408e4f1f179cfec8a4b2c0444a9f161b286b1 ]] |
+--wiki:
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.03.01_pr
+new commits : 29
+a1be37b Thor Thayer FogBugz #532777: Fix Cadence QSPI driver page fault kernel panic
+3b6c71a Richard Gong FogBugz #545807: driver, misc: increase timeout value for claiming back buf
+3fb4178 Neill Whillans net: ethernet: altera_tse: add support for SGMII PCS
+8558079 Dinh Nguyen FogBugz #541806: enable watchdog in the s10_devkit_defconfig
+5981372 Ooi, Joyce FogBugz #538491: s10_devkit_defconfig: Add Altera SysID and Altera ILC
+e0224f4 Thor Thayer FogBugz #366816-2: Fix up OCRAM and NAND initialization for 4.5
+fc3b088 Ley Foon Tan FogBugz #106327: Use framework in drivers/base/soc.c for system id
+272824f Dinh Nguyen FogBugz #288412: Add correct reset manager offsets for Arria10
+3d78af7 Alan Tull FogBugz #102675: do not touch fpga bridge resets by default
+e09606c Dinh Nguyen arm64: dts: stratix10: disable false USB overcurrent on devkit
+9880b48 Douglas Anderson usb: dwc2: host: Don't retry NAKed transactions right away
+d834373 Yang Shunyong dmaengine: dmatest: fix container_of member in dmatest_callback
+66b88bf Dinh Nguyen arm64: dts: stratix10: enable watchdog timer on the S10 devkit
+8dfd062 Richard Gong driver, misc: enhance service layer for u-boot w/o SMC support
+316a11c Alan Tull Revert "ARM: DT: Enable symbols when CONFIG_OF_OVERLAY is used"
+a0fa164 Geert Uytterhoeven kbuild: Enable DT symbols when CONFIG_OF_OVERLAY is used
+c0e03f8 Alan Tull defconfig: stratix10 socdk: enable overlays and configfs
+b1dfc13 Alan Tull arm64: dts: stratix10: add fpga manager and region
+a46d946 Alan Tull defconfig: stratix10 socdk: enable fpga and service layer
+0d85448 Alan Tull fpga: add intel stratix10 soc fpga manager driver
+6f9c7a5 Alan Tull dt-bindings: fpga: add Stratix10 SoC FPGA manager binding
+935d3d4 Richard Gong driver, misc: add Intel Stratix10 service layer driver
+da8ba24 Richard Gong arm64: dts: stratix10: add service driver binding to base dtsi
+5b1511d Richard Gong dt-bindings, firmware: add Intel Stratix10 service layer binding
+8cf9061 Dinh Nguyen FogBugz #539974: set clocks for watchdog timer on Stratix10
+3fefc00 Dinh Nguyen FogBugz #538499: klockwork: fix potential memory leaks
+fb31dd9 Gustavo A. R. Silva fpga: altera-hps2fpga: add NULL check on of_match_device() return value
+e6c786c Alan Tull FogBugz #536771: fpga: bridge: fix klocwork sprintf complaint
+0f0f45c Alan Tull FogBugz #536772: tty: newhaven_lcd: fix klocwork complaints
+
+
+++wiki:
+*Branch name*: socfpga-4.9.76-ltsi-rt, *Tag name:* rel_socfpga-4.9.76-ltsi-rt_18.03.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 532777 | Fix Cadence QSPI driver page fault kernel panic | [[ https://github.com/altera-opensource/linux-socfpga/commit/a1be37b8d058805f7bbda42655727552c1e36c43 ][ a1be37b8d058805f7bbda42655727552c1e36c43 ]] |
+| 545807 | driver, misc: increase timeout value for claiming back buf | [[ https://github.com/altera-opensource/linux-socfpga/commit/3b6c71a2d22ec378c6a65763d3b185799529b3f3 ][ 3b6c71a2d22ec378c6a65763d3b185799529b3f3 ]] |
+| community | net: ethernet: altera_tse: add support for SGMII PCS | [[ https://github.com/altera-opensource/linux-socfpga/commit/3fb41787f2436b6b3efd1f71ca8ad753784c93c4 ][ 3fb41787f2436b6b3efd1f71ca8ad753784c93c4 ]] |
+| 541806 | enable watchdog in the s10_devkit_defconfig | [[ https://github.com/altera-opensource/linux-socfpga/commit/855807991dbaccc52b87cc1e4fe47d60a60aa189 ][ 855807991dbaccc52b87cc1e4fe47d60a60aa189 ]] |
+| 538491 | s10_devkit_defconfig: Add Altera SysID and Altera ILC | [[ https://github.com/altera-opensource/linux-socfpga/commit/59813729e50ad2c4dcfbeebbcded0f1afb3017fa ][ 59813729e50ad2c4dcfbeebbcded0f1afb3017fa ]] |
+| 366816-2 | Fix up OCRAM and NAND initialization for 4.5 | [[ https://github.com/altera-opensource/linux-socfpga/commit/e0224f465152da68cde54e185da9e62ecf93715b ][ e0224f465152da68cde54e185da9e62ecf93715b ]] |
+| 106327 | Use framework in drivers/base/soc.c for system id | [[ https://github.com/altera-opensource/linux-socfpga/commit/fc3b08818c995a9f3149503ed8fc5f33758a59ff ][ fc3b08818c995a9f3149503ed8fc5f33758a59ff ]] |
+| 288412 | Add correct reset manager offsets for Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/272824f36c3ea9c3c0c487690f0a458969c06fc8 ][ 272824f36c3ea9c3c0c487690f0a458969c06fc8 ]] |
+| 102675 | do not touch fpga bridge resets by default | [[ https://github.com/altera-opensource/linux-socfpga/commit/3d78af7ea982a1aa6a5dec888679319624009fc7 ][ 3d78af7ea982a1aa6a5dec888679319624009fc7 ]] |
+| community | arm64: dts: stratix10: disable false USB overcurrent on devkit | [[ https://github.com/altera-opensource/linux-socfpga/commit/e09606cd6d60b80eaa9bcf08f51f37a7f935e5ae ][ e09606cd6d60b80eaa9bcf08f51f37a7f935e5ae ]] |
+| community | usb: dwc2: host: Don't retry NAKed transactions right away | [[ https://github.com/altera-opensource/linux-socfpga/commit/9880b483bfa4c98477d40d83ffaa8fe1755f9b7a ][ 9880b483bfa4c98477d40d83ffaa8fe1755f9b7a ]] |
+| community | dmaengine: dmatest: fix container_of member in dmatest_callback | [[ https://github.com/altera-opensource/linux-socfpga/commit/d834373a31fe05b6d082c61c403ac1d6b1a88a0c ][ d834373a31fe05b6d082c61c403ac1d6b1a88a0c ]] |
+| community | arm64: dts: stratix10: enable watchdog timer on the S10 devkit | [[ https://github.com/altera-opensource/linux-socfpga/commit/66b88bf2270a72851247805e9197fc9f0a8f0c3c ][ 66b88bf2270a72851247805e9197fc9f0a8f0c3c ]] |
+| community | driver, misc: enhance service layer for u-boot w/o SMC support | [[ https://github.com/altera-opensource/linux-socfpga/commit/8dfd062e999ffcc6efb613bdce08d9fb62793079 ][ 8dfd062e999ffcc6efb613bdce08d9fb62793079 ]] |
+| community | Revert "ARM: DT: Enable symbols when CONFIG_OF_OVERLAY is used" | [[ https://github.com/altera-opensource/linux-socfpga/commit/316a11cfd9bfe807816410bb65bf926eabb482d5 ][ 316a11cfd9bfe807816410bb65bf926eabb482d5 ]] |
+| community | kbuild: Enable DT symbols when CONFIG_OF_OVERLAY is used | [[ https://github.com/altera-opensource/linux-socfpga/commit/a0fa16467b2ee446d4c19de15cf407fd38b8fa22 ][ a0fa16467b2ee446d4c19de15cf407fd38b8fa22 ]] |
+| community | defconfig: stratix10 socdk: enable overlays and configfs | [[ https://github.com/altera-opensource/linux-socfpga/commit/c0e03f8b6be60dc0580e8dbc1c159ff2b7caa8bf ][ c0e03f8b6be60dc0580e8dbc1c159ff2b7caa8bf ]] |
+| community | arm64: dts: stratix10: add fpga manager and region | [[ https://github.com/altera-opensource/linux-socfpga/commit/b1dfc13d410b50ca1ed8a9cb59d2273ad751c382 ][ b1dfc13d410b50ca1ed8a9cb59d2273ad751c382 ]] |
+| community | defconfig: stratix10 socdk: enable fpga and service layer | [[ https://github.com/altera-opensource/linux-socfpga/commit/a46d94625c83de449200c9fa29f8ca129805dd99 ][ a46d94625c83de449200c9fa29f8ca129805dd99 ]] |
+| community | fpga: add intel stratix10 soc fpga manager driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/0d85448930fefe158325415a785f2666f898f719 ][ 0d85448930fefe158325415a785f2666f898f719 ]] |
+| community | dt-bindings: fpga: add Stratix10 SoC FPGA manager binding | [[ https://github.com/altera-opensource/linux-socfpga/commit/6f9c7a535847c7cf99cf5c3decc9cd03c5888453 ][ 6f9c7a535847c7cf99cf5c3decc9cd03c5888453 ]] |
+| community | driver, misc: add Intel Stratix10 service layer driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/935d3d49849cdffda7497adb3214d529d02310e8 ][ 935d3d49849cdffda7497adb3214d529d02310e8 ]] |
+| community | arm64: dts: stratix10: add service driver binding to base dtsi | [[ https://github.com/altera-opensource/linux-socfpga/commit/da8ba247a02975e2bb5885788fd5dc4ce52ee134 ][ da8ba247a02975e2bb5885788fd5dc4ce52ee134 ]] |
+| community | dt-bindings, firmware: add Intel Stratix10 service layer binding | [[ https://github.com/altera-opensource/linux-socfpga/commit/5b1511df1cdadc510fc149f58f654202cc6d1534 ][ 5b1511df1cdadc510fc149f58f654202cc6d1534 ]] |
+| 539974 | set clocks for watchdog timer on Stratix10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/8cf906179ee541efd20521038162af477c8f9855 ][ 8cf906179ee541efd20521038162af477c8f9855 ]] |
+| 538499 | klockwork: fix potential memory leaks | [[ https://github.com/altera-opensource/linux-socfpga/commit/3fefc00efdb632f0aeb4031078e339f9c570420e ][ 3fefc00efdb632f0aeb4031078e339f9c570420e ]] |
+| community | fpga: altera-hps2fpga: add NULL check on of_match_device() return value | [[ https://github.com/altera-opensource/linux-socfpga/commit/fb31dd94cbc5b23e99d57d7539922746c09b6736 ][ fb31dd94cbc5b23e99d57d7539922746c09b6736 ]] |
+| 536771 | fpga: bridge: fix klocwork sprintf complaint | [[ https://github.com/altera-opensource/linux-socfpga/commit/e6c786cc38596ea6f5317209f158b729a0bbfc96 ][ e6c786cc38596ea6f5317209f158b729a0bbfc96 ]] |
+| 536772 | tty: newhaven_lcd: fix klocwork complaints | [[ https://github.com/altera-opensource/linux-socfpga/commit/0f0f45c76082f28e3fd498b0d53c4b89d1d7a839 ][ 0f0f45c76082f28e3fd498b0d53c4b89d1d7a839 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.15_18.03.01_pr
+commit: d9411d1 Ooi, Joyce FogBugz #538491: s10_devkit_defconfig: Add Altera SysID and Altera ILC
+
+tag:    rel_socfpga-4.9.78-ltsi_18.03.01_pr
+commit: 33ecb3d Richard Gong FogBugz #545807: driver, misc: increase timeout value for claiming back buf
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.03.01_pr
+commit: a1be37b Thor Thayer FogBugz #532777: Fix Cadence QSPI driver page fault kernel panic
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.03.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.03.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.03.01_pr
+new commits : 20
+c85cd1f Chee Hong Ang FogBugz #544314: Ensure SiP function service table always align to 8 bytes.
+40ded84 Chee Hong Ang FogBugz #540144-8: Enable S10 FPGA configuration in defconfig
+0bc2894 Chee Hong Ang FogBugz #540144-7: Add S10 FPGA configuration SMC (SiP) services
+d97e2bf Chee Hong Ang FogBugz #540144-6: Allow SiP service extensions on top of PSCI code
+71a2215 Chee Hong Ang FogBugz #540144-5: Moved RECONFIG_STATUS definitions to common header file
+4211dc4 Chee Hong Ang FogBugz #540144-4: FPGA configuration with RECONFIG and RECONFIG_DATA
+db1dcf5 Chee Hong Ang FogBugz #540144-3: Async support for S10 mailbox commands
+693973d Chee Hong Ang FogBugz #540144-2: Add new mailbox commands for S10
+364a1ef Chee Hong Ang FogBugz #540144-1: Add DIRECT/INDIRECT bit support
+97abc6d Dinh Nguyen FogBugz #542061: chmod all source code files from 755 to 644
+097c8cb Chee Hong Ang FogBugz #540992: Changed CONFIG_LOADADDR to 32MB offset address
+a02f9d5 Tien Fong Chee FogBugz #535135-2: arm: socfpga: stratix10: Add SDRAM ECC testing
+fcfa5f8 Tien Fong Chee FogBugz #535135-1: arm: socfpga: stratix10: Enable SDRAM ECC
+fe029f2 Chin Liang See FogBugz #533578-2: arm: socfpga: stratix10: Enable watchdog support for SPL
+764bdb3 Chin Liang See FogBugz #533578-1: arm: socfpga: stratix10: Calculating L4 sys free clock
+7b81da1 Dinh Nguyen FogBugz #539844: enables non-secure access to watchdog timers
+520db56 Tien Fong Chee FogBugz #531407-2: arm: socfpga: stratix10: Enable DMA-330 driver support
+5f9778e Tien Fong Chee FogBugz #531407-1: arm: socfpga: stratix10: Fix the comment for DMA product
+b717408 Tien Fong Chee FogBugz #526851: arm:socfpga:stratix10: Enable U-Boot to execute script
+a8a0d06 Thor Thayer FogBugz #535183: arm: socfpga: stratix10: Enable SMMU support
+
+
+++wiki:
+*Branch name*: socfpga_v2017.09, *Tag name:* rel_socfpga_v2017.09_18.03.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 544314 | Ensure SiP function service table always align to 8 bytes. | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/c85cd1fc1331210f1c22adb29d932d4052f79c78 ][ c85cd1fc1331210f1c22adb29d932d4052f79c78 ]] |
+| 540144-8 | Enable S10 FPGA configuration in defconfig | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/40ded849477f98aa353c1e21402d42c74fa1ec6e ][ 40ded849477f98aa353c1e21402d42c74fa1ec6e ]] |
+| 540144-7 | Add S10 FPGA configuration SMC (SiP) services | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/0bc2894b900be99915ea851664cbc0428b303f1d ][ 0bc2894b900be99915ea851664cbc0428b303f1d ]] |
+| 540144-6 | Allow SiP service extensions on top of PSCI code | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/d97e2bf12068173fe827ddfc9c0421d85061210f ][ d97e2bf12068173fe827ddfc9c0421d85061210f ]] |
+| 540144-5 | Moved RECONFIG_STATUS definitions to common header file | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/71a221523ef9da16888cc96c9151a32e6f5ef3b6 ][ 71a221523ef9da16888cc96c9151a32e6f5ef3b6 ]] |
+| 540144-4 | FPGA configuration with RECONFIG and RECONFIG_DATA | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/4211dc4435b436e4603ed88faa0930ae4ce82463 ][ 4211dc4435b436e4603ed88faa0930ae4ce82463 ]] |
+| 540144-3 | Async support for S10 mailbox commands | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/db1dcf58ab6bc309be4a5633b8fec6f9dc554cf3 ][ db1dcf58ab6bc309be4a5633b8fec6f9dc554cf3 ]] |
+| 540144-2 | Add new mailbox commands for S10 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/693973d7aecba8c354819b82393736c5e64e56aa ][ 693973d7aecba8c354819b82393736c5e64e56aa ]] |
+| 540144-1 | Add DIRECT/INDIRECT bit support | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/364a1ef68bb80561facc601a4e6a6e22a05d4321 ][ 364a1ef68bb80561facc601a4e6a6e22a05d4321 ]] |
+| 542061 | chmod all source code files from 755 to 644 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/97abc6da8fa26cf4067bd8793e78cb7615490657 ][ 97abc6da8fa26cf4067bd8793e78cb7615490657 ]] |
+| 540992 | Changed CONFIG_LOADADDR to 32MB offset address | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/097c8cb111f67418643417b6b1ace1d1a77c1745 ][ 097c8cb111f67418643417b6b1ace1d1a77c1745 ]] |
+| 535135-2 | arm: socfpga: stratix10: Add SDRAM ECC testing | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/a02f9d57675f3f556bee3c87e53b1c6a841da9cd ][ a02f9d57675f3f556bee3c87e53b1c6a841da9cd ]] |
+| 535135-1 | arm: socfpga: stratix10: Enable SDRAM ECC | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/fcfa5f82532efc3c7ac8901f2b4895c3855080f5 ][ fcfa5f82532efc3c7ac8901f2b4895c3855080f5 ]] |
+| 533578-2 | arm: socfpga: stratix10: Enable watchdog support for SPL | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/fe029f2846c545106240adffd4a6d25627189fbc ][ fe029f2846c545106240adffd4a6d25627189fbc ]] |
+| 533578-1 | arm: socfpga: stratix10: Calculating L4 sys free clock | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/764bdb3aec60bb3dc88b8b74ccc8d8f24556713d ][ 764bdb3aec60bb3dc88b8b74ccc8d8f24556713d ]] |
+| 539844 | enables non-secure access to watchdog timers | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/7b81da1f22b432685893a162ea64ffd8c0c97d55 ][ 7b81da1f22b432685893a162ea64ffd8c0c97d55 ]] |
+| 531407-2 | arm: socfpga: stratix10: Enable DMA-330 driver support | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/520db56c1a931edf2484b77915d1f519c8cecc7b ][ 520db56c1a931edf2484b77915d1f519c8cecc7b ]] |
+| 531407-1 | arm: socfpga: stratix10: Fix the comment for DMA product | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/5f9778e1b3ef0a563ed96dae662585ab9991e9ac ][ 5f9778e1b3ef0a563ed96dae662585ab9991e9ac ]] |
+| 526851 | arm:socfpga:stratix10: Enable U-Boot to execute script | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/b717408c56bae615a94af29bf353bad1772dda95 ][ b717408c56bae615a94af29bf353bad1772dda95 ]] |
+| 535183 | arm: socfpga: stratix10: Enable SMMU support | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/a8a0d0676767d239b7d3d9bd4b1fe502ad9a6961 ][ a8a0d0676767d239b7d3d9bd4b1fe502ad9a6961 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.03.01_pr
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.03.01_pr
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_18.03.01_pr
+commit: c85cd1f Chee Hong Ang FogBugz #544314: Ensure SiP function service table always align to 8 bytes.
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.03.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.03.01_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.03.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.03.01_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.03.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.03.01_pr
+new commits : 3
+e691a83 Ong, Hean Loong latest 4.9.78ltsi commit 33ecb3d
+22e6c92 Ong, Hean Loong move linux-altera-ltsi_4.9.78.bb to latest linux commit
+241bcf9 Ong, Hean Loong add jffs2 block size in arria10
+
+
+++wiki:
+*Branch name*: angstrom-v2016.12-yocto2.2, *Tag name:* rel_angstrom-v2016.12-yocto2.2_18.03.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | latest 4.9.78ltsi commit 33ecb3d | [[ https://github.com/altera-opensource/meta-altera/commit/e691a8386236ab01ca52626b65f33b0747e86007 ][ e691a8386236ab01ca52626b65f33b0747e86007 ]] |
+| community | move linux-altera-ltsi_4.9.78.bb to latest linux commit | [[ https://github.com/altera-opensource/meta-altera/commit/22e6c92ca45741efe2763ceb06e0e98a529bf96b ][ 22e6c92ca45741efe2763ceb06e0e98a529bf96b ]] |
+| community | add jffs2 block size in arria10 | [[ https://github.com/altera-opensource/meta-altera/commit/241bcf91aeeca0fa338fb4d547c62d073cee1183 ][ 241bcf91aeeca0fa338fb4d547c62d073cee1183 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.03.01_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.03.01_pr
+commit: e691a83 Ong, Hean Loong latest 4.9.78ltsi commit 33ecb3d
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.15
+
+commit d9411d1662c32cad454ea36766cbac9c73b7fc4d
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Thu Mar 15 13:26:01 2018 +0800
+
+    FogBugz #538491: s10_devkit_defconfig: Add Altera SysID and Altera ILC
+    
+    Enable Altera Interrupt Latency Counter and Altera System ID as they
+    are required by GSRD customers.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit f1835b2b7aa23cc1b47c178a3eb414eaf58fde63
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Thu Mar 15 13:03:49 2018 -0500
+
+    FogBugz #545807: driver, misc: increase timeout value for claiming back buf
+    
+    Firmware from the latest Quartus releases takes more time to process
+    data. As a result service layer needs increase timeout value so it can
+    claim back the submitted data buffer(s) from the secure world to program
+    FPGA properly.
+    
+    Also add pr_err() to provide the error return value for the case
+    which service layer fails to make a SMC call to secure world for the
+    shared memory block reserved by secure monitor software.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 2063d05a7d377f45914847ea5f60b4461c9e2a1b
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Mon Mar 19 18:21:58 2018 -0500
+
+    FogBugz #541806: enable watchdog in the s10_devkit_defconfig
+    
+    Doing a 'make savedefconfig' to enable the watchdog timer driver on
+    Stratix10.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+    ---
+    non-upstreamable as this is for the downstream s10_devkit_defconfig
+
+commit 1752cc0adb37e96e79a8ce8189dbd8d53016a224
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Mon Mar 12 09:49:21 2018 -0500
+
+    arm64: dts: stratix10: disable false USB overcurrent on devkit
+    
+    Disable the USB overcurrent condition that is falsely detected on the
+    devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit d2fcfbe5a0bca43f29a1849ac68fa78fbe286370
+Author: Yang Shunyong <shunyong.yang@hxt-semitech.com>
+Date:   Mon Jan 29 14:40:11 2018 +0800
+
+    dmaengine: dmatest: fix container_of member in dmatest_callback
+    
+    The type of arg passed to dmatest_callback is struct dmatest_done.
+    It refers to test_done in struct dmatest_thread, not done_wait.
+    
+    Fixes: 6f6a23a213be ("dmaengine: dmatest: move callback wait ...")
+    Signed-off-by: Yang Shunyong <shunyong.yang@hxt-semitech.com>
+    Acked-by: Adam Wallis <awallis@codeaurora.org>
+    Signed-off-by: Vinod Koul <vinod.koul@intel.com>
+
+commit 07ecc72ce169d4a4e11259067a714e31d6acd400
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Mon Mar 5 09:21:05 2018 -0600
+
+    arm64: dts: stratix10: enable watchdog timer on the S10 devkit
+    
+    Enables the watchdog0 timer on the Stratix10 devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    
+    Conflicts:
+    	arch/arm64/boot/dts/altera/socfpga_stratix10_socdk.dts
+
+commit ecc5919628b706ecc57300c7dbea38e59f2bede1
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Thu Mar 1 12:33:20 2018 -0600
+
+    driver, misc: enhance service layer for u-boot w/o SMC support
+    
+    Service layer makes a SMC call to u-boot for the shared memory. If SMC is
+    not supported at u-boot, u-boot will return service layer a invalid value
+    and cause service layer probe failure. Kernel crashes as a result.
+    
+    This patch is used to enhance service layer driver. So that if u-boot
+    doesn't support SMC yet, the service layer driver probe will fail without
+    crashing the kernel.
+    
+    FPGA configuration will not work in the case which u-boot doesn't support
+    SMC.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit b002bf552cb779951ca843a058545dc146989270
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Fri Mar 2 09:50:14 2018 -0600
+
+    FogBugz #539974: set clocks for watchdog timer on Stratix10
+    
+    Populate the clocks property in the watchdog timers on Stratix10.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+    ---
+    Non-upstreamable because this patch is using the downstream clock
+    driver.
+
+commit 62b87db13758408968d1979be70e673873346415
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Mar 1 17:48:39 2018 -0600
+
+    Revert "ARM: DT: Enable symbols when CONFIG_OF_OVERLAY is used"
+    
+    This reverts commit fe94677b6e60189ee0e4dbace1ce81c66c2053c5.
+
+commit ed1eb10b8dd43ea1447e5adc47bcd52ddc3b5c25
+Author: Geert Uytterhoeven <geert+renesas@glider.be>
+Date:   Fri Nov 20 14:47:50 2015 +0100
+
+    kbuild: Enable DT symbols when CONFIG_OF_OVERLAY is used
+    
+    Signed-off-by: Geert Uytterhoeven <geert+renesas@glider.be>
+
+commit 31423994dd0df04b38022b47330146c8990891c8
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Mon Feb 26 16:38:44 2018 -0600
+
+    FogBugz #538499: klockwork: fix potential memory leaks
+    
+    Fix potential memory leaks in the Stratix10 clock driver by freeing the
+    struct pointer for error conditions.
+    
+    Remove 'reg2' variable, which was unused.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit f625bc5635d156f683d95077267484ce7554b5b6
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Feb 20 09:56:58 2018 -0600
+
+    FogBugz #536771: fpga: bridge: fix klocwork sprintf complaint
+    
+    Klocwork give the following complaints:
+    
+    /home/yves/linux/intel/linux-socfpga/drivers/fpga/fpga-bridge.c:243 --
+    -- SV.BANNED.REQUIRED.SPRINTF (4:Review) Analyze Function 'sprintf' is
+    deprecated.  Replace with more secure equivalent like 'sprintf_s', add
+    missing logic, or re-architect.
+    
+    /home/yves/linux/intel/linux-socfpga/drivers/fpga/fpga-bridge.c:255 --
+    -- SV.BANNED.REQUIRED.SPRINTF (4:Review) Analyze Function 'sprintf' is
+    deprecated.  Replace with more secure equivalent like 'sprintf_s', add
+    missing logic, or re-architect.
+    
+    Remedy these by using scnprintf rather than sprintf.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: s/klockwork/klocwork/ and s/bringe/bridge/ in header
+
+commit b58ce5668a694f24196614aad69c338967d9eb8b
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Feb 20 12:39:52 2018 -0600
+
+    FogBugz #536772: tty: newhaven_lcd: fix klocwork complaints
+    
+    Two Klocwork complaints fixed:
+    /home/yves/linux/intel/linux-socfpga/drivers/tty/newhaven_lcd.c:404 --
+    -- SV.BANNED.REQUIRED.SPRINTF (4:Review) Analyze Function 'sprintf' is
+    deprecated.  Replace with more secure equivalent like 'sprintf_s', add
+    missing logic, or re-architect.
+    
+    * Fixed by using scnprintf instead of sprintf
+    
+    /home/yves/linux/intel/linux-socfpga/drivers/tty/newhaven_lcd.c:149 --
+    -- SV.BANNED.REQUIRED.COPY (4:Review) Analyze Function 'memcpy' is
+    deprecated.  Replace with more secure equivalent like 'memcpy_s', add
+    missing logic, or re-architect.
+    
+    * Fixed by simplifying code, eliminating the memcpy.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: s/klockwork/klocwork/ in header
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+commit 33ecb3dca9f3d71fe6028725b77a452598610024
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Thu Mar 15 13:03:49 2018 -0500
+
+    FogBugz #545807: driver, misc: increase timeout value for claiming back buf
+    
+    Firmware from the latest Quartus releases takes more time to process
+    data. As a result service layer needs increase timeout value so it can
+    claim back the submitted data buffer(s) from the secure world to program
+    FPGA properly.
+    
+    Also add pr_err() to provide the error return value for the case
+    which service layer fails to make a SMC call to secure world for the
+    shared memory block reserved by secure monitor software.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 033588343b3baa886ff9db4c8567362b5bec9bf1
+Author: Neill Whillans <neill.whillans@codethink.co.uk>
+Date:   Wed Nov 30 13:41:05 2016 +0000
+
+    net: ethernet: altera_tse: add support for SGMII PCS
+    
+    Add support for the (optional) SGMII PCS functionality of the Altera
+    TSE MAC. If the phy-mode is set to 'sgmii' then we attempt to discover
+    and initialise the PCS so that the MAC can communicate to the PHY.
+    
+    The PCS IP block provides a scratch register for testing presence of
+    the PCS, which is mapped into one of the two MDIO spaces present in
+    the MAC's register space.  Once we have determined that the scratch
+    register is functioning, we attempt to initialise the PCS to
+    auto-negotiate an SGMII link with the PHY. There is no need to monitor
+    or manage the SGMII link beyond this, since the normal PHY MDIO will
+    then be used to monitor the media layer.
+    
+    The Altera TSE MAC has only one way in which it can be configured with an
+    SGMII PCS, and as such, this patch only looks to the phy-mode to select
+    whether or not to attempt to initialise the PCS registers.  During
+    initialisation, we report the PCS's equivalent of a PHY ID register.
+    This can be parameterised during the IP instantiation and is often left
+    as '0x00000000' which is not an error.
+    
+    Signed-off-by: Neill Whillans <neill.whillans@codethink.co.uk>
+    Reviewed-by: Daniel Silverstone <daniel.silverstone@codethink.co.uk>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 8a0d118bcfde546a81943d7b424f80d42e7137c8
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Mon Mar 19 18:21:58 2018 -0500
+
+    FogBugz #541806: enable watchdog in the s10_devkit_defconfig
+    
+    Doing a 'make savedefconfig' to enable the watchdog timer driver on
+    Stratix10.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+    ---
+    non-upstreamable as this is for the downstream s10_devkit_defconfig
+
+commit edb23157c70e6094378eec24d405b28b9a413c70
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Thu Mar 15 13:26:01 2018 +0800
+
+    FogBugz #538491: s10_devkit_defconfig: Add Altera SysID and Altera ILC
+    
+    Enable Altera Interrupt Latency Counter and Altera System ID as they
+    are required by GSRD customers.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 83de02bbecf911526e3d2d39341daf006c5136e0
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Thu Mar 24 17:43:19 2016 -0500
+
+    FogBugz #366816-2: Fix up OCRAM and NAND initialization for 4.5
+    
+    The OCRAM and NAND memories need to be initialized early in
+    order for ECC to work properly without causing an abort.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 3a347d9d0388dd290e9e52dc6e6de2c8b792d6d6
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Mar 14 15:22:44 2013 +0800
+
+    FogBugz #106327: Use framework in drivers/base/soc.c for system id
+    
+    Open source committees recommend to use existing
+    framework in drivers/base/soc.c for system
+    properties like system id (soc_id).
+    See more detail in Documentation/ABI/testing/sysfs-devices-soc.
+    
+    Usage:
+    cat /sys/devices/soc0/soc_id
+    cat /sys/devices/soc0/family
+    cat /sys/devices/soc0/machine
+    cat /sys/devices/soc0/revision
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    
+    Conflicts:
+    	arch/arm/mach-socfpga/Kconfig
+    	arch/arm/mach-socfpga/core.h
+
+commit 0db33bd88e13368be816f5b7158182de8cb0cf4c
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Mar 24 23:17:28 2015 -0500
+
+    FogBugz #288412: Add correct reset manager offsets for Arria10
+    
+    There are 2 peripheral module reset manager registers on the Arria10.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: use socfpga_is_a10() and cleanup
+    
+    Conflicts:
+    	arch/arm/mach-socfpga/core.h
+    	arch/arm/mach-socfpga/socfpga.c
+
+commit d7384a522275f73893a6d9a9addff7e6c9cdc0c3
+Author: Alan Tull <atull@altera.com>
+Date:   Tue Jul 16 15:18:58 2013 -0500
+
+    FogBugz #102675: do not touch fpga bridge resets by default
+    
+    Previously we were bringing all FPGA-hps bridges out of reset
+    without checking to see if the FPGA was programmed.  This patch
+    changes the behavior to not bring the bridges out of reset
+    or to set them to be in reset.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    
+    Conflicts:
+    	arch/arm/mach-socfpga/socfpga.c
+
+commit 4b431cebabd08f9d4862980bd06b864a9437fbe0
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Mon Mar 12 09:49:21 2018 -0500
+
+    arm64: dts: stratix10: disable false USB overcurrent on devkit
+    
+    Disable the USB overcurrent condition that is falsely detected on the
+    devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 871f293f352661c55d84e2e41ebae4c9e7598b11
+Author: Douglas Anderson <dianders@chromium.org>
+Date:   Tue Dec 12 10:30:31 2017 -0800
+
+    usb: dwc2: host: Don't retry NAKed transactions right away
+    
+    cherry-picked from upstream "38d2b5fb75c1 usb: dwc2: host: Don't retry
+    NAKed transactions right away"
+    
+    On rk3288-veyron devices on Chrome OS it was found that plugging in an
+    Arduino-based USB device could cause the system to lockup, especially
+    if the CPU Frequency was at one of the slower operating points (like
+    100 MHz / 200 MHz).
+    
+    Upon tracing, I found that the following was happening:
+    * The USB device (full speed) was connected to a high speed hub and
+      then to the rk3288.  Thus, we were dealing with split transactions,
+      which is all handled in software on dwc2.
+    * Userspace was initiating a BULK IN transfer
+    * When we sent the SSPLIT (to start the split transaction), we got an
+      ACK.  Good.  Then we issued the CSPLIT.
+    * When we sent the CSPLIT, we got back a NAK.  We immediately (from
+      the interrupt handler) started to retry and sent another SSPLIT.
+    * The device kept NAKing our CSPLIT, so we kept ping-ponging between
+      sending a SSPLIT and a CSPLIT, each time sending from the interrupt
+      handler.
+    * The handling of the interrupts was (because of the low CPU speed and
+      the inefficiency of the dwc2 interrupt handler) was actually taking
+      _longer_ than it took the other side to send the ACK/NAK.  Thus we
+      were _always_ in the USB interrupt routine.
+    * The fact that USB interrupts were always going off was preventing
+      other things from happening in the system.  This included preventing
+      the system from being able to transition to a higher CPU frequency.
+    
+    As I understand it, there is no requirement to retry super quickly
+    after a NAK, we just have to retry sometime in the future.  Thus one
+    solution to the above is to just add a delay between getting a NAK and
+    retrying the transmission.  If this delay is sufficiently long to get
+    out of the interrupt routine then the rest of the system will be able
+    to make forward progress.  Even a 25 us delay would probably be
+    enough, but we'll be extra conservative and try to delay 1 ms (the
+    exact amount depends on HZ and the accuracy of the jiffy and how close
+    the current jiffy is to ticking, but could be as much as 20 ms or as
+    little as 1 ms).
+    
+    Presumably adding a delay like this could impact the USB throughput,
+    so we only add the delay with repeated NAKs.
+    
+    NOTE: Upon further testing of a pl2303 serial adapter, I found that
+    this fix may help with problems there.  Specifically I found that the
+    pl2303 serial adapters tend to respond with a NAK when they have
+    nothing to say and thus we end with this same sequence.
+    
+    Signed-off-by: Douglas Anderson <dianders@chromium.org>
+    Reviewed-by: Julius Werner <jwerner@chromium.org>
+    Tested-by: Stefan Wahren <stefan.wahren@i2se.com>
+    Acked-by: John Youn <johnyoun@synopsys.com>
+    Signed-off-by: Felipe Balbi <felipe.balbi@linux.intel.com>
+    
+    Conflicts:
+    	drivers/usb/dwc2/hcd_queue.c
+
+commit bdf910b1939e45beef022239bda381a2b11a6337
+Author: Yang Shunyong <shunyong.yang@hxt-semitech.com>
+Date:   Mon Jan 29 14:40:11 2018 +0800
+
+    dmaengine: dmatest: fix container_of member in dmatest_callback
+    
+    The type of arg passed to dmatest_callback is struct dmatest_done.
+    It refers to test_done in struct dmatest_thread, not done_wait.
+    
+    Fixes: 6f6a23a213be ("dmaengine: dmatest: move callback wait ...")
+    Signed-off-by: Yang Shunyong <shunyong.yang@hxt-semitech.com>
+    Acked-by: Adam Wallis <awallis@codeaurora.org>
+    Signed-off-by: Vinod Koul <vinod.koul@intel.com>
+
+commit adf5ed169ace60110ae411db692b826f0515d0c8
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Mon Mar 5 09:21:05 2018 -0600
+
+    arm64: dts: stratix10: enable watchdog timer on the S10 devkit
+    
+    Enables the watchdog0 timer on the Stratix10 devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    
+    Conflicts:
+    	arch/arm64/boot/dts/altera/socfpga_stratix10_socdk.dts
+
+commit f4af4cbdb882f1b9cc8d87c08b869fffff5fe4bb
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri Mar 2 10:48:05 2018 -0600
+
+    FogBugz #532777: Fix Cadence QSPI driver page fault kernel panic
+    
+    The current Cadence QSPI driver caused a kernel panic when loading
+    a Root Filesystem from QSPI. The problem was caused by reading more
+    bytes than needed because the QSPI operated on 4 bytes at a time.
+    <snip>
+    [    7.947754] spi_nor_read[1048]:from 0x037cad74, len 1 [bfe07fff]
+    [    7.956247] cqspi_read[910]:offset 0x58502516, buffer=bfe07fff
+    [    7.956247]
+    [    7.966046] Unable to handle kernel paging request at virtual
+    address bfe08002
+    [    7.973239] pgd = eebfc000
+    [    7.975931] [bfe08002] *pgd=2fffb811, *pte=00000000, *ppte=00000000
+    <snip>
+    Notice above how only 1 byte needed to be read but by reading 4 bytes into
+    the end of a mapped page, a unrecoverable page fault occurred.
+    
+    This patch uses a temporary buffer to hold the 4 bytes read and then
+    copies only the bytes required into the buffer. A min() function is
+    used to limit the length to prevent buffer overflows.
+    
+    Similar changes were made for the write routine.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Improve length check of memcpy() functions for SDL
+    v3  Use (buffer bounds - current buf ptr) for memcpy() min() function
+
+commit 54c8b5432c14721a26c75774377b3ef2185f1764
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Thu Mar 1 12:33:20 2018 -0600
+
+    driver, misc: enhance service layer for u-boot w/o SMC support
+    
+    Service layer makes a SMC call to u-boot for the shared memory. If SMC is
+    not supported at u-boot, u-boot will return service layer a invalid value
+    and cause service layer probe failure. Kernel crashes as a result.
+    
+    This patch is used to enhance service layer driver. So that if u-boot
+    doesn't support SMC yet, the service layer driver probe will fail without
+    crashing the kernel.
+    
+    FPGA configuration will not work in the case which u-boot doesn't support
+    SMC.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 25094b68dfb01a3c862bbb7c94d99bca5d3d99f5
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Mar 5 13:03:15 2018 -0600
+
+    Revert "ARM: DT: Enable symbols when CONFIG_OF_OVERLAY is used"
+    
+    This reverts commit 97a7d256ca68c880fd7a3ae5485750d8473215ba.
+
+commit 5a9b258729636b50c351b1e44e9d90880cf3a4c9
+Author: Geert Uytterhoeven <geert+renesas@glider.be>
+Date:   Fri Nov 20 14:47:50 2015 +0100
+
+    kbuild: Enable DT symbols when CONFIG_OF_OVERLAY is used
+    
+    Signed-off-by: Geert Uytterhoeven <geert+renesas@glider.be>
+
+commit 62a46b07e9264d52fa054d977df859ebc9b4f59c
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Dec 5 15:07:50 2017 -0600
+
+    defconfig: stratix10 socdk: enable overlays and configfs
+    
+    Enable device tree overlays and the device tree overlay configfs
+    interface for Stratix10 SoC.
+    
+    +CONFIG_OF_OVERLAY=y
+    +CONFIG_OF_CONFIGFS=y
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 6240419e648847f0611094bd086fd5b89ae7acbd
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Nov 9 10:04:03 2017 -0600
+
+    arm64: dts: stratix10: add fpga manager and region
+    
+    Add the Stratix10 FPGA manager and a FPGA region to the
+    device tree.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v3: change binding to "intel,stratix10-soc-fpga-mgr"
+
+commit 2ed6fd14266b6af7a20b856a192ac076190ab909
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Feb 5 09:42:01 2018 -0600
+
+    defconfig: stratix10 socdk: enable fpga and service layer
+    
+    Enable fpga framework, Stratix10 SoC FPGA manager, and the
+    Intel Service Layer.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 4d49d58c099c2f99fa0b3a462f3cac40b32c9c49
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Sep 7 13:20:04 2017 -0500
+
+    fpga: add intel stratix10 soc fpga manager driver
+    
+    Add driver for reconfiguring Intel Stratix10 SoC FPGA devices.
+    This driver communicates through the Intel Service Driver which
+    does communication with privileged hardware (that does the
+    FPGA programming) through a secure mailbox.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: added of.h
+        renamed from SoCFPGA S10 to Stratix10 SoC
+        socfpga-s10.c -> stratix10-soc.c
+        remove #ifdef CONFIG_OF
+        added some comments
+    v3: change binding to "intel,stratix10-soc-fpga-mgr"
+        Fix PR flag==1 if we are doing PR
+    v4: update per changes at service client header
+
+commit 0e697723eb6dae5c502968f24001e9ced4809427
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Nov 9 10:07:16 2017 -0600
+
+    dt-bindings: fpga: add Stratix10 SoC FPGA manager binding
+    
+    Add a Device Tree binding for the Intel Stratix10 SoC FPGA manager.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v3: change binding to "intel,stratix10-soc-fpga-mgr"
+
+commit 572ba2aaf77fb768bcaeb3426dac75ac5985cdca
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Wed Feb 14 14:19:50 2018 -0600
+
+    driver, misc: add Intel Stratix10 service layer driver
+    
+    Intel Stratix10 SoC is composed of a 64 bit quad-core ARM Cortex A53 hard
+    processor system (HPS) and Secure Device Manager (SDM). SDM is the
+    hardware which does the FPGA configuration, QSPI, Crypto and warm reset.
+    
+    When the FPGA is configured from HPS, there needs to be a way for HPS to
+    notify SDM the location and size of the configuration data. Then SDM will
+    get the configuration data from that location and perform the FPGA
+    configuration.
+    
+    To meet the whole system security needs and support virtual machine
+    requesting communication with SDM, only the secure world of software (EL3,
+    Exception Level 3) can interface with SDM. All software entities running
+    on other exception levels must channel through the EL3 software whenever
+    it needs service from SDM.
+    
+    Intel Stratix10 service layer driver is added to provide the service for
+    FPGA configuration. Running at privileged exception level (EL1, Exception
+    Level 1), Intel Stratix10 service layer driver interfaces with the service
+    provider at EL1 (Intel Stratix10 FPGA Manager) and manages secure monitor
+    call (SMC) to communicate with secure monitor software at secure monitor
+    exception level (EL3).
+    
+    Header file intel-service-client.h defines the interface between service
+    providers (FPGA manager is one of them) and service layer.
+    
+    Header file intel-smc.h defines the secure monitor call (SMC)
+    message protocols used for service layer driver in normal world
+    (EL1) to communicate with secure monitor SW in secure monitor exception
+    level 3 (EL3). This file is shared with secure firmware (FW) which is
+    out of kernel tree.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    ---
+    v2: Remove intel-service subdirectory and intel-service.h, move
+        intel-smc.h and intel-service.c to driver/misc subdirectory
+        Correct SPDX markers
+        Change service layer driver be 'default n'
+        Remove a global variables
+    v3: Add timeout for do..while() loop
+        Add kernel-doc for the functions and structs, correct multiline comments
+        Replace kfifo_in or kfifo_out with kfifo_in_spinlocked or
+        kfifo_out_spinlocked
+        Other corrections from Intel internal code reviews
+    v4: Add kernel-doc for all structs
+        rename struct intel_svc_data (at client header) to intel_svc_client_msg
+        rename struct intel_svc_private_mem to intel_svc_data
+        Other corrections/changes from Intel internal code reviews
+    v5: Changes from Intel internal code reviews
+
+commit f5e8d77c666a56c9a80f87a50c27a11484e82629
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Wed Feb 14 16:52:46 2018 -0600
+
+    arm64: dts: stratix10: add service driver binding to base dtsi
+    
+    Add Intel Stratix10 service layer to the device tree
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit f996589169cb336d19a09a18b624a2efdd9c28b2
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Wed Feb 14 13:45:06 2018 -0600
+
+    dt-bindings, firmware: add Intel Stratix10 service layer binding
+    
+    Add a device tree binding for the Intel Stratix10 service layer driver
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    ---
+    v2: Change to put service layer driver node under the firmware node
+        Change compatible to "intel, stratix10-svc"
+
+commit 3b64e25767810ebe3da7760fbfa8caa120b32e74
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Fri Mar 2 09:50:14 2018 -0600
+
+    FogBugz #539974: set clocks for watchdog timer on Stratix10
+    
+    Populate the clocks property in the watchdog timers on Stratix10.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+    ---
+    Non-upstreamable because this patch is using the downstream clock
+    driver.
+
+commit 376dfba7dee64b0f436a35edb6524cc6d2a31d3e
+Author: Gustavo A. R. Silva <garsilva@embeddedor.com>
+Date:   Tue Aug 1 21:20:53 2017 -0500
+
+    fpga: altera-hps2fpga: add NULL check on of_match_device() return value
+    
+    Check return value from call to of_match_device()
+    in order to prevent a NULL pointer dereference.
+    
+    In case of NULL print error message and return -ENODEV
+    
+    Signed-off-by: Gustavo A. R. Silva <garsilva@embeddedor.com>
+    Reviewed-by: Moritz Fischer <mdf@kernel.org>
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit ff8705ca2635c39f16ef0eaf1ee2b4b49f603a5f
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Mon Feb 26 16:38:44 2018 -0600
+
+    FogBugz #538499: klockwork: fix potential memory leaks
+    
+    Fix potential memory leaks in the Stratix10 clock driver by freeing the
+    struct pointer for error conditions.
+    
+    Remove 'reg2' variable, which was unused.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit a0264d36993ba7555336683db77315f407b079a7
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Feb 20 09:56:58 2018 -0600
+
+    FogBugz #536771: fpga: bridge: fix klocwork sprintf complaint
+    
+    Klocwork give the following complaints:
+    
+    /home/yves/linux/intel/linux-socfpga/drivers/fpga/fpga-bridge.c:243 --
+    -- SV.BANNED.REQUIRED.SPRINTF (4:Review) Analyze Function 'sprintf' is
+    deprecated.  Replace with more secure equivalent like 'sprintf_s', add
+    missing logic, or re-architect.
+    
+    /home/yves/linux/intel/linux-socfpga/drivers/fpga/fpga-bridge.c:255 --
+    -- SV.BANNED.REQUIRED.SPRINTF (4:Review) Analyze Function 'sprintf' is
+    deprecated.  Replace with more secure equivalent like 'sprintf_s', add
+    missing logic, or re-architect.
+    
+    Remedy these by using scnprintf rather than sprintf.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: s/klockwork/klocwork/ and s/bringe/bridge/ in header
+
+commit 596408e4f1f179cfec8a4b2c0444a9f161b286b1
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Feb 20 12:39:52 2018 -0600
+
+    FogBugz #536772: tty: newhaven_lcd: fix klocwork complaints
+    
+    Two Klocwork complaints fixed:
+    /home/yves/linux/intel/linux-socfpga/drivers/tty/newhaven_lcd.c:404 --
+    -- SV.BANNED.REQUIRED.SPRINTF (4:Review) Analyze Function 'sprintf' is
+    deprecated.  Replace with more secure equivalent like 'sprintf_s', add
+    missing logic, or re-architect.
+    
+    * Fixed by using scnprintf instead of sprintf
+    
+    /home/yves/linux/intel/linux-socfpga/drivers/tty/newhaven_lcd.c:149 --
+    -- SV.BANNED.REQUIRED.COPY (4:Review) Analyze Function 'memcpy' is
+    deprecated.  Replace with more secure equivalent like 'memcpy_s', add
+    missing logic, or re-architect.
+    
+    * Fixed by simplifying code, eliminating the memcpy.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: s/klockwork/klocwork/ in header
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.76-ltsi-rt
+
+commit a1be37b8d058805f7bbda42655727552c1e36c43
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri Mar 2 10:48:05 2018 -0600
+
+    FogBugz #532777: Fix Cadence QSPI driver page fault kernel panic
+    
+    The current Cadence QSPI driver caused a kernel panic when loading
+    a Root Filesystem from QSPI. The problem was caused by reading more
+    bytes than needed because the QSPI operated on 4 bytes at a time.
+    <snip>
+    [    7.947754] spi_nor_read[1048]:from 0x037cad74, len 1 [bfe07fff]
+    [    7.956247] cqspi_read[910]:offset 0x58502516, buffer=bfe07fff
+    [    7.956247]
+    [    7.966046] Unable to handle kernel paging request at virtual
+    address bfe08002
+    [    7.973239] pgd = eebfc000
+    [    7.975931] [bfe08002] *pgd=2fffb811, *pte=00000000, *ppte=00000000
+    <snip>
+    Notice above how only 1 byte needed to be read but by reading 4 bytes into
+    the end of a mapped page, a unrecoverable page fault occurred.
+    
+    This patch uses a temporary buffer to hold the 4 bytes read and then
+    copies only the bytes required into the buffer. A min() function is
+    used to limit the length to prevent buffer overflows.
+    
+    Similar changes were made for the write routine.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Improve length check of memcpy() functions for SDL
+    v3  Use (buffer bounds - current buf ptr) for memcpy() min() function
+
+commit 3b6c71a2d22ec378c6a65763d3b185799529b3f3
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Thu Mar 15 13:03:49 2018 -0500
+
+    FogBugz #545807: driver, misc: increase timeout value for claiming back buf
+    
+    Firmware from the latest Quartus releases takes more time to process
+    data. As a result service layer needs increase timeout value so it can
+    claim back the submitted data buffer(s) from the secure world to program
+    FPGA properly.
+    
+    Also add pr_err() to provide the error return value for the case
+    which service layer fails to make a SMC call to secure world for the
+    shared memory block reserved by secure monitor software.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 3fb41787f2436b6b3efd1f71ca8ad753784c93c4
+Author: Neill Whillans <neill.whillans@codethink.co.uk>
+Date:   Wed Nov 30 13:41:05 2016 +0000
+
+    net: ethernet: altera_tse: add support for SGMII PCS
+    
+    Add support for the (optional) SGMII PCS functionality of the Altera
+    TSE MAC. If the phy-mode is set to 'sgmii' then we attempt to discover
+    and initialise the PCS so that the MAC can communicate to the PHY.
+    
+    The PCS IP block provides a scratch register for testing presence of
+    the PCS, which is mapped into one of the two MDIO spaces present in
+    the MAC's register space.  Once we have determined that the scratch
+    register is functioning, we attempt to initialise the PCS to
+    auto-negotiate an SGMII link with the PHY. There is no need to monitor
+    or manage the SGMII link beyond this, since the normal PHY MDIO will
+    then be used to monitor the media layer.
+    
+    The Altera TSE MAC has only one way in which it can be configured with an
+    SGMII PCS, and as such, this patch only looks to the phy-mode to select
+    whether or not to attempt to initialise the PCS registers.  During
+    initialisation, we report the PCS's equivalent of a PHY ID register.
+    This can be parameterised during the IP instantiation and is often left
+    as '0x00000000' which is not an error.
+    
+    Signed-off-by: Neill Whillans <neill.whillans@codethink.co.uk>
+    Reviewed-by: Daniel Silverstone <daniel.silverstone@codethink.co.uk>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 855807991dbaccc52b87cc1e4fe47d60a60aa189
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Mon Mar 19 18:21:58 2018 -0500
+
+    FogBugz #541806: enable watchdog in the s10_devkit_defconfig
+    
+    Doing a 'make savedefconfig' to enable the watchdog timer driver on
+    Stratix10.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+    ---
+    non-upstreamable as this is for the downstream s10_devkit_defconfig
+
+commit 59813729e50ad2c4dcfbeebbcded0f1afb3017fa
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Thu Mar 15 13:26:01 2018 +0800
+
+    FogBugz #538491: s10_devkit_defconfig: Add Altera SysID and Altera ILC
+    
+    Enable Altera Interrupt Latency Counter and Altera System ID as they
+    are required by GSRD customers.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit e0224f465152da68cde54e185da9e62ecf93715b
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Thu Mar 24 17:43:19 2016 -0500
+
+    FogBugz #366816-2: Fix up OCRAM and NAND initialization for 4.5
+    
+    The OCRAM and NAND memories need to be initialized early in
+    order for ECC to work properly without causing an abort.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit fc3b08818c995a9f3149503ed8fc5f33758a59ff
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Mar 14 15:22:44 2013 +0800
+
+    FogBugz #106327: Use framework in drivers/base/soc.c for system id
+    
+    Open source committees recommend to use existing
+    framework in drivers/base/soc.c for system
+    properties like system id (soc_id).
+    See more detail in Documentation/ABI/testing/sysfs-devices-soc.
+    
+    Usage:
+    cat /sys/devices/soc0/soc_id
+    cat /sys/devices/soc0/family
+    cat /sys/devices/soc0/machine
+    cat /sys/devices/soc0/revision
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    
+    Conflicts:
+    	arch/arm/mach-socfpga/Kconfig
+    	arch/arm/mach-socfpga/core.h
+
+commit 272824f36c3ea9c3c0c487690f0a458969c06fc8
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Mar 24 23:17:28 2015 -0500
+
+    FogBugz #288412: Add correct reset manager offsets for Arria10
+    
+    There are 2 peripheral module reset manager registers on the Arria10.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: use socfpga_is_a10() and cleanup
+    
+    Conflicts:
+    	arch/arm/mach-socfpga/core.h
+    	arch/arm/mach-socfpga/socfpga.c
+
+commit 3d78af7ea982a1aa6a5dec888679319624009fc7
+Author: Alan Tull <atull@altera.com>
+Date:   Tue Jul 16 15:18:58 2013 -0500
+
+    FogBugz #102675: do not touch fpga bridge resets by default
+    
+    Previously we were bringing all FPGA-hps bridges out of reset
+    without checking to see if the FPGA was programmed.  This patch
+    changes the behavior to not bring the bridges out of reset
+    or to set them to be in reset.
+    
+    Signed-off-by: Alan Tull <atull@altera.com>
+    
+    Conflicts:
+    	arch/arm/mach-socfpga/socfpga.c
+
+commit e09606cd6d60b80eaa9bcf08f51f37a7f935e5ae
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Mon Mar 12 09:49:21 2018 -0500
+
+    arm64: dts: stratix10: disable false USB overcurrent on devkit
+    
+    Disable the USB overcurrent condition that is falsely detected on the
+    devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 9880b483bfa4c98477d40d83ffaa8fe1755f9b7a
+Author: Douglas Anderson <dianders@chromium.org>
+Date:   Tue Dec 12 10:30:31 2017 -0800
+
+    usb: dwc2: host: Don't retry NAKed transactions right away
+    
+    cherry-picked from upstream "38d2b5fb75c1 usb: dwc2: host: Don't retry
+    NAKed transactions right away"
+    
+    On rk3288-veyron devices on Chrome OS it was found that plugging in an
+    Arduino-based USB device could cause the system to lockup, especially
+    if the CPU Frequency was at one of the slower operating points (like
+    100 MHz / 200 MHz).
+    
+    Upon tracing, I found that the following was happening:
+    * The USB device (full speed) was connected to a high speed hub and
+      then to the rk3288.  Thus, we were dealing with split transactions,
+      which is all handled in software on dwc2.
+    * Userspace was initiating a BULK IN transfer
+    * When we sent the SSPLIT (to start the split transaction), we got an
+      ACK.  Good.  Then we issued the CSPLIT.
+    * When we sent the CSPLIT, we got back a NAK.  We immediately (from
+      the interrupt handler) started to retry and sent another SSPLIT.
+    * The device kept NAKing our CSPLIT, so we kept ping-ponging between
+      sending a SSPLIT and a CSPLIT, each time sending from the interrupt
+      handler.
+    * The handling of the interrupts was (because of the low CPU speed and
+      the inefficiency of the dwc2 interrupt handler) was actually taking
+      _longer_ than it took the other side to send the ACK/NAK.  Thus we
+      were _always_ in the USB interrupt routine.
+    * The fact that USB interrupts were always going off was preventing
+      other things from happening in the system.  This included preventing
+      the system from being able to transition to a higher CPU frequency.
+    
+    As I understand it, there is no requirement to retry super quickly
+    after a NAK, we just have to retry sometime in the future.  Thus one
+    solution to the above is to just add a delay between getting a NAK and
+    retrying the transmission.  If this delay is sufficiently long to get
+    out of the interrupt routine then the rest of the system will be able
+    to make forward progress.  Even a 25 us delay would probably be
+    enough, but we'll be extra conservative and try to delay 1 ms (the
+    exact amount depends on HZ and the accuracy of the jiffy and how close
+    the current jiffy is to ticking, but could be as much as 20 ms or as
+    little as 1 ms).
+    
+    Presumably adding a delay like this could impact the USB throughput,
+    so we only add the delay with repeated NAKs.
+    
+    NOTE: Upon further testing of a pl2303 serial adapter, I found that
+    this fix may help with problems there.  Specifically I found that the
+    pl2303 serial adapters tend to respond with a NAK when they have
+    nothing to say and thus we end with this same sequence.
+    
+    Signed-off-by: Douglas Anderson <dianders@chromium.org>
+    Reviewed-by: Julius Werner <jwerner@chromium.org>
+    Tested-by: Stefan Wahren <stefan.wahren@i2se.com>
+    Acked-by: John Youn <johnyoun@synopsys.com>
+    Signed-off-by: Felipe Balbi <felipe.balbi@linux.intel.com>
+    
+    Conflicts:
+    	drivers/usb/dwc2/hcd_queue.c
+
+commit d834373a31fe05b6d082c61c403ac1d6b1a88a0c
+Author: Yang Shunyong <shunyong.yang@hxt-semitech.com>
+Date:   Mon Jan 29 14:40:11 2018 +0800
+
+    dmaengine: dmatest: fix container_of member in dmatest_callback
+    
+    The type of arg passed to dmatest_callback is struct dmatest_done.
+    It refers to test_done in struct dmatest_thread, not done_wait.
+    
+    Fixes: 6f6a23a213be ("dmaengine: dmatest: move callback wait ...")
+    Signed-off-by: Yang Shunyong <shunyong.yang@hxt-semitech.com>
+    Acked-by: Adam Wallis <awallis@codeaurora.org>
+    Signed-off-by: Vinod Koul <vinod.koul@intel.com>
+
+commit 66b88bf2270a72851247805e9197fc9f0a8f0c3c
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Mon Mar 5 09:21:05 2018 -0600
+
+    arm64: dts: stratix10: enable watchdog timer on the S10 devkit
+    
+    Enables the watchdog0 timer on the Stratix10 devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    
+    Conflicts:
+    	arch/arm64/boot/dts/altera/socfpga_stratix10_socdk.dts
+
+commit 8dfd062e999ffcc6efb613bdce08d9fb62793079
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Thu Mar 1 12:33:20 2018 -0600
+
+    driver, misc: enhance service layer for u-boot w/o SMC support
+    
+    Service layer makes a SMC call to u-boot for the shared memory. If SMC is
+    not supported at u-boot, u-boot will return service layer a invalid value
+    and cause service layer probe failure. Kernel crashes as a result.
+    
+    This patch is used to enhance service layer driver. So that if u-boot
+    doesn't support SMC yet, the service layer driver probe will fail without
+    crashing the kernel.
+    
+    FPGA configuration will not work in the case which u-boot doesn't support
+    SMC.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 316a11cfd9bfe807816410bb65bf926eabb482d5
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Mar 5 09:25:11 2018 -0600
+
+    Revert "ARM: DT: Enable symbols when CONFIG_OF_OVERLAY is used"
+    
+    This reverts commit e11cd30bf8b2159cd3ebbf1f177dbf5e9afeae58.
+
+commit a0fa16467b2ee446d4c19de15cf407fd38b8fa22
+Author: Geert Uytterhoeven <geert+renesas@glider.be>
+Date:   Fri Nov 20 14:47:50 2015 +0100
+
+    kbuild: Enable DT symbols when CONFIG_OF_OVERLAY is used
+    
+    Signed-off-by: Geert Uytterhoeven <geert+renesas@glider.be>
+
+commit c0e03f8b6be60dc0580e8dbc1c159ff2b7caa8bf
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Dec 5 15:07:50 2017 -0600
+
+    defconfig: stratix10 socdk: enable overlays and configfs
+    
+    Enable device tree overlays and the device tree overlay configfs
+    interface for Stratix10 SoC.
+    
+    +CONFIG_OF_OVERLAY=y
+    +CONFIG_OF_CONFIGFS=y
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit b1dfc13d410b50ca1ed8a9cb59d2273ad751c382
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Nov 9 10:04:03 2017 -0600
+
+    arm64: dts: stratix10: add fpga manager and region
+    
+    Add the Stratix10 FPGA manager and a FPGA region to the
+    device tree.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v3: change binding to "intel,stratix10-soc-fpga-mgr"
+
+commit a46d94625c83de449200c9fa29f8ca129805dd99
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Feb 5 09:42:01 2018 -0600
+
+    defconfig: stratix10 socdk: enable fpga and service layer
+    
+    Enable fpga framework, Stratix10 SoC FPGA manager, and the
+    Intel Service Layer.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 0d85448930fefe158325415a785f2666f898f719
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Sep 7 13:20:04 2017 -0500
+
+    fpga: add intel stratix10 soc fpga manager driver
+    
+    Add driver for reconfiguring Intel Stratix10 SoC FPGA devices.
+    This driver communicates through the Intel Service Driver which
+    does communication with privileged hardware (that does the
+    FPGA programming) through a secure mailbox.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: added of.h
+        renamed from SoCFPGA S10 to Stratix10 SoC
+        socfpga-s10.c -> stratix10-soc.c
+        remove #ifdef CONFIG_OF
+        added some comments
+    v3: change binding to "intel,stratix10-soc-fpga-mgr"
+        Fix PR flag==1 if we are doing PR
+    v4: update per changes at service client header
+
+commit 6f9c7a535847c7cf99cf5c3decc9cd03c5888453
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Nov 9 10:07:16 2017 -0600
+
+    dt-bindings: fpga: add Stratix10 SoC FPGA manager binding
+    
+    Add a Device Tree binding for the Intel Stratix10 SoC FPGA manager.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v3: change binding to "intel,stratix10-soc-fpga-mgr"
+
+commit 935d3d49849cdffda7497adb3214d529d02310e8
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Wed Feb 14 14:19:50 2018 -0600
+
+    driver, misc: add Intel Stratix10 service layer driver
+    
+    Intel Stratix10 SoC is composed of a 64 bit quad-core ARM Cortex A53 hard
+    processor system (HPS) and Secure Device Manager (SDM). SDM is the
+    hardware which does the FPGA configuration, QSPI, Crypto and warm reset.
+    
+    When the FPGA is configured from HPS, there needs to be a way for HPS to
+    notify SDM the location and size of the configuration data. Then SDM will
+    get the configuration data from that location and perform the FPGA
+    configuration.
+    
+    To meet the whole system security needs and support virtual machine
+    requesting communication with SDM, only the secure world of software (EL3,
+    Exception Level 3) can interface with SDM. All software entities running
+    on other exception levels must channel through the EL3 software whenever
+    it needs service from SDM.
+    
+    Intel Stratix10 service layer driver is added to provide the service for
+    FPGA configuration. Running at privileged exception level (EL1, Exception
+    Level 1), Intel Stratix10 service layer driver interfaces with the service
+    provider at EL1 (Intel Stratix10 FPGA Manager) and manages secure monitor
+    call (SMC) to communicate with secure monitor software at secure monitor
+    exception level (EL3).
+    
+    Header file intel-service-client.h defines the interface between service
+    providers (FPGA manager is one of them) and service layer.
+    
+    Header file intel-smc.h defines the secure monitor call (SMC)
+    message protocols used for service layer driver in normal world
+    (EL1) to communicate with secure monitor SW in secure monitor exception
+    level 3 (EL3). This file is shared with secure firmware (FW) which is
+    out of kernel tree.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    ---
+    v2: Remove intel-service subdirectory and intel-service.h, move
+        intel-smc.h and intel-service.c to driver/misc subdirectory
+        Correct SPDX markers
+        Change service layer driver be 'default n'
+        Remove a global variables
+    v3: Add timeout for do..while() loop
+        Add kernel-doc for the functions and structs, correct multiline comments
+        Replace kfifo_in or kfifo_out with kfifo_in_spinlocked or
+        kfifo_out_spinlocked
+        Other corrections from Intel internal code reviews
+    v4: Add kernel-doc for all structs
+        rename struct intel_svc_data (at client header) to intel_svc_client_msg
+        rename struct intel_svc_private_mem to intel_svc_data
+        Other corrections/changes from Intel internal code reviews
+    v5: Changes from Intel internal code reviews
+
+commit da8ba247a02975e2bb5885788fd5dc4ce52ee134
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Wed Feb 14 16:52:46 2018 -0600
+
+    arm64: dts: stratix10: add service driver binding to base dtsi
+    
+    Add Intel Stratix10 service layer to the device tree
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 5b1511df1cdadc510fc149f58f654202cc6d1534
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Wed Feb 14 13:45:06 2018 -0600
+
+    dt-bindings, firmware: add Intel Stratix10 service layer binding
+    
+    Add a device tree binding for the Intel Stratix10 service layer driver
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    ---
+    v2: Change to put service layer driver node under the firmware node
+        Change compatible to "intel, stratix10-svc"
+
+commit 8cf906179ee541efd20521038162af477c8f9855
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Fri Mar 2 09:50:14 2018 -0600
+
+    FogBugz #539974: set clocks for watchdog timer on Stratix10
+    
+    Populate the clocks property in the watchdog timers on Stratix10.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+    ---
+    Non-upstreamable because this patch is using the downstream clock
+    driver.
+
+commit 3fefc00efdb632f0aeb4031078e339f9c570420e
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Mon Feb 26 16:38:44 2018 -0600
+
+    FogBugz #538499: klockwork: fix potential memory leaks
+    
+    Fix potential memory leaks in the Stratix10 clock driver by freeing the
+    struct pointer for error conditions.
+    
+    Remove 'reg2' variable, which was unused.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit fb31dd94cbc5b23e99d57d7539922746c09b6736
+Author: Gustavo A. R. Silva <garsilva@embeddedor.com>
+Date:   Tue Aug 1 21:20:53 2017 -0500
+
+    fpga: altera-hps2fpga: add NULL check on of_match_device() return value
+    
+    Check return value from call to of_match_device()
+    in order to prevent a NULL pointer dereference.
+    
+    In case of NULL print error message and return -ENODEV
+    
+    Signed-off-by: Gustavo A. R. Silva <garsilva@embeddedor.com>
+    Reviewed-by: Moritz Fischer <mdf@kernel.org>
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit e6c786cc38596ea6f5317209f158b729a0bbfc96
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Feb 20 09:56:58 2018 -0600
+
+    FogBugz #536771: fpga: bridge: fix klocwork sprintf complaint
+    
+    Klocwork give the following complaints:
+    
+    /home/yves/linux/intel/linux-socfpga/drivers/fpga/fpga-bridge.c:243 --
+    -- SV.BANNED.REQUIRED.SPRINTF (4:Review) Analyze Function 'sprintf' is
+    deprecated.  Replace with more secure equivalent like 'sprintf_s', add
+    missing logic, or re-architect.
+    
+    /home/yves/linux/intel/linux-socfpga/drivers/fpga/fpga-bridge.c:255 --
+    -- SV.BANNED.REQUIRED.SPRINTF (4:Review) Analyze Function 'sprintf' is
+    deprecated.  Replace with more secure equivalent like 'sprintf_s', add
+    missing logic, or re-architect.
+    
+    Remedy these by using scnprintf rather than sprintf.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: s/klockwork/klocwork/ and s/bringe/bridge/ in header
+
+commit 0f0f45c76082f28e3fd498b0d53c4b89d1d7a839
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Feb 20 12:39:52 2018 -0600
+
+    FogBugz #536772: tty: newhaven_lcd: fix klocwork complaints
+    
+    Two Klocwork complaints fixed:
+    /home/yves/linux/intel/linux-socfpga/drivers/tty/newhaven_lcd.c:404 --
+    -- SV.BANNED.REQUIRED.SPRINTF (4:Review) Analyze Function 'sprintf' is
+    deprecated.  Replace with more secure equivalent like 'sprintf_s', add
+    missing logic, or re-architect.
+    
+    * Fixed by using scnprintf instead of sprintf
+    
+    /home/yves/linux/intel/linux-socfpga/drivers/tty/newhaven_lcd.c:149 --
+    -- SV.BANNED.REQUIRED.COPY (4:Review) Analyze Function 'memcpy' is
+    deprecated.  Replace with more secure equivalent like 'memcpy_s', add
+    missing logic, or re-architect.
+    
+    * Fixed by simplifying code, eliminating the memcpy.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: s/klockwork/klocwork/ in header
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit c85cd1fc1331210f1c22adb29d932d4052f79c78
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Fri Mar 16 14:30:23 2018 +0800
+
+    FogBugz #544314: Ensure SiP function service table always align to 8 bytes.
+    
+    There is an issue with memory alignment in the SiP function
+    service table '._secure_svc_tbl_entries' which cause the kernel
+    unable to boot when build with older version (6.4.1 and older)
+    of toolchain. This patch make sure the SiP function service
+    table always align to 8 bytes when build with older versions
+    of toolchain.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 40ded849477f98aa353c1e21402d42c74fa1ec6e
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Thu Mar 1 11:36:44 2018 +0800
+
+    FogBugz #540144-8: Enable S10 FPGA configuration in defconfig
+    
+    Enable FPGA configuration service layer for S10 in
+    configs/socfpga_stratix10_defconfig.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 0bc2894b900be99915ea851664cbc0428b303f1d
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Mon Mar 12 19:26:26 2018 +0800
+
+    FogBugz #540144-7: Add S10 FPGA configuration SMC (SiP) services
+    
+    Allow PSCI layer to handle the S10 FPGA configuration service calls.
+    All these services are also known as FPGA configuration service layer
+    for S10. This service layer support FPGA configuration service requests
+    from OS (EL1). It acts as the middle layer between SDM
+    (Secure Device Manager) and the OS. It enables OS (EL1) to invoke SMC
+    call to this service layer (EL3) and pass the FPGA bit stream to SDM
+    for FPGA configuration.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit d97e2bf12068173fe827ddfc9c0421d85061210f
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Mon Mar 12 18:44:33 2018 +0800
+
+    FogBugz #540144-6: Allow SiP service extensions on top of PSCI code
+    
+    Allow PSCI layer to handle any SiP service functions added by
+    platform vendors. PSCI layer will look for SiP service function
+    in the SiP function table located in '._secure_svc_tbl_entries'
+    section if the SMC function identifier is not found in the PSCI
+    standard functions table. Use DECLARE_SECURE_SVC macro to declare
+    and add platform specific SiP service function.
+    This new section '._secure_svc_tbl_entries' is located next to
+    '._secure.text' section. Refer to arch/arm/cpu/armv8/u-boot.lds.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 71a221523ef9da16888cc96c9151a32e6f5ef3b6
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Thu Dec 28 01:43:02 2017 -0800
+
+    FogBugz #540144-5: Moved RECONFIG_STATUS definitions to common header file
+    
+    Moved all RECONFIG_STATUS related definitions to mailbox_s10.h.
+    These definitions are also referenced by FPGA configuration
+    SMC service layer.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 4211dc4435b436e4603ed88faa0930ae4ce82463
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Dec 27 08:50:50 2017 -0800
+
+    FogBugz #540144-4: FPGA configuration with RECONFIG and RECONFIG_DATA
+    
+    Use RECONFIG and RECONFIG_DATA for FPGA configuration instead of
+    RECONFIG_MSEL. During FPGA configuration, RECONFIG_MSEL look for the
+    entire bit stream in QSPI whereas RECONFIG_DATA look for chunks of
+    bit stream in SDRAM. RECONFIG_MSEL mailbox command used for FPGA
+    configuration is deprecated from this patch onwards.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit db1dcf58ab6bc309be4a5633b8fec6f9dc554cf3
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Dec 27 08:35:02 2017 -0800
+
+    FogBugz #540144-3: Async support for S10 mailbox commands
+    
+    Add asynchronous send/receive support for S10 mailbox commands.
+    Multiple mailbox commands can be sent to mailbox without waiting
+    for the responses from SDM. Responses from SDM can be polled
+    asynchronously. It provides a non-blocking mechanism to communicate
+    with SDM.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 693973d7aecba8c354819b82393736c5e64e56aa
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Tue Dec 26 00:03:53 2017 -0800
+
+    FogBugz #540144-2: Add new mailbox commands for S10
+    
+    Add RECONFIG and RECONFIG_DATA mailbox commands to support FPGA
+    configuration for S10. RECONFIG is first sent to SDM to initialize
+    the FPGA configuration followed by a series of RECONFIG_DATA
+    commands which include the physical address (SDRAM) of the bit stream
+    and chunk's size.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 364a1ef68bb80561facc601a4e6a6e22a05d4321
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Dec 27 08:02:56 2017 -0800
+
+    FogBugz #540144-1: Add DIRECT/INDIRECT bit support
+    
+    When sending mailbox command with large payloads from clients with
+    addressable memories such as the HPS processor it can be more efficient
+    to leave the data in its original location and arrange for the SDM
+    (Secure Device Manager) to fetch it directly from that location.
+    This is known as an indirect command. This patch allow function caller
+    to enable indirect command by setting the I bit (bit 11) to 1 in the mailbox
+    command header.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 97abc6da8fa26cf4067bd8793e78cb7615490657
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu Mar 8 19:55:50 2018 -0600
+
+    FogBugz #542061: chmod all source code files from 755 to 644
+    
+    Source code files should always be of permission type 644, NOT 755!
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 097c8cb111f67418643417b6b1ace1d1a77c1745
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Dec 27 22:26:25 2017 -0800
+
+    FogBugz #540992: Changed CONFIG_LOADADDR to 32MB offset address
+    
+    The first 16MB of SDRAM (0x0 to 0x01000000) are reserved for S10 FPGA
+    configuration data blocks. The kernel image's load address is now
+    started at offset 0x02000000 (32MB) to ensure there is enough space
+    between the 16MB reserved block and the kernel image otherwise
+    the kernel might fail to boot up.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit a02f9d57675f3f556bee3c87e53b1c6a841da9cd
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Mar 7 14:05:17 2018 +0800
+
+    FogBugz #535135-2: arm: socfpga: stratix10: Add SDRAM ECC testing
+    
+    Enable SDRAM ECC test executed in SPL. SDRAM ECC test can be
+    enabled with CONFIG set in <board>_defconfig.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit fcfa5f82532efc3c7ac8901f2b4895c3855080f5
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Tue Mar 6 18:56:33 2018 +0800
+
+    FogBugz #535135-1: arm: socfpga: stratix10: Enable SDRAM ECC
+    
+    Enable SDRAM ECC, which is able to detect address mismatch,
+    double bit error, and single bit error on SDRAM. When single
+    bit error is detected, auto correction would be executed.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit fe029f2846c545106240adffd4a6d25627189fbc
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed Feb 7 16:00:31 2018 +0800
+
+    FogBugz #533578-2: arm: socfpga: stratix10: Enable watchdog support for SPL
+    
+    Enabled watchdog support at SPL only. When U-Boot starts, the watchdog
+    will be disabled.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 764bdb3aec60bb3dc88b8b74ccc8d8f24556713d
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed Feb 7 15:59:21 2018 +0800
+
+    FogBugz #533578-1: arm: socfpga: stratix10: Calculating L4 sys free clock
+    
+    Added a function which return the clock frequency of L4 sys free clock
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 7b81da1f22b432685893a162ea64ffd8c0c97d55
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Thu Mar 1 10:57:21 2018 -0600
+
+    FogBugz #539844: enables non-secure access to watchdog timers
+    
+    Remove the firewall restrictions to the watchdog timer registers for
+    non-secure access.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 520db56c1a931edf2484b77915d1f519c8cecc7b
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Feb 28 15:58:12 2018 +0800
+
+    FogBugz #531407-2: arm: socfpga: stratix10: Enable DMA-330 driver support
+    
+    Enable DMAC driver support for DMA-330 controller in S10 HPS DMAC.
+    The driver is also compatible to PL330 product.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 5f9778e1b3ef0a563ed96dae662585ab9991e9ac
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Tue Jan 30 12:57:13 2018 +0800
+
+    FogBugz #531407-1: arm: socfpga: stratix10: Fix the comment for DMA product
+    
+    Changed the PL330 to DMA330 in comment.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit b717408c56bae615a94af29bf353bad1772dda95
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Tue Jan 16 15:34:37 2018 +0800
+
+    FogBugz #526851: arm:socfpga:stratix10: Enable U-Boot to execute script
+    
+    Enhancement to enable SOCFPGA's U-Boot to execute script if
+    it's available. User can do any customization through the script
+    without modifying the code. Some sample of customization such
+    as configuring registers. This script is optional and not required
+    for normal booting.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit a8a0d0676767d239b7d3d9bd4b1fe502ad9a6961
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Tue Feb 13 09:22:46 2018 -0600
+
+    FogBugz #535183: arm: socfpga: stratix10: Enable SMMU support
+    
+    Enable non-secure access to SMMU for SOCFPGA Stratix10 DevKit
+    through the System Manger.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    ---
+    v2  Add more clarity in commit header.
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2016.12-yocto2.2
+
+commit e691a8386236ab01ca52626b65f33b0747e86007
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Thu Mar 22 22:25:37 2018 +0800
+
+    latest 4.9.78ltsi commit 33ecb3d
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+commit 22e6c92ca45741efe2763ceb06e0e98a529bf96b
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Sat Mar 10 13:33:36 2018 +0800
+
+    move linux-altera-ltsi_4.9.78.bb to latest linux commit
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+commit 241bcf91aeeca0fa338fb4d547c62d073cee1183
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Mon Mar 5 12:57:45 2018 +0800
+
+    add jffs2 block size in arria10
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+

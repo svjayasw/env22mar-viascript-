@@ -1,0 +1,133 @@
+From atull@altera.com Tue Nov 18 09:29:08 2014
+Date: Tue, 18 Nov 2014 15:29:02 +0000
+From: Alan Tull <atull@altera.com>
+To: "atull@opensource.altera.com" <atull@opensource.altera.com>
+Subject: FW: SGMII PR tag push to rocketboards
+
+
+ 
+
+ 
+
+From: Chung Weng Gooi
+Sent: Tuesday, November 18, 2014 9:21 AM
+To: Alan Tull
+Cc: Viet Nga Dao; Chee Nouk Phoon; Tien Hock Loh; Yves Vandervennet
+Subject: RE: SGMII PR tag push to rocketboards
+
+ 
+
+Please do Alan. Thanks for checking.
+
+
+
+Sent with Good (www.good.com)
+
+
+-----Original Message-----
+From: Alan Tull
+Sent: Tuesday, November 18, 2014 11:15 PM Malay Peninsula Standard Time
+To: Chung Weng Gooi
+Cc: Viet Nga Dao; Chee Nouk Phoon; Tien Hock Loh; Yves Vandervennet
+Subject: RE: SGMII PR tag push to rocketboards
+
+
+Gooi,
+
+ 
+
+Do I have permission to push these tags?
+
+ 
+
+Alan
+
+ 
+
+From: Tien Hock Loh
+Sent: Monday, November 17, 2014 8:10 PM
+To: Yves Vandervennet; Alan Tull
+Cc: Chung Weng Gooi; Viet Nga Dao; Chee Nouk Phoon
+Subject: RE: SGMII PR tag push to rocketboards
+
+ 
+
+Yves, Alan,
+
+ 
+
+Had a typo there, it should be ACDS14.0.2_REL_SGMII_PR.
+
+ 
+
+Thanks
+
+ 
+
+From: Yves Vandervennet
+Sent: Monday, November 17, 2014 11:18 PM
+To: Tien Hock Loh; Alan Tull
+Cc: Chung Weng Gooi; Viet Nga Dao; Chee Nouk Phoon
+Subject: RE: SGMII PR tag push to rocketboards
+
+ 
+
+Tien Hock
+
+ 
+
+                Alan is back to work on Tuesday. We will take care of the tags 
+by then.
+
+ 
+
+Regards
+
+Yves
+
+ 
+
+ 
+
+From: Tien Hock Loh
+Sent: Monday, November 17, 2014 8:18 AM
+To: Alan Tull
+Cc: Yves Vandervennet; Chung Weng Gooi; Viet Nga Dao; Chee Nouk Phoon
+Subject: SGMII PR tag push to rocketboards
+
+ 
+
+Hi Alan,
+
+ 
+
+Need your help to push ACDS14.1_REL_SGMII_PR tag for the following repositories
+to the rocketboards.org
+
+ 
+
+1. linux-socfpga
+
+2. uboot-socfpga
+
+3. angstrom-socfpga
+
+4. meta-altera
+
+5. linux-refdesigns
+
+ 
+
+Thanks
+
+
+________________________________________________________________________________
+
+Confidentiality Notice.
+This message may contain information that is confidential or otherwise protected
+from disclosure. If you are not the intended recipient, you are hereby notified
+that any use, disclosure, dissemination, distribution, or copying of this
+message, or any attachments, is strictly prohibited. If you have received this
+message in error, please advise the sender by reply e-mail, and delete the
+message and any attachments. Thank you.
+

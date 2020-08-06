@@ -1,0 +1,303 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal on Friday Dec 12.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.17
+branch tag  : rel_socfpga-3.17_14.12.01_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.12.01_rc1
+new commits : 2
+0533f61 Frank Rowand drivers/base/dd.c incorrect pr_debug() parameters
+790ea24 Grant Likely drivercore: deferral race condition fix
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.12.01_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | drivers/base/dd.c incorrect pr_debug() parameters | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=0533f617c0a1e61aac0c173fe213afb8b47460d7 ][ 0533f617c0a1e61aac0c173fe213afb8b47460d7 ]] |
+| community | drivercore: deferral race condition fix | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=790ea24b5e857dede39530626e80173cd5355677 ][ 790ea24b5e857dede39530626e80173cd5355677 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_14.12.01_rc1
+new commits : 2
+e4ee387 Frank Rowand drivers/base/dd.c incorrect pr_debug() parameters
+f5e54cf Grant Likely drivercore: deferral race condition fix
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_14.12.01_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | drivers/base/dd.c incorrect pr_debug() parameters | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=e4ee3878337e5aa91d032267d6361377f4f20ba4 ][ e4ee3878337e5aa91d032267d6361377f4f20ba4 ]] |
+| community | drivercore: deferral race condition fix | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=f5e54cffef48f5ac23ad7253a65b2f0027a56981 ][ f5e54cffef48f5ac23ad7253a65b2f0027a56981 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.17_14.12.01_rc1
+commit: c29c849 Viet Nga Dao net: phy: Adding SGMII support for Marvell 88ee1145 driver
+
+tag:    rel_socfpga-3.10-ltsi_14.12.01_rc1
+commit: 0533f61 Frank Rowand drivers/base/dd.c incorrect pr_debug() parameters
+
+tag:    rel_socfpga-3.10-ltsi-rt_14.12.01_rc1
+commit: e4ee387 Frank Rowand drivers/base/dd.c incorrect pr_debug() parameters
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.12.01_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.12.01_rc1
+commit: 32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_14.12.01_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_14.12.01_rc1
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_14.12.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_14.12.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_14.12.01_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_14.12.01_rc1
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_14.12.01_rc1
+commit: 65417bc Yves Vandervennet kde repo moved, it's now meta-kde4
+
+tag:    rel_angstrom-v2014.06-socfpga_14.12.01_rc1
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_14.12.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_14.12.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_14.12.01_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_14.12.01_rc1
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_14.12.01_rc1
+commit: fe61959 Yves Vandervennet Recipe for 3.17
+
+tag:    rel_angstrom-v2014.06-yocto1.6_14.12.01_rc1
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 0533f617c0a1e61aac0c173fe213afb8b47460d7
+Author: Frank Rowand <frowand.list@gmail.com>
+Date:   Wed Apr 16 17:12:30 2014 -0700
+
+    drivers/base/dd.c incorrect pr_debug() parameters
+    
+    pr_debug() parameters are reverse order of format string
+    
+    Signed-off-by: Frank Rowand <frank.rowand@sonymobile.com>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit 790ea24b5e857dede39530626e80173cd5355677
+Author: Grant Likely <grant.likely@linaro.org>
+Date:   Tue Apr 29 12:05:22 2014 +0100
+
+    drivercore: deferral race condition fix
+    
+    When the kernel is built with CONFIG_PREEMPT it is possible to reach a state
+    when all modules loaded but some driver still stuck in the deferred list
+    and there is a need for external event to kick the deferred queue to probe
+    these drivers.
+    
+    The issue has been observed on embedded systems with CONFIG_PREEMPT enabled,
+    audio support built as modules and using nfsroot for root filesystem.
+    
+    The following log fragment shows such sequence when all audio modules
+    were loaded but the sound card is not present since the machine driver has
+    failed to probe due to missing dependency during it's probe.
+    The board is am335x-evmsk (McASP<->tlv320aic3106 codec) with davinci-evm
+    machine driver:
+    
+    ...
+    [   12.615118] davinci-mcasp 4803c000.mcasp: davinci_mcasp_probe: ENTER
+    [   12.719969] davinci_evm sound.3: davinci_evm_probe: ENTER
+    [   12.725753] davinci_evm sound.3: davinci_evm_probe: snd_soc_register_card
+    [   12.753846] davinci-mcasp 4803c000.mcasp: davinci_mcasp_probe: snd_soc_register_component
+    [   12.922051] davinci-mcasp 4803c000.mcasp: davinci_mcasp_probe: snd_soc_register_component DONE
+    [   12.950839] davinci_evm sound.3: ASoC: platform (null) not registered
+    [   12.957898] davinci_evm sound.3: davinci_evm_probe: snd_soc_register_card DONE (-517)
+    [   13.099026] davinci-mcasp 4803c000.mcasp: Kicking the deferred list
+    [   13.177838] davinci-mcasp 4803c000.mcasp: really_probe: probe_count = 2
+    [   13.194130] davinci_evm sound.3: snd_soc_register_card failed (-517)
+    [   13.346755] davinci_mcasp_driver_init: LEAVE
+    [   13.377446] platform sound.3: Driver davinci_evm requests probe deferral
+    [   13.592527] platform sound.3: really_probe: probe_count = 0
+    
+    In the log the machine driver enters it's probe at 12.719969 (this point it
+    has been removed from the deferred lists). McASP driver already executing
+    it's probing (since 12.615118).
+    The machine driver tries to construct the sound card (12.950839) but did
+    not found one of the components so it fails. After this McASP driver
+    registers all the ASoC components (the machine driver still in it's probe
+    function after it failed to construct the card) and the deferred work is
+    prepared at 13.099026 (note that this time the machine driver is not in the
+    lists so it is not going to be handled when the work is executing).
+    Lastly the machine driver exit from it's probe and the core places it to
+    the deferred list but there will be no other driver going to load and the
+    deferred queue is not going to be kicked again - till we have external event
+    like connecting USB stick, etc.
+    
+    The proposed solution is to try the deferred queue once more when the last
+    driver is asking for deferring and we had drivers loaded while this last
+    driver was probing.
+    
+    This way we can avoid drivers stuck in the deferred queue.
+    
+    Signed-off-by: Grant Likely <grant.likely@linaro.org>
+    Reviewed-by: Peter Ujfalusi <peter.ujfalusi@ti.com>
+    Tested-by: Peter Ujfalusi <peter.ujfalusi@ti.com>
+    Acked-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+    Cc: Mark Brown <broonie@kernel.org>
+    Cc: Stable <stable@vger.kernel.org> # v3.4+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit e4ee3878337e5aa91d032267d6361377f4f20ba4
+Author: Frank Rowand <frowand.list@gmail.com>
+Date:   Wed Apr 16 17:12:30 2014 -0700
+
+    drivers/base/dd.c incorrect pr_debug() parameters
+    
+    pr_debug() parameters are reverse order of format string
+    
+    Signed-off-by: Frank Rowand <frank.rowand@sonymobile.com>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+
+commit f5e54cffef48f5ac23ad7253a65b2f0027a56981
+Author: Grant Likely <grant.likely@linaro.org>
+Date:   Tue Apr 29 12:05:22 2014 +0100
+
+    drivercore: deferral race condition fix
+    
+    When the kernel is built with CONFIG_PREEMPT it is possible to reach a state
+    when all modules loaded but some driver still stuck in the deferred list
+    and there is a need for external event to kick the deferred queue to probe
+    these drivers.
+    
+    The issue has been observed on embedded systems with CONFIG_PREEMPT enabled,
+    audio support built as modules and using nfsroot for root filesystem.
+    
+    The following log fragment shows such sequence when all audio modules
+    were loaded but the sound card is not present since the machine driver has
+    failed to probe due to missing dependency during it's probe.
+    The board is am335x-evmsk (McASP<->tlv320aic3106 codec) with davinci-evm
+    machine driver:
+    
+    ...
+    [   12.615118] davinci-mcasp 4803c000.mcasp: davinci_mcasp_probe: ENTER
+    [   12.719969] davinci_evm sound.3: davinci_evm_probe: ENTER
+    [   12.725753] davinci_evm sound.3: davinci_evm_probe: snd_soc_register_card
+    [   12.753846] davinci-mcasp 4803c000.mcasp: davinci_mcasp_probe: snd_soc_register_component
+    [   12.922051] davinci-mcasp 4803c000.mcasp: davinci_mcasp_probe: snd_soc_register_component DONE
+    [   12.950839] davinci_evm sound.3: ASoC: platform (null) not registered
+    [   12.957898] davinci_evm sound.3: davinci_evm_probe: snd_soc_register_card DONE (-517)
+    [   13.099026] davinci-mcasp 4803c000.mcasp: Kicking the deferred list
+    [   13.177838] davinci-mcasp 4803c000.mcasp: really_probe: probe_count = 2
+    [   13.194130] davinci_evm sound.3: snd_soc_register_card failed (-517)
+    [   13.346755] davinci_mcasp_driver_init: LEAVE
+    [   13.377446] platform sound.3: Driver davinci_evm requests probe deferral
+    [   13.592527] platform sound.3: really_probe: probe_count = 0
+    
+    In the log the machine driver enters it's probe at 12.719969 (this point it
+    has been removed from the deferred lists). McASP driver already executing
+    it's probing (since 12.615118).
+    The machine driver tries to construct the sound card (12.950839) but did
+    not found one of the components so it fails. After this McASP driver
+    registers all the ASoC components (the machine driver still in it's probe
+    function after it failed to construct the card) and the deferred work is
+    prepared at 13.099026 (note that this time the machine driver is not in the
+    lists so it is not going to be handled when the work is executing).
+    Lastly the machine driver exit from it's probe and the core places it to
+    the deferred list but there will be no other driver going to load and the
+    deferred queue is not going to be kicked again - till we have external event
+    like connecting USB stick, etc.
+    
+    The proposed solution is to try the deferred queue once more when the last
+    driver is asking for deferring and we had drivers loaded while this last
+    driver was probing.
+    
+    This way we can avoid drivers stuck in the deferred queue.
+    
+    Signed-off-by: Grant Likely <grant.likely@linaro.org>
+    Reviewed-by: Peter Ujfalusi <peter.ujfalusi@ti.com>
+    Tested-by: Peter Ujfalusi <peter.ujfalusi@ti.com>
+    Acked-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+    Cc: Mark Brown <broonie@kernel.org>
+    Cc: Stable <stable@vger.kernel.org> # v3.4+
+
+-----------------------------------------------------------------------
+

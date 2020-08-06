@@ -1,0 +1,76 @@
+From atull@altera.com Thu Dec 18 09:16:25 2014
+Date: Thu, 18 Dec 2014 15:16:20 +0000
+From: Alan Tull <atull@altera.com>
+To: "atull@opensource.altera.com" <atull@opensource.altera.com>
+Subject: FW: GSRD PR tag push to rocketboards
+
+
+ 
+
+ 
+
+From: Chung Weng Gooi
+Sent: Thursday, December 18, 2014 2:57 AM
+To: Tien Hock Loh; Alan Tull
+Cc: Yves Vandervennet; Chee Nouk Phoon
+Subject: RE: GSRD PR tag push to rocketboards
+
+ 
+
+I approve.
+
+
+
+
+--Gooi
+
+
+-----Original Message-----
+From: Tien Hock Loh
+Sent: Thursday, December 18, 2014 04:40 PM Malay Peninsula Standard Time
+To: Alan Tull
+Cc: Yves Vandervennet; Chung Weng Gooi; Chee Nouk Phoon
+Subject: GSRD PR tag push to rocketboards
+
+
+Hi Alan,
+
+ 
+
+Need your help to push ACDS14.1_REL_GSRD_PR tag for the following repositories
+to the rocketboards.org
+
+ 
+
+1. linux-socfpga
+
+2. uboot-socfpga
+
+3. angstrom-socfpga
+
+4. meta-altera
+
+5. linux-refdesigns
+
+ 
+
+Checklist available at
+https://sw-wiki.altera.com/twiki/bin/view/Software/GSRD_GIT_checklist
+
+ 
+
+Thanks
+
+ 
+
+
+________________________________________________________________________________
+
+Confidentiality Notice.
+This message may contain information that is confidential or otherwise protected
+from disclosure. If you are not the intended recipient, you are hereby notified
+that any use, disclosure, dissemination, distribution, or copying of this
+message, or any attachments, is strictly prohibited. If you have received this
+message in error, please advise the sender by reply e-mail, and delete the
+message and any attachments. Thank you.
+

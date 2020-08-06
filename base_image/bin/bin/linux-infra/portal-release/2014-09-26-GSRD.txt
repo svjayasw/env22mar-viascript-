@@ -1,0 +1,115 @@
+From atull@altera.com Fri Sep 26 10:41:43 2014
+Date: Fri, 26 Sep 2014 15:41:34 +0000
+From: Alan Tull <atull@altera.com>
+To: "atull@opensource.altera.com" <atull@opensource.altera.com>
+Subject: FW: GIT pushes
+
+
+ 
+
+ 
+
+From: Yves Vandervennet
+Sent: Friday, September 26, 2014 8:13 AM
+To: Chung Weng Gooi; Tien Hock Loh; Alan Tull
+Subject: RE: GIT pushes
+
+ 
+
+Gooi,
+
+ 
+
+                Thanks.
+
+ 
+
+Yves
+
+ 
+
+From: Chung Weng Gooi
+Sent: Friday, September 26, 2014 2:35 AM
+To: Tien Hock Loh; Alan Tull
+Cc: Yves Vandervennet
+Subject: RE: GIT pushes
+
+ 
+
+I approve the TAG push. Please do so today Alan. Thanks.
+
+ 
+
+--Gooi
+
+ 
+
+From: Tien Hock Loh
+Sent: Friday, September 26, 2014 3:24 PM
+To: Alan Tull
+Cc: Chung Weng Gooi; Yves Vandervennet
+Subject: GIT pushes
+
+ 
+
+Hi Alan,
+
+ 
+
+We will need your help to push these tags up to rocketboards GIT for GSRD
+release next week.
+
+ 
+
+1.    Linux-socfpga
+
+a.       ACDS14.0.1_REL_GSRD_RC3
+
+b.      ACDS14.0.1_REL_GSRD_PR
+
+2.    Uboot-socfpga
+
+a.       ACDS14.0.1_REL_GSRD_RC3
+
+b.      ACDS14.0.1_REL_GSRD_PR
+
+3.    Meta-altera
+
+a.       ACDS14.0.1_REL_GSRD_RC3
+
+b.      ACDS14.0.1_REL_GSRD_PR
+
+4.    Linux-refdesigns
+
+a.       ACDS14.0.1_REL_GSRD_RC3
+
+b.      ACDS14.0.1_REL_GSRD_PR
+
+5.    Angstrom-socfpga
+
+a.       ACDS14.0.1_REL_GSRD_RC3
+
+b.      ACDS14.0.1_REL_GSRD_PR
+
+ 
+
+The GIT push checklist is at
+https://sw-wiki.altera.com/twiki/bin/view/Software/GSRD_GIT_checklist.
+
+ 
+
+Thanks
+
+ 
+
+
+________________________________________________________________________________
+
+Confidentiality Notice.
+This message may contain information that is confidential or otherwise protected
+from disclosure. If you are not the intended recipient, you are hereby notified
+that any use, disclosure, dissemination, distribution, or copying of this
+message, or any attachments, is strictly prohibited. If you have received this
+message in error, please advise the sender by reply e-mail, and delete the
+message and any attachments. Thank you.
+

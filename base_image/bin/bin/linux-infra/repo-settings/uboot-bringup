@@ -1,0 +1,12 @@
+repo_path: /usr/local/git/repositories/uboot-bringup.git
+update_tests:
+email: thor.thayer@intel.com dinh.nguyen@intel.com
+sync-job: uboot
+local_upstream:
+crucible_project:
+internal_git: gitolite@at-git:uboot-bringup.git
+external_git:
+upstream_branches:
+release_branch:
+upstream_tag_regex:
+review_addrs:

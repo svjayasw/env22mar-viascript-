@@ -1,0 +1,278 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.1
+branch tag  : rel_socfpga-4.1_15.08.01_pr
+new commits : 0
+
+
+branch      : socfpga-4.0
+branch tag  : rel_socfpga-4.0_15.08.01_pr
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.08.01_pr
+new commits : 2
+8418e93 Graham Moore FogBugz #314791: QSPI: Set jedec_id in flash data structure
+b664d05 Chee Nouk Phoon FogBugz #300445: Linux: Enable SGMII support on Arria10
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_15.08.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 314791 | QSPI: Set jedec_id in flash data structure | [[ https://github.com/altera-opensource/linux-socfpga/commit/8418e933ae4b227af04718bc9a6d9fb42dc8afca ][ 8418e933ae4b227af04718bc9a6d9fb42dc8afca ]] |
+| 300445 | Linux: Enable SGMII support on Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/b664d051a279237cb56465f722912530972e22d2 ][ b664d051a279237cb56465f722912530972e22d2 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.08.01_pr
+new commits : 1
+8a34ee1 Graham Moore FogBugz #314791: QSPI: Set jedec_id in flash data structure
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_15.08.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 314791 | QSPI: Set jedec_id in flash data structure | [[ https://github.com/altera-opensource/linux-socfpga/commit/8a34ee1d8d4d64ae7bf20f7c5104b3cb3f28fe9a ][ 8a34ee1d8d4d64ae7bf20f7c5104b3cb3f28fe9a ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.1_15.08.01_pr
+commit: 60fd5d4 Matthew Gerlach FogBugz #292777: Calibrate read_delay at runtime
+
+tag:    rel_socfpga-4.0_15.08.01_pr
+commit: 5d36469 Krzysztof Kozlowski dmaengine: pl330: Fix hang on dmaengine_terminate_all on certain boards
+
+tag:    rel_socfpga-3.10-ltsi_15.08.01_pr
+commit: 8418e93 Graham Moore FogBugz #314791: QSPI: Set jedec_id in flash data structure
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.08.01_pr
+commit: 8a34ee1 Graham Moore FogBugz #314791: QSPI: Set jedec_id in flash data structure
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.08.01_pr
+new commits : 1
+6aa6ebf Chin Liang See FogBugz #312481: Enabling S25FL512S support
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_15.08.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 312481 | Enabling S25FL512S support | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/6aa6ebf988745e28f5bcf76bed4f49a81dab21b5 ][ 6aa6ebf988745e28f5bcf76bed4f49a81dab21b5 ]] |
+--wiki:
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.08.01_pr
+new commits : 3
+6945394 Chin Liang See FogBugz #308130-1: dts: Enabling alteragrp.mpuclk in handoff
+1de54d4 Chin Liang See FogBugz #308130-2: Enabling alteragrp.mpuclk support
+7bd4253 Chin Liang See FogBugz #301188: Fix the reset release for usefpga peripherals
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_15.08.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 308130-1 | dts: Enabling alteragrp.mpuclk in handoff | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/694539485a24e17a916b62aba898413c05cde04e ][ 694539485a24e17a916b62aba898413c05cde04e ]] |
+| 308130-2 | Enabling alteragrp.mpuclk support | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/1de54d4b8d9f12bb8fe86a30b9a11ab06b8b50c4 ][ 1de54d4b8d9f12bb8fe86a30b9a11ab06b8b50c4 ]] |
+| 301188 | Fix the reset release for usefpga peripherals | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/7bd4253885380c5cc6aabc40f38bb9cd0fe7815c ][ 7bd4253885380c5cc6aabc40f38bb9cd0fe7815c ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.08.01_pr
+commit: 6aa6ebf Chin Liang See FogBugz #312481: Enabling S25FL512S support
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.08.01_pr
+commit: 6945394 Chin Liang See FogBugz #308130-1: dts: Enabling alteragrp.mpuclk in handoff
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.08.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.08.01_pr
+commit: 380baf4 Yves Vandervennet update for github
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.08.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.08.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.08.01_pr
+commit: d69775c Graham Moore Update busybox full configuration for version 1.22
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.08.01_pr
+commit: 1d88fd2 Yves Vandervennet Addition of the Arria10 SWVP
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 8418e933ae4b227af04718bc9a6d9fb42dc8afca
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Jul 31 10:06:48 2015 -0500
+
+    FogBugz #314791: QSPI: Set jedec_id in flash data structure
+    
+    This patch initializes the jedec_id in the flash data structure
+    so that the write_ear() function will send the correct
+    bank-select command to the device.  This patch is only for kernel
+    version 3.10-ltsi.
+    
+    Mentor Graphics reported a bug whereby the extended address register
+    command is not setup properly, and therefore the write_ear()
+    function sends an ill-formed command to the device, causing the
+    Arria10 Virtual Platform QSPI interface to fail.
+    
+    This has not been a problem on real hardware, probably because the
+    chip-select is deasserted in the middle of the bad command, which
+    essentially aborts the command.  The Arria10 Virtual Platform
+    doesn't have a chip-select, therefore the bad command is not
+    aborted, and the VP cannot recover.
+    
+    Furthermore, the driver is not actually using a bank-select
+    method of addressing, it is using 4-byte address mode, and
+    the extended address register is ignored by the device.  The
+    write_ear() function has been removed from later kernel versions.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit b664d051a279237cb56465f722912530972e22d2
+Author: Chee Nouk Phoon <cnphoon@altera.com>
+Date:   Thu May 21 16:47:47 2015 +0800
+
+    FogBugz #300445: Linux: Enable SGMII support on Arria10
+    
+    This patch adds support for SGMII support to Arria10. This is based on
+    Synopsys EMAC with GMII interface routed to FPGA. The soft IPs in the FPGA
+    includes a GMII and SGMII adapter and TSE PCS.
+    
+    Signed-off-by: Chee Nouk Phoon <cnphoon@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 8a34ee1d8d4d64ae7bf20f7c5104b3cb3f28fe9a
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Jul 31 10:06:48 2015 -0500
+
+    FogBugz #314791: QSPI: Set jedec_id in flash data structure
+    
+    This patch initializes the jedec_id in the flash data structure
+    so that the write_ear() function will send the correct
+    bank-select command to the device.  This patch is only for kernel
+    version 3.10-ltsi.
+    
+    Mentor Graphics reported a bug whereby the extended address register
+    command is not setup properly, and therefore the write_ear()
+    function sends an ill-formed command to the device, causing the
+    Arria10 Virtual Platform QSPI interface to fail.
+    
+    This has not been a problem on real hardware, probably because the
+    chip-select is deasserted in the middle of the bad command, which
+    essentially aborts the command.  The Arria10 Virtual Platform
+    doesn't have a chip-select, therefore the bad command is not
+    aborted, and the VP cannot recover.
+    
+    Furthermore, the driver is not actually using a bank-select
+    method of addressing, it is using 4-byte address mode, and
+    the extended address register is ignored by the device.  The
+    write_ear() function has been removed from later kernel versions.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 6aa6ebf988745e28f5bcf76bed4f49a81dab21b5
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Jul 22 22:10:01 2015 +0800
+
+    FogBugz #312481: Enabling S25FL512S support
+    
+    Enable Spansion serial NOR flash S25FL512S support
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 694539485a24e17a916b62aba898413c05cde04e
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Jul 21 21:21:01 2015 +0800
+
+    FogBugz #308130-1: dts: Enabling alteragrp.mpuclk in handoff
+    
+    Support new handoff value for clock alteragrp.mpuclk.
+    Qsys tool is configuring this value instead of static
+    default value of divide by 2.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 1de54d4b8d9f12bb8fe86a30b9a11ab06b8b50c4
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Jul 16 10:16:56 2015 +0800
+
+    FogBugz #308130-2: Enabling alteragrp.mpuclk support
+    
+    Support new handoff value for clock alteragrp.mpuclk.
+    Qsys tool is configuring this value instead of static
+    default value of divide by 2.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 7bd4253885380c5cc6aabc40f38bb9cd0fe7815c
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Jul 14 16:15:24 2015 +0800
+
+    FogBugz #301188: Fix the reset release for usefpga peripherals
+    
+    Updating the per1modrst to bring i2c2 - i2c4 out of reset when
+    they are routed to FPGA interface
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Updated the commit message
+
+-----------------------------------------------------------------------
+

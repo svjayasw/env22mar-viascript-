@@ -1,0 +1,1184 @@
+
+15.04.01 rc1 report
+
+Script-generated report of what we tagged today in internal git.
+
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.18
+branch tag  : rel_socfpga-3.18_15.04.01_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.04.01_rc1
+new commits : 36
+5277e38 Ley Foon Tan nios2: add PAGE_SHARED define
+640653e Ley Foon Tan nios2: signaling update
+7b567c5 Ley Foon Tan nios2: use SPARSE_IRQ
+2e422c9 Ley Foon Tan nios2: use generic pci.h
+0338612 Ley Foon Tan nios2: remove gpio.h
+2f4263d Ley Foon Tan nios2: Change to use alloc_bootmem_align
+9beca43 Ley Foon Tan nios2: change IS_ERR_OR_NULL to IS_ERR
+7d4fd1d Ley Foon Tan nios2: remove signal translation
+1552923 Ley Foon Tan nios2: remove ZONE_DMA
+1d97412 Ley Foon Tan nios2: Include cpuinfo to registers.h
+526cfd6 Ley Foon Tan nios2: includes uaccess.h in trap.c
+bc81a47 Ezequiel Garcia nios2: kernel: Use safer GET_THREAD_INFO in syscall trace check
+4554fe59 Ley Foon Tan nios2: Add targets in Makefile
+81ef1df Ley Foon Tan nios2: time: change outw/inw to writew/readw
+ed02adc Ley Foon Tan nios2: update io.h
+ed7d011 Ley Foon Tan nios2: add generic vga.h
+add8faa Ley Foon Tan nios2: remove GENERIC_FIND_NEXT_BIT
+3b4d82a Ley Foon Tan nios2: set FAULT_FLAG_WRITE after VM_WRITE check
+31372e2 Ley Foon Tan nios2: mm: do not invoke OOM killer on kernel fault OOM
+d76819a Ley Foon Tan nios2: Port OOM changes to do_page_fault()
+785832e Chung-Ling Tang nios2: Prevent deadlock in page fault handler
+d4bf0f6 Chung-Ling Tang nios2: fix unhandled signals
+a029b5c Tobias Klauser nios2: Use preempt_schedule_irq
+7f59f7d Walter Goossens nios2: Initialize cpuinfo.mmu
+9d8366e Guenter Roeck nios2: add definition of ioremap_wc to io.h
+14563ac Tobias Klauser nios2: Make NIOS2_CMDLINE_IGNORE_DTB depend on CMDLINE_BOOL
+c0da3c6 Tobias Klauser nios2: Add missing NR_CPUS to Kconfig
+d30a081 Dmitry Torokhov nios2: fix error handling of irq_of_parse_and_map
+1f8d806 Tobias Klauser nios2: Use IS_ENABLED instead of #ifdefs to check config symbols
+085852e Ley Foon Tan nios2: port dma-mapping from 3.19
+4b9b3df Dinh Nguyen FogBugz #270904-20: Add 4-bit mode for SD
+7d1ae2b Alan Tull FogBugz #270904-19: arria10: device tree: add i2c peripherals
+01ae456 Guenter Roeck hwmon: (pmbus/ltc2978): Add support for LTC2977
+67ce90a Thor Thayer FogBugz #270904-18: A10SYCON: Enable GPIO & HWMON by default
+c990919 Thor Thayer FogBugz #270904-17: A10SYCON: Cleanup and additions to hwmon
+505b74f Thor Thayer FogBugz #270904-16: A10SYCON: Fix GPIO build warning.
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_15.04.01_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | nios2: add PAGE_SHARED define | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=5277e38d6d809450ef0fabaef59bdce1e6ce9728 ][ 5277e38d6d809450ef0fabaef59bdce1e6ce9728 ]] |
+| community | nios2: signaling update | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=640653e202d94d03abf6a19f51c949e2111361a5 ][ 640653e202d94d03abf6a19f51c949e2111361a5 ]] |
+| community | nios2: use SPARSE_IRQ | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=7b567c572c60845238dfa6dbe38dfffa00430fa1 ][ 7b567c572c60845238dfa6dbe38dfffa00430fa1 ]] |
+| community | nios2: use generic pci.h | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=2e422c9870b8dc45982bb84c221ceff992c0379e ][ 2e422c9870b8dc45982bb84c221ceff992c0379e ]] |
+| community | nios2: remove gpio.h | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=0338612a70e357bd2607bf0aa69a6fd4e4e037ac ][ 0338612a70e357bd2607bf0aa69a6fd4e4e037ac ]] |
+| community | nios2: Change to use alloc_bootmem_align | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=2f4263d354c184397b8ff70562f87ed074f02e94 ][ 2f4263d354c184397b8ff70562f87ed074f02e94 ]] |
+| community | nios2: change IS_ERR_OR_NULL to IS_ERR | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=9beca43031cbd1f23d0e4bcc9971b61dcea81d7b ][ 9beca43031cbd1f23d0e4bcc9971b61dcea81d7b ]] |
+| community | nios2: remove signal translation | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=7d4fd1d8b7d280b8877a923a931f8b648fadf16f ][ 7d4fd1d8b7d280b8877a923a931f8b648fadf16f ]] |
+| community | nios2: remove ZONE_DMA | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1552923d088376dfffc9af1214cbf58a199af31a ][ 1552923d088376dfffc9af1214cbf58a199af31a ]] |
+| community | nios2: Include cpuinfo to registers.h | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1d9741240852140cc953b37627216016363603a2 ][ 1d9741240852140cc953b37627216016363603a2 ]] |
+| community | nios2: includes uaccess.h in trap.c | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=526cfd613f98cc02f6614459308c46add557d45c ][ 526cfd613f98cc02f6614459308c46add557d45c ]] |
+| community | nios2: kernel: Use safer GET_THREAD_INFO in syscall trace check | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=bc81a47158e79edef11ff9f2cd1d28542dc5ccb1 ][ bc81a47158e79edef11ff9f2cd1d28542dc5ccb1 ]] |
+| community | nios2: Add targets in Makefile | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=4554fe59852c7b75b1d41cd1bcc3a87df774de39 ][ 4554fe59852c7b75b1d41cd1bcc3a87df774de39 ]] |
+| community | nios2: time: change outw/inw to writew/readw | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=81ef1df4faeb881673ebb8628d6d2eb3c5cb28b7 ][ 81ef1df4faeb881673ebb8628d6d2eb3c5cb28b7 ]] |
+| community | nios2: update io.h | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=ed02adc3cbd2c6ad7e99c3ae1bfffd688202eb30 ][ ed02adc3cbd2c6ad7e99c3ae1bfffd688202eb30 ]] |
+| community | nios2: add generic vga.h | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=ed7d011a890f1c6ea00d9f4cbbc86aec5108eca8 ][ ed7d011a890f1c6ea00d9f4cbbc86aec5108eca8 ]] |
+| community | nios2: remove GENERIC_FIND_NEXT_BIT | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=add8faa4865fca5e1ed50ae953f72f0a3b59cb23 ][ add8faa4865fca5e1ed50ae953f72f0a3b59cb23 ]] |
+| community | nios2: set FAULT_FLAG_WRITE after VM_WRITE check | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=3b4d82a0a2b8f21327286856c639b1d731bc91da ][ 3b4d82a0a2b8f21327286856c639b1d731bc91da ]] |
+| community | nios2: mm: do not invoke OOM killer on kernel fault OOM | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=31372e2d459d623337a41ea39d8498895237ca22 ][ 31372e2d459d623337a41ea39d8498895237ca22 ]] |
+| community | nios2: Port OOM changes to do_page_fault() | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d76819ad73aa1713f07b8f61849c0d2c056f4760 ][ d76819ad73aa1713f07b8f61849c0d2c056f4760 ]] |
+| community | nios2: Prevent deadlock in page fault handler | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=785832e30d23cb0230c6ecb6313977cedf19105a ][ 785832e30d23cb0230c6ecb6313977cedf19105a ]] |
+| community | nios2: fix unhandled signals | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d4bf0f61e424e0540b4382ecab6c4fe9668185e2 ][ d4bf0f61e424e0540b4382ecab6c4fe9668185e2 ]] |
+| community | nios2: Use preempt_schedule_irq | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=a029b5c65d17334f492582008d9be969edeb74af ][ a029b5c65d17334f492582008d9be969edeb74af ]] |
+| community | nios2: Initialize cpuinfo.mmu | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=7f59f7ddb111c6faac4c5bf766e406b9835259d9 ][ 7f59f7ddb111c6faac4c5bf766e406b9835259d9 ]] |
+| community | nios2: add definition of ioremap_wc to io.h | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=9d8366ea79ec76ef7118d9e96823520c39a77e4c ][ 9d8366ea79ec76ef7118d9e96823520c39a77e4c ]] |
+| community | nios2: Make NIOS2_CMDLINE_IGNORE_DTB depend on CMDLINE_BOOL | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=14563acc6f413fe47742fdc7489b4ddf8070321b ][ 14563acc6f413fe47742fdc7489b4ddf8070321b ]] |
+| community | nios2: Add missing NR_CPUS to Kconfig | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=c0da3c6f71356c2d961e58b55cb0237210f1d55a ][ c0da3c6f71356c2d961e58b55cb0237210f1d55a ]] |
+| community | nios2: fix error handling of irq_of_parse_and_map | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d30a081e4e2c933c40bda234bb2d2d3e01e110b1 ][ d30a081e4e2c933c40bda234bb2d2d3e01e110b1 ]] |
+| community | nios2: Use IS_ENABLED instead of #ifdefs to check config symbols | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1f8d80627fb4e4786cbb7dc9938c86cdd5519b1f ][ 1f8d80627fb4e4786cbb7dc9938c86cdd5519b1f ]] |
+| community | nios2: port dma-mapping from 3.19 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=085852e34e340f1479b9c48c8ed46da798f16832 ][ 085852e34e340f1479b9c48c8ed46da798f16832 ]] |
+| 270904-20 | Add 4-bit mode for SD | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=4b9b3dfd57fac51a5b84b2276b2434a1513278ce ][ 4b9b3dfd57fac51a5b84b2276b2434a1513278ce ]] |
+| 270904-19 | arria10: device tree: add i2c peripherals | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=7d1ae2b11583e2952d1ccbfde747171c3145b957 ][ 7d1ae2b11583e2952d1ccbfde747171c3145b957 ]] |
+| community | hwmon: (pmbus/ltc2978): Add support for LTC2977 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=01ae4563d00314e4ee1d8e546bd1bfb9baa80883 ][ 01ae4563d00314e4ee1d8e546bd1bfb9baa80883 ]] |
+| 270904-18 | A10SYCON: Enable GPIO & HWMON by default | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=67ce90a174d9c47e43bb1a510c4cd27172f1c600 ][ 67ce90a174d9c47e43bb1a510c4cd27172f1c600 ]] |
+| 270904-17 | A10SYCON: Cleanup and additions to hwmon | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=c990919068e8670b88021a15343d0bff14cfac84 ][ c990919068e8670b88021a15343d0bff14cfac84 ]] |
+| 270904-16 | A10SYCON: Fix GPIO build warning. | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=505b74f8ac84be1c7e77ed809b67ad32abba5fee ][ 505b74f8ac84be1c7e77ed809b67ad32abba5fee ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.04.01_rc1
+new commits : 31
+c839572 Ley Foon Tan nios2: add PAGE_SHARED define
+3d8f46c Ley Foon Tan nios2: signaling update
+1be5de2 Ley Foon Tan nios2: use SPARSE_IRQ
+413225e Ley Foon Tan nios2: use generic pci.h
+fe10997 Ley Foon Tan nios2: remove gpio.h
+76131e5 Ley Foon Tan nios2: Change to use alloc_bootmem_align
+2645a60 Ley Foon Tan nios2: change IS_ERR_OR_NULL to IS_ERR
+d5477f9 Ley Foon Tan nios2: remove signal translation
+4a805d7 Ley Foon Tan nios2: remove ZONE_DMA
+ac37c93 Ley Foon Tan nios2: Include cpuinfo to registers.h
+640e31b Ley Foon Tan nios2: includes uaccess.h in trap.c
+1fb1d9a Ezequiel Garcia nios2: kernel: Use safer GET_THREAD_INFO in syscall trace check
+cfd1fab Ley Foon Tan nios2: Add targets in Makefile
+f9a15f2 Ley Foon Tan nios2: time: change outw/inw to writew/readw
+4ed4aef Ley Foon Tan nios2: update io.h
+f794990 Ley Foon Tan nios2: add generic vga.h
+1fb3503 Ley Foon Tan nios2: remove GENERIC_FIND_NEXT_BIT
+7e6e56b Ley Foon Tan nios2: set FAULT_FLAG_WRITE after VM_WRITE check
+b2db211 Ley Foon Tan nios2: mm: do not invoke OOM killer on kernel fault OOM
+5c850c9 Ley Foon Tan nios2: Port OOM changes to do_page_fault()
+aa55272 Chung-Ling Tang nios2: Prevent deadlock in page fault handler
+d1f82ea Chung-Ling Tang nios2: fix unhandled signals
+0dcf074 Tobias Klauser nios2: Use preempt_schedule_irq
+a200f7f Walter Goossens nios2: Initialize cpuinfo.mmu
+c93c295 Guenter Roeck nios2: add definition of ioremap_wc to io.h
+bd4e1f9 Tobias Klauser nios2: Make NIOS2_CMDLINE_IGNORE_DTB depend on CMDLINE_BOOL
+88c80bf Tobias Klauser nios2: Add missing NR_CPUS to Kconfig
+df1c22f Dmitry Torokhov nios2: fix error handling of irq_of_parse_and_map
+fd78541 Tobias Klauser nios2: Use IS_ENABLED instead of #ifdefs to check config symbols
+d77f200 Ley Foon Tan nios2: port dma-mapping from 3.19
+bb25495 Thor Thayer FogBugz #270904-16: A10SYCON: Fix GPIO build warning.
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_15.04.01_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | nios2: add PAGE_SHARED define | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=c8395723ed3ec1c66b6ecff5e133effb7b066d2d ][ c8395723ed3ec1c66b6ecff5e133effb7b066d2d ]] |
+| community | nios2: signaling update | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=3d8f46cb46ee7b82c4045c53a7c566077240332b ][ 3d8f46cb46ee7b82c4045c53a7c566077240332b ]] |
+| community | nios2: use SPARSE_IRQ | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1be5de2711fedf4bcfd59467864e2b043cb4773d ][ 1be5de2711fedf4bcfd59467864e2b043cb4773d ]] |
+| community | nios2: use generic pci.h | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=413225e0356ec46d91add6e9188e05ca2a4963ed ][ 413225e0356ec46d91add6e9188e05ca2a4963ed ]] |
+| community | nios2: remove gpio.h | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=fe10997c90fbfac2576724bd7470800bc744e564 ][ fe10997c90fbfac2576724bd7470800bc744e564 ]] |
+| community | nios2: Change to use alloc_bootmem_align | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=76131e5de91d59e83552d83b95b112e8a05b041a ][ 76131e5de91d59e83552d83b95b112e8a05b041a ]] |
+| community | nios2: change IS_ERR_OR_NULL to IS_ERR | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=2645a607e581bb2d72e58557527719f89798470d ][ 2645a607e581bb2d72e58557527719f89798470d ]] |
+| community | nios2: remove signal translation | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d5477f983f5b59deb9fd0ef27a60516a511d73cf ][ d5477f983f5b59deb9fd0ef27a60516a511d73cf ]] |
+| community | nios2: remove ZONE_DMA | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=4a805d7e87e5a075ef949ea6343caa25bcb37287 ][ 4a805d7e87e5a075ef949ea6343caa25bcb37287 ]] |
+| community | nios2: Include cpuinfo to registers.h | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=ac37c93965575bf51c7680ea5dad3e75ace73815 ][ ac37c93965575bf51c7680ea5dad3e75ace73815 ]] |
+| community | nios2: includes uaccess.h in trap.c | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=640e31b62a71e483a18e16439197338eee71ce37 ][ 640e31b62a71e483a18e16439197338eee71ce37 ]] |
+| community | nios2: kernel: Use safer GET_THREAD_INFO in syscall trace check | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1fb1d9a586b3fb42248c55fd8fe4772a65fc46cf ][ 1fb1d9a586b3fb42248c55fd8fe4772a65fc46cf ]] |
+| community | nios2: Add targets in Makefile | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=cfd1fab549dd25532837d1405f4d66343d1c90cc ][ cfd1fab549dd25532837d1405f4d66343d1c90cc ]] |
+| community | nios2: time: change outw/inw to writew/readw | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=f9a15f2b54e8576f6badeaef4efd28e4f1ffd7fd ][ f9a15f2b54e8576f6badeaef4efd28e4f1ffd7fd ]] |
+| community | nios2: update io.h | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=4ed4aef886ccf17eef3b214ea588e46f8beacc4e ][ 4ed4aef886ccf17eef3b214ea588e46f8beacc4e ]] |
+| community | nios2: add generic vga.h | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=f7949901ce6450b28243c533fa2990735626d36b ][ f7949901ce6450b28243c533fa2990735626d36b ]] |
+| community | nios2: remove GENERIC_FIND_NEXT_BIT | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1fb3503c6e91b2662d72e6ab40b07809c7b6ce09 ][ 1fb3503c6e91b2662d72e6ab40b07809c7b6ce09 ]] |
+| community | nios2: set FAULT_FLAG_WRITE after VM_WRITE check | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=7e6e56b6bd6bb2593e62d5dd302236b28332aced ][ 7e6e56b6bd6bb2593e62d5dd302236b28332aced ]] |
+| community | nios2: mm: do not invoke OOM killer on kernel fault OOM | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=b2db211a16ed5f7d6f583faa401712ec404e78d9 ][ b2db211a16ed5f7d6f583faa401712ec404e78d9 ]] |
+| community | nios2: Port OOM changes to do_page_fault() | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=5c850c953f6e01fa1e5065e1346686d9a3055e48 ][ 5c850c953f6e01fa1e5065e1346686d9a3055e48 ]] |
+| community | nios2: Prevent deadlock in page fault handler | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=aa55272116a191a9512ad383ddadeb649c0b3561 ][ aa55272116a191a9512ad383ddadeb649c0b3561 ]] |
+| community | nios2: fix unhandled signals | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d1f82ea7c24320ecaf2af81bdbb1ccd425066ce2 ][ d1f82ea7c24320ecaf2af81bdbb1ccd425066ce2 ]] |
+| community | nios2: Use preempt_schedule_irq | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=0dcf0740d751aa3a7b4764d17ed900c6d4e5b178 ][ 0dcf0740d751aa3a7b4764d17ed900c6d4e5b178 ]] |
+| community | nios2: Initialize cpuinfo.mmu | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=a200f7f1808695da56fbeb23ee23beec062a0a34 ][ a200f7f1808695da56fbeb23ee23beec062a0a34 ]] |
+| community | nios2: add definition of ioremap_wc to io.h | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=c93c295f8a07d4ebd611b9d44b2fb8c3974b9bbb ][ c93c295f8a07d4ebd611b9d44b2fb8c3974b9bbb ]] |
+| community | nios2: Make NIOS2_CMDLINE_IGNORE_DTB depend on CMDLINE_BOOL | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=bd4e1f91dc209c48900232013ad39a6d73a27578 ][ bd4e1f91dc209c48900232013ad39a6d73a27578 ]] |
+| community | nios2: Add missing NR_CPUS to Kconfig | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=88c80bf9c9e27601762abc739be20b8efde9e7b9 ][ 88c80bf9c9e27601762abc739be20b8efde9e7b9 ]] |
+| community | nios2: fix error handling of irq_of_parse_and_map | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=df1c22faf16e4c45a85ee13483eaf2dc3e1d2ca3 ][ df1c22faf16e4c45a85ee13483eaf2dc3e1d2ca3 ]] |
+| community | nios2: Use IS_ENABLED instead of #ifdefs to check config symbols | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=fd78541666042f313e90d1c6af7302b33aeb9fff ][ fd78541666042f313e90d1c6af7302b33aeb9fff ]] |
+| community | nios2: port dma-mapping from 3.19 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d77f2006a7245888f72c490eb027d06fc3654a57 ][ d77f2006a7245888f72c490eb027d06fc3654a57 ]] |
+| 270904-16 | A10SYCON: Fix GPIO build warning. | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=bb254953e99a522abf862768433fdfadc76cfdc6 ][ bb254953e99a522abf862768433fdfadc76cfdc6 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.18_15.04.01_rc1
+commit: 24890c3 Alan Tull FogBugz #270904-19: arria10: device tree: add i2c peripherals
+
+tag:    rel_socfpga-3.10-ltsi_15.04.01_rc1
+commit: 5277e38 Ley Foon Tan nios2: add PAGE_SHARED define
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.04.01_rc1
+commit: c839572 Ley Foon Tan nios2: add PAGE_SHARED define
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.04.01_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_15.04.01_rc1
+commit: 32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_15.04.01_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_15.04.01_rc1
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_15.04.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_15.04.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_15.04.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.04.01_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_15.04.01_rc1
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_15.04.01_rc1
+commit: 65417bc Yves Vandervennet kde repo moved, it's now meta-kde4
+
+tag:    rel_angstrom-v2014.06-socfpga_15.04.01_rc1
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+tag:    rel_angstrom-v2014.12-socfpga_15.04.01_rc1
+commit: e8f1e58 Yves Vandervennet Enabling SoCFPGA with this revision of Angstrom
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_15.04.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_15.04.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_15.04.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.04.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.04.01_rc1
+new commits : 1
+7c75b73 Yves Vandervennet added LTP
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-yocto1.7_a10, *Tag name:* rel_angstrom-v2014.12-yocto1.7_a10_15.04.01_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | added LTP | [[ http://git.rocketboards.org/gitweb/?p=meta-altera.git;a=commit;h=7c75b734f492565d4aff4314343825fe496e7e22 ][ 7c75b734f492565d4aff4314343825fe496e7e22 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_15.04.01_rc1
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_15.04.01_rc1
+commit: 1090ffb Yves Vandervennet recipe for kernel 3.18
+
+tag:    rel_angstrom-v2014.06-yocto1.6_15.04.01_rc1
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2014.12-yocto1.7_15.04.01_rc1
+commit: 95d38e0 Yves Vandervennet recipe for 3.18
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.04.01_rc1
+commit: 7c75b73 Yves Vandervennet added LTP
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 5277e38d6d809450ef0fabaef59bdce1e6ce9728
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Mar 18 13:41:49 2015 +0800
+
+    nios2: add PAGE_SHARED define
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 640653e202d94d03abf6a19f51c949e2111361a5
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Mar 18 11:33:19 2015 +0800
+
+    nios2: signaling update
+    
+    Add restart handler for signal without handler.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 7b567c572c60845238dfa6dbe38dfffa00430fa1
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 18:35:24 2015 +0800
+
+    nios2: use SPARSE_IRQ
+    
+    Enable SPARSE_IRQ and remove NR_IRQS.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 2e422c9870b8dc45982bb84c221ceff992c0379e
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 18:29:32 2015 +0800
+
+    nios2: use generic pci.h
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 0338612a70e357bd2607bf0aa69a6fd4e4e037ac
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 18:28:41 2015 +0800
+
+    nios2: remove gpio.h
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 2f4263d354c184397b8ff70562f87ed074f02e94
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 18:11:05 2015 +0800
+
+    nios2: Change to use alloc_bootmem_align
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 9beca43031cbd1f23d0e4bcc9971b61dcea81d7b
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 18:08:34 2015 +0800
+
+    nios2: change IS_ERR_OR_NULL to IS_ERR
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 7d4fd1d8b7d280b8877a923a931f8b648fadf16f
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 18:03:40 2015 +0800
+
+    nios2: remove signal translation
+    
+    - remove signal translation, nios2 support only default execution domain.
+    - remove ununsed comment
+    - remove pr_debug().
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 1552923d088376dfffc9af1214cbf58a199af31a
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 17:55:38 2015 +0800
+
+    nios2: remove ZONE_DMA
+    
+    Update min_low_pfn, max_low_pfn and max_mapnr.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 1d9741240852140cc953b37627216016363603a2
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 17:35:17 2015 +0800
+
+    nios2: Include cpuinfo to registers.h
+    
+    Add #ifndef __ASSEMBLY_ guard, because assembly source might
+    include this header file.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 526cfd613f98cc02f6614459308c46add557d45c
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 17:08:48 2015 +0800
+
+    nios2: includes uaccess.h in trap.c
+    
+    Fixed undeclared function to "fixup_exception" when
+    CONFIG_NIOS2_ALIGNMENT_TRAP=n.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit bc81a47158e79edef11ff9f2cd1d28542dc5ccb1
+Author: Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
+Date:   Tue Mar 17 17:07:00 2015 +0800
+
+    nios2: kernel: Use safer GET_THREAD_INFO in syscall trace check
+    
+    In the low-level syscall handler, the assembler implementation to
+    obtain the current thread_info is not correct. Fix it by using
+    GET_THREAD_INFO macro, as done elsewhere in this file.
+    
+    Signed-off-by: Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 4554fe59852c7b75b1d41cd1bcc3a87df774de39
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 17:04:17 2015 +0800
+
+    nios2: Add targets in Makefile
+    
+    Add:
+        targets += vmlinux.bin vmlinux.gz vmImage
+    
+    to make $(call if_changed) work.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 81ef1df4faeb881673ebb8628d6d2eb3c5cb28b7
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 17:02:20 2015 +0800
+
+    nios2: time: change outw/inw to writew/readw
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit ed02adc3cbd2c6ad7e99c3ae1bfffd688202eb30
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 16:59:35 2015 +0800
+
+    nios2: update io.h
+    
+    use generic io.h.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit ed7d011a890f1c6ea00d9f4cbbc86aec5108eca8
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 01:14:23 2015 +0800
+
+    nios2: add generic vga.h
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit add8faa4865fca5e1ed50ae953f72f0a3b59cb23
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Mar 16 15:56:18 2015 +0800
+
+    nios2: remove GENERIC_FIND_NEXT_BIT
+    
+    Follow commit 63e424c84429903 ("arch: remove CONFIG_GENERIC_FIND_{NEXT_BIT,BIT_LE,
+    LAST_BIT}")
+    
+    By the previous style change, CONFIG_GENERIC_FIND_NEXT_BIT,
+    CONFIG_GENERIC_FIND_BIT_LE, and CONFIG_GENERIC_FIND_LAST_BIT are not used
+    to test for existence of find bitops anymore.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 3b4d82a0a2b8f21327286856c639b1d731bc91da
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Mar 16 15:36:43 2015 +0800
+
+    nios2: set FAULT_FLAG_WRITE after VM_WRITE check
+    
+    Back port from v3.19.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 31372e2d459d623337a41ea39d8498895237ca22
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Mar 16 15:35:11 2015 +0800
+
+    nios2: mm: do not invoke OOM killer on kernel fault OOM
+    
+    Follow commit 871341023c771ad.
+    
+    Kernel faults are expected to handle OOM conditions gracefully (gup,
+    uaccess etc.), so they should never invoke the OOM killer.  Reserve
+    this for faults triggered in user context when it is the only option.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit d76819ad73aa1713f07b8f61849c0d2c056f4760
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 01:42:19 2015 +0800
+
+    nios2: Port OOM changes to do_page_fault()
+    
+    From commit 96f3a5cc33ba.
+    
+    Commit d065bd810b6d ("mm: retry page fault when blocking on disk transfer") and
+    and commit 37b23e0525d3 ("x86,mm: make pagefault killable")
+    
+    The above commits introduced changes into the nios2 pagefault handler
+    for making the page fault handler retryable as well as killable.
+    
+    These changes reduce the mmap_sem hold time, which is crucial
+    during OOM killer invocation.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 785832e30d23cb0230c6ecb6313977cedf19105a
+Author: Chung-Ling Tang <cltang@codesourcery.com>
+Date:   Tue Mar 17 01:40:31 2015 +0800
+
+    nios2: Prevent deadlock in page fault handler
+    
+    Follow commit 840ff6a4f61:
+    
+    As per x86, we may deadlock while trying to get the mmap semaphore.
+    Implement the same fix, which allows (eg) recursive faults to cause
+    an oops instead of deadlocking.
+    
+    Signed-off-by: Chung-Ling Tang <cltang@codesourcery.com>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit d4bf0f61e424e0540b4382ecab6c4fe9668185e2
+Author: Chung-Ling Tang <cltang@codesourcery.com>
+Date:   Tue Mar 17 01:36:12 2015 +0800
+
+    nios2: fix unhandled signals
+    
+    From commit a3248d609bd4:
+    
+    Follow other architectures for user fault handling.
+    
+    Signed-off-by: Chung-Ling Tang <cltang@codesourcery.com>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit a029b5c65d17334f492582008d9be969edeb74af
+Author: Tobias Klauser <tklauser@distanz.ch>
+Date:   Tue Mar 17 01:27:34 2015 +0800
+
+    nios2: Use preempt_schedule_irq
+    
+    From commit 1b0f44923e:
+    
+    Follow aa0d53260596 ("ia64: Use preempt_schedule_irq") and use
+    preempt_schedule_irq instead of enabling/disabling interrupts and
+    messing around with PREEMPT_ACTIVE in the nios2 low-level preemption
+    code ourselves. Also get rid of the now needless re-check for
+    TIF_NEED_RESCHED, preempt_schedule_irq will already take care of
+    rescheduling.
+    
+    This also fixes the following build error when building with
+    CONFIG_PREEMPT:
+    
+    arch/nios2/kernel/built-in.o: In function `need_resched':
+    arch/nios2/kernel/entry.S:374: undefined reference to `PREEMPT_ACTIVE'
+    
+    Cc: Thomas Gleixner <tglx@linutronix.de>
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit 7f59f7ddb111c6faac4c5bf766e406b9835259d9
+Author: Walter Goossens <waltergoossens@home.nl>
+Date:   Wed Dec 31 09:29:07 2014 +0800
+
+    nios2: Initialize cpuinfo.mmu
+    
+    This patch initializes the mmu field of the cpuinfo structure to the
+    value supplied by the devicetree.
+    
+    Signed-off-by: Walter Goossens <waltergoossens@home.nl>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit 9d8366ea79ec76ef7118d9e96823520c39a77e4c
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Mon Mar 16 11:25:33 2015 +0800
+
+    nios2: add definition of ioremap_wc to io.h
+    
+    From commit 76367a52d3cbf:
+    
+    Fix
+    
+    drivers/gpu/drm/drm_bufs.c: In function 'drm_addmap_core':
+    drivers/gpu/drm/drm_bufs.c:213:5:
+    			error: implicit declaration of function 'ioremap_wc'
+    
+    seen when building nios2:allmodconfig.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit 14563acc6f413fe47742fdc7489b4ddf8070321b
+Author: Tobias Klauser <tklauser@distanz.ch>
+Date:   Tue Mar 17 01:24:24 2015 +0800
+
+    nios2: Make NIOS2_CMDLINE_IGNORE_DTB depend on CMDLINE_BOOL
+    
+    From commit 2b2b4074e647f:
+    
+    If NIOS2_CMDLINE_IGNORE_DTB is selected but CMDLINE_BOOL isn't and thus
+    CONFIG_CMDLINE is not defined, the build fails with the following error:
+    
+    arch/nios2/kernel/setup.c: In function 'nios2_boot_init':
+    arch/nios2/kernel/setup.c:131:30: error: 'CONFIG_CMDLINE' undeclared
+    (first use in this function)
+       strncpy(boot_command_line, CONFIG_CMDLINE, COMMAND_LINE_SIZE);
+    
+    This can be reproduced using randconfig with KCONFIG_SEED=0xE5B8749E, i.e.
+    'make KCONFIG_SEED=0xE5B8749E ARCH=nios2 randconfig'.
+    
+    Fix this by letting NIOS2_CMDLINE_IGNORE_DTB depend on CMDLINE_BOOL, so we
+    actually have a default kernel command string to fall back to.
+    
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit c0da3c6f71356c2d961e58b55cb0237210f1d55a
+Author: Tobias Klauser <tklauser@distanz.ch>
+Date:   Tue Mar 17 01:22:57 2015 +0800
+
+    nios2: Add missing NR_CPUS to Kconfig
+    
+    From commit 6e5c8f5f66020:
+    
+    kernel/time/Kconfig expects that NR_CPUS is defined.
+    
+    This fixes the following config warning:
+    "kernel/time/Kconfig:163:warning: range is invalid"
+    
+    Follow 4cbbbb43d666 ("microblaze: Fix missing NR_CPUS in menuconfig")
+    
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit d30a081e4e2c933c40bda234bb2d2d3e01e110b1
+Author: Dmitry Torokhov <dtor@chromium.org>
+Date:   Mon Mar 16 11:16:17 2015 +0800
+
+    nios2: fix error handling of irq_of_parse_and_map
+    
+    From commit b29438f22c807d8a4bda6f0fb3e24318117906c0:
+    
+    Return value of irq_of_parse_and_map() is unsigned int, with 0
+    indicating failure, so testing for negative result never works.
+    
+    Signed-off-by: Dmitry Torokhov <dtor@chromium.org>
+    Reviewed-by: Tobias Klauser <tklauser@distanz.ch>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit 1f8d80627fb4e4786cbb7dc9938c86cdd5519b1f
+Author: Tobias Klauser <tklauser@distanz.ch>
+Date:   Mon Nov 17 18:30:37 2014 +0800
+
+    nios2: Use IS_ENABLED instead of #ifdefs to check config symbols
+    
+    Make the checking for div/mul/mulx instruction config symbols easier to
+    read by using IS_ENABLED instead of #ifdefs.
+    
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit 085852e34e340f1479b9c48c8ed46da798f16832
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Mar 16 10:55:20 2015 +0800
+
+    nios2: port dma-mapping from 3.19
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 4b9b3dfd57fac51a5b84b2276b2434a1513278ce
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri Mar 13 11:10:26 2015 -0500
+
+    FogBugz #270904-20: Add 4-bit mode for SD
+    
+    4-bit SD is now working. The issue was that pinmux config for SD_DAT[4-7]
+    also need to be configured for SD. The configuration for those pins are
+    done in u-boot.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 7d1ae2b11583e2952d1ccbfde747171c3145b957
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue Mar 10 11:37:38 2015 -0500
+
+    FogBugz #270904-19: arria10: device tree: add i2c peripherals
+    
+    Add the following i2c peripherals for arria10:
+    * Newhaven 16x2 lcd module
+    * max1619 temperature sensor
+    * ds1339 rtc
+    * ltc2977 monitor
+    * 24lc32 eeprom
+    
+    Change the arria10 sdmmc and qspi dts's to have a common
+    socfpga_arria10_socdk.dtsi.  The only difference between the
+    socfpga_arria10_socdk_sdmmc.dts and socfpga_arria10_socdk_qspi.dts
+    is the sdmmc or qspi daughter card plugged into the socdk board.
+    
+    Fix the copyright year and header for socfpga_arria10_socdk*.dts*
+    
+    Enable ltc2977 and max1619 in defconfig.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v3: add ltc2977 in DT and defconfig
+    
+    v2: split up the dts's
+        fix copyrights/copyright dates
+        add the max1619
+        enable max1619 in defconfig
+
+commit 01ae4563d00314e4ee1d8e546bd1bfb9baa80883
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Mon Sep 23 10:56:48 2013 -0700
+
+    hwmon: (pmbus/ltc2978): Add support for LTC2977
+    
+    LTC2977 is a pin compatible replacement for LTC2978.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+
+commit 67ce90a174d9c47e43bb1a510c4cd27172f1c600
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Tue Mar 10 12:06:08 2015 -0500
+
+    FogBugz #270904-18: A10SYCON: Enable GPIO & HWMON by default
+    
+    This patch enables the GPIO (and by extension the LEDs and
+    pushbuttons reads) as well as the HW Monitor module by default
+    on our board because the GHRD will need this functionality.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit c990919068e8670b88021a15343d0bff14cfac84
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Mon Mar 2 14:44:15 2015 -0600
+
+    FogBugz #270904-17: A10SYCON: Cleanup and additions to hwmon
+    
+    Cleanup of the bitfields. Remove labels for resets and enables.
+    Addition of HPS resets and peripheral reset bitfields.
+    The MAX5 hwmon was originally implemented with only bitfield reads.
+    It is useful to add the complete register read of the MAX5 registers
+    to this module.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 505b74f8ac84be1c7e77ed809b67ad32abba5fee
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Tue Mar 10 11:52:54 2015 -0500
+
+    FogBugz #270904-16: A10SYCON: Fix GPIO build warning.
+    
+    Remove unused function that is causing warnings. This function
+    will return at a later time when keys functionality is added.
+    This should be squashed with the earlier 270904-15 build.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit c8395723ed3ec1c66b6ecff5e133effb7b066d2d
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Mar 18 13:41:49 2015 +0800
+
+    nios2: add PAGE_SHARED define
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 3d8f46cb46ee7b82c4045c53a7c566077240332b
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Mar 18 11:33:19 2015 +0800
+
+    nios2: signaling update
+    
+    Add restart handler for signal without handler.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 1be5de2711fedf4bcfd59467864e2b043cb4773d
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 18:35:24 2015 +0800
+
+    nios2: use SPARSE_IRQ
+    
+    Enable SPARSE_IRQ and remove NR_IRQS.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 413225e0356ec46d91add6e9188e05ca2a4963ed
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 18:29:32 2015 +0800
+
+    nios2: use generic pci.h
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit fe10997c90fbfac2576724bd7470800bc744e564
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 18:28:41 2015 +0800
+
+    nios2: remove gpio.h
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 76131e5de91d59e83552d83b95b112e8a05b041a
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 18:11:05 2015 +0800
+
+    nios2: Change to use alloc_bootmem_align
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 2645a607e581bb2d72e58557527719f89798470d
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 18:08:34 2015 +0800
+
+    nios2: change IS_ERR_OR_NULL to IS_ERR
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit d5477f983f5b59deb9fd0ef27a60516a511d73cf
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 18:03:40 2015 +0800
+
+    nios2: remove signal translation
+    
+    - remove signal translation, nios2 support only default execution domain.
+    - remove ununsed comment
+    - remove pr_debug().
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 4a805d7e87e5a075ef949ea6343caa25bcb37287
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 17:55:38 2015 +0800
+
+    nios2: remove ZONE_DMA
+    
+    Update min_low_pfn, max_low_pfn and max_mapnr.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit ac37c93965575bf51c7680ea5dad3e75ace73815
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 17:35:17 2015 +0800
+
+    nios2: Include cpuinfo to registers.h
+    
+    Add #ifndef __ASSEMBLY_ guard, because assembly source might
+    include this header file.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 640e31b62a71e483a18e16439197338eee71ce37
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 17:08:48 2015 +0800
+
+    nios2: includes uaccess.h in trap.c
+    
+    Fixed undeclared function to "fixup_exception" when
+    CONFIG_NIOS2_ALIGNMENT_TRAP=n.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 1fb1d9a586b3fb42248c55fd8fe4772a65fc46cf
+Author: Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
+Date:   Tue Mar 17 17:07:00 2015 +0800
+
+    nios2: kernel: Use safer GET_THREAD_INFO in syscall trace check
+    
+    In the low-level syscall handler, the assembler implementation to
+    obtain the current thread_info is not correct. Fix it by using
+    GET_THREAD_INFO macro, as done elsewhere in this file.
+    
+    Signed-off-by: Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit cfd1fab549dd25532837d1405f4d66343d1c90cc
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 17:04:17 2015 +0800
+
+    nios2: Add targets in Makefile
+    
+    Add:
+        targets += vmlinux.bin vmlinux.gz vmImage
+    
+    to make $(call if_changed) work.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit f9a15f2b54e8576f6badeaef4efd28e4f1ffd7fd
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 17:02:20 2015 +0800
+
+    nios2: time: change outw/inw to writew/readw
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 4ed4aef886ccf17eef3b214ea588e46f8beacc4e
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 16:59:35 2015 +0800
+
+    nios2: update io.h
+    
+    use generic io.h.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit f7949901ce6450b28243c533fa2990735626d36b
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 01:14:23 2015 +0800
+
+    nios2: add generic vga.h
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 1fb3503c6e91b2662d72e6ab40b07809c7b6ce09
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Mar 16 15:56:18 2015 +0800
+
+    nios2: remove GENERIC_FIND_NEXT_BIT
+    
+    Follow commit 63e424c84429903 ("arch: remove CONFIG_GENERIC_FIND_{NEXT_BIT,BIT_LE,
+    LAST_BIT}")
+    
+    By the previous style change, CONFIG_GENERIC_FIND_NEXT_BIT,
+    CONFIG_GENERIC_FIND_BIT_LE, and CONFIG_GENERIC_FIND_LAST_BIT are not used
+    to test for existence of find bitops anymore.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 7e6e56b6bd6bb2593e62d5dd302236b28332aced
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Mar 16 15:36:43 2015 +0800
+
+    nios2: set FAULT_FLAG_WRITE after VM_WRITE check
+    
+    Back port from v3.19.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit b2db211a16ed5f7d6f583faa401712ec404e78d9
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Mar 16 15:35:11 2015 +0800
+
+    nios2: mm: do not invoke OOM killer on kernel fault OOM
+    
+    Follow commit 871341023c771ad.
+    
+    Kernel faults are expected to handle OOM conditions gracefully (gup,
+    uaccess etc.), so they should never invoke the OOM killer.  Reserve
+    this for faults triggered in user context when it is the only option.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 5c850c953f6e01fa1e5065e1346686d9a3055e48
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Mar 17 01:42:19 2015 +0800
+
+    nios2: Port OOM changes to do_page_fault()
+    
+    From commit 96f3a5cc33ba.
+    
+    Commit d065bd810b6d ("mm: retry page fault when blocking on disk transfer") and
+    and commit 37b23e0525d3 ("x86,mm: make pagefault killable")
+    
+    The above commits introduced changes into the nios2 pagefault handler
+    for making the page fault handler retryable as well as killable.
+    
+    These changes reduce the mmap_sem hold time, which is crucial
+    during OOM killer invocation.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit aa55272116a191a9512ad383ddadeb649c0b3561
+Author: Chung-Ling Tang <cltang@codesourcery.com>
+Date:   Tue Mar 17 01:40:31 2015 +0800
+
+    nios2: Prevent deadlock in page fault handler
+    
+    Follow commit 840ff6a4f61:
+    
+    As per x86, we may deadlock while trying to get the mmap semaphore.
+    Implement the same fix, which allows (eg) recursive faults to cause
+    an oops instead of deadlocking.
+    
+    Signed-off-by: Chung-Ling Tang <cltang@codesourcery.com>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit d1f82ea7c24320ecaf2af81bdbb1ccd425066ce2
+Author: Chung-Ling Tang <cltang@codesourcery.com>
+Date:   Tue Mar 17 01:36:12 2015 +0800
+
+    nios2: fix unhandled signals
+    
+    From commit a3248d609bd4:
+    
+    Follow other architectures for user fault handling.
+    
+    Signed-off-by: Chung-Ling Tang <cltang@codesourcery.com>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit 0dcf0740d751aa3a7b4764d17ed900c6d4e5b178
+Author: Tobias Klauser <tklauser@distanz.ch>
+Date:   Tue Mar 17 01:27:34 2015 +0800
+
+    nios2: Use preempt_schedule_irq
+    
+    From commit 1b0f44923e:
+    
+    Follow aa0d53260596 ("ia64: Use preempt_schedule_irq") and use
+    preempt_schedule_irq instead of enabling/disabling interrupts and
+    messing around with PREEMPT_ACTIVE in the nios2 low-level preemption
+    code ourselves. Also get rid of the now needless re-check for
+    TIF_NEED_RESCHED, preempt_schedule_irq will already take care of
+    rescheduling.
+    
+    This also fixes the following build error when building with
+    CONFIG_PREEMPT:
+    
+    arch/nios2/kernel/built-in.o: In function `need_resched':
+    arch/nios2/kernel/entry.S:374: undefined reference to `PREEMPT_ACTIVE'
+    
+    Cc: Thomas Gleixner <tglx@linutronix.de>
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit a200f7f1808695da56fbeb23ee23beec062a0a34
+Author: Walter Goossens <waltergoossens@home.nl>
+Date:   Wed Dec 31 09:29:07 2014 +0800
+
+    nios2: Initialize cpuinfo.mmu
+    
+    This patch initializes the mmu field of the cpuinfo structure to the
+    value supplied by the devicetree.
+    
+    Signed-off-by: Walter Goossens <waltergoossens@home.nl>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit c93c295f8a07d4ebd611b9d44b2fb8c3974b9bbb
+Author: Guenter Roeck <linux@roeck-us.net>
+Date:   Mon Mar 16 11:25:33 2015 +0800
+
+    nios2: add definition of ioremap_wc to io.h
+    
+    From commit 76367a52d3cbf:
+    
+    Fix
+    
+    drivers/gpu/drm/drm_bufs.c: In function 'drm_addmap_core':
+    drivers/gpu/drm/drm_bufs.c:213:5:
+    			error: implicit declaration of function 'ioremap_wc'
+    
+    seen when building nios2:allmodconfig.
+    
+    Signed-off-by: Guenter Roeck <linux@roeck-us.net>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit bd4e1f91dc209c48900232013ad39a6d73a27578
+Author: Tobias Klauser <tklauser@distanz.ch>
+Date:   Tue Mar 17 01:24:24 2015 +0800
+
+    nios2: Make NIOS2_CMDLINE_IGNORE_DTB depend on CMDLINE_BOOL
+    
+    From commit 2b2b4074e647f:
+    
+    If NIOS2_CMDLINE_IGNORE_DTB is selected but CMDLINE_BOOL isn't and thus
+    CONFIG_CMDLINE is not defined, the build fails with the following error:
+    
+    arch/nios2/kernel/setup.c: In function 'nios2_boot_init':
+    arch/nios2/kernel/setup.c:131:30: error: 'CONFIG_CMDLINE' undeclared
+    (first use in this function)
+       strncpy(boot_command_line, CONFIG_CMDLINE, COMMAND_LINE_SIZE);
+    
+    This can be reproduced using randconfig with KCONFIG_SEED=0xE5B8749E, i.e.
+    'make KCONFIG_SEED=0xE5B8749E ARCH=nios2 randconfig'.
+    
+    Fix this by letting NIOS2_CMDLINE_IGNORE_DTB depend on CMDLINE_BOOL, so we
+    actually have a default kernel command string to fall back to.
+    
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit 88c80bf9c9e27601762abc739be20b8efde9e7b9
+Author: Tobias Klauser <tklauser@distanz.ch>
+Date:   Tue Mar 17 01:22:57 2015 +0800
+
+    nios2: Add missing NR_CPUS to Kconfig
+    
+    From commit 6e5c8f5f66020:
+    
+    kernel/time/Kconfig expects that NR_CPUS is defined.
+    
+    This fixes the following config warning:
+    "kernel/time/Kconfig:163:warning: range is invalid"
+    
+    Follow 4cbbbb43d666 ("microblaze: Fix missing NR_CPUS in menuconfig")
+    
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit df1c22faf16e4c45a85ee13483eaf2dc3e1d2ca3
+Author: Dmitry Torokhov <dtor@chromium.org>
+Date:   Mon Mar 16 11:16:17 2015 +0800
+
+    nios2: fix error handling of irq_of_parse_and_map
+    
+    From commit b29438f22c807d8a4bda6f0fb3e24318117906c0:
+    
+    Return value of irq_of_parse_and_map() is unsigned int, with 0
+    indicating failure, so testing for negative result never works.
+    
+    Signed-off-by: Dmitry Torokhov <dtor@chromium.org>
+    Reviewed-by: Tobias Klauser <tklauser@distanz.ch>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit fd78541666042f313e90d1c6af7302b33aeb9fff
+Author: Tobias Klauser <tklauser@distanz.ch>
+Date:   Mon Nov 17 18:30:37 2014 +0800
+
+    nios2: Use IS_ENABLED instead of #ifdefs to check config symbols
+    
+    Make the checking for div/mul/mulx instruction config symbols easier to
+    read by using IS_ENABLED instead of #ifdefs.
+    
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Acked-by: Ley Foon Tan <lftan@altera.com>
+
+commit d77f2006a7245888f72c490eb027d06fc3654a57
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Mar 16 10:55:20 2015 +0800
+
+    nios2: port dma-mapping from 3.19
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit bb254953e99a522abf862768433fdfadc76cfdc6
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Tue Mar 10 11:52:54 2015 -0500
+
+    FogBugz #270904-16: A10SYCON: Fix GPIO build warning.
+    
+    Remove unused function that is causing warnings. This function
+    will return at a later time when keys functionality is added.
+    This should be squashed with the earlier 270904-15 build.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7_a10
+
+commit 7c75b734f492565d4aff4314343825fe496e7e22
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Sat Mar 14 03:17:13 2015 -0500
+
+    added LTP
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

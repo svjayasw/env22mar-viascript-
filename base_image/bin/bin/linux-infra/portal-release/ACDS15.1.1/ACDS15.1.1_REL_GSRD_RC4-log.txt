@@ -1,0 +1,18 @@
+
+/home/atull/repos/internal/angstrom-socfpga
+e178d8e Tien Hock Loh : FogBugz #327063: Update commit ID to include fix for syschk refresh rate issuenot pushing branch
+
+/home/atull/repos/internal/linux-refdesigns
+4065da1 Chee Nouk Phoon : FogBugz #324265 Max10: Add ADC demo shellnot pushing branch
+
+/home/atull/repos/internal/linux-socfpga
+bcf9c64 Matthew Gerlach : FogBugz #334036: Fix qspi partitioningnot pushing branch
+
+/home/atull/repos/internal/meta-altera
+2477f90 Tien Hock Loh : FogBugz #329135: Add iperf and pciutils to GSRD rootfs
+/home/atull/repos/internal/meta-altera-refdes
+c48ec1a Tien Hock Loh : FogBugz #327063: Update commit ID of meta-altera-refdes for syschk refresh issuenot pushing branch
+
+/home/atull/repos/internal/uboot-socfpga
+4003f38 Chin Liang See : FogBugz #297183: Enabling ECC overwrite when SDRAM ECC is enablednot pushing branch
+Success

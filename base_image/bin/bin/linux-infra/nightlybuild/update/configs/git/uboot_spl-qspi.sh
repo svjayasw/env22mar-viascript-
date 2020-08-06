@@ -1,0 +1,10 @@
+RELEASE_NAME="13.01.01"
+MACHINE="socfpga_cyclone5"
+PACKAGING="none"
+UBOOT_REPO="gitolite@at-git:uboot-socfpga"
+UBOOT_BRANCH="origin/socfpga_v2013.01.01"
+UBOOT_CONFIG="${MACHINE}"
+CROSS_COMPILE="/opt/altera-linux/linaro/gcc-linaro-arm-linux-gnueabihf-4.7-2012.11-20121123_linux/bin/arm-linux-gnueabihf-"
+UBOOT_PATCH="files/0001-some-patch.patch"
+LATEST_NAME="uboot-${MACHINE}-spl-qspi"
+

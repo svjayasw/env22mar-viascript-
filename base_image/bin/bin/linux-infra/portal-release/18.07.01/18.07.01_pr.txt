@@ -1,0 +1,675 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.17
+branch tag  : rel_socfpga-4.17_18.07.01_pr
+new commits : 1
+103d053 Richard Gong FogBugz #574552: misc: intel-service: resolve a possible memory exception
+
+
+++wiki:
+*Branch name*: socfpga-4.17, *Tag name:* rel_socfpga-4.17_18.07.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 574552 | misc: intel-service: resolve a possible memory exception | [[ https://github.com/altera-opensource/linux-socfpga/commit/103d053ac5948f43806a85c2b991270fa749ec11 ][ 103d053ac5948f43806a85c2b991270fa749ec11 ]] |
+--wiki:
+
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.07.01_pr
+new commits : 7
+da71e4b Richard Gong FogBugz #574552: misc: intel-service: resolve a possible memory exception
+7eda427 Richard Gong FogBugz #566902: driver: misc: change SVC to use kthread_create_on_node API
+5e9c14e Richard Gong FogBugz #568325: driver: misc: fix service layer klocwork errors
+4778971 Alan Tull FogBugz #568760-2: fpga: stratix10-soc: remedy static code analysis error
+ecba3ff Alan Tull FogBugz #568760-1: fpga: stratix10 soc: comparison of unsigned against zero
+5581b5f Thor Thayer ARM: dts: Fix SPI node for Arria10
+9b48e81 Thor Thayer arm64: dts: stratix10: Fix SPI nodes for Stratix10
+
+
+++wiki:
+*Branch name*: socfpga-4.9.78-ltsi, *Tag name:* rel_socfpga-4.9.78-ltsi_18.07.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 574552 | misc: intel-service: resolve a possible memory exception | [[ https://github.com/altera-opensource/linux-socfpga/commit/da71e4b946a8e19dd8dc7236595a81d6d2df1867 ][ da71e4b946a8e19dd8dc7236595a81d6d2df1867 ]] |
+| 566902 | driver: misc: change SVC to use kthread_create_on_node API | [[ https://github.com/altera-opensource/linux-socfpga/commit/7eda42735a0a6283c3210bd5cefc8bc8a8eb7103 ][ 7eda42735a0a6283c3210bd5cefc8bc8a8eb7103 ]] |
+| 568325 | driver: misc: fix service layer klocwork errors | [[ https://github.com/altera-opensource/linux-socfpga/commit/5e9c14e3ef5b2af8837d96b71db63ace09feaeb2 ][ 5e9c14e3ef5b2af8837d96b71db63ace09feaeb2 ]] |
+| 568760-2 | fpga: stratix10-soc: remedy static code analysis error | [[ https://github.com/altera-opensource/linux-socfpga/commit/477897125b8ec0e032979c451dd800cc51f3d724 ][ 477897125b8ec0e032979c451dd800cc51f3d724 ]] |
+| 568760-1 | fpga: stratix10 soc: comparison of unsigned against zero | [[ https://github.com/altera-opensource/linux-socfpga/commit/ecba3ff39f836c3042a939f409cb8190ee993afa ][ ecba3ff39f836c3042a939f409cb8190ee993afa ]] |
+| community | ARM: dts: Fix SPI node for Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/5581b5fd483c03fc668fc12e9df3db035db7007a ][ 5581b5fd483c03fc668fc12e9df3db035db7007a ]] |
+| community | arm64: dts: stratix10: Fix SPI nodes for Stratix10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/9b48e817d33590101c7363bafebca01f40453072 ][ 9b48e817d33590101c7363bafebca01f40453072 ]] |
+--wiki:
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.07.01_pr
+new commits : 7
+aaf2f73 Richard Gong FogBugz #574552: misc: intel-service: resolve a possible memory exception
+09a56d5 Richard Gong FogBugz #566902: driver: misc: change SVC to use kthread_create_on_node API
+1770a94 Richard Gong FogBugz #568325: driver: misc: fix service layer klocwork errors
+de21b59 Alan Tull FogBugz #568760-2: fpga: stratix10-soc: remedy static code analysis error
+ce9a60f Alan Tull FogBugz #568760-1: fpga: stratix10 soc: comparison of unsigned against zero
+fbfd7f7 Thor Thayer ARM: dts: Fix SPI node for Arria10
+1d1641b Thor Thayer arm64: dts: stratix10: Fix SPI nodes for Stratix10
+
+
+++wiki:
+*Branch name*: socfpga-4.9.76-ltsi-rt, *Tag name:* rel_socfpga-4.9.76-ltsi-rt_18.07.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 574552 | misc: intel-service: resolve a possible memory exception | [[ https://github.com/altera-opensource/linux-socfpga/commit/aaf2f73fe59c3a21dab668618311a7e768b101ea ][ aaf2f73fe59c3a21dab668618311a7e768b101ea ]] |
+| 566902 | driver: misc: change SVC to use kthread_create_on_node API | [[ https://github.com/altera-opensource/linux-socfpga/commit/09a56d584a818d2f4475862c6b580d006051cb93 ][ 09a56d584a818d2f4475862c6b580d006051cb93 ]] |
+| 568325 | driver: misc: fix service layer klocwork errors | [[ https://github.com/altera-opensource/linux-socfpga/commit/1770a94d2d13410184f22c63a66fd923faebb44b ][ 1770a94d2d13410184f22c63a66fd923faebb44b ]] |
+| 568760-2 | fpga: stratix10-soc: remedy static code analysis error | [[ https://github.com/altera-opensource/linux-socfpga/commit/de21b596fc9c1cfef5975bc81d8c139fb71076d9 ][ de21b596fc9c1cfef5975bc81d8c139fb71076d9 ]] |
+| 568760-1 | fpga: stratix10 soc: comparison of unsigned against zero | [[ https://github.com/altera-opensource/linux-socfpga/commit/ce9a60f23bfa4ca1056db7eae23f8e18f8151651 ][ ce9a60f23bfa4ca1056db7eae23f8e18f8151651 ]] |
+| community | ARM: dts: Fix SPI node for Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/fbfd7f74a477e2833493bafb4225b6abecd15d02 ][ fbfd7f74a477e2833493bafb4225b6abecd15d02 ]] |
+| community | arm64: dts: stratix10: Fix SPI nodes for Stratix10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/1d1641b04c1cedb1f8b057c94a060749371c2af9 ][ 1d1641b04c1cedb1f8b057c94a060749371c2af9 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.17_18.07.01_pr
+commit: 103d053 Richard Gong FogBugz #574552: misc: intel-service: resolve a possible memory exception
+
+tag:    rel_socfpga-4.9.78-ltsi_18.07.01_pr
+commit: da71e4b Richard Gong FogBugz #574552: misc: intel-service: resolve a possible memory exception
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.07.01_pr
+commit: aaf2f73 Richard Gong FogBugz #574552: misc: intel-service: resolve a possible memory exception
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.07.01_pr
+new commits : 2
+0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+44c1b64 Tien Fong Chee FogBugz #568246-1: arm: Add workaround for Cortex-A9 errata 845369
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_18.07.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 568246-2 | Enable workaround to A5/C5 for Cortex-A9 errata 845369 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/0c9a3bdf3ca1326e3bc539676452f2d4f8895aeb ][ 0c9a3bdf3ca1326e3bc539676452f2d4f8895aeb ]] |
+| 568246-1 | arm: Add workaround for Cortex-A9 errata 845369 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/44c1b644b349bcea1325b30c9b4641201f284404 ][ 44c1b644b349bcea1325b30c9b4641201f284404 ]] |
+--wiki:
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.07.01_pr
+new commits : 2
+2791f93 Tien Fong Chee FogBugz #568246-2: Enable workaround to A10 for Cortex-A9 errata 845369
+c60a78e Tien Fong Chee FogBugz #568246-1: arm: Add workaround for Cortex-A9 errata 845369
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_18.07.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 568246-2 | Enable workaround to A10 for Cortex-A9 errata 845369 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/2791f93f1039136478069c9c9bc8d0e46eac27e8 ][ 2791f93f1039136478069c9c9bc8d0e46eac27e8 ]] |
+| 568246-1 | arm: Add workaround for Cortex-A9 errata 845369 | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/c60a78e486f4727465287f13bec06ea9b9cf9889 ][ c60a78e486f4727465287f13bec06ea9b9cf9889 ]] |
+--wiki:
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.07.01_pr
+new commits : 5
+46a5f9c Tien Fong Chee common/memsize.c: Increase save array for supporting memory size > 4GB
+2478233 Patrick Delaunay common/memsize.c: prepare get_ram_size update
+792ac76 Chin Liang See FogBugz #559877-3: To notify SDM when U-Boot pass control to Linux
+0adfe31 Chin Liang See FogBugz #559877-2: To notify SDM when SPL pass control to U-Boot
+02c02e6 Chin Liang See FogBugz #559877-1: Add mailbox command for HPS execution stage notification
+
+
+++wiki:
+*Branch name*: socfpga_v2017.09, *Tag name:* rel_socfpga_v2017.09_18.07.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | common/memsize.c: Increase save array for supporting memory size > 4GB | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/46a5f9cfe96d4bb61423ed97d74c259698bb291f ][ 46a5f9cfe96d4bb61423ed97d74c259698bb291f ]] |
+| community | common/memsize.c: prepare get_ram_size update | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/2478233aa76c438c00f9964389685045a77c58f5 ][ 2478233aa76c438c00f9964389685045a77c58f5 ]] |
+| 559877-3 | To notify SDM when U-Boot pass control to Linux | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/792ac7696b69b3c8532cd6f6b46ca03efd5bc0ee ][ 792ac7696b69b3c8532cd6f6b46ca03efd5bc0ee ]] |
+| 559877-2 | To notify SDM when SPL pass control to U-Boot | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/0adfe31551a756881d81a86dc84cd77738bce4e3 ][ 0adfe31551a756881d81a86dc84cd77738bce4e3 ]] |
+| 559877-1 | Add mailbox command for HPS execution stage notification | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/02c02e6941c1803f6fef1df38ecdd5641ab20c53 ][ 02c02e6941c1803f6fef1df38ecdd5641ab20c53 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.07.01_pr
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.07.01_pr
+commit: 2791f93 Tien Fong Chee FogBugz #568246-2: Enable workaround to A10 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2017.09_18.07.01_pr
+commit: 46a5f9c Tien Fong Chee common/memsize.c: Increase save array for supporting memory size > 4GB
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.07.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.07.01_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.07.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.07.01_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.07.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.07.01_pr
+new commits : 1
+9fb53d9 Ong, Hean Loong FogBugz #573359-0: Upgrade to Angstrom 2018.06 for GSRD
+
+
+++wiki:
+*Branch name*: angstrom-v2016.12-yocto2.2, *Tag name:* rel_angstrom-v2016.12-yocto2.2_18.07.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 573359-0 | Upgrade to Angstrom 2018.06 for GSRD | [[ https://github.com/altera-opensource/meta-altera/commit/9fb53d9d1c6f7b703e28e24f02d3f43bb7765456 ][ 9fb53d9d1c6f7b703e28e24f02d3f43bb7765456 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.07.01_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.07.01_pr
+commit: 9fb53d9 Ong, Hean Loong FogBugz #573359-0: Upgrade to Angstrom 2018.06 for GSRD
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.07.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_18.07.01_pr
+commit: a9e0753 David Koltak FogBugz #568818-2: Better command line arg checking in example client
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.17
+
+commit 103d053ac5948f43806a85c2b991270fa749ec11
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Fri Jul 6 13:10:37 2018 -0500
+
+    FogBugz #574552: misc: intel-service: resolve a possible memory exception
+    
+    S10 service layer has a potential bug at its routine
+    request_svc_channel_byname(), where service layer driver doesn't validate
+    the name passed by service client so there is no guarantee to get an
+    valid pointer. As a result a memory access exception may occur.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    ---
+    v2: s/-ENODEV/-EPROBE_DEFER if svc's probe was called after client, or error on probe
+        s/-EPROBE_DEFER/-EINVAL if there was no channel match
+    v3: resolve the potential KW error
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+commit da71e4b946a8e19dd8dc7236595a81d6d2df1867
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Fri Jul 6 13:10:37 2018 -0500
+
+    FogBugz #574552: misc: intel-service: resolve a possible memory exception
+    
+    S10 service layer has a potential bug at its routine
+    request_svc_channel_byname(), where service layer driver doesn't validate
+    the name passed by service client so there is no guarantee to get an
+    valid pointer. As a result a memory access exception may occur.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    ---
+    v2: s/-ENODEV/-EPROBE_DEFER if svc's probe was called after client, or error on probe
+        s/-EPROBE_DEFER/-EINVAL if there was no channel match
+    v3: resolve the potential KW error
+
+commit 7eda42735a0a6283c3210bd5cefc8bc8a8eb7103
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue Jun 19 11:01:53 2018 -0500
+
+    FogBugz #566902: driver: misc: change SVC to use kthread_create_on_node API
+    
+    Service layer creates a kthread to handle SMC/HVC calls between kernel
+    driver and secure monitor software, and stops the kthread once service is
+    completed.
+    
+    Change service layer to use kthread_create_on_node() API for a kthread
+    creation so we can prevent kernel from crash with FPGA configuration.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 5e9c14e3ef5b2af8837d96b71db63ace09feaeb2
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue Jun 19 10:41:56 2018 -0500
+
+    FogBugz #568325: driver: misc: fix service layer klocwork errors
+    
+    Klocwork reports the following errors:
+    
+    /home/yves/linux/intel/linux-bringup/drivers/misc/intel-service.c:275 --
+    -- MLK.MIGHT (2:Error) Analyze Possible memory leak. Dynamic memory stored
+    in 'p_data' allocated through function 'kmalloc' at line 262 can be lost
+    at line 275
+    
+    /home/yves/linux/intel/linux-bringup/drivers/misc/intel-service.c:569 --
+    -- MLK.MIGHT (2:Error) Analyze Possible memory leak. Dynamic memory stored
+    in 'pdata' allocated through function 'kmalloc' at line 563 can be lost
+    at line 569
+    
+    /home/yves/linux/intel/linux-bringup/drivers/misc/intel-service.c:284 --
+    -- INFINITE_LOOP.LOCAL (2:Error) Analyze Infinite loop
+    
+    Fix those errors
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 477897125b8ec0e032979c451dd800cc51f3d724
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Jun 19 15:21:35 2018 -0500
+
+    FogBugz #568760-2: fpga: stratix10-soc: remedy static code analysis error
+    
+    Klocwork gave the following:
+     drivers/fpga/stratix10-soc.c:312
+     INFINITE_LOOP.LOCAL (2:Error) Analyze Infinite loop
+    
+    Add a conditional to the while().
+    
+    Clean up the loop to be shorter, clearer, and easier to maintain.
+    
+    Add a variable 'wait_status' for the return value from
+    wait_for_completion_interruptible_timeout instead of reusing 'ret'
+    because value is a long and is handled differently than the other ret
+    values in the loop.
+    
+    s10_free_buffers returns True if all buffers are freed, so no need to
+    call s10_free_buffer_count immediately afterwards.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: add S10_RECONFIG_TIMEOUT
+        rename s/S10_BUF_TIMEOUT/S10_BUFFER_TIMEOUT/
+
+commit ecba3ff39f836c3042a939f409cb8190ee993afa
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Jun 19 10:13:46 2018 -0500
+
+    FogBugz #568760-1: fpga: stratix10 soc: comparison of unsigned against zero
+    
+    Remedy the following Klocwork complaint:
+    
+    drivers/fpga/stratix10-soc.c:330
+    CWARN.NOEFFECT.UCMP.LT (4:Review) Analyze Comparison of unsigned
+    value against 0 is always false
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 5581b5fd483c03fc668fc12e9df3db035db7007a
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri Jun 22 13:37:34 2018 -0500
+
+    ARM: dts: Fix SPI node for Arria10
+    
+    [backport 'commit ea38969d539d ("ARM: dts: Fix SPI node for Arria10")']
+    
+    Backported from dinh_linux_for_next/socfpga_for_next_v4.19_fixes_v1
+    
+    Remove the unused bus-num node and change num-chipselect
+    to num-cs to match SPI bindings.
+    
+    Cc: stable@vger.kernel.org
+    Fixes: f2d6f8f817814 ("ARM: dts: socfpga: Add SPI Master1 for Arria10 SR chip")
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 9b48e817d33590101c7363bafebca01f40453072
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri Jun 22 13:35:38 2018 -0500
+
+    arm64: dts: stratix10: Fix SPI nodes for Stratix10
+    
+    [backport 'commit a5dc41f217c7 ("arm64: dts: stratix10:
+                                     Fix SPI nodes for Stratix10")']
+    
+    Backported from dinh_linux_for_next/socfpga_for_next_v4.19_fixes_v1
+    
+    Remove the unused bus-num node and change num-chipselect
+    to num-cs to match SPI bindings.
+    
+    Cc: stable@vger.kernel.org
+    Fixes: 78cd6a9d8e154 ("arm64: dts: Add base stratix 10 dtsi")
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.76-ltsi-rt
+
+commit aaf2f73fe59c3a21dab668618311a7e768b101ea
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Fri Jul 6 13:10:37 2018 -0500
+
+    FogBugz #574552: misc: intel-service: resolve a possible memory exception
+    
+    S10 service layer has a potential bug at its routine
+    request_svc_channel_byname(), where service layer driver doesn't validate
+    the name passed by service client so there is no guarantee to get an
+    valid pointer. As a result a memory access exception may occur.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    ---
+    v2: s/-ENODEV/-EPROBE_DEFER if svc's probe was called after client, or error on probe
+        s/-EPROBE_DEFER/-EINVAL if there was no channel match
+    v3: resolve the potential KW error
+
+commit 09a56d584a818d2f4475862c6b580d006051cb93
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue Jun 19 11:01:53 2018 -0500
+
+    FogBugz #566902: driver: misc: change SVC to use kthread_create_on_node API
+    
+    Service layer creates a kthread to handle SMC/HVC calls between kernel
+    driver and secure monitor software, and stops the kthread once service is
+    completed.
+    
+    Change service layer to use kthread_create_on_node() API for a kthread
+    creation so we can prevent kernel from crash with FPGA configuration.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 1770a94d2d13410184f22c63a66fd923faebb44b
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Tue Jun 19 10:41:56 2018 -0500
+
+    FogBugz #568325: driver: misc: fix service layer klocwork errors
+    
+    Klocwork reports the following errors:
+    
+    /home/yves/linux/intel/linux-bringup/drivers/misc/intel-service.c:275 --
+    -- MLK.MIGHT (2:Error) Analyze Possible memory leak. Dynamic memory stored
+    in 'p_data' allocated through function 'kmalloc' at line 262 can be lost
+    at line 275
+    
+    /home/yves/linux/intel/linux-bringup/drivers/misc/intel-service.c:569 --
+    -- MLK.MIGHT (2:Error) Analyze Possible memory leak. Dynamic memory stored
+    in 'pdata' allocated through function 'kmalloc' at line 563 can be lost
+    at line 569
+    
+    /home/yves/linux/intel/linux-bringup/drivers/misc/intel-service.c:284 --
+    -- INFINITE_LOOP.LOCAL (2:Error) Analyze Infinite loop
+    
+    Fix those errors
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit de21b596fc9c1cfef5975bc81d8c139fb71076d9
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Jun 19 15:21:35 2018 -0500
+
+    FogBugz #568760-2: fpga: stratix10-soc: remedy static code analysis error
+    
+    Klocwork gave the following:
+     drivers/fpga/stratix10-soc.c:312
+     INFINITE_LOOP.LOCAL (2:Error) Analyze Infinite loop
+    
+    Add a conditional to the while().
+    
+    Clean up the loop to be shorter, clearer, and easier to maintain.
+    
+    Add a variable 'wait_status' for the return value from
+    wait_for_completion_interruptible_timeout instead of reusing 'ret'
+    because value is a long and is handled differently than the other ret
+    values in the loop.
+    
+    s10_free_buffers returns True if all buffers are freed, so no need to
+    call s10_free_buffer_count immediately afterwards.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    ---
+    v2: add S10_RECONFIG_TIMEOUT
+        rename s/S10_BUF_TIMEOUT/S10_BUFFER_TIMEOUT/
+
+commit ce9a60f23bfa4ca1056db7eae23f8e18f8151651
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Jun 19 10:13:46 2018 -0500
+
+    FogBugz #568760-1: fpga: stratix10 soc: comparison of unsigned against zero
+    
+    Remedy the following Klocwork complaint:
+    
+    drivers/fpga/stratix10-soc.c:330
+    CWARN.NOEFFECT.UCMP.LT (4:Review) Analyze Comparison of unsigned
+    value against 0 is always false
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit fbfd7f74a477e2833493bafb4225b6abecd15d02
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri Jun 22 13:37:34 2018 -0500
+
+    ARM: dts: Fix SPI node for Arria10
+    
+    [backport 'commit ea38969d539d ("ARM: dts: Fix SPI node for Arria10")']
+    
+    Backported from dinh_linux_for_next/socfpga_for_next_v4.19_fixes_v1
+    
+    Remove the unused bus-num node and change num-chipselect
+    to num-cs to match SPI bindings.
+    
+    Cc: stable@vger.kernel.org
+    Fixes: f2d6f8f817814 ("ARM: dts: socfpga: Add SPI Master1 for Arria10 SR chip")
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 1d1641b04c1cedb1f8b057c94a060749371c2af9
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Fri Jun 22 13:35:38 2018 -0500
+
+    arm64: dts: stratix10: Fix SPI nodes for Stratix10
+    
+    [backport 'commit a5dc41f217c7 ("arm64: dts: stratix10:
+                                     Fix SPI nodes for Stratix10")']
+    
+    Backported from dinh_linux_for_next/socfpga_for_next_v4.19_fixes_v1
+    
+    Remove the unused bus-num node and change num-chipselect
+    to num-cs to match SPI bindings.
+    
+    Cc: stable@vger.kernel.org
+    Fixes: 78cd6a9d8e154 ("arm64: dts: Add base stratix 10 dtsi")
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 0c9a3bdf3ca1326e3bc539676452f2d4f8895aeb
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Jun 27 13:45:00 2018 +0800
+
+    FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+    
+    Under very rare timing circumstances, transition into
+    streaming mode might create a data corruption. Exists on
+    all Cortex-A9 revisions.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 44c1b644b349bcea1325b30c9b4641201f284404
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Jun 27 13:50:20 2018 +0800
+
+    FogBugz #568246-1: arm: Add workaround for Cortex-A9 errata 845369
+    
+    This workaround is porting from U-boot mainstream with minor modification
+    by removing the Kconfig to fit into downstream which is not fully
+    supporting Kconfig.
+    http://git.denx.de/?p=u-boot.git;a=commit;h=11d94319c32cc8590db2f1e186d19f32e652436c
+    
+    Comment of patch from mainstream:
+    Under very rare timing circumstances, transitioning into streaming
+    mode might create a data corruption. Present on Two or more processors
+    or 1 core with ACP, all revisions. This erratum can be worked round
+    by setting bit[22] of the undocumented Diagnostic Control Register to 1.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 2791f93f1039136478069c9c9bc8d0e46eac27e8
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Jun 27 13:50:50 2018 +0800
+
+    FogBugz #568246-2: Enable workaround to A10 for Cortex-A9 errata 845369
+    
+    Under very rare timing circumstances, transition into
+    streaming mode might create a data corruption. Exists on
+    all Cortex-A9 revisions.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit c60a78e486f4727465287f13bec06ea9b9cf9889
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Jun 27 13:50:20 2018 +0800
+
+    FogBugz #568246-1: arm: Add workaround for Cortex-A9 errata 845369
+    
+    This workaround is porting from U-boot mainstream with minor modification
+    by removing the Kconfig to fit into downstream which is not fully
+    supporting Kconfig.
+    http://git.denx.de/?p=u-boot.git;a=commit;h=11d94319c32cc8590db2f1e186d19f32e652436c
+    
+    Comment of patch from mainstream:
+    Under very rare timing circumstances, transitioning into streaming
+    mode might create a data corruption. Present on Two or more processors
+    or 1 core with ACP, all revisions. This erratum can be worked round
+    by setting bit[22] of the undocumented Diagnostic Control Register to 1.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 46a5f9cfe96d4bb61423ed97d74c259698bb291f
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Jun 20 15:06:20 2018 +0800
+
+    common/memsize.c: Increase save array for supporting memory size > 4GB
+    
+    In ARM 64-bits, memory size can be supported is more than 4GB,
+    hence increasing save array is needed to cope with testing larger memory.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 2478233aa76c438c00f9964389685045a77c58f5
+Author: Patrick Delaunay <patrick.delaunay@st.com>
+Date:   Thu Jan 25 18:07:45 2018 +0100
+
+    common/memsize.c: prepare get_ram_size update
+    
+    Save the content of the base address in a new variable
+    in stack (save_base) to prepare restore this content.
+    
+    This patch don't modified code behavior and stack usage.
+    
+    Signed-off-by: Patrick Delaunay <patrick.delaunay@st.com>
+
+commit 792ac7696b69b3c8532cd6f6b46ca03efd5bc0ee
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed May 16 16:24:17 2018 +0800
+
+    FogBugz #559877-3: To notify SDM when U-Boot pass control to Linux
+    
+    Prior U-Boot pass control to Linux, U-Boot will send a mailbox command
+    "HPS_STAGE_NOTIFY" to notify Secure Device Manager (SDM) on HPS SW
+    transition.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 0adfe31551a756881d81a86dc84cd77738bce4e3
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed May 16 14:26:23 2018 +0800
+
+    FogBugz #559877-2: To notify SDM when SPL pass control to U-Boot
+    
+    Prior SPL pass control to U-Boot, SPL will send a mailbox command
+    "HPS_STAGE_NOTIFY" to notify Secure Device Manager (SDM) on HPS SW
+    transition.
+    
+    The purpose is for debug as user can query SDM on HPS error details
+    when HPS enters a warm reset due to error such as watchdog.
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+commit 02c02e6941c1803f6fef1df38ecdd5641ab20c53
+Author: Chin Liang See <chin.liang.see@intel.com>
+Date:   Wed May 16 13:33:31 2018 +0800
+
+    FogBugz #559877-1: Add mailbox command for HPS execution stage notification
+    
+    Add a new mailbox command "HPS_STAGE_NOTIFY" to notify Secure Device
+    Manager (SDM) on the stage of HPS code execution. In general, there
+    are three main code execution stages: First Stage Boot Loader (FSBL)
+    which is U-Boot SPL, Second Stage Boot Loader (SSBL) which is U-Boot,
+    and the Operating System which is Linux
+    
+    Signed-off-by: Chin Liang See <chin.liang.see@intel.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2016.12-yocto2.2
+
+commit 9fb53d9d1c6f7b703e28e24f02d3f43bb7765456
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Tue Jul 3 15:53:12 2018 +0800
+
+    FogBugz #573359-0: Upgrade to Angstrom 2018.06 for GSRD
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+

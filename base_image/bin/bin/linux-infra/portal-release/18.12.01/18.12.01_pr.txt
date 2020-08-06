@@ -1,0 +1,242 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+The following new branches were pushed:
+repo : linux-socfpga          branch : socfpga-4.14.73-ltsi-rt
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.18
+branch tag  : rel_socfpga-4.18_18.12.01_pr
+new commits : 1
+e8172d3 Dinh Nguyen arm64: dts: stratix10: add ethernet aliases
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.18 *Tag name:* rel_socfpga-4.18_18.12.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | arm64: dts: stratix10: add ethernet aliases | [[ https://github.com/altera-opensource/linux-socfpga/commit/e8172d3cc403cdc6d10da29b262d9667a1300434 ][ e8172d3cc403cdc6d10da29b262d9667a1300434 ]] |
+--wiki:
+
+
+branch      : socfpga-4.19
+branch tag  : rel_socfpga-4.19_18.12.01_pr
+new commits : 1
+198462b Dinh Nguyen arm64: dts: stratix10: add ethernet aliases
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.19 *Tag name:* rel_socfpga-4.19_18.12.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | arm64: dts: stratix10: add ethernet aliases | [[ https://github.com/altera-opensource/linux-socfpga/commit/198462b4f84327ef1fa8a877735ef5ea625f319d ][ 198462b4f84327ef1fa8a877735ef5ea625f319d ]] |
+--wiki:
+
+
+branch      : socfpga-4.14.73-ltsi
+branch tag  : rel_socfpga-4.14.73-ltsi_18.12.01_pr
+new commits : 1
+2bcc025 Dinh Nguyen arm64: dts: stratix10: add ethernet aliases
+
+
+++wiki:
+*Repo name*: linux-socfpga *Branch name*: socfpga-4.14.73-ltsi *Tag name:* rel_socfpga-4.14.73-ltsi_18.12.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | arm64: dts: stratix10: add ethernet aliases | [[ https://github.com/altera-opensource/linux-socfpga/commit/2bcc0257f3cdd5e4c0b26c34dfea92c3c23453c8 ][ 2bcc0257f3cdd5e4c0b26c34dfea92c3c23453c8 ]] |
+--wiki:
+
+
+branch      : socfpga-4.14.73-ltsi-rt
+branch tag  : rel_socfpga-4.14.73-ltsi-rt_18.12.01_pr
+Pushing new branch to external git
+
+
+
+++wiki:
+*New branch added:*Repo name*: linux-socfpga *Branch name*: socfpga-4.14.73-ltsi-rt *Tag name:* rel_socfpga-4.14.73-ltsi-rt_18.12.01_pr
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.18_18.12.01_pr
+commit: e8172d3 Dinh Nguyen arm64: dts: stratix10: add ethernet aliases
+
+tag:    rel_socfpga-4.19_18.12.01_pr
+commit: 198462b Dinh Nguyen arm64: dts: stratix10: add ethernet aliases
+
+tag:    rel_socfpga-4.14.73-ltsi_18.12.01_pr
+commit: 2bcc025 Dinh Nguyen arm64: dts: stratix10: add ethernet aliases
+
+tag:    rel_socfpga-4.14.73-ltsi-rt_18.12.01_pr
+commit: 73ea6d1 Thor Thayer net: stmmac: Fix RX packet size > 8191
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.12.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.12.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.12.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.12.01_pr
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.12.01_pr
+commit: af568f3 Tien Fong Chee FogBugz #604090-2: Enable FPGA manager HPS JTAG driver implementation
+
+tag:    rel_socfpga_v2017.09_18.12.01_pr
+commit: 557e87f Chee Hong Ang FogBugz #604051: Fix minor code mistake in L2 reset sequence
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.12.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.12.01_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.12.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.12.01_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.12.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.12.01_pr
+new commits : 0
+
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_18.12.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.12.01_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.12.01_pr
+commit: 3a47b14 Ong, Hean Loong update 4.9.78-ltsi to commit ID 5704788
+
+tag:    rel_angstrom-v2018.06-yocto2.5_18.12.01_pr
+commit: e66738a Ong, Hean Loong add 4.14.73-ltsi linux socfpga recipe
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.12.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_18.12.01_pr
+commit: 0a0715f David Koltak FogBugz #592404-4: Add raw slot data commands to example
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.18
+
+commit e8172d3cc403cdc6d10da29b262d9667a1300434
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Fri Sep 28 14:31:49 2018 -0500
+
+    arm64: dts: stratix10: add ethernet aliases
+    
+    Add ethernet<n> alias for all gmacs on the devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    ---
+    v2: move ethernet aliases to board file
+    
+    (cherry picked from commit 74cad26d8d156406bca4ec0045f3147de4f6f918)
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.19
+
+commit 198462b4f84327ef1fa8a877735ef5ea625f319d
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Fri Sep 28 14:31:49 2018 -0500
+
+    arm64: dts: stratix10: add ethernet aliases
+    
+    Add ethernet<n> alias for all gmacs on the devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    ---
+    v2: move ethernet aliases to board file
+    
+    (cherry picked from commit 74cad26d8d156406bca4ec0045f3147de4f6f918)
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi
+
+commit 2bcc0257f3cdd5e4c0b26c34dfea92c3c23453c8
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Fri Sep 28 14:31:49 2018 -0500
+
+    arm64: dts: stratix10: add ethernet aliases
+    
+    Add ethernet<n> alias for all gmacs on the devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    ---
+    v2: move ethernet aliases to board file
+    
+    (cherry picked from commit 74cad26d8d156406bca4ec0045f3147de4f6f918)
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi-rt
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+

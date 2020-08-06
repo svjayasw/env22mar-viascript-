@@ -1,0 +1,277 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.1
+branch tag  : rel_socfpga-4.1_15.10.01_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.10.01_rc1
+new commits : 2
+a111e8e Chee Nouk Phoon FogBugz #314769-2: dts: Max10: Enable Altera Modular ADC Linux Driver
+5a843dc Chee Nouk Phoon FogBugz #314769-1: Max10: Add Altera Modular ADC Linux Driver
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.10.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.1_15.10.01_rc1
+commit: 186070d4 Dinh Nguyen FogBugz #317771: Fix all the memory leaks
+
+tag:    rel_socfpga-3.10-ltsi_15.10.01_rc1
+commit: a111e8e Chee Nouk Phoon FogBugz #314769-2: dts: Max10: Enable Altera Modular ADC Linux Driver
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.10.01_rc1
+commit: 8a34ee1 Graham Moore FogBugz #314791: QSPI: Set jedec_id in flash data structure
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.10.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.10.01_rc1
+new commits : 2
+32d4ff1 Chin Liang See FogBugz #318995: Enable L2 cache prefetch
+6e73bbb Chin Liang See FogBugz #314605: Fix DDR scheduler's ddrconf register value
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.10.01_rc1
+commit: 4003f38 Chin Liang See FogBugz #297183: Enabling ECC overwrite when SDRAM ECC is enabled
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.10.01_rc1
+commit: 32d4ff1 Chin Liang See FogBugz #318995: Enable L2 cache prefetch
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.10.01_rc1
+new commits : 2
+28881bd Tien Hock Loh FogBugz #323201: Update branch of meta-altera
+62682c8 Koen Kooi layerman: fix gitorious layers
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.10.01_rc1
+commit: 28881bd Tien Hock Loh FogBugz #323201: Update branch of meta-altera
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.10.01_rc1
+new commits : 2
+889cfa0 Tien Hock Loh FogBugz #308077: Change JFFS2_ERASEBLOCK size and add jffs2 image generation
+ca74973 Yves Vandervennet FogBugz #318539: addition of arria10 machines
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.10.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.10.01_rc1
+commit: 889cfa0 Tien Hock Loh FogBugz #308077: Change JFFS2_ERASEBLOCK size and add jffs2 image generation
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.10.01_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit a111e8ee9f51a1f590d396c1c5ae4ecc3252d7c3
+Author: Chee Nouk Phoon <cnphoon@altera.com>
+Date:   Fri Sep 18 15:12:53 2015 +0800
+
+    FogBugz #314769-2: dts: Max10: Enable Altera Modular ADC Linux Driver
+    
+    Altera Modular ADC is soft IP that wraps the hardened ADC block in a Max10
+    device. It can be configured to dual ADC mode that supports two channel
+    synchronous sampling or independent single ADCs. ADC sampled values will be
+    written into memory slots in sequence determined by a user configurable
+    sequencer block.
+    
+    This patch adds device tree binding for Altera Modular ADC driver
+    
+    Signed-off-by: Chee Nouk Phoon <cnphoon@altera.com>
+    
+    ---
+    V2:Add dual ADC compatibility string
+       Update ADC memory slot sequence name to match generated device tree
+    
+    v3:Add periods at end of sentences
+    
+    v4:Update letter case and periods
+       Fix typographical error
+       Fix device tree indentation
+       Add statement of valid values ranges
+    
+    v5:Fix compatibility string and register node at example node
+       Change interrupt parent to a GIC
+
+commit 5a843dc6d91e77c97d174bae417bdd218b1e8121
+Author: Chee Nouk Phoon <cnphoon@altera.com>
+Date:   Mon Sep 14 15:02:51 2015 +0800
+
+    FogBugz #314769-1: Max10: Add Altera Modular ADC Linux Driver
+    
+    This patch adds support for Altera Modular ADC. The same driver will
+    support both single and dual ADC configuration available on Max10 device
+    family.
+    
+    Signed-off-by: Chee Nouk Phoon <cnphoon@altera.com>
+    
+    ---
+    V2:Adding device-tree value checking
+       Formatting and alignments
+       Adding macros and update macros naming
+       Update HW initialize sequence to disable interrupt before start sampling
+       Fix missing period in license header
+    
+    V3:Update macros naming
+       Remove Nios2 arch dependency in Kconfig
+    
+    V4:Using devm_kzalloc instead of kcalloc
+       Remove NULL assignment at variable declaration
+       Parse resource using reg-name instead of index
+       Improve error handling
+       Use _relaxed version of writel and readl
+    
+    V5:Adding zero check for device tree values
+    
+    V6:Fix sysfs string constant char pointer assignments
+       Remove unnecessary private data
+       Replace sprintf with snprintf
+       Fix device tree value error handling
+    
+    V7:Add error checks when getting resource
+       Improve memory handling when constructing sysfs string
+    
+    v8:Allocate memory for array pointers
+       kfree char arrays when fail to load driver
+    
+    v9:Simplify sysfs string and memory allocation
+       Remove extra blank lines
+    
+    v10:Update formating
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 32d4ff1a3cef7a4e56e72f76999668a20ca7d456
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Sep 4 18:02:11 2015 +0800
+
+    FogBugz #318995: Enable L2 cache prefetch
+    
+    Enable L2 cache prefetch for better processor
+    performance.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 6e73bbb6e011b2abccbf3674bbd8fa9adfefbb2b
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Sep 4 17:16:11 2015 +0800
+
+    FogBugz #314605: Fix DDR scheduler's ddrconf register value
+    
+    Fix DDR scheduler driver on ensuring setting up the correct
+    DDR configuration definition (ddrconf) register value. Value
+    0 is removed from ddr_config array as index 0 should refer
+    to ARRIA_DDR_CONFIG(0, 3, 10, 12).
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Add more clarification in commit message
+
+-----------------------------------------------------------------------
+
+log of angstrom-socfpga branch angstrom-v2014.12-socfpga
+
+commit 28881bdf04f230c09a60d4480e8b7d670507f692
+Author: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+Date:   Thu Sep 10 23:07:19 2015 +0800
+
+    FogBugz #323201: Update branch of meta-altera
+    
+    This is to update the meta-altera branch to point to the branch
+    angstrom-v2014.12-yocto1.7_a10 to angstrom-v2014.12-yocto1.7. All changes
+    were integrated from _a10 branch to the main branch.
+    
+    Signed-off-by: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+
+commit 62682c89155a9a12ace251567c6ef68f3df57b71
+Author: Koen Kooi <koen@dominion.thruhere.net>
+Date:   Sun Jul 12 18:54:12 2015 +0200
+
+    layerman: fix gitorious layers
+    
+    Signed-off-by: Koen Kooi <koen@dominion.thruhere.net>
+    
+    Conflicts:
+    	sources/layers.txt
+    
+    Conflicts:
+    	sources/layers.txt
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7
+
+commit 889cfa0f2a241010b0d4425ccb9bf1bc0bcdbccc
+Author: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+Date:   Wed Aug 19 18:22:16 2015 +0800
+
+    FogBugz #308077: Change JFFS2_ERASEBLOCK size and add jffs2 image generation
+    
+    This is to change the JFFS2_ERASEBLOCK size to 0x10000 to match kernel's
+    erase block size. Also add jffs2 to FSTYPES for Angstrom to generate jffs2
+    by default
+    
+    Signed-off-by: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+    
+    Conflicts:
+    	conf/machine/arria10.conf
+
+commit ca7497336329fdf27cc24c0249499f71f31cc68a
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Fri Sep 4 22:07:35 2015 -0500
+
+    FogBugz #318539: addition of arria10 machines
+    
+    Merge from the branch angstrom-v2014.12-yocto1.7_a10
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

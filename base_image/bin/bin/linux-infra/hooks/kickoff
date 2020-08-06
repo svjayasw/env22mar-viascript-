@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# script to kick off a build
+
+# $1 = repo
+# $2 = commit id
+# $3 = tag name
+REPO="$1"
+COMMIT_ID="$2"
+TAG_NAME="$3"
+
+# internals
+SELF=$(basename $0)
+
+# settings
+JENKINS_SERVER="jenkins-vm"
+JENKINS_HTTP="http://${JENKINS_SERVER}:8080"
+GIT_SERVER=at-git
+
+echo "kickoff, repo=${REPO}"
+echo "${JENKINS_HTTP}/git/notifyCommit?url=gitolite@${GIT_SERVER}:${REPO}&sha1=${COMMIT_ID}"
+
+case ${REPO} in
+    linux-tags)
+        echo "${SELF}: triggering builds (jenkins) tag: ${TAG_NAME}, commit: ${COMMIT_ID}."
+        curl "${JENKINS_HTTP}/git/notifyCommit?url=gitolite@${GIT_SERVER}:${REPO}&sha1=${COMMIT_ID}"
+        ;;
+esac
+exit 0

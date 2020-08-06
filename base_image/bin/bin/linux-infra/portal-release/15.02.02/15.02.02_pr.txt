@@ -1,0 +1,163 @@
+
+This is the regular biweekly release, not related to
+the current bringup effort.
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.18
+branch tag  : rel_socfpga-3.18_15.02.02_pr
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.02.02_pr
+new commits : 1
+23ebb70 Seungwon Jeon mmc: dw_mmc: set the supported max/min frequency
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_15.02.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | mmc: dw_mmc: set the supported max/min frequency | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=23ebb702a38652ff48aabe599c9a4a95a20e3706 ][ 23ebb702a38652ff48aabe599c9a4a95a20e3706 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.02.02_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.18_15.02.02_pr
+commit: ab3f83e Thor Thayer FogBugz #261262: Cleanup of SPI device tree (3.18)
+
+tag:    rel_socfpga-3.10-ltsi_15.02.02_pr
+commit: 23ebb70 Seungwon Jeon mmc: dw_mmc: set the supported max/min frequency
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.02.02_pr
+commit: 7ea94617 Ley Foon Tan FogBugz #246108: nios2: initialize one timer only
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.02.02_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_15.02.02_pr
+commit: 32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_15.02.02_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_15.02.02_pr
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_15.02.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_15.02.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_15.02.02_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_15.02.02_pr
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_15.02.02_pr
+commit: 65417bc Yves Vandervennet kde repo moved, it's now meta-kde4
+
+tag:    rel_angstrom-v2014.06-socfpga_15.02.02_pr
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_15.02.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_15.02.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_15.02.02_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_15.02.02_pr
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_15.02.02_pr
+commit: fe61959 Yves Vandervennet Recipe for 3.17
+
+tag:    rel_angstrom-v2014.06-yocto1.6_15.02.02_pr
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 23ebb702a38652ff48aabe599c9a4a95a20e3706
+Author: Seungwon Jeon <tgih.jun@samsung.com>
+Date:   Sat Aug 31 00:13:31 2013 +0900
+
+    mmc: dw_mmc: set the supported max/min frequency
+    
+    Both f_max and f_min will be informed for core layer to request
+    valid clock rate. But current setting from 'host->bus_hz' may
+    not represent the max/min frequency properly. Even if host can
+    actually support high speed than bus_hz, core layer will not
+    request clock rate over bus_hz. Basically, f_max/f_min can be set
+    with the values according to spec. And then host will make its best
+    effort to meet the rate.
+    
+    Signed-off-by: Seungwon Jeon <tgih.jun@samsung.com>
+    Tested-by: Alim Akhtar <alim.akhtar@samsung.com>
+    Signed-off-by: Chris Ball <cjb@laptop.org>
+    
+    Conflicts:
+    	Documentation/devicetree/bindings/mmc/synopsis-dw-mshc.txt
+
+-----------------------------------------------------------------------
+

@@ -1,0 +1,121 @@
++ cd /home/atull/repos/internal/linux-socfpga
++ git tag -d rel_socfpga-3.18_15.04.01_pr
+Deleted tag 'rel_socfpga-3.18_15.04.01_pr' (was 24890c3)
++ echo
+
++ echo
+
++ git tag -d rel_socfpga-3.10-ltsi_15.04.01_pr
+Deleted tag 'rel_socfpga-3.10-ltsi_15.04.01_pr' (was 5277e38)
++ echo
+
++ echo
+
++ git tag -d rel_socfpga-3.10-ltsi-rt_15.04.01_pr
+Deleted tag 'rel_socfpga-3.10-ltsi-rt_15.04.01_pr' (was c839572)
++ echo
+
++ echo
+
++ cd /home/atull/repos/internal/uboot-socfpga
++ git tag -d rel_socfpga_v2013.01.01_15.04.01_pr
+Deleted tag 'rel_socfpga_v2013.01.01_15.04.01_pr' (was 32c1d91)
++ echo
+
++ echo
+
++ git tag -d rel_socfpga_v2014.10_arria10_bringup_15.04.01_pr
+error: tag 'rel_socfpga_v2014.10_arria10_bringup_15.04.01_pr' not found.
++ cd /home/atull/repos/internal/linux-socfpga
++ git tag -d rel_socfpga-3.18_15.04.01_pr
+error: tag 'rel_socfpga-3.18_15.04.01_pr' not found.
++ echo
+
++ echo
+
++ git tag -d rel_socfpga-3.10-ltsi_15.04.01_pr
+error: tag 'rel_socfpga-3.10-ltsi_15.04.01_pr' not found.
++ echo
+
++ echo
+
++ git tag -d rel_socfpga-3.10-ltsi-rt_15.04.01_pr
+error: tag 'rel_socfpga-3.10-ltsi-rt_15.04.01_pr' not found.
++ echo
+
++ echo
+
++ cd /home/atull/repos/internal/uboot-socfpga
++ git tag -d rel_socfpga_v2013.01.01_15.04.01_pr
+error: tag 'rel_socfpga_v2013.01.01_15.04.01_pr' not found.
++ echo
+
++ echo
+
++ git tag -d rel_socfpga_v2014.10_arria10_bringup_15.04.01_pr
+error: tag 'rel_socfpga_v2014.10_arria10_bringup_15.04.01_pr' not found.
++ echo
+
++ echo
+
++ cd /home/atull/repos/internal/poky
++ git tag -d rel_danny-altera_15.04.01_pr
+Deleted tag 'rel_danny-altera_15.04.01_pr' (was 2ea1134)
++ echo
+
++ echo
+
++ cd /home/atull/repos/internal/angstrom-socfpga
++ git tag -d rel_angstrom-v2012.12-socfpga_15.04.01_pr
+Deleted tag 'rel_angstrom-v2012.12-socfpga_15.04.01_pr' (was a741101)
++ echo
+
++ echo
+
++ git tag -d rel_angstrom-v2013.12-socfpga_15.04.01_pr
+Deleted tag 'rel_angstrom-v2013.12-socfpga_15.04.01_pr' (was 65417bc)
++ echo
+
++ echo
+
++ git tag -d rel_angstrom-v2014.06-socfpga_15.04.01_pr
+Deleted tag 'rel_angstrom-v2014.06-socfpga_15.04.01_pr' (was 4460560)
++ echo
+
++ echo
+
++ git tag -d rel_angstrom-v2014.12-socfpga_15.04.01_pr
+Deleted tag 'rel_angstrom-v2014.12-socfpga_15.04.01_pr' (was e8f1e58)
++ echo
+
++ echo
+
++ cd /home/atull/repos/internal/meta-altera
++ git tag -d rel_angstrom-v2012.12-yocto1.3_15.04.01_pr
+Deleted tag 'rel_angstrom-v2012.12-yocto1.3_15.04.01_pr' (was b16478f)
++ echo
+
++ echo
+
++ git tag -d rel_angstrom-v2013.12-yocto1.5_15.04.01_pr
+Deleted tag 'rel_angstrom-v2013.12-yocto1.5_15.04.01_pr' (was 1090ffb)
++ echo
+
++ echo
+
++ git tag -d rel_angstrom-v2014.06-yocto1.6_15.04.01_pr
+Deleted tag 'rel_angstrom-v2014.06-yocto1.6_15.04.01_pr' (was 9fe0657)
++ echo
+
++ echo
+
++ git tag -d rel_angstrom-v2014.12-yocto1.7_15.04.01_pr
+Deleted tag 'rel_angstrom-v2014.12-yocto1.7_15.04.01_pr' (was 95d38e0)
++ echo
+
++ echo
+
++ git tag -d rel_angstrom-v2014.12-yocto1.7_a10_15.04.01_pr
+Deleted tag 'rel_angstrom-v2014.12-yocto1.7_a10_15.04.01_pr' (was 7c75b73)
++ echo
+

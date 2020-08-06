@@ -1,0 +1,204 @@
+This is a script-generated report of what will be pushed to the portal today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch socfpga-3.12 :
+  new commits: 7
+0c0403b Graham Moore FogBugz #168684: Disable NAND driver in devicetree
+8c7f93b Vince Bridgers FogBugz #171833: Strip VLAN tags in EMAC Receive path so GRO works as expected
+c279a04 Vince Bridgers FogBugz #169570: TX TCP Checksum offload is broken for Jumbo frames
+dcacc48 Boojin Kim This patch adds to support burst mode for dev-to-mem and mem-to-dev transmit
+9c17af3 Yves Vandervennet GCOV fix for GCC 4.7.x
+849c854 Dinh Nguyen FogBugz #171612: Remove hard-coded frequencies for Timers and UARTs
+7eb7428 Dinh Nguyen FogBugz #169918: Map the OCRAM in the device tree file.
+
+
+branch socfpga-3.4-ltsi :
+  new commits: 0
+
+
+branch socfpga-3.9-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: uboot-socfpga
+
+branch socfpga_v2013.01.01 :
+  new commits: 2
+f566519 Chin Liang See FogBugz #171615: Ensure local variable in QSPI driver initialized
+82310b7 Chin Liang See FogBugz #168357: Enhance to auto calculate SDRAM size
+
+
+branch socfpga_v2013.01.01-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: poky
+
+branch danny-altera :
+  new commits: 0
+
+
+branch danny-altera-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.12
+
+commit 0c0403be66835dbcdaac1a2b76557d0024c60bcd
+Author: Graham Moore <grmoore@altera.com>
+Date:   Wed Dec 11 12:56:09 2013 -0600
+
+    FogBugz #168684: Disable NAND driver in devicetree
+    
+    On our CycloneV, sometimes a NAND chip is detected even though
+    there isn't one on the board.  The Denali NAND driver already
+    has code to prevent erroneous detections, but apparently it's
+    not working as well as it could.  Our solution is to disable the NAND
+    driver by default for socfpga.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit 8c7f93b7800f23570dfd38618be9610a09206b6f
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Thu Dec 12 11:28:54 2013 -0600
+
+    FogBugz #171833: Strip VLAN tags in EMAC Receive path so GRO works as expected
+    
+    The EMAC driver was advertising the NETIF_F_HW_VLAN_TAG_RX feature flag,
+    which indicates that the hardware supports VLAN tag stripping in receive
+    frames, but the hardware does not support VLAN tag stripping, and the
+    driver was not stripping the VLANs either. This causes a slow processing
+    path to be taken in the GRO portion of the stack's receive processing,
+    drastically impacting receive performance. The fix is for the driver to
+    detect and strip the VLAN tag correctly, and correctly setting any
+    detected and received VLAN tag into the skb.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit c279a041fed9b871e3b0aa120aa5abb5456069d6
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Mon Dec 9 15:01:39 2013 -0600
+
+    FogBugz #169570: TX TCP Checksum offload is broken for Jumbo frames
+    
+    The Synopsys EMAC will checksum jumbo transmit frames only up to a
+    certain size correctly, since the controller will start to egress
+    an outbound packet when it starts reaching the maximum size of the
+    transmit fifo. In the Altera configuration case, the PBL, or
+    programmed burst length is set to 64, the transmit fifo size is 4K,
+    and the bus datawidth is 32-bits. The equation to determine the
+    correct maximum MTU is FIFOSIZE-((PBL+3)*(BUSWIDTH/8)) ==
+    4096-(67*4) = 3828. Then we need to account for possible VLAN tags,
+    inner and outer, and then transform than number into an Ethernet
+    MTU, which gives us 3828-8-14-4 (8 bytes for two VLANs, 14 bytes
+    for the standard Ethernet header size, and another 4 bytes for
+    CRC). That gives us 3802. So we'll make it a maximum jumbo frame
+    size of 3800.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit dcacc4865f42cd3b46fda8e4d1c4d71b3850f66d
+Author: Boojin Kim <boojin.kim@samsung.com>
+Date:   Fri Feb 22 17:04:15 2013 +0900
+
+    This patch adds to support burst mode for dev-to-mem and mem-to-dev transmit
+    
+    Change-Id: I9723e49383416773699cf7735168177c8d036f30
+    Signed-off-by: Boojin Kim <boojin.kim@samsung.com>
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit 9c17af319869e15a64fc1b9ffdcdeca120eea9b3
+Author: Yves Vandervennet <yvanderv@altera.com>
+Date:   Fri Dec 6 12:39:36 2013 -0600
+
+    GCOV fix for GCC 4.7.x
+    
+    Changes the data structures of GCOV to handle GCC 4.7 code
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@altera.com>
+
+commit 849c8542a131c6bea3ad9137a014734dabf9ee75
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Dec 3 17:12:43 2013 -0600
+
+    FogBugz #171612: Remove hard-coded frequencies for Timers and UARTs
+    
+    Update the UART and timers clock node so that the driver can query for the
+    frequency, instead of hard-coding the frequency values.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 7eb74284bb199f3c74e061ca9aa84f78c8d80af5
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Sat Nov 23 21:16:35 2013 -0600
+
+    FogBugz #169918: Map the OCRAM in the device tree file.
+    
+    By mapping the OCRAM in the device tree, this enables peripheral(s) to make
+    use of the OCRAM by a assigning an iram node, and using:
+    
+    of_get_named_gen_pool(np, "iram", 0);
+    
+    This patch also enables the generic SRAM driver that will map the OCRAM into
+    a generic mempool.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    ---
+    v3: fix-up drivers/misc/Kconfig to match kernel.org
+    v2: 64kB of OCRAM
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit f56651976043b96a653f60a5cd8177ecd327254a
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Dec 4 13:34:31 2013 -0800
+
+    FogBugz #171615: Ensure local variable in QSPI driver initialized
+    
+    Ensure the local variable used in QSPI driver is properly
+    initialized. This is to avoid the variable being assigned with
+    garbage value which will affect the program flow.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 82310b73c91a4dfbead6c6c3663e161beaa8121a
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Dec 3 14:43:55 2013 -0800
+
+    FogBugz #168357: Enhance to auto calculate SDRAM size
+    
+    Enhance Preloader and U-Boot to auto calculate the SDRAM size. This
+    will save user from the hassle of modifying the PHYS_SDRAM_1 macro
+    when the SDRAM change. The SDRAM size calculation will based on SDRAM
+    controller settings such as address row, columns, banks and others.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - using macro for SDRAM width with ECC enabled
+    - fixed the SDRAM size calculation algorithm
+
+-----------------------------------------------------------------------
+
+

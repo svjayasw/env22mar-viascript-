@@ -1,0 +1,367 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in just less than
+two weeks (on Friday Oct 31).
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.16
+branch tag  : rel_socfpga-3.16_14.10.02_rc1
+new commits : 2
+14cef3b Dinh Nguyen FogBugz #237341: fix fetching cpu1start_addr for SMP
+d2fe5b8 Dinh Nguyen FogBugz #236669: Add a Kconfig for ILC driver
+
+
+++wiki:
+*Branch name*: socfpga-3.16, *Tag name:* rel_socfpga-3.16_14.10.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| 237341 | fix fetching cpu1start_addr for SMP | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=14cef3b4c21ed3bd2445f1d592b0e54a3af4b3e8 ][ 14cef3b4c21ed3bd2445f1d592b0e54a3af4b3e8 ]] |
+| 236669 | Add a Kconfig for ILC driver | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d2fe5b8f01d9b9eed798ffbcd6dd5f50e97e4d01 ][ d2fe5b8f01d9b9eed798ffbcd6dd5f50e97e4d01 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.10.02_rc1
+new commits : 2
+4cadc1d Dinh Nguyen FogBugz #237341: fix fetching cpu1start_addr for SMP
+4cff781 Dinh Nguyen FogBugz #236669: Add a Kconfig for ILC driver
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.10.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| 237341 | fix fetching cpu1start_addr for SMP | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=4cadc1da3dde817f97e7884679fc32c20f98a7a7 ][ 4cadc1da3dde817f97e7884679fc32c20f98a7a7 ]] |
+| 236669 | Add a Kconfig for ILC driver | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=4cff781b1130b8fd6759bc40de14a90b1d205f10 ][ 4cff781b1130b8fd6759bc40de14a90b1d205f10 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_14.10.02_rc1
+new commits : 2
+8308440 Dinh Nguyen FogBugz #237341: fix fetching cpu1start_addr for SMP
+9413071 Dinh Nguyen FogBugz #236669: Add a Kconfig for ILC driver
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_14.10.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| 237341 | fix fetching cpu1start_addr for SMP | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=83084408e11f1072946c06acd2901556f2e4b2d3 ][ 83084408e11f1072946c06acd2901556f2e4b2d3 ]] |
+| 236669 | Add a Kconfig for ILC driver | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=9413071dde7faeff34efcd5674bddf2958b04156 ][ 9413071dde7faeff34efcd5674bddf2958b04156 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.16_14.10.02_rc1
+commit: 14cef3b Dinh Nguyen FogBugz #237341: fix fetching cpu1start_addr for SMP
+
+tag:    rel_socfpga-3.10-ltsi_14.10.02_rc1
+commit: 4cadc1d Dinh Nguyen FogBugz #237341: fix fetching cpu1start_addr for SMP
+
+tag:    rel_socfpga-3.10-ltsi-rt_14.10.02_rc1
+commit: 8308440 Dinh Nguyen FogBugz #237341: fix fetching cpu1start_addr for SMP
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.10.02_rc1
+new commits : 2
+9381569 Vince Bridgers FogBugz #227886: Setup SDRAM Protection Rule to prevent access beyond max mem
+a494dca Vince Bridgers FogBugz #235540: Add CONFIG_MACH_TYPE for Cyclone 5 and Arria V
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_14.10.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| 227886 | Setup SDRAM Protection Rule to prevent access beyond max mem | [[ http://git.rocketboards.org/gitweb/?p=u-boot-socfpga.git;a=commit;h=93815696dce132ff8abc4ab2f4c195339ff821a0 ][ 93815696dce132ff8abc4ab2f4c195339ff821a0 ]] |
+| 235540 | Add CONFIG_MACH_TYPE for Cyclone 5 and Arria V | [[ http://git.rocketboards.org/gitweb/?p=u-boot-socfpga.git;a=commit;h=a494dcaa326dbdb195376ed68efcb8534c0ad86c ][ a494dcaa326dbdb195376ed68efcb8534c0ad86c ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.10.02_rc1
+commit: 9381569 Vince Bridgers FogBugz #227886: Setup SDRAM Protection Rule to prevent access beyond max mem
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_14.10.02_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_14.10.02_rc1
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_14.10.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_14.10.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_14.10.02_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_14.10.02_rc1
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_14.10.02_rc1
+commit: 86e1731 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2014.06-socfpga_14.10.02_rc1
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_14.10.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_14.10.02_rc1
+new commits : 4
+6b5ff63 Yves Vandervennet remove 3.17 for now
+9fe3a2e Yves Vandervennet kernel 3.17
+7c2c279 Yves Vandervennet added TAG and BRANCH for socfpga-test
+0d220a4 Yves Vandervennet recipe for the RT kernel
+
+
+++wiki:
+*Branch name*: angstrom-v2013.12-yocto1.5, *Tag name:* rel_angstrom-v2013.12-yocto1.5_14.10.02_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| community | remove 3.17 for now | [[ http://git.rocketboards.org/gitweb/?p=meta-altera.git;a=commit;h=6b5ff638ad098624a78d1fd5ddd66b1e1a05b750 ][ 6b5ff638ad098624a78d1fd5ddd66b1e1a05b750 ]] |
+| community | kernel 3.17 | [[ http://git.rocketboards.org/gitweb/?p=meta-altera.git;a=commit;h=9fe3a2eb5683b05097673d9b2a9a810965dc70c5 ][ 9fe3a2eb5683b05097673d9b2a9a810965dc70c5 ]] |
+| community | added TAG and BRANCH for socfpga-test | [[ http://git.rocketboards.org/gitweb/?p=meta-altera.git;a=commit;h=7c2c2795f539e46eef36064af31d71aef05092bb ][ 7c2c2795f539e46eef36064af31d71aef05092bb ]] |
+| community | recipe for the RT kernel | [[ http://git.rocketboards.org/gitweb/?p=meta-altera.git;a=commit;h=0d220a4e22193275375a6f7f903a958bd4bc0b6b ][ 0d220a4e22193275375a6f7f903a958bd4bc0b6b ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_14.10.02_rc1
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_14.10.02_rc1
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_14.10.02_rc1
+commit: 6b5ff63 Yves Vandervennet remove 3.17 for now
+
+tag:    rel_angstrom-v2014.06-yocto1.6_14.10.02_rc1
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.16
+
+commit 14cef3b4c21ed3bd2445f1d592b0e54a3af4b3e8
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Oct 1 05:44:48 2014 -0500
+
+    FogBugz #237341: fix fetching cpu1start_addr for SMP
+    
+    When CPU1 is brought out of reset, it's MMU is not turned on yet, so it
+    will only be able to use physical addresses. For systems that have their
+    MMU page configured for 0xC0000000, 0x80000000, or 0x40000000
+    "BIC 0x40000000" will work just fine, as it was just converting the
+    virtual address of &cpu1start_addr into a physical address, ie. 0xC0000000
+    became 0x80000000. So for systems where the SDRAM controller was able to do
+    a wrap-around access, this was working fine, as it was just dropping the
+    MSB, but for systems where out of bounds memory access is not allowed, this
+    would not allow CPU1 to correctly fetch &cpu1start_addr.
+    
+    This patch fixes the secondary_trampoline code to correctly fetch the
+    physical address of cpu1start_addr directly. The patch will grab the
+    correct PAGE_OFFSET and convert &cpu1start_addr to the physical address
+    correctly.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit d2fe5b8f01d9b9eed798ffbcd6dd5f50e97e4d01
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Oct 9 17:54:51 2014 -0500
+
+    FogBugz #236669: Add a Kconfig for ILC driver
+    
+    Without a Kconfig option, there's really no way to build the driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 4cadc1da3dde817f97e7884679fc32c20f98a7a7
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Oct 1 05:44:48 2014 -0500
+
+    FogBugz #237341: fix fetching cpu1start_addr for SMP
+    
+    When CPU1 is brought out of reset, it's MMU is not turned on yet, so it
+    will only be able to use physical addresses. For systems that have their
+    MMU page configured for 0xC0000000, 0x80000000, or 0x40000000
+    "BIC 0x40000000" will work just fine, as it was just converting the
+    virtual address of &cpu1start_addr into a physical address, ie. 0xC0000000
+    became 0x80000000. So for systems where the SDRAM controller was able to do
+    a wrap-around access, this was working fine, as it was just dropping the
+    MSB, but for systems where out of bounds memory access is not allowed, this
+    would not allow CPU1 to correctly fetch &cpu1start_addr.
+    
+    This patch fixes the secondary_trampoline code to correctly fetch the
+    physical address of cpu1start_addr directly. The patch will grab the
+    correct PAGE_OFFSET and convert &cpu1start_addr to the physical address
+    correctly.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 4cff781b1130b8fd6759bc40de14a90b1d205f10
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Oct 9 17:54:51 2014 -0500
+
+    FogBugz #236669: Add a Kconfig for ILC driver
+    
+    Without a Kconfig option, there's really no way to build the driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 83084408e11f1072946c06acd2901556f2e4b2d3
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Oct 1 05:44:48 2014 -0500
+
+    FogBugz #237341: fix fetching cpu1start_addr for SMP
+    
+    When CPU1 is brought out of reset, it's MMU is not turned on yet, so it
+    will only be able to use physical addresses. For systems that have their
+    MMU page configured for 0xC0000000, 0x80000000, or 0x40000000
+    "BIC 0x40000000" will work just fine, as it was just converting the
+    virtual address of &cpu1start_addr into a physical address, ie. 0xC0000000
+    became 0x80000000. So for systems where the SDRAM controller was able to do
+    a wrap-around access, this was working fine, as it was just dropping the
+    MSB, but for systems where out of bounds memory access is not allowed, this
+    would not allow CPU1 to correctly fetch &cpu1start_addr.
+    
+    This patch fixes the secondary_trampoline code to correctly fetch the
+    physical address of cpu1start_addr directly. The patch will grab the
+    correct PAGE_OFFSET and convert &cpu1start_addr to the physical address
+    correctly.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 9413071dde7faeff34efcd5674bddf2958b04156
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Oct 9 17:54:51 2014 -0500
+
+    FogBugz #236669: Add a Kconfig for ILC driver
+    
+    Without a Kconfig option, there's really no way to build the driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 93815696dce132ff8abc4ab2f4c195339ff821a0
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Tue Sep 23 09:39:57 2014 -0500
+
+    FogBugz #227886: Setup SDRAM Protection Rule to prevent access beyond max mem
+    
+    This patch enhances the previously submitted patch for FogBugz #223741 by
+    programming the SDRAM protection rules to prevent SDRAM accesses beyond
+    maximum configured SDRAM. This patch also corrects an issue in the way
+    SDRAM rows was calculated and configured in that same patch. The number
+    of rows is set such that 4G of memory is decoded to workaround the
+    SDRAM errata and limits memory accesses by using the SDRAM range protection
+    logic to cause a data abort if an access occurs beyond available,
+    configured memory in the system.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+commit a494dcaa326dbdb195376ed68efcb8534c0ad86c
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Mon Oct 6 09:50:53 2014 -0500
+
+    FogBugz #235540: Add CONFIG_MACH_TYPE for Cyclone 5 and Arria V
+    
+    socfpga_cyclone5.h and socfpga_arria5.h are missing machine type definitions
+    - CONFIG_MACH_TYPE - for the Cyclone 5 and Arria 5 machine types. This is used
+    when buildling SPL/UBoot for Falcon mode, and is required. The Arria 5
+    machine ID was not registed on http://www.arm.linux.org.uk/developer/machines/
+    so part of the solution involved registering the Arria V machine type
+    with that website.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2013.12-yocto1.5
+
+commit 6b5ff638ad098624a78d1fd5ddd66b1e1a05b750
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Fri Oct 10 15:15:58 2014 -0500
+
+    remove 3.17 for now
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit 9fe3a2eb5683b05097673d9b2a9a810965dc70c5
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Thu Oct 9 00:48:43 2014 -0500
+
+    kernel 3.17
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit 7c2c2795f539e46eef36064af31d71aef05092bb
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Mon Oct 6 20:51:30 2014 -0500
+
+    added TAG and BRANCH for socfpga-test
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit 0d220a4e22193275375a6f7f903a958bd4bc0b6b
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Fri Oct 3 21:43:45 2014 -0500
+
+    recipe for the RT kernel
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

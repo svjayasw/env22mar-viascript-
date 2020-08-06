@@ -1,0 +1,24 @@
+#!/bin/bash -ex
+
+cd ~/repos/internal/arm-trusted-firmware
+
+# repo   : arm-trusted-firmware
+# branch : socfpga_v1.4
+# tag    : rel_socfpga_v1.4_19.04.01_rc1
+
+ git push origin fd4f92cf86c468eae51356439e44fc95d1ad8dac:refs/tags/rel_socfpga_v1.4_19.04.01_rc1
+
+#------------------------------------------------------------------------------------------------------------
+cd ~/repos/internal/uefi-socfpga
+
+# repo   : uefi-socfpga
+# branch : master
+# tag    : rel_master_19.04.01_rc1
+
+ git push origin 3402bebdd8044b5b783184c03cb97195a9c4999b:refs/tags/rel_master_19.04.01_rc1
+
+# repo   : uefi-socfpga
+# branch : socvp_socfpga_udk2015
+# tag    : rel_socvp_socfpga_udk2015_19.04.01_rc1
+
+ git push origin 475bea4e5dbc3ea013a56bff6388c04fbf62e577:refs/tags/rel_socvp_socfpga_udk2015_19.04.01_rc1

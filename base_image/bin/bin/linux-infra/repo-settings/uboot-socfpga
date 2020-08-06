@@ -1,0 +1,12 @@
+repo_path: /usr/local/git/repositories/uboot-socfpga.git
+update_tests: checkpatch copyright_year license_gplv2_approved
+email: thor.thayer@intel.com dinh.nguyen@intel.com
+sync-job: uboot
+local_upstream:
+crucible_project: uboot-socfpga
+internal_git: gitolite@at-git:uboot-socfpga.git
+external_git: gitolite@silentsoc.org:u-boot-socfpga.git
+upstream_branches: master
+release_branch: socfpga_v2012.10
+upstream_tag_regex: v2012.10$
+review_addrs: dinh.nguyen@intel.com ley.foon.tan@intel.com chin.liang.see@intel.com christopher.chun.yee.tan@intel.com tien.hock.loh@intel.com

@@ -1,0 +1,820 @@
+The next portal update (16.07.01_pr) will take place on Monday 7/11/2016.
+
+This update will be the first time Arria10 FPGA reprogramming (PR) under
+Linux will be made publicly available.
+
+---
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal on 7/11/2016.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.6
+branch tag  : rel_socfpga-4.6_16.07.01_rc1
+new commits : 12
+f4f6e2c Alan Tull FogBugz #383970-3: ARM: socfpga_defconfig : enable altera freeze bridge
+e0216ae Alan Tull FogBugz #383970-2: fpga: add altera freeze bridge support
+2a42c36 Alan Tull FogBugz #383970-1: add bindings document for altera freeze bridge
+a543e0c Matthew Gerlach FogBugz #383977: added syscon compatibility string for sdr
+f34a433 Alan Tull FogBugz #383083-4: enable arria10 fpga manager support
+3930bb4 Alan Tull FogBugz #383083-3: ARM: dts: add fpga region support
+d81105e Alan Tull FogBugz #383083-2: fpga-manager: Add Socfpga Arria10 support
+da9a709 Alan Tull FogBugz #383083-1: ARM: socfpga: add bindings doc for arria10 fpga manager
+984a9c0 Alan Tull FogBugz #383074-4: doc: fpga-mgr: add fpga image info to api
+295c428 Alan Tull FogBugz #383074-3: fpga-region: add fpga image information struct
+995c217 Alan Tull FogBugz #383074-2: fpga-bridge: add fpga image information struct
+f880d4a Alan Tull FogBugz #383074-1: fpga-mgr: add fpga image information struct
+
+
+branch      : socfpga-4.1.22-ltsi
+branch tag  : rel_socfpga-4.1.22-ltsi_16.07.01_rc1
+new commits : 15
+cd1c82d Dinh Nguyen FogBugz #384727-2: enable CONFIG_IXGBE as a kernel module
+e159de8 Dinh Nguyen FogBugz #384727-1: Revert upstream socfpga_defconfig patch
+1150300 Alan Tull FogBugz #383970-3: ARM: socfpga_defconfig : enable altera freeze bridge
+4010e55 Alan Tull FogBugz #383970-2: fpga: add altera freeze bridge support
+4b8e974 Alan Tull FogBugz #383970-1: add bindings document for altera freeze bridge
+b6f8f86 Ley Foon Tan ARM: socfpga: add PCIe to socfpga_defconfig
+ef1be80d Matthew Gerlach FogBugz #383977: added syscon compatibility string for sdr
+3592e4e Alan Tull FogBugz #383083-4: enable arria10 fpga manager support
+a627333 Alan Tull FogBugz #383083-3: ARM: dts: add fpga region support
+14ea1b8 Alan Tull FogBugz #383083-2: fpga-manager: Add Socfpga Arria10 support
+1560566 Alan Tull FogBugz #383083-1: ARM: socfpga: add bindings doc for arria10 fpga manager
+292d632 Alan Tull FogBugz #383074-4: doc: fpga-mgr: add fpga image info to api
+8227339 Alan Tull FogBugz #383074-3: fpga-region: add fpga image information struct
+4b26420 Alan Tull FogBugz #383074-2: fpga-bridge: add fpga image information struct
+b3f83e3 Alan Tull FogBugz #383074-1: fpga-mgr: add fpga image information struct
+
+
+branch      : socfpga-4.1.22-ltsi-rt
+branch tag  : rel_socfpga-4.1.22-ltsi-rt_16.07.01_rc1
+new commits : 12
+4b26b40 Alan Tull FogBugz #383970-3: ARM: socfpga_defconfig : enable altera freeze bridge
+ab008c0 Alan Tull FogBugz #383970-2: fpga: add altera freeze bridge support
+8f8e219 Alan Tull FogBugz #383970-1: add bindings document for altera freeze bridge
+a04e078 Matthew Gerlach FogBugz #383977: added syscon compatibility string for sdr
+066404a Alan Tull FogBugz #383083-4: enable arria10 fpga manager support
+6d700f2 Alan Tull FogBugz #383083-3: ARM: dts: add fpga region support
+7830580 Alan Tull FogBugz #383083-2: fpga-manager: Add Socfpga Arria10 support
+bb4eb59 Alan Tull FogBugz #383083-1: ARM: socfpga: add bindings doc for arria10 fpga manager
+83c93d4 Alan Tull FogBugz #383074-4: doc: fpga-mgr: add fpga image info to api
+741b926 Alan Tull FogBugz #383074-3: fpga-region: add fpga image information struct
+beefab9 Alan Tull FogBugz #383074-2: fpga-bridge: add fpga image information struct
+c5bd105 Alan Tull FogBugz #383074-1: fpga-mgr: add fpga image information struct
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.6_16.07.01_rc1
+commit: f4f6e2c Alan Tull FogBugz #383970-3: ARM: socfpga_defconfig : enable altera freeze bridge
+
+tag:    rel_socfpga-4.1.22-ltsi_16.07.01_rc1
+commit: cd1c82d Dinh Nguyen FogBugz #384727-2: enable CONFIG_IXGBE as a kernel module
+
+tag:    rel_socfpga-4.1.22-ltsi-rt_16.07.01_rc1
+commit: 4b26b40 Alan Tull FogBugz #383970-3: ARM: socfpga_defconfig : enable altera freeze bridge
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.07.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.07.01_rc1
+new commits : 3
+01e2c22 Tien Fong Chee FogBugz #361813-1: Removed the space between \0 and " of env value
+58b73db Tien Fong Chee FogBugz #365958: QSPI flash(Dual-stacked, S70FL01GS) driver for Uboot
+ff7a80a Tien Fong Chee FogBugz #371156-3: Enable pre-console buffer
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.07.01_rc1
+commit: 7dd0473 Chin Liang See FogBugz #353914: Fix SDRAM self refresh failure
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.07.01_rc1
+commit: 01e2c22 Tien Fong Chee FogBugz #361813-1: Removed the space between \0 and " of env value
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.07.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.07.01_rc1
+commit: 993831b Tien Hock Loh FogBugz #369619: Update meta-altera-refdes commit id
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.07.01_rc1
+new commits : 1
+8ec51e4 Graham Moore Support for the kernel v4.6
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.07.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.07.01_rc1
+commit: 8ec51e4 Graham Moore Support for the kernel v4.6
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.07.01_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.6
+
+commit f4f6e2cd12ff5026f563ffb857ed507c328229e5
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Thu Jun 16 14:04:52 2016 -0500
+
+    FogBugz #383970-3: ARM: socfpga_defconfig : enable altera freeze bridge
+    
+    Enable the following for support of Altera Freeze Bridge
+    Controller:
+      CONFIG_ALTERA_FREEZE_BRIDGE=y
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit e0216ae3173bb88cf9e77bb6825b61be96e64fe9
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Feb 10 12:34:08 2016 -0600
+
+    FogBugz #383970-2: fpga: add altera freeze bridge support
+    
+    Add a low level driver for Altera Freeze Bridges to the FPGA Bridge
+    framework.  A freeze bridge is a bridge that exists in the FPGA
+    fabric to isolate one region of the FPGA from the busses while that
+    one region is being reprogrammed.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 2a42c36a6c16b0fd3363e351558ad5ab12b8c3c2
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue May 10 10:48:16 2016 -0500
+
+    FogBugz #383970-1: add bindings document for altera freeze bridge
+    
+    Add bindings document for the Altera Freeze Bridge.  A Freeze
+    Bridge is used to gate traffic to/from a region of a FPGA
+    such that that region can be reprogrammed.  The Freeze Bridge
+    exist in FPGA fabric that is not currently being reconfigured.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit a543e0c2da158a917a4adba9f0bd78acd9d37932
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Tue Jun 14 09:09:56 2016 -0700
+
+    FogBugz #383977: added syscon compatibility string for sdr
+    
+    To allow syscon lookup by the FPGA bridges drivers,
+    add syscon compatible for the sdram controller.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit f34a4336effeacfe5762df238a726025981fa386
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Apr 27 15:57:23 2016 -0500
+
+    FogBugz #383083-4: enable arria10 fpga manager support
+    
+    Enable CONFIG_FPGA_MGR_SOCFPGA_A10 in socfpga_defconfig to
+    enable Arria10 FPGA Manager support for partial
+    reconfiguration.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 3930bb47d2595387f6f8bfb36296e8581104e6c1
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Fri Feb 26 14:24:53 2016 -0600
+
+    FogBugz #383083-3: ARM: dts: add fpga region support
+    
+    Changes to socfpga_arria10.dtsi
+     * Add base fpga region
+     * Update the FPGA manager node:
+       * reg settings did not need to map as large of ranges
+       * remove transport binding (gone in the upstream)
+       * Add clocks and resets
+    
+    Add the base FPGA Region for DT overlay support for FPGA programming.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit d81105e6180a6906bf0a143abd88f5b2b534212e
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Fri Aug 14 15:48:16 2015 -0500
+
+    FogBugz #383083-2: fpga-manager: Add Socfpga Arria10 support
+    
+    Add low level driver to support reprogramming FPGAs for Altera
+    SoCFPGA Arria10.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit da9a70938cf23adf6409a6649e7ced4a45e8419a
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Fri Aug 21 10:48:49 2015 -0500
+
+    FogBugz #383083-1: ARM: socfpga: add bindings doc for arria10 fpga manager
+    
+    Add a device tree bindings document for the SoCFPGA Arria10
+    FPGA Manager driver.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 984a9c044752d258331dec8211db51bfa7894ff2
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Jun 15 14:38:51 2016 -0500
+
+    FogBugz #383074-4: doc: fpga-mgr: add fpga image info to api
+    
+    A FPGA design contained in a FPGA image file will likely have
+    particulars that affect how the image is programmed to the
+    FPGA.  Currently the only such particular is a single flag
+    bit indicating whether the image is for full or partial
+    reconfiguration.
+    
+    This patch adds a new 'struct  fpga_image_info', moves the
+    current 'u32 flags' to it.
+    
+    The FPGA Manager API functions are changed, as the 'u32 flag'
+    parameter is replaced with a pointer to struct fpga_image_info.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 295c4286765aa0696809eae43476dc50efb7ff7e
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Jun 8 16:31:09 2016 -0500
+
+    FogBugz #383074-3: fpga-region: add fpga image information struct
+    
+    A FPGA design contained in a FPGA image file will likely have
+    particulars that affect how the image is programmed to the FPGA.
+    
+    This patch will allocate a struct fpga_image_info and populate
+    it with information from the device tree overlay that is driving
+    the reprogramming.  The info is then passed to the FPGA Manager
+    and FPGA Bridge drivers during programming.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 995c217b816560e591e2b6459719ada63911d881
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Jun 8 16:27:29 2016 -0500
+
+    FogBugz #383074-2: fpga-bridge: add fpga image information struct
+    
+    Pass the FPGA Manager framework's 'struct  fpga_image_info'
+    around for use of the FPGA Bridges during FPGA reprogramming.
+    
+    Add two timeouts to fpga_image_info for knowing how long to
+    wait when shutting down/re-enabling traffic to a FPGA region
+    that is reprogrammed.  That can vary widely with the
+    implementation of the design that is being programmed.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit f880d4af2b5bd0f8090536216949c0cd400ddaee
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Jun 8 13:14:03 2016 -0500
+
+    FogBugz #383074-1: fpga-mgr: add fpga image information struct
+    
+    A FPGA design contained in a FPGA image file will likely have
+    particulars that affect how the image is programmed to the FPGA.
+    Currently the only such particular is a single flag bit
+    indicating whether the image is for full or partial reconfig-
+    uration.
+    
+    This patch adds a new 'struct  fpga_image_info', moves the
+    current 'u32 flags' to it.
+    
+    The FPGA Manager API functions are changed, as the 'u32 flag'
+    parameter is replaced with a pointer to struct fpga_image_info.
+    
+    Subsequent patches will add more to the struct.  The things
+    that will be added for current use are timeouts for knowing how
+    long to reasonably wait when shutting down/re-enabling traffic
+    to a FPGA region that is reprogrammed.  That can vary widely
+    with the implementation of the design that is being programmed.
+    Other future additions will be to handle passing addresses for
+    reprogramming relocatable FPGA images.  As use of FPGA in the
+    kernel continues to develop, other specifics are likely to be
+    added.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi
+
+commit cd1c82d32105d12282b10e760f2c4dbff26ba8bd
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Jun 21 10:24:25 2016 -0500
+
+    FogBugz #384727-2: enable CONFIG_IXGBE as a kernel module
+    
+    To complete the PCI-E features, enable CONFIG_IXGBE in socfpga_defconfig.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit e159de8b9c2dfc1008ed07d6c0280557eebaf6c1
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Jun 21 10:21:06 2016 -0500
+
+    FogBugz #384727-1: Revert upstream socfpga_defconfig patch
+    
+    Revert "ARM: socfpga: add PCIe to socfpga_defconfig"
+    
+    This reverts commit 8047cb9af0a6 ("ARM: socfpga: add PCIe to
+    socfpga_defconfig").
+    
+    The reason for this patch is that PCI-E has already been enabled in
+    FB #338696.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 1150300d19fb854836b636b53100e52bc0b6c039
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Thu Jun 16 14:04:52 2016 -0500
+
+    FogBugz #383970-3: ARM: socfpga_defconfig : enable altera freeze bridge
+    
+    Enable the following for support of Altera Freeze Bridge
+    Controller:
+      CONFIG_ALTERA_FREEZE_BRIDGE=y
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 4010e55b157508a6923b30456325d79bd89a7bb8
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Feb 10 12:34:08 2016 -0600
+
+    FogBugz #383970-2: fpga: add altera freeze bridge support
+    
+    Add a low level driver for Altera Freeze Bridges to the FPGA Bridge
+    framework.  A freeze bridge is a bridge that exists in the FPGA
+    fabric to isolate one region of the FPGA from the busses while that
+    one region is being reprogrammed.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 4b8e9741a28d86800c4cb59e8469ddc72854cc78
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue May 10 10:48:16 2016 -0500
+
+    FogBugz #383970-1: add bindings document for altera freeze bridge
+    
+    Add bindings document for the Altera Freeze Bridge.  A Freeze
+    Bridge is used to gate traffic to/from a region of a FPGA
+    such that that region can be reprogrammed.  The Freeze Bridge
+    exist in FPGA fabric that is not currently being reconfigured.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit b6f8f8671389e68ff6b3812beb8b1c3b5b553a13
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Jun 15 14:49:04 2016 +0800
+
+    ARM: socfpga: add PCIe to socfpga_defconfig
+    
+    Enable Altera PCIe host driver, Altera MSI driver and PCIe devices.
+    
+    CONFIG_PCI=y
+    CONFIG_PCI_MSI=y
+    CONFIG_PCIE_ALTERA=y
+    CONFIG_PCIE_ALTERA_MSI=y
+    CONFIG_BLK_DEV_NVME=m
+    CONFIG_E1000E=m
+    CONFIG_IGB=m
+    CONFIG_IXGBE=m
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+    Cc: Dinh Nguyen <dinguyen@opensource.altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit ef1be80d887b8e0868511cf964e250dd4609ca41
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Tue Jun 14 09:09:56 2016 -0700
+
+    FogBugz #383977: added syscon compatibility string for sdr
+    
+    To allow syscon lookup by the FPGA bridges drivers,
+    add syscon compatible for the sdram controller.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 3592e4e56ad09e30cfa2568c6430f4db4e4ae694
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Apr 27 15:57:23 2016 -0500
+
+    FogBugz #383083-4: enable arria10 fpga manager support
+    
+    Enable CONFIG_FPGA_MGR_SOCFPGA_A10 in socfpga_defconfig to
+    enable Arria10 FPGA Manager support for partial
+    reconfiguration.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit a627333269331b5dd93a9148bfcef19a75139d08
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Fri Feb 26 14:24:53 2016 -0600
+
+    FogBugz #383083-3: ARM: dts: add fpga region support
+    
+    Changes to socfpga_arria10.dtsi
+     * Add base fpga region
+     * Update the FPGA manager node:
+       * reg settings did not need to map as large of ranges
+       * remove transport binding (gone in the upstream)
+       * Add clocks and resets
+    
+    Add the base FPGA Region for DT overlay support for FPGA programming.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 14ea1b82a864c19f42ef27ca1dc88e7a0eceac57
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Fri Aug 14 15:48:16 2015 -0500
+
+    FogBugz #383083-2: fpga-manager: Add Socfpga Arria10 support
+    
+    Add low level driver to support reprogramming FPGAs for Altera
+    SoCFPGA Arria10.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 15605668d02db814325aeef070a60d697b5ad55b
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Fri Aug 21 10:48:49 2015 -0500
+
+    FogBugz #383083-1: ARM: socfpga: add bindings doc for arria10 fpga manager
+    
+    Add a device tree bindings document for the SoCFPGA Arria10
+    FPGA Manager driver.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 292d6325826d85403300571f52f3199e4bac7a71
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Jun 15 14:38:51 2016 -0500
+
+    FogBugz #383074-4: doc: fpga-mgr: add fpga image info to api
+    
+    A FPGA design contained in a FPGA image file will likely have
+    particulars that affect how the image is programmed to the
+    FPGA.  Currently the only such particular is a single flag
+    bit indicating whether the image is for full or partial
+    reconfiguration.
+    
+    This patch adds a new 'struct  fpga_image_info', moves the
+    current 'u32 flags' to it.
+    
+    The FPGA Manager API functions are changed, as the 'u32 flag'
+    parameter is replaced with a pointer to struct fpga_image_info.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 8227339d2f24abb15093e492b01f64b18d2e4a95
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Jun 8 16:31:09 2016 -0500
+
+    FogBugz #383074-3: fpga-region: add fpga image information struct
+    
+    A FPGA design contained in a FPGA image file will likely have
+    particulars that affect how the image is programmed to the FPGA.
+    
+    This patch will allocate a struct fpga_image_info and populate
+    it with information from the device tree overlay that is driving
+    the reprogramming.  The info is then passed to the FPGA Manager
+    and FPGA Bridge drivers during programming.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 4b26420ccc7e83b3e4f41bb8f5718a7e67d3f518
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Jun 8 16:27:29 2016 -0500
+
+    FogBugz #383074-2: fpga-bridge: add fpga image information struct
+    
+    Pass the FPGA Manager framework's 'struct  fpga_image_info'
+    around for use of the FPGA Bridges during FPGA reprogramming.
+    
+    Add two timeouts to fpga_image_info for knowing how long to
+    wait when shutting down/re-enabling traffic to a FPGA region
+    that is reprogrammed.  That can vary widely with the
+    implementation of the design that is being programmed.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit b3f83e3b76a36a90bd8f61048c55faa5ffa64276
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Jun 8 13:14:03 2016 -0500
+
+    FogBugz #383074-1: fpga-mgr: add fpga image information struct
+    
+    A FPGA design contained in a FPGA image file will likely have
+    particulars that affect how the image is programmed to the FPGA.
+    Currently the only such particular is a single flag bit
+    indicating whether the image is for full or partial reconfig-
+    uration.
+    
+    This patch adds a new 'struct  fpga_image_info', moves the
+    current 'u32 flags' to it.
+    
+    The FPGA Manager API functions are changed, as the 'u32 flag'
+    parameter is replaced with a pointer to struct fpga_image_info.
+    
+    Subsequent patches will add more to the struct.  The things
+    that will be added for current use are timeouts for knowing how
+    long to reasonably wait when shutting down/re-enabling traffic
+    to a FPGA region that is reprogrammed.  That can vary widely
+    with the implementation of the design that is being programmed.
+    Other future additions will be to handle passing addresses for
+    reprogramming relocatable FPGA images.  As use of FPGA in the
+    kernel continues to develop, other specifics are likely to be
+    added.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi-rt
+
+commit 4b26b40093e7c48dbd4bfa8178b1b6498fcba026
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Thu Jun 16 14:04:52 2016 -0500
+
+    FogBugz #383970-3: ARM: socfpga_defconfig : enable altera freeze bridge
+    
+    Enable the following for support of Altera Freeze Bridge
+    Controller:
+      CONFIG_ALTERA_FREEZE_BRIDGE=y
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit ab008c0940f83af26f683c9d774d122eb3dac4c1
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Feb 10 12:34:08 2016 -0600
+
+    FogBugz #383970-2: fpga: add altera freeze bridge support
+    
+    Add a low level driver for Altera Freeze Bridges to the FPGA Bridge
+    framework.  A freeze bridge is a bridge that exists in the FPGA
+    fabric to isolate one region of the FPGA from the busses while that
+    one region is being reprogrammed.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 8f8e219bdb93a32019c18f4b254a765d25d01d01
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue May 10 10:48:16 2016 -0500
+
+    FogBugz #383970-1: add bindings document for altera freeze bridge
+    
+    Add bindings document for the Altera Freeze Bridge.  A Freeze
+    Bridge is used to gate traffic to/from a region of a FPGA
+    such that that region can be reprogrammed.  The Freeze Bridge
+    exist in FPGA fabric that is not currently being reconfigured.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit a04e0780df10877198a0b11745ede5df6086acba
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Tue Jun 14 09:09:56 2016 -0700
+
+    FogBugz #383977: added syscon compatibility string for sdr
+    
+    To allow syscon lookup by the FPGA bridges drivers,
+    add syscon compatible for the sdram controller.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 066404a2a2b2509ddf89a0416b718dec2422fd1d
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Apr 27 15:57:23 2016 -0500
+
+    FogBugz #383083-4: enable arria10 fpga manager support
+    
+    Enable CONFIG_FPGA_MGR_SOCFPGA_A10 in socfpga_defconfig to
+    enable Arria10 FPGA Manager support for partial
+    reconfiguration.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 6d700f225081ef3940ffeca6922d7fd90ef69a46
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Fri Feb 26 14:24:53 2016 -0600
+
+    FogBugz #383083-3: ARM: dts: add fpga region support
+    
+    Changes to socfpga_arria10.dtsi
+     * Add base fpga region
+     * Update the FPGA manager node:
+       * reg settings did not need to map as large of ranges
+       * remove transport binding (gone in the upstream)
+       * Add clocks and resets
+    
+    Add the base FPGA Region for DT overlay support for FPGA programming.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 7830580a42a533bb56d6ff2885953468cf5c6d98
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Fri Aug 14 15:48:16 2015 -0500
+
+    FogBugz #383083-2: fpga-manager: Add Socfpga Arria10 support
+    
+    Add low level driver to support reprogramming FPGAs for Altera
+    SoCFPGA Arria10.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit bb4eb5988f664aea2093ba0503fcc39d9caa780c
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Fri Aug 21 10:48:49 2015 -0500
+
+    FogBugz #383083-1: ARM: socfpga: add bindings doc for arria10 fpga manager
+    
+    Add a device tree bindings document for the SoCFPGA Arria10
+    FPGA Manager driver.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 83c93d4334fc1066d66293b5065ea9333033fb76
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Jun 15 14:38:51 2016 -0500
+
+    FogBugz #383074-4: doc: fpga-mgr: add fpga image info to api
+    
+    A FPGA design contained in a FPGA image file will likely have
+    particulars that affect how the image is programmed to the
+    FPGA.  Currently the only such particular is a single flag
+    bit indicating whether the image is for full or partial
+    reconfiguration.
+    
+    This patch adds a new 'struct  fpga_image_info', moves the
+    current 'u32 flags' to it.
+    
+    The FPGA Manager API functions are changed, as the 'u32 flag'
+    parameter is replaced with a pointer to struct fpga_image_info.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 741b926cb5dd8ce9e385749581f27605aeb1afb8
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Jun 8 16:31:09 2016 -0500
+
+    FogBugz #383074-3: fpga-region: add fpga image information struct
+    
+    A FPGA design contained in a FPGA image file will likely have
+    particulars that affect how the image is programmed to the FPGA.
+    
+    This patch will allocate a struct fpga_image_info and populate
+    it with information from the device tree overlay that is driving
+    the reprogramming.  The info is then passed to the FPGA Manager
+    and FPGA Bridge drivers during programming.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit beefab91050f59745398dba40da4f941b1f56a11
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Jun 8 16:27:29 2016 -0500
+
+    FogBugz #383074-2: fpga-bridge: add fpga image information struct
+    
+    Pass the FPGA Manager framework's 'struct  fpga_image_info'
+    around for use of the FPGA Bridges during FPGA reprogramming.
+    
+    Add two timeouts to fpga_image_info for knowing how long to
+    wait when shutting down/re-enabling traffic to a FPGA region
+    that is reprogrammed.  That can vary widely with the
+    implementation of the design that is being programmed.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit c5bd1052d56242cf94e020098e946373102b6a81
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Jun 8 13:14:03 2016 -0500
+
+    FogBugz #383074-1: fpga-mgr: add fpga image information struct
+    
+    A FPGA design contained in a FPGA image file will likely have
+    particulars that affect how the image is programmed to the FPGA.
+    Currently the only such particular is a single flag bit
+    indicating whether the image is for full or partial reconfig-
+    uration.
+    
+    This patch adds a new 'struct  fpga_image_info', moves the
+    current 'u32 flags' to it.
+    
+    The FPGA Manager API functions are changed, as the 'u32 flag'
+    parameter is replaced with a pointer to struct fpga_image_info.
+    
+    Subsequent patches will add more to the struct.  The things
+    that will be added for current use are timeouts for knowing how
+    long to reasonably wait when shutting down/re-enabling traffic
+    to a FPGA region that is reprogrammed.  That can vary widely
+    with the implementation of the design that is being programmed.
+    Other future additions will be to handle passing addresses for
+    reprogramming relocatable FPGA images.  As use of FPGA in the
+    kernel continues to develop, other specifics are likely to be
+    added.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 01e2c2231ba59b7f941e200d500cd5a37fd0a257
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Fri Jun 17 11:06:33 2016 +0800
+
+    FogBugz #361813-1: Removed the space between \0 and " of env value
+    
+    This patch removes the space between \0 and " in the values of
+    environment variables. Having the \0 can cause functions like
+    getenv() to misinterpret the environment. Some code clean up is
+    also included.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 58b73db33892a34fb36efee407a38cc1e351b153
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Fri Jun 17 10:55:30 2016 +0800
+
+    FogBugz #365958: QSPI flash(Dual-stacked, S70FL01GS) driver for Uboot
+    
+    Enhanced U-Boot to support dual stake QSPI flash S70FL01GS, which consist
+    of two S25FL512S dies.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit ff7a80a7c94c2d2e5382a255f0f3be2c294bd6c2
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Fri Jun 10 14:25:02 2016 +0800
+
+    FogBugz #371156-3: Enable pre-console buffer
+    
+    Defining CONFIG_PRE_CONSOLE_BUFFER will cause U-Boot to
+    buffer any console messages prior to the UART being
+    initialised to a buffer of size CONFIG_PRE_CON_BUF_SZ
+    bytes located at CONFIG_PRE_CON_BUF_ADDR. The buffer is
+    a circular buffer, so if more than CONFIG_PRE_CON_BUF_SZ
+    bytes are output before the console is initialised, the
+    earlier bytes are discarded.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7
+
+commit 8ec51e440b3f3183da5acd6d0f75a2418a750dac
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Jun 10 07:55:05 2016 -0500
+
+    Support for the kernel v4.6
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

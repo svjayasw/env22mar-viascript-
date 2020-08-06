@@ -1,0 +1,35 @@
+
+Approved. Thanks Alan.
+
+
+
+
+--Gooi
+[Unknown] Chee Nouk Phoon
+[Reply All]
+ 
+Tuesday, May 19, 2015 4:42 AM
+Hi Alan,
+Please push the following tag on linux-socfpga as well.
+ACDS15.0.1_REL_GSRD_RC1
+ 
+Thanks
+ 
+Regards | CheeNouk
+[Unknown] Chee Nouk Phoon
+[Reply All]
+ 
+Tuesday, May 19, 2015 4:26 AM
+Hi Alan,
+As discussed last week, I need your help to push the following commits to github 3.10 ltsi branch.
+ 
+Git Commit ID | Commit Comment
+c90ba821f44d3d5cbd368fda54fa165729c8f51a | FogBugz #251539-1: Add Altera Quad SPI Driver
+c8b20a46b9ea107d348901379bcc0f13b65f3bc9 | FogBugz #251539-2: dts: Add Altera Quad SPI Driver Device Tree Binding
+e45bb7508414b2b3772adc122f1e413016e94b9d | FogBugz #293982: Enable Max10 Linux support
+ 
+These commits are for Max10 GSRD, and we are trying to make it available at github prior to release will enable validation  for system validation team and application team.
+ 
+Thank you very much
+ 
+Regards | CheeNouk

@@ -1,0 +1,344 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+The following new branches were tagged:
+repo : linux-socfpga          branch : socfpga-4.14.73-ltsi
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.17
+branch tag  : rel_socfpga-4.17_18.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.18
+branch tag  : rel_socfpga-4.18_18.11.01_rc1
+new commits : 2
+424c9e80 Thor Thayer net: stmmac: Set OWN bit for jumbo frames
+273dce3 Thor Thayer arm64: dts: stratix10: Support Ethernet Jumbo frame
+
+
+branch      : socfpga-4.14.73-ltsi
+branch tag  : rel_socfpga-4.14.73-ltsi_18.11.01_rc1
+Pushing new branch to external git
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.11.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.17_18.11.01_rc1
+commit: b7a0b88 Thor Thayer EDAC, altera: Fix ARM64 build warning
+
+tag:    rel_socfpga-4.18_18.11.01_rc1
+commit: 424c9e80 Thor Thayer net: stmmac: Set OWN bit for jumbo frames
+
+tag:    rel_socfpga-4.14.73-ltsi_18.11.01_rc1
+commit: 3f84072 Thor Thayer net: stmmac: Set OWN bit for jumbo frames
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.11.01_rc1
+commit: 99b7c8b Richard Gong FogBugz #593535: stmmac: resolve smc related boot crash for ARMv7
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.11.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.11.01_rc1
+new commits : 2
+af568f3 Tien Fong Chee FogBugz #604090-2: Enable FPGA manager HPS JTAG driver implementation
+d902069 Tien Fong Chee FogBugz #604090-1: Adding FPGA manager HPS JTAG driver
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.11.01_rc1
+new commits : 1
+557e87f Chee Hong Ang FogBugz #604051: Fix minor code mistake in L2 reset sequence
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.11.01_rc1
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.11.01_rc1
+commit: af568f3 Tien Fong Chee FogBugz #604090-2: Enable FPGA manager HPS JTAG driver implementation
+
+tag:    rel_socfpga_v2017.09_18.11.01_rc1
+commit: 557e87f Chee Hong Ang FogBugz #604051: Fix minor code mistake in L2 reset sequence
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.11.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.11.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.11.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.11.01_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.11.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.11.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.11.01_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.11.01_rc1
+commit: ec7bfa2 Ong, Hean Loong update 4.9.78-ltsi to commit ID da71e4b
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.11.01_rc1
+new commits : 4
+0a0715f David Koltak FogBugz #592404-4: Add raw slot data commands to example
+ad7e398 David Koltak FogBugz #592404-3: Add raw slot data support to librsu
+649d830 David Koltak FogBugz #592404-2: Add SPT/CPB version checks
+7629153 David Koltak FogBugz #592404-1: Restore SPT1/CPB1 from SPT0/CPB0
+
+
+Tags to push out to external git:
+tag:    rel_master_18.11.01_rc1
+commit: 0a0715f David Koltak FogBugz #592404-4: Add raw slot data commands to example
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.18
+
+commit 424c9e80343f3a81b18eee98edc36b7c576a3b7d
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Oct 22 17:22:26 2018 -0500
+
+    net: stmmac: Set OWN bit for jumbo frames
+    
+    [backport 'commit 487e2e22ab79 ("net: stmmac: Set OWN bit for
+                                     jumbo frames")']
+    
+    Backported from net-next/master
+    
+    Ping with Jumbo packet does not reply and get a watchdog timeout
+    
+    [   46.059616] ------------[ cut here ]------------
+    [   46.064268] NETDEV WATCHDOG: eth0 (socfpga-dwmac): transmit queue 0 timed out
+    [   46.071471] WARNING: CPU: 1 PID: 0 at net/sched/sch_generic.c:461 dev_watchdog+0x2cc/0x2d8
+    [   46.079708] Modules linked in:
+    [   46.082761] CPU: 1 PID: 0 Comm: swapper/1 Not tainted 4.18.0-00115-gc262be665854-dirty #264
+    [   46.091082] Hardware name: SoCFPGA Stratix 10 SoCDK (DT)
+    [   46.096377] pstate: 20000005 (nzCv daif -PAN -UAO)
+    [   46.101152] pc : dev_watchdog+0x2cc/0x2d8
+    [   46.105149] lr : dev_watchdog+0x2cc/0x2d8
+    [   46.109144] sp : ffff00000800bd80
+    [   46.112447] x29: ffff00000800bd80 x28: ffff80007a9b4940
+    [   46.117744] x27: 00000000ffffffff x26: ffff80007aa183b0
+    [   46.123040] x25: 0000000000000001 x24: 0000000000000140
+    [   46.128336] x23: ffff80007aa1839c x22: ffff80007aa17fb0
+    [   46.133632] x21: ffff80007aa18000 x20: ffff0000091a7000
+    [   46.138927] x19: 0000000000000000 x18: ffffffffffffffff
+    [   46.144223] x17: 0000000000000000 x16: 0000000000000000
+    [   46.149519] x15: ffff0000091a96c8 x14: 07740775076f0720
+    [   46.154814] x13: 07640765076d0769 x12: 0774072007300720
+    [   46.160110] x11: 0765077507650775 x10: 0771072007740769
+    [   46.165406] x9 : 076d0773076e0761 x8 : 077207740720073a
+    [   46.170702] x7 : 072907630761076d x6 : ffff80007ff9a0c0
+    [   46.175997] x5 : ffff80007ff9a0c0 x4 : 0000000000000002
+    [   46.181293] x3 : 0000000000000000 x2 : ffff0000091ac180
+    [   46.186589] x1 : e6a742ebe628e800 x0 : 0000000000000000
+    [   46.191885] Call trace:
+    [   46.194326]  dev_watchdog+0x2cc/0x2d8
+    [   46.197980]  call_timer_fn+0x20/0x78
+    [   46.201544]  expire_timers+0xa4/0xb0
+    [   46.205108]  run_timer_softirq+0xe4/0x198
+    [   46.209107]  __do_softirq+0x114/0x210
+    [   46.212760]  irq_exit+0xd0/0xd8
+    [   46.215895]  __handle_domain_irq+0x60/0xb0
+    [   46.219977]  gic_handle_irq+0x58/0xa8
+    [   46.223628]  el1_irq+0xb0/0x128
+    [   46.226761]  arch_cpu_idle+0x10/0x18
+    [   46.230326]  do_idle+0x1d4/0x288
+    [   46.233544]  cpu_startup_entry+0x24/0x28
+    [   46.237457]  secondary_start_kernel+0x17c/0x1c0
+    [   46.241971] ---[ end trace 57048cd1372cd828 ]---
+    
+    Inspection of queue showed Jumbo packets were not sent out.
+    The ring Jumbo packet function needs to set the OWN bit so
+    the packet is sent.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 273dce368d19982f65abe8bdced67f4218f03c06
+Author: Thor Thayer <thor.thayer@linux.intel.com>
+Date:   Mon Oct 22 17:22:25 2018 -0500
+
+    arm64: dts: stratix10: Support Ethernet Jumbo frame
+    
+    [backport 'commit a27460c9768e ("arm64: dts: stratix10: Support
+                                     Ethernet Jumbo frame")']
+    
+    Backported from net-next/master
+    
+    Properly specify the RX and TX FIFO size which is important
+    for Jumbo frames.
+    Update the max-frame-size to support Jumbo frames.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit af568f382ed07a42b1d8937a2e039d8845d4fa94
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Mon Oct 22 15:48:52 2018 +0800
+
+    FogBugz #604090-2: Enable FPGA manager HPS JTAG driver implementation
+    
+    This patch would enable HPS JTAG driver to read FPGA JTAG ID for Arria 10
+    U-boot.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit d902069ce831d74d8db57720dd75449e32310322
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Tue Oct 23 13:49:34 2018 +0800
+
+    FogBugz #604090-1: Adding FPGA manager HPS JTAG driver
+    
+    HPS JTAG driver supports simple function for reading the FPGA JTAG
+    ID code. The main purpose of this driver is for showing the capability
+    of Arria 10 to run JTAG from HPS instead of FPGA.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+    ---
+    v2- Using #define MACRO for constant value. Disabled reading JTAG ID code
+        by default.
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit 557e87f4e010c33b1a62561ccf625438cb41eb47
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Thu Oct 18 11:24:03 2018 +0800
+
+    FogBugz #604051: Fix minor code mistake in L2 reset sequence
+    
+    Fix the mistake in the L2 reset sequence where the assembly
+    instructions didn't load the old value from the rstmgr.hdsken
+    register before setting the handshake enable bits and write
+    back to the register again.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+-----------------------------------------------------------------------
+
+log of intel-rsu branch master
+
+commit 0a0715fcbe5a3aa0692ce1b512ed78bf5f11eaf6
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Thu Sep 6 18:05:08 2018 -0500
+
+    FogBugz #592404-4: Add raw slot data commands to example
+    
+    Add raw data program/verify commands to the rsu_client example.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit ad7e398a303258364dd7c8d4719c8d9f8e73a12e
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Tue Sep 4 06:48:42 2018 -0500
+
+    FogBugz #592404-3: Add raw slot data support to librsu
+    
+    Add support for raw slot data by providing new program/verify
+    API functions that do not check/update the FPGA config data
+    Image Block Pointers or modify the CPB after programming. Also
+    added further details to the API header file comments to make
+    the difference between FPGA config and raw data functions
+    clearer.
+    
+    Raw slot data support is intended to allow Uboot images or
+    blob data to be stored along with FPGA config images.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit 649d83021698bbdd68032db3ca7d4ff434c89712
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Tue Aug 21 10:56:12 2018 -0500
+
+    FogBugz #592404-2: Add SPT/CPB version checks
+    
+    Add a log warning message when the SPT version is greater than
+    what the current librsu version is designed to work with. Also
+    log a warning when the CPB header size is larger than expected.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+commit 76291535cd4cbfca7f08559afab7699e59cf40fb
+Author: David Koltak <david.koltak@linux.intel.com>
+Date:   Thu Aug 16 11:29:20 2018 -0500
+
+    FogBugz #592404-1: Restore SPT1/CPB1 from SPT0/CPB0
+    
+    Enhancement to detect corrupted/missing SPT1/CPB1 tables
+    and restore them from SPT0/CPB0 if they are valid.
+    
+    Signed-off-by: David Koltak <david.koltak@linux.intel.com>
+
+-----------------------------------------------------------------------
+

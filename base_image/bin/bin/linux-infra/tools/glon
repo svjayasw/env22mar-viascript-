@@ -1,0 +1,7 @@
+#!/bin/bash
+
+let count=0
+for foo in $(git log -300 --pretty=format:%H); do
+    printf "%4d %s\n" "$count" "$(git log -1 --pretty=format:'%h %ci : %an : %s' $foo)"
+    let count=count+1
+done | less

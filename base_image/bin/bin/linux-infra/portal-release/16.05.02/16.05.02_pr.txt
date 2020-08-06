@@ -1,0 +1,209 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.5
+branch tag  : rel_socfpga-4.5_16.05.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.1-ltsi
+branch tag  : rel_socfpga-4.1-ltsi_16.05.02_pr
+new commits : 3
+11fc460 Graham Moore FogBugz #366816-6: Add clock enable/disable in Cadence QSPI driver
+108eb0e Graham Moore FogBugz #363205-2: QSPI times out on A10 when PL330 DMAC is enabled
+408b7a0 Dinh Nguyen ARM: dts: socfpga: add ethernet alias on Arria10
+
+
+++wiki:
+*Branch name*: socfpga-4.1-ltsi, *Tag name:* rel_socfpga-4.1-ltsi_16.05.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 366816-6 | Add clock enable/disable in Cadence QSPI driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/11fc4600c61cc937b44f9bb15ffed6a2a2bd0eb8 ][ 11fc4600c61cc937b44f9bb15ffed6a2a2bd0eb8 ]] |
+| 363205-2 | QSPI times out on A10 when PL330 DMAC is enabled | [[ https://github.com/altera-opensource/linux-socfpga/commit/108eb0e578e019dfdff6ff801d62ff3b13a5a913 ][ 108eb0e578e019dfdff6ff801d62ff3b13a5a913 ]] |
+| community | ARM: dts: socfpga: add ethernet alias on Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/408b7a074ef1ca241d963fb7fd7e33795cf4a94e ][ 408b7a074ef1ca241d963fb7fd7e33795cf4a94e ]] |
+--wiki:
+
+
+branch      : socfpga-4.1-ltsi-rt
+branch tag  : rel_socfpga-4.1-ltsi-rt_16.05.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.5_16.05.02_pr
+commit: ffea805 Dinh Nguyen ARM: dts: socfpga: add ethernet alias on Arria10
+
+tag:    rel_socfpga-4.1-ltsi_16.05.02_pr
+commit: 11fc460 Graham Moore FogBugz #366816-6: Add clock enable/disable in Cadence QSPI driver
+
+tag:    rel_socfpga-4.1-ltsi-rt_16.05.02_pr
+commit: 3367642 Dinh Nguyen FogBugz #361542: Add PREEMPT_RT to socfpga_defconfig
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.05.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.05.02_pr
+new commits : 4
+5b78d5a Tien Fong Chee FogBugz #371106-4: Improve core RBF FPGA program performance with DDR.
+e86bb08 Tien Fong Chee FogBugz #371106-3: Code refactoring for NAND Early IO Release
+922570b Tien Fong Chee FogBugz #371106-2: Code refactoring for SDMMC Early IO Release
+f52d2e2 Tien Fong Chee FogBugz #371106-1: Code refactoring for QSPI Early IO Release (OCRAM only)
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_16.05.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 371106-4 | Improve core RBF FPGA program performance with DDR. | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/5b78d5ae52baeb3b10b182dfba9cf639c680b8f2 ][ 5b78d5ae52baeb3b10b182dfba9cf639c680b8f2 ]] |
+| 371106-3 | Code refactoring for NAND Early IO Release | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/e86bb08c38631d3c39e42a532409635bf155842d ][ e86bb08c38631d3c39e42a532409635bf155842d ]] |
+| 371106-2 | Code refactoring for SDMMC Early IO Release | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/922570bdb63358ae3bd2b4ba6ee0ab1390172994 ][ 922570bdb63358ae3bd2b4ba6ee0ab1390172994 ]] |
+| 371106-1 | Code refactoring for QSPI Early IO Release (OCRAM only) | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/f52d2e2089a59f1240893d14c238591e38417711 ][ f52d2e2089a59f1240893d14c238591e38417711 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.05.02_pr
+commit: 7dd0473 Chin Liang See FogBugz #353914: Fix SDRAM self refresh failure
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.05.02_pr
+commit: 5b78d5a Tien Fong Chee FogBugz #371106-4: Improve core RBF FPGA program performance with DDR.
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.05.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.05.02_pr
+commit: 993831b Tien Hock Loh FogBugz #369619: Update meta-altera-refdes commit id
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.05.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.05.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.05.02_pr
+commit: 8d6e9b4 Yves Vandervennet Support for the kernel v4.3
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.05.02_pr
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1-ltsi
+
+commit 11fc4600c61cc937b44f9bb15ffed6a2a2bd0eb8
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Thu Mar 24 15:54:24 2016 -0500
+
+    FogBugz #366816-6: Add clock enable/disable in Cadence QSPI driver
+    
+    mtd: spi-nor: Cadence QSPI driver needs to enable its clock.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit 108eb0e578e019dfdff6ff801d62ff3b13a5a913
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Thu Mar 10 07:40:09 2016 -0600
+
+    FogBugz #363205-2: QSPI times out on A10 when PL330 DMAC is enabled
+    
+    arm: dts: socfpga: Cadence QSPI device node on Arria10 should use
+    qspi_clk instead of l4_main_clk
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit 408b7a074ef1ca241d963fb7fd7e33795cf4a94e
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue May 3 08:59:01 2016 -0500
+
+    ARM: dts: socfpga: add ethernet alias on Arria10
+    
+    Without having an ethernet alias, ethernet will have a random MAC address,
+    versus take an address that was provided from the bootloader.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 5b78d5ae52baeb3b10b182dfba9cf639c680b8f2
+Author: Tien Fong Chee <tfchee@pg-interactive1.altera.com>
+Date:   Tue May 10 11:11:48 2016 +0800
+
+    FogBugz #371106-4: Improve core RBF FPGA program performance with DDR.
+    
+    Improve the performance of loading RBF data from flash to larger
+    buffer(DDR), and accelerating the FPGA program with fewer looping.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit e86bb08c38631d3c39e42a532409635bf155842d
+Author: Tien Fong Chee <tfchee@pg-interactive1.altera.com>
+Date:   Fri May 6 16:27:43 2016 +0800
+
+    FogBugz #371106-3: Code refactoring for NAND Early IO Release
+    
+    Code refactoring on NAND Early IO Release for consistent implementation
+    with QSPI Early IO Release refactoring patch.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 922570bdb63358ae3bd2b4ba6ee0ab1390172994
+Author: Tien Fong Chee <tfchee@pg-interactive1.altera.com>
+Date:   Wed May 4 21:25:55 2016 +0800
+
+    FogBugz #371106-2: Code refactoring for SDMMC Early IO Release
+    
+    Code refactoring on SDMMC Early IO Release for consistent implementation
+    with QSPI Early IO Release refactoring patch.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit f52d2e2089a59f1240893d14c238591e38417711
+Author: Tien Fong Chee <tfchee@pg-interactive1.altera.com>
+Date:   Wed May 4 17:30:03 2016 +0800
+
+    FogBugz #371106-1: Code refactoring for QSPI Early IO Release (OCRAM only)
+    
+    Merging identical snippet of codes into cff_from_flash, which can be used
+    by all filesystem, including raw. Both cff_flash_preinit and cff_flash_read
+    support different flash implementation for QSPI, SDMMC and NAND respectively.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+-----------------------------------------------------------------------
+

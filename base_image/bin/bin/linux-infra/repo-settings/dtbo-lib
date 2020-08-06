@@ -1,0 +1,11 @@
+repo_path: /usr/local/git/repositories/dtbo-lib.git
+update_tests: nomerge
+email: thor.thayer@intel.com
+local_upstream:
+crucible_project:
+release_branch:
+internal_git: gitolite@at-git:dtbo-lib.git
+external_git:
+upstream_branches:
+upstream_tag_regex:
+review_addrs: thor.thayer@intel.com

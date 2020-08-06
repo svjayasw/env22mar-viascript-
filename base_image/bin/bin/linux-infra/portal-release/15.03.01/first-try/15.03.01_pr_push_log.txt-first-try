@@ -1,0 +1,123 @@
++ cd /home/atull/repos/internal/linux-socfpga
++ git tag rel_socfpga-3.18_15.03.01_pr rel_socfpga-3.18_15.03.01_rc1
++ git push origin rel_socfpga-3.18_15.03.01_pr:refs/tags/rel_socfpga-3.18_15.03.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/linux-socfpga.git[K
+remote: update_safe refs/tags/rel_socfpga-3.18_15.03.01_pr 0000000000000000000000000000000000000000 2093c64c3a64acd20c76e903043a228c627193bd[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_socfpga-3.18_15.03.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : 2093c64c3a64acd20c76e903043a228c627193bd[K
+remote: 
+remote: repo          : linux-socfpga[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_socfpga-3.18_15.03.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=linux-socfpga[K
+To gitolite@at-git:linux-socfpga
+ * [new tag]         rel_socfpga-3.18_15.03.01_pr -> rel_socfpga-3.18_15.03.01_pr
++ echo
+
++ git push portal rel_socfpga-3.18_15.03.01_pr:refs/tags/rel_socfpga-3.18_15.03.01_pr
+To gitolite@git.rocketboards.org:linux-socfpga
+ * [new tag]         rel_socfpga-3.18_15.03.01_pr -> rel_socfpga-3.18_15.03.01_pr
++ git push portal rel_socfpga-3.18_15.03.01_pr:refs/heads/socfpga-3.18
+To gitolite@git.rocketboards.org:linux-socfpga
+   ab3f83e..2093c64  rel_socfpga-3.18_15.03.01_pr -> socfpga-3.18
++ echo
+
++ git tag rel_socfpga-3.10-ltsi_15.03.01_pr rel_socfpga-3.10-ltsi_15.03.01_rc1
++ git push origin rel_socfpga-3.10-ltsi_15.03.01_pr:refs/tags/rel_socfpga-3.10-ltsi_15.03.01_pr
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.  
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of   
+their activities on this system monitored and recorded by the
+system personnel.                                            
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this 
+system expressly consents to such monitoring and is advised 
+that if such monitoring reveals possible evidence of criminal 
+activity, system personnel may provide the evidence of such 
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+remote: testing[K
+remote: /usr/local/git/repositories/linux-socfpga.git[K
+remote: update_safe refs/tags/rel_socfpga-3.10-ltsi_15.03.01_pr 0000000000000000000000000000000000000000 aeb52dd352e986a3e20490238729bfde9703f7c3[K
+remote: 
+remote:  ***********************************************************************************************[K
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***[K
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***[K
+remote:  *** updating (git fetch origin && git rebase)                                               ***[K
+remote:  ***                                                                                         ***[K
+remote:  *** see also:                                                                               ***[K
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***[K
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***[K
+remote:  ***********************************************************************************************[K
+remote: 
+remote: update type    : tags-create[K
+remote: refname       : refs/tags/rel_socfpga-3.10-ltsi_15.03.01_pr[K
+remote: oldrev        : 0000000000000000000000000000000000000000[K
+remote: newrev        : aeb52dd352e986a3e20490238729bfde9703f7c3[K
+remote: 
+remote: repo          : linux-socfpga[K
+remote: # of commits  : 0[K
+remote: refs path     : tags[K
+remote: newrev_type   : create[K
+remote: 
+remote: create tag    : rel_socfpga-3.10-ltsi_15.03.01_pr[K
+remote: allowed[K
+remote: kickoff, repo=linux-socfpga[K
+To gitolite@at-git:linux-socfpga
+ * [new tag]         rel_socfpga-3.10-ltsi_15.03.01_pr -> rel_socfpga-3.10-ltsi_15.03.01_pr
++ echo
+
++ git push portal rel_socfpga-3.10-ltsi_15.03.01_pr:refs/tags/rel_socfpga-3.10-ltsi_15.03.01_pr
+To gitolite@git.rocketboards.org:linux-socfpga
+ * [new tag]         rel_socfpga-3.10-ltsi_15.03.01_pr -> rel_socfpga-3.10-ltsi_15.03.01_pr
++ git push portal rel_socfpga-3.10-ltsi_15.03.01_pr:refs/heads/socfpga-3.10-ltsi
+To gitolite@git.rocketboards.org:linux-socfpga
+ ! [rejected]        rel_socfpga-3.10-ltsi_15.03.01_pr -> socfpga-3.10-ltsi (non-fast-forward)
+error: failed to push some refs to 'gitolite@git.rocketboards.org:linux-socfpga'
+To prevent you from losing history, non-fast-forward updates were rejected
+Merge the remote changes (e.g. 'git pull') before pushing again.  See the
+'Note about fast-forwards' section of 'git push --help' for details.

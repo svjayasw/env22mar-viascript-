@@ -1,0 +1,19 @@
+#!/bin/bash
+
+base=proxy-chain.intel.com
+
+export http_proxy=http://${base}:911
+export https_proxy=http://${base}:912
+export ftp_proxy=http://${base}:911
+export socks_proxy=http://${base}:1080
+export all_proxy=http://${base}:1080
+
+export no_proxy=intel.com,.intel.com,localhost,127.0.0.1
+
+export HTTP_PROXY=http://${base}:911
+export HTTPS_PROXY=http://${base}:912
+export FTP_PROXY=http://${base}:911
+export SOCKS_PROXY=http://${base}:1080
+export ALL_PROXY=http://${base}:1080
+
+export NO_PROXY=intel.com,.intel.com,localhost,127.0.0.1

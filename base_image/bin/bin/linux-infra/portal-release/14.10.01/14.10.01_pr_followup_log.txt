@@ -1,0 +1,30 @@
++ cd /home/atull/repos/internal/linux-socfpga
++ git push portal rel_socfpga-3.16_14.10.01_pr:refs/heads/socfpga-3.16
+To gitolite@git.rocketboards.org:linux-socfpga
+   ffeb674..73b8057  rel_socfpga-3.16_14.10.01_pr -> socfpga-3.16
++ git push portal rel_socfpga-3.10-ltsi_14.10.01_pr:refs/heads/socfpga-3.10-ltsi
+To gitolite@git.rocketboards.org:linux-socfpga
+   96c4077..8beef1b  rel_socfpga-3.10-ltsi_14.10.01_pr -> socfpga-3.10-ltsi
++ git push portal rel_socfpga-3.10-ltsi-rt_14.10.01_pr:refs/heads/socfpga-3.10-ltsi-rt
+To gitolite@git.rocketboards.org:linux-socfpga
+   2db6cf8..37a1247  rel_socfpga-3.10-ltsi-rt_14.10.01_pr -> socfpga-3.10-ltsi-rt
++ cd /home/atull/repos/internal/uboot-socfpga
++ git push portal rel_socfpga_v2013.01.01_14.10.01_pr:refs/heads/socfpga_v2013.01.01
+Everything up-to-date
++ cd /home/atull/repos/internal/poky
++ git push portal rel_danny-altera_14.10.01_pr:refs/heads/danny-altera
+Everything up-to-date
++ cd /home/atull/repos/internal/angstrom-socfpga
++ git push portal rel_angstrom-v2012.12-socfpga_14.10.01_pr:refs/heads/angstrom-v2012.12-socfpga
+Everything up-to-date
++ git push portal rel_angstrom-v2013.12-socfpga_14.10.01_pr:refs/heads/angstrom-v2013.12-socfpga
+Everything up-to-date
++ git push portal rel_angstrom-v2014.06-socfpga_14.10.01_pr:refs/heads/angstrom-v2014.06-socfpga
+Everything up-to-date
++ cd /home/atull/repos/internal/meta-altera
++ git push portal rel_angstrom-v2012.12-yocto1.3_14.10.01_pr:refs/heads/angstrom-v2012.12-yocto1.3
+Everything up-to-date
++ git push portal rel_angstrom-v2013.12-yocto1.5_14.10.01_pr:refs/heads/angstrom-v2013.12-yocto1.5
+Everything up-to-date
++ git push portal rel_angstrom-v2014.06-yocto1.6_14.10.01_pr:refs/heads/angstrom-v2014.06-yocto1.6
+Everything up-to-date

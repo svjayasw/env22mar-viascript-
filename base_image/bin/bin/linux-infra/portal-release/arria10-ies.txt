@@ -1,0 +1,8 @@
+
+
+u-boot branch: socfpga_v2014.10_arria10_bringup
+u-boot tag:    rel_socfpga_v2014.10_arria10_bringup_ies
+
+kernel branch: socfpga-3.10-ltsi
+kernel tag:    rel_socfpga-3.10-ltsi_arria10_bringup_ies
+

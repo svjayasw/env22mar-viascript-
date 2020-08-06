@@ -1,0 +1,11 @@
+repo_path: /usr/local/git/repositories/mtd-utils.git
+update_tests:
+email: dinh.nguyen@intel.com graham.moore@intel.com
+local_upstream:
+crucible_project:
+release_branch:
+internal_git: gitolite@at-git:mtd-utils.git
+external_git:
+upstream_branches:
+upstream_tag_regex:
+review_addrs:

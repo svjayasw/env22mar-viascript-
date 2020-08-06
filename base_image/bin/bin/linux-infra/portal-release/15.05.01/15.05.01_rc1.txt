@@ -1,0 +1,347 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: altera-opensource/linux-socfpga
+
+branch      : socfpga-3.18
+branch tag  : rel_socfpga-3.18_15.05.01_rc1
+new commits : 2
+53fa391 Alan Tull FogBugz #291479: arria10 devkit: slow i2c bus for lcd module
+da93558 Dinh Nguyen FogBugz #288412: Add correct reset manager offsets for Arria10
+
+
+++wiki:
+*Branch name*: socfpga-3.18, *Tag name:* rel_socfpga-3.18_15.05.01_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| 291479 | arria10 devkit: slow i2c bus for lcd module | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/53fa39141c538d8fa6e56ff05afcce90e7eedf31 ][ 53fa39141c538d8fa6e56ff05afcce90e7eedf31 ]] |
+| 288412 | Add correct reset manager offsets for Arria10 | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/da935582557f50a926339233de49a4df1eea2b44 ][ da935582557f50a926339233de49a4df1eea2b44 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.05.01_rc1
+new commits : 4
+55fdf0e Vince Bridgers FogBugz #292672: Remove use of snps,max-mtu in dts, use max-frame-size
+4af3fa0 Vince Bridgers FogBugz #292669: Add missing properties for stmmac multicast capabilities
+014fe8d Alan Tull FogBugz #291479: arria10 devkit: slow i2c bus for lcd module
+eebb914 Dinh Nguyen FogBugz #288412: Add correct reset manager offsets for Arria10
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_15.05.01_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| 292672 | Remove use of snps,max-mtu in dts, use max-frame-size | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/55fdf0eb86584d48100f2c718f6fb4a7d03a70b7 ][ 55fdf0eb86584d48100f2c718f6fb4a7d03a70b7 ]] |
+| 292669 | Add missing properties for stmmac multicast capabilities | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/4af3fa0639f020f0bf72b228d676f06a44fcde26 ][ 4af3fa0639f020f0bf72b228d676f06a44fcde26 ]] |
+| 291479 | arria10 devkit: slow i2c bus for lcd module | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/014fe8ddb73146259ab52deabc4a53e17e0105a6 ][ 014fe8ddb73146259ab52deabc4a53e17e0105a6 ]] |
+| 288412 | Add correct reset manager offsets for Arria10 | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/eebb91461a3fdcf87d627c9dab92e0b90f519116 ][ eebb91461a3fdcf87d627c9dab92e0b90f519116 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.05.01_rc1
+new commits : 2
+bae4561 Alan Tull FogBugz #291479: arria10 devkit: slow i2c bus for lcd module
+42b95f6 Dinh Nguyen FogBugz #288412: Add correct reset manager offsets for Arria10
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_15.05.01_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| 291479 | arria10 devkit: slow i2c bus for lcd module | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/bae4561739f76250578c8446e671b85b358b502f ][ bae4561739f76250578c8446e671b85b358b502f ]] |
+| 288412 | Add correct reset manager offsets for Arria10 | [[ https://github.com/altera-opensource/altera-opensource/linux-socfpga/commit/42b95f64d9dbacace1eccd5ddb6072708064c55f ][ 42b95f64d9dbacace1eccd5ddb6072708064c55f ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-3.18_15.05.01_rc1
+commit: 53fa391 Alan Tull FogBugz #291479: arria10 devkit: slow i2c bus for lcd module
+
+tag:    rel_socfpga-3.10-ltsi_15.05.01_rc1
+commit: 55fdf0e Vince Bridgers FogBugz #292672: Remove use of snps,max-mtu in dts, use max-frame-size
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.05.01_rc1
+commit: bae4561 Alan Tull FogBugz #291479: arria10 devkit: slow i2c bus for lcd module
+
+
+-----------------------------------------------------------------------
+
+repository: altera-opensource/u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.05.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.05.01_rc1
+new commits : 3
+90ce61b Matthew Gerlach FogBugz #290468: Uboot device tree needs to be generated
+6ea73c3 Matthew Gerlach FogBugz #292094: Arria10: fdtimagesize too small for GHRD DTB
+bc36391 Thor Thayer FogBugz #287646: Arria10: No indication of Firewall failure.
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_15.05.01_rc1
+| *ID* | *Comment* | *GIT Commit* |
+| 290468 | Uboot device tree needs to be generated | [[ https://github.com/altera-opensource/altera-opensource/u-boot-socfpga/commit/90ce61bf419a62381cb59470f4a4ba9e2f8e3b4e ][ 90ce61bf419a62381cb59470f4a4ba9e2f8e3b4e ]] |
+| 292094 | Arria10: fdtimagesize too small for GHRD DTB | [[ https://github.com/altera-opensource/altera-opensource/u-boot-socfpga/commit/6ea73c3e4b67f94809786b02d1f886469d678600 ][ 6ea73c3e4b67f94809786b02d1f886469d678600 ]] |
+| 287646 | Arria10: No indication of Firewall failure. | [[ https://github.com/altera-opensource/altera-opensource/u-boot-socfpga/commit/bc36391e21d843694ad3bcbe54edaf17cda62701 ][ bc36391e21d843694ad3bcbe54edaf17cda62701 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.05.01_rc1
+commit: 32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.05.01_rc1
+commit: 90ce61b Matthew Gerlach FogBugz #290468: Uboot device tree needs to be generated
+
+
+-----------------------------------------------------------------------
+
+repository: altera-opensource/angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_15.05.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_15.05.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_15.05.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.05.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2012.12-socfpga_15.05.01_rc1
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_15.05.01_rc1
+commit: 65417bc Yves Vandervennet kde repo moved, it's now meta-kde4
+
+tag:    rel_angstrom-v2014.06-socfpga_15.05.01_rc1
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+tag:    rel_angstrom-v2014.12-socfpga_15.05.01_rc1
+commit: 3990895 Yves Vandervennet update for kde and gumstix git repos
+
+
+-----------------------------------------------------------------------
+
+repository: altera-opensource/meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_15.05.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_15.05.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_15.05.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.05.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.05.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2012.12-yocto1.3_15.05.01_rc1
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_15.05.01_rc1
+commit: 1090ffb Yves Vandervennet recipe for kernel 3.18
+
+tag:    rel_angstrom-v2014.06-yocto1.6_15.05.01_rc1
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2014.12-yocto1.7_15.05.01_rc1
+commit: 95d38e0 Yves Vandervennet recipe for 3.18
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.05.01_rc1
+commit: 28888cd Yves Vandervennet fixed DT issue
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.18
+
+commit 53fa39141c538d8fa6e56ff05afcce90e7eedf31
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Apr 8 11:46:58 2015 -0500
+
+    FogBugz #291479: arria10 devkit: slow i2c bus for lcd module
+    
+    Seeing intermittent missing characters on newhaven serial
+    display so slow the rising/falling time to 6000nSec for
+    Arria10 devkit.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit da935582557f50a926339233de49a4df1eea2b44
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Mar 24 23:17:28 2015 -0500
+
+    FogBugz #288412: Add correct reset manager offsets for Arria10
+    
+    There are 2 peripheral module reset manager registers on the Arria10.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: use socfpga_is_a10() and cleanup
+    
+    Conflicts:
+    	arch/arm/mach-socfpga/core.h
+    	arch/arm/mach-socfpga/socfpga.c
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 55fdf0eb86584d48100f2c718f6fb4a7d03a70b7
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Tue Apr 14 05:45:22 2015 -0500
+
+    FogBugz #292672: Remove use of snps,max-mtu in dts, use max-frame-size
+    
+    snps,max-mtu was deprecated some time ago, use max-frame-size instead.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+commit 4af3fa0639f020f0bf72b228d676f06a44fcde26
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Tue Apr 14 05:22:36 2015 -0500
+
+    FogBugz #292669: Add missing properties for stmmac multicast capabilities
+    
+    This patch adds missing properties for Arria 10 stmmac multicast and
+    unicast properties.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+
+commit 014fe8ddb73146259ab52deabc4a53e17e0105a6
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Apr 8 11:46:58 2015 -0500
+
+    FogBugz #291479: arria10 devkit: slow i2c bus for lcd module
+    
+    Seeing intermittent missing characters on newhaven serial
+    display so slow the rising/falling time to 6000nSec for
+    Arria10 devkit.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit eebb91461a3fdcf87d627c9dab92e0b90f519116
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Mar 24 23:17:28 2015 -0500
+
+    FogBugz #288412: Add correct reset manager offsets for Arria10
+    
+    There are 2 peripheral module reset manager registers on the Arria10.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: use socfpga_is_a10() and cleanup
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit bae4561739f76250578c8446e671b85b358b502f
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Apr 8 11:46:58 2015 -0500
+
+    FogBugz #291479: arria10 devkit: slow i2c bus for lcd module
+    
+    Seeing intermittent missing characters on newhaven serial
+    display so slow the rising/falling time to 6000nSec for
+    Arria10 devkit.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+commit 42b95f64d9dbacace1eccd5ddb6072708064c55f
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Mar 24 23:17:28 2015 -0500
+
+    FogBugz #288412: Add correct reset manager offsets for Arria10
+    
+    There are 2 peripheral module reset manager registers on the Arria10.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: use socfpga_is_a10() and cleanup
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 90ce61bf419a62381cb59470f4a4ba9e2f8e3b4e
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Wed Apr 15 09:14:46 2015 -0700
+
+    FogBugz #290468: Uboot device tree needs to be generated
+    
+    The goal was always to check in a device tree generated
+    by the bootloader generator into the uboot source tree.
+    This device tree also has the correct GPLv2 licence required
+    by u-boot and approved by corporate counsel.  The generator
+    does not add a copyright, but the customer, in this case
+    Altera, puts on the desired copyright.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 6ea73c3e4b67f94809786b02d1f886469d678600
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Sun Apr 12 08:40:13 2015 -0700
+
+    FogBugz #292094: Arria10: fdtimagesize too small for GHRD DTB
+    
+    The A10 uboot variable, fdtimagesize, is used as the number of
+    bytes to copy out of qspiflash for the linux device tree.
+    The patch changes the value from 0x5000 to 0x7f00 which is
+    the maximum space between the load addresses from the
+    dtb and kernel, 0x100 and 0x8000, respectively.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit bc36391e21d843694ad3bcbe54edaf17cda62701
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Fri Mar 20 14:32:26 2015 -0500
+
+    FogBugz #287646: Arria10: No indication of Firewall failure.
+    
+    Matthew noticed that if there is a firewall setup problem,
+    it fails silently. This patch puts out a message on the UART
+    if there is a failure.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

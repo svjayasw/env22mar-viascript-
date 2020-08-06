@@ -1,0 +1,44 @@
+repos located at : /home/atull/repos/internal
+tag              : ACDS16.0_REL_GSRD_RC5
+
+angstrom-socfpga
+0a2c33dbc636dc02049cfb77f73132d70b36c183 FogBugz #338393: PCIe: Update meta-altera-refdes commit ID
+ACDS16.0_REL_GSRD_RC5 == ACDS16.0_REL_GSRD_RC4
+- origin/angstrom-v2014.12-socfpga
+- portal/angstrom-v2014.12-socfpga
+
+linux-refdesigns
+89acc83e9e3a66920e7bf949c60a9898419e946b FogBugz #338130: add dma transfer modules
+ACDS16.0_REL_GSRD_RC5 == ACDS16.0_REL_GSRD_RC4
+- origin/socfpga-15.1
+- origin/socfpga-16.0
+- origin/socfpga-16.1
+- portal/socfpga-15.1
+- portal/socfpga-16.0
+
+linux-socfpga
+28bac3edbcdc74f98b865986be5d340381896192 FogBugz #350137: Fix A10SyCon Button Export Crash
+ACDS16.0_REL_GSRD_RC5 == ACDS16.0_REL_GSRD_RC4
+- origin/socfpga-3.10-ltsi
+- portal/socfpga-3.10-ltsi
+
+meta-altera
+8d6e9b468630aa4d9d4c946080f5023dea43d891 Support for the kernel v4.3
+ACDS16.0_REL_GSRD_RC5 == ACDS16.0_REL_GSRD_RC4
+- origin/angstrom-v2014.12-yocto1.7
+- portal/angstrom-v2014.12-yocto1.7
+
+meta-altera-refdes
+660224209baf74937656cc7d6be92fa7d2765acb FogBugz #338393: Add fio package to PCIe reference design
+ACDS16.0_REL_GSRD_RC5 == ACDS16.0_REL_GSRD_RC4
+- origin/gsrd-15.1
+- origin/gsrd-16.0
+- portal/gsrd-15.1
+- portal/gsrd-16.0
+
+uboot-socfpga
+7dd0473e47ede9fd240969846a42f5646f565ce9 FogBugz #353914: Fix SDRAM self refresh failure
+ACDS16.0_REL_GSRD_RC5 == ACDS16.0_REL_GSRD_RC4
+- origin/socfpga_v2013.01.01
+- portal/socfpga_v2013.01.01
+

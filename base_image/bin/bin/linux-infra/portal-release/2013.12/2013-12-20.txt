@@ -1,0 +1,158 @@
+This is a script-generated report of what will be pushed to the portal today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch socfpga-3.12 :
+  new commits: 3
+7d8351c Vince Bridgers FogBugz #173692: Add options to configuration file to enable PTP
+fed5b31 Thor Thayer FogBugz #173183: L2 EDAC addition for Altera SOCFPGA.
+af791b1 Ley Foon Tan FogBugz #172871: Use hardware interrupt instead of virtual interrupt
+
+
+branch socfpga-3.4-ltsi :
+  new commits: 0
+
+
+branch socfpga-3.9-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: uboot-socfpga
+
+branch socfpga_v2013.01.01 :
+  new commits: 3
+9028a43 Chin Liang See FogBugz #158875: Enhance semihosting code for THUMB2 mode
+db6d5d0 Chin Liang See FogBugz #158875: Enhance Preloader and U-Boot to use THUMB2
+eb4d001 Chin Liang See FogBugz #166933: Fixed OCRAM false double bit error
+
+
+branch socfpga_v2013.01.01-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: poky
+
+branch danny-altera :
+  new commits: 0
+
+
+branch danny-altera-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.12
+
+commit 7d8351c7006717a4be943da23505dddf8e798bb5
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Sat Dec 14 19:56:09 2013 -0600
+
+    FogBugz #173692: Add options to configuration file to enable PTP
+    
+    Add options to enable PTP in the kernel, including CONFIG_PPS,
+    CONFIG_NETWORK_PHY_TIMESTAMPING, and CONFIG_PTP_1588_CLOCK.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit fed5b3170ecc1335b3e1c06e12fc70a5970d4b6a
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Fri Dec 13 14:42:47 2013 -0600
+
+    FogBugz #173183: L2 EDAC addition for Altera SOCFPGA.
+    
+    Add L2 ECC to the Error Detection And Correction module for tracking
+    ECC errors in Altera's SOCFPGA Level 2 cache.
+    This patch makes the assumption that the L2 cache has been cleaned
+    and ECC turned on before Linux is started (i.e. in the preloader).
+    
+    V2 Changes:
+    - Implement dual interrupts as suggested in socfpga.dtsi.
+    - Put include files in alphabetical order.
+    - Abstract the module checks for future additions.
+    - Correct the compatible string.
+    - Remove dependency check of Parity.
+    
+    V3 Changes:
+    - Fix Copyright in header.
+    - Cleanup return codes.
+    - Add panic to Double Bit Error.
+    - Implement a cleaner way of getting ECC function pointers.
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit af791b13213af97363ad8086ffb986c9110be43c
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Dec 11 14:50:06 2013 +0800
+
+    FogBugz #172871: Use hardware interrupt instead of virtual interrupt
+    
+    Fixed incorrect interrupt number when setting IENABLE register.
+    We should use hardware interrupt number instead of virtual interrupt
+    number.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 9028a4313e9594851ff41b1d8eb515a883cf9583
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Dec 19 07:31:35 2013 -0800
+
+    FogBugz #158875: Enhance semihosting code for THUMB2 mode
+    
+    Enhance the semihosting code where we will using different
+    SVC value for THUMB mode.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit db6d5d0953242e027d6b53fc5bd6dcd51cdbc3fd
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Dec 17 15:03:25 2013 -0800
+
+    FogBugz #158875: Enhance Preloader and U-Boot to use THUMB2
+    
+    This is to enhance the Preloader and U-Boot to smaller size by
+    using THUMB2 mode. With smaller size, it will yield better boot
+    time as the flash accessing took most of the boot time.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Fixed the commit message
+
+commit eb4d00134524a4a38fca03dea0393e7f6e41e77e
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Dec 11 10:58:59 2013 -0800
+
+    FogBugz #166933: Fixed OCRAM false double bit error
+    
+    Ensure the stack pointer memory region is initialized during the
+    early run of the Preloader and U-Boot. This is to avoid the false
+    double bit error which might occurred during stack access. It is
+    due to the OCRAM controller always read in 64 bits manner. This issue
+    is spotted when we switch to new Altera version GNU toolchain.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+

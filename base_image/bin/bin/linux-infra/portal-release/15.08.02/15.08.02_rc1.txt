@@ -1,0 +1,199 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.1
+branch tag  : rel_socfpga-4.1_15.08.02_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.08.02_rc1
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.08.02_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.1_15.08.02_rc1
+commit: 60fd5d4 Matthew Gerlach FogBugz #292777: Calibrate read_delay at runtime
+
+tag:    rel_socfpga-3.10-ltsi_15.08.02_rc1
+commit: 8418e93 Graham Moore FogBugz #314791: QSPI: Set jedec_id in flash data structure
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.08.02_rc1
+commit: 8a34ee1 Graham Moore FogBugz #314791: QSPI: Set jedec_id in flash data structure
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.08.02_rc1
+new commits : 1
+353283b Tien Fong Chee FogBugz #241114: Fixed the compilation issue when BOOT_FROM_NAND is checked on preloader.
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.08.02_rc1
+new commits : 2
+2ffbb7d Chin Liang See mmc: Continue polling MMC card for OCR only if it is still not ready
+912620e Jaehoon Chung mmc: dw_mmc: fixed the wrong bit control
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.08.02_rc1
+commit: 353283b Tien Fong Chee FogBugz #241114: Fixed the compilation issue when BOOT_FROM_NAND is checked on preloader.
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.08.02_rc1
+commit: 2ffbb7d Chin Liang See mmc: Continue polling MMC card for OCR only if it is still not ready
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.08.02_rc1
+new commits : 1
+7e781b1 Yves Vandervennet update against the latest changes for meta-kde
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.08.02_rc1
+commit: 7e781b1 Yves Vandervennet update against the latest changes for meta-kde
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.08.02_rc1
+new commits : 2
+8aaa263 Graham Moore Add ARCH=arm to sopcfpga-test bb make files
+870fb05 Tien Hock Loh FogBugz #311198: Add uboot version configuration to arria5 and cyclone5
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.08.02_rc1
+new commits : 1
+d58b311 Graham Moore Add ARCH=arm to sopcfpga-test bb make files
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.08.02_rc1
+commit: 8aaa263 Graham Moore Add ARCH=arm to sopcfpga-test bb make files
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.08.02_rc1
+commit: d58b311 Graham Moore Add ARCH=arm to sopcfpga-test bb make files
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 353283b6e75eabdcc48dadf08507b4b86c229d78
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Wed Aug 5 12:41:24 2015 +0800
+
+    FogBugz #241114: Fixed the compilation issue when BOOT_FROM_NAND
+    is checked on preloader.
+    
+    The compilation having issue because some #define are not included
+    during compilation when BOOT_FROM_NAND is checked on preloader
+    support package setting. This patch fixed the issue by including
+    those missing #define when the BOOT_FROM_NAND is checked.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 2ffbb7d6e8a5967b682da642b996069415fe43a7
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Jul 27 17:04:34 2015 +0800
+
+    mmc: Continue polling MMC card for OCR only if it is still not ready
+    
+    Some MMC cards come to ready state quite quickly, so that the respective
+    flag appears to be set in mmc_send_op_cond already. In this case trying
+    to continue polling the card with CMD1 in mmc_complete_op_cond is incorrect
+    and may lead to unpredictable results. So check the flag before polling
+    and skip it appropriately.
+    
+    Signed-off-by: Andrew Gabbasov <andrew_gabbasov@mentor.com>
+
+commit 912620edca2d69bfc2b8f1b26dea316382316148
+Author: Jaehoon Chung <jh80.chung@samsung.com>
+Date:   Wed Jan 14 17:37:53 2015 +0900
+
+    mmc: dw_mmc: fixed the wrong bit control
+    
+    If mode is not DDR-mode, then it needs to clear it.
+    
+    Signed-off-by: Jaehoon Chung <jh80.chung@samsung.com>
+
+-----------------------------------------------------------------------
+
+log of angstrom-socfpga branch angstrom-v2014.12-socfpga
+
+commit 7e781b1650493f4ec3121b599132c8f8c367d7e7
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Tue Aug 4 07:47:59 2015 -0500
+
+    update against the latest changes for meta-kde
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7
+
+commit 8aaa263431c1c75653d4d93c12ccd6984cd4f084
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Jul 31 12:30:38 2015 -0500
+
+    Add ARCH=arm to sopcfpga-test bb make files
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit 870fb05fbc3c5702ec9224cde5d96efe175b1a5a
+Author: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+Date:   Wed Jul 15 14:45:00 2015 +0800
+
+    FogBugz #311198: Add uboot version configuration to arria5 and cyclone5
+    
+    This is to set the uboot version used by arria5 and cyclone5. The version
+    used should be 2013.01.01.
+    
+    Signed-off-by: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7_a10
+
+commit d58b31190428328e703ed2bcc148b31c49caa670
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Jul 31 12:30:38 2015 -0500
+
+    Add ARCH=arm to sopcfpga-test bb make files
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

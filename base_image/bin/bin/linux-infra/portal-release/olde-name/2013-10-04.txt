@@ -1,0 +1,178 @@
+This is a script-generated report of what will be pushed to the portal today.
+
+Today is the last push of socfpga-3.10 as we switch to socfpga-3.11
+
+Also pushing out the following release branches:
+ linux-socfpga - socfpga-3.9-rel
+ uboot-socfpga - socfpga_v2013.01.01-rel
+ poky          - danny-altera-rel
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch socfpga-3.11:
+Pushing new branch to rocketboards.org
+
+branch socfpga-3.10:
+  new commits: 4
+9914410 Thor Thayer FogBugz #138919: Fixes for Linux CAN Support
+3d9b8ba Dinh Nguyen FogBugz #157151: Fix kernel build when building without SMP
+03b2e60 Yves Vandervennet FogBugz #156167: socfpga kernel configuration update to support udev
+5673e17 Dinh Nguyen FogBugz #154216: Fix common clock driver for SOCFPGA
+
+
+branch socfpga-3.4-ltsi:
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: uboot-socfpga
+
+branch socfpga_v2013.01.01:
+  new commits: 2
+1d0966a Chin Liang See FogBugz #152778: Moving board specific functions away from misc.c
+ce6f7bb Chin Liang See FogBugz #155233: Avoid QSPI flash programming during XiP mode
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: poky
+
+branch danny-altera:
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: sopc-tools
+
+branch master:
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.11
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10
+
+commit 9914410ae8fcd69230dfbd1b0520c6662297fe2b
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Mon Sep 23 12:26:43 2013 -0500
+
+    FogBugz #138919: Fixes for Linux CAN Support
+    
+    The register offsets for D_CAN1 were incorrect in the
+    socfpga.dtsi file.
+    - Change from incorrect offset 0xFFC10000 to 0xFFC01000.
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit 3d9b8baa83be902255fd81511ee0c8e0473f6eeb
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Sep 24 14:00:57 2013 -0500
+
+    FogBugz #157151: Fix kernel build when building without SMP
+    
+    The kernel build for SOCFPGA was broken when building CONFIG_SMP is disabled.
+    The error is in the Kconfig for SOCFPGA, as it should only build the ARM TWD
+    timer if CONFIG_SMP is enabled.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 03b2e605741b279fd157ab7c9cc239d43fff7c71
+Author: Yves Vandervennet <yvanderv@altera.com>
+Date:   Tue Sep 24 20:43:53 2013 -0500
+
+    FogBugz #156167: socfpga kernel configuration update to support udev
+    
+    udev is required by Angstrom, which is our target Linux distribution.
+    
+    The relevant kernel config options, for udev versions later than 141,
+    are listed on kernel.org:
+    
+      CONFIG_DEVTMPFS=y
+      CONFIG_HOTPLUG=y
+      CONFIG_INOTIFY_USER=y
+      CONFIG_NET=y
+      CONFIG_PROC_FS=y
+      CONFIG_SIGNALFD=y
+      CONFIG_SYSFS=y
+      CONFIG_SYSFS_DEPRECATED*=n
+      CONFIG_UEVENT_HELPER_PATH=""
+    
+    This patch was tested against the Angstrom and Yocto RFS'es
+    
+    V2:
+       removed CONFIG_SYSFS_DEPRECATED=n
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@altera.com>
+
+commit 5673e17c1c48569f7c35a3a387ec3944f7c2cd45
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Sep 11 12:44:48 2013 -0500
+
+    FogBugz #154216: Fix common clock driver for SOCFPGA
+    
+    For clocks with a fixed-divider, the "reg" parameter is not necessary.
+    The mpu_periph_clk does not have a gate, so change it to the type
+    "altr,socfpga-perip-clk".
+    
+    Set the proper clock for the smp_twd timer in the device tree entry.
+    By doing this, revert the fix in kernel/smp_twd.c to match kernel.org.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 1d0966a3e20d45d7d25f3051c7924361a3c53cc4
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Sep 27 13:53:27 2013 -0700
+
+    FogBugz #152778: Moving board specific functions away from misc.c
+    
+    To move all board related functions from misc.c to board/altera/socfpga
+    /socfpga_common.c. With this, user can add their custom board related
+    code at their board specific folder instead modifying the misc.c. It is
+    possible as we have socfpga_common.c to share among various
+    SOCFPGA family dev kit.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit ce6f7bb1ef9c22ceea5b750d260f873667c3fe40
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Sep 27 13:42:41 2013 -0700
+
+    FogBugz #155233: Avoid QSPI flash programming during XiP mode
+    
+    To avoid Preloader from programming to serial NOR flash when the
+    flash in XiP mode. SDRAM ECC padding is not required as the code
+    is at serial NOR flash region instead SDRAM region. Hence it won't
+    trigger any false SDRAM double bit error (DBE) even uninitialized.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+

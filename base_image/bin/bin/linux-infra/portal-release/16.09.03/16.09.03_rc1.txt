@@ -1,0 +1,215 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.6
+branch tag  : rel_socfpga-4.6_16.09.03_rc1
+new commits : 1
+982c902 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+
+branch      : socfpga-4.7
+branch tag  : rel_socfpga-4.7_16.09.03_rc1
+new commits : 0
+
+
+branch      : socfpga-4.1.22-ltsi
+branch tag  : rel_socfpga-4.1.22-ltsi_16.09.03_rc1
+new commits : 1
+47fdd11 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+
+branch      : socfpga-4.1.22-ltsi-rt
+branch tag  : rel_socfpga-4.1.22-ltsi-rt_16.09.03_rc1
+new commits : 3
+fb0d380 Alan Tull FogBugz #398879-2: fpga mgr debugfs
+d2fdb9a Alan Tull FogBugz #398879-1: fpga: doc: documentation for FPGA debugfs
+044b3e8 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.6_16.09.03_rc1
+commit: 982c902 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+tag:    rel_socfpga-4.7_16.09.03_rc1
+commit: 923ea28 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+tag:    rel_socfpga-4.1.22-ltsi_16.09.03_rc1
+commit: 47fdd11 Alan Tull FogBugz #403603: fpga: remove message about not finding region
+
+tag:    rel_socfpga-4.1.22-ltsi-rt_16.09.03_rc1
+commit: fb0d380 Alan Tull FogBugz #398879-2: fpga mgr debugfs
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.09.03_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.09.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.09.03_rc1
+commit: f5cd6b9 Chin Liang See spi: cadence_qspi_apb: Ensure baudrate doesn't exceed max value
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.09.03_rc1
+commit: ab2181d Tien Fong Chee FogBugz #398001: Enable UART for console when FPGA is external configured
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.09.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.09.03_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.09.03_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.09.03_rc1
+commit: d6f1376 Graham Moore Set PREFERRED_VERSION for the linux kernel to 4.5 for stratix10swvp
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.09.03_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.6
+
+commit 982c9027d1bd07d990bc8f9b2acda1409273dae3
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Sep 12 12:46:06 2016 -0500
+
+    FogBugz #403603: fpga: remove message about not finding region
+    
+    This commit removes a message from the DT overlay code in
+    fpga-region.c:
+    
+      fpga_region_find did not find FPGA Region in class: /soc
+    
+    This message can happen for every DT overlay notification if
+    there are no FPGA regions in the device tree.  It's not
+    really needed even for debug.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi
+
+commit 47fdd11c2ba13e7c5412a1ad70d1f666fab3fa8c
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Sep 12 12:46:06 2016 -0500
+
+    FogBugz #403603: fpga: remove message about not finding region
+    
+    This commit removes a message from the DT overlay code in
+    fpga-region.c:
+    
+      fpga_region_find did not find FPGA Region in class: /soc
+    
+    This message can happen for every DT overlay notification if
+    there are no FPGA regions in the device tree.  It's not
+    really needed even for debug.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi-rt
+
+commit fb0d3800abcfcd1bdf326b012d0593692e9d19dd
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Wed Aug 17 16:25:59 2016 -0500
+
+    FogBugz #398879-2: fpga mgr debugfs
+    
+    Implement DebugFS for the FPGA Manager Framework.
+    
+    Each FPGA gets its own directory such as
+     <debugfs>/fpga_manager/fpga0 and three files:
+    
+     * [RW] flags          = flags as defined in fpga-mgr.h
+     * [RW] firmware_name  = write/read back name of FPGA image
+                             firmware file to program
+     * [WO] image          = write-only file for directly writing
+                             fpga image w/o firmware layer
+    
+    Enabled by CONFIG_FPGA_MGR_DEBUG_FS
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v2: s/Altera/Intel/
+        s/parital/partial/
+        Use dev_err instead of pr_err
+        Clean up print: remove "count="
+        Kconfig: depends on FPGA && DEBUGFS_FS
+        Move documentation out of code
+
+commit d2fdb9aeca85aea14d6042e8e1916c5b03884784
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue Aug 23 11:57:49 2016 -0500
+
+    FogBugz #398879-1: fpga: doc: documentation for FPGA debugfs
+    
+    Document the DebugFS interface for the core FPGA Manager
+    framework.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v2: Move documentation out of source to Documentation folder
+
+commit 044b3e8cd531283093f1ab31380371f751ca9fcd
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Mon Sep 12 12:46:06 2016 -0500
+
+    FogBugz #403603: fpga: remove message about not finding region
+    
+    This commit removes a message from the DT overlay code in
+    fpga-region.c:
+    
+      fpga_region_find did not find FPGA Region in class: /soc
+    
+    This message can happen for every DT overlay notification if
+    there are no FPGA regions in the device tree.  It's not
+    really needed even for debug.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

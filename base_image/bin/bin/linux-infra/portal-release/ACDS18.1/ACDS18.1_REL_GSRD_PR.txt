@@ -1,0 +1,62 @@
+
+Tags found:
+ACDS18.1_REL_S10_GSRD_PR
+ACDS18.1_REL_GSRD_PR
+
+   repo                 branch                            commit   behind     tag name
+linux-socfpga        socfpga-4.9.78-ltsi                  5704788     0   ACDS18.1_REL_GSRD_PR
+uboot-socfpga        socfpga_v2013.01.01                  0c9a3bd     0   ACDS18.1_REL_GSRD_PR
+meta-altera          angstrom-v2016.12-yocto2.2           ec7bfa2     0   ACDS18.1_REL_GSRD_PR
+meta-altera-refdes   master                               701bb8b     2   ACDS18.1_REL_GSRD_PR
+linux-refdesigns     master                               f4bf3c3     0   ACDS18.1_REL_GSRD_PR
+uboot-socfpga        socfpga_v2017.09                     2148866     4   ACDS18.1_REL_S10_GSRD_PR
+
+-----------------------------------------------------------------------
+repo:   linux-socfpga
+-----------------------------------------------------------------------
+5704788 Dinh Nguyen net: stmmac: build the dwmac-socfpga platform driver for Stratix10
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS18.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.9.78-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/57047883442e58369cde6c8f8f710f7c91fcbfbe
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   uboot-socfpga
+-----------------------------------------------------------------------
+0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS18.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2013.01.01
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/0c9a3bdf3ca1326e3bc539676452f2d4f8895aeb
+-----------------------------------------------------------------------
+2148866 Thor Thayer FogBugz #592949: Enable Non-Secure S10 Peripheral ECC access
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS18.1_REL_S10_GSRD_PR
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2017.09
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/214886628bd7847f3bced1816e319d50cbf23dec
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera
+-----------------------------------------------------------------------
+ec7bfa2 Ong, Hean Loong update 4.9.78-ltsi to commit ID da71e4b
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/ACDS18.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2016.12-yocto2.2
+commit : https://github.com/altera-opensource/meta-altera/commit/ec7bfa2a8ec23767272fb03100831cccb653b506
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera-refdes
+-----------------------------------------------------------------------
+701bb8b Ong, Hean Loong Fogbugz #573359-1: Fix xvfb recipe for Angstrom 2018.06
+tag    : https://github.com/altera-opensource/meta-altera-refdes/releases/tag/ACDS18.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/meta-altera-refdes/tree/master
+commit : https://github.com/altera-opensource/meta-altera-refdes/commit/701bb8b71f692e527998cd9a0b3a58bd2e7ee184
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   linux-refdesigns
+-----------------------------------------------------------------------
+f4bf3c3 Ong, Hean Loong FogBugz #520514-4 updating safeclib to 3.0
+tag    : https://github.com/altera-opensource/linux-refdesigns/releases/tag/ACDS18.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/linux-refdesigns/tree/master
+commit : https://github.com/altera-opensource/linux-refdesigns/commit/f4bf3c30d8543d76e358c4c22033b6277f9052eb
+-----------------------------------------------------------------------

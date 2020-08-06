@@ -1,0 +1,353 @@
+This is a script-generated report of what will be pushed to the portal today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch socfpga-3.11 :
+  new commits: 7
+5eac4f4 Ley Foon Tan FogBugz #166446: nios2: move .GOT section after .text section
+e6e8b63 Ley Foon Tan FogBugz #163821: arch/nios2: Add devtmpfs to defconfig
+68e1ad7 Vince Bridgers FogBugz #166582: Kernel needs option to support IPv6
+9c8a3a3 Matthew Gerlach FogBugz #165941: FPGA bridge drivers need to be started early
+eb6c594 Dinh Nguyen FogBugz #166216: Fix DMA pl330 initialization for 3.11
+e54a386 Graham Moore FogBugz #152777: Fix out-of-order QSPI chip select configuration.
+e933a86 Thor Thayer FogBugz #165063: SDRAM ECC Error Injection for Testing
+
+
+branch socfpga-3.4-ltsi :
+  new commits: 0
+
+
+branch socfpga-3.9-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: uboot-socfpga
+
+branch socfpga_v2013.01.01 :
+  new commits: 10
+1bb3cde Chin Liang See FogBugz #163509: Enhancing QSPI access performance
+e81c05b Chin Liang See FogBugz #136143: Enhancing Preloader SDRAM memory test
+c485699 Chin Liang See FogBugz #163055: Fixing Preloader FPGA programming
+7590581 Chin Liang See FogBugz #158537: Updating U-Boot FPGA2SDRAM driver
+2fb8198 Chin Liang See FogBugz #159335: Enhance Arria V SDRAM to 533MHz
+6b91175 Chin Liang See FogBugz #112256: Adding Denali NAND configuration
+461a61b Chin Liang See FogBugz #112256: Enable NAND ECC read within SPL framework
+f23b21b Chin Liang See FogBugz #112256: Reconfigure PLL for NAND and SDMMC controller
+17e187a Chin Liang See FogBugz #163711: Enhancing Preloader semihosting function
+510db4d Chin Liang See FogBugz #112256: Adding block lock features for NAND
+
+
+branch socfpga_v2013.01.01-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: poky
+
+branch danny-altera :
+  new commits: 0
+
+
+branch danny-altera-rel :
+  new commits: 2
+39adb32 Lee Booi Lim Fogbugz #166591 : Rocketboard build toolchain fix - change relative path to full path
+6d4ef85 Tien Hock Loh FogBugz #166591: Rocketboards poky builds using wrong toolchain
+
+
+Tags to push out to rocketboards.git:
+tag : ACDS13.1_REL_GSRD_PR_UPDATE1 (39adb32e10afbc02e7bc6b3ad7e21c1b8f7a8262)
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.11
+
+commit 5eac4f451ba4580259d87755e5076fb8d9177c6c
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Nov 7 18:01:18 2013 +0800
+
+    FogBugz #166446: nios2: move .GOT section after .text section
+    
+    Fix boot from flash issue.
+    .GOT section needs to be after .text section because
+    arch/nios2/boot/compressed/misc.c:decompress_kernel() assumes kernel is
+    at top of the memory region.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit e6e8b63ea2599e951e1665f188ef51a738c9e0e2
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Oct 25 18:39:06 2013 +0800
+
+    FogBugz #163821: arch/nios2: Add devtmpfs to defconfig
+    
+    Enable DEVTMFS as default and removed non-exist configs.
+    CONFIG_DEVTMPFS=y
+    CONFIG_DEVTMPFS_MOUNT=y
+    
+    Note, need to compile rootfs with BR2_ROOTFS_DEVICE_CREATION_DYNAMIC_DEVTMPFS
+    enabled.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 68e1ad7476145e7af9e969112b69135c25f745be
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Thu Nov 7 17:26:59 2013 -0600
+
+    FogBugz #166582: Kernel needs option to support IPv6
+    
+    The IPv6 option needs to be specific in socfpga_defconfig for
+    IPv6 networking to be available in the Linux networking stack.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit 9c8a3a3eba883df0952f0946535c6202806b7f2a
+Author: Matthew Gerlach <mgerlach@altera.com>
+Date:   Tue Nov 5 11:40:33 2013 -0800
+
+    FogBugz #165941: FPGA bridge drivers need to be started early
+    
+    The fpga bridge framework needs be started before the
+    individual bridge drivers, and the individual bridge
+    drivers need to be started before any other driver
+    for components on the FPGA.  The earliest the bridge
+    drivers successfully start is during arch_init().
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@altera.com>
+
+commit eb6c594aa268d5d6a89d455dc939a98563c7ed88
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Nov 6 13:34:54 2013 -0600
+
+    FogBugz #166216: Fix DMA pl330 initialization for 3.11
+    
+    During the 3.11 kernel upgrade cycle, I merged the pl330 dma driver
+    incorrectly. The merge removed that platform specific initialization
+    call from the pl330 driver.
+    
+    Putting back the initialization code.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit e54a3863912c13fac0318619cbcd1fe82cd534ec
+Author: Graham Moore <grmoore@altera.com>
+Date:   Mon Sep 9 10:02:43 2013 -0500
+
+    FogBugz #152777: Fix out-of-order QSPI chip select configuration.
+    
+    Set chip select value before using it as index into array.
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit e933a86bf5e0f34bf9529f6f2387766f741b533f
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Thu Oct 31 10:48:11 2013 -0500
+
+    FogBugz #165063: SDRAM ECC Error Injection for Testing
+    
+    The current SDRAM ECC testing was performed by shorting an address
+    line to ground. In the case of an uncorrectable error (2 bit error)
+    2 address lines had to be shorted to ground.
+    The Altera SDRAM controller has the ability to inject ECC errors
+    (single or double bit) during write operations. This change
+    implements the injection of SDRAM ECC errors in software.
+    - Requires that EDAC debugging (CONFIG_EDAC_DEBUG) is defined.
+    - Single or double bit errors are generated depending upon
+      string size sent (1 character = 1 bit error/2 char=2bit)
+    - To inject a single bit error (correctable)
+           echo "1" > /sys/kernel/debug/edac/mc0/inject_ctl
+    - To inject a double bit error (uncorrectable - panic)
+           echo "12" > /sys/kernel/debug/edac/mc0/inject_ctl
+    
+    V2:
+    - Make double bit error case very restrictive
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 1bb3cde5639a548c4c526a9c51bf908a94b5633e
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Nov 14 13:41:53 2013 -0800
+
+    FogBugz #163509: Enhancing QSPI access performance
+    
+    To enhance QSPI driver function which check for controller status.
+    Using the timeout method instead of fixed delay when polling
+    the controller status to reach idle state.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v3
+    - updated the commit message
+    Changes for v2
+    - updated the commit message
+
+commit e81c05b976903c5ceae76001fc31bbc522764825
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Nov 14 13:38:47 2013 -0800
+
+    FogBugz #136143: Enhancing Preloader SDRAM memory test
+    
+    To enhance the existing SDRAM memory test. Added a memory
+    test which is utilizing the PRBS (pseudo-random binary sequence)
+    algorithm. At same time, ensure lowest memory map is mapped to
+    SDRAM so it can be tested too.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v4
+    - Removed redundant code
+    Changes for v3
+    - reshuffled the condition check for coverage within SDRAM test
+    Changes for v2
+    - used macro to determine the SDRAM test coverage
+    - updated comments
+
+commit c4856994e811bd56fc4ef30a8745709814644b6d
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Nov 12 10:04:27 2013 -0800
+
+    FogBugz #163055: Fixing Preloader FPGA programming
+    
+    To fix the Preloader FPGA programming issue due to recent
+    enhancement. This is to avoid programming additional words
+    into FPGA. At same time, update the FPGA2SDRAM port release
+    code after the FPGA programming.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 75905816ec95b0ccd515700b922628d7aa9036f8
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Oct 28 07:47:03 2013 -0800
+
+    FogBugz #158537: Updating U-Boot FPGA2SDRAM driver
+    
+    To update the U-Boot FPGA2SDRAM enablement driver where applycfg
+    bit need to be set after write to fpgaportrst. At same time, the
+    applycfg bit can be set only the SDRAM is in idle mode. With
+    that, the code to set the applycfg will be execute in OCRAM
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - used macro for mask
+    - updated commit message
+
+commit 2fb819840940aeb4f49ab78e42dfb059af60b652
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Nov 1 12:26:42 2013 -0700
+
+    FogBugz #159335: Enhance Arria V SDRAM to 533MHz
+    
+    Enhancing the Arria V SDRAM from 400MHz to 533MHz.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 6b91175f6a6730c5007f7cc3a7953cbe6c827056
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Nov 1 12:18:18 2013 -0700
+
+    FogBugz #112256: Adding Denali NAND configuration
+    
+    Adding the Denali NAND controller configuration. But it will
+    not enabled by default as NAND is not available within Altera
+    Dev Kit. Please refer to doc/README.SOCFPGA for more details.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 461a61b8f03d3b690de1f4ff007cd23fb80018a5
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Nov 1 12:12:18 2013 -0700
+
+    FogBugz #112256: Enable NAND ECC read within SPL framework
+    
+    Enable the NAND ECC read within SPL. This is to take advantage
+    of HW ECC capabilities of some NAND controller such Denali. It
+    will avoid using software to manual calculating the ECC and
+    correct it. With this option, it will yield better performance
+    for NAND access within SPL framework.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit f23b21b6cad56ffd4a863f4a374ac6dac3acffee
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Nov 1 11:58:25 2013 -0700
+
+    FogBugz #112256: Reconfigure PLL for NAND and SDMMC controller
+    
+    Reconfigure the PLL in order to supply 50MHz clock for NAND
+    which is the fastest clock. As that clock is shared with SDMMC,
+    SDMMC clock is speed up to 200MHz. Also fixed the invalid value
+    for SDRAM and EMAC clock info.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 17e187ae8ca530f5a5ef13855b31a91d4f2a0715
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Nov 1 11:31:54 2013 -0700
+
+    FogBugz #163711: Enhancing Preloader semihosting function
+    
+    Enhancing the semihosting function to ensure its working well
+    with various compilers. The enhancement will avoid incorrect
+    assumption being made between the call stack and function call.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 510db4d3a83671251f71362136749c6e1a2ed69f
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Nov 1 09:40:46 2013 -0700
+
+    FogBugz #112256: Adding block lock features for NAND
+    
+    Adding NAND block lock and unlock features. This is only applicable
+    for Micron parts only. For those flash which locks all the blocks
+    upon power on, unlock commands are required prior erase and
+    write operations
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Updated the commit message
+
+-----------------------------------------------------------------------
+
+log of poky branch danny-altera-rel
+
+commit 39adb32e10afbc02e7bc6b3ad7e21c1b8f7a8262
+Author: Lee Booi Lim <lblim@altera.com>
+Date:   Thu Nov 14 23:26:29 2013 +0800
+
+    Fogbugz #166591 : Rocketboard build toolchain fix - change relative path to full path
+    
+    Signed-off-by: Lee Booi Lim <lblim@altera.com>
+
+commit 6d4ef85d3858bbfaa9c896e25de909a90d16b0ea
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Tue Nov 12 10:58:24 2013 +0800
+
+    FogBugz #166591: Rocketboards poky builds using wrong toolchain
+    
+    This fix is to change the toolchain used to build poky if it is pulled
+    from RBO
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+-----------------------------------------------------------------------
+
+

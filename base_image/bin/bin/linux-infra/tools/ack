@@ -1,0 +1,53 @@
+#!/bin/bash
+
+function usage()
+{
+	cat <<-EOF
+	usage: $(basename $0) [-h]
+
+	Print out 'Reviewed-by:', 'Acked-by:', etc. lines.
+
+	User name and email address is retrieved from global git config
+	that exists in each users home directory.  If git global config
+	has not been set up, script will fail.
+EOF
+}
+
+#===================================================================
+
+while [ -n "${1}" ]; do
+    case "${1}" in
+	-h ) usage; exit ;;
+	* ) echo what? ; usage ; exit ;;
+    esac
+    shift
+done
+
+name="$(git config --global user.name)"
+if [ $? -ne 0 ]; then
+    echo "Error getting user name from Git's global configuration"
+    echo
+    git config --global -l
+    exit 1
+fi
+
+email="$(git config --global user.email)"
+if [ $? -ne 0 ]; then
+    echo "Error getting user email from Git's global configuration"
+    echo
+    git config --global -l
+    exit 1
+fi
+
+ea="${name} <${email}>"
+
+echo "Choose one (copy and paste):"
+echo
+echo "Reviewed-by: ${ea}"
+echo
+echo "Acked-by: ${ea}"
+echo
+echo "Signed-off-by: ${ea}"
+echo
+
+exit 0

@@ -1,0 +1,269 @@
+Three kernel branch upgrades are pushed out:
+ - socfpga-4.6, socfpga-4.1.22-ltsi and socfpga-4.1.22-ltsi-rt
+
+Three commits that were tagged for uboot in rc1 were removed for the pr because merges
+are not allowed on our branches.
+09174d6 Tien Fong Chee Merge branch 'socfpga_v2014.10_arria10_bringup' of at-git:uboot-socfpga into socfpga_v2014.10_arria10_bringup
+439bf4e Tien Fong Chee FogBugz #365958: QSPI flash(Dual-stacked, S70FL01GS) driver for Uboot
+3174e98 Tien Fong Chee FogBugz #371156-3: Enable pre-console buffer
+
+---
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.6
+branch tag  : rel_socfpga-4.6_16.06.02_pr
+Pushing new branch to external git
+
+branch      : socfpga-4.1-ltsi
+branch tag  : rel_socfpga-4.1-ltsi_16.06.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.1-ltsi-rt
+branch tag  : rel_socfpga-4.1-ltsi-rt_16.06.02_pr
+new commits : 6
+8b4890e Matthew Gerlach ARM: dts: socfpga: fix definitions of serial console for Arria10
+12ff492 Matthew Gerlach FogBugz #374571: Fix Sysid driver hotplug support.
+8144f3d Graham Moore FogBugz #366816-6: Add clock enable/disable in Cadence QSPI driver
+0b59008 Graham Moore FogBugz #363205-2: QSPI times out on A10 when PL330 DMAC is enabled
+64a1854 Dinh Nguyen ARM: dts: socfpga: add ethernet alias on Arria10
+96a5ee8 Dinh Nguyen stmmac: socfpga: remove extra call to socfpga_dwmac_setup
+
+
+++wiki:
+*Branch name*: socfpga-4.1-ltsi-rt, *Tag name:* rel_socfpga-4.1-ltsi-rt_16.06.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | ARM: dts: socfpga: fix definitions of serial console for Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/8b4890ed684b422689394156f8a555d522aaf5db ][ 8b4890ed684b422689394156f8a555d522aaf5db ]] |
+| 374571 | Fix Sysid driver hotplug support. | [[ https://github.com/altera-opensource/linux-socfpga/commit/12ff492cde854e64a08f7a016136c98a8c064beb ][ 12ff492cde854e64a08f7a016136c98a8c064beb ]] |
+| 366816-6 | Add clock enable/disable in Cadence QSPI driver | [[ https://github.com/altera-opensource/linux-socfpga/commit/8144f3dee12cedf1dad2941827bb7e69043fc115 ][ 8144f3dee12cedf1dad2941827bb7e69043fc115 ]] |
+| 363205-2 | QSPI times out on A10 when PL330 DMAC is enabled | [[ https://github.com/altera-opensource/linux-socfpga/commit/0b590083c71904100d04332a9567095e8eb12629 ][ 0b590083c71904100d04332a9567095e8eb12629 ]] |
+| community | ARM: dts: socfpga: add ethernet alias on Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/64a1854ca7483f4d18c6247291a9cd84c87e7669 ][ 64a1854ca7483f4d18c6247291a9cd84c87e7669 ]] |
+| community | stmmac: socfpga: remove extra call to socfpga_dwmac_setup | [[ https://github.com/altera-opensource/linux-socfpga/commit/96a5ee8ad22403b6a314c2695cbcb0f3720c14cc ][ 96a5ee8ad22403b6a314c2695cbcb0f3720c14cc ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.22-ltsi
+branch tag  : rel_socfpga-4.1.22-ltsi_16.06.02_pr
+Pushing new branch to external git
+
+branch      : socfpga-4.1.22-ltsi-rt
+branch tag  : rel_socfpga-4.1.22-ltsi-rt_16.06.02_pr
+Pushing new branch to external git
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.6_16.06.02_pr
+commit: f4f6e2c Alan Tull FogBugz #383970-3: ARM: socfpga_defconfig : enable altera freeze bridge
+
+tag:    rel_socfpga-4.1-ltsi_16.06.02_pr
+commit: 43492a7 Matthew Gerlach ARM: dts: socfpga: fix definitions of serial console for Arria10
+
+tag:    rel_socfpga-4.1-ltsi-rt_16.06.02_pr
+commit: 8b4890e Matthew Gerlach ARM: dts: socfpga: fix definitions of serial console for Arria10
+
+tag:    rel_socfpga-4.1.22-ltsi_16.06.02_pr
+commit: cd1c82d Dinh Nguyen FogBugz #384727-2: enable CONFIG_IXGBE as a kernel module
+
+tag:    rel_socfpga-4.1.22-ltsi-rt_16.06.02_pr
+commit: 4b26b40 Alan Tull FogBugz #383970-3: ARM: socfpga_defconfig : enable altera freeze bridge
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.06.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.06.02_pr
+new commits : 1
+0ae1ecd Matthew Gerlach FogBugz #376743: fix ecc errors using jffs2 file system with nand
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_16.06.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 376743 | fix ecc errors using jffs2 file system with nand | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/0ae1ecd3cada234fca0f6dcee4d04b27c043e9fb ][ 0ae1ecd3cada234fca0f6dcee4d04b27c043e9fb ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.06.02_pr
+commit: 7dd0473 Chin Liang See FogBugz #353914: Fix SDRAM self refresh failure
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.06.02_pr
+commit: 0ae1ecd Matthew Gerlach FogBugz #376743: fix ecc errors using jffs2 file system with nand
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.06.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.06.02_pr
+commit: 993831b Tien Hock Loh FogBugz #369619: Update meta-altera-refdes commit id
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.06.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.06.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.06.02_pr
+commit: 8d6e9b4 Yves Vandervennet Support for the kernel v4.3
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.06.02_pr
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.6
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1-ltsi-rt
+
+commit 8b4890ed684b422689394156f8a555d522aaf5db
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Thu May 12 10:24:42 2016 -0700
+
+    ARM: dts: socfpga: fix definitions of serial console for Arria10
+    
+    The notion of which uart instance is serial0 or serial1
+    is board specific rather than generic to the chip. This
+    patch removes the serial aliases from generic chip dtsi
+    and adds an appropriate alias to the board specific dtsi.
+    By making the alias for serial0 point to uart1 for the arria10_socdk,
+    the linux boot command line supports specifying console=ttyS0,115200
+    for backwards compatibility, and it supports not specifying
+    the console at all.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 12ff492cde854e64a08f7a016136c98a8c064beb
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Tue May 3 08:48:27 2016 -0700
+
+    FogBugz #374571: Fix Sysid driver hotplug support.
+    
+    The Altera Sysid component is generally part of
+    of an FPGA design.  The component can be hotplugged
+    when the FPGA is reconfigured.  This patch fixes the
+    driver to support the component being hotplugged.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 8144f3dee12cedf1dad2941827bb7e69043fc115
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Thu Mar 24 15:54:24 2016 -0500
+
+    FogBugz #366816-6: Add clock enable/disable in Cadence QSPI driver
+    
+    mtd: spi-nor: Cadence QSPI driver needs to enable its clock.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit 0b590083c71904100d04332a9567095e8eb12629
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Thu Mar 10 07:40:09 2016 -0600
+
+    FogBugz #363205-2: QSPI times out on A10 when PL330 DMAC is enabled
+    
+    arm: dts: socfpga: Cadence QSPI device node on Arria10 should use
+    qspi_clk instead of l4_main_clk
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit 64a1854ca7483f4d18c6247291a9cd84c87e7669
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue May 3 08:59:01 2016 -0500
+
+    ARM: dts: socfpga: add ethernet alias on Arria10
+    
+    Without having an ethernet alias, ethernet will have a random MAC address,
+    versus take an address that was provided from the bootloader.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 96a5ee8ad22403b6a314c2695cbcb0f3720c14cc
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Apr 14 14:21:28 2016 -0500
+
+    stmmac: socfpga: remove extra call to socfpga_dwmac_setup
+    
+    In the socfpga_dwmac_probe function, we have a call to socfpga_dwmac_setup,
+    which is already called from socfpga_dwmac_init later in the probe function.
+    Remove this extra call to socfpga_dwmac_setup.
+    
+    Also we should not be calling socfpga_dwmac_setup() directly without wrapping
+    it around the proper reset assert/deasserts. That is because the
+    socfpga_dwmac_setup() is setting up PHY modes in the system manager, and it
+    is requires the EMAC's to be in reset during the PHY setup.
+    
+    Reported-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi-rt
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 0ae1ecd3cada234fca0f6dcee4d04b27c043e9fb
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Wed Jun 1 18:01:12 2016 -0700
+
+    FogBugz #376743: fix ecc errors using jffs2 file system with nand
+    
+    The patch enables CONFIG_CMD_NAND_TRIMFFS.  By using the
+    uboot command, nand write.trimffs, uboot can write an image
+    formatted by mkfs.jffs2, that linux can use for a root
+    file system without reporting lots of ecc errors.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

@@ -1,0 +1,321 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.6
+branch tag  : rel_socfpga-4.6_16.08.01_pr
+new commits : 2
+49f1664 Anatolij Gustschin fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters
+c9ff868 Dinh Nguyen ARM: socfpga: enable PL330 DMA in socfpga_defconfig
+
+
+++wiki:
+*Branch name*: socfpga-4.6, *Tag name:* rel_socfpga-4.6_16.08.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters | [[ https://github.com/altera-opensource/linux-socfpga/commit/49f1664be97b67645ca7625bec2b7a414333987e ][ 49f1664be97b67645ca7625bec2b7a414333987e ]] |
+| community | ARM: socfpga: enable PL330 DMA in socfpga_defconfig | [[ https://github.com/altera-opensource/linux-socfpga/commit/c9ff868173b9bcb64a6716fb19529bae305cdaa8 ][ c9ff868173b9bcb64a6716fb19529bae305cdaa8 ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.22-ltsi
+branch tag  : rel_socfpga-4.1.22-ltsi_16.08.01_pr
+new commits : 2
+9862a66 Anatolij Gustschin fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters
+81954e1 Dinh Nguyen ARM: socfpga: enable PL330 DMA in socfpga_defconfig
+
+
+++wiki:
+*Branch name*: socfpga-4.1.22-ltsi, *Tag name:* rel_socfpga-4.1.22-ltsi_16.08.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters | [[ https://github.com/altera-opensource/linux-socfpga/commit/9862a6691b3f0d5496f39f7b21f6c876dee1549c ][ 9862a6691b3f0d5496f39f7b21f6c876dee1549c ]] |
+| community | ARM: socfpga: enable PL330 DMA in socfpga_defconfig | [[ https://github.com/altera-opensource/linux-socfpga/commit/81954e11d57c0e641ac9e5605e47db81e3f553fb ][ 81954e11d57c0e641ac9e5605e47db81e3f553fb ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.22-ltsi-rt
+branch tag  : rel_socfpga-4.1.22-ltsi-rt_16.08.01_pr
+new commits : 1
+a55957c Anatolij Gustschin fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters
+
+
+++wiki:
+*Branch name*: socfpga-4.1.22-ltsi-rt, *Tag name:* rel_socfpga-4.1.22-ltsi-rt_16.08.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters | [[ https://github.com/altera-opensource/linux-socfpga/commit/a55957cf5df3250e28a7dda64764a67c28975cbb ][ a55957cf5df3250e28a7dda64764a67c28975cbb ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.6_16.08.01_pr
+commit: 49f1664 Anatolij Gustschin fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters
+
+tag:    rel_socfpga-4.1.22-ltsi_16.08.01_pr
+commit: 9862a66 Anatolij Gustschin fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters
+
+tag:    rel_socfpga-4.1.22-ltsi-rt_16.08.01_pr
+commit: a55957c Anatolij Gustschin fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.08.01_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.08.01_pr
+new commits : 1
+8444415 Tien Fong Chee FogBugz #361813-2: Allows SDMMC FAT32 partition and device selection being changed through environment variable for CFF.
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_16.08.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 361813-2 | Allows SDMMC FAT32 partition and device selection being changed through environment variable for CFF. | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/8444415a7d7910726b22a49470fd9717bf20f5b7 ][ 8444415a7d7910726b22a49470fd9717bf20f5b7 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.08.01_pr
+commit: 7dd0473 Chin Liang See FogBugz #353914: Fix SDRAM self refresh failure
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.08.01_pr
+commit: 8444415 Tien Fong Chee FogBugz #361813-2: Allows SDMMC FAT32 partition and device selection being changed through environment variable for CFF.
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.08.01_pr
+new commits : 1
+9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-socfpga, *Tag name:* rel_angstrom-v2014.12-socfpga_16.08.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Revert "FogBugz #369619: Update meta-altera-refdes commit id" | [[ https://github.com/altera-opensource/angstrom-socfpga/commit/9a77a4b560faebc54f2ef124e16e422adb4ac21d ][ 9a77a4b560faebc54f2ef124e16e422adb4ac21d ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.08.01_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.08.01_pr
+new commits : 1
+3ad0ad3 Graham Moore Add support for 4.1.22-ltsi and 4.1.22-ltsi-rt kernel builds.
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-yocto1.7, *Tag name:* rel_angstrom-v2014.12-yocto1.7_16.08.01_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Add support for 4.1.22-ltsi and 4.1.22-ltsi-rt kernel builds. | [[ https://github.com/altera-opensource/meta-altera/commit/3ad0ad36359c5b032d512525c5c6c4007c56f80d ][ 3ad0ad36359c5b032d512525c5c6c4007c56f80d ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.08.01_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.08.01_pr
+commit: 3ad0ad3 Graham Moore Add support for 4.1.22-ltsi and 4.1.22-ltsi-rt kernel builds.
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.08.01_pr
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.6
+
+commit 49f1664be97b67645ca7625bec2b7a414333987e
+Author: Anatolij Gustschin <agust@denx.de>
+Date:   Fri Jul 22 17:59:58 2016 +0200
+
+    fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters
+    
+    While FPGA reconfiguration over device tree overlays the HPS2FPGA
+    bridge visibility to L3 masters is disabled. This results in abort
+    errors when accessing the address range of the FPGA devices behind
+    the HPS2FPGA bridge, i.e.:
+      ...
+      Unhandled fault: imprecise external abort (0x406) at 0xf0400000
+      pgd = eef48000
+      [f0400000] *pgd=2e362811, *pte=00000000, *ppte=00000000
+      Internal error: : 406 [#1] SMP ARM
+      ...
+    
+    This visibility configuration error happens in bridge enable
+    function because the per-bridge 'priv->l3_remap_value' variable
+    doesn't cache all already written bits to write-only 'remap'
+    register. After FPGA reconfiguration the HPS2FPGA and LWHPS2FPGA
+    bridges must be enabled (bits 3 and 4 of the 'remap' register set).
+    So enable_set function is called for HPS2FPGA and then for LWHPS2FPGA
+    bridge. In the first call the value 0x9 is written to the 'remap'
+    register, in the second call the value 0x11 is written, resulting
+    in disabled HPS2FPGA visibility.
+    
+    Use remap shadow register common for all bridges to fix the
+    external abort issue.
+    
+    Signed-off-by: Anatolij Gustschin <agust@denx.de>
+
+commit c9ff868173b9bcb64a6716fb19529bae305cdaa8
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Jun 14 15:51:48 2016 -0500
+
+    ARM: socfpga: enable PL330 DMA in socfpga_defconfig
+    
+    Enable the PL330 DMA and DMATEST on SoCFPGA.
+    
+    make savedefconfig says CONFIG_FHANDLE is not needed in the defconfig,
+    remove it.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: Also enable DMATEST as a kernel module
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi
+
+commit 9862a6691b3f0d5496f39f7b21f6c876dee1549c
+Author: Anatolij Gustschin <agust@denx.de>
+Date:   Fri Jul 22 17:59:58 2016 +0200
+
+    fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters
+    
+    While FPGA reconfiguration over device tree overlays the HPS2FPGA
+    bridge visibility to L3 masters is disabled. This results in abort
+    errors when accessing the address range of the FPGA devices behind
+    the HPS2FPGA bridge, i.e.:
+      ...
+      Unhandled fault: imprecise external abort (0x406) at 0xf0400000
+      pgd = eef48000
+      [f0400000] *pgd=2e362811, *pte=00000000, *ppte=00000000
+      Internal error: : 406 [#1] SMP ARM
+      ...
+    
+    This visibility configuration error happens in bridge enable
+    function because the per-bridge 'priv->l3_remap_value' variable
+    doesn't cache all already written bits to write-only 'remap'
+    register. After FPGA reconfiguration the HPS2FPGA and LWHPS2FPGA
+    bridges must be enabled (bits 3 and 4 of the 'remap' register set).
+    So enable_set function is called for HPS2FPGA and then for LWHPS2FPGA
+    bridge. In the first call the value 0x9 is written to the 'remap'
+    register, in the second call the value 0x11 is written, resulting
+    in disabled HPS2FPGA visibility.
+    
+    Use remap shadow register common for all bridges to fix the
+    external abort issue.
+    
+    Signed-off-by: Anatolij Gustschin <agust@denx.de>
+
+commit 81954e11d57c0e641ac9e5605e47db81e3f553fb
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Jun 14 15:51:48 2016 -0500
+
+    ARM: socfpga: enable PL330 DMA in socfpga_defconfig
+    
+    Enable the PL330 DMA and DMATEST on SoCFPGA.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi-rt
+
+commit a55957cf5df3250e28a7dda64764a67c28975cbb
+Author: Anatolij Gustschin <agust@denx.de>
+Date:   Fri Jul 22 17:59:58 2016 +0200
+
+    fpga: altera-hps2fpga: fix HPS2FPGA bridge visibility to L3 masters
+    
+    While FPGA reconfiguration over device tree overlays the HPS2FPGA
+    bridge visibility to L3 masters is disabled. This results in abort
+    errors when accessing the address range of the FPGA devices behind
+    the HPS2FPGA bridge, i.e.:
+      ...
+      Unhandled fault: imprecise external abort (0x406) at 0xf0400000
+      pgd = eef48000
+      [f0400000] *pgd=2e362811, *pte=00000000, *ppte=00000000
+      Internal error: : 406 [#1] SMP ARM
+      ...
+    
+    This visibility configuration error happens in bridge enable
+    function because the per-bridge 'priv->l3_remap_value' variable
+    doesn't cache all already written bits to write-only 'remap'
+    register. After FPGA reconfiguration the HPS2FPGA and LWHPS2FPGA
+    bridges must be enabled (bits 3 and 4 of the 'remap' register set).
+    So enable_set function is called for HPS2FPGA and then for LWHPS2FPGA
+    bridge. In the first call the value 0x9 is written to the 'remap'
+    register, in the second call the value 0x11 is written, resulting
+    in disabled HPS2FPGA visibility.
+    
+    Use remap shadow register common for all bridges to fix the
+    external abort issue.
+    
+    Signed-off-by: Anatolij Gustschin <agust@denx.de>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 8444415a7d7910726b22a49470fd9717bf20f5b7
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Fri Jun 24 11:23:34 2016 +0800
+
+    FogBugz #361813-2: Allows SDMMC FAT32 partition and device selection
+    being changed through environment variable for CFF.
+    
+    This patch allows FAT32 partition and device selection being changed
+    through U-boot enviroment variable "cff_devsel_partition" for IOCSR and
+    FPGA configuration.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+-----------------------------------------------------------------------
+
+log of angstrom-socfpga branch angstrom-v2014.12-socfpga
+
+commit 9a77a4b560faebc54f2ef124e16e422adb4ac21d
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Tue Jul 12 09:17:13 2016 +0800
+
+    Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+    
+    This reverts commit 993831b4830af2341ca26cd96e16732fa2d00e19.
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7
+
+commit 3ad0ad36359c5b032d512525c5c6c4007c56f80d
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Jun 24 09:02:08 2016 -0500
+
+    Add support for 4.1.22-ltsi and 4.1.22-ltsi-rt kernel builds.
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

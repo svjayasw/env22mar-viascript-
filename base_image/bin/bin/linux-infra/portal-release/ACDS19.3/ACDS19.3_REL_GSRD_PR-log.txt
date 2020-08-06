@@ -1,0 +1,200 @@
+Updating internal infrastructure repos (/home/tthayer/repos/internal)
+
+updating /home/tthayer/repos/internal/linux-tags
+git fetch origin
+git fetch --tags origin
+on branch master
+
+rel_type                : GSRD
+rel_target              : GSRD
+release                 : ACDS19.3_REL_GSRD_PR
+platforms               : none specified
+rel_num                 : ACDS19.3
+rel_stage               : PR
+branch_config_file_name : /home/tthayer/repos/internal/linux-tags/acds-release-branch-config.sh
+report_file_name_full   : /home/tthayer/bin/linux-infra/tools/../portal-release/ACDS19.3/ACDS19.3_REL_GSRD_PR.txt
+repo_list               : ['linux-socfpga', 'uboot-socfpga', 'meta-altera', 'meta-altera-refdes', 'linux-refdesigns']
+num of repos            : 5
+update_num              : None
+
+Doing dry run, followed by actual push (unless dry run fails)
+
+Gathering info from git for these tags:
+ * ['ACDS19.3_REL_GSRD_PR']
+
+repo: linux-socfpga         br: socfpga-4.14.130-ltsi
+
+repo: uboot-socfpga         br: socfpga_v2019.04
+
+repo: meta-altera           br: angstrom-v2019.06-yocto2.7
+
+repo: meta-altera-refdes    br: master
+
+repo: linux-refdesigns      br: master
+
+
+Tags found:
+ACDS19.3_REL_GSRD_PR
+
+   repo                 branch                            commit   behind     tag name
+linux-socfpga        socfpga-4.14.130-ltsi                a032257     2   ACDS19.3_REL_GSRD_PR
+uboot-socfpga        socfpga_v2019.04                     8c4cd80     0   ACDS19.3_REL_GSRD_PR
+meta-altera          angstrom-v2019.06-yocto2.7           c2f4966     0   ACDS19.3_REL_GSRD_PR
+meta-altera-refdes   master                               97e7d7a     0   ACDS19.3_REL_GSRD_PR
+linux-refdesigns     master                               769f842     0   ACDS19.3_REL_GSRD_PR
+
+-----------------------------------------------------------------------
+repo:   linux-socfpga
+-----------------------------------------------------------------------
+a032257 Richard Gong arm64: dts: agilex: add service layer, fpga manager and fpga region
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS19.3_REL_GSRD_PR
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.14.130-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/a032257d7048b7d7246b32dc7fd65de291353c35
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   uboot-socfpga
+-----------------------------------------------------------------------
+8c4cd80 Ley Foon Tan HSD #1507500974: configs: arria10: Add bridge enable to CONFIG_BOOTCOMMAND
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS19.3_REL_GSRD_PR
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2019.04
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/8c4cd804d6d77fbc4d7201d19755b6e89d43ae65
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera
+-----------------------------------------------------------------------
+c2f4966 Ong, Hean Loong update commits for linux-altera-ltsi_4.14.130.bb
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/ACDS19.3_REL_GSRD_PR
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2019.06-yocto2.7
+commit : https://github.com/altera-opensource/meta-altera/commit/c2f4966867ebbfe9117025832183912e50756c5b
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera-refdes
+-----------------------------------------------------------------------
+97e7d7a Ong, Hean Loong fix issue of lighttpd for yocto-warrior
+tag    : https://github.com/altera-opensource/meta-altera-refdes/releases/tag/ACDS19.3_REL_GSRD_PR
+branch : https://github.com/altera-opensource/meta-altera-refdes/tree/master
+commit : https://github.com/altera-opensource/meta-altera-refdes/commit/97e7d7addd1e083a8aa4b7ada2d67af259061df6
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   linux-refdesigns
+-----------------------------------------------------------------------
+769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+tag    : https://github.com/altera-opensource/linux-refdesigns/releases/tag/ACDS19.3_REL_GSRD_PR
+branch : https://github.com/altera-opensource/linux-refdesigns/tree/master
+commit : https://github.com/altera-opensource/linux-refdesigns/commit/769f842433462efb96ba3dadb4047b194930adf7
+-----------------------------------------------------------------------
+
+Saved report : /home/tthayer/bin/linux-infra/tools/../portal-release/ACDS19.3/ACDS19.3_REL_GSRD_PR.txt
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.14.130-ltsi          tag    : ACDS19.3_REL_GSRD_PR
+ $ git push --dry-run portal a032257d7048b7d7246b32dc7fd65de291353c35:refs/tags/ACDS19.3_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         a032257d7048b7d7246b32dc7fd65de291353c35 -> ACDS19.3_REL_GSRD_PR
+
+ $ git push --dry-run portal a032257d7048b7d7246b32dc7fd65de291353c35:refs/heads/socfpga-4.14.130-ltsi
+To git@github.com:altera-opensource/linux-socfpga
+   30098b74..a032257 a032257d7048b7d7246b32dc7fd65de291353c35 -> socfpga-4.14.130-ltsi
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2019.04               tag    : ACDS19.3_REL_GSRD_PR
+ $ git push --dry-run portal 8c4cd804d6d77fbc4d7201d19755b6e89d43ae65:refs/tags/ACDS19.3_REL_GSRD_PR
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         8c4cd804d6d77fbc4d7201d19755b6e89d43ae65 -> ACDS19.3_REL_GSRD_PR
+
+ $ git push --dry-run portal 8c4cd804d6d77fbc4d7201d19755b6e89d43ae65:refs/heads/socfpga_v2019.04
+To git@github.com:altera-opensource/u-boot-socfpga
+   c51e989..8c4cd80  8c4cd804d6d77fbc4d7201d19755b6e89d43ae65 -> socfpga_v2019.04
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : portal
+branch : angstrom-v2019.06-yocto2.7     tag    : ACDS19.3_REL_GSRD_PR
+ $ git push --dry-run portal c2f4966867ebbfe9117025832183912e50756c5b:refs/tags/ACDS19.3_REL_GSRD_PR
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         c2f4966867ebbfe9117025832183912e50756c5b -> ACDS19.3_REL_GSRD_PR
+
+ $ git push --dry-run portal c2f4966867ebbfe9117025832183912e50756c5b:refs/heads/angstrom-v2019.06-yocto2.7
+To git@github.com:altera-opensource/meta-altera
+   e0bd3ff..c2f4966  c2f4966867ebbfe9117025832183912e50756c5b -> angstrom-v2019.06-yocto2.7
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera-refdes             remote : portal
+branch : master                         tag    : ACDS19.3_REL_GSRD_PR
+ $ git push --dry-run portal 97e7d7addd1e083a8aa4b7ada2d67af259061df6:refs/tags/ACDS19.3_REL_GSRD_PR
+To git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         97e7d7addd1e083a8aa4b7ada2d67af259061df6 -> ACDS19.3_REL_GSRD_PR
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-refdesigns               remote : portal
+branch : master                         tag    : ACDS19.3_REL_GSRD_PR
+ $ git push --dry-run portal 769f842433462efb96ba3dadb4047b194930adf7:refs/tags/ACDS19.3_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-refdesigns
+ * [new tag]         769f842433462efb96ba3dadb4047b194930adf7 -> ACDS19.3_REL_GSRD_PR
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.14.130-ltsi          tag    : ACDS19.3_REL_GSRD_PR
+ $ git push portal a032257d7048b7d7246b32dc7fd65de291353c35:refs/tags/ACDS19.3_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         a032257d7048b7d7246b32dc7fd65de291353c35 -> ACDS19.3_REL_GSRD_PR
+
+ $ git push portal a032257d7048b7d7246b32dc7fd65de291353c35:refs/heads/socfpga-4.14.130-ltsi
+To git@github.com:altera-opensource/linux-socfpga
+   30098b74..a032257 a032257d7048b7d7246b32dc7fd65de291353c35 -> socfpga-4.14.130-ltsi
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2019.04               tag    : ACDS19.3_REL_GSRD_PR
+ $ git push portal 8c4cd804d6d77fbc4d7201d19755b6e89d43ae65:refs/tags/ACDS19.3_REL_GSRD_PR
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         8c4cd804d6d77fbc4d7201d19755b6e89d43ae65 -> ACDS19.3_REL_GSRD_PR
+
+ $ git push portal 8c4cd804d6d77fbc4d7201d19755b6e89d43ae65:refs/heads/socfpga_v2019.04
+To git@github.com:altera-opensource/u-boot-socfpga
+   c51e989..8c4cd80  8c4cd804d6d77fbc4d7201d19755b6e89d43ae65 -> socfpga_v2019.04
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : portal
+branch : angstrom-v2019.06-yocto2.7     tag    : ACDS19.3_REL_GSRD_PR
+ $ git push portal c2f4966867ebbfe9117025832183912e50756c5b:refs/tags/ACDS19.3_REL_GSRD_PR
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         c2f4966867ebbfe9117025832183912e50756c5b -> ACDS19.3_REL_GSRD_PR
+
+ $ git push portal c2f4966867ebbfe9117025832183912e50756c5b:refs/heads/angstrom-v2019.06-yocto2.7
+To git@github.com:altera-opensource/meta-altera
+   e0bd3ff..c2f4966  c2f4966867ebbfe9117025832183912e50756c5b -> angstrom-v2019.06-yocto2.7
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera-refdes             remote : portal
+branch : master                         tag    : ACDS19.3_REL_GSRD_PR
+ $ git push portal 97e7d7addd1e083a8aa4b7ada2d67af259061df6:refs/tags/ACDS19.3_REL_GSRD_PR
+To git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         97e7d7addd1e083a8aa4b7ada2d67af259061df6 -> ACDS19.3_REL_GSRD_PR
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-refdesigns               remote : portal
+branch : master                         tag    : ACDS19.3_REL_GSRD_PR
+ $ git push portal 769f842433462efb96ba3dadb4047b194930adf7:refs/tags/ACDS19.3_REL_GSRD_PR
+To git@github.com:altera-opensource/linux-refdesigns
+ * [new tag]         769f842433462efb96ba3dadb4047b194930adf7 -> ACDS19.3_REL_GSRD_PR
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+

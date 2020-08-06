@@ -1,0 +1,532 @@
+
+Script-generated report of what we tagged today in internal git.
+These rc tags/branches will retagged as pr and pushed to the portal in two weeks.
+
+
+Thor
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-5.1
+branch tag  : rel_socfpga-5.1_19.11.02_rc1
+new commits : 0
+
+
+branch      : socfpga-5.2
+branch tag  : rel_socfpga-5.2_19.11.02_rc1
+new commits : 5
+6183593 Dinh Nguyen HSD #1707096314: remove duplicate mpu_ccu_clk entry
+a729a51 Dinh Nguyen HSD #2209582664: mpu_l2ram_clk should be mpu_ccu_clk
+bd959f4 Richard Gong arm64: dts: agilex: add service layer, fpga manager and fpga region
+b684c0c Dinh Nguyen arm64: agilex: enable USB and LEDs on agilex devkit
+0f49cb9 Dinh Nguyen arm64: defconfig: enable the Cadence QSPI controller
+
+
+branch      : socfpga-4.14.130-ltsi
+branch tag  : rel_socfpga-4.14.130-ltsi_19.11.02_rc1
+new commits : 4
+a45bbca Dinh Nguyen HSD #1707096314: remove duplicate mpu_ccu_clk entry
+4c8f1a0 Dinh Nguyen HSD #2209582664: mpu_l2ram_clk should be mpu_ccu_clk
+a032257 Richard Gong arm64: dts: agilex: add service layer, fpga manager and fpga region
+54af8e2 Dinh Nguyen arm64: agilex: enable USB and LEDs on agilex devkit
+
+
+branch      : socfpga-4.14.126-ltsi-rt
+branch tag  : rel_socfpga-4.14.126-ltsi-rt_19.11.02_rc1
+new commits : 4
+bff5ce8 Dinh Nguyen HSD #1707096314: remove duplicate mpu_ccu_clk entry
+8fabbf2 Dinh Nguyen HSD #2209582664: mpu_l2ram_clk should be mpu_ccu_clk
+eeaffee Richard Gong arm64: dts: agilex: add service layer, fpga manager and fpga region
+600f159 Dinh Nguyen arm64: agilex: enable USB and LEDs on agilex devkit
+
+
+Tags added to internal git:
+tag:    rel_socfpga-5.1_19.11.02_rc1
+commit: 5c21be7 Dinh Nguyen clk: socfpga: stratix10: fix rate caclulationg for cnt_clks
+
+tag:    rel_socfpga-5.2_19.11.02_rc1
+commit: 6183593 Dinh Nguyen HSD #1707096314: remove duplicate mpu_ccu_clk entry
+
+tag:    rel_socfpga-4.14.130-ltsi_19.11.02_rc1
+commit: a45bbca Dinh Nguyen HSD #1707096314: remove duplicate mpu_ccu_clk entry
+
+tag:    rel_socfpga-4.14.126-ltsi-rt_19.11.02_rc1
+commit: bff5ce8 Dinh Nguyen HSD #1707096314: remove duplicate mpu_ccu_clk entry
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.11.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.11.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.11.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2019.04
+branch tag  : rel_socfpga_v2019.04_19.11.02_rc1
+new commits : 4
+8c4cd80 Ley Foon Tan HSD #1507500974: configs: arria10: Add bridge enable to CONFIG_BOOTCOMMAND
+f6b05de Chee Hong Ang ARM: socfpga: Rename the FPGA reconfiguration SMC services
+e2f46ee Chee Hong Ang ARMv8: PSCI: Remove redundant PSCI entry
+7177e8d Tien Fong Chee configs: socfpga: Add CONFIG_NET_RANDOM_ETHADDR=y to SOCFPGA defconfig
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v2013.01.01_19.11.02_rc1
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.11.02_rc1
+commit: f7a7e26 Tien Fong Chee net: A10: Use packed structures for networking
+
+tag:    rel_socfpga_v2017.09_19.11.02_rc1
+commit: 8c74272 radu bacrau HSD #1707046651: Add support for RSU Retry
+
+tag:    rel_socfpga_v2019.04_19.11.02_rc1
+commit: 8c4cd80 Ley Foon Tan HSD #1507500974: configs: arria10: Add bridge enable to CONFIG_BOOTCOMMAND
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.11.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2014.12-socfpga_19.11.02_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.11.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.11.02_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.11.02_rc1
+new commits : 0
+
+
+branch      : angstrom-v2019.06-yocto2.7
+branch tag  : rel_angstrom-v2019.06-yocto2.7_19.11.02_rc1
+new commits : 1
+c5f64c3 Ong, Hean Loong update commit id for linux-altera_5.2.bb
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2018.06-yocto2.5_19.11.02_rc1
+commit: 2a4cadc Ong, Hean Loong update to linux-altera-ltsi_4.14.130
+
+tag:    rel_angstrom-v2019.06-yocto2.7_19.11.02_rc1
+commit: c5f64c3 Ong, Hean Loong update commit id for linux-altera_5.2.bb
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.11.02_rc1
+new commits : 1
+a293921 radu bacrau HSD #1707061410: Add support for RSU Retry
+
+
+Tags added to internal git:
+tag:    rel_master_19.11.02_rc1
+commit: a293921 radu bacrau HSD #1707061410: Add support for RSU Retry
+
+
+-----------------------------------------------------------------------
+
+repository: arm-trusted-firmware
+
+branch      : socfpga_v1.4
+branch tag  : rel_socfpga_v1.4_19.11.02_rc1
+new commits : 0
+
+
+branch      : socfpga_v2.1
+branch tag  : rel_socfpga_v2.1_19.11.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v1.4_19.11.02_rc1
+commit: fd4f92c Loh Tien Hock libc: armclang: Implement compiler printf symbols
+
+tag:    rel_socfpga_v2.1_19.11.02_rc1
+commit: 9154120 Hadi Asyrafi intel: Modify mailbox's get_config_status
+
+
+-----------------------------------------------------------------------
+
+repository: uefi-socfpga
+
+branch      : socvp_socfpga_udk2015
+branch tag  : rel_socvp_socfpga_udk2015_19.11.02_rc1
+new commits : 0
+
+
+branch      : socfpga_udk201905
+branch tag  : rel_socfpga_udk201905_19.11.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socvp_socfpga_udk2015_19.11.02_rc1
+commit: 475bea4 Loh Tien Hock AlteraPlatformPkg: Change memory base due for Linux's reserved space
+
+tag:    rel_socfpga_udk201905_19.11.02_rc1
+commit: a2a1076 Haojian Zhuang EmbeddedPkg/Drivers: add DwMmcHcDxe driver
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera-refdes
+
+branch      : master
+branch tag  : rel_master_19.11.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.11.02_rc1
+commit: 97e7d7a Ong, Hean Loong fix issue of lighttpd for yocto-warrior
+
+
+-----------------------------------------------------------------------
+
+repository: linux-refdesigns
+
+branch      : master
+branch tag  : rel_master_19.11.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.11.02_rc1
+commit: 769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+
+
+-----------------------------------------------------------------------
+
+repository: edk2-platforms-socfpga
+
+branch      : socfpga_udk201905
+branch tag  : rel_socfpga_udk201905_19.11.02_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socfpga_udk201905_19.11.02_rc1
+commit: 69d829a Tien Hock, Loh Plat: Intel: Fix decompression failure when size is too big
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-5.2
+
+commit 6183593e7a9259d25bf2e2893404bc2b4859c413
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Wed Oct 30 14:10:50 2019 -0500
+
+    HSD #1707096314: remove duplicate mpu_ccu_clk entry
+    
+    Remove the duplicate mpu_ccu_clk entry and clean up the
+    include/dt-bindings/clock/agilex-clock.h
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit a729a51d3a616f9d8b2d0d8f3603cbf6b0bf4788
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Oct 29 11:07:28 2019 -0500
+
+    HSD #2209582664: mpu_l2ram_clk should be mpu_ccu_clk
+    
+    Preliminary documentation documented the mpu_l2ram_clk, but since then,
+    the mpu_l2ram_clk is no longer documented. It's now referred to as
+    mpu_ccu_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit bd959f4f40e362a33e1d62542a3e725774b056fe
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Thu Oct 17 14:34:40 2019 -0500
+
+    arm64: dts: agilex: add service layer, fpga manager and fpga region
+    
+    [upstream commit aa74337ee73df5de3cb6c920100d01c3d95346cc]
+    
+    Add service layer, fpga manager and fpga region to the device tree
+    on Intel Agilex platform.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit b684c0ce0f5489fd0c60ece828f7c9da2fa8de5c
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Fri Oct 18 10:20:26 2019 -0500
+
+    arm64: agilex: enable USB and LEDs on agilex devkit
+    
+    [upstream commit 05c9c5a99d6111f4842eacdbcad86285ebe05ced]
+    
+    Enable USB on the Agilex devkit. Also the Agilex devkit will use the
+    same daughter card that is used on Stratix10, thus it map the same
+    LEDs and GPIOs.
+    
+    pushbutton PB_SW0 = gpio1.io4
+    pushbutton PB_SW1 = gpio1.io5
+    LED HPS_LED0      = gpio1.io20
+    LED HPS_LED1      = gpio1.io19
+    LED HPS_LED2      = gpio1.io21
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 0f49cb9356f0f0dd658fe0a92920e1029716bfec
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Thu Oct 17 14:08:06 2019 -0500
+
+    arm64: defconfig: enable the Cadence QSPI controller
+    
+    [upstream commit c2877b59c1c45bee97f1fc70df0f1527921288e3]
+    
+    Enable the Cadence QSPI controller driver that is on the Stratix10 and
+    Agilex platforms.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.130-ltsi
+
+commit a45bbca5aa7187cb2582377f4d43381cb0736613
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Wed Oct 30 14:10:50 2019 -0500
+
+    HSD #1707096314: remove duplicate mpu_ccu_clk entry
+    
+    Remove the duplicate mpu_ccu_clk entry and clean up the
+    include/dt-bindings/clock/agilex-clock.h
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 4c8f1a0fab25a1331a3da99f6820a007a1b526a7
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Oct 29 11:07:28 2019 -0500
+
+    HSD #2209582664: mpu_l2ram_clk should be mpu_ccu_clk
+    
+    Preliminary documentation documented the mpu_l2ram_clk, but since then,
+    the mpu_l2ram_clk is no longer documented. It's now referred to as
+    mpu_ccu_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit a032257d7048b7d7246b32dc7fd65de291353c35
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Thu Oct 17 14:34:40 2019 -0500
+
+    arm64: dts: agilex: add service layer, fpga manager and fpga region
+    
+    [upstream commit aa74337ee73df5de3cb6c920100d01c3d95346cc]
+    
+    Add service layer, fpga manager and fpga region to the device tree
+    on Intel Agilex platform.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 54af8e2ec4754cd6f4de904b0c91400daf027106
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Fri Oct 18 10:20:26 2019 -0500
+
+    arm64: agilex: enable USB and LEDs on agilex devkit
+    
+    [upstream commit 05c9c5a99d6111f4842eacdbcad86285ebe05ced]
+    
+    Enable USB on the Agilex devkit. Also the Agilex devkit will use the
+    same daughter card that is used on Stratix10, thus it map the same
+    LEDs and GPIOs.
+    
+    pushbutton PB_SW0 = gpio1.io4
+    pushbutton PB_SW1 = gpio1.io5
+    LED HPS_LED0      = gpio1.io20
+    LED HPS_LED1      = gpio1.io19
+    LED HPS_LED2      = gpio1.io21
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.126-ltsi-rt
+
+commit bff5ce812290f3619ad2b4c9dff5f5161f9cb164
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Wed Oct 30 14:10:50 2019 -0500
+
+    HSD #1707096314: remove duplicate mpu_ccu_clk entry
+    
+    Remove the duplicate mpu_ccu_clk entry and clean up the
+    include/dt-bindings/clock/agilex-clock.h
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit 8fabbf204349f2f46b13b1aca1d69e3a851f1202
+Author: Dinh Nguyen <dinh.nguyen@intel.com>
+Date:   Tue Oct 29 11:07:28 2019 -0500
+
+    HSD #2209582664: mpu_l2ram_clk should be mpu_ccu_clk
+    
+    Preliminary documentation documented the mpu_l2ram_clk, but since then,
+    the mpu_l2ram_clk is no longer documented. It's now referred to as
+    mpu_ccu_clk.
+    
+    Signed-off-by: Dinh Nguyen <dinh.nguyen@intel.com>
+
+commit eeaffee1e5f3927ed4533735deab2b44a4f6491c
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Thu Oct 17 14:34:40 2019 -0500
+
+    arm64: dts: agilex: add service layer, fpga manager and fpga region
+    
+    [upstream commit aa74337ee73df5de3cb6c920100d01c3d95346cc]
+    
+    Add service layer, fpga manager and fpga region to the device tree
+    on Intel Agilex platform.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 600f15959258cfbf99793c837bf90dbc2cb481df
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Fri Oct 18 10:20:26 2019 -0500
+
+    arm64: agilex: enable USB and LEDs on agilex devkit
+    
+    [upstream commit 05c9c5a99d6111f4842eacdbcad86285ebe05ced]
+    
+    Enable USB on the Agilex devkit. Also the Agilex devkit will use the
+    same daughter card that is used on Stratix10, thus it map the same
+    LEDs and GPIOs.
+    
+    pushbutton PB_SW0 = gpio1.io4
+    pushbutton PB_SW1 = gpio1.io5
+    LED HPS_LED0      = gpio1.io20
+    LED HPS_LED1      = gpio1.io19
+    LED HPS_LED2      = gpio1.io21
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2019.04
+
+commit 8c4cd804d6d77fbc4d7201d19755b6e89d43ae65
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Thu Oct 24 11:26:15 2019 +0800
+
+    HSD #1507500974: configs: arria10: Add bridge enable to CONFIG_BOOTCOMMAND
+    
+    Add "bridge enbale" command to CONFIG_BOOTCOMMAND.
+    
+    CONFIG_BOOTCOMMAND="bridge enable;run distro_bootcmd"
+    
+    defconfig is generated from "make savedefconfig".
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+
+commit f6b05ded785c52d72ed67e54b9cb519baac37433
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Oct 16 16:42:26 2019 +0800
+
+    ARM: socfpga: Rename the FPGA reconfiguration SMC services
+    
+    SMC SiP services for FPGA reconfiguration are now used in
+    64 bits platforms such as Stratix10 and Agilex. This patch
+    rename the FPGA reconfiguration Kconfig option to generalized
+    name which can be shared by multiple platforms.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit e2f46ee19256282be255f28238d9191ed7ceb507
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Wed Oct 16 13:44:21 2019 +0800
+
+    ARMv8: PSCI: Remove redundant PSCI entry
+    
+    Remove redundant "ARM_PSCI_FN_CPU_OFF" entry
+    from arch64 PSCI table.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 7177e8d0b37fe97f041499b9a619f79d339638b4
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Fri Oct 18 15:57:16 2019 +0800
+
+    configs: socfpga: Add CONFIG_NET_RANDOM_ETHADDR=y to SOCFPGA defconfig
+    
+    Ethernet initialization is only work with properly set MAC addresses.
+    Hence, this config is required to create the random MAC addresses
+    for Ethernet initialization.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2019.06-yocto2.7
+
+commit c5f64c3033d379868e46a9e897641726f7beab1f
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Mon Oct 21 11:35:44 2019 +0800
+
+    update commit id for linux-altera_5.2.bb
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+
+log of intel-rsu branch master
+
+commit a293921b220262f182cf4458853434d0e8b1c3b1
+Author: radu bacrau <radu.bacrau@intel.com>
+Date:   Thu Oct 24 12:37:08 2019 +0000
+
+    HSD #1707061410: Add support for RSU Retry
+    
+    Implemented compatibility with previous kernel driver versions which
+    did not provide the retry_counter RSU driver sysfs entry.
+    
+    Signed-off-by: Radu Bacrau <radu.bacrau@intel.com>
+
+-----------------------------------------------------------------------
+

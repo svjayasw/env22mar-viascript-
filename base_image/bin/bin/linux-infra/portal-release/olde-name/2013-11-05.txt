@@ -1,0 +1,33 @@
+Updates that were pushed on Nov 5, 2013 to update release branches and tags.
+
+Alan
+
+=======================================================================
+
+repository: uboot-socfpga
+
+branch socfpga_v2013.01.01-rel :
+  new commits: 1
+1740999 Chin Liang See FogBugz #158537: Updating U-Boot FPGA2SDRAM driver
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: poky
+
+branch danny-altera-rel :
+  new commits: 3
+7c6fa6b Jim Rucker FogBugz #165365: Add 3.11 recipies to Linux
+6be81bb Tien Hock Loh FogBugz #165622: Set PREFERRED_VERSION of uboot and kernel
+52bea0a Tien Hock Loh FogBugz #164343: Add missing site.conf
+
+
+
+Note that these existing tags will be updated on rocketboards.git:
+tag : ACDS13.1_REL_GSRD_PR (old 52bea0aac74fa41fca9c62e9cb40fbb766558e70) (new 6be81bb6b48594a2cd92ec2c4a0f3e5814fbbc35)
+tag : ACDS13.1_REL_GSRD_RC8 (old 52bea0aac74fa41fca9c62e9cb40fbb766558e70) (new 6be81bb6b48594a2cd92ec2c4a0f3e5814fbbc35)
+
+-----------------------------------------------------------------------
+=======================================================================

@@ -1,0 +1,260 @@
+
+Script-generated report of what we tagged today in internal git.These tags/branches will be pushed to the portal in two weeks.
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.6
+branch tag  : rel_socfpga-4.6_16.09.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.1.22-ltsi
+branch tag  : rel_socfpga-4.1.22-ltsi_16.09.01_rc1
+new commits : 1
+ebde777 Tien Hock Loh net: ethernet: Add TSE PCS support to dwmac-socfpga
+
+
+branch      : socfpga-4.1.22-ltsi-rt
+branch tag  : rel_socfpga-4.1.22-ltsi-rt_16.09.01_rc1
+new commits : 1
+e4b807f Tien Hock Loh net: ethernet: Add TSE PCS support to dwmac-socfpga
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.6_16.09.01_rc1
+commit: f9fb6e1 Alan Tull FogBugz #384743: altera-hps2fpga: race condition in probe
+
+tag:    rel_socfpga-4.1.22-ltsi_16.09.01_rc1
+commit: ebde777 Tien Hock Loh net: ethernet: Add TSE PCS support to dwmac-socfpga
+
+tag:    rel_socfpga-4.1.22-ltsi-rt_16.09.01_rc1
+commit: e4b807f Tien Hock Loh net: ethernet: Add TSE PCS support to dwmac-socfpga
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.09.01_rc1
+new commits : 1
+f5cd6b9 Chin Liang See spi: cadence_qspi_apb: Ensure baudrate doesn't exceed max value
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.09.01_rc1
+new commits : 6
+ef513e3 Tien Fong Chee FogBugz #371156-3: Allows UART com port redefined during run time
+c65b5dd Tien Fong Chee FogBugz #371156-2: Printing the messages from buffer once UART is ready
+980d6d8 Tien Fong Chee FogBugz #371156-1: Enable checking UART is ready for console based on DT
+795c4fb Andrew Gabbasov mmc: Avoid extra duplicate entry in mmc device structure
+5301f64 Markus Niebel MMC: add MMC_VERSION_5_0
+2acfc9e Chin Liang See spi: cadence_qspi_apb: Ensure baudrate doesn't exceed max  value
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.09.01_rc1
+commit: f5cd6b9 Chin Liang See spi: cadence_qspi_apb: Ensure baudrate doesn't exceed max value
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.09.01_rc1
+commit: ef513e3 Tien Fong Chee FogBugz #371156-3: Allows UART com port redefined during run time
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.09.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.09.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.09.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.09.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.09.01_rc1
+commit: f6d8e6c Graham Moore FogBugz #381598: Add large OOB patch to mtd-utils to support new NAND chips.
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.09.01_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi
+
+commit ebde777d67e0673b2371d6358f7f9c885f7e6c7e
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Mon Aug 1 16:44:52 2016 +0800
+
+    net: ethernet: Add TSE PCS support to dwmac-socfpga
+    
+    This adds support for TSE PCS that uses SGMII adapter when the phy-mode of
+    the dwmac is set to sgmii
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.22-ltsi-rt
+
+commit e4b807f47e77d8feac72714e8fe698819ce8ced8
+Author: Tien Hock Loh <thloh@altera.com>
+Date:   Mon Aug 1 16:44:52 2016 +0800
+
+    net: ethernet: Add TSE PCS support to dwmac-socfpga
+    
+    This adds support for TSE PCS that uses SGMII adapter when the phy-mode of
+    the dwmac is set to sgmii
+    
+    Signed-off-by: Tien Hock Loh <thloh@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit f5cd6b9becaee79161edda315cde6ffe67b9677e
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Aug 8 08:12:42 2016 +0800
+
+    spi: cadence_qspi_apb: Ensure baudrate doesn't exceed max value
+    
+    Ensuring the baudrate divisor value doesn't exceed the max value
+    in the calculation.It will be capped at max value to ensure the
+    correct value being written into the register.
+    
+    Example of the existing bug is when calculated div = 16. After and
+    with the mask, the value written to register is actually 0 (register
+    field for baudrate divisor). With this fix, the value written is now
+    15 which is max value for baudrate divisor.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    Cc: Marek Vasut <marex@denx.de>
+    Cc: Jagan Teki <jteki@openedev.com>
+    Cc: Dinh Nguyen <dinguyen@altera.com>
+    ---
+    Changes for v2
+    - Remove the and operation with the mask
+    - Added more details on the issue
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit ef513e3ea266312b086987a8ec46442b1a6866d7
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Thu Aug 11 16:58:55 2016 +0800
+
+    FogBugz #371156-3: Allows UART com port redefined during run time
+    
+    This patch allows the UART com port redefined during run time through
+    set_serial_port function. The base address of the 1st encounter UART
+    starting from dedicated pin mux to shared IO pinx mux would be retrieved
+    from U-boot device tree.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit c65b5dda2537b12ddb4c12e4d3f2fea554016970
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Mon Aug 15 16:04:24 2016 +0800
+
+    FogBugz #371156-2: Printing the messages from buffer once UART is ready
+    
+    Redirect the print messages to memory buffer when the UART is not ready.
+    Those messages stored in the buffer would be printed out to console
+    after FPGA image is programmed and UART with shared IO configuration done.
+    This would help to solve the UART stuck in transmit polling while
+    UART with shared IO held in reset.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+    ---
+    Changes for v2
+    - Replaced the pinmux UARTs offset value with #define MACRO.
+
+commit 980d6d82910126985dbaf048b838a840c52349b4
+Author: Tien Fong Chee <tfchee@altera.com>
+Date:   Wed Aug 10 17:47:06 2016 +0800
+
+    FogBugz #371156-1: Enable checking UART is ready for console based on DT
+    
+    This patch would do checking on device tree to ensure the UART exist
+    in the system before setting have_console to true and UART initialization.
+    This is to avoid unexpected behavior such as hang during UART
+    initialization.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@altera.com>
+
+commit 795c4fb2f2b541dab77d42a547a6cafb5f783588
+Author: Andrew Gabbasov <andrew_gabbasov@mentor.com>
+Date:   Thu Mar 19 20:44:03 2015 +0800
+
+    mmc: Avoid extra duplicate entry in mmc device structure
+    
+    The 'op_cond_response' field in mmc structure contains the response
+    from the last SEND_OP_COND MMC command while making iterational
+    polling of the card. Later it is copied to 'ocr' field, designed
+    to contain the OCR register value, which is actually the same
+    response from the same command. So, these fields have actually
+    the same data, just in different time periods. It's easier to use
+    the same 'ocr' field in both cases at once, without temporary using
+    of the 'op_cond_response' field.
+    
+    Signed-off-by: Andrew Gabbasov <andrew_gabbasov@mentor.com>
+
+commit 5301f6452cf5d3edfa5633ad4464c3f444b8670d
+Author: Markus Niebel <Markus.Niebel@tq-group.com>
+Date:   Tue Nov 18 15:13:53 2014 +0100
+
+    MMC: add MMC_VERSION_5_0
+    
+    Signed-off-by: Markus Niebel <Markus.Niebel@tq-group.com>
+    Acked-by: Jaehoon Chung <jh80.chung@samsung.com>
+
+commit 2acfc9e5ab60b956455c7813aaa2aa3a5dc0cd82
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Aug 8 08:56:52 2016 +0800
+
+    spi: cadence_qspi_apb: Ensure baudrate doesn't exceed max
+     value
+    
+    Ensuring the baudrate divisor value doesn't exceed the max value
+    in the calculation.It will be capped at max value to ensure the
+    correct value being written into the register.
+    
+    Example of the existing bug is when calculated div = 16. After and
+    with the mask, the value written to register is actually 0 (register
+    field for baudrate divisor). With this fix, the value written is now
+    15 which is max value for baudrate divisor.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    Cc: Marek Vasut <marex@denx.de>
+    Cc: Jagan Teki <jteki@openedev.com>
+    Cc: Dinh Nguyen <dinguyen@altera.com>
+    ---
+    Changes for v2
+    - Remove the and operation with the mask
+    - Added more details on the issue
+
+-----------------------------------------------------------------------
+

@@ -1,0 +1,267 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+The following new branches were tagged:
+repo : linux-socfpga          branch : socfpga-4.18
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.17
+branch tag  : rel_socfpga-4.17_18.09.03_rc1
+new commits : 0
+
+
+branch      : socfpga-4.18
+branch tag  : rel_socfpga-4.18_18.09.03_rc1
+Pushing new branch to external git
+
+branch      : socfpga-4.9.78-ltsi
+branch tag  : rel_socfpga-4.9.78-ltsi_18.09.03_rc1
+new commits : 1
+5704788 Dinh Nguyen net: stmmac: build the dwmac-socfpga platform driver for Stratix10
+
+
+branch      : socfpga-4.9.76-ltsi-rt
+branch tag  : rel_socfpga-4.9.76-ltsi-rt_18.09.03_rc1
+new commits : 3
+99b7c8b Richard Gong FogBugz #593535: stmmac: resolve smc related boot crash for ARMv7
+98ad50e Ooi, Joyce FogBugz #577927: stmmac: Add SMC support for EMAC System Manager register
+3ed24bf Dinh Nguyen net: stmmac: build the dwmac-socfpga platform driver for Stratix10
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.17_18.09.03_rc1
+commit: b7a0b88 Thor Thayer EDAC, altera: Fix ARM64 build warning
+
+tag:    rel_socfpga-4.18_18.09.03_rc1
+commit: 5acba7e Richard Gong FogBugz #593535: stmmac: resolve smc related boot crash for ARMv7
+
+tag:    rel_socfpga-4.9.78-ltsi_18.09.03_rc1
+commit: 5704788 Dinh Nguyen net: stmmac: build the dwmac-socfpga platform driver for Stratix10
+
+tag:    rel_socfpga-4.9.76-ltsi-rt_18.09.03_rc1
+commit: 99b7c8b Richard Gong FogBugz #593535: stmmac: resolve smc related boot crash for ARMv7
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_18.09.03_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_18.09.03_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_18.09.03_rc1
+new commits : 4
+d7e599a Chee Hong Ang FogBugz #586518-2: Shortened S10 FPGA configuration's error message
+45aea6d Chee Hong Ang FogBugz #586518-1: Refactor S10 FPGA configuration code
+e7c8e17 Thor Thayer FogBugz #592949-2: Take Stratix10 DMA ECC out of reset
+2148866 Thor Thayer FogBugz #592949: Enable Non-Secure S10 Peripheral ECC access
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_18.09.03_rc1
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_18.09.03_rc1
+commit: 3d79f8a Tien Fong Chee FogBugz #582382: Fix integer overflow for Arria 10
+
+tag:    rel_socfpga_v2017.09_18.09.03_rc1
+commit: d7e599a Chee Hong Ang FogBugz #586518-2: Shortened S10 FPGA configuration's error message
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_18.09.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_18.09.03_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.09.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.09.03_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_18.09.03_rc1
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_18.09.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_18.09.03_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_18.09.03_rc1
+commit: ec7bfa2 Ong, Hean Loong update 4.9.78-ltsi to commit ID da71e4b
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_18.09.03_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_master_18.09.03_rc1
+commit: a9e0753 David Koltak FogBugz #568818-2: Better command line arg checking in example client
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.18
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.78-ltsi
+
+commit 57047883442e58369cde6c8f8f710f7c91fcbfbe
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Aug 28 10:19:20 2018 -0500
+
+    net: stmmac: build the dwmac-socfpga platform driver for Stratix10
+    
+    The Stratix10 SoC is an AARCH64 based platform that shares the same ethernet
+    controller that is on other SoCFPGA platforms. Build the platform driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.9.76-ltsi-rt
+
+commit 99b7c8bb809c9c2ae2a2a2a022a5c29ba7619af4
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Mon Sep 10 11:05:12 2018 -0500
+
+    FogBugz #593535: stmmac: resolve smc related boot crash for ARMv7
+    
+    Fix previous commit e8c95776cfce ("FogBugz #577927: stmmac: Add SMC
+    support for EMAC System Manager register")
+    
+    The #ifdefs that check for SMC are insufficient, since currently only
+    Stratix10 has the trusted firmware that services these specific SMC calls.
+    Other ARMv7 platforms will crash at the first arm_smccc_smc() call. Fix
+    this by adding one additional check to allow the kernel boot properly on
+    other ARMv7 platforms.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+
+commit 98ad50e6dc57d7ce92642f01e0c34a935eed9a58
+Author: Ooi, Joyce <joyce.ooi@intel.com>
+Date:   Thu Jul 19 17:28:24 2018 +0800
+
+    FogBugz #577927: stmmac: Add SMC support for EMAC System Manager register
+    
+    As there is restriction to access to EMAC System Manager registers in
+    the kernel, the use of SMC calls are required and added in
+    dwmac-socfpga driver.
+    
+    Signed-off-by: Ooi, Joyce <joyce.ooi@intel.com>
+
+commit 3ed24bf64d7a20a17b2b57b12aa2b0849c9ffa93
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Aug 28 10:19:20 2018 -0500
+
+    net: stmmac: build the dwmac-socfpga platform driver for Stratix10
+    
+    The Stratix10 SoC is an AARCH64 based platform that shares the same ethernet
+    controller that is on other SoCFPGA platforms. Build the platform driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit d7e599aaa8d452bb4e88f3e63090d5ae76fb58b6
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Fri Aug 17 15:01:08 2018 +0800
+
+    FogBugz #586518-2: Shortened S10 FPGA configuration's error message
+    
+    Remove line numbers/files debug information from S10 FPGA
+    configuration's error message.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit 45aea6d4e214dabb135f9f05bd54d103f774d93d
+Author: Chee Hong Ang <chee.hong.ang@intel.com>
+Date:   Fri Aug 17 14:38:11 2018 +0800
+
+    FogBugz #586518-1: Refactor S10 FPGA configuration code
+    
+    Refactor code in drivers/fpga/stratix10.c for upstreaming
+    purpose. Simplify and split send_reconfig_data() function
+    into multiple smaller functions.
+    
+    Signed-off-by: Chee Hong Ang <chee.hong.ang@intel.com>
+
+commit e7c8e17f00d8ea59d8980d075b0e7f42644345c8
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Thu Sep 13 08:44:17 2018 -0700
+
+    FogBugz #592949-2: Take Stratix10 DMA ECC out of reset
+    
+    Remove the DMA ECC block from reset so that Linux can access
+    the ECC registers.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+commit 214886628bd7847f3bced1816e319d50cbf23dec
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Wed Sep 5 16:42:47 2018 -0700
+
+    FogBugz #592949: Enable Non-Secure S10 Peripheral ECC access
+    
+    Allow Linux to access the Stratix10 peripheral ECC areas.
+    
+    Signed-off-by: Thor Thayer <thor.thayer@linux.intel.com>
+
+-----------------------------------------------------------------------
+

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "List of all yum commands in yum history for this machine:"
+
+END_NUM="$(sudo yum history|head -4|tail -1|tr -d ' '|cut -d'|' -f1)"
+
+if [ -z "$END_NUM" ]; then
+    echo "script error, couldn't get number of last yum install command"
+    exit 1
+fi
+
+let transaction_id=$END_NUM
+while [ $transaction_id -gt 0 ]; do
+    printf "%3d : " $transaction_id
+    let transaction_id=transaction_id-1
+    sudo yum history info $transaction_id | grep 'Command Line' | sed -r 's/Command Line *:/sudo yum/'
+done

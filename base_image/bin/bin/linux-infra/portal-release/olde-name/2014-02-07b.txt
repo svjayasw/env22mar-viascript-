@@ -1,0 +1,211 @@
+This is a script-generated report of what will be pushed to the portal today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch socfpga-3.13 :
+Pushing new branch to rocketboards.org
+
+branch socfpga-3.12 :
+  new commits: 4
+28301d2 Thor Thayer FogBugz #180994: Conditionally enable L2 cache ECC on startup
+4f74712 Dinh Nguyen FogBugz #180526: Add USB dual-role support
+834cadd Paul Zimmerman Move DWC2 driver out of staging
+54539cb Dinh Nguyen FogBugz #177458: Fix the watchdog's parent clock
+
+
+++wiki:
+| *ID* | *Comment* | *GIT Commit* |
+| 180994 | Conditionally enable L2 cache ECC on startup | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=28301d2c6bb5545e3326f1583421e2adc089b872 ][ 28301d2c6bb5545e3326f1583421e2adc089b872 ]] |
+| 180526 | Add USB dual-role support | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=4f74712f05f590095bcddff1b14330a5ea3420b7 ][ 4f74712f05f590095bcddff1b14330a5ea3420b7 ]] |
+| community | Move DWC2 driver out of staging | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=834cadd5d41655caadabf2bb1ffecb27ee741139 ][ 834cadd5d41655caadabf2bb1ffecb27ee741139 ]] |
+| 177458 | Fix the watchdog's parent clock | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=54539cb0fce51c329b454209e7a957063cab1c5a ][ 54539cb0fce51c329b454209e7a957063cab1c5a ]] |
+--wiki:
+
+
+branch socfpga-3.4-ltsi :
+  new commits: 0
+
+
+branch socfpga-3.9-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch socfpga_v2013.01.01 :
+  new commits: 3
+fac0ec3 Chin Liang See FogBugz #169625: Enhance Preloader programming FPGA from SDMMC
+e6f7f89 Chin Liang See FogBugz #180961: Using calloc instead of malloc
+6a528ef Chin Liang See FogBugz #179710: Ensure interconnect run below 400MHz
+
+
+++wiki:
+| *ID* | *Comment* | *GIT Commit* |
+| 169625 | Enhance Preloader programming FPGA from SDMMC | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=fac0ec35a814eb783b643298d17262c2a8a640e7 ][ fac0ec35a814eb783b643298d17262c2a8a640e7 ]] |
+| 180961 | Using calloc instead of malloc | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=e6f7f89bcb9f3f76e297466213e142952c593506 ][ e6f7f89bcb9f3f76e297466213e142952c593506 ]] |
+| 179710 | Ensure interconnect run below 400MHz | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=6a528efe5d24a3792bc576ea4cfadb3d76cb8fa0 ][ 6a528efe5d24a3792bc576ea4cfadb3d76cb8fa0 ]] |
+--wiki:
+
+
+branch socfpga_v2013.01.01-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch danny-altera :
+  new commits: 0
+
+
+branch danny-altera-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.13
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.12
+
+commit 28301d2c6bb5545e3326f1583421e2adc089b872
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Fri Jan 31 11:26:43 2014 -0600
+
+    FogBugz #180994: Conditionally enable L2 cache ECC on startup
+    
+    Due to a misunderstanding in the preloader/U-Boot handoff process
+    the L2 ECC was originally enabled in preloader. The fact that L2
+    cache is disabled upon entry into Linux means that the L2 cache
+    ECC can be enabled upon Linux startup. This patch enables L2 ECC
+    early in the startup before the L2 cache is enabled.
+    
+    V2
+    - Leave aux_ctl initialization alone.
+    - Use of_iomap() function.
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit 4f74712f05f590095bcddff1b14330a5ea3420b7
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Fri Jan 24 10:28:53 2014 -0600
+
+    FogBugz #180526: Add USB dual-role support
+    
+    This commit enables the DWC2 USB driver to be a dual-role OTG driver.
+    This means that the driver can be in host or peripheral mode when the appropriate
+    connector is used. When an A-cable is plugged in, the driver behaves in host
+    mode, and when a B-cable is used, the driver will be in peripheral mode.
+    
+    This commit:
+    - Unifies the dwc2 and s3c-hsotg driver into a single driver.
+    - Deletes the defines in s3c-hsotg.
+    - Adds a aingle IRQ handler for both drivers.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 834cadd5d41655caadabf2bb1ffecb27ee741139
+Author: Paul Zimmerman <Paul.Zimmerman@synopsys.com>
+Date:   Mon Jan 13 13:50:09 2014 -0800
+
+    Move DWC2 driver out of staging
+    
+    The DWC2 driver should now be in good enough shape to move out of
+    staging. I have stress tested it overnight on RPI running mass
+    storage and Ethernet transfers in parallel, and for several days
+    on our proprietary PCI-based platform.
+    
+    Signed-off-by: Paul Zimmerman <paulz@synopsys.com>
+    Cc: Felipe Balbi <balbi@ti.com>
+    Signed-off-by: Greg Kroah-Hartman <gregkh@linuxfoundation.org>
+    
+    Conflicts:
+    
+    	drivers/staging/Kconfig
+
+commit 54539cb0fce51c329b454209e7a957063cab1c5a
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Fri Jan 31 11:04:30 2014 -0600
+
+    FogBugz #177458: Fix the watchdog's parent clock
+    
+    The watchdog's parent clock is the osc1_clk, and not the per_base_clk.
+    Correct the error.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit fac0ec35a814eb783b643298d17262c2a8a640e7
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Feb 3 06:33:39 2014 -0800
+
+    FogBugz #169625: Enhance Preloader programming FPGA from SDMMC
+    
+    Enhance the Preloader to have the capability of programming FPGA
+    from SD card's FAT partition. User just need to put the RBF file
+    into FAT partition. This is an additional feature on top of
+    existing Preloader programming FPGA from QSPI flash.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v3
+    - Used puts for prinout without argument
+    Changes for v2
+    - Removed debug printf
+
+commit e6f7f89bcb9f3f76e297466213e142952c593506
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Jan 30 15:37:47 2014 -0800
+
+    FogBugz #180961: Using calloc instead of malloc
+    
+    To fix the st_micro driver to use calloc instead malloc.
+    This fix will avoid the incident that uninitiated members of
+    flash structure are later used for NULL compilation.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 6a528efe5d24a3792bc576ea4cfadb3d76cb8fa0
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Jan 29 13:53:00 2014 -0800
+
+    FogBugz #179710: Ensure interconnect run below 400MHz
+    
+    To increase the main clock divider from default divide by 4
+    to divide by 5. By increasing the divider, we will slow down
+    the main clock which supplied to interconnect. The interconnect
+    should run below 400MHz. Currently, it is now running slightly
+    above 400MHz when we speed up the MPU clock to 925MHz for
+    Cylone V development kit.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Enhanced the commit message
+
+-----------------------------------------------------------------------
+
+

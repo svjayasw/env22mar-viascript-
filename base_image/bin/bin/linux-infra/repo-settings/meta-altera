@@ -1,0 +1,12 @@
+repo_path: /usr/local/git/repositories/meta-altera.git
+update_tests:
+email:
+sync-job:
+local_upstream:
+crucible_project: meta-altera
+internal_git: gitolite@at-git:meta-altera.git
+external_git:
+upstream_branches:
+release_branch:
+upstream_tag_regex:
+review_addrs:

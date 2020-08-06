@@ -1,0 +1,266 @@
+
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal in two weeks.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.5
+branch tag  : rel_socfpga-4.5_16.06.01_rc1
+new commits : 1
+091b0c1 Matthew Gerlach ARM: dts: socfpga: fix definitions of serial console for Arria10
+
+
+branch      : socfpga-4.1-ltsi
+branch tag  : rel_socfpga-4.1-ltsi_16.06.01_rc1
+new commits : 1
+43492a7 Matthew Gerlach ARM: dts: socfpga: fix definitions of serial console for Arria10
+
+
+branch      : socfpga-4.1-ltsi-rt
+branch tag  : rel_socfpga-4.1-ltsi-rt_16.06.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.5_16.06.01_rc1
+commit: 091b0c1 Matthew Gerlach ARM: dts: socfpga: fix definitions of serial console for Arria10
+
+tag:    rel_socfpga-4.1-ltsi_16.06.01_rc1
+commit: 43492a7 Matthew Gerlach ARM: dts: socfpga: fix definitions of serial console for Arria10
+
+tag:    rel_socfpga-4.1-ltsi-rt_16.06.01_rc1
+commit: 3367642 Dinh Nguyen FogBugz #361542: Add PREEMPT_RT to socfpga_defconfig
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_16.06.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_16.06.01_rc1
+new commits : 7
+9cb0e05 Chin Liang See FogBugz #371464-5: Enhance clock configuration to avoid PLL over current
+5ccb188 Chin Liang See FogBugz #371464-4: Adding function to carry out PLL ramp
+9cb5302 Chin Liang See FogBugz #371464-3: Adding function to calculate safe PLL numerator
+23db335 Chin Liang See FogBugz #371464-2: Adding function to decide PLL ramp is required
+a6ad1aa Chin Liang See FogBugz #371464-1: Adding functions to calculate frequency based on handoff
+9a7a522 Matthew Gerlach FogBugz #371156-2: fix "fpga loadfs" command hang
+7d5e9e5 Matthew Gerlach FogBugz #371156: fix "fpga loadfs" command hang
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_16.06.01_rc1
+commit: 7dd0473 Chin Liang See FogBugz #353914: Fix SDRAM self refresh failure
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_16.06.01_rc1
+commit: 9cb0e05 Chin Liang See FogBugz #371464-5: Enhance clock configuration to avoid PLL over current
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_16.06.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_16.06.01_rc1
+commit: 993831b Tien Hock Loh FogBugz #369619: Update meta-altera-refdes commit id
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_16.06.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_16.06.01_rc1
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_16.06.01_rc1
+commit: 8d6e9b4 Yves Vandervennet Support for the kernel v4.3
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_16.06.01_rc1
+commit: 67523b0 Tien Hock Loh FogBugz #308077: Add tiny sized RFS generation for QSPI boot
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.5
+
+commit 091b0c145676d926977c64dce3f34631a8caa12d
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Thu May 12 10:24:42 2016 -0700
+
+    ARM: dts: socfpga: fix definitions of serial console for Arria10
+    
+    The notion of which uart instance is serial0 or serial1
+    is board specific rather than generic to the chip. This
+    patch removes the serial aliases from generic chip dtsi
+    and adds an appropriate alias to the board specific dtsi.
+    By making the alias for serial0 point to uart1 for the arria10_socdk,
+    the linux boot command line supports specifying console=ttyS0,115200
+    for backwards compatibility, and it supports not specifying
+    the console at all.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1-ltsi
+
+commit 43492a7a9649e30826e4c79a9308ab2850259c26
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Thu May 12 10:24:42 2016 -0700
+
+    ARM: dts: socfpga: fix definitions of serial console for Arria10
+    
+    The notion of which uart instance is serial0 or serial1
+    is board specific rather than generic to the chip. This
+    patch removes the serial aliases from generic chip dtsi
+    and adds an appropriate alias to the board specific dtsi.
+    By making the alias for serial0 point to uart1 for the arria10_socdk,
+    the linux boot command line supports specifying console=ttyS0,115200
+    for backwards compatibility, and it supports not specifying
+    the console at all.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 9cb0e05e1e82bdd678723fbcfb373ac07f826844
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri May 20 15:46:42 2016 +0800
+
+    FogBugz #371464-5: Enhance clock configuration to avoid PLL over current
+    
+    Enhanced the clock configuration code to avoid potential PLL over
+    current scenario at low temperature by having PLL ramp. This is
+    applicable when the final intended MPU clock and NOC clock (based
+    on DTS hand off) is over the safe threshold value.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 5ccb18846b5352dde65287179caf974e4c33c451
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri May 20 15:46:09 2016 +0800
+
+    FogBugz #371464-4: Adding function to carry out PLL ramp
+    
+    Adding function to carry out the PLL ramp where both MPU clock
+    and NOC clock are increased in small increment steps which
+    started from a safe threshold value.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 9cb530256b916a29663d2d4e2f5830dc1741e358
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue May 24 09:29:25 2016 +0800
+
+    FogBugz #371464-3: Adding function to calculate safe PLL numerator
+    
+    Adding function to calculate the new PLL numerator which is
+    based on existing DTS hand off and intended safe frequency (safe_hz).
+    Note that PLL ramp is only modifying the numerator while maintaining
+    denominator as denominator will influence the jitter condition.
+    Please refer A10 HPS TRM for the jitter guide. Note final value for
+    numerator is minus with 1 to cater our register value representation.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v3
+    - Return 0 for default case to avoid calculation issue
+    Changes for v2
+    - Adding static to local functions
+    - Adding default in switch case for better coding standard
+
+commit 23db3354a1abb870650d0bf7b484a0753598c1ea
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri May 20 11:13:36 2016 +0800
+
+    FogBugz #371464-2: Adding function to decide PLL ramp is required
+    
+    Adding function to decide whether PLL ramping is required. PLL ramp
+    will ensure both MPU clock and NOC clock are increased in small
+    increment steps which started from a safe threshold value. The PLL
+    ramp is only required when the intended final MPU clock and NOC clock
+    is above the safe threshold value.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit a6ad1aa86222ee15d52611d481cadce3cafe6de0
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue May 24 09:25:06 2016 +0800
+
+    FogBugz #371464-1: Adding functions to calculate frequency based on handoff
+    
+    Adding functions to calculate the intended MPU clock and NOC
+    clock frequency based on device tree hand off. There will be
+    different clocks configuration flow based on the intended
+    MPU clock and NOC clock frequency.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v3
+    - Return 0 for default case to avoid calculation issue
+    Changes for v2
+    - Adding static to local functions
+    - Adding default in switch case for better coding standard
+
+commit 9a7a5220826ebf31142882e23f296158f83f66bd
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Mon May 16 18:01:52 2016 -0700
+
+    FogBugz #371156-2: fix "fpga loadfs" command hang
+    
+    This patch fixes the second hang in the command, fpga loadfs, when
+    the uart is connected to shared io pins.  When the initial peripheral
+    rbf is loaded, only the shared io pins are configured, and peripherals
+    connected to shared io pins are released from reset.  When the core
+    rbf is loaded, peripherals connected to shared io pins are left alone.
+    After the core or the combined rbfs are loaded, the fpga pins are
+    configured, and peripherals connected to those pins are released from reset.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+commit 7d5e9e5d32915ee14603c4f7157115cb0221ce45
+Author: Matthew Gerlach <mgerlach@opensource.altera.com>
+Date:   Sun May 15 08:59:55 2016 -0700
+
+    FogBugz #371156: fix "fpga loadfs" command hang
+    
+    Prevent the command, fpga loadfs, from hanging by moving the
+    input error checking to the beginning of the function,
+    socfpga_loadfs(), before resets get asserted and an attempt
+    to program the fpga is made.  Added a check to ensure
+    the fpga is in Early Release mode before attempting to
+    program the "core" rbf.
+    
+    Signed-off-by: Matthew Gerlach <mgerlach@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

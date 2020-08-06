@@ -1,0 +1,180 @@
+atull@atx-linux-37:~/NOTES/PORTAL$ ./rel_14.04.01b_script
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of
+their activities on this system monitored and recorded by the
+system personnel.
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this
+system expressly consents to such monitoring and is advised
+that if such monitoring reveals possible evidence of criminal
+activity, system personnel may provide the evidence of such
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+Total 0 (delta 0), reused 0 (delta 0)
+remote: testing
+remote: /usr/local/git/repositories/linux-socfpga.git
+remote: update_safe refs/tags/rel_socfpga-3.13_14.04.01 0000000000000000000000000000000000000000 4d575d52831beda2160ff94bfd2817c56165f6a1
+remote:
+remote:  ***********************************************************************************************
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***
+remote:  ***                                                                                         ***
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***
+remote:  *** updating (git fetch origin && git rebase)                                               ***
+remote:  ***                                                                                         ***
+remote:  *** see also:                                                                               ***
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***
+remote:  ***********************************************************************************************
+remote:
+remote: update type    : tags-create
+remote: refname       : refs/tags/rel_socfpga-3.13_14.04.01
+remote: oldrev        : 0000000000000000000000000000000000000000
+remote: newrev        : 4d575d52831beda2160ff94bfd2817c56165f6a1
+remote:
+remote: repo          : linux-socfpga
+remote: # of commits  : 0
+remote: refs path     : tags
+remote: newrev_type   : create
+remote:
+remote: create tag    : rel_socfpga-3.13_14.04.01
+remote: allowed
+To gitolite@at-git:linux-socfpga
+ * [new tag]         rel_socfpga-3.13_14.04.01 -> rel_socfpga-3.13_14.04.01
+Counting objects: 88, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (24/24), done.
+Writing objects: 100% (62/62), 9.47 KiB, done.
+Total 62 (delta 53), reused 41 (delta 38)
+To gitolite@git.rocketboards.org:linux-socfpga
+ * [new tag]         rel_socfpga-3.13_14.04.01 -> rel_socfpga-3.13_14.04.01
+Total 0 (delta 0), reused 0 (delta 0)
+To gitolite@git.rocketboards.org:linux-socfpga
+   bd9d1aa..4d575d5  rel_socfpga-3.13_14.04.01 -> socfpga-3.13
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of
+their activities on this system monitored and recorded by the
+system personnel.
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this
+system expressly consents to such monitoring and is advised
+that if such monitoring reveals possible evidence of criminal
+activity, system personnel may provide the evidence of such
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+Counting objects: 93, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (31/31), done.
+Writing objects: 100% (67/67), 13.41 KiB, done.
+Total 67 (delta 56), reused 47 (delta 36)
+remote: testing
+remote: /usr/local/git/repositories/linux-socfpga.git
+remote: update_safe refs/tags/rel_socfpga-3.10-ltsi_14.04.01 0000000000000000000000000000000000000000 371299bc74ca4bb21423887f29135b6ec6064bef
+remote:
+remote:  ***********************************************************************************************
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***
+remote:  ***                                                                                         ***
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***
+remote:  *** updating (git fetch origin && git rebase)                                               ***
+remote:  ***                                                                                         ***
+remote:  *** see also:                                                                               ***
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***
+remote:  ***********************************************************************************************
+remote:
+remote: update type    : tags-create
+remote: refname       : refs/tags/rel_socfpga-3.10-ltsi_14.04.01
+remote: oldrev        : 0000000000000000000000000000000000000000
+remote: newrev        : 371299bc74ca4bb21423887f29135b6ec6064bef
+remote:
+remote: repo          : linux-socfpga
+remote: # of commits  : 0
+remote: refs path     : tags
+remote: newrev_type   : create
+remote:
+remote: create tag    : rel_socfpga-3.10-ltsi_14.04.01
+remote: allowed
+To gitolite@at-git:linux-socfpga
+ * [new tag]         rel_socfpga-3.10-ltsi_14.04.01 -> rel_socfpga-3.10-ltsi_14.04.01
+Counting objects: 93, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (31/31), done.
+Writing objects: 100% (67/67), 13.41 KiB, done.
+Total 67 (delta 56), reused 47 (delta 36)
+To gitolite@git.rocketboards.org:linux-socfpga
+ * [new tag]         rel_socfpga-3.10-ltsi_14.04.01 -> rel_socfpga-3.10-ltsi_14.04.01
+Total 0 (delta 0), reused 0 (delta 0)
+To gitolite@git.rocketboards.org:linux-socfpga
+   3f200ad..371299b  rel_socfpga-3.10-ltsi_14.04.01 -> socfpga-3.10-ltsi
+\033[1;31m###############################################################
+###############################################################
+This system is for the use of Altera authorized users only.
+Individuals using this computing system without authority, or
+in excess of their authority, are subject to having all of
+their activities on this system monitored and recorded by the
+system personnel.
+In the course of monitoring individuals improperly using this
+system, or in the course of system maintenance, the activities
+of authorized users may be monitored.  Anyone using this
+system expressly consents to such monitoring and is advised
+that if such monitoring reveals possible evidence of criminal
+activity, system personnel may provide the evidence of such
+monitoring to law enforcement officials.
+###############################################################
+###############################################################\033[0m
+Total 0 (delta 0), reused 0 (delta 0)
+remote: testing
+remote: /usr/local/git/repositories/uboot-socfpga.git
+remote: update_safe refs/tags/rel_socfpga_v2013.01.01_14.04.01 0000000000000000000000000000000000000000 82ff5be80c8d163f072e69a0bface9398331961a
+remote:
+remote:  ***********************************************************************************************
+remote:  *** If you have problems with a git push, please send this whole log along with the patches ***
+remote:  *** you are trying to push to Alan and Yves (atull@altera.com and yvanderv@altera.com)      ***
+remote:  ***                                                                                         ***
+remote:  *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***
+remote:  *** updating (git fetch origin && git rebase)                                               ***
+remote:  ***                                                                                         ***
+remote:  *** see also:                                                                               ***
+remote:  *** linux-socfpga/Documentation/CodingStyle                                                 ***
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***
+remote:  *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***
+remote:  ***********************************************************************************************
+remote:
+remote: update type    : tags-create
+remote: refname       : refs/tags/rel_socfpga_v2013.01.01_14.04.01
+remote: oldrev        : 0000000000000000000000000000000000000000
+remote: newrev        : 82ff5be80c8d163f072e69a0bface9398331961a
+remote:
+remote: repo          : uboot-socfpga
+remote: # of commits  : 0
+remote: refs path     : tags
+remote: newrev_type   : create
+remote:
+remote: create tag    : rel_socfpga_v2013.01.01_14.04.01
+remote: allowed
+To gitolite@at-git:uboot-socfpga
+ * [new tag]         rel_socfpga_v2013.01.01_14.04.01 -> rel_socfpga_v2013.01.01_14.04.01
+Counting objects: 30, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (18/18), 1.97 KiB, done.
+Total 18 (delta 16), reused 18 (delta 16)
+To gitolite@git.rocketboards.org:u-boot-socfpga
+ * [new tag]         rel_socfpga_v2013.01.01_14.04.01 -> rel_socfpga_v2013.01.01_14.04.01
+Total 0 (delta 0), reused 0 (delta 0)
+To gitolite@git.rocketboards.org:u-boot-socfpga
+   7d2eb72..82ff5be  rel_socfpga_v2013.01.01_14.04.01 -> socfpga_v2013.01.01
+atull@atx-linux-37:~/NOTES/PORTAL$

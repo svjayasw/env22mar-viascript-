@@ -1,0 +1,1516 @@
+
+
+14.03.02 PR report
+
+What changed from rc1:
+ * added arria10 support for kernel socfpga-3.18 branch.
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.18
+branch tag  : rel_socfpga-3.18_15.03.02_pr
+new commits : 33
+24890c3 Alan Tull FogBugz #270904-19: arria10: device tree: add i2c peripherals
+0e263a4 Dinh Nguyen FogBugz #270904-17: Add 4-bit mode for SD
+6ac34b541 Thor Thayer FogBugz #270904-16: A10SYCON: Enable GPIO & HWMON by default
+9d6232f Dinh Nguyen FogBugz #270904-15: Add support for UART1 debug uart for earlyprintk
+1f1f946 Thor Thayer FogBugz #270904-15: SPI: A10SYCON fixes for 3.18
+144764e Dinh Nguyen net: stmmac: make reset control an optional requirement
+1d74683 Dinh Nguyen FogBugz #270904-14: Add proper clock driver for arria 10
+a256b61 Dinh Nguyen FogBugz #270904-11: enable warm reboot on arria10 devkit
+f17e467 Dinh Nguyen FogBugz #282531-2: add pwr-en to the arria10 dts board file
+54fd481 Dinh Nguyen FogBugz #282531-1: Add "pwr-en" dts property to enable the PWREN bit
+5db01d8 Thor Thayer FogBugz #270904-10: SPI: Use function pointers for 16b vs. 32b
+446a23e Graham Moore FogBugz #270904-9: Add qspi node for Arria10
+9c0a441 Dinh Nguyen FogBugz #270904-8: Add support for n25q00aa QSPI chip on A10 devkit
+bed87a8 Thor Thayer FogBugz #270904-7: SPI: Change DW SPI from 16 bit writes to 32 bit writes
+faac632 Thor Thayer FogBugz #270904-6: A10SyCon: Remove Arria10 Interrupts
+133af3a Dinh Nguyen FogBugz #270904-5: Enable USB on Arria10
+6800f64 Thor Thayer FogBugz #270904-4: Enable SPI on the arria10 devkit
+1b65010 Dinh Nguyen FogBugz #270904-3: Add ethernet node for A10
+c3d9a01 Dinh Nguyen FogBugz #270904-2: Add SD/MMC support for arria10 devkit
+9390408 Dinh Nguyen FogBugz #270904-1: enable arria10 devkit
+c8a0aa5 Thor Thayer arm: dts: Altera Arria10 System Controller Device Tree entries
+7408ea8 Thor Thayer reset: Altera Arria10 System Controller - Reset Controller
+945ab9e Thor Thayer hwmon: Altera Arria10 System Controller - HW Monitor
+450484f Thor Thayer gpio: Altera Arria10 System Controller - GPIO
+41c2e9f Thor Thayer mfd: Altera Arria10 System Controller Implementation
+027b27a Dinh Nguyen ARM: socfpga: add in cpu1-start-addr for arria10
+c1e14ef Dinh Nguyen arm: socfpga: Arria 10 SOC's cpu1-start address is 3 bytes wide
+6d7b132 Dinh Nguyen arm: socfpga: Change cpu1 reset register for Arria 10 SOC
+644d4e3 Dinh Nguyen arm: dts: socfpga: Add a base DTSI for Altera's Arria10 SOC
+b3ed757 Vince Bridgers net: eth: altera: Change access ports to mdio for all xMII applications
+4ebfd70 Vlastimil Setka altera_tse: Fixes in NAPI and interrupt handling paths
+394a30f Vlastimil Setka altera_tse: Correct typo in obtaining tx_fifo_depth from devicetree
+0844c1f Vince Bridgers net: eth: altera: Change reset_mac failure message masks from err to dbg
+
+
+++wiki:
+*Branch name*: socfpga-3.18, *Tag name:* rel_socfpga-3.18_15.03.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 270904-19 | arria10: device tree: add i2c peripherals | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=24890c32e235c836dc41e304209114b3297ea275 ][ 24890c32e235c836dc41e304209114b3297ea275 ]] |
+| 270904-17 | Add 4-bit mode for SD | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=0e263a4266ff7978cb6fb052c36471b8b6945adb ][ 0e263a4266ff7978cb6fb052c36471b8b6945adb ]] |
+| 270904-16 | A10SYCON: Enable GPIO & HWMON by default | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=6ac34b541ee3cf97d58220da4e83b30768c963c2 ][ 6ac34b541ee3cf97d58220da4e83b30768c963c2 ]] |
+| 270904-15 | Add support for UART1 debug uart for earlyprintk | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=9d6232f19f2c0349a9842c8ba89fcf329024f466 ][ 9d6232f19f2c0349a9842c8ba89fcf329024f466 ]] |
+| 270904-15 | SPI: A10SYCON fixes for 3.18 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1f1f946c580a4eb4a6c10cdfcfcf9427756a0e6e ][ 1f1f946c580a4eb4a6c10cdfcfcf9427756a0e6e ]] |
+| community | net: stmmac: make reset control an optional requirement | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=144764e68b43c60503d9c1430f5581c343bb21bc ][ 144764e68b43c60503d9c1430f5581c343bb21bc ]] |
+| 270904-14 | Add proper clock driver for arria 10 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1d74683c4351deee0f608b4d5d53ac5fef11b7bf ][ 1d74683c4351deee0f608b4d5d53ac5fef11b7bf ]] |
+| 270904-11 | enable warm reboot on arria10 devkit | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=a256b614315cc41a6fbeddfad8950823dcc245a6 ][ a256b614315cc41a6fbeddfad8950823dcc245a6 ]] |
+| 282531-2 | add pwr-en to the arria10 dts board file | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=f17e4675e8a434c1818e8019378f45338ba2ea2a ][ f17e4675e8a434c1818e8019378f45338ba2ea2a ]] |
+| 282531-1 | Add "pwr-en" dts property to enable the PWREN bit | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=54fd48141b4a217c8259c88f7b8e13471b1f9c22 ][ 54fd48141b4a217c8259c88f7b8e13471b1f9c22 ]] |
+| 270904-10 | SPI: Use function pointers for 16b vs. 32b | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=5db01d886cb9dd25590cde32eb834f158dd17b0c ][ 5db01d886cb9dd25590cde32eb834f158dd17b0c ]] |
+| 270904-9 | Add qspi node for Arria10 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=446a23e8b3a87455ec270525f4ad637a7aa5cbd7 ][ 446a23e8b3a87455ec270525f4ad637a7aa5cbd7 ]] |
+| 270904-8 | Add support for n25q00aa QSPI chip on A10 devkit | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=9c0a441a6202da5d1290870f09705dec9683b79d ][ 9c0a441a6202da5d1290870f09705dec9683b79d ]] |
+| 270904-7 | SPI: Change DW SPI from 16 bit writes to 32 bit writes | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=bed87a86d94c0a0e87423cb0153c6e21287a8ddf ][ bed87a86d94c0a0e87423cb0153c6e21287a8ddf ]] |
+| 270904-6 | A10SyCon: Remove Arria10 Interrupts | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=faac6320ef708ab0618a37a49b90b34d2560b144 ][ faac6320ef708ab0618a37a49b90b34d2560b144 ]] |
+| 270904-5 | Enable USB on Arria10 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=133af3a24d23a03e9b6c6bcde8eb6d7cb38686bc ][ 133af3a24d23a03e9b6c6bcde8eb6d7cb38686bc ]] |
+| 270904-4 | Enable SPI on the arria10 devkit | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=6800f6465766bb25f116dec7b3cd3d363cb205e9 ][ 6800f6465766bb25f116dec7b3cd3d363cb205e9 ]] |
+| 270904-3 | Add ethernet node for A10 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1b6501077372e7c843df07012af47703282e9969 ][ 1b6501077372e7c843df07012af47703282e9969 ]] |
+| 270904-2 | Add SD/MMC support for arria10 devkit | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=c3d9a014e1ff1013cae9afb9649ef2cf723cfacd ][ c3d9a014e1ff1013cae9afb9649ef2cf723cfacd ]] |
+| 270904-1 | enable arria10 devkit | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=9390408c08d71930ce0824aff586569766c65f8d ][ 9390408c08d71930ce0824aff586569766c65f8d ]] |
+| community | arm: dts: Altera Arria10 System Controller Device Tree entries | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=c8a0aa5fcbc72937d5929119eb614f9e466529f4 ][ c8a0aa5fcbc72937d5929119eb614f9e466529f4 ]] |
+| community | reset: Altera Arria10 System Controller - Reset Controller | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=7408ea86dc4a1fa31dab73052b02a3efe5134b6a ][ 7408ea86dc4a1fa31dab73052b02a3efe5134b6a ]] |
+| community | hwmon: Altera Arria10 System Controller - HW Monitor | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=945ab9e56b03c0a7b6edf49700def9387325a669 ][ 945ab9e56b03c0a7b6edf49700def9387325a669 ]] |
+| community | gpio: Altera Arria10 System Controller - GPIO | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=450484f7bf75956129309db2531ec25f849513d7 ][ 450484f7bf75956129309db2531ec25f849513d7 ]] |
+| community | mfd: Altera Arria10 System Controller Implementation | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=41c2e9fdebd246f06e0f9befb90f3f86c5a91c20 ][ 41c2e9fdebd246f06e0f9befb90f3f86c5a91c20 ]] |
+| community | ARM: socfpga: add in cpu1-start-addr for arria10 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=027b27a21641fe411df2847b706760853812046f ][ 027b27a21641fe411df2847b706760853812046f ]] |
+| community | arm: socfpga: Arria 10 SOC's cpu1-start address is 3 bytes wide | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=c1e14ef7824006c2079f9066dab9b2d72fdea474 ][ c1e14ef7824006c2079f9066dab9b2d72fdea474 ]] |
+| community | arm: socfpga: Change cpu1 reset register for Arria 10 SOC | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=6d7b132802b65243f7c7bc22cfa5530addb43114 ][ 6d7b132802b65243f7c7bc22cfa5530addb43114 ]] |
+| community | arm: dts: socfpga: Add a base DTSI for Altera's Arria10 SOC | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=644d4e3ce09dbeaf771ec287991b133bcd9049cf ][ 644d4e3ce09dbeaf771ec287991b133bcd9049cf ]] |
+| community | net: eth: altera: Change access ports to mdio for all xMII applications | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=b3ed7574b9790575634f0900ea5ee4a7c21bb04c ][ b3ed7574b9790575634f0900ea5ee4a7c21bb04c ]] |
+| community | altera_tse: Fixes in NAPI and interrupt handling paths | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=4ebfd70ff189c1d3dd7ce5cc3998197665a297e7 ][ 4ebfd70ff189c1d3dd7ce5cc3998197665a297e7 ]] |
+| community | altera_tse: Correct typo in obtaining tx_fifo_depth from devicetree | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=394a30f58d9fff4b1d2aed544510a1b2173eadc7 ][ 394a30f58d9fff4b1d2aed544510a1b2173eadc7 ]] |
+| community | net: eth: altera: Change reset_mac failure message masks from err to dbg | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=0844c1f3ea9258202ba007b5b74ef16f05045ba1 ][ 0844c1f3ea9258202ba007b5b74ef16f05045ba1 ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.03.02_pr
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.03.02_pr
+new commits : 46
+629162a Thor Thayer FogBugz #270904-15: A10SYCON: Fix GPIO reads.
+fd01937 Dinh Nguyen FogBugz #270904-14: Add proper clock driver for arria 10
+d2369b4 Dinh Nguyen FogBugz #270904-13: enable warm reboot on arria10 devkit
+fd002cc Dinh Nguyen FogBugz #282531-2: add pwr-en to the arria10 dts board file
+7aa95f5 Dinh Nguyen FogBugz #282531-1: Move the location of setting the SD PWREN bit
+3f92ddc Dinh Nguyen FogBugz #270904-12: Add support for UART1 debug uart for earlyprintk
+b4dd157 Thor Thayer FogBugz #270904-11: SPI: Use function pointers for 16b vs. 32b
+f8e6e30 Graham Moore FogBugz #270904-10: Add qspi node for Arria10
+7681c8a Graham Moore FogBugz #270904-9: Add support for n25q00aa QSPI chip on A10 devkit
+a6a6281 Thor Thayer FogBugz #270904-8: SPI: Change DW SPI from 16 bit writes to 32 bit writes
+9d63f29 Thor Thayer FogBugz #270904-7: A10SyCon: Remove Arria10 Interrupts
+098bcd62 Dinh Nguyen FogBugz #270904-6: Enable USB on Arria10
+7fada349 Thor Thayer FogBugz #270904-5: Enable SPI on the arria10 devkit
+a929c22 Dinh Nguyen FogBugz #270904-4: Add ethernet node for A10
+080d4a4 Dinh Nguyen FogBugz #270904-3: Temp hack to bring all peripherals out of reset
+8308a93 Dinh Nguyen FogBugz #270904-2: Add SD/MMC support for arria10 devkit
+261f6fb Dinh Nguyen FogBugz #270904-1: enable arria10 devkit
+448eb50 Thor Thayer arm: dts: Altera Arria10 System Controller Device Tree entries
+1cb1c7b Thor Thayer reset: Altera Arria10 System Controller - Reset Controller
+4faa148 Thor Thayer hwmon: Altera Arria10 System Controller - HW Monitor
+46dcff7 Thor Thayer gpio: Altera Arria10 System Controller - GPIO
+afcdae4 Thor Thayer mfd: Altera Arria10 System Controller Implementation
+4f9f986 Dinh Nguyen ARM: socfpga: add in cpu1-start-addr for arria10
+53fd704 Dinh Nguyen arm: socfpga: Arria 10 SOC's cpu1-start address is 3 bytes wide
+d22b244 Dinh Nguyen arm: socfpga: Change cpu1 reset register for Arria 10 SOC
+177780b Dinh Nguyen arm: dts: socfpga: Add a base DTSI for Altera's Arria10 SOC
+94100cb Viet Nga Dao FogBugz #243939: SGMII Design Example Intermittent Autonego Failure
+ebcc0e2 Viet Nga Dao FogBugz #243952: Missing Linefeed in SGMII Adapter Driver
+11fbb77 Viet Nga Dao FogBugz #236745: Add SGMII support to socfpga
+38a4536 Yves Vandervennet FogBugz #249283: update of SoCFPGA defconfig
+bb439c2 Vince Bridgers net: eth: altera: Change access ports to mdio for all xMII applications
+669bc44 Vlastimil Setka altera_tse: Fixes in NAPI and interrupt handling paths
+770bc74 Vlastimil Setka altera_tse: Correct typo in obtaining tx_fifo_depth from devicetree
+e26d408 Kostya Belezko Altera TSE: Add missing phydev
+7eb467da Wolfram Sang net: ethernet: altera: drop owner assignment from platform_drivers
+028adcf Walter Lozano Altera TSE: Add support for no PHY
+9ee2919 Walter Lozano Altera TSE: Move PHY get addr and MDIO create
+0ba5dd3 Vince Bridgers Altera TSE: Disable Multicast filtering to workaround problem
+d9993985 Vince Bridgers Altera TSE: Fix sparse errors and warnings
+ca5d3a2 Geert Uytterhoeven Altera TSE: ALTERA_TSE should depend on HAS_DMA
+9f92bea Tobias Klauser Altera TSE: Add missing include to silence sparse warnings
+e184c4b Tobias Klauser Altera TSE: Fix DMA secriptor length initialization
+d487c44 Vince Bridgers Altera TSE: Change driver name used by Ethtool
+cfc9bad Vince Bridgers Altera TSE: Work around unaligned DMA receive packet issue with Altera SGDMA
+3a10508 Tobias Klauser Altera TSE: Remove unnecessary cast of void pointers
+224d4e1 Seungwon Jeon mmc: dw_mmc: set the supported max/min frequency
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi-rt, *Tag name:* rel_socfpga-3.10-ltsi-rt_15.03.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 270904-15 | A10SYCON: Fix GPIO reads. | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=629162a27e4dd5383e6cc86116343df769e057e0 ][ 629162a27e4dd5383e6cc86116343df769e057e0 ]] |
+| 270904-14 | Add proper clock driver for arria 10 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=fd01937bfce4e06298f7787b3a2f863f30ebc902 ][ fd01937bfce4e06298f7787b3a2f863f30ebc902 ]] |
+| 270904-13 | enable warm reboot on arria10 devkit | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d2369b4ad3d985fd467111c9a8bb7a055cbbd578 ][ d2369b4ad3d985fd467111c9a8bb7a055cbbd578 ]] |
+| 282531-2 | add pwr-en to the arria10 dts board file | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=fd002cc15a64bdd0f78d361ac9752b87364c0a70 ][ fd002cc15a64bdd0f78d361ac9752b87364c0a70 ]] |
+| 282531-1 | Move the location of setting the SD PWREN bit | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=7aa95f5da5e6564e8cb056e5e873cc5d076d9c41 ][ 7aa95f5da5e6564e8cb056e5e873cc5d076d9c41 ]] |
+| 270904-12 | Add support for UART1 debug uart for earlyprintk | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=3f92ddc587950de70e3cbc8b722f12c44801a459 ][ 3f92ddc587950de70e3cbc8b722f12c44801a459 ]] |
+| 270904-11 | SPI: Use function pointers for 16b vs. 32b | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=b4dd15729b584735c54a58fa8335e71c0f405705 ][ b4dd15729b584735c54a58fa8335e71c0f405705 ]] |
+| 270904-10 | Add qspi node for Arria10 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=f8e6e30a6d27c1ce087368081574112d5c824e8e ][ f8e6e30a6d27c1ce087368081574112d5c824e8e ]] |
+| 270904-9 | Add support for n25q00aa QSPI chip on A10 devkit | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=7681c8a267bd984cb6a6a13476f5913f0de30934 ][ 7681c8a267bd984cb6a6a13476f5913f0de30934 ]] |
+| 270904-8 | SPI: Change DW SPI from 16 bit writes to 32 bit writes | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=a6a628153f607f57952d08abd043da2e6c2b3734 ][ a6a628153f607f57952d08abd043da2e6c2b3734 ]] |
+| 270904-7 | A10SyCon: Remove Arria10 Interrupts | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=9d63f290a560824542df82d2fffb6187d8cdd55b ][ 9d63f290a560824542df82d2fffb6187d8cdd55b ]] |
+| 270904-6 | Enable USB on Arria10 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=098bcd627767cd1fae8be7a993f883aea6b25ca3 ][ 098bcd627767cd1fae8be7a993f883aea6b25ca3 ]] |
+| 270904-5 | Enable SPI on the arria10 devkit | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=7fada349e34d9d4cbfa675cb0dfc3fc311f4343e ][ 7fada349e34d9d4cbfa675cb0dfc3fc311f4343e ]] |
+| 270904-4 | Add ethernet node for A10 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=a929c22f3f3b8ab633ce6dd12a5b811301cdc170 ][ a929c22f3f3b8ab633ce6dd12a5b811301cdc170 ]] |
+| 270904-3 | Temp hack to bring all peripherals out of reset | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=080d4a481ec9a1f85e3cab719fc66510123034e9 ][ 080d4a481ec9a1f85e3cab719fc66510123034e9 ]] |
+| 270904-2 | Add SD/MMC support for arria10 devkit | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=8308a93d39530f58b656489a9abfae225a09bcd0 ][ 8308a93d39530f58b656489a9abfae225a09bcd0 ]] |
+| 270904-1 | enable arria10 devkit | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=261f6fbbd39cabc8147720f93ed5add2fa869339 ][ 261f6fbbd39cabc8147720f93ed5add2fa869339 ]] |
+| community | arm: dts: Altera Arria10 System Controller Device Tree entries | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=448eb508bc039c40e25d038d90c614bf60bd94cb ][ 448eb508bc039c40e25d038d90c614bf60bd94cb ]] |
+| community | reset: Altera Arria10 System Controller - Reset Controller | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=1cb1c7b3535c09f857e148450b7f3c914e9f57bf ][ 1cb1c7b3535c09f857e148450b7f3c914e9f57bf ]] |
+| community | hwmon: Altera Arria10 System Controller - HW Monitor | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=4faa148780dc83239b1e341f7ee0f8667be15ec5 ][ 4faa148780dc83239b1e341f7ee0f8667be15ec5 ]] |
+| community | gpio: Altera Arria10 System Controller - GPIO | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=46dcff78f13ac4b590270590d03bfe5eba8b540c ][ 46dcff78f13ac4b590270590d03bfe5eba8b540c ]] |
+| community | mfd: Altera Arria10 System Controller Implementation | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=afcdae457cef7d3558ea7c4d158720c639ead53a ][ afcdae457cef7d3558ea7c4d158720c639ead53a ]] |
+| community | ARM: socfpga: add in cpu1-start-addr for arria10 | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=4f9f9869bb8ed1e091a5791c463f8e15bd9406d9 ][ 4f9f9869bb8ed1e091a5791c463f8e15bd9406d9 ]] |
+| community | arm: socfpga: Arria 10 SOC's cpu1-start address is 3 bytes wide | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=53fd7040ae3bf912205fea771a48a700a9191700 ][ 53fd7040ae3bf912205fea771a48a700a9191700 ]] |
+| community | arm: socfpga: Change cpu1 reset register for Arria 10 SOC | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d22b244a3d1cfb10f6dbb14d6c51637c0c9ad272 ][ d22b244a3d1cfb10f6dbb14d6c51637c0c9ad272 ]] |
+| community | arm: dts: socfpga: Add a base DTSI for Altera's Arria10 SOC | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=177780b1748dacd306e9c94f208a4dfc62490c7c ][ 177780b1748dacd306e9c94f208a4dfc62490c7c ]] |
+| 243939 | SGMII Design Example Intermittent Autonego Failure | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=94100cbb649af7855caeb64de5e29ac67dfa7149 ][ 94100cbb649af7855caeb64de5e29ac67dfa7149 ]] |
+| 243952 | Missing Linefeed in SGMII Adapter Driver | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=ebcc0e2a870e75e762b28d72911e54cc4e21bbc8 ][ ebcc0e2a870e75e762b28d72911e54cc4e21bbc8 ]] |
+| 236745 | Add SGMII support to socfpga | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=11fbb775a4045be4b17acb43e25a017250cbe3db ][ 11fbb775a4045be4b17acb43e25a017250cbe3db ]] |
+| 249283 | update of SoCFPGA defconfig | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=38a45364078b6261c9b6f66af99ca68032f0af77 ][ 38a45364078b6261c9b6f66af99ca68032f0af77 ]] |
+| community | net: eth: altera: Change access ports to mdio for all xMII applications | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=bb439c24360b5dccdcb56fff9524f7d53d01b767 ][ bb439c24360b5dccdcb56fff9524f7d53d01b767 ]] |
+| community | altera_tse: Fixes in NAPI and interrupt handling paths | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=669bc44517162f19cf85237340b448de4fdd4b63 ][ 669bc44517162f19cf85237340b448de4fdd4b63 ]] |
+| community | altera_tse: Correct typo in obtaining tx_fifo_depth from devicetree | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=770bc748d87072479ff8fa3931f2925aed57683f ][ 770bc748d87072479ff8fa3931f2925aed57683f ]] |
+| community | Altera TSE: Add missing phydev | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=e26d4083063b87185ebefda7ffc6daee870033ae ][ e26d4083063b87185ebefda7ffc6daee870033ae ]] |
+| community | net: ethernet: altera: drop owner assignment from platform_drivers | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=7eb467dabfc1e146d45746c17a13be3416fdbb87 ][ 7eb467dabfc1e146d45746c17a13be3416fdbb87 ]] |
+| community | Altera TSE: Add support for no PHY | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=028adcfed80ca2c844ce529f92b0f341d07fd222 ][ 028adcfed80ca2c844ce529f92b0f341d07fd222 ]] |
+| community | Altera TSE: Move PHY get addr and MDIO create | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=9ee291902c4a36f17f882b678cb8ad4a2d6f611a ][ 9ee291902c4a36f17f882b678cb8ad4a2d6f611a ]] |
+| community | Altera TSE: Disable Multicast filtering to workaround problem | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=0ba5dd371d37f8b0d089eb1fbd653f5ee71b9866 ][ 0ba5dd371d37f8b0d089eb1fbd653f5ee71b9866 ]] |
+| community | Altera TSE: Fix sparse errors and warnings | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d99939856464c8eda7b295bdfa602a1110ef14a1 ][ d99939856464c8eda7b295bdfa602a1110ef14a1 ]] |
+| community | Altera TSE: ALTERA_TSE should depend on HAS_DMA | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=ca5d3a2a776901409dff6697d969887779fafff8 ][ ca5d3a2a776901409dff6697d969887779fafff8 ]] |
+| community | Altera TSE: Add missing include to silence sparse warnings | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=9f92bea5fbb76261ecc44e9622ec636e88ec96f0 ][ 9f92bea5fbb76261ecc44e9622ec636e88ec96f0 ]] |
+| community | Altera TSE: Fix DMA secriptor length initialization | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=e184c4be75706cd1cd9303dda23e8969f17ed863 ][ e184c4be75706cd1cd9303dda23e8969f17ed863 ]] |
+| community | Altera TSE: Change driver name used by Ethtool | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=d487c44bb9c80343760037a9a915bce31c39bb96 ][ d487c44bb9c80343760037a9a915bce31c39bb96 ]] |
+| community | Altera TSE: Work around unaligned DMA receive packet issue with Altera SGDMA | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=cfc9badc28d9b6fd3b4fec1d11c0bc07e267f262 ][ cfc9badc28d9b6fd3b4fec1d11c0bc07e267f262 ]] |
+| community | Altera TSE: Remove unnecessary cast of void pointers | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=3a105088cfe95f8c77a17295f4d88c70a0b0a5f2 ][ 3a105088cfe95f8c77a17295f4d88c70a0b0a5f2 ]] |
+| community | mmc: dw_mmc: set the supported max/min frequency | [[ http://git.rocketboards.org/gitweb/?p=linux-socfpga.git;a=commit;h=224d4e1771869d3079b2dd2ccda6eef3b2f1ada0 ][ 224d4e1771869d3079b2dd2ccda6eef3b2f1ada0 ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.18_15.03.02_pr
+commit: 24890c3 Alan Tull FogBugz #270904-19: arria10: device tree: add i2c peripherals
+
+tag:    rel_socfpga-3.10-ltsi_15.03.02_pr
+commit: 018fe6c Thor Thayer FogBugz #270904-15: A10SYCON: Fix GPIO reads.
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.03.02_pr
+commit: 629162a Thor Thayer FogBugz #270904-15: A10SYCON: Fix GPIO reads.
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.03.02_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_15.03.02_pr
+commit: 32c1d91 Vince Bridgers FogBugz #231136: Skip pll workaround if booting from fpga
+
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch      : danny-altera
+branch tag  : rel_danny-altera_15.03.02_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_danny-altera_15.03.02_pr
+commit: 2ea1134 Jim Rucker FogBugz #147479: Changing dtbs to include arria
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2012.12-socfpga
+branch tag  : rel_angstrom-v2012.12-socfpga_15.03.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2013.12-socfpga
+branch tag  : rel_angstrom-v2013.12-socfpga_15.03.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.06-socfpga
+branch tag  : rel_angstrom-v2014.06-socfpga_15.03.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.03.02_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-socfpga_15.03.02_pr
+commit: a741101 Yves Vandervennet changed clone of layer from http to git
+
+tag:    rel_angstrom-v2013.12-socfpga_15.03.02_pr
+commit: 65417bc Yves Vandervennet kde repo moved, it's now meta-kde4
+
+tag:    rel_angstrom-v2014.06-socfpga_15.03.02_pr
+commit: 4460560 Yves Vandervennet removed the usual blank line left at the end off layers.txt
+
+tag:    rel_angstrom-v2014.12-socfpga_15.03.02_pr
+commit: e8f1e58 Yves Vandervennet Enabling SoCFPGA with this revision of Angstrom
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2012.12-yocto1.3
+branch tag  : rel_angstrom-v2012.12-yocto1.3_15.03.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2013.12-yocto1.5
+branch tag  : rel_angstrom-v2013.12-yocto1.5_15.03.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.06-yocto1.6
+branch tag  : rel_angstrom-v2014.06-yocto1.6_15.03.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.03.02_pr
+new commits : 0
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.03.02_pr
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_angstrom-v2012.12-yocto1.3_15.03.02_pr
+commit: b16478f Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2013.12-yocto1.5_15.03.02_pr
+commit: 1090ffb Yves Vandervennet recipe for kernel 3.18
+
+tag:    rel_angstrom-v2014.06-yocto1.6_15.03.02_pr
+commit: 9fe0657 Yves Vandervennet removed duplicate line with AUTOREV
+
+tag:    rel_angstrom-v2014.12-yocto1.7_15.03.02_pr
+commit: 95d38e0 Yves Vandervennet recipe for 3.18
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.03.02_pr
+commit: 4e05529 Yves Vandervennet added support for UBOOT_BRANCH
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.18
+
+commit 24890c32e235c836dc41e304209114b3297ea275
+Author: Alan Tull <atull@opensource.altera.com>
+Date:   Tue Mar 10 11:37:38 2015 -0500
+
+    FogBugz #270904-19: arria10: device tree: add i2c peripherals
+    
+    Add the following i2c peripherals for arria10:
+    * Newhaven 16x2 lcd module
+    * max1619 temperature sensor
+    * ds1339 rtc
+    * ltc2977 monitor
+    * 24lc32 eeprom
+    
+    Change the arria10 sdmmc and qspi dts's to have a common
+    socfpga_arria10_socdk.dtsi.  The only difference between the
+    socfpga_arria10_socdk_sdmmc.dts and socfpga_arria10_socdk_qspi.dts
+    is the sdmmc or qspi daughter card plugged into the socdk board.
+    
+    Fix the copyright year and header for socfpga_arria10_socdk*.dts*
+    
+    Enable ltc2977 and max1619 in defconfig.
+    
+    Signed-off-by: Alan Tull <atull@opensource.altera.com>
+    ---
+    v3: add ltc2977 in DT and defconfig
+    
+    v2: split up the dts's
+        fix copyrights/copyright dates
+        add the max1619
+        enable max1619 in defconfig
+    
+    Conflicts:
+    	arch/arm/boot/dts/socfpga_arria10_socdk_qspi.dts
+    	arch/arm/boot/dts/socfpga_arria10_socdk_sdmmc.dts
+    	arch/arm/configs/socfpga_defconfig
+
+commit 0e263a4266ff7978cb6fb052c36471b8b6945adb
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri Mar 13 11:10:26 2015 -0500
+
+    FogBugz #270904-17: Add 4-bit mode for SD
+    
+    4-bit SD is now working. The issue was that pinmux config for SD_DAT[4-7]
+    also need to be configured for SD. The configuration for those pins are
+    done in u-boot.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 6ac34b541ee3cf97d58220da4e83b30768c963c2
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Tue Mar 10 12:06:08 2015 -0500
+
+    FogBugz #270904-16: A10SYCON: Enable GPIO & HWMON by default
+    
+    This patch enables the GPIO (and by extension the LEDs and
+    pushbuttons reads) as well as the HW Monitor module by default
+    on our board because the GHRD will need this functionality.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 9d6232f19f2c0349a9842c8ba89fcf329024f466
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Mar 9 15:48:31 2015 -0500
+
+    FogBugz #270904-15: Add support for UART1 debug uart for earlyprintk
+    
+    Add support for hardware uart1 for earlyprintk support on Arria10 devkit.
+    At the same time, remove the uart_io_desc structure as it's no longer
+    needed.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 1f1f946c580a4eb4a6c10cdfcfcf9427756a0e6e
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Mon Mar 9 10:51:47 2015 -0500
+
+    FogBugz #270904-15: SPI: A10SYCON fixes for 3.18
+    
+    The device tree compatiblity string for the SPI device needs to
+    be updated. A change to the gpiochip_remove() function required
+    a change to the gpio-a10sycon.c file.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 144764e68b43c60503d9c1430f5581c343bb21bc
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri Mar 6 17:48:28 2015 -0600
+
+    net: stmmac: make reset control an optional requirement
+    
+    Not having a reset control line to the ethernet controller should not be a
+    hard failure. Instead, add support for deferred probing and just print out
+    a debug statement.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    Cc: Vince Bridgers <vbridger@opensource.altera.com>
+    CC: David S. Miller <davem@davemloft.net>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 1d74683c4351deee0f608b4d5d53ac5fef11b7bf
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Mar 2 14:30:44 2015 -0600
+
+    FogBugz #270904-14: Add proper clock driver for arria 10
+    
+    This commit adds the proper clock driver for the Arria 10 SoC.
+    
+    NOTE: There are quite a few clock nodes that still need to get added,
+    but for now, all of the essential subsystems on A10 are using the
+    clock driver, ie. timers, uart, sdmmc, ethernet, spi, and qspi.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit a256b614315cc41a6fbeddfad8950823dcc245a6
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Mar 4 16:57:40 2015 -0600
+
+    FogBugz #270904-11: enable warm reboot on arria10 devkit
+    
+    This enables the "reboot" command.
+    
+    NOTE: On the Arria10 Revision A devkit, only warm reset is working. Doing
+    a "reboot" in linux will issue a cold reboot, thus you need to add a
+    kernel parameter "reboot=warm" for you linux boot parameters.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit f17e4675e8a434c1818e8019378f45338ba2ea2a
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Mar 3 22:25:57 2015 -0600
+
+    FogBugz #282531-2: add pwr-en to the arria10 dts board file
+    
+    Add "pwr-en" to the socfpga_arria10_socdk_sdmmc.dts.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v3: none
+    v2: none
+
+commit 54fd48141b4a217c8259c88f7b8e13471b1f9c22
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Mar 5 15:46:40 2015 -0600
+
+    FogBugz #282531-1: Add "pwr-en" dts property to enable the PWREN bit
+    
+    The "pwr-en" property can be used to determine if the SD power enable line
+    should be turned on. In order to support the Arria10 Rev. A devkit, we
+    should be turning on/off PWREN that is cued off of "pwr-en".
+    
+    This patch will assume that "pwr-en" is 1 when the property is not
+    populated, which will be the case for Cyclone5/Arria5 based devkits. For
+    the Arria10 Revision A devkit, which has a reverse PWREN logic, so we want
+    to leave the PWREN bit to 0, thus we need "pwr-en = <0>".
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 5db01d886cb9dd25590cde32eb834f158dd17b0c
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Wed Feb 25 18:20:36 2015 -0600
+
+    FogBugz #270904-10: SPI: Use function pointers for 16b vs. 32b
+    
+    The use of function pointers to select 16bit vs 32bit register
+    accesses for the Designware SPI is more likely to be accepted
+    by the Linux community. A new device tree parameter "32bit_access"
+    was added to the device tree so the bindings were updated as well.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 446a23e8b3a87455ec270525f4ad637a7aa5cbd7
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Tue Feb 17 11:02:34 2015 -0600
+
+    FogBugz #270904-9: Add qspi node for Arria10
+    
+    Update arria10 dts board files for mutually exclusive support of QSPI and SD/MMC
+    
+    Creates 2 new dts board files:
+    socfpga_arria10_socdk_qspi.dts -> support for devkit with QPSI
+    socfpga_arria10_socdk_sdmmc.dts -> support for devkit with SD/MMC
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 9c0a441a6202da5d1290870f09705dec9683b79d
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Mar 5 14:39:28 2015 -0600
+
+    FogBugz #270904-8: Add support for n25q00aa QSPI chip on A10 devkit
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit bed87a86d94c0a0e87423cb0153c6e21287a8ddf
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Wed Feb 25 09:44:25 2015 -0600
+
+    FogBugz #270904-7: SPI: Change DW SPI from 16 bit writes to 32 bit writes
+    
+    This is a short term solution and can't be upstreamed.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit faac6320ef708ab0618a37a49b90b34d2560b144
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Wed Feb 25 16:13:33 2015 -0600
+
+    FogBugz #270904-6: A10SyCon: Remove Arria10 Interrupts
+    
+    Remove the interrupts for A10 to remove startup warnings.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 133af3a24d23a03e9b6c6bcde8eb6d7cb38686bc
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Feb 2 15:07:00 2015 -0600
+
+    FogBugz #270904-5: Enable USB on Arria10
+    
+    Enable USB0 on arria10 devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 6800f6465766bb25f116dec7b3cd3d363cb205e9
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Fri Jan 30 16:22:42 2015 -0600
+
+    FogBugz #270904-4: Enable SPI on the arria10 devkit
+    
+    The MAX5 GPIO extender actually uses the SPI1 so the device tree
+    needs to be updated accordingly. Add the L4 Main clock to the fixed
+    clock tree for use by SPI.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 1b6501077372e7c843df07012af47703282e9969
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri Jan 30 13:51:22 2015 -0600
+
+    FogBugz #270904-3: Add ethernet node for A10
+    
+    Enables ethernet for arria10 devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit c3d9a014e1ff1013cae9afb9649ef2cf723cfacd
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri Jan 30 15:20:11 2015 -0600
+
+    FogBugz #270904-2: Add SD/MMC support for arria10 devkit
+    
+    Add a temporary hack in the sd/mmc driver to not enable PWREN register since
+    the SD power line on the A10 devkit is reverse logic. 0->on, 1->off.
+    
+    Update the DTS to for the sdmmc node.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 9390408c08d71930ce0824aff586569766c65f8d
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Jan 26 16:43:11 2015 -0600
+
+    FogBugz #270904-1: enable arria10 devkit
+    
+    Update the arria10 dts to have some hard-coded clock frequencies.
+    For the devkit, uart1 is the debug uart.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit c8a0aa5fcbc72937d5929119eb614f9e466529f4
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Mon Dec 22 14:46:09 2014 -0600
+
+    arm: dts: Altera Arria10 System Controller Device Tree entries
+    
+    This patch adds the device tree entries that enable the Arria 10 System
+    Controller. The LEDs and Inputs are completely enabled by the device tree.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 7408ea86dc4a1fa31dab73052b02a3efe5134b6a
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Mon Dec 29 11:54:27 2014 -0600
+
+    reset: Altera Arria10 System Controller - Reset Controller
+    
+    This patch adds the reset controller functionality to the Arria10
+    System Controller. The appropriate resets will be called when
+    opening a peripheral.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 945ab9e56b03c0a7b6edf49700def9387325a669
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Mon Dec 29 11:51:37 2014 -0600
+
+    hwmon: Altera Arria10 System Controller - HW Monitor
+    
+    This patch adds the hwmon functionality to the Arria10 System Controller.
+    The hwmon encapsulates the PCIe Enable, USB Enable, and all the Power Good
+    signals on the System Controller.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 450484f7bf75956129309db2531ec25f849513d7
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Mon Dec 22 10:21:43 2014 -0600
+
+    gpio: Altera Arria10 System Controller - GPIO
+    
+    This patch adds the GPIO functionality the Arria10 System Controller.
+    The GPIO framework is used by other frameworks (keys and LEDs).
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 41c2e9fdebd246f06e0f9befb90f3f86c5a91c20
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Fri Jan 9 13:03:21 2015 -0600
+
+    mfd: Altera Arria10 System Controller Implementation
+    
+    This patch creates the Arria10 System Controller structure which
+    uses the regmap framework.
+    
+    This patch series implements an Arria10 System Controller infrastructure
+    which interfaces over SPI to the Arria10 SoC and has the following
+    functionality:
+    4 LED outputs
+    4 Pushbutton inputs
+    4 DIP Switch inputs
+    24 Power Status indications
+    2 Reset Lines
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 027b27a21641fe411df2847b706760853812046f
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Sep 25 17:12:42 2014 -0500
+
+    ARM: socfpga: add in cpu1-start-addr for arria10
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit c1e14ef7824006c2079f9066dab9b2d72fdea474
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Sep 25 17:45:23 2014 -0500
+
+    arm: socfpga: Arria 10 SOC's cpu1-start address is 3 bytes wide
+    
+    Add another nibble for the cpu1-start-addr mask to support Arria 10 SOC.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 6d7b132802b65243f7c7bc22cfa5530addb43114
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Sep 24 20:09:05 2014 -0500
+
+    arm: socfpga: Change cpu1 reset register for Arria 10 SOC
+    
+    The Arria 10 SOC had a different cpu1 reset register than the Cyclone5 and
+    the Arria5 SOC.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 644d4e3ce09dbeaf771ec287991b133bcd9049cf
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Sep 4 16:45:56 2014 -0500
+
+    arm: dts: socfpga: Add a base DTSI for Altera's Arria10 SOC
+    
+    The Arria 10 is latest SOC+FPGA from the Altera SOCFPGA platform. The Arria10
+    SOC shares some similarities with the SOCFPGA Cyclone5 and Arria5, but there
+    are enough differences to warrant a new base dtsi.
+    
+    The differences are:
+    * 3 EMAC controllers
+    * 5 I2C controllers
+    * 3 SPI controllers
+    * 1.5 GHZ dual A9s
+    * Support for DDR4
+    
+    Besides the usual memory map and IRQ changes, the clock framework will be
+    different, so this patch just adds the fixed-clocks.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit b3ed7574b9790575634f0900ea5ee4a7c21bb04c
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Thu Feb 12 10:47:33 2015 -0600
+
+    net: eth: altera: Change access ports to mdio for all xMII applications
+    
+    Change use of Altera TSE's MDIO access from phy 0 registers to phy 1
+    registers. This allows support for GMII, MII, RGMII, and SGMII
+    designs where the external PHY is always accesible through
+    Altera TSE's MDIO phy 1 registers and Altera's PCS is accessible
+    through MDIO phy 0 registers for SGMII applications.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Tested-by: Kai Lin Ng <kailng@altera.com>
+    Tested-by: Dalon Westergreen <dwesterg@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 4ebfd70ff189c1d3dd7ce5cc3998197665a297e7
+Author: Vlastimil Setka <setka@vsis.cz>
+Date:   Mon Feb 23 11:30:29 2015 -0600
+
+    altera_tse: Fixes in NAPI and interrupt handling paths
+    
+    Incorrect NAPI polling caused WARNING at net/core/dev.c net_rx_action.
+    Some stability issues were also seen at high throughput and system
+    load before this patch.
+    
+    This patch contains several changes in altera_tse_main.c:
+    
+    - tse_rx() is fixed to not process more than `limit` frames
+    
+    - tse_poll() is refactored to match NAPI logic
+      - only received frames are counted for return value
+      - removed bogus condition `(rxcomplete >= budget || txcomplete > 0)`
+      - replace by: if (rxcomplete < budget) -> call __napi_complete and enable irq
+    
+    - altera_isr()
+      - replace spin_lock_irqsave() by spin_lock() - we are in isr
+      - use spinlocks just over irq manipulation, not over __napi_schedule
+      - reset IRQ first, then disable and schedule napi
+    
+    This is a cleaned up resubmission from Vlastimil's recent submission.
+    
+    Signed-off-by: Vlastimil Setka <setka@vsis.cz>
+    Signed-off-by: Roman Pisl <rpisl@kky.zcu.cz>
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 394a30f58d9fff4b1d2aed544510a1b2173eadc7
+Author: Vlastimil Setka <setka@vsis.cz>
+Date:   Mon Feb 23 11:27:37 2015 -0600
+
+    altera_tse: Correct typo in obtaining tx_fifo_depth from devicetree
+    
+    This patch corrects a typo in the way tx_fifo_depth is read from the
+    devicetree. This patch was submitted by Vlastimil about a week ago,
+    and is now cleaned up and resubmitted.
+    
+    Signed-off-by: Vlastimil Setka <setka@vsis.cz>
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 0844c1f3ea9258202ba007b5b74ef16f05045ba1
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Thu Feb 12 10:47:45 2015 -0600
+
+    net: eth: altera: Change reset_mac failure message masks from err to dbg
+    
+    This debug output is not really an error message since mac reset can fail
+    if the phy clocks are gated, specifically when the phy has been placed in
+    a powered down or isolation mode. The netdev output masks were changed from
+    err to dbg, and comments added in the code.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi-rt
+
+commit 629162a27e4dd5383e6cc86116343df769e057e0
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Tue Mar 3 13:08:09 2015 -0600
+
+    FogBugz #270904-15: A10SYCON: Fix GPIO reads.
+    
+    The GPIO read function was not properly indexed. Fix the index and
+    remove the interrupt handler.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit fd01937bfce4e06298f7787b3a2f863f30ebc902
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Mar 2 14:30:44 2015 -0600
+
+    FogBugz #270904-14: Add proper clock driver for arria 10
+    
+    This commit adds the proper clock driver for the Arria 10 SoC.
+    
+    NOTE: There are quite a few clock nodes that still need to get added,
+    but for now, all of the essential subsystems on A10 are using the
+    clock driver, ie. timers, uart, sdmmc, ethernet, spi, and qspi.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit d2369b4ad3d985fd467111c9a8bb7a055cbbd578
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Mar 4 16:57:40 2015 -0600
+
+    FogBugz #270904-13: enable warm reboot on arria10 devkit
+    
+    This enables the "reboot" command.
+    
+    NOTE: On the Arria10 Revision A devkit, only warm reset is working. Doing
+    a "reboot" in linux will issue a cold reboot, thus you need to add a
+    kernel parameter "reboot=warm" for you linux boot parameters.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit fd002cc15a64bdd0f78d361ac9752b87364c0a70
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Mar 3 22:25:57 2015 -0600
+
+    FogBugz #282531-2: add pwr-en to the arria10 dts board file
+    
+    Add "pwr-en" to the socfpga_arria10_socdk_sdmmc.dts.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v3: none
+    v2: none
+
+commit 7aa95f5da5e6564e8cb056e5e873cc5d076d9c41
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Mar 3 21:27:45 2015 -0600
+
+    FogBugz #282531-1: Move the location of setting the SD PWREN bit
+    
+    We were writing to the sdmmc register that toggles the PWREN bit when the
+    clock to the IP could be turned off, thus would result in a hang.
+    
+    This patch moves the location of turning on PWREN to the set_ios function,
+    which is guaranteed to have the clock turned on. The new location of where
+    toggling the PWREN bit takes place in the same function of the driver
+    (dw_mci_set_ios), but just does it in the SOCFPGA platform specific
+    portion of the driver.
+    
+    The "pwr-en" property can be used to determine if the SD power enable line
+    should be turned on. In order to support the Arria10 Rev. A devkit, we
+    should be turning on/off PWREN that is cued off of "pwr-en".
+    
+    This patch will assume that "pwr-en" is 1 when the property is not
+    populated, which will be the case for Cyclone5/Arria5 based devkits. For
+    the Arria10 Revision A devkit, which has a reverse PWREN logic, so we want
+    to leave the PWREN bit to 0, thus we need "pwr-en = <0>".
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v3: reworked if statement around pwr_en
+    v2: update commit message, update license header and change a dev_info to
+        dev_dbg
+
+commit 3f92ddc587950de70e3cbc8b722f12c44801a459
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri Feb 27 13:43:45 2015 -0600
+
+    FogBugz #270904-12: Add support for UART1 debug uart for earlyprintk
+    
+    Add support for hardware uart1 for earlyprintk support on Arria10 devkit.
+    At the same time, remove the uart_io_desc structure as it's no longer
+    needed.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit b4dd15729b584735c54a58fa8335e71c0f405705
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Wed Feb 25 18:20:36 2015 -0600
+
+    FogBugz #270904-11: SPI: Use function pointers for 16b vs. 32b
+    
+    The use of function pointers to select 16bit vs 32bit register
+    accesses for the Designware SPI is more likely to be accepted
+    by the Linux community. A new device tree parameter "32bit_access"
+    was added to the device tree so the bindings were updated as well.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit f8e6e30a6d27c1ce087368081574112d5c824e8e
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Tue Feb 17 11:02:34 2015 -0600
+
+    FogBugz #270904-10: Add qspi node for Arria10
+    
+    Update arria10 dts board files for mutually exclusive support of QSPI and SD/MMC
+    
+    Creates 2 new dts board files:
+    socfpga_arria10_socdk_qspi.dts -> support for devkit with QPSI
+    socfpga_arria10_socdk_sdmmc.dts -> support for devkit with SD/MMC
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 7681c8a267bd984cb6a6a13476f5913f0de30934
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Tue Feb 17 11:00:30 2015 -0600
+
+    FogBugz #270904-9: Add support for n25q00aa QSPI chip on A10 devkit
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit a6a628153f607f57952d08abd043da2e6c2b3734
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Wed Feb 25 09:44:25 2015 -0600
+
+    FogBugz #270904-8: SPI: Change DW SPI from 16 bit writes to 32 bit writes
+    
+    This is a short term solution and can't be upstreamed.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 9d63f290a560824542df82d2fffb6187d8cdd55b
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Wed Feb 25 16:13:33 2015 -0600
+
+    FogBugz #270904-7: A10SyCon: Remove Arria10 Interrupts
+    
+    Remove the interrupts for A10 to remove startup warnings.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 098bcd627767cd1fae8be7a993f883aea6b25ca3
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Feb 2 15:07:00 2015 -0600
+
+    FogBugz #270904-6: Enable USB on Arria10
+    
+    Enable USB0 on arria10 devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 7fada349e34d9d4cbfa675cb0dfc3fc311f4343e
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Fri Jan 30 16:22:42 2015 -0600
+
+    FogBugz #270904-5: Enable SPI on the arria10 devkit
+    
+    The MAX5 GPIO extender actually uses the SPI1 so the device tree
+    needs to be updated accordingly. Add the L4 Main clock to the fixed
+    clock tree for use by SPI.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit a929c22f3f3b8ab633ce6dd12a5b811301cdc170
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri Jan 30 13:51:22 2015 -0600
+
+    FogBugz #270904-4: Add ethernet node for A10
+    
+    Enables ethernet for arria10 devkit.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 080d4a481ec9a1f85e3cab719fc66510123034e9
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri Jan 30 14:54:56 2015 -0600
+
+    FogBugz #270904-3: Temp hack to bring all peripherals out of reset
+    
+    The reset manager framework is on in place yet for Arria10. So we
+    need to bring all peripherals out for reset.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 8308a93d39530f58b656489a9abfae225a09bcd0
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri Jan 30 15:20:11 2015 -0600
+
+    FogBugz #270904-2: Add SD/MMC support for arria10 devkit
+    
+    Add a temporary hack in the sd/mmc driver to not enable PWREN register since
+    the SD power line on the A10 devkit is reverse logic. 0->on, 1->off.
+    
+    Update the DTS to for the sdmmc node.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 261f6fbbd39cabc8147720f93ed5add2fa869339
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Jan 26 16:43:11 2015 -0600
+
+    FogBugz #270904-1: enable arria10 devkit
+    
+    Update the arria10 dts to have some hard-coded clock frequencies.
+    For the devkit, uart1 is the debug uart.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 448eb508bc039c40e25d038d90c614bf60bd94cb
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Mon Dec 22 14:46:09 2014 -0600
+
+    arm: dts: Altera Arria10 System Controller Device Tree entries
+    
+    This patch adds the device tree entries that enable the Arria 10 System
+    Controller. The LEDs and Inputs are completely enabled by the device tree.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 1cb1c7b3535c09f857e148450b7f3c914e9f57bf
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Mon Dec 29 11:54:27 2014 -0600
+
+    reset: Altera Arria10 System Controller - Reset Controller
+    
+    This patch adds the reset controller functionality to the Arria10
+    System Controller. The appropriate resets will be called when
+    opening a peripheral.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 4faa148780dc83239b1e341f7ee0f8667be15ec5
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Mon Dec 29 11:51:37 2014 -0600
+
+    hwmon: Altera Arria10 System Controller - HW Monitor
+    
+    This patch adds the hwmon functionality to the Arria10 System Controller.
+    The hwmon encapsulates the PCIe Enable, USB Enable, and all the Power Good
+    signals on the System Controller.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 46dcff78f13ac4b590270590d03bfe5eba8b540c
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Mon Dec 22 10:21:43 2014 -0600
+
+    gpio: Altera Arria10 System Controller - GPIO
+    
+    This patch adds the GPIO functionality the Arria10 System Controller.
+    The GPIO framework is used by other frameworks (keys and LEDs).
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit afcdae457cef7d3558ea7c4d158720c639ead53a
+Author: Thor Thayer <tthayer@opensource.altera.com>
+Date:   Fri Jan 9 13:03:21 2015 -0600
+
+    mfd: Altera Arria10 System Controller Implementation
+    
+    This patch creates the Arria10 System Controller structure which
+    uses the regmap framework.
+    
+    This patch series implements an Arria10 System Controller infrastructure
+    which interfaces over SPI to the Arria10 SoC and has the following
+    functionality:
+    4 LED outputs
+    4 Pushbutton inputs
+    4 DIP Switch inputs
+    24 Power Status indications
+    2 Reset Lines
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+
+commit 4f9f9869bb8ed1e091a5791c463f8e15bd9406d9
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Sep 25 17:12:42 2014 -0500
+
+    ARM: socfpga: add in cpu1-start-addr for arria10
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 53fd7040ae3bf912205fea771a48a700a9191700
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Sep 25 17:45:23 2014 -0500
+
+    arm: socfpga: Arria 10 SOC's cpu1-start address is 3 bytes wide
+    
+    Add another nibble for the cpu1-start-addr mask to support Arria 10 SOC.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    
+    Conflicts:
+    
+    	arch/arm/mach-socfpga/platsmp.c
+
+commit d22b244a3d1cfb10f6dbb14d6c51637c0c9ad272
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Sep 24 20:09:05 2014 -0500
+
+    arm: socfpga: Change cpu1 reset register for Arria 10 SOC
+    
+    The Arria 10 SOC had a different cpu1 reset register than the Cyclone5 and
+    the Arria5 SOC.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 177780b1748dacd306e9c94f208a4dfc62490c7c
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Thu Sep 4 16:45:56 2014 -0500
+
+    arm: dts: socfpga: Add a base DTSI for Altera's Arria10 SOC
+    
+    The Arria 10 is latest SOC+FPGA from the Altera SOCFPGA platform. The Arria10
+    SOC shares some similarities with the SOCFPGA Cyclone5 and Arria5, but there
+    are enough differences to warrant a new base dtsi.
+    
+    The differences are:
+    * 3 EMAC controllers
+    * 5 I2C controllers
+    * 3 SPI controllers
+    * 1.5 GHZ dual A9s
+    * Support for DDR4
+    
+    Besides the usual memory map and IRQ changes, the clock framework will be
+    different, so this patch just adds the fixed-clocks.
+    
+    Signed-off-by: Thor Thayer <tthayer@opensource.altera.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 94100cbb649af7855caeb64de5e29ac67dfa7149
+Author: Viet Nga Dao <vndao@altera.com>
+Date:   Fri Nov 7 23:31:51 2014 +0800
+
+    FogBugz #243939: SGMII Design Example Intermittent Autonego Failure
+    
+    This patch fixes the intermittent issue that autonego between TSE
+    and PHY does not complete when switching speed. This is done by
+    fixing the wrong TSE_PCS_SW_RESET_MASK value and adding restart
+    autonego action plus software reset when autonego does not
+    complete after 20ms.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+
+commit ebcc0e2a870e75e762b28d72911e54cc4e21bbc8
+Author: Viet Nga Dao <vndao@altera.com>
+Date:   Fri Nov 7 23:54:38 2014 +0800
+
+    FogBugz #243952: Missing Linefeed in SGMII Adapter Driver
+    
+    This patch adds missing linefeed character at some pr_debug and pr_err
+    functions in dwmac-socfpga.c file of SGMII adapter driver.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+
+commit 11fbb775a4045be4b17acb43e25a017250cbe3db
+Author: Viet Nga Dao <vndao@altera.com>
+Date:   Thu Nov 6 15:43:15 2014 +0800
+
+    FogBugz #236745: Add SGMII support to socfpga
+    
+    This patch adds SGMII support for  Altera socfpga Ethernet controller.
+    GMII to SGMII adapter is a soft IP core in FPGA system that converts
+    GMII interface from Synopsys MAC to SGMII interface. This adapter
+    consists of splitter, adapter buffer and TSE PCS. Software needs to
+    initialize the TSE PCS and adapter buffer at init state. Besides,
+    software also needs to configure tse pcs, splitter and enable/disable
+    adapter buffer properly when there is speed change.
+    
+    Signed-off-by: Viet Nga Dao <vndao@altera.com>
+    
+    ---
+    V2:
+      - Fix syntax issues
+      - Add 2 files (dwmac-socfpga.c/h) to manage Altera specific additions
+        to the stmmac driver such as GMII to RGMII and GMII to SGMII adapter
+        as well as speed change management.
+    
+    V3:
+      - Remove the defined functions in header file (dwmac-socfpga.h)
+      - Rename the struct plat_bsp_priv to dwmac_plat_priv
+      - Add kfree(bsp_priv) before exit
+    
+    V4:
+      - Merge 2 functions sgmii_buffer_ena and sgmii_buffer_disable into
+        one function called config_tx_buffer
+      - Change function named config_adapter to adapter_config
+      - Add some parameters for speed, duplex in header file
+      - Rearrange includes in alphabet order
+    
+    V5:
+      - Add checking the return value of function adapter_init in socfpga.c
+    
+    V6:
+      - Change pr_info to pr_debug
+
+commit 38a45364078b6261c9b6f66af99ca68032f0af77
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Fri Jan 16 21:28:12 2015 -0600
+
+    FogBugz #249283: update of SoCFPGA defconfig
+    
+    CONFIG_FHANDLE is enabled, to accomodate Angstrom/systemd needs
+    Defconfig file generated with 'make savedefconfig'
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+commit bb439c24360b5dccdcb56fff9524f7d53d01b767
+Author: Vince Bridgers <vbridger@opensource.altera.com>
+Date:   Thu Feb 12 10:47:33 2015 -0600
+
+    net: eth: altera: Change access ports to mdio for all xMII applications
+    
+    Change use of Altera TSE's MDIO access from phy 0 registers to phy 1
+    registers. This allows support for GMII, MII, RGMII, and SGMII
+    designs where the external PHY is always accesible through
+    Altera TSE's MDIO phy 1 registers and Altera's PCS is accessible
+    through MDIO phy 0 registers for SGMII applications.
+    
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Tested-by: Kai Lin Ng <kailng@altera.com>
+    Tested-by: Dalon Westergreen <dwesterg@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 669bc44517162f19cf85237340b448de4fdd4b63
+Author: Vlastimil Setka <setka@vsis.cz>
+Date:   Mon Feb 23 11:30:29 2015 -0600
+
+    altera_tse: Fixes in NAPI and interrupt handling paths
+    
+    Incorrect NAPI polling caused WARNING at net/core/dev.c net_rx_action.
+    Some stability issues were also seen at high throughput and system
+    load before this patch.
+    
+    This patch contains several changes in altera_tse_main.c:
+    
+    - tse_rx() is fixed to not process more than `limit` frames
+    
+    - tse_poll() is refactored to match NAPI logic
+      - only received frames are counted for return value
+      - removed bogus condition `(rxcomplete >= budget || txcomplete > 0)`
+      - replace by: if (rxcomplete < budget) -> call __napi_complete and enable irq
+    
+    - altera_isr()
+      - replace spin_lock_irqsave() by spin_lock() - we are in isr
+      - use spinlocks just over irq manipulation, not over __napi_schedule
+      - reset IRQ first, then disable and schedule napi
+    
+    This is a cleaned up resubmission from Vlastimil's recent submission.
+    
+    Signed-off-by: Vlastimil Setka <setka@vsis.cz>
+    Signed-off-by: Roman Pisl <rpisl@kky.zcu.cz>
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 770bc748d87072479ff8fa3931f2925aed57683f
+Author: Vlastimil Setka <setka@vsis.cz>
+Date:   Mon Feb 23 11:27:37 2015 -0600
+
+    altera_tse: Correct typo in obtaining tx_fifo_depth from devicetree
+    
+    This patch corrects a typo in the way tx_fifo_depth is read from the
+    devicetree. This patch was submitted by Vlastimil about a week ago,
+    and is now cleaned up and resubmitted.
+    
+    Signed-off-by: Vlastimil Setka <setka@vsis.cz>
+    Signed-off-by: Vince Bridgers <vbridger@opensource.altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit e26d4083063b87185ebefda7ffc6daee870033ae
+Author: Kostya Belezko <bkostya@hotmail.com>
+Date:   Tue Dec 30 12:27:09 2014 -0500
+
+    Altera TSE: Add missing phydev
+    
+    Altera network device doesn't come up after
+    
+    ifconfig eth0 down
+    ifconfig eth0 up
+    
+    The reason behind is clearing priv->phydev during tse_shutdown().
+    The phydev is not restored back at tse_open().
+    
+    Resubmiting as to follow Tobias Klauser suggestion.
+    phy_start/phy_stop are called on each ifup/ifdown and
+    phy_disconnect is called once during the module removal.
+    
+    Signed-off-by: Kostya Belezko <bkostya@hotmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 7eb467dabfc1e146d45746c17a13be3416fdbb87
+Author: Wolfram Sang <wsa@the-dreams.de>
+Date:   Mon Oct 20 16:21:04 2014 +0200
+
+    net: ethernet: altera: drop owner assignment from platform_drivers
+    
+    A platform_driver does not need to set an owner, it will be populated by the
+    driver core.
+    
+    Signed-off-by: Wolfram Sang <wsa@the-dreams.de>
+
+commit 028adcfed80ca2c844ce529f92b0f341d07fd222
+Author: Walter Lozano <walter@vanguardiasur.com.ar>
+Date:   Fri Oct 3 15:09:01 2014 -0300
+
+    Altera TSE: Add support for no PHY
+    
+    This patch avoids PHY and MDIO probing if no PHY chip is present.
+    This is the case mainly in optical links where there is no need for
+    PHY chip, and therefore no need of MDIO. In this scenario Ethernet
+    MAC is directly connected to an optical module through an external
+    SFP transceiver.
+    
+    Signed-off-by: Walter Lozano <walter@vanguardiasur.com.ar>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 9ee291902c4a36f17f882b678cb8ad4a2d6f611a
+Author: Walter Lozano <walter@vanguardiasur.com.ar>
+Date:   Fri Oct 3 15:09:00 2014 -0300
+
+    Altera TSE: Move PHY get addr and MDIO create
+    
+    Move PHY get addr and MDIO create to a new function to improve readability
+    and make it easier to avoid its usage. This will be useful for example in
+    the case where there is no PHY chip.
+    
+    Signed-off-by: Walter Lozano <walter@vanguardiasur.com.ar>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 0ba5dd371d37f8b0d089eb1fbd653f5ee71b9866
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Wed May 14 14:38:37 2014 -0500
+
+    Altera TSE: Disable Multicast filtering to workaround problem
+    
+    This patch disables multicast hash filtering if present in the hardware
+    and uses promiscuous mode instead until the problem with multicast
+    filtering has been debugged, integrated and tested.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit d99939856464c8eda7b295bdfa602a1110ef14a1
+Author: Vince Bridgers <vbridgers2013@gmail.com>
+Date:   Wed May 14 14:38:36 2014 -0500
+
+    Altera TSE: Fix sparse errors and warnings
+    
+    This patch fixes the many sparse errors and warnings contained in the
+    initial submission of the Altera Triple Speed Ethernet driver, and a
+    few minor cppcheck warnings. Changes are tested on ARM and NIOS2
+    example designs, and compile tested against multiple architectures.
+    Typical issues addressed were as follows:
+    
+    altera_tse_ethtool.c:136:19: warning: incorrect type in argument
+        1 (different address spaces)
+    altera_tse_ethtool.c:136:19:    expected void const volatile
+        [noderef] <asn:2>*addr
+    altera_tse_ethtool.c:136:19:    got unsigned int *<noident>
+    ...
+    altera_sgdma.c:129:31: warning: cast removes address space of
+        expression
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit ca5d3a2a776901409dff6697d969887779fafff8
+Author: Geert Uytterhoeven <geert@linux-m68k.org>
+Date:   Fri May 2 06:29:21 2014 +0200
+
+    Altera TSE: ALTERA_TSE should depend on HAS_DMA
+    
+    If NO_DMA=y:
+    
+    drivers/built-in.o: In function `altera_tse_probe':
+    altera_tse_main.c:(.text+0x25ec2e): undefined reference to `dma_set_mask'
+    altera_tse_main.c:(.text+0x25ec78): undefined reference to `dma_supported'
+    altera_tse_main.c:(.text+0x25ecb6): undefined reference to `dma_supported'
+    drivers/built-in.o: In function `sgdma_async_read':
+    altera_sgdma.c:(.text+0x25f620): undefined reference to `dma_sync_single_for_cpu'
+    drivers/built-in.o: In function `sgdma_uninitialize':
+    (.text+0x25f678): undefined reference to `dma_unmap_single'
+    drivers/built-in.o: In function `sgdma_uninitialize':
+    (.text+0x25f696): undefined reference to `dma_unmap_single'
+    drivers/built-in.o: In function `sgdma_initialize':
+    (.text+0x25f6f0): undefined reference to `dma_map_single'
+    drivers/built-in.o: In function `sgdma_initialize':
+    (.text+0x25f702): undefined reference to `dma_mapping_error'
+    drivers/built-in.o: In function `sgdma_tx_buffer':
+    (.text+0x25f92a): undefined reference to `dma_sync_single_for_cpu'
+    drivers/built-in.o: In function `sgdma_rx_status':
+    (.text+0x25fa24): undefined reference to `dma_sync_single_for_cpu'
+    make[3]: *** [vmlinux] Error 1
+    
+    Signed-off-by: Geert Uytterhoeven <geert@linux-m68k.org>
+    Acked-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 9f92bea5fbb76261ecc44e9622ec636e88ec96f0
+Author: Tobias Klauser <tobias.klauser@gmail.com>
+Date:   Mon Apr 28 23:23:13 2014 +0200
+
+    Altera TSE: Add missing include to silence sparse warnings
+    
+    This fixes the following sparse warnings:
+    
+    drivers/net/ethernet/altera/altera_msgdma.c:23:5: warning: symbol 'msgdma_initialize' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:28:6: warning: symbol 'msgdma_uninitialize' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:32:6: warning: symbol 'msgdma_reset' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:77:6: warning: symbol 'msgdma_disable_rxirq' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:83:6: warning: symbol 'msgdma_enable_rxirq' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:89:6: warning: symbol 'msgdma_disable_txirq' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:95:6: warning: symbol 'msgdma_enable_txirq' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:101:6: warning: symbol 'msgdma_clear_rxirq' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:107:6: warning: symbol 'msgdma_clear_txirq' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:114:5: warning: symbol 'msgdma_tx_buffer' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:129:5: warning: symbol 'msgdma_tx_completions' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:154:5: warning: symbol 'msgdma_add_rx_desc' was not declared. Should it be static?
+    drivers/net/ethernet/altera/altera_msgdma.c:181:5: warning: symbol 'msgdma_rx_status' was not declared. Should it be static?
+    
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Acked-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit e184c4be75706cd1cd9303dda23e8969f17ed863
+Author: Tobias Klauser <tobias.klauser@gmail.com>
+Date:   Mon Apr 28 23:23:01 2014 +0200
+
+    Altera TSE: Fix DMA secriptor length initialization
+    
+    sgdma_descrip is a function name as well as the name of a struct. In
+    sgdma_initialize(), we should initialize the descriptor length field
+    with the actual length of a descriptor not with the size of the
+    function. In order to prevent such things from happening in the future,
+    rename the function to sgdma_setup_descrip().
+    
+    Found by sparse which yields the following warning:
+    
+    drivers/net/ethernet/altera/altera_sgdma.c:74:30: warning: expression using sizeof on a function
+    
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit d487c44bb9c80343760037a9a915bce31c39bb96
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Thu Apr 24 16:58:11 2014 -0500
+
+    Altera TSE: Change driver name used by Ethtool
+    
+    This patch changes the name used by Ethtool to something more
+    conventional in preparation for TSE Ethtool register dump
+    support to be added in the near future.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit cfc9badc28d9b6fd3b4fec1d11c0bc07e267f262
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Thu Apr 24 16:58:08 2014 -0500
+
+    Altera TSE: Work around unaligned DMA receive packet issue with Altera SGDMA
+    
+    This patch works around a recently discovered unaligned receive dma problem
+    with the Altera SGMDA. The Altera SGDMA component cannot be configured to
+    DMA data to unaligned addresses for receive packet operations from the
+    Triple Speed Ethernet component because of a potential data transfer
+    corruption that can occur. This patch addresses this issue by
+    utilizing the shift 16 bits feature of the Altera Triple Speed Ethernet
+    component and modifying the receive buffer physical addresses accordingly
+    such that the target receive DMA address is always aligned on a 32-bit
+    boundary.
+    
+    Signed-off-by: Vince Bridgers <vbridgers2013@gmail.com>
+    Tested-by: Matthew Gerlach <mgerlach@altera.com>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 3a105088cfe95f8c77a17295f4d88c70a0b0a5f2
+Author: Tobias Klauser <tklauser@distanz.ch>
+Date:   Thu Apr 24 13:50:09 2014 +0200
+
+    Altera TSE: Remove unnecessary cast of void pointers
+    
+    No need to cast void pointers.
+    
+    Signed-off-by: Tobias Klauser <tklauser@distanz.ch>
+    Signed-off-by: David S. Miller <davem@davemloft.net>
+
+commit 224d4e1771869d3079b2dd2ccda6eef3b2f1ada0
+Author: Seungwon Jeon <tgih.jun@samsung.com>
+Date:   Sat Aug 31 00:13:31 2013 +0900
+
+    mmc: dw_mmc: set the supported max/min frequency
+    
+    Both f_max and f_min will be informed for core layer to request
+    valid clock rate. But current setting from 'host->bus_hz' may
+    not represent the max/min frequency properly. Even if host can
+    actually support high speed than bus_hz, core layer will not
+    request clock rate over bus_hz. Basically, f_max/f_min can be set
+    with the values according to spec. And then host will make its best
+    effort to meet the rate.
+    
+    Signed-off-by: Seungwon Jeon <tgih.jun@samsung.com>
+    Tested-by: Alim Akhtar <alim.akhtar@samsung.com>
+    Signed-off-by: Chris Ball <cjb@laptop.org>
+    
+    Conflicts:
+    	Documentation/devicetree/bindings/mmc/synopsis-dw-mshc.txt
+
+-----------------------------------------------------------------------
+

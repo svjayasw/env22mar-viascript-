@@ -1,0 +1,69 @@
+
+Tags found:
+ACDS19.1_REL_M10_GSRD_PR
+ACDS19.1_REL_S10_GSRD_PR
+ACDS19.1_REL_GSRD_PR
+
+   repo                 branch                            commit   behind     tag name
+linux-socfpga        socfpga-4.14.73-ltsi                 3286950     4   ACDS19.1_REL_GSRD_PR
+uboot-socfpga        socfpga_v2013.01.01                  0c9a3bd     0   ACDS19.1_REL_GSRD_PR
+meta-altera          angstrom-v2018.06-yocto2.5           20e2978     0   ACDS19.1_REL_GSRD_PR
+meta-altera-refdes   master                               1430630     2   ACDS19.1_REL_GSRD_PR
+linux-refdesigns     master                               32a06cf     0   ACDS19.1_REL_GSRD_PR
+linux-socfpga        socfpga-4.9.78-ltsi                  5704788     0   ACDS19.1_REL_M10_GSRD_PR
+uboot-socfpga        socfpga_v2017.09                     d593fae     1   ACDS19.1_REL_S10_GSRD_PR
+
+-----------------------------------------------------------------------
+repo:   linux-socfpga
+-----------------------------------------------------------------------
+5704788 Dinh Nguyen net: stmmac: build the dwmac-socfpga platform driver for Stratix10
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS19.1_REL_M10_GSRD_PR
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.9.78-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/57047883442e58369cde6c8f8f710f7c91fcbfbe
+-----------------------------------------------------------------------
+3286950 Ley Foon Tan HSD #1506998530: arm64: defconfig: Enable PCIE_ALTERA driver
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS19.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.14.73-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/3286950e98c92d8594145d8b96a06cbc9700e1d6
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   uboot-socfpga
+-----------------------------------------------------------------------
+0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS19.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2013.01.01
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/0c9a3bdf3ca1326e3bc539676452f2d4f8895aeb
+-----------------------------------------------------------------------
+d593fae Chin Liang See HSD #1408570475: Fix RSU status SMC call to return correct error code
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS19.1_REL_S10_GSRD_PR
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2017.09
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/d593faea8cd00b6db8c1fa54c47c0716577539a0
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera
+-----------------------------------------------------------------------
+20e2978 Ong, Hean Loong ammend opkg pakage for Stratix10
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/ACDS19.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2018.06-yocto2.5
+commit : https://github.com/altera-opensource/meta-altera/commit/20e297889f0413143deac8375ebbde9bb7e519d5
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera-refdes
+-----------------------------------------------------------------------
+1430630 Ong, Hean Loong Include open ssh ftp server into release image
+tag    : https://github.com/altera-opensource/meta-altera-refdes/releases/tag/ACDS19.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/meta-altera-refdes/tree/master
+commit : https://github.com/altera-opensource/meta-altera-refdes/commit/1430630afc78c935c931fe11d6f528dae0c90a67
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   linux-refdesigns
+-----------------------------------------------------------------------
+32a06cf Ong, Hean Loong Fogbugz #529811 update common.c with new request block
+tag    : https://github.com/altera-opensource/linux-refdesigns/releases/tag/ACDS19.1_REL_GSRD_PR
+branch : https://github.com/altera-opensource/linux-refdesigns/tree/master
+commit : https://github.com/altera-opensource/linux-refdesigns/commit/32a06cfa40f97c7b2bb84287b97784a94ae38f14
+-----------------------------------------------------------------------

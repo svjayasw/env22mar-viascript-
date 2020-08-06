@@ -1,0 +1,75 @@
+atull@atx-linux-37:~/repos/internal/meta-altera$ git branch -r
+  origin/HEAD -> origin/master
+  origin/angstrom_v2012.12-yocto1.3
+  origin/angstrom_v2013.12-yocto1.3
+  origin/angstrom_v2013.12-yocto1.5
+  origin/master
+  origin/socfpga_nadder
+atull@atx-linux-37:~/repos/internal/meta-altera$ git push portal --tags origin/master:refs/heads/master
+Counting objects: 237, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (100/100), done.
+Writing objects: 100% (237/237), 28.51 KiB, done.
+Total 237 (delta 92), reused 235 (delta 92)
+To gitolite@git.rocketboards.org:meta-altera
+ * [new branch]      origin/master -> master
+ * [new tag]         rel_angstrom_v2012.12-yocto1.3_rel_14.04.02 -> rel_angstrom_v2012.12-yocto1.3_rel_14.04.02
+ * [new tag]         rel_angstrom_v2013.12-yocto1.5_rel_14.04.02 -> rel_angstrom_v2013.12-yocto1.5_rel_14.04.02
+atull@atx-linux-37:~/repos/internal/meta-altera$ git push portal --tags origin/angstrom_v2012.12-yocto1.3:refs/heads/angstrom_v2012.12-yocto1.3
+Total 0 (delta 0), reused 0 (delta 0)
+To gitolite@git.rocketboards.org:meta-altera
+ * [new branch]      origin/angstrom_v2012.12-yocto1.3 -> angstrom_v2012.12-yocto1.3
+atull@atx-linux-37:~/repos/internal/meta-altera$ git push portal --tags origin/origin/angstrom_v2013.12-yocto1.5:refs/heads/origin/angstrom_v2013.12-yocto1.5
+error: src refspec origin/origin/angstrom_v2013.12-yocto1.5 does not match any.
+error: failed to push some refs to 'gitolite@git.rocketboards.org:meta-altera'
+atull@atx-linux-37:~/repos/internal/meta-altera$ git push portal --tags origin/origin/angstrom_v2013.12-yocto1.5:refs/heads/angstrom_v2013.12-yocto1.5
+error: src refspec origin/origin/angstrom_v2013.12-yocto1.5 does not match any.
+error: failed to push some refs to 'gitolite@git.rocketboards.org:meta-altera'
+atull@atx-linux-37:~/repos/internal/meta-altera$ git push portal --tags origin/angstrom_v2013.12-yocto1.5:refs/heads/angstrom_v2013.12-yocto1.5
+Total 0 (delta 0), reused 0 (delta 0)
+To gitolite@git.rocketboards.org:meta-altera
+ * [new branch]      origin/angstrom_v2013.12-yocto1.5 -> angstrom_v2013.12-yocto1.5
+
+==================================================================================================
+
+atull@atx-linux-37:~/repos/internal/angstrom-socfpga$ git branch -r
+  origin/HEAD -> origin/master
+  origin/angstrom-v2012.05-yocto1.2
+  origin/angstrom-v2012.12-socfpga
+  origin/angstrom-v2012.12-yocto1.3
+  origin/angstrom-v2013.06-yocto1.4
+  origin/angstrom-v2013.12-socfpga
+  origin/angstrom-v2013.12-yocto1.5
+  origin/angstrom-v2014.06-yocto1.6
+  origin/for-upstream-of-altera-layer
+  origin/linux64-bits
+  origin/master
+  origin/next
+  origin/socfpga
+  origin/socfpga-1.0
+atull@atx-linux-37:~/repos/internal/angstrom-socfpga$ git push portal --tags origin/master:refs/heads/master
+Counting objects: 1619, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (768/768), done.
+Writing objects: 100% (1619/1619), 213.94 KiB, done.
+Total 1619 (delta 699), reused 1584 (delta 681)
+To gitolite@git.rocketboards.org:angstrom-socfpga
+ * [new branch]      origin/master -> master
+ * [new tag]         maintenance-2011.03 -> maintenance-2011.03
+ * [new tag]         rel_angstrom-v2012.12-socfpga_rel_14.04.02 -> rel_angstrom-v2012.12-socfpga_rel_14.04.02
+ * [new tag]         rel_angstrom-v2013.12-socfpga_rel_14.04.02 -> rel_angstrom-v2013.12-socfpga_rel_14.04.02
+atull@atx-linux-37:~/repos/internal/angstrom-socfpga$ git describe git push portal angstrom-v2012.12-socfpga:refs/heads/angstrom-v2012.12-socfpga
+fatal: Not a valid object name git
+atull@atx-linux-37:~/repos/internal/angstrom-socfpga$ git push portal angstrom-v2012.12-socfpga:refs/heads/angstrom-v2012.12-socfpga
+error: src refspec angstrom-v2012.12-socfpga does not match any.
+error: failed to push some refs to 'gitolite@git.rocketboards.org:angstrom-socfpga'
+atull@atx-linux-37:~/repos/internal/angstrom-socfpga$ git push portal origin/angstrom-v2012.12-socfpga:refs/heads/angstrom-v2012.12-socfpga
+Total 0 (delta 0), reused 0 (delta 0)
+To gitolite@git.rocketboards.org:angstrom-socfpga
+ * [new branch]      origin/angstrom-v2012.12-socfpga -> angstrom-v2012.12-socfpga
+atull@atx-linux-37:~/repos/internal/angstrom-socfpga$ git push portal origin/angstrom-v2013.12-socfpga:refs/heads/angstrom-v2013.12-socfpga
+Total 0 (delta 0), reused 0 (delta 0)
+To gitolite@git.rocketboards.org:angstrom-socfpga
+ * [new branch]      origin/angstrom-v2013.12-socfpga -> angstrom-v2013.12-socfpga
+atull@atx-linux-37:~/repos/internal/angstrom-socfpga$ 
+

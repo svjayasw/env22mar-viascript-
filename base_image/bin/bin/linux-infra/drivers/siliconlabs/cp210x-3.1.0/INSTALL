@@ -1,0 +1,27 @@
+To Install the CP210x Drivers:
+
+Please review RELEASE-NOTES prior to installing for any known installation issues.
+
+**Do Not Log In as ROOT**
+
+Unzip cp210x-3.1.0 in your home directory.
+
+**Please note that in 2.4, the path to usb-serial.h is hard coded in the file ./cp210x/cp210x.h
+
+**Please note that in 2.4, the path to KERNELDIR is hard coded in the file ./cp210x/rules.mak
+
+To make install and source rpm packages, from a terminal prompt:
+
+run ./makerpm
+
+To install, run the rpm installation package which by default will be at:
+
+cd /var/temp/silabs/rpmbuild/RPMS/i386
+
+double click on cp210x-3.1.0.i386.rpm
+
+Follow onscreen instructions.
+
+
+
+

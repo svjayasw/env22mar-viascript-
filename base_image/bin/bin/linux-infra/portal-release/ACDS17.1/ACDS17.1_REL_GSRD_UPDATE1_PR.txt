@@ -1,0 +1,55 @@
+
+Tags found:
+ACDS17.1_REL_GSRD_UPDATE1_PR
+
+   repo                 branch                            commit        tag name
+linux-socfpga        socfpga-4.9.78-ltsi                  bdf910b  ACDS17.1_REL_GSRD_UPDATE1_PR
+uboot-socfpga        socfpga_v2013.01.01                  239ae4d  ACDS17.1_REL_GSRD_UPDATE1_PR
+meta-altera          angstrom-v2016.12-yocto2.2           22e6c92  ACDS17.1_REL_GSRD_UPDATE1_PR
+meta-altera-refdes   master                               1e64619  ACDS17.1_REL_GSRD_UPDATE1_PR
+linux-refdesigns     master                               0266338  ACDS17.1_REL_GSRD_UPDATE1_PR
+
+-----------------------------------------------------------------------
+repo:   linux-socfpga
+-----------------------------------------------------------------------
+bdf910b Yang Shunyong dmaengine: dmatest: fix container_of member in dmatest_callback
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS17.1_REL_GSRD_UPDATE1_PR
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.9.78-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/bdf910b1939e45beef022239bda381a2b11a6337
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   uboot-socfpga
+-----------------------------------------------------------------------
+239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS17.1_REL_GSRD_UPDATE1_PR
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2013.01.01
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/239ae4dbaab424881fe9f4a11dc354abdd53cb1e
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera
+-----------------------------------------------------------------------
+22e6c92 Ong, Hean Loong move linux-altera-ltsi_4.9.78.bb to latest linux commit
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/ACDS17.1_REL_GSRD_UPDATE1_PR
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2016.12-yocto2.2
+commit : https://github.com/altera-opensource/meta-altera/commit/22e6c92ca45741efe2763ceb06e0e98a529bf96b
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera-refdes
+-----------------------------------------------------------------------
+1e64619 Ong, Hean Loong FogBugz #410864: Timed out waiting for device dev-ttyS0.device
+tag    : https://github.com/altera-opensource/meta-altera-refdes/releases/tag/ACDS17.1_REL_GSRD_UPDATE1_PR
+branch : https://github.com/altera-opensource/meta-altera-refdes/tree/master
+commit : https://github.com/altera-opensource/meta-altera-refdes/commit/1e64619f42589d43207d5c4926ba4268d90459c2
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   linux-refdesigns
+-----------------------------------------------------------------------
+0266338 Ong, Hean Loong 520514-4 Fix Coverity Warnings and Existing Bugs
+tag    : https://github.com/altera-opensource/linux-refdesigns/releases/tag/ACDS17.1_REL_GSRD_UPDATE1_PR
+branch : https://github.com/altera-opensource/linux-refdesigns/tree/master
+commit : https://github.com/altera-opensource/linux-refdesigns/commit/02663381bc0acbc940cb454db7a648a07bc4a75c
+-----------------------------------------------------------------------

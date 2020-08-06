@@ -1,0 +1,191 @@
+
+Script-generated report of what we tagged today in internal git.
+These tags/branches will be pushed to the portal on the next
+
+scheduled update day.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.12
+branch tag  : rel_socfpga-4.12_17.10.02_rc2
+new commits : 5
+243edde Dinh Nguyen usb: dwc2: disable erroneous overcurrent condition
+1dc7844 Alan Tull dts: stratix10_socdk: enable gpio1 and leds
+0e8f008 Dinh Nguyen arm64: dts: stratix10: fix interrupt number for gpio1
+fa10a2b Alan Tull arm64: dts: stratix10: add gpio header
+0cfbd4c Alan Tull gpio: gpio-dwapb: add optional reset
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.10.02_rc2
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.10.02_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.12_17.10.02_rc2
+commit: 243edde Dinh Nguyen usb: dwc2: disable erroneous overcurrent condition
+
+tag:    rel_socfpga-4.1.33-ltsi_17.10.02_rc2
+commit: 0175aa1 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.10.02_rc2
+commit: 5b7a4c0 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.10.02_rc2
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.10.02_rc2
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_17.10.02_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.10.02_rc2
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.10.02_rc2
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_17.10.02_rc2
+commit: 3ba08e7 Thor Thayer arm: socfpga: stratix10: Move QSPI U-Boot Image Location
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.10.02_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.10.02_rc2
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.10.02_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.10.02_rc2
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.10.02_rc2
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.10.02_rc2
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.12
+
+commit 243eddef0b2668e9779c4e650f5e9ddd21fa9d30
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Mon Oct 16 08:57:18 2017 -0500
+
+    usb: dwc2: disable erroneous overcurrent condition
+    
+    For the case where an external VBUS is used, we should enable the external
+    VBUS comparator in the driver. This would prevent an unnecessary
+    overcurrent error which would then disable the host port.
+    
+    This patch uses the standard 'disable-over-current' binding to allow of the
+    option of disabling the over-current condition.
+    
+    Reviewed-by: Marek Vasut <marex@denx.de>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Felipe Balbi <felipe.balbi@linux.intel.com>
+
+commit 1dc7844a17fdef88f11ea377a8026b1968e3d9a8
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Oct 10 14:38:23 2017 -0500
+
+    dts: stratix10_socdk: enable gpio1 and leds
+    
+    Enable gpio and leds for socdk OOBE daughtercard.
+    
+    pushbutton PB_SW0 = gpio1.io4
+    pushbutton PB_SW1 = gpio1.io5
+    LED HPS_LED0      = gpio1.io20
+    LED HPS_LED1      = gpio1.io19
+    LED HPS_LED2      = gpio1.io21
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 0e8f008f9bb6f37b65dd695505fb99b346eaa679
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Oct 11 03:24:36 2017 -0500
+
+    arm64: dts: stratix10: fix interrupt number for gpio1
+    
+    The gpio1 node's interrupt number should be 111.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit fa10a2beca0c4a7e99d5d8916398633b47f7ade8
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Oct 10 16:25:37 2017 -0500
+
+    arm64: dts: stratix10: add gpio header
+    
+    Add the gpio header to the base stratix10 dtsi.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 0cfbd4cc64af7b5780c0825e8c5f47bc6da6e91c
+Author: Alan Tull <atull@kernel.org>
+Date:   Wed Oct 11 11:34:44 2017 -0500
+
+    gpio: gpio-dwapb: add optional reset
+    
+    Some platforms require reset to be released to allow register
+    access.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+    Reviewed-by: Philipp Zabel <p.zabel@pengutronix.de>
+    [Added DT bindings oneliner for standard reset binding]
+    Signed-off-by: Linus Walleij <linus.walleij@linaro.org>
+
+-----------------------------------------------------------------------
+

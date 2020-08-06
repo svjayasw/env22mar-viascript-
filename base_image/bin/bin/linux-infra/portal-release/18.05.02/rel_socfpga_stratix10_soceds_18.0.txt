@@ -1,0 +1,29 @@
+branch   arm-trusted-firmware
+branch   socfpga_v1.4
+tag      rel_socfpga_stratix10_soceds_18.0
+commit   af6d180b04899dba714481e2a1688176f635760c
+
+/home/atull/repos/internal/arm-trusted-firmware
+Everything up-to-date
+To git@github.com:altera-opensource/arm-trusted-firmware
+   af6d180..3971caa  rel_socfpga_stratix10_soceds_18.0 -> socfpga_v1.4
+
+Everything up-to-date
+Everything up-to-date
+
+branch   uefi-socfpga
+branch   socvp_socfpga_udk2015
+tag      rel_socfpga_stratix10_soceds_18.0
+commit   f4a07f98f4af745e40bc1e672e28500b6f6090c8
+
+/home/atull/repos/internal/uefi-socfpga
+To git@github.com:altera-opensource/uefi-socfpga
+ * [new tag]         rel_socfpga_stratix10_soceds_18.0 -> rel_socfpga_stratix10_soceds_18.0
+To git@github.com:altera-opensource/uefi-socfpga
+   32c4c1f..8047192  rel_socfpga_stratix10_soceds_18.0 -> socvp_socfpga_udk2015
+
+To git@github.com:altera-opensource/uefi-socfpga
+ * [new tag]         rel_socfpga_stratix10_soceds_18.0 -> rel_socfpga_stratix10_soceds_18.0
+To git@github.com:altera-opensource/uefi-socfpga
+   32c4c1f..f4a07f9  f4a07f98f4af745e40bc1e672e28500b6f6090c8 -> socvp_socfpga_udk2015
+

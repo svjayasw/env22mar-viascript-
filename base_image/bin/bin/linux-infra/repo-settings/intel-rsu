@@ -1,0 +1,13 @@
+repo_path: /usr/local/git/repositories/intel-rsu.git
+update_tests: nomerge header checkpatch copyright_year license_spdx_bsdv2_clause
+email: richard.gong@intel.com
+sync-job:
+local_upstream:
+crucible_project: intel-rsu
+internal_git: gitolite@at-git:intel-rsu.git
+external_git:
+upstream_branches:
+release_branch:
+upstream_tag_regex:
+review_addrs: richard.gong@intel.com
+

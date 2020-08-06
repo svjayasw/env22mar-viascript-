@@ -1,0 +1,169 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.10
+branch tag  : rel_socfpga-4.10_17.08.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.11
+branch tag  : rel_socfpga-4.11_17.08.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.08.02_pr
+new commits : 0
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.08.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.10_17.08.02_pr
+commit: 80ee99f Richard Gong FogBugz #470512: Update stratix10_swvp.dts file for S10 SoC Simics/VP
+
+tag:    rel_socfpga-4.11_17.08.02_pr
+commit: d085116 Richard Gong Revert "FogBugz #470510: Update stratix10_swvp.dts file for S10 SoC Simics/VP"
+
+tag:    rel_socfpga-4.1.33-ltsi_17.08.02_pr
+commit: 9d8d594 Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.08.02_pr
+commit: a63d21c Thor Thayer net: ethernet: stmmac: Fix altr_tse_pcs SGMII Initialization
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.08.02_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.08.02_pr
+new commits : 3
+d143a7d Tien Fong Chee FogBugz #438770: Solve the overrun warning by coverity
+3b8285a Tien Fong Chee armv8: semihosting: add a command to load semihosted images
+c7e0e82 Tien Fong Chee FogBugz #477421: Clean up unused warning when semihosting is enabled
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_17.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 438770 | Solve the overrun warning by coverity | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/d143a7df8e9b947b8be21bc2ccc1a63757213f0c ][ d143a7df8e9b947b8be21bc2ccc1a63757213f0c ]] |
+| community | armv8: semihosting: add a command to load semihosted images | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/3b8285a5033b64604e9a8a6bcfb81f1144797db8 ][ 3b8285a5033b64604e9a8a6bcfb81f1144797db8 ]] |
+| 477421 | Clean up unused warning when semihosting is enabled | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/c7e0e82e3b9117ad87a76ce1c856a4c76afa2681 ][ c7e0e82e3b9117ad87a76ce1c856a4c76afa2681 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.08.02_pr
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.08.02_pr
+commit: d143a7d Tien Fong Chee FogBugz #438770: Solve the overrun warning by coverity
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.08.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.08.02_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.08.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.08.02_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.08.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.08.02_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit d143a7df8e9b947b8be21bc2ccc1a63757213f0c
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Jul 26 18:15:11 2017 +0800
+
+    FogBugz #438770: Solve the overrun warning by coverity
+    
+    The local integer i value has potential more than MAX_INT_VECTORS, this
+    can overrun available structure interrupt_vectors array size which is
+    defined by MAX_INT_VECTORS. The solution is always ensure i is within
+    0-9 value.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+commit 3b8285a5033b64604e9a8a6bcfb81f1144797db8
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Jul 19 13:22:17 2017 +0800
+
+    armv8: semihosting: add a command to load semihosted images
+    
+    Instead of sprinkling custom code and calls over the Vexpress64
+    boardfile, create a command that loads images using semihosting
+    just like we would load from flash memory of over the network,
+    using a special command:
+    
+        smhload <image> <address>
+    
+    This will make it possible to remove some custom calls and
+    code and make the boot easier.
+    
+    Signed-off-by: Linus Walleij <linus.walleij@linaro.org>
+
+commit c7e0e82e3b9117ad87a76ce1c856a4c76afa2681
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Jul 19 13:31:22 2017 +0800
+
+    FogBugz #477421: Clean up unused warning when semihosting is enabled
+    
+    This patch clean up the unused console print function warning which is
+    detected in console.c after compilation when semihosting is enabled.
+    
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+-----------------------------------------------------------------------
+

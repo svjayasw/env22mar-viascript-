@@ -1,0 +1,11 @@
+Note: this got revised twice but never updated in email.  So 2 of the commit id's are not right below.
+
+Repo		Branch				Commit id					Tag
+Linux-socfpga	socfpga-4.1.33-ltsi		9689ce4f759ad0f13f6911d1f1309384f2b05f91	ACDS17.0_REL_GSRD_RC1
+Uboot-socfpga	socfpga_v2013.01.01		95ab599e1ad7840e08be0aa567eea3fca357572f	ACDS17.0_REL_GSRD_RC1
+Meta-altera	angstrom-v2015.12-yocto2.0	3cfd56bb15673795435cf7684ef9c723283a6bce	ACDS17.0_REL_GSRD_RC1
+Meta-altera-refdes	gsrd-17.0		c5b6ea3c574c5eba67e2f36568a620720b5502b1	ACDS17.0_REL_GSRD_RC1
+Linux-refdesigns	socfpga-17.0		a3d4e657087dbf535401b18cdd810591857b6961	ACDS17.0_REL_GSRD_RC1
+
+Uboot-socfpga	socfpga_v2014.10_arria10_bringup a711b5f67d9e44ab54d77e9af523fe73cabc3629	ACDS17.0_REL_A10_GSRD_RC1
+Linux-socfpga	socfpga-3.10-ltsi		28bac3edbcdc74f98b865986be5d340381896192	ACDS17.0_REL_M10_GSRD_RC1

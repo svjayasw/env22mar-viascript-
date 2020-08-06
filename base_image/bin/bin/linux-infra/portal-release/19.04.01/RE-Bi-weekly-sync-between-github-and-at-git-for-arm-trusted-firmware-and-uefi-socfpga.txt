@@ -1,0 +1,194 @@
+From:	Loh, Tien Hock
+Sent:	Monday, April 8, 2019 9:11 PM
+To:	Tull, Alan
+Cc:	See, Chin Liang; Tan, Ying Cheh; Li, Sen; Riffel, Todd
+Subject:	RE: Bi-weekly sync between github and at-git for arm-trusted-firmware 
+and uefi-socfpga
+
+Hey Alan,
+
+Thanks for helping out to check on the git. Some replies inlined.
+
+Thanks
+Tien Hock
+
+From: Tull, Alan  
+Sent: Tuesday, April 9, 2019 3:15 AM 
+To: Loh, Tien Hock <tien.hock.loh@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>; Li, Sen 
+<sen.li@intel.com>; Riffel, Todd <todd.riffel@intel.com> 
+Subject: RE: Bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-socfpga
+
+Hi Tien Hock,
+
+Can you explain to me what is going on with the uefi-socfpga master branch?
+[TH] I wasn’t aware that Sau Kae pushed some commits to the master branch, thanks for catching this. I 
+have force pushed to clean up the commits.
+
+Also, what is the url of the uefi upstream?
+[TH] https://github.com/tianocore/edk2
+
+Normally we don’t add our commits to the master branch of a project that has an upstream.  It looks like 
+the uefi-socfpga master branch also has our stuff on it, judging by the email addresses in the commit 
+log.  This makes me hesitant to overwrite the master branch.  
+[TH] Yup I agree, my mistake for not catching the commits puhsed by SK.
+
+I have determined that we don’t have any Intel or Altera release tags on github that are pointing to the 
+master branch so that is good; all our tags point to our named release branches.
+
+If we’re going to update the master branch, it seems like the thing to do would be to update the master 
+branch to the current clean upstream and keep it clean from here onwards and continue to release our 
+stuff on our named release branches as we have been doing.  Or am I misunderstanding something 
+here?
+[TH] Yup you’re right, I’ve made a force push to revert all SK’s changes, and rebased to uefi upstream’s 
+latest commit.
+
+Alan
+
+From: Loh, Tien Hock  
+Sent: Monday, April 8, 2019 2:46 AM 
+To: Tull, Alan <alan.tull@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>; Li, Sen 
+<sen.li@intel.com>; Riffel, Todd <todd.riffel@intel.com> 
+Subject: RE: Bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-socfpga
+
+Hey Alan,
+
+I’m not sure if the community normally rebase the master branch, but for this one time, can you help 
+make the rebased push?
+
+Also, arm-trusted-firmware needs the master branch to be updated too. A summary so that we are on 
+the same page: 
+1.	arm-trusted-firmware -  master, socfpga_v1.4
+2.	uefi-socfpga – master (rebased), socvp_socfpga_udk2015
+
+Thanks
+Tien Hock
+
+From: Tull, Alan  
+Sent: Friday, April 5, 2019 4:25 AM 
+To: Loh, Tien Hock <tien.hock.loh@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>; Li, Sen 
+<sen.li@intel.com>; Riffel, Todd <todd.riffel@intel.com> 
+Subject: RE: Bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-socfpga
+
+I ran in into a problem with the uefi-socfpga master branch.  I was not able to update the master branch 
+on the portal because at-git’s master branch has been rebased since the last time it was pushed to the 
+portal.
+
+I went ahead with the rest of the portal update including: 
+repo: arm-trusted-firmware  branch: socfpga_v1.4
+repo: uefi-socfpga  branch: socvp_socfpga_udk2015
+
+Does the upstream uefi project normally rebase the master branch?
+
+Alan
+
+From: Loh, Tien Hock  
+Sent: Friday, March 29, 2019 1:04 AM 
+To: Tull, Alan <alan.tull@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>; Li, Sen 
+<sen.li@intel.com>; Riffel, Todd <todd.riffel@intel.com> 
+Subject: RE: Bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-socfpga
+
+Thanks Alan! 
+
+Thanks
+Tien Hock
+
+From: Tull, Alan  
+Sent: Friday, March 29, 2019 10:24 AM 
+To: Loh, Tien Hock <tien.hock.loh@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>; Li, Sen 
+<sen.li@intel.com>; Riffel, Todd <todd.riffel@intel.com> 
+Subject: RE: Bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-socfpga
+
+Hi Tien Hock,
+
+Yes, no problem.
+
+Now we’ll update both master and socvp_socfpga_udk2015 for uefi-socfpga.
+
+Next update will be Thursday April 4.
+
+Alan
+
+From: Loh, Tien Hock  
+Sent: Thursday, March 28, 2019 8:44 PM 
+To: Tull, Alan <alan.tull@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>; Li, Sen 
+<sen.li@intel.com>; Riffel, Todd <todd.riffel@intel.com> 
+Subject: RE: Bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-socfpga
+
+Hey Alan,
+
+Can you help set up uefi-socfpga branch socvp_socfpga_udk2015 as well? 
+Sorry I think I didn’t specify uefi-socfpga branch previously.
+
+Thanks
+Tien Hock
+
+From: Tull, Alan  
+Sent: Wednesday, March 27, 2019 11:17 PM 
+To: Loh, Tien Hock <tien.hock.loh@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>; Li, Sen 
+<sen.li@intel.com>; Riffel, Todd <todd.riffel@intel.com> 
+Subject: RE: Bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-socfpga
+
+OK I got it set up.   We will be releasing:
+
+repo: arm-trusted-firmware  
+branch: socfpga_v1.4
+
+
+repo: uefi-socfpga
+branch: master
+Note that for uefi-socfpga, github has 3 other branches in addition to master but we will currently only 
+be updating master.
+
+Alan
+
+From: Loh, Tien Hock  
+Sent: Wednesday, March 27, 2019 5:17 AM 
+To: Tull, Alan <alan.tull@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>; Li, Sen 
+<sen.li@intel.com>; Riffel, Todd <todd.riffel@intel.com> 
+Subject: RE: Bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-socfpga
+
+Alan,
+
+Yup, every other week, same as uboot-socfpga and linux-socfpga. For now, it should be the master 
+branch, and socfpga_v1.4. 
+
+Thanks
+Tien Hock
+
+From: Tull, Alan  
+Sent: Wednesday, March 27, 2019 5:10 AM 
+To: Loh, Tien Hock <tien.hock.loh@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com>; Li, Sen 
+<sen.li@intel.com>; Riffel, Todd <todd.riffel@intel.com> 
+Subject: RE: Bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-socfpga
+
+Hi Tien Hock,
+
+Yes, no problem.  So these will be updated to github every other week like uboot-socfpga and linux-
+socfpga.  Which branches will be currently releasing?
+
+Alan
+
+
+From: Loh, Tien Hock  
+Sent: Sunday, March 24, 2019 8:45 PM 
+To: Tull, Alan <alan.tull@intel.com> 
+Cc: See, Chin Liang <chin.liang.see@intel.com>; Tan, Ying Cheh <ying.cheh.tan@intel.com> 
+Subject: Bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-socfpga
+
+Alan,
+
+Can you help setup a bi-weekly sync between github and at-git for arm-trusted-firmware and uefi-
+socfpga, like in uboot-socfpga and linux-socfpga?
+
+Thanks
+Tien Hock
+

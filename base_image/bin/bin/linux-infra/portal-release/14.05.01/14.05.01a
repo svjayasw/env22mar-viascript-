@@ -1,0 +1,375 @@
+The report is coming early this week as I am traveling.
+In addition to what is listed below, we push two new branches: 
+ * socfpga-3.14
+ * socfpga-3.10-ltsi-rt
+
+Also the angstrom-socfpga and meta-altera repositories were updated.
+
+This is a script-generated report of what I just pushed.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-3.14
+branch tag  : rel_socfpga-3.14_14.05.01
+Pushing new branch to rocketboards.org
+
+branch      : socfpga-3.13
+branch tag  : rel_socfpga-3.13_14.05.01
+new commits : 6
+a2e769f Ley Foon Tan FogBugz #195995: nios2: Change default NIOS2_DCACHE_LINE_SIZE
+42aa513 Dinh Nguyen FogBugz #183074: Fix PMU CTI driver for single core systems
+3788678 Ley Foon Tan FogBugz #196797: nios2: Add valid range for dcache size in Kconfig
+a2494c0 Ley Foon Tan FogBugz #196791: nios2: update icache size settings
+bf6eed7 Ley Foon Tan FogBugz #198073: nios2: Fix virt_to_phys and phy_to_virt macros
+41d2959 Ley Foon Tan FogBugz #190747: nios2 dma mapping review and cleanup
+
+
+++wiki:
+*Branch name*: socfpga-3.13, *Tag name:* rel_socfpga-3.13_14.05.01
+| *ID* | *Comment* | *GIT Commit* |
+| 195995 | nios2: Change default NIOS2_DCACHE_LINE_SIZE | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a2e769f578e6e4ebb6b7095ea2e124b3b694c201 ][ a2e769f578e6e4ebb6b7095ea2e124b3b694c201 ]] |
+| 183074 | Fix PMU CTI driver for single core systems | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=42aa513346894fecc4a07fe100e7887802dd4678 ][ 42aa513346894fecc4a07fe100e7887802dd4678 ]] |
+| 196797 | nios2: Add valid range for dcache size in Kconfig | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=37886781a8b93eee22518afda79420bb64cfaa98 ][ 37886781a8b93eee22518afda79420bb64cfaa98 ]] |
+| 196791 | nios2: update icache size settings | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a2494c096298fde4aa742c9441ce625fe10bb974 ][ a2494c096298fde4aa742c9441ce625fe10bb974 ]] |
+| 198073 | nios2: Fix virt_to_phys and phy_to_virt macros | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=bf6eed71b1de9705e7007be1b58d381c54c9dc45 ][ bf6eed71b1de9705e7007be1b58d381c54c9dc45 ]] |
+| 190747 | nios2 dma mapping review and cleanup | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=41d2959b786c4e587fb1821cf31583ad8c7df37c ][ 41d2959b786c4e587fb1821cf31583ad8c7df37c ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_14.05.01
+new commits : 7
+7849522 Ley Foon Tan FogBugz #195995: nios2: Change default NIOS2_DCACHE_LINE_SIZE
+20dbf1a Dinh Nguyen FogBugz #183074: Fix PMU CTI driver for single core systems
+872fb31 Ley Foon Tan FogBugz #196797: nios2: Add valid range for dcache size in Kconfig
+5fd011d Ley Foon Tan FogBugz #196791: nios2: update icache size settings
+a791348 Ley Foon Tan FogBugz #198073: nios2: Fix virt_to_phys and phy_to_virt macros
+c41f8da Ley Foon Tan FogBugz #190747: nios2 dma mapping review and cleanup
+65234b8 Ley Foon Tan FogBugz #197544: nios2: update 3c120_defconfig to match hardware
+
+
+++wiki:
+*Branch name*: socfpga-3.10-ltsi, *Tag name:* rel_socfpga-3.10-ltsi_14.05.01
+| *ID* | *Comment* | *GIT Commit* |
+| 195995 | nios2: Change default NIOS2_DCACHE_LINE_SIZE | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=7849522291bb791b5b89111e561a1484aea31064 ][ 7849522291bb791b5b89111e561a1484aea31064 ]] |
+| 183074 | Fix PMU CTI driver for single core systems | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=20dbf1ae6e15927d7a29599622f79b18b3bfeacb ][ 20dbf1ae6e15927d7a29599622f79b18b3bfeacb ]] |
+| 196797 | nios2: Add valid range for dcache size in Kconfig | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=872fb319f91c8b41befc938d384285226b881c99 ][ 872fb319f91c8b41befc938d384285226b881c99 ]] |
+| 196791 | nios2: update icache size settings | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=5fd011d306af56756a54d4be69ebe5ebf228966b ][ 5fd011d306af56756a54d4be69ebe5ebf228966b ]] |
+| 198073 | nios2: Fix virt_to_phys and phy_to_virt macros | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=a791348174cc4496743bb06451c895aec9a9d266 ][ a791348174cc4496743bb06451c895aec9a9d266 ]] |
+| 190747 | nios2 dma mapping review and cleanup | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=c41f8daa4d2de4a5d79ee88ca7145b94f76126f0 ][ c41f8daa4d2de4a5d79ee88ca7145b94f76126f0 ]] |
+| 197544 | nios2: update 3c120_defconfig to match hardware | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=65234b8f6203d076fb35fd4e61122efb3824707f ][ 65234b8f6203d076fb35fd4e61122efb3824707f ]] |
+--wiki:
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga-3.14_14.05.01
+commit: 8adb74d Dinh Nguyen FogBugz #183074: Fix PMU CTI driver for single core systems
+
+tag:    rel_socfpga-3.13_14.05.01
+commit: a2e769f Ley Foon Tan FogBugz #195995: nios2: Change default NIOS2_DCACHE_LINE_SIZE
+
+tag:    rel_socfpga-3.10-ltsi_14.05.01
+commit: 7849522 Ley Foon Tan FogBugz #195995: nios2: Change default NIOS2_DCACHE_LINE_SIZE
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_14.05.01
+new commits : 0
+
+
+Tags to push out to rocketboards.git:
+tag:    rel_socfpga_v2013.01.01_14.05.01
+commit: 82ff5be Chin Liang See FogBugz #191882: Move away handoff path from common config
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.14
+
+  Too many commits to list because this is a new branch
+
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.13
+
+commit a2e769f578e6e4ebb6b7095ea2e124b3b694c201
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Apr 25 11:45:29 2014 +0800
+
+    FogBugz #195995: nios2: Change default NIOS2_DCACHE_LINE_SIZE
+    
+    FogBugz 190747 added initda instruction support and this instruction
+    requires more than 4-byte data cache line. So, default
+    NIOS2_DCACHE_LINE_SIZE needs change to more than 4 and
+    in range 0x10 and 0x20. Also add checking for
+    CONFIG_NIOS2_DCACHE_LINE_SIZE vs device tree dcache-line-size to make
+    sure they are matched.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 42aa513346894fecc4a07fe100e7887802dd4678
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Feb 26 18:38:05 2014 -0600
+
+    FogBugz #183074: Fix PMU CTI driver for single core systems
+    
+    For SOCFPGA systems that are single core, there is only 1 CTI for the PMU.
+    Update the driver to initialize the number of CTIs based on the
+    num_possible_cpus().
+    
+    Cleanup: Alpha the headers.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    ---
+    v8:
+    - Clean up the for loop in init function
+    - Save of socfpga_cti pointer for kfree use
+    
+    v7:
+    - Made cti struct a static member of struct socfpga_cti
+    - No need for cti and irq_local to be an array in socfpga_pmu_handler
+    
+    v6:
+    - More clean up based on code reviews
+    - A single kzalloc outside of the for loop for easy cleanup using kfree
+    
+    v5:
+    - Use num_online_cpus() to correctly allocate the CTI based on CPUs
+      that are currently online.
+    - Clean up a stray debug print
+    - Clean up the allocation of the socfpga_cti and cti structure
+    - Return -ENOMEM instead of -1
+    
+    v4: Dynamically allocate the PMU CTIs
+    v3: Should be calling cti_disable in stop_cti
+    v2: The 2nd CTI node will only get allocated when the 2nd CPU is available
+
+commit 37886781a8b93eee22518afda79420bb64cfaa98
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Apr 16 19:03:51 2014 +0800
+
+    FogBugz #196797: nios2: Add valid range for dcache size in Kconfig
+    
+    Hardware supported range is between 512 byte to 64Kbytes.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    
+    v3:
+    - Change default value to 0x800 to match default value in hardware.
+    
+    v2:
+    - Add checking for CONFIG_NIOS2_DCACHE_SIZE vs device tree dcache-size
+
+commit a2494c096298fde4aa742c9441ce625fe10bb974
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Apr 16 18:55:37 2014 +0800
+
+    FogBugz #196791: nios2: update icache size settings
+    
+    Remove icache line size settings from Kconfig because Nios2 hardware
+    supports only 32 bytes always. The valid icache size is between
+    512 byte to 64Kbytes.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    
+    v3:
+    - Change default to 0x1000 to match default value in hardware.
+    
+    v2:
+    - Add checking for CONFIG_NIOS2_ICACHE_SIZE vs device tree icache-size
+
+commit bf6eed71b1de9705e7007be1b58d381c54c9dc45
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Apr 16 19:44:34 2014 +0800
+
+    FogBugz #198073: nios2: Fix virt_to_phys and phy_to_virt macros
+    
+    The original code support only the address within system memory region.
+    It is wrong when we try to convert an address from I/O region.
+    Change to use bitwise operation instead of arithmetic operation to
+    prevent overflow.
+    We need to OR with 0xC0000000 (CONFIG_KERNEL_REGION_BASE) if convert
+    phys_to_virt and clear top 3 bit to convert virt_to_phys.
+    For example:
+    
+    Original code:
+    virt_to_phy(0xE0000000) = 0xE0000000 - 0xD0000000 + 0x10000000
+                            = 0x20000000 (this is wrong)
+    New code:
+    virt_to_phy(0xE0000000) = 0xE0000000 & ~0xE0000000
+                            = 0x0 (correct)
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 41d2959b786c4e587fb1821cf31583ad8c7df37c
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Apr 18 10:27:46 2014 +0800
+
+    FogBugz #190747: nios2 dma mapping review and cleanup
+    
+    Review and cleanup code in dma mapping code:
+    - Add invalidate_dcache_range for DMA_FROM_DEVICE dma sync
+    - Change to use valid_dma_direction for checking
+    - Change to use phys_to_virt() to convert physical to virtual address
+    - Remove unnecessary FIXME
+    - Add __flush_dcache_all() function to flush dcache by using flushd
+      instruction
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.10-ltsi
+
+commit 7849522291bb791b5b89111e561a1484aea31064
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Apr 25 11:45:29 2014 +0800
+
+    FogBugz #195995: nios2: Change default NIOS2_DCACHE_LINE_SIZE
+    
+    FogBugz 190747 added initda instruction support and this instruction
+    requires more than 4-byte data cache line. So, default
+    NIOS2_DCACHE_LINE_SIZE needs change to more than 4 and
+    in range 0x10 and 0x20. Also add checking for
+    CONFIG_NIOS2_DCACHE_LINE_SIZE vs device tree dcache-line-size to make
+    sure they are matched.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 20dbf1ae6e15927d7a29599622f79b18b3bfeacb
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Wed Feb 26 18:38:05 2014 -0600
+
+    FogBugz #183074: Fix PMU CTI driver for single core systems
+    
+    For SOCFPGA systems that are single core, there is only 1 CTI for the PMU.
+    Update the driver to initialize the number of CTIs based on the
+    num_possible_cpus().
+    
+    Cleanup: Alpha the headers.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    ---
+    v8:
+    - Clean up the for loop in init function
+    - Save of socfpga_cti pointer for kfree use
+    
+    v7:
+    - Made cti struct a static member of struct socfpga_cti
+    - No need for cti and irq_local to be an array in socfpga_pmu_handler
+    
+    v6:
+    - More clean up based on code reviews
+    - A single kzalloc outside of the for loop for easy cleanup using kfree
+    
+    v5:
+    - Use num_online_cpus() to correctly allocate the CTI based on CPUs
+      that are currently online.
+    - Clean up a stray debug print
+    - Clean up the allocation of the socfpga_cti and cti structure
+    - Return -ENOMEM instead of -1
+    
+    v4: Dynamically allocate the PMU CTIs
+    v3: Should be calling cti_disable in stop_cti
+    v2: The 2nd CTI node will only get allocated when the 2nd CPU is available
+
+commit 872fb319f91c8b41befc938d384285226b881c99
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Apr 16 19:03:51 2014 +0800
+
+    FogBugz #196797: nios2: Add valid range for dcache size in Kconfig
+    
+    Hardware supported range is between 512 byte to 64Kbytes.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    
+    v3:
+    - Change default value to 0x800 to match default value in hardware.
+    
+    v2:
+    - Add checking for CONFIG_NIOS2_DCACHE_SIZE vs device tree dcache-size
+
+commit 5fd011d306af56756a54d4be69ebe5ebf228966b
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Apr 16 18:55:37 2014 +0800
+
+    FogBugz #196791: nios2: update icache size settings
+    
+    Remove icache line size settings from Kconfig because Nios2 hardware
+    supports only 32 bytes always. The valid icache size is between
+    512 byte to 64Kbytes.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    
+    v3:
+    - Change default to 0x1000 to match default value in hardware.
+    
+    v2:
+    - Add checking for CONFIG_NIOS2_ICACHE_SIZE vs device tree icache-size
+
+commit a791348174cc4496743bb06451c895aec9a9d266
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Wed Apr 16 19:44:34 2014 +0800
+
+    FogBugz #198073: nios2: Fix virt_to_phys and phy_to_virt macros
+    
+    The original code support only the address within system memory region.
+    It is wrong when we try to convert an address from I/O region.
+    Change to use bitwise operation instead of arithmetic operation to
+    prevent overflow.
+    We need to OR with 0xC0000000 (CONFIG_KERNEL_REGION_BASE) if convert
+    phys_to_virt and clear top 3 bit to convert virt_to_phys.
+    For example:
+    
+    Original code:
+    virt_to_phy(0xE0000000) = 0xE0000000 - 0xD0000000 + 0x10000000
+                            = 0x20000000 (this is wrong)
+    New code:
+    virt_to_phy(0xE0000000) = 0xE0000000 & ~0xE0000000
+                            = 0x0 (correct)
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit c41f8daa4d2de4a5d79ee88ca7145b94f76126f0
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Apr 18 10:27:46 2014 +0800
+
+    FogBugz #190747: nios2 dma mapping review and cleanup
+    
+    Review and cleanup code in dma mapping code:
+    - Add invalidate_dcache_range for DMA_FROM_DEVICE dma sync
+    - Change to use valid_dma_direction for checking
+    - Change to use phys_to_virt() to convert physical to virtual address
+    - Remove unnecessary FIXME
+    - Add __flush_dcache_all() function to flush dcache by using flushd
+      instruction
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 65234b8f6203d076fb35fd4e61122efb3824707f
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Tue Apr 15 16:02:23 2014 +0800
+
+    FogBugz #197544: nios2: update 3c120_defconfig to match hardware
+    
+    Hardware have 0x8000 bytes for dcache and icache sizes.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+    
+    v2:
+    - fix fogbugz number.
+
+-----------------------------------------------------------------------
+
+

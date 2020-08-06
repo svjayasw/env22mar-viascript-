@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# temporary disable update script:
+#exit 0
+
+do_update()
+{
+    echo "update_safe $1 $2 $3"
+    echo
+    echo " ***********************************************************************************************"
+    echo " *** If you have problems with a git push, please send this whole log along with the patches ***"
+    echo " *** you are trying to push to Alan and Todd (alan.tull@intel.com and todd.riffel@intel.com  ***"
+    echo " ***                                                                                         ***"
+    echo " *** Common mistakes: doing 'git-pull', 'git-merge', or pushing to a branch without first    ***"
+    echo " *** updating (git fetch origin && git rebase)                                               ***"
+    echo " ***                                                                                         ***"
+    echo " *** see also:                                                                               ***"
+    echo " *** linux-socfpga/Documentation/CodingStyle                                                 ***"
+    echo " *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxDevelopmentFlow               ***"
+    echo " *** http://sw-wiki.altera.com/twiki/bin/view/Software/HPSLinuxGITQuickIntroduction          ***"
+    echo " ***********************************************************************************************"
+    echo
+
+    if [ $# -ne 3 ]; then
+	echo "update_safe: error, expected 3 arguments, got $#"
+	exit 1
+    fi
+
+    HOOKS_LIST='/usr/local/git/linux-infra/hooks/update.py'
+    for hook in $HOOKS_LIST; do
+        if [ ! -f $hook ]; then
+	    echo "Hook not found: $hook"
+	    exit 1
+	fi
+	if [ ! -x $hook ]; then
+	    echo "Cannot execute hook (permissions): $hook"
+	    exit 1
+	fi
+    done
+
+    /usr/local/git/linux-infra/hooks/update.py $1 $2 $3
+    exit $?
+}
+
+#=======================================================================
+
+repo="$(pwd | sed 's,/usr/local/git/repositories/,,' | sed 's,.git,,')"
+
+do_update $@

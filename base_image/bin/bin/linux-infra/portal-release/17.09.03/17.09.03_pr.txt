@@ -1,0 +1,366 @@
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+We are currently pushing code to Github on an somewhat accelerated basis and have
+relaxed the usual 2 week gap between rc's and pr's for the benefit of stratix10
+bringup for Nokia.
+
+Next update is 17.10.01 in two weeks on 10/12/2017.
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.11
+branch tag  : rel_socfpga-4.11_17.09.03_pr
+new commits : 4
+2785302 Alan Tull FogBugz #491967-5: dts: stratix10: add ltc2497
+71fd6c8 Alan Tull FogBugz #491967-4: defconfig: stratix10 socdk: add ltc2497
+bfe364e Michael Hennerich iio:adc: Driver for Linear Technology LTC2497 ADC
+5aec772 Alan Tull FogBugz #492768: Revert "i2c: dw: temporary workaround for i2c clocks"
+
+
+++wiki:
+*Branch name*: socfpga-4.11, *Tag name:* rel_socfpga-4.11_17.09.03_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 491967-5 | dts: stratix10: add ltc2497 | [[ https://github.com/altera-opensource/linux-socfpga/commit/2785302c6d7cdc55fd07ea78abb81eeead397a15 ][ 2785302c6d7cdc55fd07ea78abb81eeead397a15 ]] |
+| 491967-4 | defconfig: stratix10 socdk: add ltc2497 | [[ https://github.com/altera-opensource/linux-socfpga/commit/71fd6c8b2adce6d9799e2101ddf4a5a3980d8764 ][ 71fd6c8b2adce6d9799e2101ddf4a5a3980d8764 ]] |
+| community | iio:adc: Driver for Linear Technology LTC2497 ADC | [[ https://github.com/altera-opensource/linux-socfpga/commit/bfe364e053f079103f5efeca6b49d441d624a30b ][ bfe364e053f079103f5efeca6b49d441d624a30b ]] |
+| 492768 | Revert "i2c: dw: temporary workaround for i2c clocks" | [[ https://github.com/altera-opensource/linux-socfpga/commit/5aec772cbcc229b79506494f6988eb3165ce5f78 ][ 5aec772cbcc229b79506494f6988eb3165ce5f78 ]] |
+--wiki:
+
+
+branch      : socfpga-4.12
+branch tag  : rel_socfpga-4.12_17.09.03_pr
+new commits : 7
+5ab18bd Alan Tull FogBugz #491967-5: dts: stratix10: add ltc2497
+2b05272f Alan Tull FogBugz #491967-4: defconfig: stratix10 socdk: add ltc2497
+71e691f Alan Tull FogBugz #492768: Revert "i2c: dw: temporary workaround for i2c clocks"
+8480d07 Dinh Nguyen arm64: dts: stratix10: add reset property for various peripherals
+97c5a48 Dinh Nguyen arm64: stratix10: add the 'altr,modrst-off' property
+78e1bbc Dinh Nguyen arm64: stratix10: include the reset manager bindings
+a3bfc23 Dinh Nguyen reset: socfpga: build the reset-socfpga for Stratix10 SOC
+
+
+++wiki:
+*Branch name*: socfpga-4.12, *Tag name:* rel_socfpga-4.12_17.09.03_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 491967-5 | dts: stratix10: add ltc2497 | [[ https://github.com/altera-opensource/linux-socfpga/commit/5ab18bdc66c860978ca2b5a26c43bf0c113af5b0 ][ 5ab18bdc66c860978ca2b5a26c43bf0c113af5b0 ]] |
+| 491967-4 | defconfig: stratix10 socdk: add ltc2497 | [[ https://github.com/altera-opensource/linux-socfpga/commit/2b05272ff98f0010207c8630ff5ff774dd80e04b ][ 2b05272ff98f0010207c8630ff5ff774dd80e04b ]] |
+| 492768 | Revert "i2c: dw: temporary workaround for i2c clocks" | [[ https://github.com/altera-opensource/linux-socfpga/commit/71e691f8dee3706d160dcf8b765ddecfc4e74d9b ][ 71e691f8dee3706d160dcf8b765ddecfc4e74d9b ]] |
+| community | arm64: dts: stratix10: add reset property for various peripherals | [[ https://github.com/altera-opensource/linux-socfpga/commit/8480d072963453b3405b76e972c17771e1d50a6e ][ 8480d072963453b3405b76e972c17771e1d50a6e ]] |
+| community | arm64: stratix10: add the 'altr,modrst-off' property | [[ https://github.com/altera-opensource/linux-socfpga/commit/97c5a48da6a5eb63ff2d57a6130ed90d9ecfde26 ][ 97c5a48da6a5eb63ff2d57a6130ed90d9ecfde26 ]] |
+| community | arm64: stratix10: include the reset manager bindings | [[ https://github.com/altera-opensource/linux-socfpga/commit/78e1bbc1f050c172d78e71da0053ad640a6756b7 ][ 78e1bbc1f050c172d78e71da0053ad640a6756b7 ]] |
+| community | reset: socfpga: build the reset-socfpga for Stratix10 SOC | [[ https://github.com/altera-opensource/linux-socfpga/commit/a3bfc23053ecb94e8bf2b95c01d0e6be326ce8f4 ][ a3bfc23053ecb94e8bf2b95c01d0e6be326ce8f4 ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.33-ltsi
+branch tag  : rel_socfpga-4.1.33-ltsi_17.09.03_pr
+new commits : 1
+0175aa1 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+
+
+++wiki:
+*Branch name*: socfpga-4.1.33-ltsi, *Tag name:* rel_socfpga-4.1.33-ltsi_17.09.03_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | ARM: socfpga_defconfig: Enable HIGHMEM | [[ https://github.com/altera-opensource/linux-socfpga/commit/0175aa1f569efc9105a00b411a51f82c61f600e8 ][ 0175aa1f569efc9105a00b411a51f82c61f600e8 ]] |
+--wiki:
+
+
+branch      : socfpga-4.1.33-ltsi-rt
+branch tag  : rel_socfpga-4.1.33-ltsi-rt_17.09.03_pr
+new commits : 1
+5b7a4c0 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+
+
+++wiki:
+*Branch name*: socfpga-4.1.33-ltsi-rt, *Tag name:* rel_socfpga-4.1.33-ltsi-rt_17.09.03_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | ARM: socfpga_defconfig: Enable HIGHMEM | [[ https://github.com/altera-opensource/linux-socfpga/commit/5b7a4c052a17050fa62e3ea8466d8753c381af9d ][ 5b7a4c052a17050fa62e3ea8466d8753c381af9d ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.11_17.09.03_pr
+commit: 2785302 Alan Tull FogBugz #491967-5: dts: stratix10: add ltc2497
+
+tag:    rel_socfpga-4.12_17.09.03_pr
+commit: 5ab18bd Alan Tull FogBugz #491967-5: dts: stratix10: add ltc2497
+
+tag:    rel_socfpga-4.1.33-ltsi_17.09.03_pr
+commit: 0175aa1 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+
+tag:    rel_socfpga-4.1.33-ltsi-rt_17.09.03_pr
+commit: 5b7a4c0 Dinh Nguyen ARM: socfpga_defconfig: Enable HIGHMEM
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_17.09.03_pr
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_17.09.03_pr
+new commits : 1
+2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_17.09.03_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | libfdt: Initialize the stack variable | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/2a2102e92e470beec51d8b2dea8323cfc92f92b1 ][ 2a2102e92e470beec51d8b2dea8323cfc92f92b1 ]] |
+--wiki:
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_17.09.03_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_17.09.03_pr
+commit: 239ae4d Thor Thayer FogBugz #470924: U-Boot: Changes for gcc6.2.0
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_17.09.03_pr
+commit: 2a2102e Tien Fong Chee libfdt: Initialize the stack variable
+
+tag:    rel_socfpga_v2017.09_17.09.03_pr
+commit: d2f9c97 Chin Liang See spi: cadence_qspi: Fix the indirect trigger address
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_17.09.03_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_17.09.03_pr
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.09.03_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.09.03_pr
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_17.09.03_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2015.12-yocto2.0_17.09.03_pr
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.11
+
+commit 2785302c6d7cdc55fd07ea78abb81eeead397a15
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Aug 28 11:29:47 2017 -0500
+
+    FogBugz #491967-5: dts: stratix10: add ltc2497
+    
+    Add the ltc2497 ADC to the dts.
+    Add a fixed regulator for the ADC's Vref.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 71fd6c8b2adce6d9799e2101ddf4a5a3980d8764
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Aug 31 16:35:52 2017 -0500
+
+    FogBugz #491967-4: defconfig: stratix10 socdk: add ltc2497
+    
+    Enable the following LTC2497 i2c adc in the s10_devkit_defconfig.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit bfe364e053f079103f5efeca6b49d441d624a30b
+Author: Michael Hennerich <michael.hennerich@analog.com>
+Date:   Wed Mar 29 11:42:58 2017 +0200
+
+    iio:adc: Driver for Linear Technology LTC2497 ADC
+    
+    This patch adds support for the Analog Devices / Linear Technology
+    LTC2497 ADCs. The LTC2497 is a 16-channel (eight differential),
+    16-bit, high precision, delta-sigma ADC with an automatic, differential,
+    input current cancellation front end and a 2-wire, I2C interface.
+    
+    Signed-off-by: Michael Hennerich <michael.hennerich@analog.com>
+    Signed-off-by: Jonathan Cameron <jic23@kernel.org>
+
+commit 5aec772cbcc229b79506494f6988eb3165ce5f78
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Sep 26 15:40:59 2017 -0500
+
+    FogBugz #492768: Revert "i2c: dw: temporary workaround for i2c clocks"
+    
+    This reverts commit cbacf34be31cf77aa2b166d4df3a1218f44933e4.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.12
+
+commit 5ab18bdc66c860978ca2b5a26c43bf0c113af5b0
+Author: Alan Tull <atull@kernel.org>
+Date:   Mon Aug 28 11:29:47 2017 -0500
+
+    FogBugz #491967-5: dts: stratix10: add ltc2497
+    
+    Add the ltc2497 ADC to the dts.
+    Add a fixed regulator for the ADC's Vref.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 2b05272ff98f0010207c8630ff5ff774dd80e04b
+Author: Alan Tull <atull@kernel.org>
+Date:   Thu Aug 31 16:35:52 2017 -0500
+
+    FogBugz #491967-4: defconfig: stratix10 socdk: add ltc2497
+    
+    Enable the following LTC2497 i2c adc in the s10_devkit_defconfig.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 71e691f8dee3706d160dcf8b765ddecfc4e74d9b
+Author: Alan Tull <atull@kernel.org>
+Date:   Tue Sep 26 15:27:21 2017 -0500
+
+    FogBugz #492768: Revert "i2c: dw: temporary workaround for i2c clocks"
+    
+    This reverts commit 84316f46573780c07a4ecb8933b4516d3265a87c.
+    
+    Signed-off-by: Alan Tull <atull@kernel.org>
+
+commit 8480d072963453b3405b76e972c17771e1d50a6e
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Sep 20 16:36:02 2017 -0500
+
+    arm64: dts: stratix10: add reset property for various peripherals
+    
+    Add reset property for emac, gpio, i2c, sdmmc, timers, and watchdog.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    
+    Conflicts:
+    
+    	arch/arm64/boot/dts/altera/socfpga_stratix10.dtsi
+
+commit 97c5a48da6a5eb63ff2d57a6130ed90d9ecfde26
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Sep 20 12:31:55 2017 -0500
+
+    arm64: stratix10: add the 'altr,modrst-off' property
+    
+    Update the Stratix10 reset manager with the 'altr,modrst-offset' property.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit 78e1bbc1f050c172d78e71da0053ad640a6756b7
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Sep 20 12:11:27 2017 -0500
+
+    arm64: stratix10: include the reset manager bindings
+    
+    Add the reset manager includes for Stratix10. Need to use the '#include'
+    instead of '/include/' to avoid a DTC syntax error.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+
+commit a3bfc23053ecb94e8bf2b95c01d0e6be326ce8f4
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Wed Sep 20 10:25:41 2017 -0500
+
+    reset: socfpga: build the reset-socfpga for Stratix10 SOC
+    
+    Enable the reset driver to get built for the Stratix10 platform.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Philipp Zabel <p.zabel@pengutronix.de>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.33-ltsi
+
+commit 0175aa1f569efc9105a00b411a51f82c61f600e8
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Oct 25 10:55:40 2016 -0500
+
+    ARM: socfpga_defconfig: Enable HIGHMEM
+    
+    All of the SoCFPGA boards have at least 1GB of RAM, so enabling HIGHMEM
+    is necessary to avoid the following warning:
+    
+    [    0.000000] Truncating RAM at 0x00000000-0x40000000 to -0x30000000
+    [    0.000000] Consider using a HIGHMEM enabled kernel.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1.33-ltsi-rt
+
+commit 5b7a4c052a17050fa62e3ea8466d8753c381af9d
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Tue Oct 25 10:55:40 2016 -0500
+
+    ARM: socfpga_defconfig: Enable HIGHMEM
+    
+    All of the SoCFPGA boards have at least 1GB of RAM, so enabling HIGHMEM
+    is necessary to avoid the following warning:
+    
+    [    0.000000] Truncating RAM at 0x00000000-0x40000000 to -0x30000000
+    [    0.000000] Consider using a HIGHMEM enabled kernel.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 2a2102e92e470beec51d8b2dea8323cfc92f92b1
+Author: Tien Fong Chee <tien.fong.chee@intel.com>
+Date:   Wed Sep 20 12:23:35 2017 +0800
+
+    libfdt: Initialize the stack variable
+    
+    Report Coverity log:
+    The code uses a variable that has not
+    been initialized, leading to unpredictable
+    or unintended results.
+    
+    Report Coverity (CID: 60519)
+    Signed-off-by: Tien Fong Chee <tien.fong.chee@intel.com>
+
+-----------------------------------------------------------------------
+

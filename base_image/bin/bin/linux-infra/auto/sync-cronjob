@@ -1,0 +1,11 @@
+0 6,18 * * * ~/syncjob/linux-infra/auto/linux-kernel-sync >> ~/syncjob/log-linux-kernel-sync.txt 2>&1
+10 6,18 * * * ~/syncjob/linux-infra/auto/angstrom-sync >> ~/syncjob/log-angstrom-sync.txt 2>&1
+30 6,18 * * * ~/syncjob/linux-infra/auto/uboot-sync >> ~/syncjob/log-uboot-sync.txt 2>&1
+35 6,18 * * * ~/syncjob/linux-infra/auto/uboot-socfpga-sync >> ~/syncjob/log-uboot-socfpga-sync.txt 2>&1
+40 * * * * ~/syncjob/linux-infra/auto/uefi-socfpga-sync >> ~/syncjob/log-uefi-socfpga-sync.txt 2>&1
+45 * * * * ~/syncjob/linux-infra/auto/arm-trusted-firmware-sync >> ~/syncjob/log-arm-trusted-firmware-sync.txt 2>&1
+50 * * * * ~/syncjob/linux-infra/auto/sopc2dts-sync >> ~/syncjob/log-sopc2dts-sync.txt 2>&1
+0 4 * * * ~/syncjob/linux-infra/auto/logrotate.sh >/dev/null 2>/dev/null
+30 7 * * * ~/syncjob/linux-infra/auto/health-report.sh --email >/dev/null 2>/dev/null
+0 3,13 * * * ~/syncjob/linux-infra/auto/monitor.pl >> ~/syncjob/log-monitor-mirrors.txt 2>&1
+10 3,13 * * * ~/syncjob/linux-infra/auto/monitor-public-events.sh >> ~/syncjob/log-monitor-public-events.txt 2>&1

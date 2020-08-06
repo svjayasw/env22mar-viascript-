@@ -1,0 +1,252 @@
+rel_type                : GSRD
+release                 : ACDS17.0_REL_GSRD_RC1
+rel_num                 : ACDS17.0
+rel_stage               : RC1
+branch_config_file_name : /home/atull/repos/internal/linux-tags/acds-release-branch-config.sh
+report_file_name_full   : /home/atull/bin/linux-infra/tools/../portal-release/ACDS17.0/ACDS17.0_REL_GSRD_RC1.txt
+repo_list               : ['linux-socfpga', 'uboot-socfpga', 'meta-altera', 'meta-altera-refdes', 'linux-refdesigns']
+num of repos            : 5
+platform                : None
+update_num              : None
+
+Gathering info from git this tag:
+ * ACDS17.0_REL_GSRD_RC1
+
+repo: linux-socfpga         br: socfpga-4.1.33-ltsi
+
+repo: linux-socfpga         br: socfpga-3.10-ltsi
+
+repo: uboot-socfpga         br: socfpga_v2013.01.01
+
+repo: uboot-socfpga         br: socfpga_v2014.10_arria10_bringup
+
+repo: meta-altera           br: angstrom-v2015.12-yocto2.0
+
+repo: meta-altera-refdes    br: gsrd-17.0
+New branch detected
+
+repo: linux-refdesigns      br: socfpga-17.0
+New branch detected
+
+
+Tags found:
+ACDS17.0_REL_GSRD_RC1
+ACDS17.0_REL_M10_GSRD_RC1
+ACDS17.0_REL_A10_GSRD_RC1
+
+   repo                 branch                            commit        tag name
+linux-socfpga        socfpga-4.1.33-ltsi                  7656aaf  ACDS17.0_REL_GSRD_RC1
+uboot-socfpga        socfpga_v2013.01.01                  95ab599  ACDS17.0_REL_GSRD_RC1
+meta-altera          angstrom-v2015.12-yocto2.0           3cfd56b  ACDS17.0_REL_GSRD_RC1
+meta-altera-refdes   gsrd-17.0                            4f50644  ACDS17.0_REL_GSRD_RC1
+linux-refdesigns     socfpga-17.0                         a3d4e65  ACDS17.0_REL_GSRD_RC1
+linux-socfpga        socfpga-3.10-ltsi                    28bac3e  ACDS17.0_REL_M10_GSRD_RC1
+uboot-socfpga        socfpga_v2014.10_arria10_bringup     a711b5f  ACDS17.0_REL_A10_GSRD_RC1
+
+-----------------------------------------------------------------------
+repo:   linux-socfpga
+-----------------------------------------------------------------------
+7656aaf Jia Jie Ho ARM: socfpga: updates for socfpga_defconfig
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS17.0_REL_GSRD_RC1
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-4.1.33-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/7656aaf8b6501308e78c6babcd777b341ee4f7e9
+-----------------------------------------------------------------------
+28bac3e Thor Thayer FogBugz #350137: Fix A10SyCon Button Export Crash
+tag    : https://github.com/altera-opensource/linux-socfpga/releases/tag/ACDS17.0_REL_M10_GSRD_RC1
+branch : https://github.com/altera-opensource/linux-socfpga/tree/socfpga-3.10-ltsi
+commit : https://github.com/altera-opensource/linux-socfpga/commit/28bac3edbcdc74f98b865986be5d340381896192
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   uboot-socfpga
+-----------------------------------------------------------------------
+95ab599 Chin Liang See FogBugz #385884: Configuring SDRAM extra cycles on timing parameters
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS17.0_REL_GSRD_RC1
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2013.01.01
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/95ab599e1ad7840e08be0aa567eea3fca357572f
+-----------------------------------------------------------------------
+a711b5f Tien Fong Chee FogBugz #428963: Enhanced U-boot to support 2GB SDRAM
+tag    : https://github.com/altera-opensource/u-boot-socfpga/releases/tag/ACDS17.0_REL_A10_GSRD_RC1
+branch : https://github.com/altera-opensource/u-boot-socfpga/tree/socfpga_v2014.10_arria10_bringup
+commit : https://github.com/altera-opensource/u-boot-socfpga/commit/a711b5f67d9e44ab54d77e9af523fe73cabc3629
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera
+-----------------------------------------------------------------------
+3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+tag    : https://github.com/altera-opensource/meta-altera/releases/tag/ACDS17.0_REL_GSRD_RC1
+branch : https://github.com/altera-opensource/meta-altera/tree/angstrom-v2015.12-yocto2.0
+commit : https://github.com/altera-opensource/meta-altera/commit/3cfd56bb15673795435cf7684ef9c723283a6bce
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   meta-altera-refdes
+-----------------------------------------------------------------------
+4f50644 Loh, Tien Hock FogBugz #426643: Fix an issue where IP is not printed on small footprint RFS
+tag    : https://github.com/altera-opensource/meta-altera-refdes/releases/tag/ACDS17.0_REL_GSRD_RC1
+branch : https://github.com/altera-opensource/meta-altera-refdes/tree/gsrd-17.0
+commit : https://github.com/altera-opensource/meta-altera-refdes/commit/4f50644a164d11eb82ec1f1378f14db66a327d68
+-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------
+repo:   linux-refdesigns
+-----------------------------------------------------------------------
+a3d4e65 Tien Hock Loh FogBugz #369619: Remove the use of IRQF_DISABLED in GSRD pio-interrupt
+tag    : https://github.com/altera-opensource/linux-refdesigns/releases/tag/ACDS17.0_REL_GSRD_RC1
+branch : https://github.com/altera-opensource/linux-refdesigns/tree/socfpga-17.0
+commit : https://github.com/altera-opensource/linux-refdesigns/commit/a3d4e657087dbf535401b18cdd810591857b6961
+-----------------------------------------------------------------------
+
+Saved report : /home/atull/bin/linux-infra/tools/../portal-release/ACDS17.0/ACDS17.0_REL_GSRD_RC1.txt
+========================================================================
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.1.33-ltsi            tag    : ACDS17.0_REL_GSRD_RC1
+ $ git push --dry-run portal 7656aaf8b6501308e78c6babcd777b341ee4f7e9:refs/tags/ACDS17.0_REL_GSRD_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         7656aaf8b6501308e78c6babcd777b341ee4f7e9 -> ACDS17.0_REL_GSRD_RC1
+
+ $ git push --dry-run portal 7656aaf8b6501308e78c6babcd777b341ee4f7e9:refs/heads/socfpga-4.1.33-ltsi
+To git@github.com:altera-opensource/linux-socfpga
+   b84195c..7656aaf  7656aaf8b6501308e78c6babcd777b341ee4f7e9 -> socfpga-4.1.33-ltsi
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-3.10-ltsi              tag    : ACDS17.0_REL_M10_GSRD_RC1
+ $ git push --dry-run portal 28bac3edbcdc74f98b865986be5d340381896192:refs/tags/ACDS17.0_REL_M10_GSRD_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         28bac3edbcdc74f98b865986be5d340381896192 -> ACDS17.0_REL_M10_GSRD_RC1
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2013.01.01            tag    : ACDS17.0_REL_GSRD_RC1
+ $ git push --dry-run portal 95ab599e1ad7840e08be0aa567eea3fca357572f:refs/tags/ACDS17.0_REL_GSRD_RC1
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         95ab599e1ad7840e08be0aa567eea3fca357572f -> ACDS17.0_REL_GSRD_RC1
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2014.10_arria10_bringup tag    : ACDS17.0_REL_A10_GSRD_RC1
+ $ git push --dry-run portal a711b5f67d9e44ab54d77e9af523fe73cabc3629:refs/tags/ACDS17.0_REL_A10_GSRD_RC1
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         a711b5f67d9e44ab54d77e9af523fe73cabc3629 -> ACDS17.0_REL_A10_GSRD_RC1
+
+ $ git push --dry-run portal a711b5f67d9e44ab54d77e9af523fe73cabc3629:refs/heads/socfpga_v2014.10_arria10_bringup
+To git@github.com:altera-opensource/u-boot-socfpga
+   a5c10b5..a711b5f  a711b5f67d9e44ab54d77e9af523fe73cabc3629 -> socfpga_v2014.10_arria10_bringup
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : portal
+branch : angstrom-v2015.12-yocto2.0     tag    : ACDS17.0_REL_GSRD_RC1
+ $ git push --dry-run portal 3cfd56bb15673795435cf7684ef9c723283a6bce:refs/tags/ACDS17.0_REL_GSRD_RC1
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         3cfd56bb15673795435cf7684ef9c723283a6bce -> ACDS17.0_REL_GSRD_RC1
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera-refdes             remote : portal
+branch : gsrd-17.0                      tag    : ACDS17.0_REL_GSRD_RC1
+ $ git push --dry-run portal 4f50644a164d11eb82ec1f1378f14db66a327d68:refs/tags/ACDS17.0_REL_GSRD_RC1
+To git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         4f50644a164d11eb82ec1f1378f14db66a327d68 -> ACDS17.0_REL_GSRD_RC1
+
+ $ git push --dry-run portal 4f50644a164d11eb82ec1f1378f14db66a327d68:refs/heads/gsrd-17.0
+To git@github.com:altera-opensource/meta-altera-refdes
+ * [new branch]      4f50644a164d11eb82ec1f1378f14db66a327d68 -> gsrd-17.0
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-refdesigns               remote : portal
+branch : socfpga-17.0                   tag    : ACDS17.0_REL_GSRD_RC1
+ $ git push --dry-run portal a3d4e657087dbf535401b18cdd810591857b6961:refs/tags/ACDS17.0_REL_GSRD_RC1
+To git@github.com:altera-opensource/linux-refdesigns
+ * [new tag]         a3d4e657087dbf535401b18cdd810591857b6961 -> ACDS17.0_REL_GSRD_RC1
+
+ $ git push --dry-run portal a3d4e657087dbf535401b18cdd810591857b6961:refs/heads/socfpga-17.0
+To git@github.com:altera-opensource/linux-refdesigns
+ * [new branch]      a3d4e657087dbf535401b18cdd810591857b6961 -> socfpga-17.0
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-4.1.33-ltsi            tag    : ACDS17.0_REL_GSRD_RC1
+ $ git push portal 7656aaf8b6501308e78c6babcd777b341ee4f7e9:refs/tags/ACDS17.0_REL_GSRD_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         7656aaf8b6501308e78c6babcd777b341ee4f7e9 -> ACDS17.0_REL_GSRD_RC1
+
+ $ git push portal 7656aaf8b6501308e78c6babcd777b341ee4f7e9:refs/heads/socfpga-4.1.33-ltsi
+To git@github.com:altera-opensource/linux-socfpga
+   b84195c..7656aaf  7656aaf8b6501308e78c6babcd777b341ee4f7e9 -> socfpga-4.1.33-ltsi
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-socfpga                  remote : portal
+branch : socfpga-3.10-ltsi              tag    : ACDS17.0_REL_M10_GSRD_RC1
+ $ git push portal 28bac3edbcdc74f98b865986be5d340381896192:refs/tags/ACDS17.0_REL_M10_GSRD_RC1
+To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         28bac3edbcdc74f98b865986be5d340381896192 -> ACDS17.0_REL_M10_GSRD_RC1
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2013.01.01            tag    : ACDS17.0_REL_GSRD_RC1
+ $ git push portal 95ab599e1ad7840e08be0aa567eea3fca357572f:refs/tags/ACDS17.0_REL_GSRD_RC1
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         95ab599e1ad7840e08be0aa567eea3fca357572f -> ACDS17.0_REL_GSRD_RC1
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : uboot-socfpga                  remote : portal
+branch : socfpga_v2014.10_arria10_bringup tag    : ACDS17.0_REL_A10_GSRD_RC1
+ $ git push portal a711b5f67d9e44ab54d77e9af523fe73cabc3629:refs/tags/ACDS17.0_REL_A10_GSRD_RC1
+To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         a711b5f67d9e44ab54d77e9af523fe73cabc3629 -> ACDS17.0_REL_A10_GSRD_RC1
+
+ $ git push portal a711b5f67d9e44ab54d77e9af523fe73cabc3629:refs/heads/socfpga_v2014.10_arria10_bringup
+To git@github.com:altera-opensource/u-boot-socfpga
+   a5c10b5..a711b5f  a711b5f67d9e44ab54d77e9af523fe73cabc3629 -> socfpga_v2014.10_arria10_bringup
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera                    remote : portal
+branch : angstrom-v2015.12-yocto2.0     tag    : ACDS17.0_REL_GSRD_RC1
+ $ git push portal 3cfd56bb15673795435cf7684ef9c723283a6bce:refs/tags/ACDS17.0_REL_GSRD_RC1
+To git@github.com:altera-opensource/meta-altera
+ * [new tag]         3cfd56bb15673795435cf7684ef9c723283a6bce -> ACDS17.0_REL_GSRD_RC1
+
+Don't need to push branch head since commit already exists in portal branch
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : meta-altera-refdes             remote : portal
+branch : gsrd-17.0                      tag    : ACDS17.0_REL_GSRD_RC1
+ $ git push portal 4f50644a164d11eb82ec1f1378f14db66a327d68:refs/tags/ACDS17.0_REL_GSRD_RC1
+To git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         4f50644a164d11eb82ec1f1378f14db66a327d68 -> ACDS17.0_REL_GSRD_RC1
+
+ $ git push portal 4f50644a164d11eb82ec1f1378f14db66a327d68:refs/heads/gsrd-17.0
+To git@github.com:altera-opensource/meta-altera-refdes
+ * [new branch]      4f50644a164d11eb82ec1f1378f14db66a327d68 -> gsrd-17.0
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+
+repo   : linux-refdesigns               remote : portal
+branch : socfpga-17.0                   tag    : ACDS17.0_REL_GSRD_RC1
+ $ git push portal a3d4e657087dbf535401b18cdd810591857b6961:refs/tags/ACDS17.0_REL_GSRD_RC1
+To git@github.com:altera-opensource/linux-refdesigns
+ * [new tag]         a3d4e657087dbf535401b18cdd810591857b6961 -> ACDS17.0_REL_GSRD_RC1
+
+ $ git push portal a3d4e657087dbf535401b18cdd810591857b6961:refs/heads/socfpga-17.0
+To git@github.com:altera-opensource/linux-refdesigns
+ * [new branch]      a3d4e657087dbf535401b18cdd810591857b6961 -> socfpga-17.0
+
+---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----   ---   ----
+

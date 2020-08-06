@@ -1,0 +1,19 @@
+#!/bin/bash
+
+function usage()
+{
+    echo "$(basename $0)" [ref]
+    echo "  Converts the ref to the following format:"
+    echo "  Commit f5160f45e3c4 (\"net: stmmac: socfpga: add RMII phy mode\")"
+}
+
+#===================================================================
+
+for foo in $@; do
+    case "${foo}" in
+	-h ) usage; exit ;;
+    esac
+    git log -1 --abbrev=12 --pretty=format:'Commit %h ("%s")' ${foo}
+done
+
+exit 0

@@ -1,0 +1,391 @@
+This is a script-generated report of what was pushed out to the portal.
+
+Note that there is a new 'wiki' section that is wiki markup format (not
+human readable) for cut and paste updating the wiki on the portal.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch socfpga-3.12 :
+  new commits: 6
+2da2378 Steffen Trumtrar ARM: socfpga: dts: fix s2f_* clock name
+1a3dc54 Thor Thayer FogBugz #173185: OCRAM ECC addition for Altera SOCFPGA.
+559eeb1 Thor Thayer FogBugz #178128: Conditionally enable L2 EDAC.
+b17b0ab Graham Moore FogBugz #172665: Sample driver for DMA transfer to FPGA soft IP (FIFO)
+c4ae305 Dinh Nguyen FogBugz #176300: Add support for multiple clock parents
+7e5c9ea Dinh Nguyen FogBugz #177545: Remove the need to force the USB IP into Host mode
+
+
+++wiki:
+| *ID* | *Comment* | *GIT Commit* |
+| community | ARM: socfpga: dts: fix s2f_* clock name | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=2da237835bc561228b93d15f5cc9c35dedd47049 ][ 2da237835bc561228b93d15f5cc9c35dedd47049 ]] |
+| 173185 | OCRAM ECC addition for Altera SOCFPGA. | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=1a3dc549df0a73b4272b2375e551b21370d89b15 ][ 1a3dc549df0a73b4272b2375e551b21370d89b15 ]] |
+| 178128 | Conditionally enable L2 EDAC. | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=559eeb1f73322ebb39552a833bdfd07e4c873d99 ][ 559eeb1f73322ebb39552a833bdfd07e4c873d99 ]] |
+| 172665 | Sample driver for DMA transfer to FPGA soft IP (FIFO) | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=b17b0ab09da57f0eb3c206928ac9a741366f2062 ][ b17b0ab09da57f0eb3c206928ac9a741366f2062 ]] |
+| 176300 | Add support for multiple clock parents | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=c4ae305b08955cb353b59c8ce3b9984aa5575e0f ][ c4ae305b08955cb353b59c8ce3b9984aa5575e0f ]] |
+| 177545 | Remove the need to force the USB IP into Host mode | [[ http://git.rocketboards.org/?p=linux-socfpga.git;a=commit;h=7e5c9eac385c96b07fc85334b7680998ddd0d878 ][ 7e5c9eac385c96b07fc85334b7680998ddd0d878 ]] |
+--wiki:
+
+
+branch socfpga-3.4-ltsi :
+  new commits: 0
+
+
+branch socfpga-3.9-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch socfpga_v2013.01.01 :
+  new commits: 9
+85241bd Chin Liang See FogBugz #158674: Enable option to get EMAC address from EEPROM
+968b0cd Chin Liang See FogBugz #158674: Enhance DesignWare I2C driver address support
+73ce329 Chin Liang See FogBugz #158674: Enabling I2C support for U-Boot
+ea9dd0f Chin Liang See FogBugz #178339: Clearing PLL loss bits after clock configuration
+00a85b0 Chin Liang See mmc/dwmmc: Using calloc instead malloc
+c90e469 Chin Liang See FogBugz #158674: Enhance drivers to use derived clock value
+53b6875 Chin Liang See FogBugz #158674: Enhance Preloader to display clock info
+2b27ef2 Chin Liang See FogBugz #159721: Enhance Arria V MPU clock to 1050MHz
+27a0f7d Chin Liang See FogBugz #159721: Fix QSPI baudrate divisor algorithm
+
+
+++wiki:
+| *ID* | *Comment* | *GIT Commit* |
+| 158674 | Enable option to get EMAC address from EEPROM | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=85241bd21a85c915b978d473c7f45324cf36344b ][ 85241bd21a85c915b978d473c7f45324cf36344b ]] |
+| 158674 | Enhance DesignWare I2C driver address support | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=968b0cdd3fbdfdf8377c5d82844e7c17687059df ][ 968b0cdd3fbdfdf8377c5d82844e7c17687059df ]] |
+| 158674 | Enabling I2C support for U-Boot | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=73ce32933080089ec999bd2b25dd2bc7f8d3abe7 ][ 73ce32933080089ec999bd2b25dd2bc7f8d3abe7 ]] |
+| 178339 | Clearing PLL loss bits after clock configuration | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=ea9dd0f441cc5530530a3b98535e04c10b90a970 ][ ea9dd0f441cc5530530a3b98535e04c10b90a970 ]] |
+| community | mmc/dwmmc: Using calloc instead malloc | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=00a85b0116a42ceaec0a03334a6d0f10fdd5ca08 ][ 00a85b0116a42ceaec0a03334a6d0f10fdd5ca08 ]] |
+| 158674 | Enhance drivers to use derived clock value | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=c90e46999393d2ea5e455f1af8e8b1bde1910f1d ][ c90e46999393d2ea5e455f1af8e8b1bde1910f1d ]] |
+| 158674 | Enhance Preloader to display clock info | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=53b6875eb0615224d9016e0f60d7e4990884554d ][ 53b6875eb0615224d9016e0f60d7e4990884554d ]] |
+| 159721 | Enhance Arria V MPU clock to 1050MHz | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=2b27ef2511008b690b1130fba9baeb81f8ea8e9b ][ 2b27ef2511008b690b1130fba9baeb81f8ea8e9b ]] |
+| 159721 | Fix QSPI baudrate divisor algorithm | [[ http://git.rocketboards.org/?p=u-boot-socfpga.git;a=commit;h=27a0f7d8a0f43708c502d248a8d82a1737f3ab12 ][ 27a0f7d8a0f43708c502d248a8d82a1737f3ab12 ]] |
+--wiki:
+
+
+branch socfpga_v2013.01.01-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: poky-socfpga
+
+branch danny-altera :
+  new commits: 0
+
+
+branch danny-altera-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.12
+
+commit 2da237835bc561228b93d15f5cc9c35dedd47049
+Author: Steffen Trumtrar <s.trumtrar@pengutronix.de>
+Date:   Mon Oct 7 11:11:38 2013 -0500
+
+    ARM: socfpga: dts: fix s2f_* clock name
+    
+    The s2f_* clocks are called h2f_* in the datasheets.
+    Rename them accordingly in the socfpga.dtsi.
+    
+    Signed-off-by: Steffen Trumtrar <s.trumtrar@pengutronix.de>
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+    
+    Conflicts:
+    
+    	arch/arm/boot/dts/socfpga.dtsi
+
+commit 1a3dc549df0a73b4272b2375e551b21370d89b15
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Thu Dec 19 17:33:11 2013 -0600
+
+    FogBugz #173185: OCRAM ECC addition for Altera SOCFPGA.
+    
+    Add On-Chip RAM ECC to the Error Detection And Correction module for
+    tracking ECC errors in Altera's SOCFPGA OCRAM.
+    This patch adds code to the kernel startup that initializes OCRAM
+    and ensures the ECC is enabled. The generic EDAC Manager driver
+    handles the addition of OCRAM to the driver when the OCRAM "compatible"
+    field in the device tree matches.
+    Specific data is loaded depending upon which type of ECC (L2 or OCRAM)
+    is being initalized.
+    
+    V2 Changes:
+    - Fix error message in OCRAM initialization.
+    - Document the device tree bindings for OCRAM & OCRAM ECC.
+    - Change variable name from sram to iram for clarity.
+    - Resync with main since EDAC L2 trigger was added.
+    
+    V3 Changes:
+    - Remove OCRAM device tree binding file.
+    - Add conditional compile statements for L2 clear in socfpga.c
+    
+    V4 Changes:
+    - Add OCRAM only config.
+    - Split OCRAM initialization into own files (ocram.c & ocram.h)
+    - Conditionally compile OCRAM matching tag.
+    
+    V5 Changes:
+    - Cleanup of ocramedac address in socfpga.dtsi
+    - Use pr_err() consistently in ocram.c
+    
+    V6 Changes:
+    - Cleanup of ocramedac address in socfpga-ocram-ecc.txt.
+    - Remove unused .setup function pointer.
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit 559eeb1f73322ebb39552a833bdfd07e4c873d99
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Wed Jan 15 18:13:00 2014 -0600
+
+    FogBugz #178128: Conditionally enable L2 EDAC.
+    
+    Currently the L2 cache is the only ECC module implemented in
+    the ECC Manager. However, as more modules are added, the need
+    to turn each module on & off is required. The addition of
+    conditional compiles based on a new CONFIG (L2 ECC) is added
+    here.
+    
+    V2:
+    Include dependency on CONFIG_CACHE_L2X0
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit b17b0ab09da57f0eb3c206928ac9a741366f2062
+Author: Graham Moore <grmoore@altera.com>
+Date:   Fri Dec 13 13:08:56 2013 -0600
+
+    FogBugz #172665: Sample driver for DMA transfer to FPGA soft IP (FIFO)
+    
+    -This fpga-dma driver is an example driver for a specific FPGA soft IP
+    -The soft IP presents a FIFO which can be read and written through
+    the debugfs interface
+    -The DMA transfer code uses 'generic' dma interfaces
+    -The fpga-dma driver uses generic register and DMA definitions
+    in the devicetree
+    
+    V2:
+    -Device tree changes removed from socfpga_cyclone5.dts and
+    documented in Documentation/devicetree/bindings/arm/altera/fpga-dma.txt
+    
+    V3:
+    -Formatting changes, used Lindent script to format fpga-dma.c
+    
+    V4:
+    -More formatting changes, lined up #defines, alphabetize headers
+    
+    Signed-off-by: Graham Moore <grmoore@altera.com>
+
+commit c4ae305b08955cb353b59c8ce3b9984aa5575e0f
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Tue Jan 14 14:05:02 2014 -0600
+
+    FogBugz #176300: Add support for multiple clock parents
+    
+    The periph and sdram PLL can have any of 3 parents. For the perip pll, the
+    parents can be either: osc1, osc2, or f2s_periph_ref_clk. For the sdram pll,
+    the parents can be: osc1, osc2, or f2s_sdram_ref_clk.
+    
+    Update the clock driver to read the appropriate register for determine the
+    correct parent for the periph and sdram PLL.
+    
+    Add the new clock entries into the socfpga DTSI file. Also remove the
+    "clock-frequency" property for the f2s_periph_ref_clk from the DTSI file, as
+    this property should be in the DTS file.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+commit 7e5c9eac385c96b07fc85334b7680998ddd0d878
+Author: Dinh Nguyen <dinguyen@altera.com>
+Date:   Mon Jan 13 10:18:17 2014 -0600
+
+    FogBugz #177545: Remove the need to force the USB IP into Host mode
+    
+    Users must correctly use a USB OTG A-mini to A Male cable adapter and the USB
+    IP will correctly transistion into HOST mode.
+    
+    Re-align the DWC2 USB driver with kernel.org.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 85241bd21a85c915b978d473c7f45324cf36344b
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Jan 23 07:39:51 2014 -0800
+
+    FogBugz #158674: Enable option to get EMAC address from EEPROM
+    
+    Provide additional option for user to get the EMAC address from
+    EEPROM chip 24LC32A which is available on Altera dev kit.
+    Currently, user can get the EMAC address through the U-Boot
+    environment that stored within flash devices.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v5
+    - Update documentation to reflect changes for v4
+    Changes for v4
+    - Auto assign ethaddr environment from EEPROM if its empty
+    Changes for v3
+    - check for MAC address validity before assign to ethaddr environment
+    Changes for v2
+    - Swapped the MAC address to match the board team implementation
+
+commit 968b0cdd3fbdfdf8377c5d82844e7c17687059df
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Jan 23 07:32:57 2014 -0800
+
+    FogBugz #158674: Enhance DesignWare I2C driver address support
+    
+    Enhance the DesignWare I2C driver to support address length more
+    than 1 byte. This enhancement is required as some I2C slave
+    device such as EEPROM chip might have 16 bit address byte.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    Acked-by: Alexey Brodkin <Alexey.Brodkin@synopsys.com>
+    Cc: Tom Rini <trini@ti.com>
+    cc: Armando Visconti <armando.visconti@st.com>
+    Cc: Stefan Roese <sr@denx.de>
+    Cc: Albert ARIBAUD <albert.u.boot@aribaud.net>
+    Cc: Heiko Schocher <hs@denx.de>
+    Cc: Vipin KUMAR <vipin.kumar@st.com>
+    Cc: Mischa Jonker <mjonker@synopsys.com>
+    ---
+    Changes for v2
+    - Removed the function check_params()
+
+commit 73ce32933080089ec999bd2b25dd2bc7f8d3abe7
+Author: Chin Liang See <clsee@altera.com>
+Date:   Wed Jan 22 07:15:25 2014 -0800
+
+    FogBugz #158674: Enabling I2C support for U-Boot
+    
+    Enable the DesignWare I2C controller support within U-Boot.
+    Only I2C0 is enabled per Cyclone V and Arria V dev kit. At
+    same time, rename socfpga_base_addrs.h to hardware.h. This is
+    to align with the file name used by DesignWare I2C driver.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v4
+    - Update the license header for hardware.h
+    Changes for v3
+    - Renamed socfpga_base_addrs.h to hardware.h
+    Changes for v2
+    - Updated hardware.h which mainly used for I2C driver
+
+commit ea9dd0f441cc5530530a3b98535e04c10b90a970
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Jan 20 15:19:57 2014 -0800
+
+    FogBugz #178339: Clearing PLL loss bits after clock configuration
+    
+    Clear all the PLL lost of lock bits in Clock Manager's interrupt
+    status register. The false PLL lost of lock happen during the PLL
+    reconfiguration in Preloader stage.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 00a85b0116a42ceaec0a03334a6d0f10fdd5ca08
+Author: Chin Liang See <clsee@altera.com>
+Date:   Tue Jan 14 07:31:08 2014 -0800
+
+    mmc/dwmmc: Using calloc instead malloc
+    
+    To enhance the SDMMC DesignWare driver to use calloc instead of
+    malloc. This will avoid the incident that uninitialized members
+    of mmc structure are later used for NULL comparison.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    Cc: Rajeshwari Shinde <rajeshwari.s@samsung.com>
+    Cc: Jaehoon Chung <jh80.chung@samsung.com>
+    Cc: Mischa Jonker <mjonker@synopsys.com>
+    Cc: Alexey Brodkin <abrodkin@synopsys.com>
+    Cc: Andy Fleming <afleming@freescale.com>
+    Cc: Pantelis Antoniou <panto@antoniou-consulting.com>
+    Acked-by: Pantelis Antoniou <panto@antoniou-consulting.com>
+
+commit c90e46999393d2ea5e455f1af8e8b1bde1910f1d
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Jan 10 11:42:46 2014 -0800
+
+    FogBugz #158674: Enhance drivers to use derived clock value
+    
+    Enhance the drivers for flash controllers (SDMMC and QSPI)
+    and UART to determine the incoming clock frequency (from PLL)
+    based on derived values instead of macros.
+    
+    The derived values are based on Clock Manager registers and incoming
+    clock source frequencies (from handoff file pll_config.h). This
+    enhancement will avoid user manually update the clock frequencies
+    for drivers when any changes made to Clock Manager configuration.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Used uint32_t instead unsigned long for Clock Manager register struct
+
+commit 53b6875eb0615224d9016e0f60d7e4990884554d
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Jan 10 11:42:14 2014 -0800
+
+    FogBugz #158674: Enhance Preloader to display clock info
+    
+    Preloader will display the clock info such as MPU clock, DDR clock
+    and others during run time. It will help user to know the current
+    clock configuration being used without reading the handoff file.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 2b27ef2511008b690b1130fba9baeb81f8ea8e9b
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Jan 10 11:41:45 2014 -0800
+
+    FogBugz #159721: Enhance Arria V MPU clock to 1050MHz
+    
+    Enhance the Arria V MPU clock from 800MHz to 1050MHz. This is
+    to align with the new Arria V dev kit which is using I3 speed
+    grade parts.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 27a0f7d8a0f43708c502d248a8d82a1737f3ab12
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Jan 10 11:38:06 2014 -0800
+
+    FogBugz #159721: Fix QSPI baudrate divisor algorithm
+    
+    To fix the algorithm to ensure the generated serial clock (SCLK)
+    by QSPI controller doesn't exceed the targeted serial clock
+    specified by user.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+    ---
+    Changes for v2
+    - Updated the comments
+
+-----------------------------------------------------------------------
+
+

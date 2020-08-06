@@ -1,0 +1,15 @@
+I pushed these two patches to socfpga-4.1.22-ltsi on 9/25/2016:
+
+f812ba3 2016-09-20 10:28:00 -0500 : Dinh Nguyen : FogBugz #403733: Update cache settings for A10
+f4ad7d0 2016-09-18 08:38:55 -0700 : Matthew Gerlach : FogBugz #404467: add missing binding documentation
+
+atull@linuxheads99:~/repos/internal/linux-socfpga$ git push portal f812ba3:refs/heads/socfpga-4.1.22-ltsi
+Counting objects: 13, done.
+Delta compression using up to 6 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (13/13), 1.57 KiB | 0 bytes/s, done.
+Total 13 (delta 11), reused 3 (delta 3)
+remote: Resolving deltas: 100% (11/11), completed with 10 local objects.
+To github.com:altera-opensource/linux-socfpga
+   47fdd11..f812ba3  f812ba3 -> socfpga-4.1.22-ltsi
+

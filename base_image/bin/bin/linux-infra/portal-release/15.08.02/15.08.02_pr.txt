@@ -1,0 +1,488 @@
+
+
+Script-generated report of tags/branches that were pushed to the portal git today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.1
+branch tag  : rel_socfpga-4.1_15.08.02_pr
+new commits : 16
+186070d4 Dinh Nguyen FogBugz #317771: Fix all the memory leaks
+cc9c735 Dinh Nguyen FogBugz #317354: EDAC driver should not look for ECC_CORR_EN
+b2e6d94 Dinh Nguyen FogBugz #315701-10: fix the ALTR_MAN_GRP_OCRAM_ECC_OFFSET define
+341ba84 Roman Bulgakov FogBugz #315701-9: edit OCRAM ECC device tree documentation
+8bb3767 Roman Bulgakov FogBugz #315701-8: dts: add OCRAM EDAC entry
+a6baac5 Dinh Nguyen FogBugz #315701-7: update ECC driver to support Arria10
+28b95d5 Roman Bulgakov FogBugz #315701-6: Add support for OCRAM ECC on arria10
+196ec3d Roman Bulgakov FogBugz #315701-5: edit L2 cache ECC device tree documentation
+4c86f53 Roman Bulgakov FogBugz #315701-4: add L2 cache EDAC entry for Arria10
+6be92e2 Roman Bulgakov FogBugz #315701-3: Add support for Arria10 L2 ECC
+791800e Dinh Nguyen FogBugz #315701-2: add of_node_put for L2 ecc node
+7cc80a5 Dinh Nguyen FogBugz #315701-1: add call to enable l2 edac for arria10
+9315658 Ricardo Ribalda Delgado leds/led-class: Add missing put_device()
+837f4cf Geert Uytterhoeven leds: leds-gpio: Add missing #include <linux/of.h>
+d8366a5 Jacek Anaszewski leds: gpio: Fix error handling for led name null pointer case
+2314806 Sebastian Hesselbarth leds: gpio: Fix device teardown on probe deferral
+
+
+++wiki:
+*Branch name*: socfpga-4.1, *Tag name:* rel_socfpga-4.1_15.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 317771 | Fix all the memory leaks | [[ https://github.com/altera-opensource/linux-socfpga/commit/186070d46805086fe9b46d95ac6d0e257203e5a4 ][ 186070d46805086fe9b46d95ac6d0e257203e5a4 ]] |
+| 317354 | EDAC driver should not look for ECC_CORR_EN | [[ https://github.com/altera-opensource/linux-socfpga/commit/cc9c735880b82b24b6b693bd86213323ad5bc48e ][ cc9c735880b82b24b6b693bd86213323ad5bc48e ]] |
+| 315701-10 | fix the ALTR_MAN_GRP_OCRAM_ECC_OFFSET define | [[ https://github.com/altera-opensource/linux-socfpga/commit/b2e6d94c3df66a3bd0411b738e141cf5258c23c7 ][ b2e6d94c3df66a3bd0411b738e141cf5258c23c7 ]] |
+| 315701-9 | edit OCRAM ECC device tree documentation | [[ https://github.com/altera-opensource/linux-socfpga/commit/341ba8400865849b3b56f604633e16f070514945 ][ 341ba8400865849b3b56f604633e16f070514945 ]] |
+| 315701-8 | dts: add OCRAM EDAC entry | [[ https://github.com/altera-opensource/linux-socfpga/commit/8bb37677d75b41f909e035d90026fccb28e73035 ][ 8bb37677d75b41f909e035d90026fccb28e73035 ]] |
+| 315701-7 | update ECC driver to support Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/a6baac580bfd4adcaac83bf7762f1a4ce8d0a6d5 ][ a6baac580bfd4adcaac83bf7762f1a4ce8d0a6d5 ]] |
+| 315701-6 | Add support for OCRAM ECC on arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/28b95d5c5c5e49eaca9cc4ba697186094c8cd538 ][ 28b95d5c5c5e49eaca9cc4ba697186094c8cd538 ]] |
+| 315701-5 | edit L2 cache ECC device tree documentation | [[ https://github.com/altera-opensource/linux-socfpga/commit/196ec3d1756e099b67ee53bdbf8b670249f02a20 ][ 196ec3d1756e099b67ee53bdbf8b670249f02a20 ]] |
+| 315701-4 | add L2 cache EDAC entry for Arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/4c86f53aa0c532a4fd9e206064ccbe6b62e06456 ][ 4c86f53aa0c532a4fd9e206064ccbe6b62e06456 ]] |
+| 315701-3 | Add support for Arria10 L2 ECC | [[ https://github.com/altera-opensource/linux-socfpga/commit/6be92e2b513926f14df820c6d69a59e3b9e96163 ][ 6be92e2b513926f14df820c6d69a59e3b9e96163 ]] |
+| 315701-2 | add of_node_put for L2 ecc node | [[ https://github.com/altera-opensource/linux-socfpga/commit/791800ea4d3aeb8258a030ed9710a52392007ca6 ][ 791800ea4d3aeb8258a030ed9710a52392007ca6 ]] |
+| 315701-1 | add call to enable l2 edac for arria10 | [[ https://github.com/altera-opensource/linux-socfpga/commit/7cc80a50299a8cedb90af8e8997911d0fc999a5c ][ 7cc80a50299a8cedb90af8e8997911d0fc999a5c ]] |
+| community | leds/led-class: Add missing put_device() | [[ https://github.com/altera-opensource/linux-socfpga/commit/93156582a4ede1aa87bb7d0ac42bfb6219512535 ][ 93156582a4ede1aa87bb7d0ac42bfb6219512535 ]] |
+| community | leds: leds-gpio: Add missing #include <linux/of.h> | [[ https://github.com/altera-opensource/linux-socfpga/commit/837f4cf0d706791317b40a637335d4b0b855e6db ][ 837f4cf0d706791317b40a637335d4b0b855e6db ]] |
+| community | leds: gpio: Fix error handling for led name null pointer case | [[ https://github.com/altera-opensource/linux-socfpga/commit/d8366a5a28ee248426a3bcf36a90aebe33949804 ][ d8366a5a28ee248426a3bcf36a90aebe33949804 ]] |
+| community | leds: gpio: Fix device teardown on probe deferral | [[ https://github.com/altera-opensource/linux-socfpga/commit/23148069d470d5cfded95bcaa8147a657f4624ce ][ 23148069d470d5cfded95bcaa8147a657f4624ce ]] |
+--wiki:
+
+
+branch      : socfpga-3.10-ltsi
+branch tag  : rel_socfpga-3.10-ltsi_15.08.02_pr
+new commits : 0
+
+
+branch      : socfpga-3.10-ltsi-rt
+branch tag  : rel_socfpga-3.10-ltsi-rt_15.08.02_pr
+new commits : 0
+
+
+Tags to push out to external git:
+tag:    rel_socfpga-4.1_15.08.02_pr
+commit: 186070d4 Dinh Nguyen FogBugz #317771: Fix all the memory leaks
+
+tag:    rel_socfpga-3.10-ltsi_15.08.02_pr
+commit: 8418e93 Graham Moore FogBugz #314791: QSPI: Set jedec_id in flash data structure
+
+tag:    rel_socfpga-3.10-ltsi-rt_15.08.02_pr
+commit: 8a34ee1 Graham Moore FogBugz #314791: QSPI: Set jedec_id in flash data structure
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_15.08.02_pr
+new commits : 1
+353283b Tien Fong Chee FogBugz #241114: Fixed the compilation issue when BOOT_FROM_NAND is checked on preloader.
+
+
+++wiki:
+*Branch name*: socfpga_v2013.01.01, *Tag name:* rel_socfpga_v2013.01.01_15.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| 241114 | Fixed the compilation issue when BOOT_FROM_NAND is checked on preloader. | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/353283b6e75eabdcc48dadf08507b4b86c229d78 ][ 353283b6e75eabdcc48dadf08507b4b86c229d78 ]] |
+--wiki:
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_15.08.02_pr
+new commits : 2
+2ffbb7d Chin Liang See mmc: Continue polling MMC card for OCR only if it is still not ready
+912620e Jaehoon Chung mmc: dw_mmc: fixed the wrong bit control
+
+
+++wiki:
+*Branch name*: socfpga_v2014.10_arria10_bringup, *Tag name:* rel_socfpga_v2014.10_arria10_bringup_15.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | mmc: Continue polling MMC card for OCR only if it is still not ready | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/2ffbb7d6e8a5967b682da642b996069415fe43a7 ][ 2ffbb7d6e8a5967b682da642b996069415fe43a7 ]] |
+| community | mmc: dw_mmc: fixed the wrong bit control | [[ https://github.com/altera-opensource/u-boot-socfpga/commit/912620edca2d69bfc2b8f1b26dea316382316148 ][ 912620edca2d69bfc2b8f1b26dea316382316148 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_socfpga_v2013.01.01_15.08.02_pr
+commit: 353283b Tien Fong Chee FogBugz #241114: Fixed the compilation issue when BOOT_FROM_NAND is checked on preloader.
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_15.08.02_pr
+commit: 2ffbb7d Chin Liang See mmc: Continue polling MMC card for OCR only if it is still not ready
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_15.08.02_pr
+new commits : 1
+7e781b1 Yves Vandervennet update against the latest changes for meta-kde
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-socfpga, *Tag name:* rel_angstrom-v2014.12-socfpga_15.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | update against the latest changes for meta-kde | [[ https://github.com/altera-opensource/angstrom-socfpga/commit/7e781b1650493f4ec3121b599132c8f8c367d7e7 ][ 7e781b1650493f4ec3121b599132c8f8c367d7e7 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-socfpga_15.08.02_pr
+commit: 7e781b1 Yves Vandervennet update against the latest changes for meta-kde
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2014.12-yocto1.7
+branch tag  : rel_angstrom-v2014.12-yocto1.7_15.08.02_pr
+new commits : 2
+8aaa263 Graham Moore Add ARCH=arm to sopcfpga-test bb make files
+870fb05 Tien Hock Loh FogBugz #311198: Add uboot version configuration to arria5 and cyclone5
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-yocto1.7, *Tag name:* rel_angstrom-v2014.12-yocto1.7_15.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Add ARCH=arm to sopcfpga-test bb make files | [[ https://github.com/altera-opensource/meta-altera/commit/8aaa263431c1c75653d4d93c12ccd6984cd4f084 ][ 8aaa263431c1c75653d4d93c12ccd6984cd4f084 ]] |
+| 311198 | Add uboot version configuration to arria5 and cyclone5 | [[ https://github.com/altera-opensource/meta-altera/commit/870fb05fbc3c5702ec9224cde5d96efe175b1a5a ][ 870fb05fbc3c5702ec9224cde5d96efe175b1a5a ]] |
+--wiki:
+
+
+branch      : angstrom-v2014.12-yocto1.7_a10
+branch tag  : rel_angstrom-v2014.12-yocto1.7_a10_15.08.02_pr
+new commits : 1
+d58b311 Graham Moore Add ARCH=arm to sopcfpga-test bb make files
+
+
+++wiki:
+*Branch name*: angstrom-v2014.12-yocto1.7_a10, *Tag name:* rel_angstrom-v2014.12-yocto1.7_a10_15.08.02_pr
+| *ID* | *Comment* | *GIT Commit* |
+| community | Add ARCH=arm to sopcfpga-test bb make files | [[ https://github.com/altera-opensource/meta-altera/commit/d58b31190428328e703ed2bcc148b31c49caa670 ][ d58b31190428328e703ed2bcc148b31c49caa670 ]] |
+--wiki:
+
+
+Tags to push out to external git:
+tag:    rel_angstrom-v2014.12-yocto1.7_15.08.02_pr
+commit: 8aaa263 Graham Moore Add ARCH=arm to sopcfpga-test bb make files
+
+tag:    rel_angstrom-v2014.12-yocto1.7_a10_15.08.02_pr
+commit: d58b311 Graham Moore Add ARCH=arm to sopcfpga-test bb make files
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.1
+
+commit 186070d46805086fe9b46d95ac6d0e257203e5a4
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri Aug 14 16:57:34 2015 -0500
+
+    FogBugz #317771: Fix all the memory leaks
+    
+    unmap all of these locally scoped ioremap and of_iomap variables.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: fix up ecc.c to not have some many 'goto out' for probe errors
+
+commit cc9c735880b82b24b6b693bd86213323ad5bc48e
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Fri Aug 14 14:33:03 2015 -0500
+
+    FogBugz #317354: EDAC driver should not look for ECC_CORR_EN
+    
+    The decision was made by the bootloader to not support ECC_CORR_EN
+    functionality. Disabling ECC_CORR_EN, and only leaving ECC_EN means
+    that when error happens, it is the user's responsibility to perform
+    a full SDRAM scrub.
+    
+    So for now, we will not be supporting ECC_CORR_EN in the EDAC driver.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit b2e6d94c3df66a3bd0411b738e141cf5258c23c7
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Wed Aug 5 21:33:46 2015 -0500
+
+    FogBugz #315701-10: fix the ALTR_MAN_GRP_OCRAM_ECC_OFFSET define
+    
+    The ALTR_MAN_GRP_OCRAM_ECC_OFFSET should be at 0x0 and not 0x4.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 341ba8400865849b3b56f604633e16f070514945
+Author: Roman Bulgakov <roman.bulgakov@globallogic.com>
+Date:   Wed Jul 29 22:00:13 2015 +0300
+
+    FogBugz #315701-9: edit OCRAM ECC device tree documentation
+    
+    This patch updates the Altera OCRAM ECC device tree
+    documentation to describe the Arria 10 OCRAM EDAC entry.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 8bb37677d75b41f909e035d90026fccb28e73035
+Author: Roman Bulgakov <roman.bulgakov@globallogic.com>
+Date:   Wed Jul 29 21:57:34 2015 +0300
+
+    FogBugz #315701-8: dts: add OCRAM EDAC entry
+    
+    This patch adds the new OCRAM EDAC entry into the
+    Arria 10 DTSI file.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit a6baac580bfd4adcaac83bf7762f1a4ce8d0a6d5
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Aug 3 17:17:26 2015 -0500
+
+    FogBugz #315701-7: update ECC driver to support Arria10
+    
+    The Arria10 ECC manager is a bit different from the C5/A5. This patch
+    updates the ECC driver to add support the Arria10 platform. The patch adds
+    new defines, and the new dts binding to the driver.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 28b95d5c5c5e49eaca9cc4ba697186094c8cd538
+Author: Roman Bulgakov <roman.bulgakov@globallogic.com>
+Date:   Mon Aug 3 16:31:03 2015 -0500
+
+    FogBugz #315701-6: Add support for OCRAM ECC on arria10
+    
+    Add MSL code to support OCRAM ECC on Arria10.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: remove goto success
+    v3: correct return once socfpga_init_arria_ocram_ecc() is completed
+    v4: put back alert message for A5/C5
+
+commit 196ec3d1756e099b67ee53bdbf8b670249f02a20
+Author: Roman Bulgakov <roman.bulgakov@globallogic.com>
+Date:   Wed Jul 29 20:18:34 2015 +0300
+
+    FogBugz #315701-5: edit L2 cache ECC device tree documentation
+    
+    This patch changes the Altera L2 cache ECC device tree
+    documentation to describe Arria 10 L2 cache EDAC entry.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: change commit header to "Documentation: dts: bindings:"
+
+commit 4c86f53aa0c532a4fd9e206064ccbe6b62e06456
+Author: Roman Bulgakov <roman.bulgakov@globallogic.com>
+Date:   Wed Jul 29 20:16:24 2015 +0300
+
+    FogBugz #315701-4: add L2 cache EDAC entry for Arria10
+    
+    This patch adds the new L2 cache EDAC entry into the
+    Arria 10 DTSI file.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: updated commit header to be "ARM: socfpga: dts"
+
+commit 6be92e2b513926f14df820c6d69a59e3b9e96163
+Author: Roman Bulgakov <roman.bulgakov@globallogic.com>
+Date:   Mon Aug 3 16:26:38 2015 -0500
+
+    FogBugz #315701-3: Add support for Arria10 L2 ECC
+    
+    Refactor the L2 ECC driver to support Arria10.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: make handle_ce and handle_ue a boolean type
+
+commit 791800ea4d3aeb8258a030ed9710a52392007ca6
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Aug 3 16:23:49 2015 -0500
+
+    FogBugz #315701-2: add of_node_put for L2 ecc node
+    
+    Both of the ecc init functions need to call of_node_put once the node is
+    found.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+
+commit 7cc80a50299a8cedb90af8e8997911d0fc999a5c
+Author: Dinh Nguyen <dinguyen@opensource.altera.com>
+Date:   Mon Aug 3 15:53:06 2015 -0500
+
+    FogBugz #315701-1: add call to enable l2 edac for arria10
+    
+    Call socfpga_init_arria10_l2_ecc to initialize the L2 ECC on Arria10.
+    
+    Signed-off-by: Roman Bulgakov <roman.bulgakov@globallogic.com>
+    Signed-off-by: Dinh Nguyen <dinguyen@opensource.altera.com>
+    ---
+    v2: Add SOCFPGA_A10_MPU_CTRL_L2_ECC_EN and SOCFPGA_A10_ECC_INTMASK_CLR_EN
+
+commit 93156582a4ede1aa87bb7d0ac42bfb6219512535
+Author: Ricardo Ribalda Delgado <ricardo.ribalda@gmail.com>
+Date:   Fri Jul 31 13:36:21 2015 +0200
+
+    leds/led-class: Add missing put_device()
+    
+    Devices found by class_find_device must be freed with put_device().
+    Otherwise the reference count will not work properly.
+    
+    Fixes: a96aa64cb572 ("leds/led-class: Handle LEDs with the same name")
+    Reported-by: Alan Tull <delicious.quinoa@gmail.com>
+    Signed-off-by: Ricardo Ribalda Delgado <ricardo.ribalda@gmail.com>
+    Acked-by: Jacek Anaszewski <j.anaszewski@samsung.com>
+    Signed-off-by: Bryan Wu <cooloney@gmail.com>
+
+commit 837f4cf0d706791317b40a637335d4b0b855e6db
+Author: Geert Uytterhoeven <geert@linux-m68k.org>
+Date:   Thu May 7 01:08:09 2015 -0700
+
+    leds: leds-gpio: Add missing #include <linux/of.h>
+    
+    Signed-off-by: Geert Uytterhoeven <geert@linux-m68k.org>
+    Acked-by: Jacek Anaszewski <j.anaszewski@samsung.com>
+    Signed-off-by: Bryan Wu <cooloney@gmail.com>
+
+commit d8366a5a28ee248426a3bcf36a90aebe33949804
+Author: Jacek Anaszewski <j.anaszewski@samsung.com>
+Date:   Thu Apr 16 00:30:50 2015 -0700
+
+    leds: gpio: Fix error handling for led name null pointer case
+    
+    Make sure that already registered LEDs will be torn down properly
+    if the name of the next LED to create is unavailable.
+    
+    Signed-off-by: Jacek Anaszewski <j.anaszewski@samsung.com>
+    Cc: Richard Purdie <rpurdie@rpsys.net>
+    Signed-off-by: Bryan Wu <cooloney@gmail.com>
+
+commit 23148069d470d5cfded95bcaa8147a657f4624ce
+Author: Sebastian Hesselbarth <sebastian.hesselbarth@gmail.com>
+Date:   Tue Apr 14 14:23:30 2015 -0700
+
+    leds: gpio: Fix device teardown on probe deferral
+    
+    In gpio_leds_create(), when devm_get_gpiod_from_child() fails with
+    -EPROBE_DEFER on the second gpio led to be created, the first already
+    registered led is not torn down properly. This causes create_gpio_led()
+    to fail for the first led on re-probe().
+    
+    Fix this misbehaviour by incrementing num_leds only if all
+    potentially failing calls completed successfully.
+    
+    Signed-off-by: Sebastian Hesselbarth <sebastian.hesselbarth@gmail.com>
+    Acked-by: Jacek Anaszewski <j.anaszewski@samsung.com>
+    Signed-off-by: Bryan Wu <cooloney@gmail.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 353283b6e75eabdcc48dadf08507b4b86c229d78
+Author: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+Date:   Wed Aug 5 12:41:24 2015 +0800
+
+    FogBugz #241114: Fixed the compilation issue when BOOT_FROM_NAND
+    is checked on preloader.
+    
+    The compilation having issue because some #define are not included
+    during compilation when BOOT_FROM_NAND is checked on preloader
+    support package setting. This patch fixed the issue by including
+    those missing #define when the BOOT_FROM_NAND is checked.
+    
+    Signed-off-by: Tien Fong Chee <tfchee@pg-tfchee-lv.altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2014.10_arria10_bringup
+
+commit 2ffbb7d6e8a5967b682da642b996069415fe43a7
+Author: Chin Liang See <clsee@altera.com>
+Date:   Mon Jul 27 17:04:34 2015 +0800
+
+    mmc: Continue polling MMC card for OCR only if it is still not ready
+    
+    Some MMC cards come to ready state quite quickly, so that the respective
+    flag appears to be set in mmc_send_op_cond already. In this case trying
+    to continue polling the card with CMD1 in mmc_complete_op_cond is incorrect
+    and may lead to unpredictable results. So check the flag before polling
+    and skip it appropriately.
+    
+    Signed-off-by: Andrew Gabbasov <andrew_gabbasov@mentor.com>
+
+commit 912620edca2d69bfc2b8f1b26dea316382316148
+Author: Jaehoon Chung <jh80.chung@samsung.com>
+Date:   Wed Jan 14 17:37:53 2015 +0900
+
+    mmc: dw_mmc: fixed the wrong bit control
+    
+    If mode is not DDR-mode, then it needs to clear it.
+    
+    Signed-off-by: Jaehoon Chung <jh80.chung@samsung.com>
+
+-----------------------------------------------------------------------
+
+log of angstrom-socfpga branch angstrom-v2014.12-socfpga
+
+commit 7e781b1650493f4ec3121b599132c8f8c367d7e7
+Author: Yves Vandervennet <yvanderv@opensource.altera.com>
+Date:   Tue Aug 4 07:47:59 2015 -0500
+
+    update against the latest changes for meta-kde
+    
+    Signed-off-by: Yves Vandervennet <yvanderv@opensource.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7
+
+commit 8aaa263431c1c75653d4d93c12ccd6984cd4f084
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Jul 31 12:30:38 2015 -0500
+
+    Add ARCH=arm to sopcfpga-test bb make files
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+commit 870fb05fbc3c5702ec9224cde5d96efe175b1a5a
+Author: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+Date:   Wed Jul 15 14:45:00 2015 +0800
+
+    FogBugz #311198: Add uboot version configuration to arria5 and cyclone5
+    
+    This is to set the uboot version used by arria5 and cyclone5. The version
+    used should be 2013.01.01.
+    
+    Signed-off-by: Tien Hock Loh <thloh@pg-thloh-l.altera.com>
+
+-----------------------------------------------------------------------
+
+log of meta-altera branch angstrom-v2014.12-yocto1.7_a10
+
+commit d58b31190428328e703ed2bcc148b31c49caa670
+Author: Graham Moore <grmoore@opensource.altera.com>
+Date:   Fri Jul 31 12:30:38 2015 -0500
+
+    Add ARCH=arm to sopcfpga-test bb make files
+    
+    Signed-off-by: Graham Moore <grmoore@opensource.altera.com>
+
+-----------------------------------------------------------------------
+

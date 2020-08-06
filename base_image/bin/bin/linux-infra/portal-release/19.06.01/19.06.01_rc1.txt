@@ -1,0 +1,345 @@
+
+Script-generated report of what we tagged today in internal git.
+These rc tags/branches will retagged as pr and pushed to the portal in two weeks.
+
+
+Alan
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-4.20
+branch tag  : rel_socfpga-4.20_19.06.01_rc1
+new commits : 0
+
+
+branch      : socfpga-5.0
+branch tag  : rel_socfpga-5.0_19.06.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.14.73-ltsi
+branch tag  : rel_socfpga-4.14.73-ltsi_19.06.01_rc1
+new commits : 0
+
+
+branch      : socfpga-4.14.73-ltsi-rt
+branch tag  : rel_socfpga-4.14.73-ltsi-rt_19.06.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socfpga-4.20_19.06.01_rc1
+commit: f1ea231 Alan Tull ARM: dts: socfpga: add ltc2497 on arria10 devkit
+
+tag:    rel_socfpga-5.0_19.06.01_rc1
+commit: bc95527 Dinh Nguyen net: stmmac: socfpga: add RMII phy mode
+
+tag:    rel_socfpga-4.14.73-ltsi_19.06.01_rc1
+commit: f5160f4 Dinh Nguyen net: stmmac: socfpga: add RMII phy mode
+
+tag:    rel_socfpga-4.14.73-ltsi-rt_19.06.01_rc1
+commit: 2dbe6128 Dinh Nguyen net: stmmac: socfpga: add RMII phy mode
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.06.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.06.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.06.01_rc1
+new commits : 3
+ceabc4b Richard Gong HSD #1707031258-3: arm: socfpga: stratix10: extend console command for RSU support
+afecb8b Richard Gong HSD #1707031258-2: arm: socfpga: stratix10: add RSU support for Stratix10 SoC
+bcd04a8 Richard Gong HSD #1707031258-1: arm: socfpga: stratix10: add environment variables for RSU support
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v2013.01.01_19.06.01_rc1
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.06.01_rc1
+commit: af568f3 Tien Fong Chee FogBugz #604090-2: Enable FPGA manager HPS JTAG driver implementation
+
+tag:    rel_socfpga_v2017.09_19.06.01_rc1
+commit: ceabc4b Richard Gong HSD #1707031258-3: arm: socfpga: stratix10: extend console command for RSU support
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.06.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2014.12-socfpga_19.06.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.06.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.06.01_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.06.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_19.06.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.06.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.06.01_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_19.06.01_rc1
+commit: 3a47b14 Ong, Hean Loong update 4.9.78-ltsi to commit ID 5704788
+
+tag:    rel_angstrom-v2018.06-yocto2.5_19.06.01_rc1
+commit: 20e2978 Ong, Hean Loong ammend opkg pakage for Stratix10
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.06.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.06.01_rc1
+commit: 0a0715f David Koltak FogBugz #592404-4: Add raw slot data commands to example
+
+
+-----------------------------------------------------------------------
+
+repository: arm-trusted-firmware
+
+branch      : socfpga_v1.4
+branch tag  : rel_socfpga_v1.4_19.06.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v1.4_19.06.01_rc1
+commit: fd4f92c Loh Tien Hock libc: armclang: Implement compiler printf symbols
+
+
+-----------------------------------------------------------------------
+
+repository: uefi-socfpga
+
+branch      : socvp_socfpga_udk2015
+branch tag  : rel_socvp_socfpga_udk2015_19.06.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socvp_socfpga_udk2015_19.06.01_rc1
+commit: 475bea4 Loh Tien Hock AlteraPlatformPkg: Change memory base due for Linux's reserved space
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera-refdes
+
+branch      : master
+branch tag  : rel_master_19.06.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.06.01_rc1
+commit: f542bdd Ong, Hean Loong add linuxptp into extended recipe
+
+
+-----------------------------------------------------------------------
+
+repository: linux-refdesigns
+
+branch      : master
+branch tag  : rel_master_19.06.01_rc1
+new commits : 2
+769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+4f01732 Ong, Hean Loong Adding c compile stack fortification
+
+
+Tags added to internal git:
+tag:    rel_master_19.06.01_rc1
+commit: 769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2017.09
+
+commit ceabc4b010c65315fce6a18875ec7f27c7e39a5a
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Fri May 10 09:07:33 2019 -0500
+
+    HSD #1707031258-3: arm: socfpga: stratix10: extend console command for RSU support
+    
+    The Intel Remote System Update (RSU) provides a way for users to update
+    the QSPI configuration bitstream of a Intel Stratix 10 SoC device with
+    significantly reduced risk of corrupting the bitstream storage and
+    bricking the system.
+    
+    This patch extends console commands to exercises the RSU APIs at
+    Intel Stratix10 SoC. The commands use the term "slot" to refer to a
+    sub-partition which is intended to contain a production image, and the
+    term "priority" to refer to the fact that the images are loaded by
+    firmware in the defined order.
+    
+    The extended commands are below, you can refer to the header file rsu.h
+    for the details of RSU APIs:
+    	slot_count
+    	slot_by_name
+    	slot_get_info
+    	slot_size
+    	slot_priority
+    	slot_erase
+    	slot_program_buf
+    	slot_program_buf_raw
+    	slot_verify_buf
+    	slot_verify_buf_raw
+    	slot_enable
+    	slot_disable
+    	slot_load
+    	slot_load_factory
+    	slot_rename
+    	status_log
+    
+    Also this patch removes the duplicated definition of struct
+    socfpga_rsu_s10_status.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    ---
+    v2: changed to address review comments
+    v3: sorted do_rsu() as u_boot_cmd()
+        changed to handle size in hex value
+    v4: replaced long 'if else if' with array of struct which includes
+        command strings and function pointers
+        updated the commit messages
+
+commit afecb8b495f1e0ae09958b3d596d39a6e5e80275
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Fri May 10 08:55:11 2019 -0500
+
+    HSD #1707031258-2: arm: socfpga: stratix10: add RSU support for Stratix10 SoC
+    
+    The Intel Remote System Update (RSU) provides a way for users to update
+    the QSPI configuration bitstream of an Intel Stratix 10 SoC device with
+    significantly reduced risk of corrupting the bitstream storage and
+    bricking the system.
+    
+    This patch adds RSU support which allows user to perform a complete set
+    of RSU operations:
+    	1. Provides support for creating the initial flash images for a
+    	   system to support RSU.
+    	2. Allows several production images to be tried in a specific
+    	   order until one of them is successful.
+    	3. Loads a factory image if no production image is available, or
+    	   all production images failed.
+    	4. Provides users with the ability to add and remove production
+    	   images.
+    	5. Provides user with the ability to change the order in which
+    	   production images are loaded.
+    	6. Provides user with the ability to load a specific image from
+    	   flash. The image is a production or factory image.
+    	7. Provides user with information on which image is currently
+    	   running, and what errors were encountered by RSU.
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    ---
+    v2: divided 3 separate commits per review comment
+        changed to address review comments on version 1
+    v3: updated license header in the same format as kernel
+    v4: updated the commit messages
+    v5: s/swap_endian32/uswap_32
+
+commit bcd04a8f42c502dea98e0d7a4622e7537f78d89e
+Author: Richard Gong <richard.gong@intel.com>
+Date:   Fri May 10 09:03:31 2019 -0500
+
+    HSD #1707031258-1: arm: socfpga: stratix10: add environment variables for RSU support
+    
+    Add two RSU environment variables:
+    1. rsu_protected_slot
+    the variable is unsigned integer and its default value is RSU_DEBUG (7),
+    which only show log with RSU_INFO,RSU_WARNING and RSU_ERR.
+    to enable all logs (RSU_ERR, RSU_WARNING, RSU_INFO and RSU_DEBUG),
+    you need set log level to 8 or above via “setenv rsu_log_level 8”.
+    to disable all logs, you need set log level to 3 or below.
+    
+    2. rsu_log_level
+    by default there is no protected RSU slot, you need run
+    "setenv rsu_protected_slot <slot_num>” to set a slot protected, and
+    “setenv rsu_protected_slot <a space>” to unset a protected slot
+    
+    Signed-off-by: Richard Gong <richard.gong@intel.com>
+    ---
+    v2: divided 3 separate commits per comment
+        changed to address review comments on version 1
+    v3: no change
+    v4: no change
+
+-----------------------------------------------------------------------
+
+log of linux-refdesigns branch master
+
+commit 769f842433462efb96ba3dadb4047b194930adf7
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Thu May 23 14:13:11 2019 +0800
+
+    Remove FORTIFY_SOURCE as sample code does not need optimization
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+commit 4f017323400e374645a236ba2aeb0984294eca2d
+Author: Ong, Hean Loong <hean.loong.ong@intel.com>
+Date:   Fri May 17 16:30:38 2019 +0800
+
+    Adding c compile stack fortification
+    
+    Signed-off-by: Ong, Hean Loong <hean.loong.ong@intel.com>
+
+-----------------------------------------------------------------------
+

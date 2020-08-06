@@ -1,0 +1,494 @@
+
+Script-generated report of what we tagged today in internal git.
+These rc tags/branches will retagged as pr and pushed to the portal in two weeks.
+
+
+Richard
+=======================================================================
+
+repository: linux-socfpga
+
+branch      : socfpga-5.0
+branch tag  : rel_socfpga-5.0_19.07.01_rc1
+new commits : 0
+
+
+branch      : socfpga-5.1
+branch tag  : rel_socfpga-5.1_19.07.01_rc1
+new commits : 5
+603903e Ley Foon Tan PCI: altera: Fix configuration type based on secondary number
+480bcb0 Ley Foon Tan PCI: altera-msi: Allow building as module
+983314d Ley Foon Tan PCI: altera: Allow building as module
+76b32bd Dinh Nguyen dmagengine: pl330: add code to get reset property
+94ce9ca6 Dinh Nguyen dt-bindings: pl330: document the optional resets property
+
+
+branch      : socfpga-4.14.73-ltsi
+branch tag  : rel_socfpga-4.14.73-ltsi_19.07.01_rc1
+new commits : 5
+3a231ef Ley Foon Tan PCI: altera: Fix configuration type based on secondary number
+0a94dfa Ley Foon Tan PCI: altera-msi: Allow building as module
+180ebb4 Ley Foon Tan PCI: altera: Allow building as module
+57d7c2d Dinh Nguyen dmagengine: pl330: add code to get reset property
+d915032 Dinh Nguyen dt-bindings: pl330: document the optional resets property
+
+
+branch      : socfpga-4.14.73-ltsi-rt
+branch tag  : rel_socfpga-4.14.73-ltsi-rt_19.07.01_rc1
+new commits : 5
+2634399 Ley Foon Tan PCI: altera: Fix configuration type based on secondary number
+4c3addd Ley Foon Tan PCI: altera-msi: Allow building as module
+957fa62 Ley Foon Tan PCI: altera: Allow building as module
+6006075 Dinh Nguyen dmagengine: pl330: add code to get reset property
+46a19bc Dinh Nguyen dt-bindings: pl330: document the optional resets property
+
+
+Tags added to internal git:
+tag:    rel_socfpga-5.0_19.07.01_rc1
+commit: bc95527 Dinh Nguyen net: stmmac: socfpga: add RMII phy mode
+
+tag:    rel_socfpga-5.1_19.07.01_rc1
+commit: 603903e Ley Foon Tan PCI: altera: Fix configuration type based on secondary number
+
+tag:    rel_socfpga-4.14.73-ltsi_19.07.01_rc1
+commit: 3a231ef Ley Foon Tan PCI: altera: Fix configuration type based on secondary number
+
+tag:    rel_socfpga-4.14.73-ltsi-rt_19.07.01_rc1
+commit: 2634399 Ley Foon Tan PCI: altera: Fix configuration type based on secondary number
+
+
+-----------------------------------------------------------------------
+
+repository: u-boot-socfpga
+
+branch      : socfpga_v2013.01.01
+branch tag  : rel_socfpga_v2013.01.01_19.07.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2014.10_arria10_bringup
+branch tag  : rel_socfpga_v2014.10_arria10_bringup_19.07.01_rc1
+new commits : 0
+
+
+branch      : socfpga_v2017.09
+branch tag  : rel_socfpga_v2017.09_19.07.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v2013.01.01_19.07.01_rc1
+commit: 0c9a3bd Tien Fong Chee FogBugz #568246-2: Enable workaround to A5/C5 for Cortex-A9 errata 845369
+
+tag:    rel_socfpga_v2014.10_arria10_bringup_19.07.01_rc1
+commit: af568f3 Tien Fong Chee FogBugz #604090-2: Enable FPGA manager HPS JTAG driver implementation
+
+tag:    rel_socfpga_v2017.09_19.07.01_rc1
+commit: 18ae54b radu bacrau HSD #1408910499: Additional support for RSU_NOTIFY
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-socfpga
+
+branch      : angstrom-v2014.12-socfpga
+branch tag  : rel_angstrom-v2014.12-socfpga_19.07.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2014.12-socfpga_19.07.01_rc1
+commit: 9a77a4b Tien Hock Loh Revert "FogBugz #369619: Update meta-altera-refdes commit id"
+
+
+-----------------------------------------------------------------------
+
+repository: angstrom-manifest
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.07.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.07.01_rc1
+commit: 1bba433 Koen Kooi default.xml: bump meta-maker for octoprint 1.2.10
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera
+
+branch      : angstrom-v2015.12-yocto2.0
+branch tag  : rel_angstrom-v2015.12-yocto2.0_19.07.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2016.12-yocto2.2
+branch tag  : rel_angstrom-v2016.12-yocto2.2_19.07.01_rc1
+new commits : 0
+
+
+branch      : angstrom-v2018.06-yocto2.5
+branch tag  : rel_angstrom-v2018.06-yocto2.5_19.07.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_angstrom-v2015.12-yocto2.0_19.07.01_rc1
+commit: 3cfd56b Tien Hock Loh FogBugz #: dtbt meta-altera recipe needs to point to github
+
+tag:    rel_angstrom-v2016.12-yocto2.2_19.07.01_rc1
+commit: 3a47b14 Ong, Hean Loong update 4.9.78-ltsi to commit ID 5704788
+
+tag:    rel_angstrom-v2018.06-yocto2.5_19.07.01_rc1
+commit: 5846ba6 Ong, Hean Loong update linux ltsi to f5160f4
+
+
+-----------------------------------------------------------------------
+
+repository: intel-rsu
+
+branch      : master
+branch tag  : rel_master_19.07.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.07.01_rc1
+commit: 0a0715f David Koltak FogBugz #592404-4: Add raw slot data commands to example
+
+
+-----------------------------------------------------------------------
+
+repository: arm-trusted-firmware
+
+branch      : socfpga_v1.4
+branch tag  : rel_socfpga_v1.4_19.07.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socfpga_v1.4_19.07.01_rc1
+commit: fd4f92c Loh Tien Hock libc: armclang: Implement compiler printf symbols
+
+
+-----------------------------------------------------------------------
+
+repository: uefi-socfpga
+
+branch      : socvp_socfpga_udk2015
+branch tag  : rel_socvp_socfpga_udk2015_19.07.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_socvp_socfpga_udk2015_19.07.01_rc1
+commit: 475bea4 Loh Tien Hock AlteraPlatformPkg: Change memory base due for Linux's reserved space
+
+
+-----------------------------------------------------------------------
+
+repository: meta-altera-refdes
+
+branch      : master
+branch tag  : rel_master_19.07.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.07.01_rc1
+commit: 5201b82 Ong, Hean Loong recipe-cores and recipe-tools added in meta-altera-refdes
+
+
+-----------------------------------------------------------------------
+
+repository: linux-refdesigns
+
+branch      : master
+branch tag  : rel_master_19.07.01_rc1
+new commits : 0
+
+
+Tags added to internal git:
+tag:    rel_master_19.07.01_rc1
+commit: 769f842 Ong, Hean Loong Remove FORTIFY_SOURCE as sample code does not need optimization
+
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-5.1
+
+commit 603903eb8361fee2902cc973f0db3c1f7a801c71
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Wed Jun 12 14:42:00 2019 +0800
+
+    PCI: altera: Fix configuration type based on secondary number
+    
+    [Upstream Commit 7a28db0a251ebc932a37f53a74c76e067aaac542]
+    
+    Stratix 10 PCIe controller does not support Type 1 to Type 0 conversion
+    as previous version (V1) does so the PCIe controller configuration
+    mechanism needs to send Type 0 config TLP if the target bus number
+    matches with the secondary bus number.
+    
+    Implement a function to form a TLP header that depends on the PCIe
+    controller version, so that the header can be formed according to
+    specific host controller HW internals, fixing the type conversion issue.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    [lorenzo.pieralisi@arm.com: commit log]
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit 480bcb031e6fbf7c35d1b6cd9a90d24264e92ebb
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Wed Apr 24 12:57:15 2019 +0800
+
+    PCI: altera-msi: Allow building as module
+    
+    [Upstream Commit c7ddfd3514f2702a70e9ff86504cafa856dd16b2]
+    
+    Altera MSI IP is a soft IP and is only available after
+    an FPGA image (with design containing it) is programmed.
+    
+    Make driver modulable to support use case FPGA image is programmed the
+    after kernel has booted, so that the driver can be loaded upon request.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit 983314d739b3efa1fb1eda90b018e6087d549f50
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Wed Apr 24 12:57:14 2019 +0800
+
+    PCI: altera: Allow building as module
+    
+    [Upstream Commit ec15c4d0d5d2e431169fbdf6c6bcf0c8ff7]
+    
+    Altera PCIe Rootport IP is a soft IP and is only available after
+    an FPGA image (whose design contains it) is programmed.
+    
+    Make driver modulable to support use cases when FPGA image is
+    programmed after the kernel has booted, so that the driver
+    can be loaded upon request.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit 76b32bdedb775742462a7a2916e1cd5c71011225
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Jun 11 10:34:33 2019 -0500
+
+    dmagengine: pl330: add code to get reset property
+    
+    [Upstream commit 0eaab70a7a1b70ec39e61817553321b3bc638156]
+    The DMA controller on some SoCs can be held in reset, and thus requires
+    the reset signal(s) to deasserted. Most SoCs will have just one reset
+    signal, but there are others, i.e. Arria10/Stratix10 will have an
+    additional reset signal, referred to as the OCP.
+    
+    Add code to get the reset property from the device tree for deassert and
+    assert.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Vinod Koul <vkoul@kernel.org>
+
+commit 94ce9ca60842b2087e56723f59e1715c9c3bede0
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Jun 11 10:34:32 2019 -0500
+
+    dt-bindings: pl330: document the optional resets property
+    
+    [Upstream commit 0ed91bded307cc980f9542eff861266f1744c303]
+    
+    Add the optional resets property the pl330 dma node.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Vinod Koul <vkoul@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi
+
+commit 3a231ef554b6087afe687af070a667f7dd10cf15
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Tue Jun 25 14:17:57 2019 +0800
+
+    PCI: altera: Fix configuration type based on secondary number
+    
+    [Upstream Commit 7a28db0a251ebc932a37f53a74c76e067aaac542]
+    
+    Stratix 10 PCIe controller does not support Type 1 to Type 0 conversion
+    as previous version (V1) does so the PCIe controller configuration
+    mechanism needs to send Type 0 config TLP if the target bus number
+    matches with the secondary bus number.
+    
+    Implement a function to form a TLP header that depends on the PCIe
+    controller version, so that the header can be formed according to
+    specific host controller HW internals, fixing the type conversion issue.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    [lorenzo.pieralisi@arm.com: commit log]
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit 0a94dfabe65d2f4b53636841c7ceb52b3050dffb
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Tue Jun 25 14:08:59 2019 +0800
+
+    PCI: altera-msi: Allow building as module
+    
+    [Upstream Commit c7ddfd3514f2702a70e9ff86504cafa856dd16b2]
+    
+    Altera MSI IP is a soft IP and is only available after
+    an FPGA image (with design containing it) is programmed.
+    
+    Make driver modulable to support use case FPGA image is programmed the
+    after kernel has booted, so that the driver can be loaded upon request.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit 180ebb46b8d9c74e3b20a6500e38c932a9f631e5
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Tue Jun 25 14:02:41 2019 +0800
+
+    PCI: altera: Allow building as module
+    
+    [Upstream Commit ec15c4d0d5d2e431169fbdf6c6bcf0c8ff71ef22]
+    
+    Altera PCIe Rootport IP is a soft IP and is only available after
+    an FPGA image (whose design contains it) is programmed.
+    
+    Make driver modulable to support use cases when FPGA image is
+    programmed after the kernel has booted, so that the driver
+    can be loaded upon request.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit 57d7c2d96de13cdf727bc8bed90546f6cc914963
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Jun 11 10:34:33 2019 -0500
+
+    dmagengine: pl330: add code to get reset property
+    
+    [Upstream commit 0eaab70a7a1b70ec39e61817553321b3bc638156]
+    The DMA controller on some SoCs can be held in reset, and thus requires
+    the reset signal(s) to deasserted. Most SoCs will have just one reset
+    signal, but there are others, i.e. Arria10/Stratix10 will have an
+    additional reset signal, referred to as the OCP.
+    
+    Add code to get the reset property from the device tree for deassert and
+    assert.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Vinod Koul <vkoul@kernel.org>
+
+commit d915032802aca91ecb9089635175121d29203b0a
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Jun 11 10:34:32 2019 -0500
+
+    dt-bindings: pl330: document the optional resets property
+    
+    [Upstream commit 0ed91bded307cc980f9542eff861266f1744c303]
+    
+    Add the optional resets property the pl330 dma node.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Vinod Koul <vkoul@kernel.org>
+
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-4.14.73-ltsi-rt
+
+commit 2634399b1f124030c8babc40f74f11c93953f617
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Tue Jun 25 14:17:57 2019 +0800
+
+    PCI: altera: Fix configuration type based on secondary number
+    
+    [Upstream Commit 7a28db0a251ebc932a37f53a74c76e067aaac542]
+    
+    Stratix 10 PCIe controller does not support Type 1 to Type 0 conversion
+    as previous version (V1) does so the PCIe controller configuration
+    mechanism needs to send Type 0 config TLP if the target bus number
+    matches with the secondary bus number.
+    
+    Implement a function to form a TLP header that depends on the PCIe
+    controller version, so that the header can be formed according to
+    specific host controller HW internals, fixing the type conversion issue.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    [lorenzo.pieralisi@arm.com: commit log]
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit 4c3addd98a9ae3796cb990bb08a52f25e7f496b2
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Tue Jun 25 14:08:59 2019 +0800
+
+    PCI: altera-msi: Allow building as module
+    
+    [Upstream Commit c7ddfd3514f2702a70e9ff86504cafa856dd16b2]
+    
+    Altera MSI IP is a soft IP and is only available after
+    an FPGA image (with design containing it) is programmed.
+    
+    Make driver modulable to support use case FPGA image is programmed the
+    after kernel has booted, so that the driver can be loaded upon request.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit 957fa62824d00ddfe8bec3a1216554362295ccd1
+Author: Ley Foon Tan <ley.foon.tan@intel.com>
+Date:   Tue Jun 25 14:02:41 2019 +0800
+
+    PCI: altera: Allow building as module
+    
+    [Upstream Commit ec15c4d0d5d2e431169fbdf6c6bcf0c8ff71ef22]
+    
+    Altera PCIe Rootport IP is a soft IP and is only available after
+    an FPGA image (whose design contains it) is programmed.
+    
+    Make driver modulable to support use cases when FPGA image is
+    programmed after the kernel has booted, so that the driver
+    can be loaded upon request.
+    
+    Signed-off-by: Ley Foon Tan <ley.foon.tan@intel.com>
+    Signed-off-by: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
+
+commit 6006075f778150bcf1e14798b77bf6112d6937d5
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Jun 11 10:34:33 2019 -0500
+
+    dmagengine: pl330: add code to get reset property
+    
+    [Upstream commit 0eaab70a7a1b70ec39e61817553321b3bc638156]
+    The DMA controller on some SoCs can be held in reset, and thus requires
+    the reset signal(s) to deasserted. Most SoCs will have just one reset
+    signal, but there are others, i.e. Arria10/Stratix10 will have an
+    additional reset signal, referred to as the OCP.
+    
+    Add code to get the reset property from the device tree for deassert and
+    assert.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Vinod Koul <vkoul@kernel.org>
+
+commit 46a19bc1987843b7f19759ac8edc7e70cf21a182
+Author: Dinh Nguyen <dinguyen@kernel.org>
+Date:   Tue Jun 11 10:34:32 2019 -0500
+
+    dt-bindings: pl330: document the optional resets property
+    
+    [Upstream commit 0ed91bded307cc980f9542eff861266f1744c303]
+    
+    Add the optional resets property the pl330 dma node.
+    
+    Signed-off-by: Dinh Nguyen <dinguyen@kernel.org>
+    Signed-off-by: Vinod Koul <vkoul@kernel.org>
+
+-----------------------------------------------------------------------
+

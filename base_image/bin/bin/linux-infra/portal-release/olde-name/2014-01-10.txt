@@ -1,0 +1,234 @@
+This is a script-generated report of what will be pushed to the portal today.
+
+Alan
+
+=======================================================================
+
+repository: linux-socfpga
+
+branch socfpga-3.12 :
+  new commits: 7
+39dcd2d Vince Bridgers FogBugz #175832: Correct jumbo frame corner case
+9e9984f Vince Bridgers FogBugz #175343: Fix compile warning in dw_mmc-socfpga.c
+84bfbd1 Ley Foon Tan FogBugz #175951: nios2: Move the MMU initialization
+1d1459e Thor Thayer FogBugz #173184: Add L2 EDAC error injection for testing.
+f8ad59f Ley Foon Tan FogBugz #175952: arch/nios2: Cleanup comments
+cacaf3b Ley Foon Tan FogBugz #175708: nios2: irq: Get mapped IRQ before calling the handler
+a57dacc vince FogBugz #174310: Correct spinlock usage and state variable setting for PTP
+
+
+branch socfpga-3.4-ltsi :
+  new commits: 0
+
+
+branch socfpga-3.9-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: uboot-socfpga
+
+branch socfpga_v2013.01.01 :
+  new commits: 4
+9c8a73b Chin Liang See FogBugz #148005: Enhance Cyclone V MPU clock to 925MHz
+cf1e666 Chin Liang See FogBugz #173924: Adding SDRAM ECC Scrubbing using DMA
+96eb6eb Chin Liang See FogBugz #173924: Adding DMA PL330 support
+8ba6986 Chin Liang See FogBugz #174257: Enhance fpga2sdram bridge release sequence
+
+
+branch socfpga_v2013.01.01-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+
+repository: poky
+
+branch danny-altera :
+  new commits: 0
+
+
+branch danny-altera-rel :
+  new commits: 0
+
+
+No new tags to push out.
+
+-----------------------------------------------------------------------
+=======================================================================
+-----------------------------------------------------------------------
+
+log of linux-socfpga branch socfpga-3.12
+
+commit 39dcd2d80077fa3dc98b981b1ead99ddac699dd1
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Mon Jan 6 06:17:12 2014 -0600
+
+    FogBugz #175832: Correct jumbo frame corner case
+    
+    The DMA buffer size was not being set large enough to handle a large ICMP
+    request. This was not covered in the test cases for the prior check in,
+    this issue has now been addressed in automated test cases.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit 9e9984f82bc843519147a2dddd0413f6dac0a8ad
+Author: Vince Bridgers <vbridger@altera.com>
+Date:   Thu Dec 26 12:55:51 2013 -0600
+
+    FogBugz #175343: Fix compile warning in dw_mmc-socfpga.c
+    
+    This patch addresses a compiler warning seen in dw_mmc-socfpga.c,
+    drivers/mmc/host/dw_mmc-socfpga.c:29:47: warning: backslash and
+    newline separated by space [enabled by default].
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+commit 84bfbd17cc4d613ac2dcb1baad49db8187d8e5ad
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Mon Jan 6 10:43:55 2014 +0800
+
+    FogBugz #175951: nios2: Move the MMU initialization
+    
+    The current MMU initialization consists only in the flush of all the TLB
+    entries. This is done based in the cpuinfo values that specify the TLB
+    geometry. Hence, the current calling of mmu_init() *before* the cpuinfo is
+    setup is wrong and doesn't perform any TLB flushing.
+    
+    Fix it by moving the call to mmu_init() to be done *after* the cpuinfo has been
+    correctly filled.
+    
+    This commit fixes soft-reboots, which are currently broken. Upon soft-reboot
+    (from a system that has entered userspace) the TLB would be filled and
+    were previously never flushed. Such systems booting from a soft-reboot
+    would fail to enter userpace, panic'ing like this:
+    
+      Kernel panic - not syncing: Attempted to kill init! exitcode=0x0000000b
+    
+    Signed-off-by: Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit 1d1459ea39ecc10aa1ba2ad6a972ec5643255f01
+Author: Thor Thayer <tthayer@altera.com>
+Date:   Wed Dec 18 15:55:56 2013 -0600
+
+    FogBugz #173184: Add L2 EDAC error injection for testing.
+    
+    Add L2 ECC error injection to the existing L2 implementation
+    for testing purposes. The trigger is added to the /sysfs.
+    
+    V2 - Cleanup according to review comments.
+    
+    Signed-off-by: Thor Thayer <tthayer@altera.com>
+
+commit f8ad59f164b74069459deb3298e2e0ad87ea78a6
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Fri Jan 3 17:04:54 2014 +0800
+
+    FogBugz #175952: arch/nios2: Cleanup comments
+    
+    Cleanup unused comments.
+    
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit cacaf3bbe774612d0a4ddb073b06b38b341f29e5
+Author: Ley Foon Tan <lftan@altera.com>
+Date:   Thu Jan 2 08:57:46 2014 +0800
+
+    FogBugz #175708: nios2: irq: Get mapped IRQ before calling the handler
+    
+    The IRQ handler needs the Linux IRQ, not the hardware-specific IRQ.
+    Therefore, let's distinguish that clearly in the parameter name and also
+    call irq_find_mapping() to get the mapped IRQ before calling the handler.
+    
+    This fixes a bootup issue, which caused handle_bad_irq() to be continously
+    called with IRQ = 0, which is the hwirq for the timer tick.
+    
+    Tested on Altera's NEEK board with a custom FPGA design.
+    
+    Signed-off-by: Ezequiel Garcia <ezequiel@vanguardiasur.com.ar>
+    Signed-off-by: Ley Foon Tan <lftan@altera.com>
+
+commit a57dacc7e625e39a8af323ac43ac714a92fb544b
+Author: vince <vince@vince-HP-Z620-Workstation.(none)>
+Date:   Thu Dec 19 05:43:32 2013 -0600
+
+    FogBugz #174310: Correct spinlock usage and state variable setting for PTP
+    
+    Driver was releasing incorrect spinlock in functions stmmac_adjust_time and stmmac_adjust_freq
+    leading to instable system behaviour. Driver was not properly detecting advancted timestamping
+    capabilities since setting of that state variable was masked by a driver console message mask.
+    
+    Signed-off-by: Vince Bridgers <vbridger@altera.com>
+
+-----------------------------------------------------------------------
+
+log of uboot-socfpga branch socfpga_v2013.01.01
+
+commit 9c8a73bbd3b0715559387580ddfb2e3ccdf35bae
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Jan 10 09:11:10 2014 -0800
+
+    FogBugz #148005: Enhance Cyclone V MPU clock to 925MHz
+    
+    Enhance the Cyclone V MPU clock from 800MHz to 925MHz. This is
+    to align with the new Cyclone V dev kit which is using C6 speed
+    grade parts.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit cf1e666dfd24d72f622b64cdf5656c98bf9b7337
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Jan 10 09:01:14 2014 -0800
+
+    FogBugz #173924: Adding SDRAM ECC Scrubbing using DMA
+    
+    User can optional enable the Preloader to scrub the SDRAM memory
+    to initialize the SDRAM ECC bits. This is to enable subsequent
+    software that running on SDRAM enable the SDRAM ECC interrupt.
+    
+    To do the scrubbing, DMA is used to speed up the scrubbing speed.
+    At same time, the DMA run in parallel while Preloader loading
+    the subsequent boot image from flashes.
+    
+    To scrub the whole 1GB memory, it took 1446ms. As comparison,
+    scrubbing using processor and memset function is taking 13s.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 96eb6eb3adb6a009e39e12412fcf1d483aaa061f
+Author: Chin Liang See <clsee@altera.com>
+Date:   Fri Jan 10 09:00:37 2014 -0800
+
+    FogBugz #173924: Adding DMA PL330 support
+    
+    To add the driver support for DMA PL330 that located within HPS. The
+    driver does have high level function which enable memory-to-memory,
+    memory-to-peripheral and peripheral-to-memory transfer. It also
+    include a memory scrubbing function which write zeroes to
+    the assigned memory region
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+commit 8ba6986b04a91d23c7adf529186b34c8d2967ad5
+Author: Chin Liang See <clsee@altera.com>
+Date:   Thu Jan 2 07:50:15 2014 -0800
+
+    FogBugz #174257: Enhance fpga2sdram bridge release sequence
+    
+    Enhance the fpga2sdram bridge release sequence to support
+    asymmetric multiprocessing (AMP) use case. The master in FPGA
+    might sending transaction to fpga2sdram bridge before the bridge
+    is enabled. This enhancement will ensure the transaction will
+    be back pressured and continued normally once the bridge is enabled.
+    
+    Signed-off-by: Chin Liang See <clsee@altera.com>
+
+-----------------------------------------------------------------------
+
+

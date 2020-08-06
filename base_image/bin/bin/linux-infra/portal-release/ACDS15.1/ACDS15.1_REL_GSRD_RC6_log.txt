@@ -1,0 +1,33 @@
+ACDS15.1_REL_GSRD_RC6
+
+/home/atull/repos/internal/linux-socfpga
+6b67245 Paul Zimmerman : usb: dwc2: fix thinko in dwc2_hc_set_even_odd_frame()To git@github.com:altera-opensource/linux-socfpga
+ * [new tag]         ACDS15.1_REL_GSRD_RC6 -> ACDS15.1_REL_GSRD_RC6
+not pushing branch
+
+/home/atull/repos/internal/uboot-socfpga
+353283b Tien Fong Chee : FogBugz #241114: Fixed the compilation issue when BOOT_FROM_NAND is checked on preloader.To git@github.com:altera-opensource/u-boot-socfpga
+ * [new tag]         ACDS15.1_REL_GSRD_RC6 -> ACDS15.1_REL_GSRD_RC6
+not pushing branch
+
+/home/atull/repos/internal/meta-altera-refdes
+c48ec1a Tien Hock Loh : FogBugz #327063: Update commit ID of meta-altera-refdes for syschk refresh issueTo git@github.com:altera-opensource/meta-altera-refdes
+ * [new tag]         ACDS15.1_REL_GSRD_RC6 -> ACDS15.1_REL_GSRD_RC6
+not pushing branch
+
+/home/atull/repos/internal/linux-refdesigns
+4065da1 Chee Nouk Phoon : FogBugz #324265 Max10: Add ADC demo shellTo git@github.com:altera-opensource/linux-refdesigns.git
+ * [new tag]         ACDS15.1_REL_GSRD_RC6 -> ACDS15.1_REL_GSRD_RC6
+not pushing branch
+
+/home/atull/repos/internal/meta-altera
+bac1270 Tien Hock Loh : FogBugz #243680: Add gdbserver to file systemTo git@github.com:altera-opensource/meta-altera
+ * [new tag]         ACDS15.1_REL_GSRD_RC6 -> ACDS15.1_REL_GSRD_RC6
+To git@github.com:altera-opensource/meta-altera
+   fcdb5be..bac1270  ACDS15.1_REL_GSRD_RC6 -> angstrom-v2014.12-yocto1.7
+
+/home/atull/repos/internal/angstrom-socfpga
+e178d8e Tien Hock Loh : FogBugz #327063: Update commit ID to include fix for syschk refresh rate issueTo git@github.com:altera-opensource/angstrom-socfpga
+ * [new tag]         ACDS15.1_REL_GSRD_RC6 -> ACDS15.1_REL_GSRD_RC6
+Everything up-to-date
+Success

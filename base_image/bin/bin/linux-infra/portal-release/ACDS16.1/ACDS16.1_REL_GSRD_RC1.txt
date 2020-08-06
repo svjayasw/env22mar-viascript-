@@ -1,0 +1,16 @@
+*** Note that RC1 tags had issues and were never pushed out to the portal ***
+
+
+Tags found:
+ACDS16.1_REL_A10_GSRD_RC1
+ACDS16.1_REL_GSRD_RC1
+ACDS16.1_REL_M10_GSRD_RC1
+
+   repo                 branch                                commit id                                  tag name
+meta-altera          angstrom-v2015.12-yocto2.0           1a74c6a88970105dcae23c8047bcaa95d48fa1f5  ACDS16.1_REL_GSRD_RC1
+linux-socfpga        socfpga-4.1.22-ltsi                  742f555df70361ec80ae48df461f279487fd9959  ACDS16.1_REL_GSRD_RC1
+linux-socfpga        socfpga-3.10-ltsi                    28bac3edbcdc74f98b865986be5d340381896192  ACDS16.1_REL_M10_GSRD_RC1
+meta-altera-refdes   gsrd-16.1                            7ac789598c9044681f2e737de54eca0641a97348  ACDS16.1_REL_GSRD_RC1
+uboot-socfpga        socfpga_v2013.01.01                  f5cd6b9becaee79161edda315cde6ffe67b9677e  ACDS16.1_REL_GSRD_RC1
+uboot-socfpga        socfpga_v2014.10_arria10_bringup     ab2181dd766157a74b309d12e0b61c4f3cdc8564  ACDS16.1_REL_A10_GSRD_RC1
+linux-refdesigns     socfpga-16.1                         a3d4e657087dbf535401b18cdd810591857b6961  ACDS16.1_REL_GSRD_RC1

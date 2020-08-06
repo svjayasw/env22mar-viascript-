@@ -1,0 +1,65 @@
+Version 3.1.0
+
+Bugfix:
+=======
+
+A call to ioctl, when setting the GPIO pins with command IOCTL_GPIOSET, returns
+-EFAULT instead of 0.
+
+Function cp2101_ctlmsg() returns 0 which represents the number of bytes sent
+(correct when we set the GPIO pins). This return value is tested in function
+cp210x_internal_ioctl() which returns -EFAULT when it's NOT true.
+
+The correct test must rather be that it returns -EFAULT when the return value
+is negative (error) or positive (since we haven't sent any byte here), but it
+must return 0 if the return value is 0.
+
+Paragon Electronic Design Ltd., Lower Hutt, Nwe Zealand
+
+
+
+Driver usage:
+=============
+
+Reading GPIO:
+-------------
+
+    #define IOCTL_GPIOGET   0x8000
+    result = ioctl( usb_fd, IOCTL_GPIOGET, &bits );
+  
+
+where:
+
+result:  0 when successful
+usb_fd:  File descriptor to the open USB port
+bits:    contains the status of the GPIO pins; should be masked with 0x0F
+         after read
+
+
+
+Writing GPIO:
+-------------
+
+    #define IOCTL_GPIOSET   0x8001
+    result = ioctl( usb_fd, IOCTL_GPIOSET, bits );
+
+
+where:
+
+bits: unsigned 16 bit.
+      The lowest 4 bits represent the GPIO pins that are affected by the command,
+      the same bits in the high byte represent the status of the pins.
+
+      Example:
+   
+      set bit GPIO pin 2:     bits = ( 4 << 8 ) | 4;
+      clear GPIO pin 3:       bits =              8;
+
+
+
+
+
+
+
+
+
