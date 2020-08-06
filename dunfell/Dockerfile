@@ -87,7 +87,8 @@ RUN mkdir -p /build/yocto-dunfell-socfpga \
 	&& git clone -b dunfell https://git.openembedded.org/meta-openembedded
 
 RUN cd /build/rebeccas/contrib \
-    && git clone ssh://git@gitlab.devtools.intel.com:29418/psg-opensource/linux-socfpga.git
+    && git clone ssh://git@gitlab.devtools.intel.com:29418/psg-opensource/linux-socfpga.git \
+    && git clone http://github.com/altera-opensource/u-boot-socfpga.git
 	
 CMD ["/bin/bash"]
 WORKDIR /build
