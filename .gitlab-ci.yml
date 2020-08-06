@@ -17,7 +17,7 @@ before_script:
 #### STAGES ######
 stages:
   - build
-  - test
+#  - test
 
 ####  BUILD  ######
 docker-build:
@@ -35,19 +35,19 @@ docker-build:
   environment:
     name: DEV environment
 
-docker-test:
-  stage: test
-  script:
-    - export http_proxy=http://proxy-us.intel.com:911; export https_proxy=http://proxy-us.intel.com:912; export no_proxy=intel.com
-    - chmod 777 ./download_intel_cert.sh
-    - ./download_intel_cert.sh
-    - echo "$KUBE_URL"
-    - echo "$KUBECONFIG"
-    - cat "$KUBECONFIG"
-    - kubectl apply -f k8s/ruby_dep.yaml
-  tags:
-    - my-runner
-  environment:
-    name: testing
+#docker-test:
+#  stage: test
+#  script:
+#    - export http_proxy=http://proxy-us.intel.com:911; export https_proxy=http://proxy-us.intel.com:912; export no_proxy=intel.com
+#    - chmod 777 ./download_intel_cert.sh
+#    - ./download_intel_cert.sh
+#    - echo "$KUBE_URL"
+#    - echo "$KUBECONFIG"
+#    - cat "$KUBECONFIG"
+#    - kubectl apply -f k8s/ruby_dep.yaml
+#  tags:
+#    - my-runner
+#  environment:
+#    name: testing
 
 
