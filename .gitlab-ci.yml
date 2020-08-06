@@ -28,6 +28,7 @@ docker-build:
   script:
     - docker images
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+    - cd dunfell
     - docker build -t "$CI_REGISTRY"/pse-pswe-software-ba/embeded:1.1 .
     - docker push "$CI_REGISTRY"/pse-pswe-software-ba/embeded:1.1
     - sleep 10
